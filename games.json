@@ -1,0 +1,16 @@
+{
+ "games": [
+  {
+   "file": "data/lostark.json",
+   "generated_at": "2026-10-20T19:47:23+09:00",
+   "id": "lostark",
+   "latest_week": "2026-10-07",
+   "name": "로스트아크"
+  },
+  {
+   "id": "aion2",
+   "name": "아이온2",
+   "status": "준비 중"
+  }
+ ]
+}
