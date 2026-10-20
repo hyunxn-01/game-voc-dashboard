@@ -103,7 +103,7 @@ details > summary { cursor: pointer; }
 <nav class="tabs" role="tablist" id="tabs">
   <button role="tab" data-tab="summary">① 이번 주 요약</button>
   <button role="tab" data-tab="trend">② 동향 타임라인</button>
-  <button role="tab" data-tab="mood">③ 민심 추이</button>
+  <button role="tab" data-tab="mood">③ 감성 추이</button>
   <button role="tab" data-tab="topics">④ VOC 주제 지도</button>
   <button role="tab" data-tab="basis">⑤ 어떻게 만들었나</button>
 </nav>
@@ -410,7 +410,7 @@ function renderTrend(el) {
   $("#tUpd").insertAdjacentHTML("beforeend", `<p class="note">0주 글이 ${D.rules.update_min_posts}건 이상인 커뮤니티만 싣는다(글이 적으면 비중이 몇 건에 크게 흔들린다).</p>`);
 }
 
-// ---------- ③ 민심 추이 ----------
+// ---------- ③ 감성 추이 ----------
 // ③ · ④가 함께 쓰는 범위: 지역 전체와 그 지역 커뮤니티
 const scopeOptions = () => [{id: scopeId(), name: state.region + " 전체"}, ...comScopes().map(s => ({id: s.id, name: s.name}))];
 const blocksOf = id => (D.classified_blocks || {})[id] || [];
@@ -664,7 +664,11 @@ function init() {
   document.title = `${D.name} VOC 동향`;
   $("#title").textContent = `${D.name} 유저 VOC · 동향`;
   $("#intro").innerHTML = introText();
-  $("#subtitle").textContent = `끝난 주 ${D.weeks.length}개(${D.weeks.length ? yearWeek(D.weeks[0]) + " 주부터, 게시판마다 수집한 기간이 다르다" : ""}) · 주는 수요일에 시작한다 · 화면 데이터 ${D.generated_at.slice(0, 16).replace("T", " ")} 생성`;
+  // 한 주는 수요일 ~ 화요일이고 끝난 주만 싣는다. 그다음 주가 왜 없는지 바로 알 수 있게 범위를 적는다(2026-10-20 사용자 질문 "왜 10월 7일꺼까지밖에없어?")
+  const lastW = D.weeks[D.weeks.length - 1] || "";
+  const nextW = lastW ? (([y, m, d]) => new Date(Date.UTC(y, m - 1, d + 7)).toISOString().slice(0, 10))(lastW.split("-").map(Number)) : "";
+  $("#subtitle").textContent = `끝난 주 ${D.weeks.length}개(${D.weeks.length ? yearWeek(D.weeks[0]) + " 주부터, 게시판마다 수집한 기간이 다르다" : ""}) · 한 주는 수요일 ~ 화요일이고 끝난 주만 싣는다`
+    + (nextW ? `(그다음 ${weekRange(nextW)} 주는 그 주가 끝난 다음 날 더한다)` : "") + ` · 화면 데이터 ${D.generated_at.slice(0, 16).replace("T", " ")} 생성`;
   const regions = (D.scopes || []).filter(s => s.type === "region").map(s => s.region);
   if (!regions.includes(state.region)) state.region = regions[0];
   $("#regionSeg").innerHTML = regions.map(r => `<button data-region="${esc(r)}">${esc(r)}</button>`).join("");
