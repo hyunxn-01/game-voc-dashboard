@@ -414,9 +414,10 @@ function renderTrend(el) {
 // ③ · ④가 함께 쓰는 범위: 지역 전체와 그 지역 커뮤니티
 const scopeOptions = () => [{id: scopeId(), name: state.region + " 전체"}, ...comScopes().map(s => ({id: s.id, name: s.name}))];
 const blocksOf = id => (D.classified_blocks || {})[id] || [];
-// ③의 범위: 고른 것이 없으면 분류된 주가 가장 많은 범위(동률이면 지역 전체)
+// ③의 범위: 고른 것이 없으면 분류된 글이 가장 많은 범위(동률이면 지역 전체). 분류된 주의 수로 고르면 글이 적은
+// 공식 자유게시판(한 주 약 100건)이 뽑혀 비율이 몇 건에 흔들렸다(2026-10-20)
 function moodScope() {
-  const opts = scopeOptions(), nb = id => blocksOf(id).filter(Boolean).length;
+  const opts = scopeOptions(), nb = id => blocksOf(id).reduce((a, b) => a + (b ? b.n : 0), 0);
   if (!opts.some(o => o.id === state.scope3)) state.scope3 = null;
   const best = opts.reduce((a, o) => nb(o.id) > nb(a.id) ? o : a, opts[0]);
   return {opts, pick: state.scope3 || best.id};
@@ -435,7 +436,7 @@ function renderMood(el) {
   const f0 = firsts.length ? Math.min(...firsts) : 0, labels = D.weeks.slice(f0).map(shortWeek);
   el.innerHTML = `<section class="card"><h2>순감정(커뮤니티별)</h2><div class="chartbox tall"><canvas id="cNet"></canvas></div>
       <p class="note">순감정 = (긍정 글 − 부정 글) ÷ (긍정 글 + 부정 글). 1에 가까울수록 긍정 글이 많고 −1에 가까울수록 부정 글이 많다. 게임과 상관없는 글(주제 기타)은 뺀다.
-      점에 마우스를 올리면 계산에 쓴 글 수가 보인다. 커뮤니티마다 말투와 성향이 달라 높낮이보다 각 선의 움직임을 본다. 점선은 ${esc(state.region)} 전체(평소 글의 95%를 차지하는 게시판이 다 모인 주만)다.</p></section>
+      점에 마우스를 올리면 계산에 쓴 글 수가 보인다. 공식 자유게시판처럼 한 주 글이 적은 곳은 몇 건으로도 크게 흔들린다. 커뮤니티마다 말투와 성향이 달라 높낮이보다 각 선의 움직임을 본다. 점선은 ${esc(state.region)} 전체(평소 글의 95%를 차지하는 게시판이 다 모인 주만)다.</p></section>
     <section class="card"><h2>감성 비율(${esc(pickName)})</h2>
       <div style="margin-bottom:6px"><label class="muted" for="scope3">범위</label> <select id="scope3">${opts.map(o => `<option value="${esc(o.id)}" ${o.id === pick ? "selected" : ""}>${esc(o.name)}</option>`).join("")}</select></div>
       <div class="chartbox"><canvas id="cSenti"></canvas></div>
