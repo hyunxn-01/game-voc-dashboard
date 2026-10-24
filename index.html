@@ -618,11 +618,15 @@ function notJudged(w) {
     return {name: sc.name, why: !got ? "미수집" : !p || p.count[i] == null ? "일부 게시판 미수집" : `평시 기록 ${D.rules.min_base_weeks || 4}주 미만`};
   });
 }
-// 분류 지시문 · 모델이 바뀐 주의 안내. 이슈 후보는 직전 8주 평시와 비교하므로 바뀌기 전의 분류 결과와 견준다
+// 분류 지시문 · 모델이 바뀐 주의 안내. 이슈 후보는 직전 8주 평시와 비교하므로 바뀌기 전의 분류 결과와 견준다.
+// 그 지시문 변경의 영향을 잰 결과(설정 classify.change_notes, 키 '옛 판>새 판')가 있으면 일반 문장 대신 측정값을 적는다(2026-10-25)
 function classifyNote(s) {
   const cc = ((s || {}).why_then || {}).classify_change || [];
   if (!cc.length) return "";
   const what = cc.some(v => v.from.model !== v.to.model) ? "모델" : "지시문";
+  const notes = what === "지시문" ? cc.map(v => ((D.classify || {}).change_notes || {})[`${v.from.pv}>${v.to.pv}`]) : [];
+  if (notes.length && notes.every(n => n && n.measured))
+    return `분류 지시문이 바뀐 주다(${notes.map(n => esc(n.what)).join(" · ")}). ${notes.map(n => esc(n.measured)).join(" ")}`;
   return `분류 ${what}이 바뀐 주다. 주제 · 감성 후보에는 ${what} 차이의 영향이 섞일 수 있고, 키워드 후보는 영향이 없다.`;
 }
 // 최근 9주 작은 추이선: 기준 주 점은 빨강, 점선은 평시
