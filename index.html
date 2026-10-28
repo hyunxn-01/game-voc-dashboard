@@ -1688,7 +1688,7 @@ function renderHead() {
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
   $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매주 수요일에 지난 한 주(수요일 ~ 화요일)를 수집 · 집계한다.</p>
     <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}(확신도가 낮은 글은 ${esc(mname(cl.escalate))}), 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
-    <p>커뮤니티 게시글을 집계한 화면으로, 게시글을 작성하지 않는 유저의 의견은 포함되지 않는다. 대표 글은 제목과 원문 링크만 표시하고 본문은 게재하지 않는다. 제목과 인용의 욕설은 X로 가려 표시한다(원문 링크는 그대로). 게시글의 저작권은 각 작성자와 커뮤니티에 있다.</p>`;
+    <p>커뮤니티 게시글을 집계한 화면으로, 게시글을 작성하지 않는 유저의 의견은 포함되지 않는다. 대표 글은 제목과 원문 링크만 표시하고 본문은 게재하지 않는다. 게시글의 저작권은 각 작성자와 커뮤니티에 있다.</p>`;
 }
 function buildControls() {
   $("#gameSel").innerHTML = GAMES.map(x => `<option value="${esc(x.id)}" ${x.file ? "" : "disabled"}>${esc(x.name)}${x.file ? "" : "(" + esc(x.status || "준비 중") + ")"}</option>`).join("");
