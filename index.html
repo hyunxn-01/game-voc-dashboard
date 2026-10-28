@@ -1681,7 +1681,10 @@ function renderHead() {
   $("#mWhere").textContent = name;
   $$(".nav a[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   const last = D.weeks[D.weeks.length - 1], next = addWeek(addWeek(last)), gen = D.generated_at;
-  $("#fresh").textContent = `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)}) 10시`;
+  // 지난 주를 보고 있는데 가장 최근 주에 이슈 후보가 없으면 그 사실을 먼저 적는다(처음 연 화면이 최신 주가 아님을 알리려는 것)
+  const lastEmpty = state.week !== last && !((WK(last).items || []).length);
+  $("#fresh").textContent = lastEmpty ? `최근 주(${weekRange(last)})는 이슈 후보 없음 · 데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성`
+    : `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)}) 10시`;
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
   $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매주 수요일에 지난 한 주(수요일 ~ 화요일)를 수집 · 집계한다.</p>
     <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}(확신도가 낮은 글은 ${esc(mname(cl.escalate))}), 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
@@ -1745,10 +1748,17 @@ function readUrl(q, hash) {
   if (issue && !week) week = issue.split("/")[0];
   return {view, issue, week, region: q.get("region"), anchor: hash === "topics" ? "topics" : hash === "rising" ? "rising" : null};
 }
+// 주를 고르지 않고 들어오면(공개 주소 그대로) 이슈 후보가 있는 가장 최근 주를 연다. 가장 최근 주에 후보가 없을 때 첫 화면의
+// 판단 표가 비지 않게 하려는 것이다(2026-10-28 사용자 "공개주소를 그럼 10/14 화면으로 바꿔줘" · "이미 주소는 배포됐어"). 최근 13주에 없으면 가장 최근 주
+function landingWeek() {
+  const per = (D.weekly || {})[state.region] || {}, n = D.weeks.length;
+  for (let k = n - 1; k >= Math.max(0, n - 13); k--) if (((per[D.weeks[k]] || {}).items || []).length) return D.weeks[k];
+  return D.weeks[n - 1];
+}
 function applyUrl(u) {
   if (u.region) state.region = u.region;
   state.view = u.view;
-  state.week = D.weeks.includes(u.week) ? u.week : D.weeks[D.weeks.length - 1];
+  state.week = D.weeks.includes(u.week) ? u.week : landingWeek();
   state.open.clear();
   if (u.issue) state.open.add(u.issue);
 }
@@ -1831,7 +1841,7 @@ function loadGame(id, first = false) {
       D = d;
       state.scope = null;
       if (first) applyUrl(readUrl(INIT_Q, INIT_HASH));
-      else { state.week = D.weeks[D.weeks.length - 1]; state.open.clear(); }
+      else { state.week = landingWeek(); state.open.clear(); }
       buildControls(); renderAll(); setQuery();
       if (first) {
         const u = readUrl(INIT_Q, INIT_HASH);
