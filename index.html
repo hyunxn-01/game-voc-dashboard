@@ -509,14 +509,14 @@ tr.chosen td { background: var(--tint); }
         <summary>프로젝트 소개<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
         <div class="intro-body">
           <ol class="flow" aria-label="처리 단계">
-            <li><b>수집</b> 커뮤니티 4곳의 게시판 목록을 매주 수집</li>
+            <li><b>수집</b> 커뮤니티 4곳의 게시판 목록을 매일 수집</li>
             <li><b>분류</b> 제목을 Claude가 주제 · 감성 · 의견 유형으로 분류(AI)</li>
             <li><b>집계</b> 커뮤니티별 평시 대비 급증 항목을 이슈 후보로 선정</li>
             <li><b>본문 정독</b> 후보마다 본문 6건을 Claude가 정독해 요약(AI)</li>
             <li><b>공개</b> 집계 값과 대표 글의 제목 · 링크만 공개</li>
           </ol>
           <p><b>만든 이유</b>게임 운영 · 사업 담당자는 업데이트 뒤 유저 반응을 매주 점검해야 한다. 커뮤니티 글은 한 주에 2만 건이 넘어 사람이 모두 읽을 수 없고, 무엇이 평소보다 증가했는지 숫자로 비교하기 어렵다. 그래서 게시글을 매주 자동으로 수집 · 분류해 평시와 달라진 이슈를 찾는 대시보드를 직접 만들었다.</p>
-          <p><b>작동 방식</b>매주 수요일, 지난 한 주(수요일 ~ 화요일)의 게시판 목록을 커뮤니티 4곳에서 수집한다. 제목은 Claude Haiku 5.5가 분류하고 확신도가 낮은 글만 Opus 5.5가 재분류한다. 커뮤니티별로 직전 8주 평시와 비교해 급증한 항목을 이슈 후보로 선정하고, 후보마다 본문 6건을 Opus 5.5가 정독해 요약한다.</p>
+          <p><b>작동 방식</b>매일 새벽 커뮤니티 4곳의 게시판 목록을 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 분석한다. 제목은 Claude Haiku 5.5가 분류하고 확신도가 낮은 글만 Opus 5.5가 재분류한다. 커뮤니티별로 직전 8주 평시와 비교해 급증한 항목을 이슈 후보로 선정하고, 후보마다 본문 6건을 Opus 5.5가 정독해 요약한다.</p>
           <p><b>읽을 수 있는 정보</b>이번 주 어떤 주제와 표현이 평시보다 증가했는지, 같은 주에 어떤 업데이트 · 운영 대응이 있었는지, 커뮤니티별 감성 변화와 불만 · 개선 요청이 많은 주제를 읽을 수 있다.</p>
           <p><b>활용</b>업데이트 뒤 반응 점검, 이슈 대응 우선순위 판단, 주간 VOC 보고 작성에 쓴다.</p>
         </div>
@@ -830,6 +830,9 @@ const holSet = () => new Set(state.region === "국내" ? D.holiday_excluded_week
 const majorUpdates = () => state.region === "국내" ? (D.updates || []).filter(u => u.major && (u.server || "kr") === "kr") : [];
 // 운영 대응 공지 분류(events.py responses)가 데이터에 한 건이라도 있으면 분류가 돌았다고 본다
 const respReady = () => ((D.weekly || {})._meta || {}).responses_ready ?? Object.entries(D.weekly || {}).some(([k, per]) => k !== '_meta' && Object.values(per).some(v => (v.responses || []).length));
+function dayRange(w) {
+  return w.map(x => { const [, m, d] = x.split("-").map(Number); return `${m}/${d}`; }).join(" ~ ");
+}
 function weekRange(wk) {
   const [y, m, d] = wk.split("-").map(Number);
   const s = new Date(Date.UTC(y, m - 1, d)), e = new Date(s.getTime() + 6 * 864e5);
@@ -1123,7 +1126,7 @@ function renderJudge() {
     <details class="jfoot"><summary><span>${fl || "표 읽는 법"}</span><span class="jmore">${more}${CHEV}</span></summary><div class="jnotes">${notes.map(x => `<p class="note">${x}</p>`).join("")}</div></details></section>`;
   // 근거 그래프
   const top = items.find(x => x.id === (wk.insights || [])[0]) || items[0];
-  const evCard = top ? `<section class="card ev" aria-labelledby="h-ev"><div class="card-h"><h2 id="h-ev">근거: ${esc(shortCom(top.community))} ${esc(top.issue)}</h2><span class="sub">최근 13주 · 주는 수요일 ~ 화요일</span></div>
+  const evCard = top ? `<section class="card ev" aria-labelledby="h-ev"><div class="card-h"><h2 id="h-ev">근거: ${esc(shortCom(top.community))} ${esc(top.issue)}</h2><span class="sub">최근 13주 · 주는 월요일 ~ 일요일</span></div>
       <div class="ev-legend"><span>${svgSwatch(NAVY)}이번 주까지의 ${top.diff != null ? "비율" : "비중"}</span><span>${svgSwatch(NOTE_LINE, "4 3")}평시(직전 8주)</span><span>${svgSwatch(NOTE_LINE, "2 3")}같은 주 대응 · 공지</span>${majorUpdates().length ? `<span>${svgSwatch(UPD, "4 3")}큰 업데이트</span>` : ""}</div>
       <div class="svgchart" id="evChart"></div>
       <details class="tablefold"><summary>표로 보기</summary><div class="tablewrap" id="evTable"></div></details></section>`
@@ -1244,7 +1247,7 @@ function renderTrendView() {
       <p class="src">짙은 회색 긴 점선은 큰 업데이트, 옅은 회색 짧은 점선은 운영 대응 공지, 노란 음영은 평시 비교에서 빼는 연휴 주, 옅은 남색 음영은 기준 주다. 평시가 없는 주(기록 4주 미만 · 수집 빈 주)는 선을 끊는다.</p></div>
       <details class="tablefold"><summary>표로 보기: 주별 글 수와 지수</summary><div class="tablewrap" id="idxTable"></div></details></section>
     <section class="card" aria-labelledby="h-gm"><div class="card-h"><h2 id="h-gm">게임 지표</h2><span class="sub">같은 주 축 · PC방은 국내 서버, 스팀은 글로벌 서버</span></div>
-      <div class="card-b">${gm ? `<div class="two"><div>${chartBox("pc", "PC방 점유율(%) · 더로그 주(월 ~ 일)를 겹치는 날이 많은 주에 놓음", [], "short", false)}</div><div>${chartBox("steam", "스팀 동시 접속(명) · 주 수 ~ 화", [{label: "주 평균", color: COM_COLOR.steam}, {label: "주 최고", color: COM_COLOR.steam, dash: true}], "short", false)}</div></div>
+      <div class="card-b">${gm ? `<div class="two"><div>${chartBox("pc", "PC방 점유율(%) · 더로그 주(월 ~ 일)", [], "short", false)}</div><div>${chartBox("steam", "스팀 동시 접속(명) · 주 월 ~ 일", [{label: "주 평균", color: COM_COLOR.steam}, {label: "주 최고", color: COM_COLOR.steam, dash: true}], "short", false)}</div></div>
         <p class="src">출처: 더로그 PC방 주간 리포트(점유율 · 순위 · 사용시간 숫자와 리포트 링크만 싣고 표 그림은 싣지 않는다), SteamCharts 시간별 자료로 계산한 주 평균 · 최고(Valve 공식 API 현재 값으로 크기를 대조). 두 지표는 단위가 달라 그래프를 나눈다.</p>
         <details class="tablefold" style="padding:0;margin-top:8px"><summary>표로 보기: 주별 게임 지표</summary><div class="tablewrap" id="gmTable"></div></details>`
         : `<p class="frame-empty">게임 지표 수집 전이다. 수집이 시작되면 더로그 PC방 점유율 · 순위(국내)와 SteamCharts 동시 접속 평균 · 최고(글로벌)를 위 그래프와 같은 주 축으로 그린다.</p>`}</div></section>
@@ -1628,17 +1631,17 @@ function drawGroup() {
 // ---------- ⑥ 업데이트 효과 ----------
 function renderUpdates() {
   const R = state.region, rows = (D.update_effects || []).filter(r => r.region === R).slice().reverse(), ru = D.rules;
-  const head = `<thead><tr><th>업데이트 주(0주)</th><th>업데이트</th><th>커뮤니티</th><th class="r">글 수<span class="sub" style="display:block">직전 주 → 0주</span></th><th class="r">평시 대비</th><th>상위 5개 비중<span class="sub" style="display:block">직전 주 → 0주(평시 대비, 평시가 없으면 직전 주 대비)</span></th><th>부정 비율<span class="sub" style="display:block">직전 주 → 0주(평시 대비)</span></th></tr></thead>`;
+  const head = `<thead><tr><th>점검 뒤 7일</th><th>업데이트</th><th>커뮤니티</th><th class="r">글 수<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일</span></th><th class="r">평시 대비</th><th>상위 5개 비중<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일(평시 대비, 평시가 없으면 직전 7일 대비)</span></th><th>부정 비율<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일(평시 대비)</span></th></tr></thead>`;
   const tr = r => { const po = overShare(r.posts.ratio_base, r.posts.zero), no = r.neg && overRate(r.neg.diff);
-    return `<tr${r.major ? ' class="major"' : ""}><td class="nw num">${esc(weekRange(r.week))}</td><td>${r.major ? `<b>${esc(r.names.join(", "))}</b>` : esc(r.names.join(", "))}<span class="sub" style="display:block">${r.major ? "<b>큰 업데이트</b>" : "정기 업데이트"}</span></td>
+    return `<tr${r.major ? ' class="major"' : ""}><td class="nw num">${esc(r.window ? dayRange(r.window) : weekRange(r.week))}</td><td>${r.major ? `<b>${esc(r.names.join(", "))}</b>` : esc(r.names.join(", "))}<span class="sub" style="display:block">${r.major ? "<b>큰 업데이트</b>" : "정기 업데이트"}</span></td>
       <td class="nw">${esc(shortCom(r.community))}</td><td class="r">${fmt(r.posts.prev)} → ${fmt(r.posts.zero)}</td><td class="r${po ? " over" : ""}">${upMark(po)}${times(r.posts.ratio_base)}</td>
-      <td class="chg2">${r.skipped ? muted(esc(r.skipped)) : (r.changes || []).map(c => { const o = overShare(c.ratio_base); return `${o ? "<b>" : ""}${upMark(o)}${esc(c.label)} ${pct(c.prev, 2)} → ${pct(c.zero, 2)}${o ? "</b>" : ""} <span class="muted">(${c.ratio_base != null ? times(c.ratio_base) : c.ratio_prev != null ? "직전 주의 " + times(c.ratio_prev) : "–"})</span>`; }).join("<br>") || muted("평시 기준 없음")}</td>
+      <td class="chg2">${r.skipped ? muted(esc(r.skipped)) : (r.changes || []).map(c => { const o = overShare(c.ratio_base); return `${o ? "<b>" : ""}${upMark(o)}${esc(c.label)} ${pct(c.prev, 2)} → ${pct(c.zero, 2)}${o ? "</b>" : ""} <span class="muted">(${c.ratio_base != null ? times(c.ratio_base) : c.ratio_prev != null ? "직전 7일의 " + times(c.ratio_prev) : "–"})</span>`; }).join("<br>") || muted("평시 기준 없음")}</td>
       <td class="nw">${r.neg ? `${no ? "<b>" : ""}${upMark(no)}${pct(r.neg.prev)} → ${pct(r.neg.zero)}${no ? "</b>" : ""} <span class="muted">(${pp(r.neg.diff)})</span>` : muted("분류 전")}</td></tr>`; };
   const table = list => `<div class="tablewrap"><table class="utable">${head}<tbody>${list.map(tr).join("")}</tbody></table></div>`;
-  $("#v-updates").innerHTML = `<section class="card" aria-labelledby="h-upd"><div class="card-h"><h2 id="h-upd">업데이트가 있는 주의 변화</h2><span class="sub">0주의 글 수와 주요 변화를 직전 주 · 평시와 비교</span></div>
+  $("#v-updates").innerHTML = `<section class="card" aria-labelledby="h-upd"><div class="card-h"><h2 id="h-upd">업데이트 뒤 7일의 변화</h2><span class="sub">점검 날부터 7일의 글 수와 주요 변화를 직전 7일 · 평시와 비교</span></div>
     ${rows.length ? table(rows.slice(0, 6)) + (rows.length > 6 ? `<details class="tablefold" style="padding-top:8px"><summary>이전 업데이트 ${rows.length - 6}건</summary>${table(rows.slice(6))}</details>` : "")
-      : `<div class="card-b"><p class="frame-empty">${R === "해외" ? "해외(글로벌 서버) 업데이트 일정은 아직 수집하지 않는다." : "업데이트 주와 그 직전 주가 모두 수집된 커뮤니티가 아직 없다."}</p></div>`}
-    <div class="card-note" style="padding-top:10px"><p class="note">0주 글이 ${ru.update_min_posts}건 이상인 커뮤니티만 표시한다(글이 적으면 몇 건 차이로 비중이 크게 변한다). 정기 업데이트는 거의 매주 있어 그 주의 변화를 보여 줄 뿐 원인으로 해석하지 않고, 원인 비교는 큰 업데이트 행(옅은 남색)만 한다.</p>
+      : `<div class="card-b"><p class="frame-empty">${R === "해외" ? "해외(글로벌 서버) 업데이트 일정은 아직 수집하지 않는다." : "점검 뒤 7일과 그 직전 7일이 모두 수집된 커뮤니티가 아직 없다."}</p></div>`}
+    <div class="card-note" style="padding-top:10px"><p class="note">점검 날부터 7일을 직전 7일, 그리고 그 앞 같은 길이의 7일 8개(연휴 제외) 평균(평시)과 비교한다. 한 주(월 ~ 일) 안에 수요일 점검이 들어 있어, 주 대신 점검 날에 맞춘 7일로 센다. 점검 뒤 7일 글이 ${ru.update_min_posts}건 이상인 커뮤니티만 표시한다(글이 적으면 몇 건 차이로 비중이 크게 변한다). 정기 업데이트는 거의 매주 있어 그 주의 변화를 보여 줄 뿐 원인으로 해석하지 않고, 원인 비교는 큰 업데이트 행(옅은 남색)만 한다.</p>
     <p class="note">▲ 굵은 값: 이슈 후보 기준(비중 평시의 ${ru.surge_ratio}배 이상, 부정 비율 평시 대비 ${pp(ru.neg_alert_pp)} 이상)을 넘은 값</p></div></section>`;
 }
 
@@ -1647,7 +1650,7 @@ function methodFlow() {
   const enabled = D.communities.filter(c => c.enabled), cl = D.classify, dr = (D.method || {}).deepread || {};
   const nb = D.boards.length, dom = enabled.filter(c => c.region === "국내").length, abroad = enabled.length - dom;
   return `<ol class="steps">
-    <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록을 매주 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
+    <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
     <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 감성 · 의견 유형으로 분류한다. 확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
     <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 본문은 저장하지 않는다.</li>
@@ -1695,14 +1698,14 @@ function renderMethod() {
     <p class="note" style="margin-top:6px">수집 기간: ${esc(yearWeek(D.weeks[0]))} 주부터 ${esc(yearWeek(D.weeks[D.weeks.length - 1]))} 주까지(완료된 주만, 게시판별 수집 기간 상이). 키워드 필터 없이 게시판 목록 전체를 수집한다.</p>`);
   h += fold("수집 대상과 이용 규칙", `<div class="tablewrap"><table><thead><tr><th>커뮤니티</th><th>지역</th><th>수집 여부</th><th>근거</th></tr></thead><tbody>
     ${D.communities.map(c => `<tr><td class="nw">${esc(c.name)}</td><td class="nw">${esc(c.region)}</td><td class="nw">${c.enabled ? "수집" : "미수집"}</td><td class="muted">${esc(c.access)}</td></tr>`).join("")}</tbody></table></div>`);
-  h += fold("게임 지표 출처", `<dl class="kvl"><dt>PC방 점유율 · 순위</dt><dd>더로그 PC방 주간 리포트(한 주 월 ~ 일, 국내 서버). 순위 · 점유율 · 사용시간 숫자와 리포트 링크만 싣고 표 그림은 싣지 않는다. 대시보드 주(수 ~ 화)와 겹치는 날이 가장 많은 더로그 주를 쓰고, 겹치는 주가 없으면 가장 가까운 앞 주를 쓰며 기간을 함께 적는다.</dd>
-    <dt>스팀 동시 접속</dt><dd>SteamCharts 시간별 자료로 대시보드 주(수 ~ 화, 한국 시각)의 평균 · 최고를 계산하고, Valve 공식 API 현재 값으로 크기를 대조한다(글로벌 서버).</dd>
+  h += fold("게임 지표 출처", `<dl class="kvl"><dt>PC방 점유율 · 순위</dt><dd>더로그 PC방 주간 리포트(한 주 월 ~ 일, 국내 서버). 순위 · 점유율 · 사용시간 숫자와 리포트 링크만 싣고 표 그림은 싣지 않는다. 대시보드 주(월 ~ 일)와 같은 기간의 더로그 주를 쓰고, 그 주 리포트가 없으면 가장 가까운 앞 주를 쓰며 기간을 함께 적는다.</dd>
+    <dt>스팀 동시 접속</dt><dd>SteamCharts 시간별 자료로 대시보드 주(월 ~ 일, 한국 시각)의 평균 · 최고를 계산하고, Valve 공식 API 현재 값으로 크기를 대조한다(글로벌 서버).</dd>
     <dt>지금 상태</dt><dd>${gm ? `수집 중(최근 생성 ${esc(String(gm.generated_at || "").slice(0, 16).replace("T", " "))})` : "수집 전"}</dd></dl>`);
   h += fold("판정 기준(자체 설정 값)", `<dl class="kvl">
     <dt>평시</dt><dd>직전 ${ru.base_weeks}주 평균(연휴 · 미수집 주 제외, ${ru.min_base_weeks}주 이상일 때만 산출)</dd>
     <dt>이슈 후보</dt><dd>키워드 그룹 · 신호 · 주제는 비중이 평시의 ${ru.surge_ratio}배 이상이고 ${ru.surge_min_posts}건 이상일 때, 부정 비율은 평시 대비 ${pp(ru.neg_alert_pp)} 이상이고 분류 글이 ${ru.surge_min_posts}건 이상일 때 선정한다. 커뮤니티별로 비교한다</dd>
     <dt>판단 초안</dt><dd>높음 · 보통 · 관찰 세 단계(AI 초안). 담당자가 판단 표에 적은 중요도가 있으면 그것을 보인다</dd>
-    <dt>업데이트 효과</dt><dd>0주 글 ${ru.update_min_posts}건 이상인 커뮤니티만 산출</dd>
+    <dt>업데이트 효과</dt><dd>점검 날부터 7일과 직전 7일 · 평시(그 앞 7일 8개 평균) 비교. 점검 뒤 7일 글 ${ru.update_min_posts}건 이상인 커뮤니티만 산출</dd>
     <dt>큰 업데이트</dt><dd>${(D.updates || []).filter(u => u.major).map(u => `${esc(u.date)} ${esc(u.name)}`).join(" · ") || "해당 없음"}(공식 공지와 조사로 별도 선정한 목록)</dd>
     <dt>변동 폭 기준(참고 기록)</dt><dd>평시 평균 + 표준편차 × ${ru.z_threshold}</dd>
     <dt>급상승 키워드</dt><dd>평시의 ${ru.rising_ratio}배 이상, 최소 ${Object.entries(ru.rising_min_count || {}).map(([k, v]) => `${esc(k)} ${v}건`).join(" · ")}</dd>
@@ -1724,7 +1727,7 @@ const LEDE = {
   response: () => `공식 공지 가운데 문제 안내 · 소통 · 제재 · 변경 예고와, 대응이 나온 주 전후의 커뮤니티별 부정 비율이다.`,
   report: () => `회의 자료 · 메일에 옮기는 한 쪽이다. 확인 전 판단은 AI 초안으로 적힌다.`,
   mood: () => `커뮤니티별 감성 추이와 주제별 불만 · 개선 요청 · 키워드 그룹 비중이다.`,
-  updates: () => `업데이트가 있는 주(0주)의 글 수와 주요 변화를 직전 주 · 평시와 견준다.`,
+  updates: () => `업데이트(점검) 날부터 7일의 글 수와 주요 변화를 직전 7일 · 평시와 견준다.`,
   method: () => `수집 · 분류 · 집계 방법과 정확도, 비용, 한계다.`,
 };
 function renderHead() {
@@ -1743,7 +1746,7 @@ function renderHead() {
   // 가장 최근 주가 아님을 알리는 글은 판 맨 위 한 줄(latestNote)로 옮겼다(Glance Test 수정 4)
   $("#fresh").textContent = `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)}) 10시`;
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
-  $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매주 수요일에 지난 한 주(수요일 ~ 화요일)를 수집 · 집계한다.</p>
+  $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
     <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}(확신도가 낮은 글은 ${esc(mname(cl.escalate))}), 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
     <p>커뮤니티 게시글을 집계한 화면으로, 게시글을 작성하지 않는 유저의 의견은 포함되지 않는다. 대표 글은 제목과 원문 링크만 표시하고 본문은 게재하지 않는다. 게시글의 저작권은 각 작성자와 커뮤니티에 있다.</p>`;
 }
