@@ -1349,7 +1349,7 @@ function drawTrend() {
     cfg = {type: "line", data: {labels, datasets: ds}, options: opts({log: view === "board" && !isSig, mk: {shade: hol, lines, top: true}, xTicks: 10})};
   }
   // 끊긴 선의 이유를 그래프 바로 아래에 적는다(완성본 검토 3차: 설명이 게시판 표 아래로 멀리 떨어져 있었다)
-  $("#trendChart").innerHTML = chartBox("trend", ylab, items, "tall", true, "수집하지 못한 주 · 날은 0으로 그리지 않고 선을 끊는다(예: 아카라이브는 8월 하순 채널이 로그인해야 보이는 채널로 바뀌어 8/19 · 8/26 주를 다 수집하지 못했다).");
+  $("#trendChart").innerHTML = chartBox("trend", ylab, items, "tall", true, "수집하지 못한 주 · 날은 0으로 그리지 않고 선을 끊는다(예: 인벤 자유게시판은 사이트가 보여 주는 지난 목록에 한도가 있어 10월 초 이전 주를 다 수집하지 못했다).");
   chart("trend", $("#c-trend"), cfg);
 }
 function boardTable() {
