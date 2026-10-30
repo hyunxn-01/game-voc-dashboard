@@ -826,7 +826,7 @@ const sumOf = (W = state.week) => ((D.summary || {})[state.region] || {})[W];
 const candsOf = (W = state.week) => ((D.candidates || {})[state.region] || {})[W] || [];
 const WK = (W = state.week) => (((D.weekly || {})[state.region] || {})[W]) || {items: [], insights: [], responses: []};
 const candOf = (id, W = state.week) => candsOf(W).find(c => c.id === id) || null;
-const holSet = () => new Set(state.region === "국내" ? D.holiday_excluded_weeks || [] : []);
+const holSet = () => new Set(state.region === "국내" ? Object.keys(D.holidays || {}) : []);  // 연휴가 든 주(2026-10-31부터 평시에서 빼지 않고 음영만 표시)
 const majorUpdates = () => state.region === "국내" ? (D.updates || []).filter(u => u.major && (u.server || "kr") === "kr") : [];
 // 운영 대응 공지 분류(events.py responses)가 데이터에 한 건이라도 있으면 분류가 돌았다고 본다
 const respReady = () => ((D.weekly || {})._meta || {}).responses_ready ?? Object.entries(D.weekly || {}).some(([k, per]) => k !== '_meta' && Object.values(per).some(v => (v.responses || []).length));
@@ -1244,7 +1244,7 @@ function renderTrendView() {
   el.innerHTML = `<section class="card" aria-labelledby="h-idx"><div class="card-h"><h2 id="h-idx">글 수 지수(평시 = 100)</h2><span class="sub">커뮤니티마다 직전 8주 평시를 100으로 · ${esc(weekRange(weeks[0]))} 주부터 ${esc(weekRange(weeks[weeks.length - 1]))} 주까지</span></div>
       <div class="ctrl"><span class="g"><span class="clab">기간</span>${seg("trange", [["13", "13주"], ["26", "26주"], ["all", "전체"]], state.trange, "기간")}</span></div>
       <div class="card-b"><div id="idxChart"></div>
-      <p class="src">짙은 회색 긴 점선은 큰 업데이트, 옅은 회색 짧은 점선은 운영 대응 공지, 노란 음영은 평시 비교에서 빼는 연휴 주, 옅은 남색 음영은 기준 주다. 평시가 없는 주(기록 4주 미만 · 수집 빈 주)는 선을 끊는다.</p></div>
+      <p class="src">짙은 회색 긴 점선은 큰 업데이트, 옅은 회색 짧은 점선은 운영 대응 공지, 노란 음영은 공휴일이 든 주(평시 비교에 넣고, 글 수 기대값은 공휴일을 주말로 쳐서 낸다), 옅은 남색 음영은 기준 주다. 평시가 없는 주(기록 4주 미만 · 수집 빈 주)는 선을 끊는다.</p></div>
       <details class="tablefold"><summary>표로 보기: 주별 글 수와 지수</summary><div class="tablewrap" id="idxTable"></div></details></section>
     <section class="card" aria-labelledby="h-gm"><div class="card-h"><h2 id="h-gm">게임 지표</h2><span class="sub">같은 주 축 · PC방은 국내 서버, 스팀은 글로벌 서버</span></div>
       <div class="card-b">${gm ? `<div class="two"><div>${chartBox("pc", "PC방 점유율(%) · 더로그 주(월 ~ 일)", [], "short", false)}</div><div>${chartBox("steam", "스팀 동시 접속(명) · 주 월 ~ 일", [{label: "주 평균", color: COM_COLOR.steam}, {label: "주 최고", color: COM_COLOR.steam, dash: true}], "short", false)}</div></div>
@@ -1254,7 +1254,7 @@ function renderTrendView() {
     <section class="card" aria-labelledby="h-tl"><div class="card-h"><h2 id="h-tl">글 수 · 신호 추이(실제 건수)</h2><span class="sub">신호: 버그 · 이탈 · 복귀와 신규 표현</span><button type="button" class="info" aria-expanded="false" aria-controls="i-trend" aria-label="그래프 설명">${INFO_ICON}</button></div>
       <div class="info-pop" id="i-trend" hidden><p>같은 커뮤니티라도 게시판마다 성격이 달라 구분해 표시한다(질문 게시판은 유저가 막히는 구간, 팁 게시판은 업데이트 직후 계산 글이 증가한다).</p>
         <p>신호는 제목에 포함된 키워드로 집계한다(자료와 방법의 키워드 사전). 이탈 표현과 복귀 · 신규 표현은 함께 비교한다.</p>
-        <p>일별 그래프의 점선은 직전 4주 같은 요일의 평균이다(그중 2주 이상 수집된 경우만 표시). 추세는 주 단위로 판단하고, 일별 그래프는 글이 급증한 날을 찾는 참고 자료다.</p></div>
+        <p>일별 그래프의 점선은 직전 4주 같은 요일의 평균이다(그중 2주 이상 수집된 경우만 표시, 평일 공휴일은 직전 4주 주말 평균). 추세는 주 단위로 판단하고, 일별 그래프는 글이 급증한 날을 찾는 참고 자료다.</p></div>
       <div id="trend-body"></div></section>`;
   drawIndex(); drawGameMetrics(); renderTrend();
 }
@@ -1448,7 +1448,7 @@ function renderReport() {
     ${m.top ? `<section class="p-sec"><h3>13주 추이: ${esc(shortCom(m.top.community))} ${esc(m.top.issue)} <span class="h3sub">실선 이번 주까지 · 점선 평시(직전 8주)</span></h3><div class="p-chart" id="pChart"></div><details class="tablefold no-print" style="padding:6px 0 0"><summary>표로 보기</summary><div class="tablewrap" id="pTable"></div></details></section>` : ""}
     <section class="p-sec"><h3>같은 주 운영 대응</h3>${m.R !== "국내" ? '<p class="empty">운영 대응 공지는 국내 서버 공지만 모은다.</p>' : (m.wk.responses || []).length ? `<ul class="p-list">${m.wk.responses.map(r => `<li><span class="tag">${esc(r.kind)}</span>${esc(shortDay(r.date))} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : `<p class="empty">${respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다."}</p>`}</section>
     <section class="p-sec"><h3>판단 확인과 비교 기준</h3><p class="p-basis">판단: AI 초안 ${m.nAi}건 · 담당자 확인 ${m.nConf}건${(m.wk.items || []).length && !m.nAi && !m.nConf ? "(판단 초안 없음)" : ""}. 확인 전 판단은 AI 초안으로 적고, 확정은 담당자가 한다.
-      비교 기준: 커뮤니티마다 직전 8주 평시(연휴 · 미수집 주 제외)와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
+      비교 기준: 커뮤니티마다 직전 8주 평시(미수집 주 제외, 글 수는 평일 · 주말 하루 평균으로 낸 기대값이며 공휴일은 주말로 친다)와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
       자료: 커뮤니티 게시판 목록(제목 · 링크만), 제목 분류 Claude ${esc(mname(D.classify.model))}${D.classify.escalate ? " · " + esc(mname(D.classify.escalate)) : ""}, 본문 정독 Claude ${esc(mname(((D.method || {}).deepread || {}).model))}.</p></section>
   </article>`;
   if (m.top) drawEvidence(m.top, $("#pChart"), $("#pTable"), 150);
@@ -1481,7 +1481,7 @@ function reportText() {
   else L.push(`- ${respReady() ? "같은 주 대응 공지 없음" : "대응 공지 분류 전"}`);
   L.push("");
   L.push(`■ 판단 확인: AI 초안 ${m.nAi}건 · 담당자 확인 ${m.nConf}건. 확인 전 판단은 AI 초안이다.`);
-  L.push(`■ 비교 기준: 커뮤니티마다 직전 8주 평시와 비교(연휴 · 미수집 주 제외).${m.judged ? " 판정 대상: " + m.judged.replace(/<[^>]+>/g, "") + "." : ""}`);
+  L.push(`■ 비교 기준: 커뮤니티마다 직전 8주 평시와 비교(미수집 주 제외, 글 수 기대값은 공휴일을 주말로 침).${m.judged ? " 판정 대상: " + m.judged.replace(/<[^>]+>/g, "") + "." : ""}`);
   L.push(`화면: ${url}`);
   return L.join("\n");
 }
@@ -1514,7 +1514,7 @@ function renderMoodView() {
         <p>순감성 지수는 긍정 글과 부정 글의 차이를 둘의 합으로 나눈 값으로, 1에 가까울수록 긍정 글이 많다. 게임과 무관한 글(주제 '기타')은 제외한다.</p>
         <p>공식 자유게시판처럼 주간 글이 적은 곳은 몇 건 차이로도 크게 변한다. 점선은 지역 전체(평소 글의 95%를 차지하는 게시판이 모두 수집된 주만)다.</p>
         <p>감성 비율의 분모는 게임과 무관한 글을 제외한 분류 글이다. '판단 불가'는 제목만으로 감성을 판정할 수 없는 글이다.</p>
-        <p>주제별 부정 비율은 해당 주제 글 가운데 부정 글의 비율이다. 평시는 직전 8주 가운데 연휴를 제외한 주의 평균이며, 4주 이상일 때만 산출한다.</p></div>
+        <p>주제별 부정 비율은 해당 주제 글 가운데 부정 글의 비율이다. 평시는 직전 8주(미수집 주 제외)의 평균이며, 4주 이상일 때만 산출한다.</p></div>
       <div class="card-b" id="mood-body"></div></section>
     <section class="card" aria-labelledby="h-topics" id="topics"><div class="card-h"><h2 id="h-topics">VOC 주제 지도</h2><span class="sub">주제별 불만 · 개선 요청과 키워드 그룹 비중</span><button type="button" class="info" aria-expanded="false" aria-controls="i-topics" aria-label="지표 설명">${INFO_ICON}</button></div>
       <div class="info-pop" id="i-topics" hidden>
@@ -1641,7 +1641,7 @@ function renderUpdates() {
   $("#v-updates").innerHTML = `<section class="card" aria-labelledby="h-upd"><div class="card-h"><h2 id="h-upd">업데이트 뒤 7일의 변화</h2><span class="sub">점검 날부터 7일의 글 수와 주요 변화를 직전 7일 · 평시와 비교</span></div>
     ${rows.length ? table(rows.slice(0, 6)) + (rows.length > 6 ? `<details class="tablefold" style="padding-top:8px"><summary>이전 업데이트 ${rows.length - 6}건</summary>${table(rows.slice(6))}</details>` : "")
       : `<div class="card-b"><p class="frame-empty">${R === "해외" ? "해외(글로벌 서버) 업데이트 일정은 아직 수집하지 않는다." : "점검 뒤 7일과 그 직전 7일이 모두 수집된 커뮤니티가 아직 없다."}</p></div>`}
-    <div class="card-note" style="padding-top:10px"><p class="note">점검 날부터 7일을 직전 7일, 그리고 그 앞 같은 길이의 7일 8개(연휴 제외) 평균(평시)과 비교한다. 한 주(월 ~ 일) 안에 수요일 점검이 들어 있어, 주 대신 점검 날에 맞춘 7일로 센다. 점검 뒤 7일 글이 ${ru.update_min_posts}건 이상인 커뮤니티만 표시한다(글이 적으면 몇 건 차이로 비중이 크게 변한다). 정기 업데이트는 거의 매주 있어 그 주의 변화를 보여 줄 뿐 원인으로 해석하지 않고, 원인 비교는 큰 업데이트 행(옅은 남색)만 한다.</p>
+    <div class="card-note" style="padding-top:10px"><p class="note">점검 날부터 7일을 직전 7일, 그리고 그 앞 같은 길이의 7일 8개 평균(평시, 글 수는 공휴일을 주말로 친 기대값)과 비교한다. 한 주(월 ~ 일) 안에 수요일 점검이 들어 있어, 주 대신 점검 날에 맞춘 7일로 센다. 점검 뒤 7일 글이 ${ru.update_min_posts}건 이상인 커뮤니티만 표시한다(글이 적으면 몇 건 차이로 비중이 크게 변한다). 정기 업데이트는 거의 매주 있어 그 주의 변화를 보여 줄 뿐 원인으로 해석하지 않고, 원인 비교는 큰 업데이트 행(옅은 남색)만 한다.</p>
     <p class="note">▲ 굵은 값: 이슈 후보 기준(비중 평시의 ${ru.surge_ratio}배 이상, 부정 비율 평시 대비 ${pp(ru.neg_alert_pp)} 이상)을 넘은 값</p></div></section>`;
 }
 
@@ -1702,7 +1702,7 @@ function renderMethod() {
     <dt>스팀 동시 접속</dt><dd>SteamCharts 시간별 자료로 대시보드 주(월 ~ 일, 한국 시각)의 평균 · 최고를 계산하고, Valve 공식 API 현재 값으로 크기를 대조한다(글로벌 서버).</dd>
     <dt>지금 상태</dt><dd>${gm ? `수집 중(최근 생성 ${esc(String(gm.generated_at || "").slice(0, 16).replace("T", " "))})` : "수집 전"}</dd></dl>`);
   h += fold("판정 기준(자체 설정 값)", `<dl class="kvl">
-    <dt>평시</dt><dd>직전 ${ru.base_weeks}주 평균(연휴 · 미수집 주 제외, ${ru.min_base_weeks}주 이상일 때만 산출)</dd>
+    <dt>평시</dt><dd>직전 ${ru.base_weeks}주 평균(미수집 주 제외, ${ru.min_base_weeks}주 이상일 때만 산출). 연휴가 든 주도 넣는다. 글 수는 앞 ${ru.base_weeks}주의 평일 하루 평균 × 평일 수 + 주말 하루 평균 × (주말 + 공휴일 수)로 낸 기대값과 비교한다</dd>
     <dt>이슈 후보</dt><dd>키워드 그룹 · 신호 · 주제는 비중이 평시의 ${ru.surge_ratio}배 이상이고 ${ru.surge_min_posts}건 이상일 때, 부정 비율은 평시 대비 ${pp(ru.neg_alert_pp)} 이상이고 분류 글이 ${ru.surge_min_posts}건 이상일 때 선정한다. 커뮤니티별로 비교한다</dd>
     <dt>판단 초안</dt><dd>높음 · 보통 · 관찰 세 단계(AI 초안). 담당자가 판단 표에 적은 중요도가 있으면 그것을 보인다</dd>
     <dt>업데이트 효과</dt><dd>점검 날부터 7일과 직전 7일 · 평시(그 앞 7일 8개 평균) 비교. 점검 뒤 7일 글 ${ru.update_min_posts}건 이상인 커뮤니티만 산출</dd>
