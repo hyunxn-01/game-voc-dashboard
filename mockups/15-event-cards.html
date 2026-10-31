@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>15 사건 카드 · 로스트아크 VOC 견본</title>
+<style>
+:root{
+  --bg:#efeef4; --card:#ffffff; --ink:#17161c; --ink2:#535160; --muted:#8b8998; --line:#e1dfe8; --grid:#ebe9f0; --axis:#c9c6d3;
+  --c-inven:#2a78d6; --c-arca:#eb6834; --c-lostark_free:#1baf7a; --c-reddit:#6250d6;
+  --ai:#0f6b62; --ai-bg:#e3f2ef; --ai-line:#a9d6ce;
+  --font:system-ui,-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.5}
+a{color:inherit}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1360px;margin:0 auto;padding:0 28px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);padding:12px 0}
+.meta b{color:var(--ink2)}
+.meta .sp{flex:1}
+.meta a{color:var(--ink2)}
+header.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;padding:18px 0 22px;align-items:stretch}
+h1{margin:0 0 8px;font-size:34px;letter-spacing:-.03em;line-height:1.15}
+.lead{color:var(--ink2);font-size:15px;margin:0 0 14px;max-width:560px}
+.kpis{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 30px}
+.kpi .v{font-size:36px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.kpi .l{font-size:12px;color:var(--ink2);margin-top:4px}
+.aihero{background:var(--ai);color:#eafaf6;border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.aihero .h{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;color:#b7e3da}
+.aihero .ev{font-size:21px;font-weight:700;line-height:1.35;letter-spacing:-.01em}
+.aihero .ev a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.aihero p{margin:0;font-size:14px;color:#d4efe9}
+.aihero .others{font-size:12.5px;color:#b7e3da;border-top:1px solid rgba(255,255,255,.18);padding-top:8px}
+.ai-tag{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:11px;border-radius:5px;padding:2px 7px;background:#fff;color:var(--ai);white-space:nowrap}
+.ai-tag::before{content:"";width:7px;height:7px;background:currentColor;border-radius:50%}
+.ai-tag.solid{background:var(--ai);color:#fff}
+.calc-tag{display:inline-flex;font-weight:700;font-size:11px;border-radius:5px;padding:1px 6px;border:1px solid var(--axis);color:var(--ink2);white-space:nowrap}
+.hyp-tag{display:inline-flex;font-weight:800;font-size:11px;border-radius:5px;padding:1px 6px;border:1px dashed currentColor;white-space:nowrap}
+
+.filters{position:sticky;top:0;z-index:5;background:rgba(239,238,244,.94);backdrop-filter:blur(6px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;display:flex;gap:10px 18px;flex-wrap:wrap;align-items:center}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#fff;font:inherit;font-size:13px;padding:6px 11px;border-radius:999px;cursor:pointer;color:var(--ink2);white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip b{font-weight:600;opacity:.65;margin-left:3px;font-variant-numeric:tabular-nums}
+.tog{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2);cursor:pointer}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.seg button{border:0;background:transparent;font:inherit;font-size:12.5px;padding:6px 10px;cursor:pointer;color:var(--ink2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--ink2);flex-wrap:wrap;margin-left:auto}
+.legend i{display:inline-block;width:16px;height:2px;vertical-align:middle;margin-right:5px;border-radius:1px}
+button:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+
+.week{margin:26px 0 8px}
+.wh{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}
+.wh h2{margin:0;font-size:18px;letter-spacing:-.01em}
+.wh .wc{font-size:13px;color:var(--ink2);display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.wh .wc em{font-style:normal;color:var(--ai);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;overflow:hidden}
+.card.hit{border-color:var(--ai-line);box-shadow:0 0 0 1px var(--ai-line)}
+.ch{padding:14px 16px 10px;display:flex;flex-direction:column;gap:5px}
+.ch .k{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.kind{font-weight:700;font-size:11.5px;padding:1px 7px;border-radius:5px;background:#f0eff5;color:var(--ink2)}
+.kind.major{background:var(--ink);color:#fff}
+.ch .t{font-size:15px;font-weight:700;line-height:1.35}
+.ch .t a{text-decoration:none}
+.ch .t a:hover{text-decoration:underline}
+.ch .t2{font-size:12px;color:var(--muted)}
+.ch .t2 a{color:var(--ink2)}
+.band{background:var(--ai-bg);border-top:1px solid var(--ai-line);border-bottom:1px solid var(--ai-line);padding:10px 16px;display:flex;flex-direction:column;gap:5px}
+.band .bh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--ai);font-weight:600}
+.band p{margin:0;font-size:13px;color:#174a44}
+.band .who{font-size:11.5px;color:#3c6d66}
+.note{margin:0 16px;padding:8px 10px;border-radius:8px;background:#f5f4f8;font-size:12px;color:var(--ink2);border:1px solid var(--line)}
+.note b{color:var(--ink)}
+.chart{padding:10px 12px 4px}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.ba{padding:2px 16px 14px;font-size:12px;color:var(--ink2);display:flex;flex-direction:column;gap:3px}
+.ba .r{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}
+.ba .d{font-weight:700;color:var(--ink)}
+.empty{padding:40px;text-align:center;color:var(--ink2);background:#fff;border-radius:14px;border:1px dashed var(--line)}
+.more{display:block;margin:24px auto 10px;font:inherit;font-size:14px;padding:10px 20px;border-radius:999px;border:1px solid var(--ink);background:#fff;cursor:pointer}
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 8px}
+.method section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:12.5px;color:var(--ink2)}
+.method h4{margin:0 0 6px;font-size:13px;color:var(--ink)}
+.method ul{margin:0;padding-left:16px}
+.foot{font-size:12px;color:var(--muted);padding:18px 0 40px;display:flex;gap:6px 16px;flex-wrap:wrap}
+.foot a{color:var(--ink2)}
+#tip{position:fixed;pointer-events:none;background:#17161c;color:#fff;font-size:12px;padding:7px 10px;border-radius:7px;z-index:40;opacity:0;max-width:260px;line-height:1.45;font-variant-numeric:tabular-nums}
+#tip.on{opacity:1}
+.state{padding:60px 0;text-align:center;color:var(--ink2)}
+.state.err{color:#d03b3b}
+
+@media (max-width:1100px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr))} header.top{grid-template-columns:1fr} .method{grid-template-columns:1fr} }
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  h1{font-size:26px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .kpi .v{font-size:28px}
+  .aihero .ev{font-size:18px}
+  .legend{margin-left:0}
+  .filters{position:static}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="meta"><b>견본 15 · 사건 카드</b><span>견본 — 실제 데이터, 예시 값은 표시</span><span id="gen">데이터 생성 시각 –</span><span class="sp"></span><a href="./index.html">견본 목록</a></div>
+  <div id="app"><div class="state">데이터를 읽는 중…</div></div>
+  <div class="foot"><span>견본 15 · 사건 카드</span><span>견본(목업) — 실제 데이터 사용, 예시 값은 표시함(이 화면에는 예시 값 없음)</span><span id="gen2"></span><a href="./index.html">견본 목록</a></div>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>
+/* ===== VOC KIT (데이터 읽기 공용 코드) — 각 견본 HTML 안에 그대로 복사해 쓴다 ===== */
+const K = (() => {
+  const ROOT = "..";               // mockups/ 아래에서 저장소 루트
+  const j = p => fetch(`${ROOT}/${p}`, {cache: "no-store"}).then(r => { if (!r.ok) throw new Error(p + " HTTP " + r.status); return r.json(); });
+  const opt = p => j(p).catch(() => null);
+
+  async function load() {
+    const games = await j("games.json");
+    const g = games.games.find(x => x.file) || {id: "lostark", file: "data/lostark.json"};
+    const [D, daily, monthly] = await Promise.all([j(g.file), opt(`data/${g.id}-daily.json`), opt(`data/${g.id}-monthly.json`)]);
+    return {games, game: g, D, daily, monthly};
+  }
+
+  // ---------- 주 · 지역 ----------
+  const idx = (D, week) => D.weeks.indexOf(week);
+  const latestWeek = D => D.weeks[D.weeks.length - 1];
+  // AI 결론(conclusion)이 있는 가장 최근 주. 없으면 마지막 주.
+  function aiWeek(D, region) {
+    const W = D.weekly[region] || {};
+    for (let i = D.weeks.length - 1; i >= 0; i--) { const w = W[D.weeks[i]]; if (w && w.conclusion) return D.weeks[i]; }
+    return latestWeek(D);
+  }
+  const weekly = (D, region, week) => (D.weekly[region] || {})[week] || {conclusion: null, insights: [], items: [], responses: []};
+  const summary = (D, region, week) => (D.summary[region] || {})[week] || null;
+  const communities = (D, region) => D.communities.filter(c => c.enabled && (!region || c.region === region));
+  const comName = (D, id) => (D.communities.find(c => c.id === id) || {}).name || id;
+  const boardsOf = (D, comId) => D.boards.filter(b => b.community === comId);
+
+  // ---------- 시리즈 (52주 배열, D.weeks와 같은 순서) ----------
+  // scope 예: "community:arca", "region:국내", "board:inven:6271"
+  // metric 예: "posts", "neg", "topic:operation", "topic_neg:churn", "group:보석", "signal:이탈 표현", "opinion:complaint"
+  // field: value(비중 또는 건수) · base(평시=직전 8주 평균) · ratio(value/base) · diff(neg류: value-base) · count · den · z · n_base
+  const ser = (D, scope, metric, field = "value") => (((D.series[scope] || {})[metric] || {})[field]) || D.weeks.map(() => null);
+  const at = (D, scope, metric, field, week) => ser(D, scope, metric, field)[idx(D, week)];
+  const lastN = (arr, i, n = 13) => arr.slice(Math.max(0, i - n + 1), i + 1);
+  const weeksN = (D, week, n = 13) => lastN(D.weeks, idx(D, week), n);
+
+  // 글 수 지수(평시=100) — 게시판별 D.ratio[boardKey][i] * 100, 커뮤니티는 series community:<id> posts ratio
+  const postsIndex = (D, scope, week) => { const r = at(D, scope, "posts", "ratio", week); return r == null ? null : Math.round(r * 100); };
+
+  // ---------- 분류 블록(감성 · 주제 · 의견) ----------
+  // block 키: "community:arca", "region:국내", "board:inven:6271"
+  const block = (D, key, week) => (D.classified_blocks[key] || [])[idx(D, week)] || null;
+  // 순감성 지수 = (긍정-부정)/(긍정+부정). 데이터의 net 필드가 같은 값. 주제 '기타'는 제외된 상태.
+  const net = b => b ? b.net : null;
+  const sentShares = b => { if (!b) return null; const o = b.overall, n = o.pos + o.neg + o.neu + o.unk; return n ? {pos: o.pos / n, neg: o.neg / n, neu: o.neu / n, unk: o.unk / n, n} : null; };
+  const topicName = (D, id) => (D.topics.find(t => t.id === id) || {}).name || id;
+  const opinionName = (D, id) => (D.opinions.find(t => t.id === id) || {}).name || id;
+  // 주제별 부정 비율: topic_senti[t].neg / (neg+neu+pos+unk)
+  function topicNeg(b) {
+    if (!b || !b.topic_senti) return [];
+    return Object.entries(b.topic_senti).map(([t, s]) => { const n = s.neg + s.neu + s.pos + s.unk; return {topic: t, n, neg: n ? s.neg / n : null, pos: n ? s.pos / n : null}; });
+  }
+
+  // ---------- 이슈 후보 · AI 판단 · 정독 ----------
+  const candidates = (D, region, week) => ((D.candidates[region] || {})[week]) || [];
+  const deepread = (D, id) => D.deepread[id] || null;     // {model, read:[{title,url,group:"추천 상위"|"무작위",recommends,comments,date}], result:{summary,subissues:[{name,count,quote,quote_post}],causes:[{event,hypothesis}],confidence:"high|medium|low",endorsed_vs_common}}
+  const CONF = {high: "높음", medium: "보통", low: "낮음"};
+  const rising = (D, region, week) => ((D.rising[region] || {})[week]) || [];   // [{word,count,base,ratio,new,community,reps:[{title,url,...}]}]
+  const reps = (D, region, week) => (((D.representatives[region] || {})[week]) || {});   // {metricId: [{community, posts:[...]}], posts:[...]}
+
+  // ---------- 운영 대응 ----------
+  // weekly(...).responses: [{date, kind:"문제 안내|소통|제재|변경 예고", reward, title, url}]
+  // 대응 전후 비교: 그 주와 다음 주의 커뮤니티 부정 비율
+  function beforeAfterNeg(D, comId, week) {
+    const i = idx(D, week), s = ser(D, "community:" + comId, "neg");
+    return {before: s[i] ?? null, after: i + 1 < s.length ? s[i + 1] ?? null : null, nextWeek: D.weeks[i + 1] || null};
+  }
+  const updatesIn = (D, week) => D.updates.filter(u => u.week === week && u.server === "kr");
+  const eventsIn = (D, week) => D.other_events.filter(u => u.week === week);
+
+  // ---------- 게임 지표 ----------
+  const pcbang = (D, week) => (D.game_metrics.pcbang || []).find(p => p.period_start === week) || null; // {rank, share(%), hours, wow(%), url, source}
+  const steam = (D, week) => (D.game_metrics.steam || []).find(p => p.week === week) || null;          // {max, avg, granularity}
+
+  // ---------- 만든 방법 ----------
+  const chosenCombo = D => D.method.compare.combos.find(c => c.chosen);  // {name, topic:{accuracy,ci95,n}, sentiment:{...}, opinion:{...}, monthly_total_usd:[lo,hi]}
+  const spendTotal = D => Object.values(D.method.spend).reduce((a, b) => a + b, 0);
+
+  // ---------- 표시 형식 ----------
+  const num = v => v == null ? "–" : Math.round(v).toLocaleString("ko-KR");
+  const pct = (v, d = 1) => v == null ? "–" : (v * 100).toFixed(d) + "%";
+  const pp = (v, d = 1) => v == null ? "–" : (v >= 0 ? "+" : "") + (v * 100).toFixed(d) + "%p";
+  const times = (v, d = 1) => v == null ? "–" : v.toFixed(d) + "배";
+  const signed = (v, d = 2) => v == null ? "–" : (v >= 0 ? "+" : "") + v.toFixed(d);
+  const md = w => { const [, m, d] = w.split("-"); return `${+m}/${+d}`; };
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+
+  // ---------- 아주 작은 SVG 그리기 ----------
+  // spark(values, {w,h,stroke,fill,base}) → svg 문자열. null은 끊어 그림.
+  function spark(vals, o = {}) {
+    const w = o.w || 120, h = o.h || 32, p = 2, v = vals.filter(x => x != null);
+    if (!v.length) return `<svg width="${w}" height="${h}"></svg>`;
+    let lo = Math.min(...v, o.base ?? Infinity), hi = Math.max(...v, o.base ?? -Infinity); if (lo === hi) { lo -= 1; hi += 1; }
+    const X = i => p + i * (w - 2 * p) / Math.max(1, vals.length - 1), Y = x => h - p - (x - lo) * (h - 2 * p) / (hi - lo);
+    let d = "", pen = false; vals.forEach((x, i) => { if (x == null) { pen = false; return; } d += (pen ? "L" : "M") + X(i).toFixed(1) + " " + Y(x).toFixed(1); pen = true; });
+    const base = o.base != null ? `<line x1="${p}" x2="${w - p}" y1="${Y(o.base)}" y2="${Y(o.base)}" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="2 2"/>` : "";
+    const li = vals.length - 1 - [...vals].reverse().findIndex(x => x != null);
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${base}<path d="${d}" fill="none" stroke="${o.stroke || "currentColor"}" stroke-width="${o.sw || 1.5}" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(li)}" cy="${Y(vals[li])}" r="2.5" fill="${o.stroke || "currentColor"}"/></svg>`;
+  }
+
+  return {load, idx, latestWeek, aiWeek, weekly, summary, communities, comName, boardsOf, ser, at, lastN, weeksN, postsIndex,
+    block, net, sentShares, topicName, opinionName, topicNeg, candidates, deepread, CONF, rising, reps, beforeAfterNeg, updatesIn, eventsIn,
+    pcbang, steam, chosenCombo, spendTotal, num, pct, pp, times, signed, md, esc, spark};
+})();
+/* ===== /VOC KIT ===== */
+
+const HEX = {inven:"#2a78d6", arca:"#eb6834", lostark_free:"#1baf7a", reddit:"#6250d6"};
+const E = K.esc;
+const KINDS = ["대형 업데이트", "정기 업데이트", "문제 안내", "소통", "제재 · 변경 예고", "이벤트", "상품"];
+const S = {kind:"전체", onlyAI:false, metric:"neg", shown:6};
+let DATA, EVENTS = [], COMS = [];
+
+/* tooltip */
+const tip = document.getElementById("tip");
+function place(x, y){ const r = tip.getBoundingClientRect(); let a = x + 14, b = y + 14; if (a + r.width > innerWidth - 8) a = x - r.width - 14; if (b + r.height > innerHeight - 8) b = y - r.height - 14; tip.style.left = Math.max(8, a) + "px"; tip.style.top = Math.max(8, b) + "px"; }
+document.addEventListener("mouseover", e => { const t = e.target.closest("[data-tip]"); if (t) { tip.innerHTML = t.dataset.tip; tip.classList.add("on"); place(e.clientX, e.clientY); } });
+document.addEventListener("mousemove", e => { if (tip.classList.contains("on")) place(e.clientX, e.clientY); });
+document.addEventListener("mouseout", e => { if (e.target.closest("[data-tip]")) tip.classList.remove("on"); });
+
+/* ---------- 사건 모으기 ---------- */
+function buildEvents(D){
+  const region = "국내";
+  const first = D.weeks.findIndex(w => K.at(D, "community:arca", "neg", "value", w) != null);   // 국내 분류 데이터가 생긴 첫 주
+  const inRange = w => { const i = K.idx(D, w); return i >= first && i >= 0; };
+  const map = new Map();
+  const add = (o) => {
+    const key = o.url || o.title;
+    if (map.has(key)) { const m = map.get(key); if (o.isResponse) m.isResponse = true; return; }
+    map.set(key, o);
+  };
+  D.updates.filter(u => u.server === "kr" && inRange(u.week)).forEach(u => add({date:u.date, week:u.week, title:u.name, url:u.url, kind:u.major ? "대형 업데이트" : "정기 업데이트", major:u.major}));
+  Object.entries(D.weekly[region] || {}).forEach(([w, v]) => { if (!v || !v.responses || !inRange(w)) return;
+    v.responses.forEach(r => add({date:r.date, week:w, title:r.title, url:r.url, kind:r.kind === "제재" || r.kind === "변경 예고" ? "제재 · 변경 예고" : r.kind, rawKind:r.kind, isResponse:true, reward:r.reward})); });
+  D.other_events.filter(e => e.server === "kr" && inRange(e.week)).forEach(e => add({date:e.date, week:e.week, title:e.name, url:e.url, kind:e.kind}));
+  // 점검 안내 + 점검 완료 안내 → 카드 하나
+  const list = [...map.values()], out = [];
+  list.sort((a, b) => a.date < b.date ? -1 : 1).forEach(e => {
+    if (/완료 안내$/.test(e.title)) { const base = e.title.replace(" 완료 안내", " 안내"); const m = out.find(x => x.title === base && x.week === e.week); if (m) { m.follow = e; return; } }
+    out.push(e);
+  });
+  // AI 원인 가설 매칭(causes[].event === 사건 이름)
+  const items = {}; Object.values(D.weekly).forEach(W => { if (W && typeof W === "object") Object.values(W).forEach(v => (v && v.items || []).forEach(it => items[it.id] = it)); });
+  out.forEach(e => {
+    e.ai = [];
+    Object.entries(D.deepread).forEach(([id, dr]) => (dr.result.causes || []).forEach(c => {
+      const names = [e.title, e.follow && e.follow.title].filter(Boolean);
+      if (names.includes(c.event)) e.ai.push({id, hypothesis:c.hypothesis, confidence:dr.result.confidence, item:items[id], n:(dr.read || []).length});
+    }));
+    const LV = {"높음":0, "보통":1, "관찰":2};
+    e.ai.sort((a, b) => (LV[a.item?.judgment?.level] ?? 3) - (LV[b.item?.judgment?.level] ?? 3));
+    e.effect = (D.update_effects || []).filter(u => u.week === e.week && (u.names || []).includes(e.title));
+  });
+  return out.sort((a, b) => a.date > b.date ? -1 : a.date < b.date ? 1 : 0);
+}
+
+/* ---------- 기울기 차트 ---------- */
+function slope(D, e){
+  const i = K.idx(D, e.week), ws = [D.weeks[i - 1], e.week, D.weeks[i + 1]];
+  const lab = ["전주", "사건 주", "다음 주"];
+  const get = (c, w) => { if (!w) return null; if (S.metric === "neg") return K.at(D, "community:" + c, "neg", "value", w); const r = K.at(D, "community:" + c, "posts", "ratio", w); return r == null ? null : r * 100; };
+  const fmt = v => v == null ? "–" : S.metric === "neg" ? K.pct(v) : Math.round(v) + "";
+  const lines = COMS.map(c => ({c, v: ws.map(w => get(c.id, w))})).filter(l => l.v.some(x => x != null));
+  const W = 360, H = 132, L = 40, R = 64, T = 12, B = 26;
+  if (!lines.length) return `<div class="chart"><p class="note" style="margin:0">이 지표는 아직 계산 전입니다(평시 산출에 최소 ${D.rules.min_base_weeks}주 필요).</p></div>`;
+  const all = lines.flatMap(l => l.v).filter(v => v != null);
+  let lo = Math.min(...all), hi = Math.max(...all); const pad = (hi - lo) * .15 || (S.metric === "neg" ? .02 : 5); lo -= pad; hi += pad;
+  if (S.metric === "neg") { lo = Math.max(0, lo); }
+  const X = k => L + k * (W - L - R) / 2, Y = v => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+  let g = "";
+  [lo, (lo + hi) / 2, hi].forEach(t => g += `<line x1="${L}" x2="${W - R}" y1="${Y(t)}" y2="${Y(t)}" stroke="#ebe9f0"/><text x="${L - 6}" y="${Y(t) + 3.5}" font-size="10" text-anchor="end" fill="#8b8998">${S.metric === "neg" ? K.pct(t, 0) : Math.round(t)}</text>`);
+  if (S.metric === "posts") g += `<line x1="${L}" x2="${W - R}" y1="${Y(100)}" y2="${Y(100)}" stroke="#c9c6d3"/>`;
+  g += `<rect x="${X(1) - 22}" y="${T - 4}" width="44" height="${H - T - B + 8}" rx="6" fill="#17161c" opacity=".045"/>`;
+  lab.forEach((t, k) => g += `<text x="${X(k)}" y="${H - 8}" font-size="10.5" text-anchor="middle" fill="${k === 1 ? "#17161c" : "#8b8998"}" font-weight="${k === 1 ? 700 : 400}">${t}${ws[k] ? " " + K.md(ws[k]) : ""}</text>`);
+  // 끝 라벨 겹침 방지(간단 정렬)
+  const ends = [];
+  lines.forEach(l => {
+    let d = "", pen = false; l.v.forEach((v, k) => { if (v == null) { pen = false; return; } d += (pen ? "L" : "M") + X(k) + " " + Y(v).toFixed(1); pen = true; });
+    g += `<path d="${d}" fill="none" stroke="${HEX[l.c.id]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    l.v.forEach((v, k) => { if (v == null) return; g += `<circle cx="${X(k)}" cy="${Y(v)}" r="4" fill="${HEX[l.c.id]}" stroke="#fff" stroke-width="2"/>`; });
+    const lk = l.v[2] != null ? 2 : l.v[1] != null ? 1 : null;
+    if (lk != null) ends.push({y: Y(l.v[lk]), x: X(lk), t: fmt(l.v[lk]), c: l.c});
+  });
+  ends.sort((a, b) => a.y - b.y); for (let k = 1; k < ends.length; k++) if (ends[k].y - ends[k - 1].y < 12) ends[k].y = ends[k - 1].y + 12;
+  ends.forEach(e2 => g += `<text x="${e2.x + 10}" y="${e2.y + 3.5}" font-size="10.5" fill="#535160" class="num">${E(e2.t)}</text>`);
+  // 툴팁 열
+  [0, 1, 2].forEach(k => {
+    const rows = lines.map(l => `<i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${HEX[l.c.id]};margin-right:5px"></i>${E(l.c.name)} ${l.v[k] == null ? (ws[k] ? "데이터 없음" : "다음 주 데이터 없음") : fmt(l.v[k])}`).join("<br>");
+    g += `<rect x="${X(k) - 30}" y="0" width="60" height="${H}" fill="transparent" data-tip="${E(`<b>${lab[k]} ${ws[k] || ""}</b><br>${rows}`)}"/>`;
+  });
+  const noNext = !ws[2];
+  return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${S.metric === "neg" ? "부정 비율" : "글 수 지수"} 전주 · 사건 주 · 다음 주">${g}</svg>${noNext ? `<div style="font-size:11.5px;color:#8b8998;padding:0 4px">다음 주 데이터 없음</div>` : ""}</div>`;
+}
+
+function card(D, e){
+  const ai = e.ai[0];
+  const eff = e.effect.length ? e.effect[0] : null;
+  const ba = e.isResponse ? COMS.map(c => ({c, ...K.beforeAfterNeg(D, c.id, e.week)})).filter(x => x.before != null) : [];
+  return `<article class="card ${ai ? "hit" : ""}">
+    <div class="ch">
+      <div class="k num"><span class="kind ${e.major ? "major" : ""}">${E(e.kind)}</span><span>${E(e.date)}</span><span>· ${K.md(e.week)} 주</span>${e.reward ? "<span>· 보상 있음</span>" : ""}</div>
+      <div class="t">${e.url ? `<a href="${E(e.url)}" target="_blank" rel="noopener">${E(e.title)}</a>` : E(e.title)}</div>
+      ${e.follow ? `<div class="t2">이어진 공지 · <a href="${E(e.follow.url)}" target="_blank" rel="noopener">${E(e.follow.title)}</a></div>` : ""}
+    </div>
+    ${ai ? `<div class="band">
+      <div class="bh"><span class="ai-tag solid">AI가 원인 가설로 지목</span><span class="num">이슈 후보 ${e.ai.length}개에서</span><span>· 확신도 ${E(K.CONF[ai.confidence] || ai.confidence)}</span></div>
+      <p><span class="hyp-tag">가설</span> ${E(ai.hypothesis)}</p>
+      <div class="who">${ai.item ? `${E(ai.item.headline.lead)} ${E(ai.item.headline.em)} ${E(ai.item.headline.tail)} · ` : ""}AI 정독 요약(Opus 5.5 · ${ai.n}건 정독)${e.ai.length > 1 ? ` · 그 밖에 ${e.ai.slice(1).map(a => E(a.item ? a.item.community + " " + a.item.issue : a.id)).join(", ")}` : ""}</div>
+    </div>` : ""}
+    ${eff && eff.note ? `<p class="note" style="margin-top:10px"><span class="calc-tag">데이터 문구</span> ${E(eff.note)}</p>` : ""}
+    ${eff && !eff.note && eff.major ? `<p class="note" style="margin-top:10px"><span class="calc-tag">대형 업데이트</span> ${E(eff.community)} 글 ${K.num(eff.posts.zero)}건(직전 주 ${K.num(eff.posts.prev)}건). 업데이트 주 변화 · 인과는 따로 확인이 필요합니다.</p>` : ""}
+    ${slope(D, e)}
+    ${ba.length ? `<div class="ba"><div><span class="calc-tag">계산</span> 대응 전후 부정 비율(사건 주 → 다음 주)</div>${ba.map(x => `<div class="r num"><span><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${HEX[x.c.id]};margin-right:5px"></i>${E(x.c.name)}</span><span>${K.pct(x.before)} → ${x.after == null ? "다음 주 데이터 없음" : K.pct(x.after)}</span><span class="d">${x.after == null ? "" : K.pp(x.after - x.before)}</span></div>`).join("")}</div>` : `<div style="height:10px"></div>`}
+  </article>`;
+}
+
+function render(){
+  const {D} = DATA, app = document.getElementById("app");
+  const aiW = K.aiWeek(D, "국내"), wk = K.weekly(D, "국내", aiW);
+  const hits = EVENTS.filter(e => e.ai.length);
+  const top = [...hits].sort((a, b) => b.ai.length - a.ai.length || (a.date < b.date ? 1 : -1))[0];
+  const regular = EVENTS.filter(e => e.kind === "정기 업데이트").length;
+  const counts = Object.fromEntries(KINDS.map(k => [k, EVENTS.filter(e => e.kind === k).length]));
+  let list = EVENTS.filter(e => (S.kind === "전체" || e.kind === S.kind) && (!S.onlyAI || e.ai.length));
+  const weeks = [...new Set(list.map(e => e.week))];
+  const shownWeeks = weeks.slice(0, S.shown);
+  const range = `${EVENTS.length ? EVENTS[EVENTS.length - 1].week : "–"} ~ ${EVENTS.length ? EVENTS[0].week : "–"}`;
+
+  app.innerHTML = `
+  <header class="top">
+    <div>
+      <h1>사건 카드</h1>
+      <p class="lead">업데이트 · 운영 공지 하나가 카드 하나입니다. 카드마다 전주 → 사건 주 → 다음 주 기울기와, AI가 그 사건을 원인 가설로 짚었는지가 함께 있습니다. 국내 서버 사건 · 국내 커뮤니티 3곳(합산하지 않음).</p>
+      <div class="kpis">
+        <div class="kpi"><div class="v num">${EVENTS.length}</div><div class="l"><span class="calc-tag">계산</span> 사건(${range} 주)</div></div>
+        <div class="kpi"><div class="v num">${hits.length}</div><div class="l"><span class="ai-tag solid" style="font-size:10.5px">AI</span> 원인 가설로 지목된 사건</div></div>
+        <div class="kpi"><div class="v num">${regular}</div><div class="l">정기 업데이트 — 인과 판단 불가</div></div>
+      </div>
+    </div>
+    ${top ? `<div class="aihero">
+      <div class="h"><span class="ai-tag">AI 원인 가설</span><span>가장 많은 이슈 후보(${top.ai.length}개)가 원인으로 지목한 사건 · 확인된 원인이 아닙니다</span></div>
+      <div class="ev"><a href="${E(top.url)}" target="_blank" rel="noopener">${E(top.title)}</a></div>
+      <p><span class="hyp-tag">가설</span> ${E(top.ai[0].hypothesis)}</p>
+      <div class="others"><b style="color:#fff">AI가 원인으로 지목한 사건 순위</b>${[...hits].sort((a, b) => b.ai.length - a.ai.length || (a.date < b.date ? 1 : -1)).slice(0, 4).map((h, k) => `<div class="num" style="display:grid;grid-template-columns:18px 1fr auto;gap:8px;margin-top:4px"><span>${k + 1}</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${E(h.title)}</span><span>후보 ${h.ai.length}개</span></div>`).join("")}</div>
+      <div class="others num">${top.date} · ${E(top.kind)} · AI 정독 요약(Opus 5.5 · 후보마다 6건 정독) · 국내 최근 AI 결론(${aiW} 주, AI 초안): “${E(wk.conclusion || "없음")}”</div>
+    </div>` : ""}
+  </header>
+  <div class="filters" role="region" aria-label="필터">
+    <div class="chips" role="group" aria-label="종류">${["전체", ...KINDS].map(k => `<button type="button" class="chip" data-kind="${k}" aria-pressed="${S.kind === k}">${k}<b>${k === "전체" ? EVENTS.length : counts[k]}</b></button>`).join("")}</div>
+    <label class="tog"><input type="checkbox" id="onlyAI" ${S.onlyAI ? "checked" : ""}> AI가 원인으로 지목한 사건만</label>
+    <div class="seg" role="group" aria-label="지표">${[["neg", "부정 비율"], ["posts", "글 수 지수(평시=100)"]].map(([k, t]) => `<button type="button" data-metric="${k}" aria-pressed="${S.metric === k}">${t}</button>`).join("")}</div>
+    <div class="legend">${COMS.map(c => `<span><i style="background:${HEX[c.id]}"></i>${E(c.name)}</span>`).join("")}</div>
+  </div>
+  ${shownWeeks.length ? shownWeeks.map(w => {
+    const v = K.weekly(D, "국내", w), evs = list.filter(e => e.week === w);
+    return `<section class="week"><div class="wh"><h2 class="num">${w} 주</h2><div class="wc">${v.conclusion ? `<span class="ai-tag solid" style="font-size:10.5px">AI 초안 결론</span><em>${E(v.conclusion)}</em>` : `<span>AI 결론 없음${(v.items || []).length ? ` · 이슈 후보 ${v.items.length}건` : " · 이슈 후보 없음"}</span>`}<span class="num">· 사건 ${evs.length}개</span></div></div>
+      <div class="grid">${evs.map(e => card(D, e)).join("")}</div></section>`;
+  }).join("") : `<div class="empty" style="margin-top:24px">조건에 맞는 사건이 없습니다.</div>`}
+  ${weeks.length > S.shown ? `<button type="button" class="more" id="more">이전 주 더 보기(${weeks.length - S.shown}주 남음)</button>` : ""}
+  ${methodHTML(D)}`;
+  bind();
+}
+function methodHTML(D){
+  const c = K.chosenCombo(D);
+  return `<div class="method">
+    <section><h4>AI 지목 판정</h4><ul><li>이슈 후보마다 AI(Opus 5.5)가 글 6건(추천 상위 3 · 무작위 3)을 정독하고, 같은 주 업데이트 · 공지 목록에서 원인 가설의 사건을 고릅니다.</li><li>카드의 사건 이름과 가설의 사건 이름이 같을 때만 '지목'으로 표시합니다. 원인은 가설이며 확인된 인과가 아닙니다.</li></ul></section>
+    <section><h4>기울기 차트</h4><ul><li>부정 비율 = AI 감성 분류 부정 ÷ 분류 글(정확도 ${(c.sentiment.accuracy * 100).toFixed(1)}% ±${(c.sentiment.ci95 * 100).toFixed(1)}, 95% 구간 · 무작위 표본 ${c.sentiment.n}건).</li><li>글 수 지수 = 그 주 글 수 ÷ 평시(직전 ${D.rules.base_weeks}주 평균) × 100.</li><li>인벤 자유게시판은 2026-10-05 주부터 수집해 이전 카드에는 선이 없습니다.</li></ul></section>
+    <section><h4>한계</h4><ul><li>정기 업데이트는 거의 매주 있어 그 주 변화와의 인과를 판단할 수 없습니다(데이터 문구 그대로 표시).</li><li>같은 주에 여러 사건이 겹치면 기울기는 사건별로 나눌 수 없습니다.</li><li>${E(D.limits[1] || "")}</li></ul></section>
+  </div>`;
+}
+function bind(){
+  document.querySelectorAll("[data-kind]").forEach(b => b.onclick = () => { S.kind = b.dataset.kind; S.shown = 6; render(); });
+  document.querySelectorAll("[data-metric]").forEach(b => b.onclick = () => { S.metric = b.dataset.metric; render(); });
+  const o = document.getElementById("onlyAI"); if (o) o.onchange = () => { S.onlyAI = o.checked; S.shown = 6; render(); };
+  const m = document.getElementById("more"); if (m) m.onclick = () => { S.shown += 6; render(); };
+}
+
+K.load().then(d => {
+  DATA = d;
+  const g = (d.D.generated_at || "").replace("T", " ").slice(0, 16);
+  document.getElementById("gen").textContent = "데이터 생성 시각 " + g;
+  document.getElementById("gen2").textContent = "데이터 생성 " + g;
+  COMS = K.communities(d.D, "국내");
+  EVENTS = buildEvents(d.D);
+  render();
+  document.body.dataset.ready = "1";
+}).catch(err => {
+  document.getElementById("app").innerHTML = `<div class="state err">데이터를 읽지 못했습니다: ${K.esc(err.message)}<br><span style="color:var(--ink2)">저장소 루트에서 정적 서버로 여세요(예: python3 -m http.server 후 /mockups/15-event-cards.html).</span></div>`;
+  document.body.dataset.ready = "error";
+});
+</script>
+</body>
+</html>

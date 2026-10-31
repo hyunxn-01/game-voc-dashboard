@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>11 운영실 벽 화면 · 로스트아크 VOC 견본</title>
+<style>
+:root{
+  --bg:#06080c; --panel:#0d1118; --panel2:#121823; --line:#1f2733; --ink:#eef2f7; --ink2:#a9b3c2; --muted:#6c7787;
+  --c-inven:#3987e5; --c-arca:#d95926; --c-lostark_free:#199e70; --c-reddit:#9085e9;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --ai:#f5c04a; --ai-bg:#1b1606; --ai-line:#4d3d10;
+  --font:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg)}
+body{color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.45;min-height:100vh}
+a{color:inherit}
+.num{font-variant-numeric:tabular-nums}
+.wall{max-width:1600px;margin:0 auto;padding:16px 24px 0}
+.bar{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;padding:6px 4px 14px}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand b{font-size:18px;letter-spacing:-.01em}
+.brand span{font-size:12px;color:var(--ink2)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--good)}
+.scene-name{text-align:center;font-size:14px;color:var(--ink2)}
+.scene-name b{color:var(--ink);font-size:16px;margin-left:6px}
+.ctl{display:flex;align-items:center;gap:12px}
+.dots{display:flex;gap:8px}
+.dots button{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink2);font:inherit;font-size:12px;cursor:pointer;font-variant-numeric:tabular-nums}
+.dots button[aria-current="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:700}
+.pause{border:1px solid var(--ink2);background:transparent;color:var(--ink);font:inherit;font-size:13px;border-radius:8px;padding:6px 12px;cursor:pointer;min-width:92px}
+button:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+.prog{height:3px;background:var(--line);border-radius:2px;overflow:hidden;margin:0 4px 14px}
+.prog span{display:block;height:100%;width:0;background:var(--ink2)}
+.stage{position:relative;display:grid;aspect-ratio:16/9;background:var(--panel);border:1px solid var(--line);border-radius:18px}
+.scene{grid-area:1/1;padding:40px 48px;display:flex;flex-direction:column;gap:24px;visibility:hidden;opacity:0;transition:opacity .45s}
+.scene.on{visibility:visible;opacity:1}
+@media (prefers-reduced-motion:reduce){.scene{transition:none}}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.sh h2{margin:0;font-size:40px;letter-spacing:-.03em;line-height:1.1}
+.sh .k{font-size:15px;color:var(--ink2);margin-bottom:8px}
+.sh .r{font-size:14px;color:var(--ink2);text-align:right}
+.ai-tag{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;color:var(--ai);border:1.5px solid var(--ai);border-radius:6px;padding:3px 9px;letter-spacing:.02em}
+.ai-tag::before{content:"AI";background:var(--ai);color:#120e02;border-radius:3px;padding:0 5px;font-size:11px}
+.calc-tag{display:inline-flex;font-size:12px;font-weight:700;color:var(--ink2);border:1px solid var(--ink2);border-radius:6px;padding:2px 8px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:800;border-radius:6px;padding:4px 10px}
+.badge.surge{background:var(--serious);color:#160700}
+.badge.ok{background:transparent;color:var(--ink2);border:1px solid var(--line)}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+
+/* scene 1 */
+.nums{display:grid;grid-template-columns:1fr 1fr 1fr 0.9fr;gap:18px;flex:1}
+.nc{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.nc.surge{border-color:#6b3a28;box-shadow:inset 0 3px 0 var(--serious)}
+.nc.glob{background:transparent;border-style:dashed}
+.nc .nm{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:700}
+.nc .rg{margin-left:auto;font-size:12px;color:var(--muted);font-weight:500}
+.hero{font-size:104px;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.hero small{font-size:40px;letter-spacing:-.02em;margin-left:4px}
+.nc.glob .hero,.nc.small .hero{font-size:80px;color:var(--ink2)}
+.nc .cmp{font-size:16px;color:var(--ink2)}
+.nc .cmp b{color:var(--ink);font-size:22px}
+.nc .why{font-size:13px;color:var(--ink2);min-height:36px}
+.nc svg{display:block;width:100%;height:auto}
+.sig{margin-top:auto;display:grid;grid-template-columns:1fr auto auto;gap:3px 10px;font-size:13px;color:var(--ink2);border-top:1px solid var(--line);padding-top:10px}
+.sig b{color:var(--ink);text-align:right}
+.sig span:nth-child(3n){text-align:right}
+
+/* memo */
+.memo{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;flex:1;min-height:0}
+.memo-ai{background:var(--ai-bg);border:1px solid var(--ai-line);border-radius:16px;padding:28px 30px;display:flex;flex-direction:column;gap:16px}
+.memo-ai .hdr{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;color:#d9c48a}
+.memo-ai p{margin:0;font-size:27px;line-height:1.5;letter-spacing:-.01em;color:#fbf3dc;font-weight:500}
+.memo-ai .note{font-size:13px;color:#b9a46a;margin-top:auto;border-top:1px solid var(--ai-line);padding-top:12px}
+.memo-r{display:flex;flex-direction:column;gap:18px;min-width:0}
+.blk h3{margin:0 0 8px;font-size:14px;color:var(--ink2);font-weight:600;display:flex;gap:8px;align-items:center}
+.reasons{display:flex;flex-direction:column;gap:6px}
+.reasons div{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.hyp{border-left:3px solid var(--ai);padding:2px 0 2px 12px;font-size:15px;color:#e8dcc0;margin-bottom:8px}
+.hyp b{color:var(--ai);font-size:12px;margin-right:6px}
+.hyp em{font-style:normal;color:var(--muted);font-size:12px;display:block}
+.subs{display:flex;flex-direction:column;gap:8px}
+.sub{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:15px}
+.sub span{color:var(--ink2);font-variant-numeric:tabular-nums}
+.sub q{grid-column:1/3;font-size:13px;color:var(--ink2);quotes:none}
+.sub q a{text-underline-offset:3px;color:var(--ink2)}
+.reads{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;font-size:12.5px}
+.reads li{display:flex;gap:6px;min-width:0;align-items:baseline}
+.reads em{font-style:normal;font-size:10.5px;color:var(--muted);white-space:nowrap}
+.reads a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink2);text-underline-offset:3px;min-width:0}
+
+/* keywords */
+.kw{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1}
+.kwc{display:flex;flex-direction:column;gap:6px;min-width:0}
+.kwc h3{margin:0 0 6px;display:flex;align-items:center;gap:8px;font-size:18px}
+.kwr{display:grid;grid-template-columns:150px 1fr 130px;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.kwr .w{font-size:34px;font-weight:800;letter-spacing:-.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kwr .bar{height:14px;background:#1a212d;border-radius:4px;position:relative}
+.kwr .bar span{position:absolute;left:0;top:0;bottom:0;border-radius:0 4px 4px 0}
+.kwr .v{text-align:right;font-size:14px;color:var(--ink2);line-height:1.3}
+.kwr .v b{font-size:24px;color:var(--ink);display:block}
+.kwr .ai1{grid-column:1/4;font-size:13.5px;color:#e8dcc0;display:flex;gap:8px;align-items:flex-start}
+.kwr .ai1 .ai-tag{font-size:11px;padding:1px 6px;flex:none}
+.none{color:var(--muted);font-size:14px;border:1px dashed var(--line);border-radius:12px;padding:18px}
+
+/* weekly */
+.wk{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;flex:1}
+.wkc{border:1px solid var(--line);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column;gap:14px;background:var(--panel2)}
+.wkc .rg{font-size:14px;color:var(--ink2)}
+.wkc .cc{font-size:38px;font-weight:700;line-height:1.3;letter-spacing:-.02em;color:#fbf3dc}
+.wkc.small .cc{font-size:30px}
+.its{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--ink2)}
+.its li{display:flex;gap:10px;align-items:baseline}
+.its li{padding-bottom:10px;border-bottom:1px solid var(--line)}
+.its .fx{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.its .ins{display:block;font-size:14px;color:#e8dcc0;margin-top:3px}
+.lvl{font-size:12px;font-weight:800;border-radius:5px;padding:1px 7px;white-space:nowrap}
+.lvl.높음{background:var(--crit);color:#fff}.lvl.보통{background:var(--warn);color:#1a1200}.lvl.관찰{background:#2a3241;color:var(--ink2)}
+
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;color:var(--muted);padding:14px 4px 30px}
+.meta a{color:var(--ink2)}
+#tip{position:fixed;pointer-events:none;background:#eef2f7;color:#06080c;font-size:12px;padding:6px 9px;border-radius:6px;opacity:0;z-index:30;font-variant-numeric:tabular-nums}
+#tip.on{opacity:1}
+.state{grid-area:1/1;display:flex;align-items:center;justify-content:center;color:var(--ink2);font-size:18px;text-align:center;padding:40px}
+.state.err{color:var(--serious)}
+
+@media (max-width:1200px){
+  .stage{aspect-ratio:auto}
+  .scene{display:none}.scene.on{display:flex}
+  .memo-ai .note{margin-top:8px}
+  .nums{grid-template-columns:1fr 1fr}
+  .memo,.wk,.kw{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wall{padding:12px 16px 0}
+  .bar{grid-template-columns:1fr;gap:10px}
+  .scene-name{text-align:left}
+  .scene{padding:20px 16px;gap:16px}
+  .sh h2{font-size:26px}
+  .sh .r{text-align:left}
+  .nums{grid-template-columns:1fr}
+  .hero{font-size:72px}.nc.glob .hero,.nc.small .hero{font-size:56px}
+  .memo-ai{padding:18px}
+  .memo-ai p{font-size:19px}
+  .reasons div{font-size:17px}
+  .reads{grid-template-columns:1fr}
+  .kwr{grid-template-columns:96px 1fr 84px;gap:8px}
+  .kwr .w{font-size:22px}
+  .kwr .v b{font-size:18px}
+  .wkc .cc{font-size:24px}.wkc.small .cc{font-size:21px}
+  .wkc{padding:18px}
+  .dots button{width:28px;height:28px}
+}
+</style>
+</head>
+<body>
+<div class="wall">
+  <div class="bar">
+    <div class="brand"><b>로스트아크 VOC 운영실</b><span id="daytag" class="num">일별 상황판 · 불러오는 중</span></div>
+    <div class="scene-name" id="sname" aria-live="polite"></div>
+    <div class="ctl"><div class="dots" id="dots" role="tablist" aria-label="장면"></div><button type="button" class="pause" id="pause" aria-pressed="false">❚❚ 일시정지</button></div>
+  </div>
+  <div class="prog" aria-hidden="true"><span id="prog"></span></div>
+  <div class="stage" id="stage"><div class="state">데이터를 읽는 중…</div></div>
+  <div class="meta"><span>견본 11 · 운영실 벽 화면</span><span>견본 — 실제 데이터, 예시 값은 표시(이 화면에는 예시 값 없음)</span><span id="gen">데이터 생성 시각 –</span><span>8초마다 장면 전환 · 스페이스 일시정지 · ←/→ 이동</span><a href="./index.html">견본 목록</a></div>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>
+/* ===== VOC KIT (데이터 읽기 공용 코드) — 각 견본 HTML 안에 그대로 복사해 쓴다 ===== */
+const K = (() => {
+  const ROOT = "..";               // mockups/ 아래에서 저장소 루트
+  const j = p => fetch(`${ROOT}/${p}`, {cache: "no-store"}).then(r => { if (!r.ok) throw new Error(p + " HTTP " + r.status); return r.json(); });
+  const opt = p => j(p).catch(() => null);
+
+  async function load() {
+    const games = await j("games.json");
+    const g = games.games.find(x => x.file) || {id: "lostark", file: "data/lostark.json"};
+    const [D, daily, monthly] = await Promise.all([j(g.file), opt(`data/${g.id}-daily.json`), opt(`data/${g.id}-monthly.json`)]);
+    return {games, game: g, D, daily, monthly};
+  }
+
+  // ---------- 주 · 지역 ----------
+  const idx = (D, week) => D.weeks.indexOf(week);
+  const latestWeek = D => D.weeks[D.weeks.length - 1];
+  // AI 결론(conclusion)이 있는 가장 최근 주. 없으면 마지막 주.
+  function aiWeek(D, region) {
+    const W = D.weekly[region] || {};
+    for (let i = D.weeks.length - 1; i >= 0; i--) { const w = W[D.weeks[i]]; if (w && w.conclusion) return D.weeks[i]; }
+    return latestWeek(D);
+  }
+  const weekly = (D, region, week) => (D.weekly[region] || {})[week] || {conclusion: null, insights: [], items: [], responses: []};
+  const summary = (D, region, week) => (D.summary[region] || {})[week] || null;
+  const communities = (D, region) => D.communities.filter(c => c.enabled && (!region || c.region === region));
+  const comName = (D, id) => (D.communities.find(c => c.id === id) || {}).name || id;
+  const boardsOf = (D, comId) => D.boards.filter(b => b.community === comId);
+
+  // ---------- 시리즈 (52주 배열, D.weeks와 같은 순서) ----------
+  // scope 예: "community:arca", "region:국내", "board:inven:6271"
+  // metric 예: "posts", "neg", "topic:operation", "topic_neg:churn", "group:보석", "signal:이탈 표현", "opinion:complaint"
+  // field: value(비중 또는 건수) · base(평시=직전 8주 평균) · ratio(value/base) · diff(neg류: value-base) · count · den · z · n_base
+  const ser = (D, scope, metric, field = "value") => (((D.series[scope] || {})[metric] || {})[field]) || D.weeks.map(() => null);
+  const at = (D, scope, metric, field, week) => ser(D, scope, metric, field)[idx(D, week)];
+  const lastN = (arr, i, n = 13) => arr.slice(Math.max(0, i - n + 1), i + 1);
+  const weeksN = (D, week, n = 13) => lastN(D.weeks, idx(D, week), n);
+
+  // 글 수 지수(평시=100) — 게시판별 D.ratio[boardKey][i] * 100, 커뮤니티는 series community:<id> posts ratio
+  const postsIndex = (D, scope, week) => { const r = at(D, scope, "posts", "ratio", week); return r == null ? null : Math.round(r * 100); };
+
+  // ---------- 분류 블록(감성 · 주제 · 의견) ----------
+  // block 키: "community:arca", "region:국내", "board:inven:6271"
+  const block = (D, key, week) => (D.classified_blocks[key] || [])[idx(D, week)] || null;
+  // 순감성 지수 = (긍정-부정)/(긍정+부정). 데이터의 net 필드가 같은 값. 주제 '기타'는 제외된 상태.
+  const net = b => b ? b.net : null;
+  const sentShares = b => { if (!b) return null; const o = b.overall, n = o.pos + o.neg + o.neu + o.unk; return n ? {pos: o.pos / n, neg: o.neg / n, neu: o.neu / n, unk: o.unk / n, n} : null; };
+  const topicName = (D, id) => (D.topics.find(t => t.id === id) || {}).name || id;
+  const opinionName = (D, id) => (D.opinions.find(t => t.id === id) || {}).name || id;
+  // 주제별 부정 비율: topic_senti[t].neg / (neg+neu+pos+unk)
+  function topicNeg(b) {
+    if (!b || !b.topic_senti) return [];
+    return Object.entries(b.topic_senti).map(([t, s]) => { const n = s.neg + s.neu + s.pos + s.unk; return {topic: t, n, neg: n ? s.neg / n : null, pos: n ? s.pos / n : null}; });
+  }
+
+  // ---------- 이슈 후보 · AI 판단 · 정독 ----------
+  const candidates = (D, region, week) => ((D.candidates[region] || {})[week]) || [];
+  const deepread = (D, id) => D.deepread[id] || null;     // {model, read:[{title,url,group:"추천 상위"|"무작위",recommends,comments,date}], result:{summary,subissues:[{name,count,quote,quote_post}],causes:[{event,hypothesis}],confidence:"high|medium|low",endorsed_vs_common}}
+  const CONF = {high: "높음", medium: "보통", low: "낮음"};
+  const rising = (D, region, week) => ((D.rising[region] || {})[week]) || [];   // [{word,count,base,ratio,new,community,reps:[{title,url,...}]}]
+  const reps = (D, region, week) => (((D.representatives[region] || {})[week]) || {});   // {metricId: [{community, posts:[...]}], posts:[...]}
+
+  // ---------- 운영 대응 ----------
+  // weekly(...).responses: [{date, kind:"문제 안내|소통|제재|변경 예고", reward, title, url}]
+  // 대응 전후 비교: 그 주와 다음 주의 커뮤니티 부정 비율
+  function beforeAfterNeg(D, comId, week) {
+    const i = idx(D, week), s = ser(D, "community:" + comId, "neg");
+    return {before: s[i] ?? null, after: i + 1 < s.length ? s[i + 1] ?? null : null, nextWeek: D.weeks[i + 1] || null};
+  }
+  const updatesIn = (D, week) => D.updates.filter(u => u.week === week && u.server === "kr");
+  const eventsIn = (D, week) => D.other_events.filter(u => u.week === week);
+
+  // ---------- 게임 지표 ----------
+  const pcbang = (D, week) => (D.game_metrics.pcbang || []).find(p => p.period_start === week) || null; // {rank, share(%), hours, wow(%), url, source}
+  const steam = (D, week) => (D.game_metrics.steam || []).find(p => p.week === week) || null;          // {max, avg, granularity}
+
+  // ---------- 만든 방법 ----------
+  const chosenCombo = D => D.method.compare.combos.find(c => c.chosen);  // {name, topic:{accuracy,ci95,n}, sentiment:{...}, opinion:{...}, monthly_total_usd:[lo,hi]}
+  const spendTotal = D => Object.values(D.method.spend).reduce((a, b) => a + b, 0);
+
+  // ---------- 표시 형식 ----------
+  const num = v => v == null ? "–" : Math.round(v).toLocaleString("ko-KR");
+  const pct = (v, d = 1) => v == null ? "–" : (v * 100).toFixed(d) + "%";
+  const pp = (v, d = 1) => v == null ? "–" : (v >= 0 ? "+" : "") + (v * 100).toFixed(d) + "%p";
+  const times = (v, d = 1) => v == null ? "–" : v.toFixed(d) + "배";
+  const signed = (v, d = 2) => v == null ? "–" : (v >= 0 ? "+" : "") + v.toFixed(d);
+  const md = w => { const [, m, d] = w.split("-"); return `${+m}/${+d}`; };
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+
+  // ---------- 아주 작은 SVG 그리기 ----------
+  // spark(values, {w,h,stroke,fill,base}) → svg 문자열. null은 끊어 그림.
+  function spark(vals, o = {}) {
+    const w = o.w || 120, h = o.h || 32, p = 2, v = vals.filter(x => x != null);
+    if (!v.length) return `<svg width="${w}" height="${h}"></svg>`;
+    let lo = Math.min(...v, o.base ?? Infinity), hi = Math.max(...v, o.base ?? -Infinity); if (lo === hi) { lo -= 1; hi += 1; }
+    const X = i => p + i * (w - 2 * p) / Math.max(1, vals.length - 1), Y = x => h - p - (x - lo) * (h - 2 * p) / (hi - lo);
+    let d = "", pen = false; vals.forEach((x, i) => { if (x == null) { pen = false; return; } d += (pen ? "L" : "M") + X(i).toFixed(1) + " " + Y(x).toFixed(1); pen = true; });
+    const base = o.base != null ? `<line x1="${p}" x2="${w - p}" y1="${Y(o.base)}" y2="${Y(o.base)}" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="2 2"/>` : "";
+    const li = vals.length - 1 - [...vals].reverse().findIndex(x => x != null);
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${base}<path d="${d}" fill="none" stroke="${o.stroke || "currentColor"}" stroke-width="${o.sw || 1.5}" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(li)}" cy="${Y(vals[li])}" r="2.5" fill="${o.stroke || "currentColor"}"/></svg>`;
+  }
+
+  return {load, idx, latestWeek, aiWeek, weekly, summary, communities, comName, boardsOf, ser, at, lastN, weeksN, postsIndex,
+    block, net, sentShares, topicName, opinionName, topicNeg, candidates, deepread, CONF, rising, reps, beforeAfterNeg, updatesIn, eventsIn,
+    pcbang, steam, chosenCombo, spendTotal, num, pct, pp, times, signed, md, esc, spark};
+})();
+/* ===== /VOC KIT ===== */
+
+const HEX = {inven:"#3987e5", arca:"#d95926", lostark_free:"#199e70", reddit:"#9085e9"};
+const DUR = 8000;
+const E = K.esc;
+const DOW = ["일","월","화","수","목","금","토"];
+const dow = d => DOW[new Date(d + "T12:00:00").getDay()];
+let scenes = [], cur = 0, paused = false, t0 = 0, raf = null;
+
+/* tooltip */
+const tip = document.getElementById("tip");
+document.addEventListener("mouseover", e => { const t = e.target.closest("[data-tip]"); if (t) { tip.innerHTML = t.dataset.tip; tip.classList.add("on"); } });
+document.addEventListener("mousemove", e => { if (tip.classList.contains("on")) { const r = tip.getBoundingClientRect(); let x = e.clientX + 12, y = e.clientY - r.height - 10; if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 12; tip.style.left = x + "px"; tip.style.top = Math.max(8, y) + "px"; } });
+document.addEventListener("mouseout", e => { if (e.target.closest("[data-tip]")) tip.classList.remove("on"); });
+
+/* ---------- scenes ---------- */
+function trendBars(daily, c){
+  const ds = c.trend.dates, vs = c.trend.posts, sd = daily.series.dates, sb = ((daily.series.posts["community:" + c.community_id] || {}).base) || [];
+  const base = ds.map(d => { const k = sd.indexOf(d); return k < 0 ? null : sb[k]; });
+  const all = [...vs, ...base].filter(v => v != null), hi = Math.max(...all, 1);
+  const W = 300, H = 80, bw = W / ds.length;
+  let g = `<line x1="0" x2="${W}" y1="${H}" y2="${H}" stroke="#2a3342"/>`;
+  ds.forEach((d, k) => {
+    const v = vs[k], h = v == null ? 0 : v / hi * (H - 4), last = k === ds.length - 1;
+    g += `<rect x="${k * bw + 2}" y="${H - h}" width="${bw - 4}" height="${h}" rx="2" fill="${HEX[c.community_id]}" opacity="${last ? 1 : .38}"/>`;
+    if (base[k] != null) g += `<line x1="${k * bw + 1}" x2="${k * bw + bw - 1}" y1="${H - base[k] / hi * (H - 4)}" y2="${H - base[k] / hi * (H - 4)}" stroke="#eef2f7" stroke-width="2" opacity=".7"/>`;
+    g += `<rect x="${k * bw}" y="0" width="${bw}" height="${H}" fill="transparent" data-tip="${E(`${d}(${dow(d)}) ${v == null ? "수집 전" : K.num(v) + "건"}${base[k] != null ? ` · 같은 요일 평균 ${K.num(base[k])}건` : ""}`)}"/>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H + 18}" role="img" aria-label="최근 14일 글 수"><g>${g}</g><text x="0" y="${H + 14}" font-size="10" fill="#6c7787">${K.md(ds[0])}</text><text x="${W}" y="${H + 14}" font-size="10" fill="#6c7787" text-anchor="end">${K.md(ds[ds.length - 1])}</text></svg>`;
+}
+function sceneNumbers(d){
+  const daily = d.daily, rules = daily.rules;
+  const cards = daily.communities.map(c => {
+    const small = c.posts.value != null && c.posts.value < rules.surge_min_posts;
+    const glob = c.region === "해외";
+    const why = c.surge ? c.surge_reasons.map(E).join("<br>") : small ? `글 ${K.num(c.posts.value)}건 — 최소 ${rules.surge_min_posts}건 미만이라 급증 판정 제외` : `급증 기준(같은 요일 평균의 ${rules.surge_ratio}배) 미만`;
+    const sig = Object.entries(c.signals || {}).map(([k, s]) => `<span>${E(k)}</span><b class="num">${K.num(s.value)}</b><span class="num">${s.ratio == null ? "–" : K.times(s.ratio)}</span>`).join("");
+    return `<div class="nc ${c.surge ? "surge" : ""} ${glob ? "glob" : ""} ${small ? "small" : ""}">
+      <div class="nm"><i class="dot" style="background:${HEX[c.community_id]}"></i>${E(c.community)}<span class="rg">${E(c.region)}</span></div>
+      <div>${c.surge ? `<span class="badge surge">▲ 급증</span>` : `<span class="badge ok">${small ? "– 표본 적음" : "● 평소 범위"}</span>`}</div>
+      <div class="hero">${c.posts.ratio == null ? "–" : c.posts.ratio.toFixed(2)}<small>배</small></div>
+      <div class="cmp num"><b>${K.num(c.posts.value)}건</b> · ${E(c.base_kind)} ${c.posts.base == null ? "–" : K.num(c.posts.base)}건</div>
+      <div class="why num">${why}</div>
+      ${trendBars(daily, c)}
+      <div class="sig">${sig}</div>
+    </div>`;
+  }).join("");
+  return {name:"오늘의 숫자", html:`
+    <div class="sh"><div><div class="k"><span class="calc-tag">계산</span> 같은 요일 평균(직전 ${daily.rules.same_weekday_weeks}주) 대비 글 수 배수</div><h2>${daily.date}(${dow(daily.date)}) 커뮤니티별 글 수</h2></div>
+    <div class="r num">막대 = 최근 14일 글 수 · 흰 선 = 같은 요일 평균<br>신호 = 제목 키워드 집계(건수 · 배수)</div></div>
+    <div class="nums">${cards}</div>`};
+}
+function sceneMemo(d, mc){
+  const daily = d.daily, sm = daily.surge_memo, all = mc.reads.find(r => r.label === "그날 글 전체") || mc.reads[0];
+  if (!all || all.status !== "ok") return null;
+  const r = all.result, read = all.read || [];
+  const nTop = read.filter(x => x.group === "추천 상위").length, nRnd = read.length - nTop;
+  const subs = [...(r.subissues || [])].sort((a, b) => b.count - a.count).slice(0, 3);
+  return {name:`AI 급증 메모 · ${mc.community}`, html:`
+    <div class="sh"><div><div class="k"><i class="dot" style="background:${HEX[mc.community_id]};vertical-align:-1px"></i> ${E(mc.community)} · ${daily.date}(${dow(daily.date)}) 급증일</div><h2>왜 늘었나 — AI가 그날 글을 읽고 쓴 메모</h2></div>
+    <div class="r num">정독 비용 $${all.cost_usd.toFixed(3)} · 그날 글 ${K.num(all.count)}건 중 ${read.length}건</div></div>
+    <div class="memo">
+      <div class="memo-ai">
+        <div class="hdr"><span class="ai-tag">AI 정독 요약(Opus 5.5 · ${read.length}건 정독)</span><span>추천 상위 ${nTop} · 무작위 ${nRnd}</span><span>· 확신도 <b>${E(K.CONF[r.confidence] || r.confidence)}</b></span></div>
+        <p>${E(r.summary)}</p>
+        <div class="note">${E(sm.note || "")}</div>
+      </div>
+      <div class="memo-r">
+        <div class="blk"><h3><span class="calc-tag">계산</span>급증 판정 근거</h3><div class="reasons">${mc.reasons.map(x => `<div class="num">${E(x)}</div>`).join("")}</div></div>
+        <div class="blk"><h3><span class="ai-tag" style="font-size:11px;padding:1px 6px">원인 가설</span>확인된 원인이 아닙니다</h3>${r.causes.map(c => `<div class="hyp"><b>가설</b>${E(c.hypothesis)}<em>${c.event && c.event !== "없음" ? "연결 사건: " + E(c.event) : "공지 · 업데이트 목록에 없는 사건"}</em></div>`).join("")}</div>
+        <div class="blk"><h3>하위 문제(정독 ${read.length}건 중)</h3><div class="subs">${subs.map(s => { const p = read[(s.quote_post || 0) - 1]; return `<div class="sub">${E(s.name)}<span>${s.count}/${read.length}건</span>${s.quote ? `<q>“${p ? `<a href="${E(p.url)}" target="_blank" rel="noopener">${E(s.quote)}</a>` : E(s.quote)}”</q>` : ""}</div>`; }).join("")}</div></div>
+        <div class="blk"><h3>읽은 글 원문</h3><ul class="reads">${read.map(p => `<li><em>${E(p.group)}</em><a href="${E(p.url)}" target="_blank" rel="noopener" title="${E(p.title)}">${E(p.title)}</a></li>`).join("")}</ul></div>
+      </div>
+    </div>`};
+}
+function firstSentence(t){ const m = String(t || "").match(/^.*?[다요]\./); return m ? m[0] : String(t || "").slice(0, 80); }
+function sceneKeywords(d){
+  const daily = d.daily, sm = daily.surge_memo || {communities: []};
+  const cols = daily.communities.map(c => {
+    const memo = (sm.communities.find(m => m.community_id === c.community_id) || {reads: []}).reads;
+    const rs = (c.rising || []).slice(0, 5), hi = Math.max(...rs.map(r => r.ratio), 1);
+    if (!rs.length) return {c, html:`<div class="kwc"><h3><i class="dot" style="background:${HEX[c.community_id]}"></i>${E(c.community)}</h3><div class="none">급상승 키워드 없음 — 기준(14일 평균의 ${daily.rules.rise_ratio}배 · 최소 ${daily.rules.rise_min[c.region]}건) 미달</div></div>`, empty: true};
+    return {c, html:`<div class="kwc"><h3><i class="dot" style="background:${HEX[c.community_id]}"></i>${E(c.community)}</h3>${rs.map(r => {
+      const rd = memo.find(m => m.label.indexOf(`'${r.word}'`) === 0);
+      return `<div class="kwr"><div class="w" title="${E(r.word)}">${E(r.word)}</div>
+        <div class="bar" data-tip="${E(`${r.word} · ${K.num(r.count)}건 · 14일 평균 ${r.base}건의 ${r.ratio}배`)}"><span style="width:${(r.ratio / hi * 100).toFixed(1)}%;background:${HEX[c.community_id]}"></span></div>
+        <div class="v num"><b>${r.ratio.toFixed(1)}배</b>${K.num(r.count)}건${r.new ? " · 새 단어" : ""}</div>
+        ${rd && rd.status === "ok" ? `<div class="ai1"><span class="ai-tag">정독 ${rd.read.length}건 · ${E(K.CONF[rd.result.confidence] || rd.result.confidence)}</span><span>${E(firstSentence(rd.result.summary))}</span></div>` : ""}
+      </div>`; }).join("")}</div>`};
+  });
+  const shown = cols.filter(x => !x.empty), rest = cols.filter(x => x.empty);
+  return {name:"급상승 키워드", html:`
+    <div class="sh"><div><div class="k"><span class="calc-tag">계산</span> 제목 낱말 · 최근 14일 평균 대비 배수 · ${daily.date}</div><h2>오늘 갑자기 많이 쓰인 낱말</h2></div>
+    <div class="r">노란 줄 = 그 낱말이 든 글을 AI가 정독한 요약 첫 문장</div></div>
+    <div class="kw">${shown.map(x => x.html).join("")}</div>
+    ${rest.length ? `<div class="none">${rest.map(x => E(x.c.community)).join(" · ")}: 급상승 키워드 없음(기준 미달)</div>` : ""}`};
+}
+function sceneWeekly(d){
+  const D = d.D;
+  const card = (region, small) => {
+    const w = K.aiWeek(D, region), wk = K.weekly(D, region, w), coms = K.communities(D, region);
+    return `<div class="wkc ${small ? "small" : ""}">
+      <div class="rg num">${region} · ${coms.map(c => E(c.name)).join(" · ")} · 기준 주 ${w}(AI 해석이 있는 가장 최근 주)</div>
+      <div><span class="ai-tag">AI 초안 결론</span></div>
+      <div class="cc">${E(wk.conclusion || "AI 결론 없음")}</div>
+      <ul class="its">${(wk.items || []).slice(0, 4).map(it => `<li><span class="lvl ${E(it.judgment?.level || "관찰")}">${it.judgment ? "AI 초안 " + E(it.judgment.level) : "판단 초안 없음"}</span><span><i class="dot" style="background:${HEX[it.community_id]};width:8px;height:8px;margin-right:5px"></i>${E(it.headline.lead)} <b style="color:var(--ink)">${E(it.headline.em)}</b> ${E(it.headline.tail)}<span class="fx num">계산 · ${E(it.facts)}</span>${it.draft && it.draft.insight ? `<span class="ins">AI 요약 · ${E(it.draft.insight)}</span>` : ""}</span></li>`).join("")}</ul>
+    </div>`;
+  };
+  return {name:"이번 주 AI 결론", html:`
+    <div class="sh"><div><div class="k">주간 · 일별 화면과 기준 날짜가 다릅니다</div><h2>이번 주를 AI는 이렇게 읽었다</h2></div>
+    <div class="r num">최신 수집 주 ${E(d.game.latest_week)} · 국내는 그 주 이슈 후보가 없어 한 주 앞의 결론<br>판단 등급은 모두 'AI 초안'(담당자 확인 전)</div></div>
+    <div class="wk">${card("국내")}${card("해외", true)}</div>`};
+}
+
+/* ---------- rotation ---------- */
+function show(i){
+  cur = (i + scenes.length) % scenes.length;
+  document.querySelectorAll(".scene").forEach((s, k) => { s.classList.toggle("on", k === cur); s.setAttribute("aria-hidden", k === cur ? "false" : "true"); });
+  document.querySelectorAll("#dots button").forEach((b, k) => b.setAttribute("aria-current", k === cur ? "true" : "false"));
+  document.getElementById("sname").innerHTML = `장면 ${cur + 1}/${scenes.length}<b>${E(scenes[cur].name)}</b>`;
+  t0 = performance.now();
+}
+function tick(now){
+  if (!paused) { const p = Math.min(1, (now - t0) / DUR); document.getElementById("prog").style.width = (p * 100) + "%"; if (p >= 1) show(cur + 1); }
+  raf = requestAnimationFrame(tick);
+}
+function setPaused(v){
+  paused = v; const b = document.getElementById("pause");
+  b.setAttribute("aria-pressed", v); b.textContent = v ? "▶ 재생" : "❚❚ 일시정지";
+  if (!v) t0 = performance.now() - (parseFloat(document.getElementById("prog").style.width) || 0) / 100 * DUR;
+}
+
+K.load().then(d => {
+  if (!d.daily) throw new Error("data/lostark-daily.json 없음");
+  const daily = d.daily;
+  document.getElementById("gen").textContent = `데이터 생성 시각 ${(d.D.generated_at || "").replace("T", " ").slice(0, 16)} · 일별 ${(daily.generated_at || "").replace("T", " ").slice(0, 16)}`;
+  document.getElementById("daytag").textContent = `일별 상황판 · 기준일 ${daily.date}(${dow(daily.date)}) · 국내 3곳 · 해외 1곳`;
+  scenes = [sceneNumbers(d), ...((daily.surge_memo || {}).communities || []).map(mc => sceneMemo(d, mc)).filter(Boolean), sceneKeywords(d), sceneWeekly(d)];
+  document.getElementById("stage").innerHTML = scenes.map((s, k) => `<section class="scene" aria-label="${E(s.name)}">${s.html}</section>`).join("");
+  document.getElementById("dots").innerHTML = scenes.map((s, k) => `<button type="button" role="tab" aria-label="${E(s.name)}" title="${E(s.name)}">${k + 1}</button>`).join("");
+  document.querySelectorAll("#dots button").forEach((b, k) => b.onclick = () => { show(k); });
+  document.getElementById("pause").onclick = () => setPaused(!paused);
+  document.addEventListener("keydown", e => {
+    if (e.target.closest("input,select,textarea")) return;
+    if (e.key === " ") { e.preventDefault(); setPaused(!paused); }
+    if (e.key === "ArrowRight") show(cur + 1);
+    if (e.key === "ArrowLeft") show(cur - 1);
+  });
+  const m = location.hash.match(/s=(\d+)/);
+  show(m ? +m[1] - 1 : 0);
+  if (m) setPaused(true);
+  raf = requestAnimationFrame(tick);
+  document.body.dataset.ready = "1";
+}).catch(err => {
+  document.getElementById("stage").innerHTML = `<div class="state err">데이터를 읽지 못했습니다: ${K.esc(err.message)}<br><span style="color:var(--ink2);font-size:14px">저장소 루트에서 정적 서버로 여세요(예: python3 -m http.server 후 /mockups/11-ops-wall.html).</span></div>`;
+  document.body.dataset.ready = "error";
+});
+</script>
+</body>
+</html>
