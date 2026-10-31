@@ -489,7 +489,7 @@ tr.chosen td { background: var(--tint); }
 .yd-t th, .yd-t td, .mt th, .mt td { padding: 6px 10px; font-size: 13.5px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
 .yd-t th, .mt th { color: var(--muted); font-weight: 500; font-size: 12.5px; }
 .yd-t .r, .mt .r { text-align: right; }
-.memo { margin-top: 12px; padding: 10px 12px; background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; }
+.memo { margin-top: 12px; padding: 10px 12px; background: var(--subtle); border-radius: 8px; }   /* 어제 칸(테두리 판) 안이라 테두리 없이 옅은 바탕만 둔다(카드 안에 카드 금지, DESIGN.md 확인할 점 8) */
 .memo h3, .yd-tops h3, .mstrong h3, .mcol h3 { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
 .memo-c + .memo-c { margin-top: 16px; }
 .memo-h { margin: 0 0 4px; font-size: 13.5px; color: var(--body); }
@@ -1839,7 +1839,7 @@ function renderMonthly() {
   const el = $("#v-monthly"), dm = DMON;
   if (!dm || !(dm.months || []).length) { el.innerHTML = `<section class="card" style="margin-top:14px"><div class="card-b"><p class="frame-empty">월간 보고가 아직 없다. 달이 끝난 다음 날 아침에 지난달 보고가 생긴다.</p></div></section>`; return; }
   const months = dm.months;
-  if (!state.month || !months.includes(state.month)) state.month = months.includes(INIT_Q.get("month")) ? INIT_Q.get("month") : months[months.length - 1];
+  if (!state.month || !months.includes(state.month)) state.month = months[months.length - 1];
   const rep = dm.reports[state.month], coms = rep.communities.filter(c => c.region === state.region);
   const ym = m => `${m.slice(0, 4)}년 ${+m.slice(5)}월`, md = s => s.slice(5).replace("-", "/").replace(/^0/, "").replace("/0", "/");
   let h = `<section class="card" style="margin-top:14px" aria-labelledby="h-mon"><div class="card-h"><h2 id="h-mon">${esc(ym(state.month))} 커뮤니티 동향</h2><span class="sub">${esc(md(rep.first))} ~ ${esc(md(rep.last))} · 커뮤니티의 모든 게시판을 그 달 내내 받은 곳만</span></div>
@@ -1912,6 +1912,8 @@ function queryFor(view, issue) {
   const q = new URLSearchParams();
   q.set("game", state.game); q.set("region", state.region); q.set("week", state.week);
   if (view && view !== "judge") q.set("view", view);
+  // 월간 보고에서 고른 달 · 커뮤니티도 주소에 남긴다(새로 고쳐도 그 달로 열린다, DESIGN.md 확인할 점 9)
+  if (view === "monthly") { if (state.month) q.set("month", state.month); if (state.mcom) q.set("mcom", state.mcom); }
   if (issue) q.set("issue", issue);
   return "?" + q.toString();
 }
@@ -1935,7 +1937,7 @@ function setWeek(w, issue) {
   if (issue) state.open.add(issue);
   renderAll(); setQuery();
 }
-// 주소 읽기: ?view= · ?week= · ?region= · ?issue=, 옛 ?tab= · #구간도 맞는 메뉴로 옮긴다
+// 주소 읽기: ?view= · ?week= · ?region= · ?issue= · ?month= · ?mcom=, 옛 ?tab= · #구간도 맞는 메뉴로 옮긴다
 function readUrl(q, hash) {
   let view = q.get("view");
   if (!VIEWS[view]) view = LEGACY_TAB[q.get("tab")] || LEGACY_TAB[hash] || "judge";
@@ -1943,7 +1945,7 @@ function readUrl(q, hash) {
   if (issue && !q.get("view")) view = "judge";
   let week = q.get("week");
   if (issue && !week) week = issue.split("/")[0];
-  return {view, issue, week, region: q.get("region"), anchor: hash === "topics" ? "topics" : hash === "rising" ? "rising" : null};
+  return {view, issue, week, region: q.get("region"), month: q.get("month"), mcom: q.get("mcom"), anchor: hash === "topics" ? "topics" : hash === "rising" ? "rising" : null};
 }
 // 주를 고르지 않고 들어오면(공개 주소 그대로) 이슈 후보가 있는 가장 최근 주를 연다. 가장 최근 주에 후보가 없을 때 첫 화면의
 // 판단 표가 비지 않게 하려는 것이다(2026-10-28 사용자 "공개주소를 그럼 10/14 화면으로 바꿔줘" · "이미 주소는 배포됐어"). 최근 13주에 없으면 가장 최근 주
@@ -1956,6 +1958,7 @@ function applyUrl(u) {
   if (u.region) state.region = u.region;
   state.view = u.view;
   state.week = D.weeks.includes(u.week) ? u.week : landingWeek();
+  state.month = u.month; state.mcom = u.mcom;   // 없는 달 · 커뮤니티면 renderMonthly가 가장 최근 달 · 첫 커뮤니티로 바꾼다
   state.open.clear();
   if (u.issue) state.open.add(u.issue);
 }
@@ -2002,7 +2005,7 @@ document.addEventListener("click", e => {
     $$("button", sg).forEach(b => b.setAttribute("aria-pressed", String(b === sb)));
     if (sg.id === "regionSeg") { if (val !== state.region) { state.region = val; state.scope = null; state.open.clear(); renderAll(); setQuery(); } return; }
     if (key === "trange") { state.trange = val; renderTrendView(); return; }
-    if (key === "month" || key === "mcom") { state[key] = val; renderMonthly(); return; }
+    if (key === "month" || key === "mcom") { state[key] = val; renderMonthly(); setQuery(); return; }
     if (key) { state[key] = val; drawTrend(); }
     return;
   }
