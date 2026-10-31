@@ -1773,7 +1773,7 @@ function renderHead() {
   $$(".nav a[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   const last = D.weeks[D.weeks.length - 1], next = addWeek(addWeek(last)), gen = D.generated_at;
   // 가장 최근 주가 아님을 알리는 글은 판 맨 위 한 줄(latestNote)로 옮겼다(Glance Test 수정 4)
-  // 다음 집계는 날짜만 적는다. 월요일 분석은 새벽 4시 수집이 끝난 뒤 서버에서 돌고, 수집은 3 ~ 6시간 넘게 걸려 끝나는 시각이 날마다 다르다(2026-10-31 실측)
+  // 다음 집계는 날짜만 적는다. 월요일 분석은 새벽 4시 수집이 끝난 뒤 서버에서 돌고, 수집 시간은 그날 글 수에 달려(인벤 글 한 건에 2초) 끝나는 시각이 날마다 다르다(2026-10-31 진단)
   $("#fresh").textContent = `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)})`;
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
   $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
