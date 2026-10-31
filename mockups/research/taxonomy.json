@@ -1,0 +1,6595 @@
+{
+ "title": "KPI 지표형 대시보드 요소 · 분류 체계 (조사 기반)",
+ "generated": "2026-10-31",
+ "method": "웹 검색(WebSearch) 결과 문장만으로 정리했다. 이 작업 환경은 네트워크 정책으로 웹페이지 열람(WebFetch · curl)이 막혀 있어, 모든 출처의 열람 상태는 '검색 결과만'이다. 축과 값은 조사한 대시보드들에서 반복해 나타난 패턴으로 정했고, 각 대시보드의 축 값은 검색 결과 문장에 나온 낱말로 판정했다(근거가 없으면 '확인 불가'). '읽기 구조' 축만 검색 결과의 배치 설명을 한 건씩 읽고 사람이 정했다. 같은 URL이 두 조사 묶음에서 나온 경우 하나로 합쳤다(also_ids).",
+ "counts": {
+  "dashboards": 120,
+  "opened": 0,
+  "search_only": 120,
+  "queries": 100
+ },
+ "axes": {
+  "ai_role": {
+   "name": "AI가 맡는 일",
+   "multi": true,
+   "definition": "대시보드에서 AI(LLM · ML · 규칙 기반 자동 분석)가 수행한다고 검색 결과가 밝힌 일.",
+   "values": {
+    "요약 · 서술": "지표 · 차트 · 글 묶음을 문장으로 요약하거나 서술한다(NLG, LLM 요약).",
+    "이상 탐지 · 알림": "평소 범위를 벗어난 급증 · 급감 · 감성 변화를 자동으로 찾아 표시하거나 알린다.",
+    "원인 분석": "변화의 원인 · 기여 요인 · 근본 원인을 제시한다(가설 포함).",
+    "분류 · 테마": "글 · 피드백을 주제 · 감성 · 의도 · 군집으로 자동 분류하거나 새 테마를 만든다.",
+    "질의응답": "사용자가 자연어로 묻고 AI가 답이나 차트를 만든다.",
+    "행동 추천": "다음 행동 · 개선 우선순위 · 시사점을 제안한다.",
+    "없음": "검색 결과에 AI 기능 언급이 없다."
+   }
+  },
+  "ai_placement": {
+   "name": "AI 해석이 놓이는 자리",
+   "multi": true,
+   "definition": "AI가 만든 문장 · 표시가 화면의 어디에, 무엇과 붙어 나타나는가.",
+   "values": {
+    "상단 요약 띠": "화면 맨 위에 전체 요약이 먼저 나오고 그 아래 지표가 이어진다.",
+    "차트 · 카드 옆": "AI 문장이 설명하는 차트 · KPI 카드 · 위젯 · 테마 바로 옆이나 안에 붙는다.",
+    "알림 · 스토리 피드": "탐지된 변화가 카드 목록(피드 · 타임라인)으로 쌓인다.",
+    "점 클릭 설명": "차트의 한 점 · 막대 · 기간을 누르면 그 지점의 설명 · 원문이 열린다.",
+    "질문창": "질문 입력창 · 대화 패널에서 답이 나온다.",
+    "문서 · 메일 보고": "보고서 · 슬라이드 · 메일 · 메신저 요약으로 따로 전달된다.",
+    "AI 없음": "AI 표시가 없다.",
+    "확인 불가": "AI는 있으나 놓이는 자리가 검색 결과에 없다."
+   }
+  },
+  "explain_depth": {
+   "name": "설명 단계",
+   "multi": false,
+   "definition": "AI 설명이 어디까지 가는가: 무엇이 변했나 → 왜 → 다음에 무엇을.",
+   "values": {
+    "무엇": "변화 · 요약만 말한다.",
+    "무엇 · 왜": "변화와 원인 · 기여 요인을 함께 말한다.",
+    "무엇 · 왜 · 다음": "변화 · 원인 · 다음 행동(추천)까지 말한다.",
+    "단계 선택": "읽는 사람이 설명 깊이(헤드라인 ~ 상세)를 고른다.",
+    "해당 없음": "AI 설명이 없다."
+   }
+  },
+  "evidence_link": {
+   "name": "근거 연결",
+   "multi": false,
+   "definition": "AI 문장에서 그 근거로 거슬러 올라가는 길.",
+   "values": {
+    "원 차트 연결": "문장 · 하이라이트가 근거가 된 차트 · 위젯으로 연결된다(인용 칩 · 문장 클릭).",
+    "원문 연결": "요약 · 테마에서 원래 글 · 리뷰 · 댓글 인용으로 내려간다.",
+    "둘 다": "차트와 원문 양쪽으로 연결된다.",
+    "확인 불가": "검색 결과에 근거 연결 언급이 없다.",
+    "해당 없음": "AI 설명이 없다."
+   }
+  },
+  "trust_signal": {
+   "name": "신뢰 표시",
+   "multi": true,
+   "definition": "AI 결과를 얼마나 믿을지 판단하게 돕는 장치.",
+   "values": {
+    "검토 필요 문구": "AI 결과는 사람 검토가 필요하다는 안내 · 면책 문구.",
+    "확신도 · 불확실성": "확신도 · 데이터 범위 · 최신성 · 요약이 낡았다는 표시.",
+    "정의 · 근거 공개": "주제 정의 · 사용 키워드 · 생성 질의 · 방법론을 보여 준다.",
+    "최소 데이터 조건": "데이터가 모자라면 요약 · 진단을 보류한다.",
+    "사람 교정": "사람이 분류를 고치거나 신호를 평가해 다음 결과에 반영한다.",
+    "확인 불가": "검색 결과에 언급이 없다."
+   }
+  },
+  "kpi_form": {
+   "name": "KPI 표현 단위",
+   "multi": true,
+   "definition": "핵심 숫자를 어떤 시각 단위로 보여 주는가.",
+   "values": {
+    "큰 숫자 + 비교": "큰 숫자 하나에 직전 · 목표 · 평소 대비 값을 붙인 카드 · 타일.",
+    "숫자 + 스파크라인": "숫자 아래 · 옆에 작은 추세선.",
+    "불릿 · 진행 막대": "현재 값 막대와 목표 · 기준 표시(불릿 그래프 · 진행 막대).",
+    "점수 · 백분위": "건강 점수 · 감성 점수 · 동종 대비 백분위 같은 합성 점수.",
+    "순위 · 점유율": "순위와 점유율 · 순위 변동.",
+    "상태 띠": "구성 요소별 현재 상태와 일 · 주 단위 이력 띠(예: 90일 가동 막대).",
+    "기여 분해": "변화량을 요인별로 쪼갠 폭포 · 기여 막대 · 분해 나무.",
+    "표 + 인라인 추세": "행마다 값 · 비율 · 작은 추세선이 붙은 표.",
+    "행렬 · 버블": "주제 × 감성 같은 두 축 표 · 버블 · 지형.",
+    "시간 차트": "시간 축 선 · 막대 · 히스토그램 · 캘린더.",
+    "확인 불가": "검색 결과에 언급이 없다."
+   }
+  },
+  "layout": {
+   "name": "읽기 구조(배치)",
+   "multi": false,
+   "definition": "화면을 어떤 순서 · 골격으로 읽게 하는가. 검색 결과의 배치 설명을 한 건씩 읽고 정했다.",
+   "values": {
+    "KPI 띠 → 상세": "위에 KPI 몇 개를 띠로 두고 아래에 상세 차트 · 표.",
+    "요약 → 카드": "AI 요약 문단이 맨 위, 그 아래 지표 카드 · 위젯.",
+    "알림 · 스토리 피드": "탐지된 사건 카드를 시간순으로 쌓는 피드.",
+    "계층 드릴다운": "상위 항목(주제 등)에서 하위 항목 · 원문으로 내려간다.",
+    "공통 타임라인": "지표와 사건(업데이트 · 이벤트 · 이슈)을 한 시간축에 겹친다.",
+    "사건 단위 묶음": "업데이트 · 할인 · 출시 같은 사건마다 지표를 묶어 전후를 본다.",
+    "보고서 · 문서": "글 순서대로 읽는 보고서 · 슬라이드 · A4.",
+    "상황판(벽 화면)": "큰 화면에 띄워 두는 장면 전환형 상황판.",
+    "주제별 탭": "개요 → 주제별 탭 · 페이지로 나눈다.",
+    "질문 중심": "질문을 던지면 답 · 차트가 만들어지는 구조.",
+    "상태판": "구성 요소 목록 + 상태 이력 띠 + 사건 기록.",
+    "동종 비교": "내 지표를 동종 · 경쟁 · 기준 집단과 나란히 놓는다.",
+    "우선순위 작업 목록": "점수 → 고칠 것 우선순위 → 처리 후 추적.",
+    "분해 나무": "상위 KPI를 하위 요인으로 쪼개는 나무.",
+    "갤러리 · 해당 없음": "갤러리 · 연구 · 기사라 단일 배치가 없다.",
+    "확인 불가": "검색 결과에 배치 설명이 없다."
+   }
+  },
+  "time_frame": {
+   "name": "시간 관점",
+   "multi": true,
+   "definition": "어떤 시간 단위 · 비교로 보여 주는가.",
+   "values": {
+    "기간 스냅샷": "이번 기간 값과 직전 기간 대비.",
+    "추세": "여러 기간에 걸친 추이.",
+    "사건 전후": "업데이트 · 출시 · 할인 등 사건 기준 전후 비교.",
+    "실시간 · 일별": "실시간 또는 하루 단위.",
+    "캘린더": "달력 · 간트형 일정 보기.",
+    "확인 불가": "검색 결과에 언급이 없다."
+   }
+  },
+  "comparison_basis": {
+   "name": "비교 기준",
+   "multi": true,
+   "definition": "숫자가 높은지 낮은지를 무엇과 견주어 판단하는가.",
+   "values": {
+    "직전 기간": "전주 · 전월 · 이전 기간.",
+    "평소 기준선": "평소 평균 · 같은 요일 평균 · 표준편차 기준.",
+    "목표": "목표값 · 목표 대비 거리.",
+    "동종 · 경쟁": "동종 업계 · 경쟁작 · 다른 집단.",
+    "예상 범위": "예측 · 이상 탐지 대역 · 동적 임계값.",
+    "확인 불가": "검색 결과에 언급이 없다."
+   }
+  },
+  "interaction": {
+   "name": "상호작용",
+   "multi": true,
+   "definition": "읽는 사람이 할 수 있는 조작.",
+   "values": {
+    "필터": "기간 · 세그먼트 · 지역 필터.",
+    "드릴다운": "눌러서 펼치기 · 하위로 내려가기 · 상세 패널.",
+    "질문": "자연어 질문 · 대화.",
+    "재생성": "필터 변경 뒤 요약 다시 만들기 · 저장된 지시문.",
+    "구독 · 알림": "메일 · 메신저 알림 · 정기 발송.",
+    "확인 불가": "검색 결과에 언급이 없다."
+   }
+  },
+  "audience": {
+   "name": "주 독자",
+   "multi": false,
+   "definition": "검색 결과가 밝힌 주된 사용자.",
+   "values": {
+    "경영 · 의사결정자": "exec",
+    "분석가": "analyst",
+    "운영 담당자": "operator",
+    "공개 · 일반": "public",
+    "확인 불가": "unknown"
+   }
+  },
+  "cadence": {
+   "name": "갱신 · 읽기 주기",
+   "multi": false,
+   "definition": "검색 결과가 밝힌 갱신 · 확인 주기.",
+   "values": {
+    "실시간": "realtime",
+    "일간": "daily",
+    "주간": "weekly",
+    "월간": "monthly",
+    "요청 시": "on-demand",
+    "확인 불가": "unknown"
+   }
+  }
+ },
+ "value_distribution": {
+  "ai_role": {
+   "분류 · 테마": 41,
+   "요약 · 서술": 40,
+   "없음": 40,
+   "이상 탐지 · 알림": 29,
+   "원인 분석": 21,
+   "질의응답": 20,
+   "행동 추천": 11
+  },
+  "ai_placement": {
+   "AI 없음": 40,
+   "확인 불가": 32,
+   "문서 · 메일 보고": 17,
+   "차트 · 카드 옆": 15,
+   "알림 · 스토리 피드": 15,
+   "질문창": 13,
+   "상단 요약 띠": 5,
+   "점 클릭 설명": 4
+  },
+  "explain_depth": {
+   "무엇": 59,
+   "해당 없음": 40,
+   "무엇 · 왜": 18,
+   "무엇 · 왜 · 다음": 2,
+   "단계 선택": 1
+  },
+  "evidence_link": {
+   "확인 불가": 67,
+   "해당 없음": 40,
+   "원문 연결": 7,
+   "둘 다": 3,
+   "원 차트 연결": 3
+  },
+  "trust_signal": {
+   "확인 불가": 90,
+   "사람 교정": 10,
+   "확신도 · 불확실성": 9,
+   "정의 · 근거 공개": 5,
+   "최소 데이터 조건": 4,
+   "검토 필요 문구": 4
+  },
+  "kpi_form": {
+   "확인 불가": 52,
+   "시간 차트": 38,
+   "큰 숫자 + 비교": 18,
+   "점수 · 백분위": 18,
+   "숫자 + 스파크라인": 8,
+   "순위 · 점유율": 8,
+   "기여 분해": 5,
+   "표 + 인라인 추세": 5,
+   "불릿 · 진행 막대": 4,
+   "행렬 · 버블": 4,
+   "상태 띠": 1
+  },
+  "layout": {
+   "확인 불가": 42,
+   "계층 드릴다운": 10,
+   "갤러리 · 해당 없음": 9,
+   "알림 · 스토리 피드": 9,
+   "요약 → 카드": 8,
+   "KPI 띠 → 상세": 8,
+   "주제별 탭": 7,
+   "질문 중심": 6,
+   "동종 비교": 5,
+   "보고서 · 문서": 3,
+   "분해 나무": 3,
+   "사건 단위 묶음": 3,
+   "공통 타임라인": 3,
+   "우선순위 작업 목록": 2,
+   "상태판": 1,
+   "상황판(벽 화면)": 1
+  },
+  "time_frame": {
+   "실시간 · 일별": 48,
+   "확인 불가": 43,
+   "추세": 38,
+   "기간 스냅샷": 16,
+   "사건 전후": 6,
+   "캘린더": 2
+  },
+  "comparison_basis": {
+   "확인 불가": 87,
+   "직전 기간": 11,
+   "예상 범위": 9,
+   "동종 · 경쟁": 9,
+   "목표": 4,
+   "평소 기준선": 4
+  },
+  "interaction": {
+   "확인 불가": 69,
+   "드릴다운": 21,
+   "구독 · 알림": 20,
+   "질문": 16,
+   "필터": 13,
+   "재생성": 4
+  },
+  "audience": {
+   "운영 담당자": 40,
+   "분석가": 36,
+   "경영 · 의사결정자": 21,
+   "공개 · 일반": 17,
+   "확인 불가": 6
+  },
+  "cadence": {
+   "요청 시": 32,
+   "확인 불가": 32,
+   "실시간": 31,
+   "일간": 16,
+   "주간": 6,
+   "월간": 3
+  }
+ },
+ "components": {
+  "AI 요약 문단": {
+   "match_keywords": [
+    "summary",
+    "narrative",
+    "요약"
+   ],
+   "dashboards": [
+    "bi-01",
+    "bi-02",
+    "bi-05",
+    "bi-08",
+    "bi-11",
+    "bi-14",
+    "bi-20",
+    "bi-21",
+    "bi-27",
+    "bi-28",
+    "bi-29",
+    "bi-31",
+    "bi-35",
+    "bi-39",
+    "bi-40",
+    "bi-41",
+    "voc-02",
+    "voc-04",
+    "voc-05",
+    "voc-07",
+    "voc-09",
+    "voc-10",
+    "voc-11",
+    "voc-12",
+    "voc-28",
+    "voc-37",
+    "voc-38",
+    "game-12",
+    "game-13"
+   ],
+   "count": 29
+  },
+  "KPI 카드(큰 숫자 + 비교)": {
+   "match_keywords": [
+    "big number",
+    "kpi card",
+    "kpi tile",
+    "scorecard",
+    "big indicator",
+    "large value",
+    "kpi row",
+    "headline"
+   ],
+   "dashboards": [
+    "bi-03",
+    "bi-06",
+    "bi-07",
+    "bi-09",
+    "bi-14",
+    "bi-17",
+    "bi-18",
+    "bi-34",
+    "bi-45",
+    "voc-18"
+   ],
+   "count": 10
+  },
+  "스파크라인 · 추세선": {
+   "match_keywords": [
+    "sparkline",
+    "trendline",
+    "trend line"
+   ],
+   "dashboards": [
+    "bi-09",
+    "bi-12",
+    "bi-17",
+    "bi-18",
+    "bi-34",
+    "bi-43",
+    "voc-24"
+   ],
+   "count": 7
+  },
+  "이상 탐지 알림 카드": {
+   "match_keywords": [
+    "alert",
+    "anomaly",
+    "spike",
+    "signal",
+    "surge",
+    "경보",
+    "특이점"
+   ],
+   "dashboards": [
+    "bi-14",
+    "bi-23",
+    "bi-25",
+    "bi-28",
+    "bi-31",
+    "bi-32",
+    "bi-37",
+    "voc-06",
+    "voc-07",
+    "voc-09",
+    "voc-10",
+    "voc-11",
+    "voc-14",
+    "voc-15",
+    "voc-16",
+    "voc-17",
+    "voc-23",
+    "voc-28",
+    "voc-29",
+    "voc-30",
+    "voc-37",
+    "voc-39",
+    "game-14",
+    "game-23"
+   ],
+   "count": 24
+  },
+  "원인 · 기여 요인 목록": {
+   "match_keywords": [
+    "root cause",
+    "contributor",
+    "driver",
+    "cause",
+    "원인"
+   ],
+   "dashboards": [
+    "bi-14",
+    "bi-15",
+    "bi-24",
+    "bi-28",
+    "bi-32",
+    "voc-03",
+    "voc-04",
+    "voc-07",
+    "voc-09",
+    "voc-10",
+    "voc-14",
+    "voc-16",
+    "voc-26",
+    "voc-30",
+    "game-22"
+   ],
+   "count": 15
+  },
+  "원문 인용 · 대표 글": {
+   "match_keywords": [
+    "verbatim",
+    "quote",
+    "supporting messages",
+    "sample reviews",
+    "대표 voc",
+    "evidence"
+   ],
+   "dashboards": [
+    "bi-39",
+    "voc-11",
+    "voc-12",
+    "voc-20",
+    "voc-21",
+    "voc-38",
+    "game-08",
+    "game-13"
+   ],
+   "count": 8
+  },
+  "주제 · 테마 표": {
+   "match_keywords": [
+    "topic",
+    "theme",
+    "tag",
+    "주제"
+   ],
+   "dashboards": [
+    "bi-01",
+    "bi-32",
+    "voc-01",
+    "voc-02",
+    "voc-03",
+    "voc-04",
+    "voc-07",
+    "voc-10",
+    "voc-11",
+    "voc-12",
+    "voc-13",
+    "voc-16",
+    "voc-18",
+    "voc-19",
+    "voc-21",
+    "voc-23",
+    "voc-24",
+    "voc-25",
+    "voc-38",
+    "game-11",
+    "game-12",
+    "game-13",
+    "game-18",
+    "game-20",
+    "game-34"
+   ],
+   "count": 25
+  },
+  "감성 추이": {
+   "match_keywords": [
+    "sentiment"
+   ],
+   "dashboards": [
+    "voc-01",
+    "voc-03",
+    "voc-06",
+    "voc-10",
+    "voc-12",
+    "voc-16",
+    "voc-18",
+    "voc-21",
+    "voc-23",
+    "voc-24",
+    "voc-26",
+    "voc-27",
+    "voc-29",
+    "voc-31",
+    "voc-32",
+    "game-11",
+    "game-12",
+    "game-13",
+    "game-14",
+    "game-15",
+    "game-16",
+    "game-18",
+    "game-19",
+    "game-20"
+   ],
+   "count": 24
+  },
+  "질문 입력창": {
+   "match_keywords": [
+    "question box",
+    "query box",
+    "chat",
+    "nl question"
+   ],
+   "dashboards": [
+    "bi-13",
+    "bi-22",
+    "bi-27",
+    "bi-29",
+    "voc-03",
+    "voc-05",
+    "voc-22",
+    "game-13"
+   ],
+   "count": 8
+  },
+  "사건 · 일정 표시(업데이트 · 이벤트)": {
+   "match_keywords": [
+    "event",
+    "calendar",
+    "incident",
+    "maintenance",
+    "update",
+    "release"
+   ],
+   "dashboards": [
+    "bi-33",
+    "game-06",
+    "game-09",
+    "game-10",
+    "game-18",
+    "game-28",
+    "game-34",
+    "game-37"
+   ],
+   "count": 8
+  },
+  "동종 · 기준 비교": {
+   "match_keywords": [
+    "benchmark",
+    "peer",
+    "competitor",
+    "network"
+   ],
+   "dashboards": [
+    "voc-24",
+    "voc-29",
+    "game-02",
+    "game-25",
+    "game-26"
+   ],
+   "count": 5
+  },
+  "순위 · 점유율": {
+   "match_keywords": [
+    "rank",
+    "share"
+   ],
+   "dashboards": [
+    "bi-05",
+    "voc-17",
+    "game-07",
+    "game-27",
+    "game-31",
+    "game-32",
+    "game-33"
+   ],
+   "count": 7
+  },
+  "행동 추천 · 할 일": {
+   "match_keywords": [
+    "recommend",
+    "suggestion",
+    "fix list",
+    "next action",
+    "시사점"
+   ],
+   "dashboards": [
+    "bi-21",
+    "bi-26",
+    "bi-28",
+    "voc-19",
+    "voc-26",
+    "voc-35"
+   ],
+   "count": 6
+  },
+  "보고서 · 메일 발송": {
+   "match_keywords": [
+    "email",
+    "digest",
+    "report",
+    "slack",
+    "a4",
+    "리포트"
+   ],
+   "dashboards": [
+    "bi-02",
+    "bi-04",
+    "bi-05",
+    "bi-10",
+    "bi-11",
+    "bi-23",
+    "bi-27",
+    "bi-28",
+    "bi-35",
+    "voc-04",
+    "voc-07",
+    "voc-14",
+    "voc-15",
+    "voc-17",
+    "voc-23",
+    "voc-31",
+    "voc-34",
+    "voc-35",
+    "voc-37",
+    "game-20",
+    "game-21",
+    "game-24"
+   ],
+   "count": 22
+  },
+  "신뢰 · 방법 표시": {
+   "match_keywords": [
+    "confidence",
+    "disclaimer",
+    "definition",
+    "methodology",
+    "uncertainty",
+    "freshness"
+   ],
+   "dashboards": [
+    "bi-41",
+    "bi-42",
+    "voc-02",
+    "voc-11",
+    "voc-25",
+    "game-27"
+   ],
+   "count": 6
+  }
+ },
+ "dashboards": [
+  {
+   "id": "bi-01",
+   "name": "Power BI Smart Narrative visual",
+   "vendor_or_org": "Microsoft",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://learn.microsoft.com/en-gb/power-BI/visuals/power-bi-visualization-smart-narrative",
+   "access": "검색 결과만",
+   "evidence": "Smart Narrative is an AI text-summary visual that can summarize a single visual or a whole report page; it auto-analyzes trends (e.g., revenue and visits both grew) and calculates growth rates. Text and dynamic values regenerate when users cross-filter or change slicers; GA added summaries for KPI, Gauge, Card, Multi Card, Key Influencers visuals.",
+   "elements": [
+    "auto-generated text summary box",
+    "dynamic values embedded in sentences (growth rate)",
+    "per-visual narrative on hover",
+    "theme-styled editable text"
+   ],
+   "ai_features": [
+    "NLG summary of a visual or entire page",
+    "re-generates on cross-filter / slicer change",
+    "user-customizable insight text"
+   ],
+   "layout_notes": "Placed on the report canvas as its own visual, typically next to KPI/card visuals it summarizes; per-visual narrative can be viewed on hover but cannot be pinned.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터",
+     "재생성"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-02",
+   "name": "Power BI Narrative visual with Copilot",
+   "vendor_or_org": "Microsoft",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-narrative",
+   "access": "검색 결과만",
+   "evidence": "The Copilot narrative visual can summarize the entire report, specific pages, or selected visuals; the prompt (e.g., 'summarize sales data') is saved with report metadata so the summary regenerates each time the report loads. A March 2026 update added an Auto refresh toggle for slicer changes; it replaces/rebrands the earlier Smart Narrative visual.",
+   "elements": [
+    "narrative text visual on report page",
+    "saved prompt",
+    "auto-refresh toggle on slicer change",
+    "Copilot pane Q&A for readers"
+   ],
+   "ai_features": [
+    "LLM summary scoped to report/pages/selected visuals",
+    "author can include/exclude visuals or pages (per community post)",
+    "readers without edit rights ask questions in Copilot pane"
+   ],
+   "layout_notes": "Narrative sits as a visual on the page; the stored prompt makes the summary reproducible on every load.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터",
+     "질문",
+     "재생성"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-03",
+   "name": "Power BI KPI visual",
+   "vendor_or_org": "Microsoft",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://learn.microsoft.com/en-gb/power-BI/visuals/power-bi-visualization-kpi",
+   "access": "검색 결과만",
+   "evidence": "A KPI visual needs a base measure (indicator), a target measure/value, and a trend axis (usually date) that drives a small background area chart. Color shows performance vs. target (green above, red below), and Microsoft notes some metrics are better when lower (e.g., wait time) so color direction should match the metric.",
+   "elements": [
+    "big indicator value",
+    "target/goal label",
+    "distance-to-goal",
+    "background trend area chart",
+    "good/bad color with direction setting"
+   ],
+   "ai_features": [],
+   "layout_notes": "Format pane toggles for trend axis, target label and distance-to-goal; trend axis must be continuous and non-null.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "최소 데이터 조건"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인",
+     "불릿 · 진행 막대",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "목표"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-04",
+   "name": "Power BI Data Stories Gallery",
+   "vendor_or_org": "Microsoft (Fabric Community)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Share-inspiration-in-the-new-Data-Stories-Gallery-and-get-a-t/ba-p/5175167",
+   "access": "검색 결과만",
+   "evidence": "A community showcase of reports published via Publish to Web, many with downloadable PBIX files; judged on storytelling, originality and effective use of Power BI, with monthly featured picks (e.g., IPL Data Analysis, newborn feeding monitor). Submissions are public and must not include confidential data.",
+   "elements": [
+    "community report thumbnails",
+    "downloadable PBIX",
+    "monthly featured stories"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "월간"
+   }
+  },
+  {
+   "id": "bi-05",
+   "name": "Tableau Pulse insight summary & digest",
+   "vendor_or_org": "Salesforce / Tableau",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://help.tableau.com/current/online/en-us/pulse_explore_metrics.htm",
+   "access": "검색 결과만",
+   "evidence": "An AI insight summary appears at the top of the Pulse home page and in digests once the user follows 2+ metrics; insights are data-driven observations that Tableau auto-generates and ranks by usefulness. Digests (summary visualizations plus text on top insights, links to metric details and suggested follow-up questions) are sent weekly by default to email and Slack; users can mute a metric so it is excluded from the summary but still shown.",
+   "elements": [
+    "followed-metric cards",
+    "AI insight summary at top of home",
+    "weekly email/Slack digest",
+    "suggested follow-up questions",
+    "mute metric control"
+   ],
+   "ai_features": [
+    "auto-generated, usefulness-ranked insights per metric",
+    "cross-metric AI summary paragraph",
+    "admin can turn off AI summaries"
+   ],
+   "layout_notes": "Summary on top, then metric cards; digest links back to metric detail pages. Filter settings on a metric change which insights are detected.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "상단 요약 띠",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "순위 · 점유율"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터",
+     "질문",
+     "구독 · 알림"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "bi-06",
+   "name": "Tableau Public Viz of the Day - Amazon Sales Performance dashboard",
+   "vendor_or_org": "Tableau Public / Mila Kholodiy (The Data School)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://thedataschool.co.uk/mila-kholodiy/my-first-viz-of-the-day/",
+   "access": "검색 결과만",
+   "evidence": "Viz of the Day is chosen most weekdays by the Tableau Public team and rotating Ambassadors. Mila Kholodiy's Amazon Sales Performance VOTD opens with five KPI cards, each compared with the prior period; other VOTDs include a 12-widget-style monthly performance tracker and a catalog of KPI-card options.",
+   "elements": [
+    "row of 5 KPI cards",
+    "prior-period comparison per card"
+   ],
+   "ai_features": [],
+   "layout_notes": "KPI card row at the top as the entry point of the dashboard.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-07",
+   "name": "Tableau Public 2024 visualization trends (KPI scorecards)",
+   "vendor_or_org": "Sellers Dorsey (review of Tableau Public)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://www.sellersdorsey.com/insights/health-data-visualization-resource-hub/tableau-public-2024-visualization-trends/",
+   "access": "검색 결과만",
+   "evidence": "A 2024 review of Tableau Public noted KPI scorecards became a standout trend because they condense complex data into a few common elements.",
+   "elements": [
+    "KPI scorecard"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "점수 · 백분위",
+     "시간 차트"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-08",
+   "name": "Looker Studio Gemini chart summaries (Slides export)",
+   "vendor_or_org": "Google",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://docs.cloud.google.com/looker/docs/studio/add-looker-studio-slides-gemini",
+   "access": "검색 결과만",
+   "evidence": "Gemini (Looker Studio Pro) inserts report charts into Slides as images, generates a textual summary of each, and inserts it as a text element; per-visualization summaries can be turned off and a chart needs at least four rows of data to get a summary.",
+   "elements": [
+    "chart image + adjacent AI summary text per slide"
+   ],
+   "ai_features": [
+    "per-chart Gemini text summary",
+    "minimum-data threshold before summarizing",
+    "per-visual opt-out"
+   ],
+   "layout_notes": "One chart paired with its own summary text element (chart-caption pattern).",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "최소 데이터 조건",
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "보고서 · 문서",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-09",
+   "name": "Looker Studio scorecard (compact with trend)",
+   "vendor_or_org": "Google / Databloo",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://www.databloo.com/blog/google-looker-studio-scorecards/",
+   "access": "검색 결과만",
+   "evidence": "A scorecard summarizes a single metric; compact scorecards can add a trend view resembling a floating line graph.",
+   "elements": [
+    "single-metric scorecard",
+    "compact number format",
+    "inline trend line"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인",
+     "점수 · 백분위",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "확인 불가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-10",
+   "name": "Looker Studio Report / Template Gallery",
+   "vendor_or_org": "Google",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://docs.cloud.google.com/looker/docs/studio/create-a-report-from-a-template?authuser=0",
+   "access": "검색 결과만",
+   "evidence": "Google's Template Gallery offers Google-built templates (BigQuery, GA, Google Ads, Sheets, YouTube Analytics, Search Console); the Report Gallery also hosts featured community reports, templates, connectors and community visualizations.",
+   "elements": [
+    "template thumbnails by data source",
+    "featured community reports",
+    "community visualizations"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-11",
+   "name": "Amazon Q in QuickSight - Executive summaries & Data stories",
+   "vendor_or_org": "AWS",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://community.aws/content/2bdXbPBGkcEYF9IvK6kN87pjY8G/amazon-q-in-amazon-quicksight--generative-bi-capabilities-for-dashboard-authoring-executive-summary-data-stories",
+   "access": "검색 결과만",
+   "evidence": "Executive summaries are generated from the Build menu on a published dashboard: QuickSight determines interesting facts/statistics and an LLM writes about trends and period-over-period changes. Clicking a sentence in the summary shows the dashboard visual it was derived from; users can change sheet/filters and regenerate. Data stories can be built and shared by email.",
+   "elements": [
+    "executive summary panel",
+    "sentence-level link to source visual",
+    "regenerate after filter change",
+    "data story document",
+    "email sharing"
+   ],
+   "ai_features": [
+    "LLM-written highlights incl. period-over-period changes",
+    "click-sentence-to-source traceability",
+    "narrative data stories"
+   ],
+   "layout_notes": "Summary opened from Build menu over the dashboard; each sentence acts as a citation back to a visual.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "둘 다",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "기간 스냅샷",
+     "추세"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "필터",
+     "드릴다운",
+     "재생성",
+     "구독 · 알림"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-12",
+   "name": "Amazon QuickSight KPI visual (comparison, sparkline, progress bar)",
+   "vendor_or_org": "AWS",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://docs.aws.amazon.com/quicksight/latest/user/KPI-options.html",
+   "access": "검색 결과만",
+   "evidence": "Comparison values are auto-formatted (positive green, negative red); actual and comparison values each get their own conditional-formatting rules (text color, icon). A KPI can show an area sparkline (default), line sparkline, or progress bar, which requires a Trend field.",
+   "elements": [
+    "primary actual value",
+    "comparison value with icon and color",
+    "area/line sparkline",
+    "progress bar"
+   ],
+   "ai_features": [],
+   "layout_notes": "2023 update added new KPI layouts plus sparkline.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인",
+     "불릿 · 진행 막대",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "확인 불가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-13",
+   "name": "Qlik Insight Advisor natural-language insights / Qlik Answers",
+   "vendor_or_org": "Qlik",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://help.qlik.com/en-US/cloud-services/Insights/insight-advisor-natural-language.htm",
+   "access": "검색 결과만",
+   "evidence": "Insight Advisor builds charts from plain-language questions and may add natural-language insights when a matching chart result exists, revealed via 'Show additional insights'. Business Logic lets admins define rules for how questions are interpreted; on tenants using the agentic Qlik Answers experience, Insight Advisor Chat is replaced by Qlik Answers.",
+   "elements": [
+    "question box",
+    "generated chart",
+    "'Show additional insights' expander with NL text"
+   ],
+   "ai_features": [
+    "NLQ to chart",
+    "NL insight text attached to chart",
+    "admin-defined business logic rules"
+   ],
+   "layout_notes": "Narrative insights are progressive disclosure under the chart.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "정의 · 근거 공개"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-14",
+   "name": "ThoughtSpot Liveboard AI Highlights",
+   "vendor_or_org": "ThoughtSpot",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://docs.thoughtspot.com/cloud/latest/liveboard-ai-highlights",
+   "access": "검색 결과만",
+   "evidence": "AI Highlights summarizes what changed on a Liveboard (blog: 'since your last visit') for the first five time-series KPIs per tab, one summary per tab. Anomaly detection sets expected bounds, SpotIQ change analysis identifies driving attributes, and changes are classified expected vs. unexpected; each KPI card can be expanded for detail, typically ready in under 30 seconds.",
+   "elements": [
+    "per-tab AI summary",
+    "expandable KPI cards",
+    "expected vs unexpected change label",
+    "change-contributor attributes"
+   ],
+   "ai_features": [
+    "LLM (GPT-4 at launch) summary of KPI changes",
+    "anomaly bounds",
+    "driver attribution via change analysis",
+    "customizable attribute columns"
+   ],
+   "layout_notes": "Summary scoped to a tab; drill from summary into expanded KPI card.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "기여 분해",
+     "시간 차트"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-15",
+   "name": "ThoughtSpot SpotIQ change analysis",
+   "vendor_or_org": "ThoughtSpot",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://docs.thoughtspot.com/cloud/latest/spotiq-change",
+   "access": "검색 결과만",
+   "evidence": "SpotIQ change analysis supplies the change-contributor insights used by AI Highlights, identifying which attributes drove a KPI change.",
+   "elements": [
+    "contributor breakdown of a KPI change"
+   ],
+   "ai_features": [
+    "automated driver / contributor analysis"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "기여 분해"
+    ],
+    "layout": "분해 나무",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-16",
+   "name": "Metabase X-rays",
+   "vendor_or_org": "Metabase",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://Metabase.com/docs/latest/exploration-and-organization/x-rays",
+   "access": "검색 결과만",
+   "evidence": "X-rays are automatic explorations generated from a table's or model's fields; launched by clicking a chart point and choosing 'Automatic insights' or from a model/table menu. Each X-ray is a dashboard saved to an 'Automatically generated dashboards' collection.",
+   "elements": [
+    "auto-generated dashboard",
+    "click-a-point 'Automatic insights'"
+   ],
+   "ai_features": [
+    "rule-based automatic dashboard generation (non-LLM)"
+   ],
+   "layout_notes": "Drill entry from a single data point into an auto-built dashboard.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "점 클릭 설명"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-17",
+   "name": "Apache Superset / Preset Big Number with Trendline",
+   "vendor_or_org": "Apache Superset / Preset",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://docs.preset.io/docs/big-number-chart",
+   "access": "검색 결과만",
+   "evidence": "Shows one aggregate metric as a headline number with a trendline, for emphasizing the recent state of the metric; time grain controls the trendline comparing the last X periods, and a 'Show Trend Line' toggle turns it on/off.",
+   "elements": [
+    "headline big number",
+    "trendline below",
+    "time-grain control"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터"
+    ],
+    "audience": "확인 불가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-18",
+   "name": "Grafana Stat panel",
+   "vendor_or_org": "Grafana Labs",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://grafana.com/docs/grafana/v10.3/panels-visualizations/visualizations/stat",
+   "access": "검색 결과만",
+   "evidence": "Stat panel shows one large value with an optional area sparkline; thresholds (absolute or percentage, sorted low to high with a Base value) color the value or background depending on color mode. The sparkline auto-hides when the panel becomes too small.",
+   "elements": [
+    "large value",
+    "area sparkline",
+    "threshold-based value/background color",
+    "responsive sparkline hiding"
+   ],
+   "ai_features": [],
+   "layout_notes": "Color mode options: none / value / background solid (newer docs).",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-19",
+   "name": "Grafana Play (demo dashboard gallery)",
+   "vendor_or_org": "Grafana Labs",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://grafana.com/blog/2025/11/17/grafana-play-updates-a-redesigned-homepage-to-celebrate-our-community",
+   "access": "검색 결과만",
+   "evidence": "play.grafana.org hosts demo dashboards showcasing visualization types; its Nov 2025 redesign added a launchpad with Featured Dashboards, Visualization Examples and Datasource Examples, spotlighting community contributions.",
+   "elements": [
+    "featured dashboards",
+    "visualization examples"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-20",
+   "name": "Sisense Widget Narratives",
+   "vendor_or_org": "Sisense",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://docs.sisense.com/main/SisenseLinux/sisense-narratives.md",
+   "access": "검색 결과만",
+   "evidence": "Narratives are AI-generated text summaries that describe widgets and highlight key insights; admins enable 'Widget Narratives' in Feature Management. Sisense also lists an 'explanations' feature that identifies reasons for changes, and GenAI narration can be embedded without a chat UI.",
+   "elements": [
+    "per-widget narrative text"
+   ],
+   "ai_features": [
+    "widget-level AI summary",
+    "explanations of why data changed"
+   ],
+   "layout_notes": "Narrative attached at widget level rather than page level.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "원인 분석",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "질문창"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-21",
+   "name": "Domo AI summary card",
+   "vendor_or_org": "Domo",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://domo-webflow.domo.com/blog/build-ai-summary-card-dashboard",
+   "access": "검색 결과만",
+   "evidence": "Domo describes building a single AI summary card that reads a dashboard, flags the metrics that matter, and recommends what to do next. It recommends refreshing the summary only when underlying data refreshes rather than per viewer.",
+   "elements": [
+    "single AI summary card on dashboard",
+    "flagged key metrics",
+    "recommended next actions"
+   ],
+   "ai_features": [
+    "LLM dashboard overview",
+    "action recommendations",
+    "refresh tied to data refresh"
+   ],
+   "layout_notes": "One summary card coexisting with regular KPI cards on the dashboard.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-22",
+   "name": "Domo AI Chat",
+   "vendor_or_org": "Domo",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://www.domo.com/ai/ai-chat",
+   "access": "검색 결과만",
+   "evidence": "AI Chat lets users talk with data in a chat interface that is context-aware of the DataSets and cards in the current dashboard or App Studio app; available on mobile. A community answer says charts created in AI Chat cannot yet be saved.",
+   "elements": [
+    "chat side panel",
+    "context from current dashboard cards"
+   ],
+   "ai_features": [
+    "context-aware conversational Q&A over dashboard"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "질의응답"
+    ],
+    "ai_placement": [
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "질문"
+    ],
+    "audience": "확인 불가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-23",
+   "name": "Google Analytics 4 Insights (Analytics Intelligence)",
+   "vendor_or_org": "Google",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "제품 분석",
+   "url": "https://support.google.com/analytics/answer/9443595",
+   "access": "검색 결과만",
+   "evidence": "Analytics Intelligence detects unusual changes or emerging trends and notifies users on the Insights dashboard; insights are retained one year, cards are clickable for full details and 'Load more' shows older ones. Custom insights (up to 50 per property per guides) can use a 'Has anomaly' condition and be emailed as alerts.",
+   "elements": [
+    "insight cards feed",
+    "click-to-expand details",
+    "load-more history",
+    "email alerts"
+   ],
+   "ai_features": [
+    "automated anomaly/trend detection",
+    "custom anomaly conditions"
+   ],
+   "layout_notes": "Reverse-chronological card feed with expandable detail.",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "구독 · 알림"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-24",
+   "name": "Amplitude Dashboard Agent",
+   "vendor_or_org": "Amplitude",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "제품 분석",
+   "url": "https://amplitude.com/docs/amplitude-ai/dashboard-agent",
+   "access": "검색 결과만",
+   "evidence": "Dashboard Agent monitors an existing dashboard, analyzes each chart for meaningful changes, surfaces trends needing attention, detects week-over-week and month-over-month shifts, and performs root-cause analysis to identify driving segments or behaviors. Positioned for recurring analysis vs. Global Agent for ad-hoc questions.",
+   "elements": [
+    "per-chart change findings",
+    "WoW / MoM shift callouts",
+    "root-cause segments"
+   ],
+   "ai_features": [
+    "recurring agentic dashboard analysis",
+    "WoW/MoM shift detection",
+    "root cause analysis"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "원인 분석",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "기간 스냅샷",
+     "추세"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-25",
+   "name": "Amplitude Root Cause Analysis + Anomaly & Forecast",
+   "vendor_or_org": "Amplitude",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "제품 분석",
+   "url": "https://amplitude.com/docs/en/analytics/root-cause-analysis",
+   "access": "검색 결과만",
+   "evidence": "RCA finds properties and user segments explaining an anomalous chart point: confirm via Anomaly + Forecast (Prophet-based), open the Microscope on the point, run RCA, which scans the 30 most-queried properties first. The Microscope warns if the anomaly falls on a holiday.",
+   "elements": [
+    "anomaly band on chart",
+    "Microscope point menu",
+    "segment/property explanation list",
+    "holiday warning"
+   ],
+   "ai_features": [
+    "Prophet anomaly detection",
+    "automated segment explanation",
+    "context caveat (holiday)"
+   ],
+   "layout_notes": "Point-level drill: chart point -> Microscope -> RCA.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "점 클릭 설명"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-26",
+   "name": "Amplitude Automated Insights",
+   "vendor_or_org": "Amplitude",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "제품 분석",
+   "url": "https://www.amplitude.com/blog/introducing-automated-insights",
+   "access": "검색 결과만",
+   "evidence": "Launched Dec 2025: uses AI to investigate changes, connect business context, and generate findings and recommendations automatically, analyzing funnels, cohorts and behavioral shifts together.",
+   "elements": [
+    "findings list",
+    "recommendations"
+   ],
+   "ai_features": [
+    "AI investigation of metric changes",
+    "auto findings + recommendations"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-27",
+   "name": "Mixpanel Spark (now Mixpanel Agent)",
+   "vendor_or_org": "Mixpanel",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "제품 분석",
+   "url": "https://mixpanel.com/spark-ai",
+   "access": "검색 결과만",
+   "evidence": "Natural-language report creation (Insights, Funnels, Retention, Flows) launched from the dashboard; the AI only builds queries while Mixpanel computes results, and users can click into the visualization to see how Spark arrived at the result. Separate Nov 2025 feature: AI summaries shown beside session replays.",
+   "elements": [
+    "NL question box",
+    "generated report",
+    "query-inspection view",
+    "AI summary next to replay"
+   ],
+   "ai_features": [
+    "NL-to-query",
+    "transparency: inspect generated query",
+    "session-replay summaries"
+   ],
+   "layout_notes": "Summary placed beside the evidence (replay) it summarizes.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "둘 다",
+    "trust_signal": [
+     "정의 · 근거 공개"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-28",
+   "name": "Yellowfin Signals + Assisted Insights + Stories",
+   "vendor_or_org": "Yellowfin",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://www.yellowfinbi.com/blog/industrys-first-automated-analysis-and-cross-vendor-storytelling",
+   "access": "검색 결과만",
+   "evidence": "Signals automatically discovers important changes in time-series data and alerts users in their Yellowfin Timeline or by email; each signal shows an auto-generated narrative of the nature, magnitude and time window, and an Analysis tab (Assisted Insights) suggests causes with visuals and NL. Low-rated signals are used to filter out irrelevant ones; Stories presents data in narrative form.",
+   "elements": [
+    "signal alert feed (Timeline)",
+    "email alert",
+    "auto narrative (nature/magnitude/time window)",
+    "Analysis tab with cause suggestions",
+    "user rating of signals"
+   ],
+   "ai_features": [
+    "automated change detection",
+    "NLG description",
+    "suggested cause analysis",
+    "feedback-based relevance filtering"
+   ],
+   "layout_notes": "Alert feed -> signal detail with narrative -> Analysis tab for 'why'.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇 · 왜 · 다음",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터",
+     "구독 · 알림"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-29",
+   "name": "Arria Intelligent Narratives for BI (Power BI / Tableau add-in)",
+   "vendor_or_org": "Arria NLG",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://appsource.microsoft.com/en-us/product/power-bi-visuals/wa200002323",
+   "access": "검색 결과만",
+   "evidence": "No-code NL narratives based on all the dashboard's visuals and underlying data; users choose length from top-line summary to drill-down explaining 'what, why and what next'. Arria Answers adds on-demand NLQ chat; also on Tableau Exchange.",
+   "elements": [
+    "narrative panel",
+    "length selector (summary vs. drill-down)"
+   ],
+   "ai_features": [
+    "NLG what/why/what-next narrative",
+    "NLQ chat"
+   ],
+   "layout_notes": "Narrative depth is user-selectable: headline -> explanation -> recommendation.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "원인 분석",
+     "질의응답",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "질문창"
+    ],
+    "explain_depth": "단계 선택",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "질문"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-30",
+   "name": "Einstein Discovery Stories (Tableau CRM / CRM Analytics)",
+   "vendor_or_org": "Salesforce",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://www.thebricks.com/resources/guide-how-to-use-einstein-discovery-in-tableau",
+   "access": "검색 결과만",
+   "evidence": "A Story is a set of findings from a statistical model built around one business outcome; 'what happened' maps to descriptive and 'why it happened' to diagnostic analytics. A Certinia doc notes with fewer than 400 rows, views like Why it Happened / What Could Happen may be disabled.",
+   "elements": [
+    "What happened view",
+    "Why it happened view",
+    "What could happen view"
+   ],
+   "ai_features": [
+    "model-based findings",
+    "data-sufficiency gating of diagnostic views"
+   ],
+   "layout_notes": "Insight tabs ordered descriptive -> diagnostic -> predictive.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "최소 데이터 조건"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-31",
+   "name": "Datadog Watchdog stories",
+   "vendor_or_org": "Datadog",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://datadoghq.com/blog/watchdog",
+   "access": "검색 결과만",
+   "evidence": "Watchdog creates a feed of 'stories'; each highlights the timeframe of interest on a timeseries graph with a plain-language summary, merges related anomalies into one story, and links to correlated dashboards showing spikes at the same time.",
+   "elements": [
+    "story feed",
+    "timeseries with highlighted window",
+    "plain-language summary",
+    "links to correlated dashboards"
+   ],
+   "ai_features": [
+    "ML anomaly detection",
+    "story deduplication/merging",
+    "correlation to dashboards"
+   ],
+   "layout_notes": "Feed of story cards, each = chart + highlighted window + summary; click through to dashboard.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원 차트 연결",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-32",
+   "name": "Datadog dashboard anomaly investigation (Graph Insights)",
+   "vendor_or_org": "Datadog",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://docs.datadoghq.com/dashboards/graph_insights/investigate_anomalies/",
+   "access": "검색 결과만",
+   "evidence": "Detects anomalies across a dashboard's timeseries graphs when opened, groups co-occurring anomalies into issues, and identifies the tags contributing most; issues appear within ~20 seconds and widgets can be excluded via an Anomaly Detection 'Hide' setting. A Watchdog Insights carousel appears near the top of several product pages.",
+   "elements": [
+    "issues grouping co-occurring anomalies",
+    "top contributing tags",
+    "insights carousel at top",
+    "per-widget opt-out"
+   ],
+   "ai_features": [
+    "on-open anomaly scan",
+    "contributor tag attribution"
+   ],
+   "layout_notes": "Insights carousel at top of page above the main content.",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "상단 요약 띠",
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "기여 분해",
+     "시간 차트"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-33",
+   "name": "Status pages (component status + 90-day uptime bars)",
+   "vendor_or_org": "Checkly (also Status.io, OpenObserve)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://www.checklyhq.com/communicate/status-pages/overview",
+   "access": "검색 결과만",
+   "evidence": "A status page shows current status and 90-day history per component plus open incidents and planned maintenance; OpenObserve's bars show daily grades (OK/minor/major/severe/maintenance/no data). Checkly counts major outage as full downtime and partial outage as 30%; guides stress past-incident timelines and scannability on mobile.",
+   "elements": [
+    "component list with current status",
+    "90-day daily uptime bar strip",
+    "severity color grades",
+    "incident timeline/log",
+    "planned maintenance"
+   ],
+   "ai_features": [],
+   "layout_notes": "Overall status on top, component rows with history strips, incident log below.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "상태 띠",
+     "시간 차트"
+    ],
+    "layout": "상태판",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-34",
+   "name": "Geckoboard Number visualization",
+   "vendor_or_org": "Geckoboard",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://support.geckoboard.com/en/articles/6055767-guide-to-the-number-visualization",
+   "access": "검색 결과만",
+   "evidence": "Number widgets use a short descriptive title, an optional secondary stat for context, status indicators (success/negative thresholds) to draw attention to changes, and one of four comparison styles: goal, number, percentage, or sparkline. Geckoboard advice summarized elsewhere: put the most important number top-left and give each number context (target or prior period).",
+   "elements": [
+    "short title",
+    "big number",
+    "secondary stat",
+    "status indicator",
+    "comparison: goal / number / % / sparkline"
+   ],
+   "ai_features": [],
+   "layout_notes": "Most important number top-left; every number carries a comparison.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "숫자 + 스파크라인"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "기간 스냅샷",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "직전 기간",
+     "목표"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-35",
+   "name": "Databox AI-powered Performance Summaries",
+   "vendor_or_org": "Databox",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://help.databox.com/overview-using-ai-powered-performance-summaries-on-performance-screen",
+   "access": "검색 결과만",
+   "evidence": "AI writes a summary of the most important changes across metrics to explain the 'why' behind movements; it sits at the top of the Performance Screen as an expandable drop-down and needs at least 3 metrics. Each Databoard and Goal has its own summary (goals compare to previous period), and summaries can be sent via email or Slack as snapshots.",
+   "elements": [
+    "expandable AI summary at top",
+    "per-dashboard Performance Indicator icon",
+    "goal summaries vs previous period",
+    "email/Slack snapshot"
+   ],
+   "ai_features": [
+    "cross-metric change summary",
+    "minimum-metric threshold",
+    "scheduled delivery"
+   ],
+   "layout_notes": "Collapsed summary on top of the metric overview; expands on demand.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "상단 요약 띠",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "최소 데이터 조건"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "직전 기간",
+     "목표"
+    ],
+    "interaction": [
+     "드릴다운",
+     "구독 · 알림"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-36",
+   "name": "Klipfolio Klip Gallery / Dashboard Gallery",
+   "vendor_or_org": "Klipfolio",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "BI 갤러리",
+   "url": "https://support.klipfolio.com/hc/en-us/articles/215546308-Pre-built-Klips-and-the-Klip-Gallery",
+   "access": "검색 결과만",
+   "evidence": "Pre-built Klips in the Klip Gallery (web and in-app) cover marketing, sales and finance KPIs with sample data, organized by connector (GA4, HubSpot, Shopify, Stripe, Salesforce); blog categorizes dashboard examples (Executive, Sales, SaaS, Marketing).",
+   "elements": [
+    "pre-built KPI widgets",
+    "sample data",
+    "gallery by connector"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-37",
+   "name": "Microsoft Fabric Copilot-generated Real-Time Dashboard",
+   "vendor_or_org": "Microsoft",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-generate-dashboard",
+   "access": "검색 결과만",
+   "evidence": "Copilot builds a starting Real-Time Dashboard from a selected table, including an insights page for quick overview and a data profile page. In view mode users ask questions in natural language (pane or inline on a tile) and save results as new tiles; Data Activator thresholds can trigger alerts on key metrics.",
+   "elements": [
+    "insights overview page",
+    "data profile page",
+    "tiles",
+    "inline tile prompt",
+    "threshold alerts"
+   ],
+   "ai_features": [
+    "AI-generated starter dashboard",
+    "NL Q&A saved as tiles"
+   ],
+   "layout_notes": "Overview/insights page first, data-profile page second.",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문",
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "bi-38",
+   "name": "Hex Magic / Notebook Agent vs Sigma 'explain this chart'",
+   "vendor_or_org": "Hex (vendor comparison page)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://hex.tech/compare/sigma-vs-hex/",
+   "access": "검색 결과만",
+   "evidence": "Hex's comparison page (vendor claim) says Sigma offers limited one-shot 'explain this chart' summaries without multi-turn conversation; Hex's Notebook Agent generates, debugs and iterates SQL/Python across multi-step logic.",
+   "elements": [
+    "per-chart explain action"
+   ],
+   "ai_features": [
+    "one-shot chart explanation (Sigma)",
+    "agentic SQL/Python notebook (Hex)"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-39",
+   "name": "ServiceNow Dashboard Summarization (citations per highlight)",
+   "vendor_or_org": "ServiceNow",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://www.servicenow.com/docs/r/J7UfGStUvhlVOcoqiM3zlQ/mauybB1QJ_ZrM86hDhiG6Q",
+   "access": "검색 결과만",
+   "evidence": "Dashboard Summary attaches one or more citations to each highlight; selecting a citation shows which dashboard elements support it.",
+   "elements": [
+    "highlight bullets",
+    "citation chips per highlight",
+    "linked dashboard elements"
+   ],
+   "ai_features": [
+    "AI dashboard summary with evidence citations"
+   ],
+   "layout_notes": "Citation click highlights the supporting widget on the dashboard.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "둘 다",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "불릿 · 진행 막대"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-40",
+   "name": "Cascade executive summary widget (hyperlinked citations)",
+   "vendor_or_org": "Cascade",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "AI 인사이트",
+   "url": "https://www.cascade.app/academy/chapter/executive-summary-widget",
+   "access": "검색 결과만",
+   "evidence": "Describes hyperlinked citations that let a reader trace each statement in the AI executive summary to its source data.",
+   "elements": [
+    "executive summary widget",
+    "inline hyperlinked citations"
+   ],
+   "ai_features": [
+    "AI executive summary",
+    "statement-level source links"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원 차트 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-41",
+   "name": "Rapid7 InsightIDR AI Assistant Summary Card",
+   "vendor_or_org": "Rapid7",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "운영 상태판",
+   "url": "https://docs.rapid7.com/insightidr/ai-assistant-summary-card/",
+   "access": "검색 결과만",
+   "evidence": "The summary card is generated from the same data as the dashboard widgets, is not stored, and states that it does not replace human analysis.",
+   "elements": [
+    "AI summary card",
+    "disclaimer text"
+   ],
+   "ai_features": [
+    "summary grounded in same widget data",
+    "explicit human-review disclaimer"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "검토 필요 문구"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "bi-42",
+   "name": "AI dashboard design principles (confidence & uncertainty in UI)",
+   "vendor_or_org": "Lazarev Agency",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://www.lazarev.agency/articles/ai-dashboard-design",
+   "access": "검색 결과만",
+   "evidence": "Recommends stating confidence explicitly in the UI, showing bias, source coverage, data freshness and uncertainty alongside AI outputs.",
+   "elements": [
+    "confidence indicator",
+    "source coverage",
+    "data freshness stamp",
+    "uncertainty note"
+   ],
+   "ai_features": [
+    "confidence/uncertainty disclosure"
+   ],
+   "layout_notes": "Metadata shown alongside (not hidden behind) the AI output.",
+   "axes": {
+    "ai_role": [
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "확인 불가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-43",
+   "name": "Stephen Few bullet graph & sparklines",
+   "vendor_or_org": "Stephen Few / Perceptual Edge (via FusionCharts primer)",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://www.fusioncharts.com/resources/chart-primers/bullet-graph",
+   "access": "검색 결과만",
+   "evidence": "Few designed the bullet graph to replace gauges: a linear layout fitting more information in less space, with qualitative ranges (good/satisfactory/poor), a target marker, and reversible scale for lower-is-better measures. In Information Dashboard Design, sparklines provide a quick sense of historical context and pair well with bullet graphs (current vs target + trend).",
+   "elements": [
+    "bullet graph (measure bar, target marker, qualitative bands)",
+    "sparkline",
+    "reversed scale for lower-is-better"
+   ],
+   "ai_features": [],
+   "layout_notes": "Pair bullet graph (now vs target) with sparkline (how we got here) in a compact row.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "숫자 + 스파크라인",
+     "불릿 · 진행 막대",
+     "시간 차트"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "목표"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-44",
+   "name": "NN/g: Dashboards - Making Charts and Graphs Easier to Understand (preattentive)",
+   "vendor_or_org": "Nielsen Norman Group",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://www.nngroup.com/articles/dashboards-preattentive/",
+   "access": "검색 결과만",
+   "evidence": "Defines dashboards as single-page visualization collections for at-a-glance information users can act on quickly; distinguishes operational (time-sensitive) from analytical dashboards. Position and length best support quantitative comparison, area/angle are harder, and analog gauges waste space and are harder to read.",
+   "elements": [
+    "single-page at-a-glance view",
+    "length/position encodings",
+    "avoid gauges"
+   ],
+   "ai_features": [],
+   "layout_notes": "Choose operational vs analytical framing up front; reserve color for what needs attention.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "확인 불가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "bi-45",
+   "name": "GOV.UK Service Manual - performance metrics & service dashboards",
+   "vendor_or_org": "GOV.UK / GDS",
+   "research_group": "BI · AI 인사이트",
+   "source_category": "디자인 참고",
+   "url": "https://www.gov.uk/service-manual/measuring-success/how-to-set-performance-metrics-for-your-service",
+   "access": "검색 결과만",
+   "evidence": "Services must publish four mandatory KPIs and should choose 3-4 metrics answering 'is this service working?', with comparison points (segmentation, over time, vs similar services). After the Performance Platform was decommissioned, a Design System backlog issue (alphagov/govuk-design-system-backlog #299) proposes a service performance dashboard pattern showing KPIs over time.",
+   "elements": [
+    "3-4 headline KPIs",
+    "time series per KPI",
+    "comparison vs similar services"
+   ],
+   "ai_features": [],
+   "layout_notes": "Start from the question 'is this service working?' and limit headline metrics to 3-4.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "시간 차트"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-01",
+   "name": "Text iQ in CX Dashboards (table / bubble chart widgets)",
+   "vendor_or_org": "Qualtrics",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://www.qualtrics.com/support/vocalize/dashboard-settings-cx/text-analysis-cx/",
+   "access": "검색 결과만",
+   "evidence": "Text iQ table widget reports sentiment per text topic and allows drilling into the topic hierarchy; the bubble chart visualizes sentiment breakdown per topic. Topics, sentiment labels and sentiment score must be mapped as multi-value text sets; Text iQ in CX dashboards is separate from survey Text iQ.",
+   "elements": [
+    "topic x sentiment table widget",
+    "sentiment bubble chart per topic",
+    "topic hierarchy drill-down"
+   ],
+   "ai_features": [
+    "topic + sentiment labeling of open text",
+    "search-based auto-tagging topics (ticketing)"
+   ],
+   "layout_notes": "Topic-hierarchy drill-down from parent topic to child topics in the table widget.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위",
+     "표 + 인라인 추세",
+     "행렬 · 버블"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-02",
+   "name": "Comment Summaries widget (EX)",
+   "vendor_or_org": "Qualtrics",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://qualtrics.com/support/employee-experience/creating-ee-project/dashboards-tab/widgets-ee/analysis-widgets-ee/comment-summaries-widget-ex",
+   "access": "검색 결과만",
+   "evidence": "Widget uses AI to create summaries of open-ended responses and highlight key topics, with a chart of the top 5 most mentioned Text iQ topics. Requires an admin to enable third-party generative AI; Qualtrics advises reviewing output for accuracy.",
+   "elements": [
+    "AI summary text block",
+    "top-5 topics chart"
+   ],
+   "ai_features": [
+    "generative AI comment summary",
+    "admin opt-in gate for gen-AI",
+    "accuracy-review disclaimer"
+   ],
+   "layout_notes": "Summary text paired with a top-5 topic chart in one widget.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "검토 필요 문구"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-03",
+   "name": "XM Discover (formerly Clarabridge Studio)",
+   "vendor_or_org": "Qualtrics",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://www.qualtrics.com/articles/news/qualtrics-announces-discover/",
+   "access": "검색 결과만",
+   "evidence": "XM Discover (Feb 2022) builds on the Clarabridge acquisition and ingests structured/unstructured feedback incl. support conversations, chat, social posts and review sites. Qualtrics says its iQ engine uncovers topics and sentiment and gets to the root cause of bad experiences; AI covers 23 languages with 150+ industry models.",
+   "elements": [
+    "multi-channel feedback ingestion",
+    "topic & sentiment analytics",
+    "pain-point identification"
+   ],
+   "ai_features": [
+    "automatic topic/sentiment discovery",
+    "root-cause identification",
+    "real-time insights from calls/chat"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "원인 분석",
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "질문창"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-04",
+   "name": "Generative AI reporting: GenAI Themes, Intelligent Summaries, Root Cause Assist",
+   "vendor_or_org": "Medallia",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://docs.medallia.com/medallia-experience-cloud/analysis/generative-ai-reporting",
+   "access": "검색 결과만",
+   "evidence": "Medallia docs describe GenAI themes (AI theme discovery, clustering and description), Intelligent Summaries that show a generative summary of the data subset for a theme/topic inside reporting modules, Smart Topic Builder, and Root Cause Assist for root-cause analysis of topics, themes and metrics.",
+   "elements": [
+    "theme reporting modules",
+    "per-theme summary panel",
+    "root cause view for metrics"
+   ],
+   "ai_features": [
+    "auto theme discovery & naming",
+    "per-theme generative summary",
+    "generative root-cause analysis",
+    "AI-assisted topic hierarchy building"
+   ],
+   "layout_notes": "Summaries are attached to a specific theme/topic within existing reporting modules and filters.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-05",
+   "name": "Ask Athena / Insights Assistant",
+   "vendor_or_org": "Medallia",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://medallia.com/platform/athena",
+   "access": "검색 결과만",
+   "evidence": "Ask Athena lets users ask a question and returns an AI summarization of results plus additional data, graphs and charts. A 2026 third-party article says Insights Assistant (Experience '26) descends from the Ask Athena prototype.",
+   "elements": [
+    "natural-language question box",
+    "AI answer + supporting charts"
+   ],
+   "ai_features": [
+    "conversational Q&A over experience data",
+    "answer summary with generated charts"
+   ],
+   "layout_notes": "Question -> summarized answer -> supporting graphs.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-06",
+   "name": "Smart Insights / Intuition Smart Alerts",
+   "vendor_or_org": "Sprinklr",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.sprinklr.com/products/consumer-intelligence/smart-insights/",
+   "access": "검색 결과만",
+   "evidence": "Sprinklr says its AI identifies anomalies based on historical data to surface actionable insights. Press coverage describes Smart Alerts setting dynamic thresholds that alert teams when sentiment or mentions rise or fall; third-party analysis says alerts go by email/SMS.",
+   "elements": [
+    "anomaly insight cards",
+    "sentiment & mention volume trends",
+    "alert notifications"
+   ],
+   "ai_features": [
+    "dynamic-threshold anomaly detection on volume/sentiment",
+    "auto-surfaced insights",
+    "Smart Trends"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-07",
+   "name": "Iris AI / Signals (spike alerts + AI summaries)",
+   "vendor_or_org": "Brandwatch",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.brandwatch.com/wp-content/uploads/2025/11/AI-in-Brandwatch-1-Pager.pdf",
+   "access": "검색 결과만",
+   "evidence": "Brandwatch AI detects significant changes and notifies the team; each Signals email opens with an AI summary of the detected change incl. theme, tone and potential causes. Iris can summarize dashboard findings in plain language and give an AI summary of any data point to explain what drives a spike.",
+   "elements": [
+    "spike signal email",
+    "dashboard/tab summary",
+    "data-point summary on chart click"
+   ],
+   "ai_features": [
+    "automatic spike detection",
+    "AI summary with theme/tone/potential causes",
+    "click-a-datapoint explanation",
+    "conversation insights summarizing mention themes"
+   ],
+   "layout_notes": "Alert email leads with AI summary; on dashboard, click a chart point to get an explanation.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "상단 요약 띠",
+     "점 클릭 설명",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운",
+     "구독 · 알림"
+    ],
+    "audience": "분석가",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-08",
+   "name": "Vizia command center",
+   "vendor_or_org": "Brandwatch",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.brandwatch.com/blog/launching-brandwatch-vizia/",
+   "access": "검색 결과만",
+   "evidence": "Vizia provides multi-screen, real-time visual displays of social data broadcastable to any screen, with pre-built 'Scenes'; later updates added text 'Messages' pushed to selected displays and automated events that change displays (launch-era 2013-14 sources).",
+   "elements": [
+    "wall-screen real-time displays",
+    "pre-built scenes",
+    "broadcast text messages to screens"
+   ],
+   "ai_features": [],
+   "layout_notes": "Multi-screen command-center layout for boardroom/operational/mobile settings.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "상황판(벽 화면)",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-09",
+   "name": "Blue Silk GPT / AI summaries & peak detection",
+   "vendor_or_org": "Talkwalker",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://talkwalker.com/products/bluesilkgpt",
+   "access": "검색 결과만",
+   "evidence": "Blue Silk GPT generates summaries explaining what causes real-time spikes; summaries are pitched for prioritizing content in alerts and (per Talkwalker) feed dashboards, reports and alerts. Resellers mention peak detection of unusual mention increases, virality maps and 90-day forecasting.",
+   "elements": [
+    "spike summary",
+    "alert feed",
+    "virality map",
+    "forecast chart"
+   ],
+   "ai_features": [
+    "spike cause summaries",
+    "peak detection",
+    "forecasting"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "행렬 · 버블"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "기간 스냅샷",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "직전 기간",
+     "예상 범위"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "분석가",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-10",
+   "name": "Mira AI in Analyze dashboards (Add AI Insight, Spike Summary)",
+   "vendor_or_org": "Meltwater",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://community.meltwater.com/new-to-meltwater-125/5-easy-ways-to-impress-your-boss-this-week-11886",
+   "access": "검색 결과만",
+   "evidence": "Mira reads Analyze dashboard data and writes a plain-English summary of what's trending, what drove a spike and how channels compare; 'Add AI Insight to the Dashboard' pins the explanation next to the chart. AI Spike Summary explains cause, key themes and top content.",
+   "elements": [
+    "AI insight text pinned beside chart",
+    "spike summary",
+    "channel comparison"
+   ],
+   "ai_features": [
+    "dashboard narrative summary",
+    "spike cause + top content",
+    "prebuilt agents (coverage: reach, sentiment, key themes)"
+   ],
+   "layout_notes": "AI explanation lives directly next to the chart it explains.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-11",
+   "name": "Analyze Topics by AI Assist + Spike Alerts",
+   "vendor_or_org": "Sprout Social",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://support.sproutsocial.com/hc/en-us/articles/20104813531533",
+   "access": "검색 결과만",
+   "evidence": "The widget surfaces the top three conversation patterns with a concise summary each, based on up to 1,000 highest-engagement messages within the topic's date range/filters; changing filters shows a stale banner with 'Regenerate'; each summary opens up to 50 supporting messages in Message Explorer. Spike Alerts (non-AI, user-defined thresholds) email on volume, impressions, positive or negative sentiment rise/fall.",
+   "elements": [
+    "top-3 theme summary cards",
+    "supporting-messages drill (up to 50)",
+    "stale-summary banner + Regenerate",
+    "threshold spike alerts"
+   ],
+   "ai_features": [
+    "AI theme summaries linked to evidence messages",
+    "freshness/staleness indicator"
+   ],
+   "layout_notes": "Summary card -> click -> Message Explorer with evidence posts.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터",
+     "드릴다운",
+     "재생성",
+     "구독 · 알림"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-12",
+   "name": "Impact Analysis + AI data-point summaries (Lyra)",
+   "vendor_or_org": "Chattermill",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://chattermill.com/platform/impact-analysis",
+   "access": "검색 결과만",
+   "evidence": "Impact Analysis shows which themes push NPS (or net sentiment / average score) up or down. Clicking any data point surfaces an AI-generated summary of what is happening and why, with verbatim quotes behind each finding. Lyra combines aspect-based sentiment with LLMs.",
+   "elements": [
+    "theme impact on NPS chart",
+    "net sentiment",
+    "verbatim quotes panel"
+   ],
+   "ai_features": [
+    "click-to-explain AI summary (what & why)",
+    "aspect-based sentiment"
+   ],
+   "layout_notes": "Chart point -> AI summary -> verbatims.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "점 클릭 설명"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-13",
+   "name": "Business Impact Analysis (impact view / NPS waterfall)",
+   "vendor_or_org": "Thematic",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://getthematic.com/insights/cx-dashboards-that-earn-executive-trust",
+   "access": "검색 결과만",
+   "evidence": "Thematic ranks themes by how much they move NPS/CSAT rather than frequency; an Impact view toggle shows theme effect on NPS, and a guide shows an NPS waterfall across themes (e.g., 44.2 to 39.8). Third-party comparison says every theme maps back to the comments that created it.",
+   "elements": [
+    "impact vs volume toggle",
+    "NPS waterfall by theme",
+    "theme-to-comment traceability"
+   ],
+   "ai_features": [
+    "auto themes",
+    "impact quantification"
+   ],
+   "layout_notes": "Waterfall reads left-to-right from baseline score through theme contributions.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위",
+     "순위 · 점유율",
+     "기여 분해"
+    ],
+    "layout": "분해 나무",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "평소 기준선"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-14",
+   "name": "Anomaly alerts + Wisdom (dashboards)",
+   "vendor_or_org": "Enterpret",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://helpcenter.enterpret.com/en/articles/6446366-anomaly",
+   "access": "검색 결과만",
+   "evidence": "Anomaly alerts flag unusual spikes or drops for a tracked keyword or reason, default z-score 1.5 with adjustable sensitivity; reports can be configured on taxonomy or custom tags. Wisdom draws from the same feedback the dashboard filters and can identify root causes; alerts go to Slack.",
+   "elements": [
+    "hierarchical taxonomy filter",
+    "anomaly report",
+    "Slack alerts"
+   ],
+   "ai_features": [
+    "z-score anomaly detection with sensitivity setting",
+    "conversational root-cause assistant",
+    "inline reclassification feedback loop"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "평소 기준선",
+     "예상 범위"
+    ],
+    "interaction": [
+     "필터",
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-15",
+   "name": "AI Customer Feedback Dashboards",
+   "vendor_or_org": "Unwrap",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://www.unwrap.ai/dashboards-reporting",
+   "access": "검색 결과만",
+   "evidence": "Unwrap builds the taxonomy from feedback and keeps dashboards current automatically; 'Found by Unwrap' identifies feedback groups on its own. Vendor claims anomalous-trend alerting under 24h via Slack and email.",
+   "elements": [
+    "auto-built taxonomy dashboard",
+    "trend surfacing",
+    "Slack/email alerts"
+   ],
+   "ai_features": [
+    "automatic clustering into groups",
+    "unanticipated trend discovery",
+    "anomaly alerts"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "분석가",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-16",
+   "name": "SentiSum insight dashboard",
+   "vendor_or_org": "SentiSum",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://zendesk.fr/marketplace/partners/3324/sentisum",
+   "access": "검색 결과만",
+   "evidence": "Listing says the insight dashboard supports root-cause analytics and 'reason for contact' trend tracking; review sites say it shows top issues, sentiment trends and urgent insights, and creates alerts for urgent/harmful tickets.",
+   "elements": [
+    "top issues list",
+    "sentiment trend",
+    "reason-for-contact trend",
+    "urgent ticket alerts"
+   ],
+   "ai_features": [
+    "NLP auto-tagging of tickets",
+    "root cause analytics",
+    "surge flagging"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-17",
+   "name": "Siena Insights (formerly Idiomatic)",
+   "vendor_or_org": "Siena AI",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://siena.cx/insights/customer-feedback-analytics-software",
+   "access": "검색 결과만",
+   "evidence": "Pulls in surveys, reviews and conversations to show sentiment, trends over time and top negative issues; Slack alerts when ticket volume spikes above the daily average (e.g., missing-shipment tickets); dashboard shows ticket volume share by category.",
+   "elements": [
+    "top negative issues",
+    "trend over time",
+    "category share %",
+    "Slack spike alert"
+   ],
+   "ai_features": [
+    "auto categorization",
+    "spike-vs-daily-average alerting"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "순위 · 점유율",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "평소 기준선"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-18",
+   "name": "Intelligent triage dashboard (analyst copilot)",
+   "vendor_or_org": "Zendesk",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://support.zendesk.com/hc/en-us/articles/10782829928986-Understanding-the-intelligent-triage-dashboard-in-analyst-copilot-EAP",
+   "access": "검색 결과만",
+   "evidence": "Dashboard tabs: Overview, Intent, Sentiment. Intent tab has KPI of intent-enriched tickets, tickets by intent category, and intent trends over time; Sentiment tab shows sentiment-enriched tickets, first reply/full resolution time for those tickets and sentiment average trend. Agents see predicted intent/language/sentiment per ticket.",
+   "elements": [
+    "KPI tile: enriched ticket count",
+    "tickets by intent column chart",
+    "stacked top-topic trend",
+    "sentiment average trend",
+    "FRT/resolution time by sentiment"
+   ],
+   "ai_features": [
+    "ML intent/sentiment/language classification",
+    "duplicable predefined dashboard"
+   ],
+   "layout_notes": "Tabbed: Overview -> Intent -> Sentiment.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "시간 차트"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-19",
+   "name": "Fin Insights (Topics Explorer, Optimize dashboard)",
+   "vendor_or_org": "Intercom",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://fin.ai/insights",
+   "access": "검색 결과만",
+   "evidence": "AI automatically organizes support conversations into Topics and Subtopics carrying CX Score, resolution rate and handling time; Optimize dashboard surfaces AI suggestions on content, data and action gaps, applicable in one click. Open beta from May 2025.",
+   "elements": [
+    "CX Score KPI",
+    "topic/subtopic explorer",
+    "suggestions list with apply button"
+   ],
+   "ai_features": [
+    "auto topic clustering",
+    "AI-generated CX score",
+    "actionable improvement suggestions"
+   ],
+   "layout_notes": "Topics -> subtopics -> metrics; suggestions as action list.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "점수 · 백분위"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-20",
+   "name": "Productboard Spark (feedback synthesis)",
+   "vendor_or_org": "Productboard",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://www.productboard.com/spark/",
+   "access": "검색 결과만",
+   "evidence": "Spark synthesizes thousands of feedback inputs, searches with natural language, uncovers trends and segment insights and surfaces supporting evidence; every opportunity links back to original feedback. Earlier Insights Trends charted note counts matching filters.",
+   "elements": [
+    "trend view",
+    "opportunity list",
+    "evidence links"
+   ],
+   "ai_features": [
+    "NL search over feedback",
+    "trend/segment detection",
+    "evidence-linked opportunities"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "질의응답"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-21",
+   "name": "AI Dashboards / Channels",
+   "vendor_or_org": "Dovetail",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://www.dovetail.com/product/ai-dashboards",
+   "access": "검색 결과만",
+   "evidence": "AI Dashboards visualize sentiment, feedback themes, NPS and CSAT. Channels continuously classify incoming data into themes and periodically detect new ones; users can split/merge/rename themes. Dovetail says every AI theme and insight traces back to source evidence.",
+   "elements": [
+    "sentiment chart",
+    "theme breakdown",
+    "NPS/CSAT tiles"
+   ],
+   "ai_features": [
+    "continuous theme classification",
+    "new-theme detection",
+    "human edit of AI themes",
+    "evidence traceability"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-22",
+   "name": "Canny Autopilot",
+   "vendor_or_org": "Canny",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "VOC 분석",
+   "url": "https://platform.softwareone.com/product/canny/PCP-2063-3520",
+   "access": "검색 결과만",
+   "evidence": "Reseller listing says Autopilot captures and deduplicates feedback from customer conversations, with Smart Replies and Comment Summaries; other sources say duplicates are merged so request counts are accurate.",
+   "elements": [
+    "feature request vote counts",
+    "merged feedback threads"
+   ],
+   "ai_features": [
+    "auto feedback extraction from chats",
+    "duplicate detection/merge",
+    "thread summaries"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "사람 교정"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "우선순위 작업 목록",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-23",
+   "name": "AppFollow AI review analytics",
+   "vendor_or_org": "AppFollow",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "리뷰 분석",
+   "url": "https://appfollow.io/ai-info",
+   "access": "검색 결과만",
+   "evidence": "AppFollow lists semantic clustering, sentiment shifts, anomaly detection and AI summaries; AI semantic tags classify reviews by topic/sentiment; rule-based tags apply every 10 minutes; feature-level sentiment over time is tracked; AI replies in brand tone with approval queue.",
+   "elements": [
+    "feature sentiment over time",
+    "semantic tag breakdown",
+    "custom dashboards",
+    "scheduled email reports"
+   ],
+   "ai_features": [
+    "semantic clustering",
+    "anomaly detection",
+    "AI summaries",
+    "AI reply drafts with approval"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "분류 · 테마",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "검토 필요 문구"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-24",
+   "name": "Appbot dashboards (sentiment, topics, Ask Appbot)",
+   "vendor_or_org": "Appbot",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "리뷰 분석",
+   "url": "https://appbot.co/features/",
+   "access": "검색 결과만",
+   "evidence": "Topics group reviews (e.g., Bugs, Payment, Design & UX) and show sentiment, mentions, % of reviews and trend line per topic; sentiment trends over long periods show how app changes affected sentiment; competitor side-by-side; Ask Appbot on higher plans.",
+   "elements": [
+    "topic table: sentiment / mentions / % / trend sparkline",
+    "sentiment timeline",
+    "competitor benchmark"
+   ],
+   "ai_features": [
+    "AI sentiment/topic/emotion classification",
+    "Ask Appbot Q&A"
+   ],
+   "layout_notes": "Topic rows with inline trend line.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "숫자 + 스파크라인",
+     "표 + 인라인 추세",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "분석가",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-25",
+   "name": "AppTweak topic analysis",
+   "vendor_or_org": "AppTweak",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "리뷰 분석",
+   "url": "https://help.apptweak.com/en/articles/9428575-how-to-use-the-topics-analysis",
+   "access": "검색 결과만",
+   "evidence": "Topic analysis of 1-2 star reviews over last 90 days returns per topic a review count, plain-language definition and the keywords the AI used; analysis history allows comparison over time. Sentiment view lists most repeated/positive/negative keywords (min 5 occurrences).",
+   "elements": [
+    "topic list with counts",
+    "AI topic definitions",
+    "keywords used",
+    "analysis history"
+   ],
+   "ai_features": [
+    "LLM topic extraction on negative reviews",
+    "explainability via keywords used"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "정의 · 근거 공개"
+    ],
+    "kpi_form": [
+     "표 + 인라인 추세",
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-26",
+   "name": "Birdeye Insights AI",
+   "vendor_or_org": "Birdeye",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "리뷰 분석",
+   "url": "https://birdeye.com/insights/",
+   "access": "검색 결과만",
+   "evidence": "Insights AI turns reviews, surveys and listings into a single health score, a prioritized list of fixes per location and tracking of what improved; Sentiment Score across locations; surfaces root-cause issues and main sentiment drivers across 1,000+ locations.",
+   "elements": [
+    "health score KPI",
+    "sentiment score",
+    "prioritized fix list",
+    "improvement tracking"
+   ],
+   "ai_features": [
+    "root-cause issue surfacing",
+    "driver analysis",
+    "prioritized recommendations"
+   ],
+   "layout_notes": "Score -> prioritized action list -> before/after tracking.",
+   "axes": {
+    "ai_role": [
+     "원인 분석",
+     "분류 · 테마",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜 · 다음",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "점수 · 백분위"
+    ],
+    "layout": "우선순위 작업 목록",
+    "time_frame": [
+     "기간 스냅샷",
+     "사건 전후"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-27",
+   "name": "Yext review dashboard (AgencyAnalytics)",
+   "vendor_or_org": "AgencyAnalytics / Yext",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "리뷰 분석",
+   "url": "https://agencyanalytics.com/integrations/yext",
+   "access": "검색 결과만",
+   "evidence": "Dashboard aggregates reviews from Google, Facebook, Yelp and hundreds of sites to visualize overall sentiment, plus rating trends, review volume, profile engagement and call/direction requests.",
+   "elements": [
+    "overall sentiment",
+    "rating trend",
+    "review volume"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "voc-28",
+   "name": "Crisis Oracle / Narratives AI",
+   "vendor_or_org": "Pulsar",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.newswire.com/view/content/pulsar-launches-crisis-oracle-to-help-brands-anticipate-reputational-22722470",
+   "access": "검색 결과만",
+   "evidence": "Crisis Oracle (Feb 2026) helps teams identify emerging brand crises before escalation. Pulsar names early-warning signals incl. volume anomalies, narrative clustering, cross-platform spread, journalist engagement, coordinated activity, AI search citations. Narratives AI clusters narratives across social/news; TeamMates agents include Sentinels that escalate anomalies.",
+   "elements": [
+    "early-warning signal list",
+    "narrative clusters"
+   ],
+   "ai_features": [
+    "narrative clustering",
+    "multi-signal crisis detection",
+    "agent escalation"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원 차트 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-29",
+   "name": "Hootsuite Listening / crisis management (Talkwalker-powered)",
+   "vendor_or_org": "Hootsuite",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://hootsuite.com/platform/crisis-management",
+   "access": "검색 결과만",
+   "evidence": "Smart alerts automatically identify unusual spikes in volume, reach or engagement; users can set personalized crisis alerts on triggers/filters; pages mention visualizing sentiment change, competitor comparison and AI-automated summaries.",
+   "elements": [
+    "spike alerts",
+    "sentiment change chart",
+    "competitor comparison"
+   ],
+   "ai_features": [
+    "auto spike detection",
+    "AI summaries"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "필터",
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-30",
+   "name": "AI Sentinel",
+   "vendor_or_org": "Digimind",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.digimind.com/en/news/digimind-launches-ai-sentinel-and-releases-digimind-social-10.0",
+   "access": "검색 결과만",
+   "evidence": "Smart alerting system that autonomously identifies and understands the reasons behind conversation surges that could harm brand reputation.",
+   "elements": [
+    "surge alert"
+   ],
+   "ai_features": [
+    "auto cause explanation for surges"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-31",
+   "also_ids": [
+    "game-17"
+   ],
+   "name": "Lens (AI social sentiment for community managers)",
+   "vendor_or_org": "Keywords Studios",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.keywordsstudios.com/en/lens/",
+   "access": "검색 결과만",
+   "evidence": "Game-industry tool built for community managers; ingests social media, stores and community forums to spot sentiment shifts, emerging trends and actionable feedback; features natural-language querying and real-time trend monitoring. Slalom case cites 90% reduction in time to insights/reports.",
+   "elements": [
+    "sentiment shift tracking",
+    "emerging trend list",
+    "report generation"
+   ],
+   "ai_features": [
+    "AI sentiment",
+    "NL querying",
+    "real-time trend monitoring"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드",
+     "질문창",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "voc-32",
+   "also_ids": [
+    "game-35"
+   ],
+   "name": "Creativ game-publisher sentiment study (LLM)",
+   "vendor_or_org": "Creativ (TokenPost 보도)",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "소셜 리스닝",
+   "url": "https://www.tokenpost.kr/news/ai/253971",
+   "access": "검색 결과만",
+   "evidence": "LLM analysis of 1.5M game conversations from ~9,300 channels (YouTube, Reddit, Discord, news) for 17 publishers, Nov 2024-Apr 2025; claims to detect context, gamer slang and sarcasm unlike keyword-frequency methods, processing in 10 days.",
+   "elements": [
+    "publisher-level sentiment flow"
+   ],
+   "ai_features": [
+    "LLM sentiment with slang/sarcasm awareness"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-33",
+   "name": "썸트렌드 클라우드 AI 분석 / 썸트렌드 에어",
+   "vendor_or_org": "바이브컴퍼니",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://www.mt.co.kr/article/2026030615341696439",
+   "access": "검색 결과만",
+   "evidence": "바이브컴퍼니가 썸트렌드 클라우드에 AI 분석 기능을 넣으며, 생성형 AI 답변을 사람이 재검증하는 부담을 줄이기 위해 원천 데이터를 전수 분석한다는 취지라고 보도됨(2026.03). 2024년에는 자체 생성 AI 언어모델 탑재 '썸트렌드 에어' 출시 보도.",
+   "elements": [
+    "AI 분석 답변"
+   ],
+   "ai_features": [
+    "원천 데이터 전수 분석 기반 수치 근거 AI 답변"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "질의응답"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-34",
+   "name": "리스닝마인드 클러스터파인더 리포트",
+   "vendor_or_org": "어센트코리아",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://docs.channel.io/lm-skills/ko/articles/clusterfinder-report-3b97d33b",
+   "access": "검색 결과만",
+   "evidence": "동시검색 데이터를 맥락별(CEP)로 분류해 브랜드가 떠오르는 순간과 실행 전략을 찾는 스킬로, 클러스터 간 이동 흐름도가 나오며 리포트 내 대시보드/A4 버튼으로 보기 방식을 전환. 쿼리파인더는 연관 쿼리 1,000개를 검색 인텐트별 자동 그룹핑.",
+   "elements": [
+    "클러스터 지형",
+    "클러스터 간 이동 흐름도",
+    "대시보드/A4 보기 전환"
+   ],
+   "ai_features": [
+    "검색 인텐트 자동 그룹핑",
+    "MCP 기반 어시스턴트 리포트 생성"
+   ],
+   "layout_notes": "같은 리포트를 대시보드형/A4 문서형으로 전환.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "행렬 · 버블"
+    ],
+    "layout": "보고서 · 문서",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-35",
+   "name": "퓰리처AI 평판·위기관리",
+   "vendor_or_org": "스타씨드",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://view.asiae.co.kr/article/2026072208240029096",
+   "access": "검색 결과만",
+   "evidence": "뉴스·SNS·온라인 데이터로 위기 징후를 조기 감지하고, AI 에이전트가 주요 이슈, 언급량 변화, 긍·부정 여론, 핵심 키워드, 경쟁사 동향, 주요 리스크와 시사점을 자동 정리한 경영진 보고용 리포트를 생성(2026.07).",
+   "elements": [
+    "주요 이슈",
+    "언급량 변화",
+    "긍·부정 여론",
+    "핵심 키워드",
+    "리스크·시사점"
+   ],
+   "ai_features": [
+    "위기 징후 조기 감지",
+    "AI 에이전트 경영진 리포트 자동 작성"
+   ],
+   "layout_notes": "이슈 -> 수치 변화 -> 여론 -> 리스크/시사점 순의 보고서 구성.",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "보고서 · 문서",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-36",
+   "name": "민원정보분석시스템 / 민원예보 / 한눈에 보는 민원 빅데이터",
+   "vendor_or_org": "국민권익위원회",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://smartcity.go.kr/2022/03/31/국민권익위-한-해-2천만-건에-달하는-민원-빅데이터-분/",
+   "access": "검색 결과만",
+   "evidence": "국민신문고·지자체 민원을 민원정보분석시스템으로 분석해 국민 불편사항·정책이슈를 1,700여개 공공기관에 '민원예보' 형식으로 제공하고, '한눈에 보는 민원 빅데이터'로 통계를 공개. 2022년 AI 위험진단 예측 플랫폼 계획, 2026년 제도개선 권고 이행현황 대시보드 시각화 계획 보도.",
+   "elements": [
+    "민원 통계",
+    "민원예보",
+    "이행현황 대시보드(계획)"
+   ],
+   "ai_features": [
+    "AI 위험진단 예측(계획)"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "voc-37",
+   "name": "VOC 스튜디오",
+   "vendor_or_org": "채널톡·보이저엑스",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://byline.network/2023/07/%ec%b1%84%eb%84%90%ed%86%a1-%eb%b3%b4%ec%9d%b4%ec%a0%80%ec%97%91%ec%8a%a4-ai-%ea%b3%a0%ea%b0%9d-%ec%83%81%eb%8b%b4-%eb%b6%84%ec%84%9d%ed%88%b4-voc-%ec%8a%a4%ed%8a%9c%eb%94%94%ec%98%a4%ec%b6%9c/",
+   "access": "검색 결과만",
+   "evidence": "상담 데이터를 AI로 분석해 AI 자동 생성 CX 리포트, 커스텀 대시보드, 불만·이슈·칭찬 자동 감지, 상담 세 줄 요약을 제공하며, 대시보드 첫 화면에서 추세를 벗어나는 특이점을 자동 감지.",
+   "elements": [
+    "커스텀 대시보드",
+    "특이점 감지 영역",
+    "불만/이슈/칭찬 분류",
+    "CX 리포트"
+   ],
+   "ai_features": [
+    "AI CX 리포트 자동 생성",
+    "불만·이슈·칭찬 자동 감지",
+    "세 줄 요약",
+    "추세 이탈 자동 감지"
+   ],
+   "layout_notes": "첫 화면에 특이점(anomaly)을 먼저 노출.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "상단 요약 띠",
+     "문서 · 메일 보고"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "요약 → 카드",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "평소 기준선"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-38",
+   "name": "오픈서베이 데이터스페이스 VOC 분석",
+   "vendor_or_org": "오픈서베이",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://blog.opensurvey.co.kr/research-tips/cx-action-guide-4/",
+   "access": "검색 결과만",
+   "evidence": "주제 추출 -> 개별 VOC 분류 -> 대표 VOC 추출 -> 요약 단계를 자동화하고, HDBSCAN 밀도 기반 클러스터링으로 유사 주제를 통합. 최종 해석·의사결정은 사람이 검토해야 한다고 강조.",
+   "elements": [
+    "주제 목록",
+    "대표 VOC",
+    "요약"
+   ],
+   "ai_features": [
+    "자동 주제 추출",
+    "클러스터링 통합",
+    "대표 VOC 선정",
+    "사람 검토 단계"
+   ],
+   "layout_notes": "주제 -> 분류 -> 대표 VOC -> 요약의 파이프라인 순서.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "검토 필요 문구"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "voc-39",
+   "name": "KT AI 기반 VOC 통합 포털",
+   "vendor_or_org": "KT",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://twig24.com/news/IT/2024/06/14/20240614020007",
+   "access": "검색 결과만",
+   "evidence": "2022년 구축된 AI 기반 VOC 통합 포털이 당일 접수 VOC를 긍정·부정·위험으로 분류하고, 특정 부서 관련 VOC가 급증하면 경보가 작동.",
+   "elements": [
+    "긍정/부정/위험 분류",
+    "부서별 급증 경보"
+   ],
+   "ai_features": [
+    "AI 감성·위험 분류",
+    "부서 단위 급증 알림"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "voc-40",
+   "name": "LG유플러스 VOC LAB",
+   "vendor_or_org": "LG유플러스",
+   "research_group": "VOC · 소셜 리스닝",
+   "source_category": "국내 VOC",
+   "url": "https://www.lg.co.kr/media/release/27264",
+   "access": "검색 결과만",
+   "evidence": "월 200만건 고객센터 상담 내용을 AI가 분석하는 고객의견 분석 시스템으로, 상담 내용을 자동 기록·분류.",
+   "elements": [
+    "상담 분류 결과"
+   ],
+   "ai_features": [
+    "상담 자동 기록·분류"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-01",
+   "name": "Engagement / Overview Dashboards",
+   "vendor_or_org": "GameAnalytics",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://docs.gameanalytics.com/features/dashboards/engagement",
+   "access": "검색 결과만",
+   "evidence": "The Engagement dashboard covers retention, DAU split into new vs returning users, session count, session length and playtime; the Overview dashboard covers new users, DAU, session count, retention and playtime per user.",
+   "elements": [
+    "DAU split new vs returning",
+    "retention",
+    "session count",
+    "session length",
+    "playtime per user",
+    "new users"
+   ],
+   "ai_features": [],
+   "layout_notes": "Separate pre-built dashboards per theme (Overview vs Engagement).",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-02",
+   "name": "Benchmarks (GameIntel)",
+   "vendor_or_org": "GameAnalytics",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://docs.gameanalytics.com/gameintel/benchmarks/overview",
+   "access": "검색 결과만",
+   "evidence": "Benchmarks compares a game's D1/D7/D28/D90 retention, conversion rate, ARPDAU, ARPPU and average session length against games in the GameAnalytics network; Pro-subscription only. The company also publishes quarterly/annual benchmark reports.",
+   "elements": [
+    "retention D1/D7/D28/D90 vs network",
+    "conversion rate",
+    "ARPDAU",
+    "ARPPU",
+    "avg session length",
+    "peer-percentile comparison"
+   ],
+   "ai_features": [],
+   "layout_notes": "Own metric shown against a peer/genre benchmark.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "동종 비교",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-03",
+   "name": "Unity Analytics Dashboard (legacy)",
+   "vendor_or_org": "Unity",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://docs.unity3d.com/2020.3/Documentation/Manual/UnityAnalyticsDashboard.html",
+   "access": "검색 결과만",
+   "evidence": "The Overview tab shows pre-built KPI visualizations: core usage chart (new users, DAU, MAU), Sticky Factor (DAU/MAU), sessions, time in app, ARPDAU, ARPPU and verified IAP/ads revenue; other pages include Data Explorer, Funnel Analyzer, Segment Builder, A/B Testing and Remote Settings.",
+   "elements": [
+    "core usage chart new users/DAU/MAU",
+    "sticky factor DAU/MAU",
+    "ARPDAU",
+    "ARPPU",
+    "verified revenue",
+    "country/platform segments",
+    "Data Explorer",
+    "Funnel Analyzer"
+   ],
+   "ai_features": [],
+   "layout_notes": "Overview tab of pre-built KPIs first; exploration tools (Data Explorer, funnels, segments) on separate pages.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-04",
+   "name": "Game Manager Trends",
+   "vendor_or_org": "Microsoft PlayFab",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://devdocs.xbox.com/services/playfab/data-analytics/learn-data/trends/trends-overview",
+   "access": "검색 결과만",
+   "evidence": "Trends evaluates daily historical performance across six KPIs (daily/monthly active players, new players, screen time, retention, revenue), filterable by time, platform, region and segment; updated once daily at the close of the UTC day. Listed as a Preview feature under PlayFab Insights.",
+   "elements": [
+    "DAU/MAU",
+    "new players",
+    "screen time",
+    "classic retention graph",
+    "revenue",
+    "platform/region/segment filters",
+    "time range picker"
+   ],
+   "ai_features": [],
+   "layout_notes": "Six KPI trend charts under Analyze tab; global filter bar (time, platform, region, segment).",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "기간 스냅샷",
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "필터"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-05",
+   "name": "Sales & Activation Reports - Wishlists",
+   "vendor_or_org": "Valve Steamworks",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://partner.steamgames.com/doc/marketing/wishlist/reporting",
+   "access": "검색 결과만",
+   "evidence": "Each app's page in the Sales & Activation Reports Portal has a Wishlists section tracking additions, purchases and deletions; regional/country breakdown is in the Regional sales report; data updates daily for the previous date. A Wishlist Data API was also announced.",
+   "elements": [
+    "wishlist additions/purchases/deletions",
+    "regional breakdown",
+    "daily series"
+   ],
+   "ai_features": [],
+   "layout_notes": "Per-app details page with sections (sales, wishlists, regional).",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "기간 스냅샷",
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-06",
+   "name": "Steam Discount History dashboard",
+   "vendor_or_org": "Valve Steamworks",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://respawn.outlookindia.com/gaming/gaming-news/valve-finally-opens-the-black-box-on-steam-sale-performance",
+   "access": "검색 결과만",
+   "evidence": "A news article reports a newer dashboard on each game's Discount History page covering gross revenue, units sold and wishlist conversion for each sale (reported only in news).",
+   "elements": [
+    "per-sale gross revenue",
+    "units sold",
+    "wishlist conversion per discount event"
+   ],
+   "ai_features": [],
+   "layout_notes": "Metrics grouped per sale event (event-centric view).",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "사건 단위 묶음",
+    "time_frame": [
+     "추세",
+     "사건 전후"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "game-07",
+   "name": "SteamDB Charts",
+   "vendor_or_org": "SteamDB",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://steamdb.com/charts",
+   "access": "검색 결과만",
+   "evidence": "The charts page lists Top Games ranked by current players, Trending (biggest player-count changes), Peak Players (all-time and 24-hour peaks) and Historical Data player trends. The search did not confirm any patch annotations on charts.",
+   "elements": [
+    "current players ranking",
+    "trending (largest change)",
+    "24h and all-time peak",
+    "historical CCU trend"
+   ],
+   "ai_features": [],
+   "layout_notes": "Ranking table + movers list + peaks; per-game history.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "순위 · 점유율",
+     "표 + 인라인 추세",
+     "시간 차트"
+    ],
+    "layout": "동종 비교",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-08",
+   "name": "Steam user review histogram",
+   "vendor_or_org": "Valve Steam",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.engadget.com/2017-09-20-valve-steam-chart-graph-review-bombing.html",
+   "access": "검색 결과만",
+   "evidence": "Since Sept 2017 each store page can show a histogram of positive (blue) and negative (red) reviews over time; clicking a period shows sample reviews from it. Valve contrasted 'Recent' (30 days) and 'Overall' scores and introduced the chart so spikes (review bombing) can be checked against events at that time.",
+   "elements": [
+    "positive/negative stacked bars over time",
+    "Recent (30d) vs Overall score",
+    "click-through to sample reviews of a period",
+    "Show graph toggle"
+   ],
+   "ai_features": [],
+   "layout_notes": "Summary score first, expandable graph; click a bar to drill into that period's reviews.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위",
+     "시간 차트"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-09",
+   "name": "Live Ops Insights (ex-Playliner)",
+   "vendor_or_org": "Sensor Tower",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://sensortower.com/ko/product/live-ops",
+   "access": "검색 결과만",
+   "evidence": "Live Ops tracking covers in-game events and event calendars, feature updates/content drops, progression and reward structures and limited-time offers; the calendar gives a timeline of when games run events to spot seasonal patterns. Sensor Tower acquired Playliner in June 2025.",
+   "elements": [
+    "live-ops event calendar/timeline",
+    "event taxonomy (monetization/progression/social)",
+    "LTO tracking",
+    "content drop log"
+   ],
+   "ai_features": [],
+   "layout_notes": "Calendar/timeline of competitor events.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "공통 타임라인",
+    "time_frame": [
+     "추세",
+     "캘린더"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-10",
+   "name": "Live Events Tracker",
+   "vendor_or_org": "GameRefinery (Liftoff)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://gamerefinery.com/live-events-tracker",
+   "access": "검색 결과만",
+   "evidence": "A 'game calendars' tab reveals competitors' LiveOps roadmaps; clicking an event opens a side panel with synopsis, mechanics and rewards. An events feed lists events by start time, filterable by game, type and duration; statistics show average daily event counts, popular event types and average durations; coverage now also includes revenue/download impact of events.",
+   "elements": [
+    "game calendar (gantt-like)",
+    "event detail side panel",
+    "events feed by start time",
+    "filters game/type/duration",
+    "avg events per day",
+    "event type distribution",
+    "revenue/download impact of events"
+   ],
+   "ai_features": [],
+   "layout_notes": "Calendar view -> click event -> detail panel; separate feed and stats tabs.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "공통 타임라인",
+    "time_frame": [
+     "사건 전후",
+     "실시간 · 일별",
+     "캘린더"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "필터",
+     "드릴다운"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-11",
+   "name": "Levellr Discord insights",
+   "vendor_or_org": "Levellr",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://tech.eu/2026/01/29/levellr-raises-2-5m-to-turn-discord-and-gaming-user-voice-data-into-brand-intelligence/",
+   "access": "검색 결과만",
+   "evidence": "Levellr turns Discord and Telegram conversations into decision-grade intelligence; other coverage describes sentiment tracking, social listening and customizable dashboards, and a Social Listening dashboard clustering community talk by topic with real-time sentiment. Users named include Epic Games, Krafton and Scopely.",
+   "elements": [
+    "social listening dashboard",
+    "topic clusters",
+    "real-time sentiment",
+    "customizable dashboards"
+   ],
+   "ai_features": [
+    "AI topic clustering",
+    "real-time sentiment analysis"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-12",
+   "name": "FirstLook Player Sentiment",
+   "vendor_or_org": "FirstLook",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://docs.firstlook.gg/player/sentiment/",
+   "access": "검색 결과만",
+   "evidence": "Monitors Discord and Steam reviews/discussions, categorizes sentiment and discovers emerging topics; the overview highlights trending tags/topics, ships default tags (Gameplay, Combat, Balance) and auto-creates new tags when subjects gain traction; a Topics page and a Weekly Summaries view track sentiment shifts, trending topics and engagement week by week.",
+   "elements": [
+    "trending tags/topics overview",
+    "default tag taxonomy",
+    "topics page",
+    "weekly summary (sentiment shift, trending topics, engagement)",
+    "source config (Discord, Steam)"
+   ],
+   "ai_features": [
+    "auto-generated tags for emerging topics",
+    "sentiment categorization",
+    "weekly AI summaries"
+   ],
+   "layout_notes": "Overview (trending) -> Topics -> Weekly Summaries.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "추세"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "game-13",
+   "name": "FirstLook Agent",
+   "vendor_or_org": "FirstLook",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://firstlook.gg/agent/",
+   "access": "검색 결과만",
+   "evidence": "The Agent takes a user-typed topic and returns a summary, a sentiment score and the original player quotes behind it; listed as free within FirstLook Labs.",
+   "elements": [
+    "topic query box",
+    "summary card",
+    "sentiment score",
+    "evidence quotes"
+   ],
+   "ai_features": [
+    "LLM topic summary",
+    "sentiment score",
+    "quote-grounded evidence"
+   ],
+   "layout_notes": "Ask a topic -> summary + score + supporting quotes.",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "차트 · 카드 옆",
+     "질문창"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "원문 연결",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "질문 중심",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "질문"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "game-14",
+   "name": "Affogata player feedback analytics",
+   "vendor_or_org": "Affogata",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.affogata.com/helpshift-users/",
+   "access": "검색 결과만",
+   "evidence": "Affogata pairs AI player-feedback analytics with Helpshift in-game support and includes smart alerts for spikes or sentiment shifts; it tracks feedback across Discord, Steam, Reddit, app stores and forums, with multilingual analysis (vendor claims).",
+   "elements": [
+    "multi-source feedback (Discord, Steam, Reddit, stores, forums)",
+    "sentiment trend",
+    "spike alerts"
+   ],
+   "ai_features": [
+    "smart alerts on volume spikes / sentiment shifts",
+    "multilingual AI analysis"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-15",
+   "name": "PlayerXP",
+   "vendor_or_org": "PlayerXP",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.g2.com/products/player-xp/discuss",
+   "access": "검색 결과만",
+   "evidence": "Collects feedback from message boards, user reviews and social data into one interactive dashboard; sentiment scoring trained on millions of pieces of games feedback.",
+   "elements": [
+    "unified feedback dashboard",
+    "sentiment score"
+   ],
+   "ai_features": [
+    "game-domain trained sentiment scoring"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-16",
+   "name": "BetaHub Discord sentiment",
+   "vendor_or_org": "BetaHub",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://betahub.io/resources/setup-discord-sentiment-analysis/",
+   "access": "검색 결과만",
+   "evidence": "Discord-focused; sentiment analysis (Pro plan) shows a score per message; vendor warns sarcasm, inside jokes and meme channels can confuse the AI.",
+   "elements": [
+    "per-message sentiment score"
+   ],
+   "ai_features": [
+    "AI per-message sentiment"
+   ],
+   "layout_notes": "Documented caveat on sarcasm/memes - useful for a confidence note in UI.",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확신도 · 불확실성"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-18",
+   "name": "Community analytics practice (sentiment levels x topics)",
+   "vendor_or_org": "Keywords Studios",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.keywordsstudios.com/en/about-us/news-events/news/how-community-managers-use-analytics-to-understand-and-serve-players-better/",
+   "access": "검색 결과만",
+   "evidence": "Article suggests breaking community feedback into sentiment levels (Very Negative, Negative, Positive, Very Positive) and topics (In-game, Community, Feedback, Bugs, Updates).",
+   "elements": [
+    "4-level sentiment scale",
+    "topic taxonomy (In-game/Community/Feedback/Bugs/Updates)"
+   ],
+   "ai_features": [],
+   "layout_notes": "Sentiment x topic matrix as reporting frame.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "행렬 · 버블"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-19",
+   "name": "Helpshift AI Agent Copilot / player analytics",
+   "vendor_or_org": "Helpshift (Keywords Studios)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.keywordsstudios.com/en/ai-technology/ai-technology-products/helpshift/",
+   "access": "검색 결과만",
+   "evidence": "Helpshift's AI Agent Copilot gives real-time suggested replies, automated conversation summaries and sentiment analysis for human support agents; Keywords lists a player analytics dashboard with real-time insights.",
+   "elements": [
+    "support conversation summaries",
+    "sentiment per conversation",
+    "player analytics dashboard"
+   ],
+   "ai_features": [
+    "automated conversation summaries",
+    "sentiment analysis",
+    "suggested replies"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마",
+     "행동 추천"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-20",
+   "name": "SentiSum for gaming",
+   "vendor_or_org": "SentiSum",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "플레이어 감성",
+   "url": "https://www.sentisum.com/industries/gaming",
+   "access": "검색 결과만",
+   "evidence": "Aims to uncover player sentiment in real time, auto-route bug reports and track support tags over time.",
+   "elements": [
+    "support tag trends over time",
+    "bug report routing",
+    "sentiment"
+   ],
+   "ai_features": [
+    "real-time sentiment",
+    "auto-routing of bug reports"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-21",
+   "name": "GDC 2024: How LiveOps Allows Games to Be Played as Intended, Always",
+   "vendor_or_org": "Riot Games (GDC)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://gdcvault.com/play/1034436/How-LiveOps-Allows-Games-to",
+   "access": "검색 결과만",
+   "evidence": "Justin Chan covers how Riot's Live Ops org maintains player health, touching on developing live KPIs and an operational health report.",
+   "elements": [
+    "live KPIs",
+    "operational health report"
+   ],
+   "ai_features": [],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "확인 불가"
+   }
+  },
+  {
+   "id": "game-22",
+   "name": "Guidance for Agentic Live Ops on AWS",
+   "vendor_or_org": "Amazon Web Services",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://docs.aws.amazon.com/solutions/agentic-live-ops-on-aws/",
+   "access": "검색 결과만",
+   "evidence": "Reference architecture that ingests game telemetry, checks it against configurable thresholds and triggers root-cause analysis; a related GDC chalk talk covers conversational analytics and player segmentation with Amazon Bedrock.",
+   "elements": [
+    "telemetry thresholds",
+    "root-cause analysis output",
+    "conversational analytics"
+   ],
+   "ai_features": [
+    "threshold-triggered automated root-cause analysis",
+    "LLM conversational analytics (Bedrock)"
+   ],
+   "layout_notes": "Alert -> automated cause analysis flow.",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림",
+     "원인 분석",
+     "질의응답"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "알림 · 스토리 피드",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-23",
+   "name": "King at GDC18: AI anomaly detection for live ops (recap)",
+   "vendor_or_org": "Anodot / King",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://www.anodot.com/blog/quick-reflections-on-gdc18/",
+   "access": "검색 결과만",
+   "evidence": "Blog recaps a GDC 2018 King talk on using AI-based anomaly detection to catch live-ops incidents in mobile titles.",
+   "elements": [
+    "anomaly alerts on KPIs"
+   ],
+   "ai_features": [
+    "AI anomaly detection"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "예상 범위"
+    ],
+    "interaction": [
+     "구독 · 알림"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-24",
+   "name": "Game Analytics Pipeline on AWS",
+   "vendor_or_org": "Amazon Web Services",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://aws.amazon.com/solutions/guidance/game-analytics-pipeline-on-aws/",
+   "access": "검색 결과만",
+   "evidence": "Streaming events processed by Managed Service for Apache Flink publish custom metrics to CloudWatch; CloudWatch dashboards visualize them and alarms notify developers or trigger actions when thresholds are breached; raw events in S3 are queried with Athena and visualized in QuickSight; includes an operational health dashboard.",
+   "elements": [
+    "real-time custom metric dashboard",
+    "threshold alarms",
+    "ops health dashboard",
+    "BI reports (QuickSight)"
+   ],
+   "ai_features": [
+    "threshold alarms with automated actions"
+   ],
+   "layout_notes": "Two tiers: real-time CloudWatch ops view + batch BI (Athena/QuickSight).",
+   "axes": {
+    "ai_role": [
+     "이상 탐지 · 알림"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "주제별 탭",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-25",
+   "name": "deltaDNA Benchmark Dashboard",
+   "vendor_or_org": "deltaDNA (Unity)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://www.pocketgamer.biz/retooled-deltadna-benchmark-dashboard",
+   "access": "검색 결과만",
+   "evidence": "Retooled dashboard benchmarks a game against four retention and monetization KPIs using a sample of 1,000+ games and gives a real-time percentage score per KPI; docs also mention an Overview Dashboard of headline indicators.",
+   "elements": [
+    "4 benchmark KPIs",
+    "real-time percentile score per KPI",
+    "overview dashboard"
+   ],
+   "ai_features": [],
+   "layout_notes": "Score-per-KPI vs peer sample.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "동종 비교",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-26",
+   "name": "Game Performance Monitor",
+   "vendor_or_org": "Newzoo",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://xsolla.partnerpage.io/integrations/partner/newzoo",
+   "access": "검색 결과만",
+   "evidence": "Title-level engagement (MAU, DAU, playtime, churn) and digital revenue for thousands of PC/console games; users create custom game groups and player/payer segments; tracks gamer overlap and churn between games, retention and viewership.",
+   "elements": [
+    "title-level MAU/DAU/playtime",
+    "churn",
+    "player overlap between games",
+    "custom peer groups",
+    "digital revenue"
+   ],
+   "ai_features": [],
+   "layout_notes": "Compare own title vs custom competitor group.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "동종 비교",
+    "time_frame": [
+     "확인 불가"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "월간"
+   }
+  },
+  {
+   "id": "game-27",
+   "name": "AppMagic top charts (via GameDevReports recaps)",
+   "vendor_or_org": "AppMagic",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-119",
+   "access": "검색 결과만",
+   "evidence": "Monthly recaps rank top mobile games by revenue and downloads from AppMagic data; methodology notes revenue is net of store commissions/taxes and excludes Chinese Android stores.",
+   "elements": [
+    "monthly revenue ranking",
+    "downloads ranking",
+    "methodology note"
+   ],
+   "ai_features": [],
+   "layout_notes": "Monthly ranked tables with a methodology caveat.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확신도 · 불확실성",
+     "정의 · 근거 공개"
+    ],
+    "kpi_form": [
+     "순위 · 점유율",
+     "표 + 인라인 추세"
+    ],
+    "layout": "동종 비교",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "월간"
+   }
+  },
+  {
+   "id": "game-28",
+   "name": "Streams Charts game release stats",
+   "vendor_or_org": "Streams Charts",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 시장 지표",
+   "url": "https://streamscharts.com/games/stream/release-stats",
+   "access": "검색 결과만",
+   "evidence": "Channel/game pages list hours watched, airtime, average and peak viewers, follower gains; game pages offer stream growth charts and release-week breakdowns such as hours watched by language; some features are PRO-only.",
+   "elements": [
+    "hours watched",
+    "avg/peak viewers",
+    "airtime",
+    "release-week breakdown",
+    "hours watched by language"
+   ],
+   "ai_features": [],
+   "layout_notes": "Release-week (event-anchored) view.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "사건 단위 묶음",
+    "time_frame": [
+     "사건 전후",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-29",
+   "name": "Game Health dashboards (Grafana Cloud)",
+   "vendor_or_org": "AccelByte",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "라이브 운영",
+   "url": "https://docs.accelbyte.io/gaming-services/services/utilities/grafana-cloud-observability/game-health-dashboards",
+   "access": "검색 결과만",
+   "evidence": "Managed Grafana dashboards with tailored views for IAM, Lobby and Matchmaking; the Game Health Overview tracks matchmaking success rate per match pool, 4xx/5xx error rates and Lobby restarts.",
+   "elements": [
+    "game health overview",
+    "matchmaking success rate per pool",
+    "4xx/5xx error rates",
+    "lobby restarts"
+   ],
+   "ai_features": [],
+   "layout_notes": "Overview then per-service drilldowns.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "점수 · 백분위"
+    ],
+    "layout": "계층 드릴다운",
+    "time_frame": [
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "드릴다운"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-30",
+   "name": "Nexon Stats (넥슨스탯)",
+   "vendor_or_org": "Nexon",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://www.invenglobal.com/articles/24544/nexon-introduces-internal-data-analysis-tool-nexon-stats-from-reactive-to-proactive",
+   "access": "검색 결과만",
+   "evidence": "Internal service connecting all operational issues and metrics on a single timeline, built because clues for sudden metric dips were scattered; uses internal 'User Voice' trend system to gather real-time reactions from notices, community and social media; integrates with Tableau/Power BI; used in 25+ projects.",
+   "elements": [
+    "single timeline of issues + metrics",
+    "metric dip investigation",
+    "User Voice community reaction feed",
+    "BI integration"
+   ],
+   "ai_features": [
+    "User Voice real-time community/social reaction collection"
+   ],
+   "layout_notes": "Metrics and events/issues overlaid on one timeline for cause tracing.",
+   "axes": {
+    "ai_role": [
+     "원인 분석"
+    ],
+    "ai_placement": [
+     "알림 · 스토리 피드"
+    ],
+    "explain_depth": "무엇 · 왜",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "시간 차트"
+    ],
+    "layout": "공통 타임라인",
+    "time_frame": [
+     "추세",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "운영 담당자",
+    "cadence": "실시간"
+   }
+  },
+  {
+   "id": "game-31",
+   "name": "게임트릭스 PC방 순위 (로스트아크 보도)",
+   "vendor_or_org": "게임트릭스 / 아이뉴스24",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://www.inews24.com/view/1314033",
+   "access": "검색 결과만",
+   "evidence": "Press reports cite Gametrics PC-bang rankings for Lost Ark: overall rank 3 with 12.12% overall share and 56.57% in-genre share (Nov 2018 week 3), and rank 9 at 1.6% share around the 2nd anniversary.",
+   "elements": [
+    "overall rank",
+    "overall share %",
+    "in-genre rank/share",
+    "weekly snapshot"
+   ],
+   "ai_features": [],
+   "layout_notes": "Press convention: rank + share + genre share as headline figures.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "순위 · 점유율"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "동종 · 경쟁"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "game-32",
+   "name": "더로그 주간 PC방 리포트",
+   "vendor_or_org": "더로그 (via Inven Global)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://www.invenglobal.com/articles/27040/the-log-pc-cafe-playtime-increases-58-in-2nd-week-of-october",
+   "access": "검색 결과만",
+   "evidence": "Weekly THE LOG reports headline total PC-cafe playtime (~15.84M hours, +5.8% WoW in Oct week 2) and rank movers, e.g. a title being the only top-ranked game to rise, a new title entering the share ranking and jumping to 4th with +55.4% playtime, a title returning to the TOP10.",
+   "elements": [
+    "total playtime hours",
+    "WoW % change",
+    "share rank movers",
+    "TOP10 entry/exit"
+   ],
+   "ai_features": [],
+   "layout_notes": "Headline total + WoW delta first, then rank-mover narrative.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "순위 · 점유율"
+    ],
+    "layout": "KPI 띠 → 상세",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "game-33",
+   "name": "게임메카 주간 인기순위 (민심 신호 해석)",
+   "vendor_or_org": "게임메카",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://www.gamemeca.com/news.php?ca=O&p=155",
+   "access": "검색 결과만",
+   "evidence": "GameMeca's weekly popularity ranking (May 28, 2025) placed Lost Ark at 10th, down 2 places, which the outlet read as a sign community sentiment had turned very cold for the first time in about four years.",
+   "elements": [
+    "weekly rank",
+    "rank delta"
+   ],
+   "ai_features": [],
+   "layout_notes": "Rank change narrated as sentiment signal.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "순위 · 점유율"
+    ],
+    "layout": "확인 불가",
+    "time_frame": [
+     "기간 스냅샷"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "주간"
+   }
+  },
+  {
+   "id": "game-34",
+   "name": "인벤 자유게시판 토픽모델링 연구",
+   "vendor_or_org": "KoreaScience (학술)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://www.koreascience.or.kr/article/CFKO202233649502421.pdf",
+   "access": "검색 결과만",
+   "evidence": "A paper topic-models Inven free-board posts to analyze user reaction to the MapleStory probability incident - a methodology precedent for Inven-based opinion analysis.",
+   "elements": [
+    "topic model of community posts",
+    "incident-anchored analysis"
+   ],
+   "ai_features": [
+    "topic modeling"
+   ],
+   "layout_notes": "",
+   "axes": {
+    "ai_role": [
+     "요약 · 서술",
+     "분류 · 테마"
+    ],
+    "ai_placement": [
+     "확인 불가"
+    ],
+    "explain_depth": "무엇",
+    "evidence_link": "확인 불가",
+    "trust_signal": [
+     "정의 · 근거 공개"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "갤러리 · 해당 없음",
+    "time_frame": [
+     "사건 전후"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "분석가",
+    "cadence": "요청 시"
+   }
+  },
+  {
+   "id": "game-36",
+   "name": "Mobile Game KPIs guide (metric bundles + diagnosis tree)",
+   "vendor_or_org": "AppFollow",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "게임 분석",
+   "url": "https://appfollow.io/blog/mobile-game-kpis",
+   "access": "검색 결과만",
+   "evidence": "Groups KPIs into engagement (D1 retention, session length), monetization (ARPPU, first-purchase conversion), long-term health (D30, churn) and acquisition (ROAS, CPI); most teams track 5-7 metrics daily and review the rest weekly/monthly; describes DAU/MAU stickiness bands and decomposing ARPDAU into conversion x ARPPU.",
+   "elements": [
+    "KPI bundles",
+    "5-7 daily metrics",
+    "stickiness DAU/MAU",
+    "ARPDAU decomposition tree"
+   ],
+   "ai_features": [],
+   "layout_notes": "Few headline KPIs daily; rest in weekly/monthly review; driver tree for diagnosis.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "큰 숫자 + 비교",
+     "점수 · 백분위",
+     "기여 분해"
+    ],
+    "layout": "분해 나무",
+    "time_frame": [
+     "기간 스냅샷",
+     "실시간 · 일별"
+    ],
+    "comparison_basis": [
+     "확인 불가"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "경영 · 의사결정자",
+    "cadence": "일간"
+   }
+  },
+  {
+   "id": "game-37",
+   "name": "로스트아크 업데이트 후 지표 발표",
+   "vendor_or_org": "스마일게이트RPG (이코노미스트 보도)",
+   "research_group": "게임 라이브 운영 · 지표",
+   "source_category": "국내 게임",
+   "url": "https://economist.co.kr/2022/07/13/it/general/20220713190007617.html",
+   "access": "검색 결과만",
+   "evidence": "After the 2022 Aeromancer class update and events, Smilegate RPG said most metrics rose including new/returning users and concurrent users; other press reported +424% new users vs same period prior month and 1.32M Steam CCU at launch.",
+   "elements": [
+    "new/returning users",
+    "concurrent users",
+    "period-over-period % after update"
+   ],
+   "ai_features": [],
+   "layout_notes": "Update-anchored before/after comparison.",
+   "axes": {
+    "ai_role": [
+     "없음"
+    ],
+    "ai_placement": [
+     "AI 없음"
+    ],
+    "explain_depth": "해당 없음",
+    "evidence_link": "해당 없음",
+    "trust_signal": [
+     "확인 불가"
+    ],
+    "kpi_form": [
+     "확인 불가"
+    ],
+    "layout": "사건 단위 묶음",
+    "time_frame": [
+     "기간 스냅샷",
+     "사건 전후"
+    ],
+    "comparison_basis": [
+     "직전 기간"
+    ],
+    "interaction": [
+     "확인 불가"
+    ],
+    "audience": "공개 · 일반",
+    "cadence": "요청 시"
+   }
+  }
+ ]
+}

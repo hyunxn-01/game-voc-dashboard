@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KPI · AI 견본 20개 비교</title>
+<style>
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --ink:#151515; --ink-2:#55534e; --ink-3:#8a877f; --line:#e3e1db; --accent:#2a78d6; --accent-soft:#e6f0fb;
+  --chip:#efeee9; --hot:#184f95;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#141413; --surface:#1d1d1b; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8d84; --line:#33322f; --accent:#3987e5; --accent-soft:#1f2c3d; --chip:#2a2a27; --hot:#86b6ef; color-scheme: dark; }
+}
+:root[data-theme="dark"]{ --bg:#141413; --surface:#1d1d1b; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8d84; --line:#33322f; --accent:#3987e5; --accent-soft:#1f2c3d; --chip:#2a2a27; --hot:#86b6ef; color-scheme: dark; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+.wrap{max-width:1360px;margin:0 auto;padding:32px 16px 64px}
+header h1{font-size:30px;line-height:1.25;margin:0 0 8px;letter-spacing:-.01em}
+header p{margin:4px 0;color:var(--ink-2);max-width:900px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.meta span{background:var(--chip);border-radius:999px;padding:3px 10px;font-size:13px;color:var(--ink-2)}
+.controls{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:24px 0 12px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.controls label{font-size:13px;color:var(--ink-2)}
+select{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+.toggle button{font:inherit;font-size:13px;padding:5px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:6px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card.dim{opacity:.25}
+.thumb{display:block;aspect-ratio:16/10;background:var(--chip);overflow:hidden;border-bottom:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.thumb .noimg{display:flex;height:100%;align-items:center;justify-content:center;color:var(--ink-3);font-size:13px}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.no{font-size:12px;color:var(--ink-3);letter-spacing:.04em}
+.card h2{font-size:18px;margin:0;line-height:1.3}
+.card h2 a{color:var(--ink);text-decoration:none}
+.card h2 a:hover{text-decoration:underline}
+.concept{margin:0;color:var(--ink-2);font-size:14px}
+.ai{margin:0;font-size:13px;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:8px}
+dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:12.5px}
+dt{color:var(--ink-3);white-space:nowrap}
+dd{margin:0}
+.v{display:inline-block;background:var(--chip);border-radius:4px;padding:0 6px;margin:0 3px 3px 0}
+.v.hit{background:var(--accent-soft);color:var(--ink);outline:1px solid var(--accent)}
+.near{font-size:12px;color:var(--ink-3)}
+table{border-collapse:collapse;width:100%;font-size:13px;background:var(--surface)}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:var(--surface);font-weight:600;color:var(--ink-2);font-size:12px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;max-height:78vh}
+.hidden{display:none}
+section h2.sec{font-size:20px;margin:40px 0 8px}
+section p.lead{margin:0 0 12px;color:var(--ink-2);max-width:900px}
+.matrix{overflow-x:auto}
+.matrix svg text{font-size:11px;fill:var(--ink-2)}
+.legend{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--ink-3);margin:8px 0}
+.legend i{display:inline-block;width:18px;height:12px;border-radius:2px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 8px;border-radius:6px;max-width:320px;display:none;z-index:9}
+footer{margin-top:40px;font-size:13px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>KPI 지표형 · AI 분석 강조 대시보드 견본 20개</h1>
+  <p>로스트아크 커뮤니티 VOC 주간 대시보드를 KPI 지표형으로 다시 짜 본 견본입니다. 모두 저장소의 실제 데이터(<code>../data/lostark.json</code> 등)를 읽고, AI(Claude)가 쓴 해석 · 판단 초안 · 정독 요약이 어디에 어떻게 놓이는지를 견본마다 다르게 했습니다.</p>
+  <p>견본마다 고른 분류 값은 <a href="./research/taxonomy.json">조사 기반 분류 체계(taxonomy.json)</a>의 12개 축에서 왔고, 설계는 <a href="./plan.json">plan.json</a>, 조사 출처는 <a href="./research/sources.md">sources.md</a>에 있습니다.</p>
+  <div class="meta" id="meta"></div>
+</header>
+
+<div class="controls">
+  <span class="toggle" role="group" aria-label="보기">
+    <button type="button" data-view="cards" aria-pressed="true">카드</button>
+    <button type="button" data-view="table" aria-pressed="false">표</button>
+  </span>
+  <label>축 <select id="axis"></select></label>
+  <label>값 <select id="val"><option value="">전체</option></select></label>
+  <span id="count" class="near"></span>
+</div>
+
+<div id="cards" class="grid" aria-live="polite"></div>
+<div id="table" class="tablewrap hidden"></div>
+
+<section>
+  <h2 class="sec">서로 얼마나 다른가</h2>
+  <p class="lead" id="distLead"></p>
+  <div class="legend" id="mlegend"></div>
+  <div class="matrix" id="matrix"></div>
+</section>
+
+<footer>
+  견본 목록 · 브랜치 <code>mockups/kpi-ai-2026-11</code> · 본 화면(<code>../index.html</code>)과 별개입니다. 저장소 루트에서 정적 서버(예: <code>python3 -m http.server</code>)로 열어야 데이터가 읽힙니다.
+</footer>
+</div>
+<div id="tip"></div>
+<script>
+(async function(){
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  let plan, tax;
+  try {
+    [plan, tax] = await Promise.all([fetch("./plan.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("plan.json "+r.status);return r.json()}),
+                                     fetch("./research/taxonomy.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("taxonomy.json "+r.status);return r.json()})]);
+  } catch(e) {
+    document.getElementById("cards").innerHTML = `<p>목록 데이터를 읽지 못했습니다: ${esc(e.message)}. 저장소 루트에서 정적 서버로 여세요.</p>`;
+    document.body.dataset.ready = "error"; return;
+  }
+  const AX = tax.axes, axKeys = Object.keys(AX), M = plan.mockups, D = plan.distinctness;
+  const nameOf = no => (M.find(m => m.no === no) || {}).name;
+  document.getElementById("meta").innerHTML = [
+    `조사한 대시보드 ${tax.counts.dashboards}건 (열람 ${tax.counts.opened} · 검색 결과만 ${tax.counts.search_only})`,
+    `검색어 ${tax.counts.queries}개`, `분류 축 ${axKeys.length}개`, `견본 ${M.length}개`,
+    `어떤 두 견본도 ${D.min_differing_axes_any_pair}개 축 이상 다름`].map(t => `<span>${esc(t)}</span>`).join("");
+
+  const axSel = document.getElementById("axis"), valSel = document.getElementById("val");
+  axSel.innerHTML = axKeys.map(k => `<option value="${k}">${esc(AX[k].name)}</option>`).join("");
+  axSel.value = "layout";
+  const asArr = v => Array.isArray(v) ? v : [v];
+  function fillVals(){
+    const k = axSel.value, used = new Set(M.flatMap(m => asArr(m.axes[k])));
+    valSel.innerHTML = `<option value="">전체</option>` + Object.keys(AX[k].values).filter(v => used.has(v)).map(v => `<option>${esc(v)}</option>`).join("");
+  }
+  function chips(k, v, hit){ return asArr(v).map(x => `<span class="v${hit && x === hit ? " hit" : ""}" title="${esc(AX[k].values[x] || "")}">${esc(x)}</span>`).join(""); }
+  const SHOW = ["layout","kpi_form","ai_placement","ai_role","explain_depth","evidence_link","trust_signal","time_frame","comparison_basis","interaction","audience","cadence"];
+
+  function render(){
+    const k = axSel.value, v = valSel.value;
+    const match = m => !v || asArr(m.axes[k]).includes(v);
+    let n = 0;
+    document.getElementById("cards").innerHTML = M.map(m => {
+      const ok = match(m); if (ok) n++;
+      const href = "./" + m.file.replace(/^mockups\//, "");
+      const shot = "./screenshots/" + m.file.replace(/^mockups\//, "").replace(/\.html$/, ".png");
+      const near = D.nearest_neighbor[m.no];
+      return `<article class="card${ok ? "" : " dim"}">
+        <a class="thumb" href="${href}" aria-label="${esc(m.name)} 열기"><img src="${shot}" alt="${esc(m.name)} 화면 사진" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'noimg',textContent:'화면 사진 없음'}))"></a>
+        <div class="body">
+          <div class="no">견본 ${String(m.no).padStart(2,"0")}</div>
+          <h2><a href="${href}">${esc(m.name)}</a></h2>
+          <p class="concept">${esc(m.concept)}</p>
+          <p class="ai"><b>AI 강조</b> · ${esc(m.ai_emphasis)}</p>
+          <dl>${SHOW.map(a => `<dt>${esc(AX[a].name)}</dt><dd>${chips(a, m.axes[a], a === k ? v : null)}</dd>`).join("")}
+            <dt>데이터</dt><dd>${m.data_files.map(f => `<span class="v">${esc(f)}</span>`).join("")}</dd></dl>
+          <div class="near">가장 가까운 견본: ${String(near.nearest).padStart(2,"0")} ${esc(nameOf(near.nearest))} — 그래도 ${near.differing_axes}개 축이 다름</div>
+        </div></article>`;
+    }).join("");
+    document.getElementById("count").textContent = v ? `${n}개가 '${v}'` : `${M.length}개`;
+    document.getElementById("table").innerHTML = `<table><thead><tr><th>번호</th><th>이름</th><th>개념</th>${SHOW.map(a => `<th>${esc(AX[a].name)}</th>`).join("")}<th>링크</th></tr></thead><tbody>${
+      M.filter(match).map(m => `<tr><td>${String(m.no).padStart(2,"0")}</td><td><b>${esc(m.name)}</b></td><td style="min-width:240px">${esc(m.concept)}</td>${SHOW.map(a => `<td>${chips(a, m.axes[a], a === k ? v : null)}</td>`).join("")}<td><a href="./${m.file.replace(/^mockups\//,"")}">열기</a></td></tr>`).join("")}</tbody></table>`;
+  }
+  axSel.addEventListener("change", () => { fillVals(); render(); });
+  valSel.addEventListener("change", render);
+  document.querySelectorAll("[data-view]").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll("[data-view]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    document.getElementById("cards").classList.toggle("hidden", b.dataset.view !== "cards");
+    document.getElementById("table").classList.toggle("hidden", b.dataset.view !== "table");
+  }));
+  fillVals(); render();
+
+  // 차이 행렬: 칸 = 두 견본 사이 값이 다른 축 수 (순차 단일 색)
+  document.getElementById("distLead").textContent = `칸의 숫자는 두 견본 사이에 값이 다른 분류 축 수(전체 ${axKeys.length}개)입니다. 가장 비슷한 쌍도 ${D.min_differing_axes_any_pair}개 축이 다릅니다. 칸에 마우스를 올리면 다른 축 이름이 보입니다.`;
+  const ramp = ["#cde2fb","#b7d3f6","#9ec5f4","#86b6ef","#6da7ec","#5598e7","#3987e5","#2a78d6","#256abf","#1c5cab","#184f95","#104281","#0d366b"];
+  const N = M.length, c = 26, pad = 150, W = pad + N * c + 8, H = pad + N * c + 8;
+  const get = (a, b) => D.pairs.find(p => (p.a === a && p.b === b) || (p.a === b && p.b === a));
+  let s = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="견본 사이 차이 축 수 행렬">`;
+  M.forEach((m, i) => {
+    s += `<text x="${pad - 6}" y="${pad + i * c + c / 2 + 4}" text-anchor="end">${String(m.no).padStart(2,"0")} ${esc(m.name)}</text>`;
+    s += `<text transform="translate(${pad + i * c + c / 2 + 4},${pad - 6}) rotate(-60)">${String(m.no).padStart(2,"0")} ${esc(m.name)}</text>`;
+  });
+  M.forEach((a, i) => M.forEach((b, j) => {
+    const x = pad + j * c, y = pad + i * c;
+    if (i === j) { s += `<rect x="${x+1}" y="${y+1}" width="${c-2}" height="${c-2}" rx="3" fill="var(--chip)"/>`; return; }
+    const p = get(a.no, b.no), d = p.differing_axes, col = ramp[Math.min(ramp.length - 1, d)];
+    s += `<g class="cell" data-tip="${esc(`${a.name} ↔ ${b.name}: ${d}개 축 다름 — ${p.axes.map(k => AX[k].name).join(", ")}`)}"><rect x="${x+1}" y="${y+1}" width="${c-2}" height="${c-2}" rx="3" fill="${col}"/><text x="${x + c/2}" y="${y + c/2 + 4}" text-anchor="middle" style="fill:${d >= 8 ? "#fff" : "#0d366b"}">${d}</text></g>`;
+  }));
+  s += `</svg>`;
+  document.getElementById("matrix").innerHTML = s;
+  document.getElementById("mlegend").innerHTML = `적게 다름 ${[5,7,9,11].map(d => `<i style="background:${ramp[d]}"></i>`).join("")} 많이 다름`;
+  const tip = document.getElementById("tip");
+  document.getElementById("matrix").addEventListener("mousemove", e => {
+    const g = e.target.closest(".cell"); if (!g) { tip.style.display = "none"; return; }
+    tip.textContent = g.dataset.tip; tip.style.display = "block";
+    tip.style.left = Math.min(innerWidth - 330, e.clientX + 12) + "px"; tip.style.top = (e.clientY + 12) + "px";
+  });
+  document.getElementById("matrix").addEventListener("mouseleave", () => tip.style.display = "none");
+  document.body.dataset.ready = "1";
+})();
+</script>
+</body>
+</html>
