@@ -3409,6 +3409,331 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "인벤",
+    "community_id": "inven",
+    "reads": [
+     {
+      "cost_usd": 0.0547,
+      "count": 2671,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 114,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 212,
+        "title": "전재학 이 호로병신새끼가 존나역겨운게",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269855"
+       },
+       {
+        "body": "있음",
+        "comments": 56,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 176,
+        "title": "근데 민심 안좋다고 편의성 몰아하는거 좆같음",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4270657"
+       },
+       {
+        "body": "있음",
+        "comments": 42,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 158,
+        "title": "소신발언) 왜 또 유저들끼리 싸웁니까? 잘못은 스마게가, 전재학이했는데",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4270907"
+       },
+       {
+        "body": "있음",
+        "comments": 7,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "확실히 역겨운 애들만 모여있긴하네 ㅇㅇ;",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4270161"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "사막 신규 간파는 걍 ㄹㅇ뒤져보라 낸건가",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269130"
+       },
+       {
+        "body": "있음",
+        "comments": 3,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "육회 제한 결론 11/20에 한다고 함?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269386"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "직전 라이브 방송(본문의 '라방', '로이괜'으로 언급되며 '로이괜'의 정확한 의미는 불명확하다)에서 발표된 리셋 계획과 종막 익스트림 난이도 관련 발언에 대한 반발 글이 이어진 것으로 보인다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 리셋, 익스트림 난이도, 편의성 발표 시점 등 운영 전반에 대한 장문의 비판에 집중한다. 무작위 글은 짧은 조롱, 보스 패턴 불만, 일정 문의 등 개별 주제가 흩어져 있어 비판의 강도와 초점이 다르다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "익스트림 레이드 운영과 과금 유도 의혹",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "익스로 돈쓰게 유도->생각만큼 안되니 너프해서 유도",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "종막 익스트림 난이도 상향 및 미조치",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "실패했지만 조치는 안하겠다(유기하겠다)",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "리셋 발표와 경제 침체에 대한 불만",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "경제? 아몰랑 리셋",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "편의성 기능의 뒤늦은 발표",
+         "posts": [
+          2
+         ],
+         "quote": "아드각물,염색 이거는 울부짖은지 2년은 된거 같고",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "유저 간 갈등",
+         "posts": [
+          3,
+          4
+         ],
+         "quote": "왜 유저들끼리 나뉘어서 싸웁니까?",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "신규 보스 패턴 불만(사막 신규 간파, 의미 불명확)",
+         "posts": [
+          5
+         ],
+         "quote": "모션이 뭐 즉사기답게 어울리는 거도 아니고",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "육회 제한 결론 일정 문의(육회의 의미 불명확)",
+         "posts": [
+          6
+         ],
+         "quote": "육회 제한 결론 11/20에 한다고 함?",
+         "quote_post": 6
+        }
+       ],
+       "summary": "추천 상위 글들은 라이브 방송 이후 발표된 리셋 계획과 종막 익스트림 레이드 난이도 상향, 직업 격차 방치에 대해 특정 개발자를 겨냥한 강한 비판을 담고 있다. 편의성 기능을 민심 악화 이후에야 몰아서 발표했다는 불만과, 유저 간 갈등보다 개발사를 탓해야 한다는 주장도 게시됐다. 글 수는 평소 대비 1.06배로 소폭 증가한 수준이며, 해당 일자에 등록된 업데이트·공지는 없어 방송 이후의 반발 여론이 이어진 결과로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0419,
+      "count": 111,
+      "label": "'싱글'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 128,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 111,
+        "title": "근데 싱글이 뭐가 문제임?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269050"
+       },
+       {
+        "body": "있음",
+        "comments": 117,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 77,
+        "title": "미안한데 이미 많은 사람들은 싱글을 원하고있음.",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269663"
+       },
+       {
+        "body": "있음",
+        "comments": 81,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 5,
+        "title": "솔직히 폿이 존재하는 게임와서 자꾸 싱글 내달라고 하는거",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269269"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "싱글 레이드 나오는 근본적인 이유는 서폿임",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269526"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "싱글에 대한 관점들이 참 갑갑하당",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4269926"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "왜 싱글 논란이야?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4270272"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "글 2에서 언급된 라이브 방송에서 싱글 강화 기조가 제시되어 찬반 논쟁이 확산된 것으로 보이나, 해당 방송은 제공된 목록에 없다."
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 싱글 반대 주장을 반박하거나 유저 수요를 근거로 싱글을 옹호하는 글이 높은 추천을 받았고, 반대 의견(글 3)은 추천이 적고 댓글이 많았다. 무작위 글은 서폿 문제와 신규 유입 정착 등 싱글이 필요한 구체적 원인을 강조해 같은 방향의 주장을 다른 근거로 제시했다.",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "MMORPG에서 싱글·솔플 플레이의 정당성 논쟁",
+         "posts": [
+          1,
+          3,
+          6
+         ],
+         "quote": "애초에 mmorpg 정의가 \"대규모 다중접속 온라인\" 아님?",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "파티 시스템 스트레스로 인한 싱글 선호 확대",
+         "posts": [
+          2
+         ],
+         "quote": "머리로는 아니라고 부정해도 몸은 이미 싱글을 원하고있는 상태야.",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "서폿 대기 문제가 싱글 수요의 원인",
+         "posts": [
+          3,
+          4
+         ],
+         "quote": "서폿 기다리는 시간에 차라리 싱글가서 편하게 게임함",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "신규·복귀 유저 정착 통로로서 싱글의 역할",
+         "posts": [
+          5
+         ],
+         "quote": "신규유입복귀한텐 공팟으로 가는 유일한 통로가 사실은 싱글이란걸",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "솔로 하드화·파티 라이트화 등 콘텐츠 방향성 제안",
+         "posts": [
+          2
+         ],
+         "quote": "솔로잉을 하드하게만들고 파티플레이를 라이트하게 갈수도있음.",
+         "quote_post": 2
+        }
+       ],
+       "summary": "싱글(솔로) 레이드 모드의 필요성을 두고 MMORPG에서 싱글 위주 플레이가 타당한지에 대한 논쟁 글이 집중적으로 게시됐다. 찬성 측은 파티 시스템에 대한 스트레스, 서폿 대기 시간, 신규·복귀 유저의 정착을 근거로 들었고, 반대 측은 파티 게임에서 싱글을 요구하는 데 거부감을 보였다. 글 2에서 '라이브때의 기조'가 언급되어 개발자 방송 이후 싱글 강화 방향이 화제가 된 것으로 보이나, 목록에 해당 공지는 확인되지 않는다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 30건(평소 10.2건의 2.94배)"
+    ],
+    "sentiment": {
+     "base_classified": 7104,
+     "classified": 2671,
+     "neg": 0.4282,
+     "neg_base": 0.4329,
+     "of": 2671,
+     "topics": [
+      {
+       "base": 0.272,
+       "name": "기타",
+       "share": 0.237,
+       "topic": "other"
+      },
+      {
+       "base": 0.2079,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2306,
+       "topic": "content"
+      },
+      {
+       "base": 0.0724,
+       "name": "성장 · 강화",
+       "share": 0.1164,
+       "topic": "growth"
+      },
+      {
+       "base": 0.1555,
+       "name": "파티 · 커뮤니티",
+       "share": 0.1146,
+       "topic": "social"
+      },
+      {
+       "base": 0.117,
+       "name": "운영 · 이벤트",
+       "share": 0.1075,
+       "topic": "operation"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.0967,
+  "date": "2026-10-31",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-01T06:54:14+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "인벤",
