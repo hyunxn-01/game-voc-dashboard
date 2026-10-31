@@ -494,7 +494,7 @@ function panel() {
   const today = (Y.communities || []).find(c => c.community_id === S.com);
   if (date === Y.date && today) {
     h += `<div class="ps"><h3>이날 급상승 키워드 <span class="tag calc">계산값</span></h3><div class="kw">${(today.rising || []).map(r => `<span>${K.esc(r.word)} ${K.num(r.count)}건 · ${K.times(r.ratio)}</span>`).join("") || `<span class="note">없음</span>`}</div>
-      <h3 style="margin-top:12px">이날 많이 본 글 (원문)</h3><ul class="posts">${(today.top || []).map(p => `<li><a href="${K.esc(p.url)}" target="_blank" rel="noopener">${K.esc(p.title)}</a><div class="m">조회 ${K.num(p.views)} · 댓글 ${K.num(p.comments)}</div></li>`).join("")}</ul></div>`;
+      <h3 style="margin-top:12px">이날 많이 본 글 (원문)</h3><ul class="posts">${(today.top || []).map(p => `<li><a href="${K.esc(p.url)}" target="_blank" rel="noopener">${K.esc(p.title)}</a><div class="m">${p.views != null ? "조회 " + K.num(p.views) + " · " : ""}댓글 ${K.num(p.comments)}</div></li>`).join("")}</ul></div>`;
   }
   return h;
 }
