@@ -1,10 +1,11 @@
 {
  "game": "lostark",
- "generated_at": "2026-10-31T14:51:58+09:00",
+ "generated_at": "2026-11-01T07:21:53+09:00",
  "months": [
   "2026-07",
   "2026-08",
-  "2026-09"
+  "2026-09",
+  "2026-10"
  ],
  "name": "로스트아크",
  "reports": {
@@ -1238,6 +1239,565 @@
      "name": "9월 23일(수) 업데이트 내역 안내"
     }
    ]
+  },
+  "2026-10": {
+   "communities": [
+    {
+     "classified": 34328,
+     "classified_share": 1.0,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "posts": 34328,
+     "posts_change": 0.2466,
+     "posts_per_day": 1107.4,
+     "posts_prev": 27537,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 383,
+       "new": false,
+       "ratio": 20.3,
+       "word": "라방"
+      },
+      {
+       "count": 259,
+       "new": false,
+       "ratio": 3.9,
+       "word": "전재학"
+      },
+      {
+       "count": 228,
+       "new": false,
+       "ratio": 4.4,
+       "word": "나르둠"
+      },
+      {
+       "count": 200,
+       "new": true,
+       "ratio": null,
+       "word": "로이괜"
+      },
+      {
+       "count": 158,
+       "new": false,
+       "ratio": 18.4,
+       "word": "여호크"
+      },
+      {
+       "count": 126,
+       "new": false,
+       "ratio": 12.4,
+       "word": "금강선"
+      },
+      {
+       "count": 117,
+       "new": false,
+       "ratio": 23.4,
+       "word": "디렉터"
+      },
+      {
+       "count": 116,
+       "new": false,
+       "ratio": 3.3,
+       "word": "카제"
+      },
+      {
+       "count": 107,
+       "new": false,
+       "ratio": 6.2,
+       "word": "벨노종하"
+      },
+      {
+       "count": 101,
+       "new": false,
+       "ratio": 121.5,
+       "word": "말포이"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.3695,
+      "net": -0.2586,
+      "pos": 0.1109
+     },
+     "sentiment_prev": {
+      "neg": 0.3331,
+      "net": -0.2002,
+      "pos": 0.1329
+     },
+     "strong_neg": [
+      {
+       "n": 375,
+       "name": "버그 · 서버",
+       "neg": 0.728,
+       "topic": "bug"
+      },
+      {
+       "n": 3175,
+       "name": "운영 · 이벤트",
+       "neg": 0.469,
+       "topic": "operation"
+      },
+      {
+       "n": 1617,
+       "name": "밸런스 · 직업",
+       "neg": 0.4533,
+       "topic": "balance"
+      },
+      {
+       "n": 736,
+       "name": "복귀 · 이탈",
+       "neg": 0.4348,
+       "topic": "churn"
+      },
+      {
+       "n": 3247,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.4182,
+       "topic": "social"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 7288,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1515,
+       "topic": "content"
+      },
+      {
+       "n": 2783,
+       "name": "성장 · 강화",
+       "pos": 0.143,
+       "topic": "growth"
+      },
+      {
+       "n": 830,
+       "name": "과금 · 상품",
+       "pos": 0.1024,
+       "topic": "monetization"
+      },
+      {
+       "n": 1617,
+       "name": "밸런스 · 직업",
+       "pos": 0.102,
+       "topic": "balance"
+      },
+      {
+       "n": 837,
+       "name": "거래 · 경제",
+       "pos": 0.0908,
+       "topic": "economy"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2123,
+       "share_prev": 0.2321,
+       "topic": "content"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.0946,
+       "share_prev": 0.0973,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.0925,
+       "share_prev": 0.0315,
+       "topic": "operation"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.0811,
+       "share_prev": 0.1007,
+       "topic": "growth"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0471,
+       "share_prev": 0.0353,
+       "topic": "balance"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0244,
+       "share_prev": 0.0284,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0242,
+       "share_prev": 0.0263,
+       "topic": "monetization"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0214,
+       "share_prev": 0.0183,
+       "topic": "churn"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0109,
+       "share_prev": 0.0157,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 455,
+     "classified_share": 1.0,
+     "community": "로스트아크 공식 자유게시판",
+     "community_id": "lostark_free",
+     "posts": 455,
+     "posts_change": 0.8958,
+     "posts_per_day": 14.7,
+     "posts_prev": 240,
+     "region": "국내",
+     "rising": [],
+     "sentiment": {
+      "neg": 0.5955,
+      "net": -0.5318,
+      "pos": 0.0637
+     },
+     "sentiment_prev": {
+      "neg": 0.4455,
+      "net": -0.396,
+      "pos": 0.0495
+     },
+     "strong_neg": [
+      {
+       "n": 96,
+       "name": "운영 · 이벤트",
+       "neg": 0.6979,
+       "topic": "operation"
+      },
+      {
+       "n": 44,
+       "name": "컨텐츠 · 업데이트",
+       "neg": 0.5455,
+       "topic": "content"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 44,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.0682,
+       "topic": "content"
+      },
+      {
+       "n": 96,
+       "name": "운영 · 이벤트",
+       "pos": 0.0417,
+       "topic": "operation"
+      }
+     ],
+     "topics": [
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.211,
+       "share_prev": 0.075,
+       "topic": "operation"
+      },
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.0967,
+       "share_prev": 0.0542,
+       "topic": "content"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.0593,
+       "share_prev": 0.125,
+       "topic": "social"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0527,
+       "share_prev": 0.0333,
+       "topic": "churn"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0527,
+       "share_prev": 0.0125,
+       "topic": "economy"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0505,
+       "share_prev": 0.025,
+       "topic": "balance"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.0484,
+       "share_prev": 0.05,
+       "topic": "growth"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.033,
+       "share_prev": 0.025,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0198,
+       "share_prev": 0.0375,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 311,
+     "classified_share": 1.0,
+     "community": "레딧",
+     "community_id": "reddit",
+     "posts": 311,
+     "posts_change": -0.1114,
+     "posts_per_day": 10.0,
+     "posts_prev": 350,
+     "region": "해외",
+     "rising": [
+      {
+       "count": 51,
+       "new": false,
+       "ratio": 24.0,
+       "word": "belgardin"
+      },
+      {
+       "count": 31,
+       "new": false,
+       "ratio": 4.2,
+       "word": "nightmare"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.2462,
+      "net": -0.1136,
+      "pos": 0.1326
+     },
+     "sentiment_prev": {
+      "neg": 0.2086,
+      "net": -0.0755,
+      "pos": 0.1331
+     },
+     "strong_neg": [
+      {
+       "n": 41,
+       "name": "운영 · 이벤트",
+       "neg": 0.4146,
+       "topic": "operation"
+      },
+      {
+       "n": 30,
+       "name": "복귀 · 이탈",
+       "neg": 0.2333,
+       "topic": "churn"
+      },
+      {
+       "n": 37,
+       "name": "성장 · 강화",
+       "neg": 0.1351,
+       "topic": "growth"
+      },
+      {
+       "n": 106,
+       "name": "컨텐츠 · 업데이트",
+       "neg": 0.1038,
+       "topic": "content"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 106,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.2358,
+       "topic": "content"
+      },
+      {
+       "n": 41,
+       "name": "운영 · 이벤트",
+       "pos": 0.0976,
+       "topic": "operation"
+      },
+      {
+       "n": 37,
+       "name": "성장 · 강화",
+       "pos": 0.0811,
+       "topic": "growth"
+      },
+      {
+       "n": 30,
+       "name": "복귀 · 이탈",
+       "pos": 0.0667,
+       "topic": "churn"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.3408,
+       "share_prev": 0.2286,
+       "topic": "content"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1318,
+       "share_prev": 0.16,
+       "topic": "operation"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.119,
+       "share_prev": 0.1314,
+       "topic": "growth"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0965,
+       "share_prev": 0.0771,
+       "topic": "churn"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0547,
+       "share_prev": 0.0571,
+       "topic": "balance"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.0482,
+       "share_prev": 0.0429,
+       "topic": "social"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.045,
+       "share_prev": 0.0486,
+       "topic": "bug"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0193,
+       "share_prev": 0.0257,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0193,
+       "share_prev": 0.06,
+       "topic": "monetization"
+      }
+     ]
+    }
+   ],
+   "first": "2026-10-01",
+   "issues": [
+    {
+     "community": "로스트아크 공식 자유게시판",
+     "id": "2026-10-05/lostark_free/neg",
+     "label": "부정 비율",
+     "level": "보통",
+     "week": "2026-10-05"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-05/arca/signal:이탈 표현",
+     "label": "이탈 표현",
+     "level": "관찰",
+     "week": "2026-10-05"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-05/arca/group:보석",
+     "label": "보석 언급",
+     "level": "관찰",
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/neg",
+     "label": "부정 비율",
+     "level": "관찰",
+     "week": "2026-10-12"
+    },
+    {
+     "community": "로스트아크 공식 자유게시판",
+     "id": "2026-10-12/lostark_free/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": "보통",
+     "week": "2026-10-12"
+    },
+    {
+     "community": "로스트아크 공식 자유게시판",
+     "id": "2026-10-12/lostark_free/neg",
+     "label": "부정 비율",
+     "level": "보통",
+     "week": "2026-10-12"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-12/arca/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": "높음",
+     "week": "2026-10-12"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-12/arca/topic_neg:churn",
+     "label": "복귀 · 이탈 주제의 부정 비율",
+     "level": "보통",
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic:content",
+     "label": "컨텐츠 · 업데이트 주제",
+     "level": "관찰",
+     "week": "2026-10-19"
+    }
+   ],
+   "last": "2026-10-31",
+   "month": "2026-10",
+   "update_effects": [
+    {
+     "community": "아카라이브",
+     "date": "2026-10-07",
+     "major": false,
+     "neg_diff": 0.03356,
+     "posts_ratio": 0.924
+    },
+    {
+     "community": "인벤",
+     "date": "2026-10-21",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-10-21",
+     "major": false,
+     "neg_diff": 0.00573,
+     "posts_ratio": 1.029
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-10-07",
+     "major": false,
+     "name": "10월 7일(수) 업데이트 내역 안내"
+    },
+    {
+     "date": "2026-10-21",
+     "major": false,
+     "name": "10월 21일(수) 업데이트 내역 안내"
+    }
+   ]
   }
  },
  "rules": {
@@ -1246,7 +1806,7 @@
   "rise_base_months": 3,
   "rise_min": 30,
   "rise_ratio": 3.0,
-  "sentiment": "제목 분류. 게임과 상관없는 글(주제 기타)은 감성에서 뺀다",
+  "sentiment": "제목 분류. 게임과 상관없는 글(주제 기타)은 긍정/부정에서 뺀다",
   "strong_min": 30,
   "topic_top": 10
  }
