@@ -674,7 +674,7 @@ function drawTerrain(A) {
     il.innerHTML = `<div class="ai-tag" style="margin-top:6px">같은 주 AI 이슈 후보 ${A.items.length}건</div>` + (A.items.length ? A.items.map(it => {
       const lk = A.kws.filter(k => k.links.some(l => l.id === it.id)).map(k => k.word);
       const lv = LVL[(it.judgment || {}).level] || LVL["관찰"];
-      return `<button type="button" class="ibtn" data-id="${E(it.id)}" aria-pressed="${selIs === it.id}"><span class="who"><i style="background:${COL[it.community_id]}"></i>${E(it.community)}</span> <b>${E(it.issue)}</b> <span class="num muted">${E(it.change)}</span><br><span style="font-size:12px;color:var(--ink2)">AI 초안 <b style="color:${lv.c === "#fab219" ? "#8a6100" : lv.c}">${lv.i} ${E(it.judgment.level)}</b> · 겹친 단어 ${lk.length ? lk.map(E).join(", ") : "없음"}</span></button>`;
+      return `<button type="button" class="ibtn" data-id="${E(it.id)}" aria-pressed="${selIs === it.id}"><span class="who"><i style="background:${COL[it.community_id]}"></i>${E(it.community)}</span> <b>${E(it.issue)}</b> <span class="num muted">${E(it.change)}</span><br><span style="font-size:12px;color:var(--ink2)">AI 초안 <b style="color:${lv.c === "#fab219" ? "#8a6100" : lv.c}">${lv.i} ${E((it.judgment || {}).level || "판단 초안 없음")}</b> · 겹친 단어 ${lk.length ? lk.map(E).join(", ") : "없음"}</span></button>`;
     }).join("") : `<div class="mini-empty">이 주는 이슈 후보 없음</div>`);
     il.querySelectorAll(".ibtn").forEach(b => b.onclick = () => { S.sel = {type: "issue", id: b.dataset.id}; renderDrill(A); drawTerrain(A); markRows(); });
   }
@@ -692,7 +692,7 @@ function drawTerrain(A) {
   });
   box.querySelectorAll(".node").forEach(g => {
     const it = itemById(A, g.dataset.id);
-    const html = `<b>${E(it.community)} · ${E(it.issue)}</b><br>${E(it.facts)}<br>AI 초안 판단: ${E(it.judgment.level)}`;
+    const html = `<b>${E(it.community)} · ${E(it.issue)}</b><br>${E(it.facts)}<br>AI 초안 판단: ${E((it.judgment || {}).level || "판단 초안 없음")}`;
     g.onmousemove = e => tipAt(html, e.clientX, e.clientY);
     g.onmouseleave = tipHide;
     const go = () => { S.sel = {type: "issue", id: it.id}; tipHide(); renderDrill(A); drawTerrain(A); markRows(); };
@@ -766,8 +766,8 @@ function renderDrill(A) {
     ip.innerHTML = `<h2>4단계 · ${kw ? "이어진 " : ""}AI 이슈 후보 ${others.length ? `<span class="muted">(겹친 이슈 ${kw.links.length}건 중 첫째 — 왼쪽에서 바꿀 수 있음)</span>` : ""}</h2>
       <div class="headline">${E(hl.lead || it.issue)} <em>${E(hl.em || it.change)}</em> ${E(hl.tail || "")}</div>
       <div class="facts num">${E(it.facts)} <span class="calc-tag">계산</span></div>
-      <div class="ai-note"><span class="ai-tag">판단 · ${E(it.judgment.by)}</span> ${lvlChip(it.judgment.level)}
-        <dl class="draft"><dt>인사이트</dt><dd>${E(it.draft.insight)}</dd><dt>이유</dt><dd>${E(it.draft.reason)}</dd><dt>다음 행동</dt><dd>${E(it.draft.action)}</dd>${it.draft.notice ? `<dt>관련 공지</dt><dd>${E(it.draft.notice.date)} · ${E(it.draft.notice.kind)} · ${E(it.draft.notice.title)}</dd>` : ""}</dl>
+      <div class="ai-note"><span class="ai-tag">판단 · ${E((it.judgment || {}).by || "AI 초안")}</span> ${(it.judgment && it.judgment.level) ? lvlChip(it.judgment.level) : "판단 초안 없음"}
+        ${it.draft ? `<dl class="draft"><dt>인사이트</dt><dd>${E(it.draft.insight)}</dd><dt>이유</dt><dd>${E(it.draft.reason)}</dd><dt>다음 행동</dt><dd>${E(it.draft.action)}</dd>${it.draft.notice ? `<dt>관련 공지</dt><dd>${E(it.draft.notice.date)} · ${E(it.draft.notice.kind)} · ${E(it.draft.notice.title)}</dd>` : ""}</dl>` : `<p class="muted">이 주 이슈에는 AI 판단 초안이 없습니다(데이터에 기록 없음).</p>`}
       </div>
       ${drBlock(dr, hitUrls)}`;
   } else {

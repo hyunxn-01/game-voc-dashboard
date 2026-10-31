@@ -388,7 +388,7 @@ function render() {
   <section class="lead">
     <div class="ai-say"><span class="tag ai">AI 초안 · 이번 주 결론</span> <span class="src">기준 주 <b class="tn">${S.week}</b>${S.week === aiW ? "(AI 해석이 있는 가장 최근 주)" : ""} · ${S.region}</span>
       <p class="c">${W.conclusion ? K.esc(W.conclusion) : "이 주에는 이슈 후보가 없습니다(AI 결론 없음)."}</p>
-      <ul class="ai-items">${W.items.map(it => { const c = CM[it.community_id + "|" + (K.candidates(D, S.region, S.week).find(x => x.id === it.id) || {}).metric]; const P = c ? pctl(it.community_id, c.metric, S.week) : null; return `<li><span class="dot" style="background:${COM_COLOR[it.community_id]}"></span><span>${K.esc(COM_SHORT[it.community_id])} · ${K.esc(it.issue)} <b>${K.esc(it.change)}</b></span><span class="lv"><i style="background:${LV_COLOR[it.judgment.level]}"></i>AI 초안 ${K.esc(it.judgment.level)}</span><span class="pct">${P ? (P.hold ? "백분위 보류" : "백분위 " + P.p) : ""}</span></li>`; }).join("")}</ul>
+      <ul class="ai-items">${W.items.map(it => { const c = CM[it.community_id + "|" + (K.candidates(D, S.region, S.week).find(x => x.id === it.id) || {}).metric]; const P = c ? pctl(it.community_id, c.metric, S.week) : null; return `<li><span class="dot" style="background:${COM_COLOR[it.community_id]}"></span><span>${K.esc(COM_SHORT[it.community_id])} · ${K.esc(it.issue)} <b>${K.esc(it.change)}</b></span><span class="lv"><i style="background:${LV_COLOR[(it.judgment || {}).level] || "#898781"}"></i>AI 초안 ${K.esc((it.judgment || {}).level || "판단 초안 없음")}</span><span class="pct">${P ? (P.hold ? "백분위 보류" : "백분위 " + P.p) : ""}</span></li>`; }).join("")}</ul>
     </div>
     <div class="overlap">
       <div class="ov"><small>AI 후보 칸 가운데 백분위 90 이상</small><b class="tn">${O.aiTop}<span style="font-size:18px;color:#8b8a83"> / ${O.ai}</span></b><span>${O.aiHold ? `보류 ${O.aiHold}칸 포함` : "보류 칸 없음"}</span></div>
@@ -436,8 +436,8 @@ function sidePanel(coms, CM) {
   coms.forEach(c => {
     const cand = CM[c.id + "|" + r.m]; if (!cand) return;
     const it = itemOf(cand.id), P = pctl(c.id, r.m, S.week);
-    h += `<div class="aibox"><span class="tag ai">AI 초안 · ${K.esc(it ? it.judgment.level : "")}</span> <b>${K.esc(COM_SHORT[c.id])}</b> ${it ? K.esc(it.change) : ""}
-      <p>${it ? K.esc(it.draft.insight) : ""}</p><p style="color:#4d4c47;font-size:12px">통계 위치: ${P.hold ? "백분위 보류" : `백분위 ${P.p}(${P.n}주 중 ${P.rank}위)`} · 평시 대비 ${cand.ratio != null ? K.times(cand.ratio) : cand.diff != null ? K.pp(cand.diff) : "–"} · z ${cand.z != null ? cand.z.toFixed(2) : "–"}</p></div>`;
+    h += `<div class="aibox"><span class="tag ai">AI 초안 · ${K.esc(it ? ((it.judgment || {}).level || "판단 초안 없음") : "")}</span> <b>${K.esc(COM_SHORT[c.id])}</b> ${it ? K.esc(it.change) : ""}
+      <p>${it ? (it.draft ? K.esc(it.draft.insight) : "이 주 후보에는 AI 판단 초안이 없습니다(데이터에 기록 없음).") : ""}</p><p style="color:#4d4c47;font-size:12px">통계 위치: ${P.hold ? "백분위 보류" : `백분위 ${P.p}(${P.n}주 중 ${P.rank}위)`} · 평시 대비 ${cand.ratio != null ? K.times(cand.ratio) : cand.diff != null ? K.pp(cand.diff) : "–"} · z ${cand.z != null ? cand.z.toFixed(2) : "–"}</p></div>`;
   });
   h += `</div><div class="panel def"><b>최소 데이터 조건</b><br>백분위는 수집한 주가 ${MIN_WEEKS}주 이상일 때만 냅니다(평시 산출은 최소 ${D.rules.min_base_weeks}주 · 직전 ${D.rules.base_weeks}주 평균). 글 수는 연휴 · 방송 주에 크게 흔들리므로 비중 지표와 함께 봅니다. 판정 기준치는 업계 공개 값이 없어 자체 설정한 값입니다.</div>`;
   return h;

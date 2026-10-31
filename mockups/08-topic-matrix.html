@@ -534,7 +534,7 @@ function detailView(C) {
   if (ai.length) {
     ai.forEach(a => {
       const dr = K.deepread(D, a.c.id), R = dr && dr.result;
-      h += `<div class="sec"><h3><span class="tag ai">${a.kw ? "키워드 후보" : "AI 이슈 후보"}</span> ${K.esc(a.c.label)} ${a.it ? `· AI 초안 ${K.esc(a.it.judgment.level)}` : ""}</h3>
+      h += `<div class="sec"><h3><span class="tag ai">${a.kw ? "키워드 후보" : "AI 이슈 후보"}</span> ${K.esc(a.c.label)} ${a.it ? `· AI 초안 ${K.esc((a.it.judgment || {}).level || "판단 초안 없음")}` : ""}</h3>
         ${a.it ? `<p style="margin:4px 0 8px;font-size:13px" class="tab"><span class="tag calc">계산값</span> ${K.esc(a.it.facts)}</p>` : ""}
         ${R ? `<div class="aibox"><span class="tag ai">AI 정독 요약(Opus 5.5 · ${dr.read.length}건 정독)</span> <span class="note">추천 상위 3 · 무작위 3 · 신뢰도 ${K.esc(K.CONF[R.confidence] || "–")}</span>
           <p>${K.esc(R.summary)}</p>
