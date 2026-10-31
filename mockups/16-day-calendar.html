@@ -383,7 +383,7 @@ const binOf = r => BINS.find(([lo, hi]) => r >= lo && r < hi) || BINS[BINS.lengt
 
 // 그날 표식: 휴일 · 업데이트 · 공지(운영 대응 + 이벤트/소통)
 function marksOn(date) {
-  const out = {hol: (Y.series.holidays || {})[date] || null, ev: []};
+  const out = {hol: S.region === "국내" ? (Y.series.holidays || {})[date] || null : null, ev: []};
   if (S.region !== "국내") return out;
   const seen = new Set();
   D.updates.filter(u => u.date === date && u.server === "kr").forEach(u => { seen.add(u.name); out.ev.push({g: "U", kind: u.major ? "큰 업데이트" : "업데이트", title: u.name, url: u.url}); });
@@ -409,9 +409,9 @@ function render() {
     <div class="ctl"><span class="lab">칸 색</span><div class="seg">${METRICS.map(([k, l]) => `<button data-metric="${k}" aria-pressed="${S.metric === k}">${l}</button>`).join("")}</div></div>
   </header>
   <section class="hero" aria-label="오늘의 AI 메모">
-    <div><div class="t"><span class="tag ai">AI 급증 메모 · ${memo ? K.esc(mdw(memo.date)) : "없음"}</span><span>최신 수집일 ${K.esc(latest)} · 급증 기준: 같은 요일 평균의 ${Y.rules.surge_ratio}배 이상 · ${Y.rules.surge_min_posts}건 이상</span></div>
+    <div><div class="t"><span class="tag ai">AI 급증 메모${memo && surgeComs.length ? " · " + K.esc(mdw(memo.date)) : ""}</span><span>최신 수집일 ${K.esc(latest)} · 급증 기준: 같은 요일 평균의 ${Y.rules.surge_ratio}배 이상 · ${Y.rules.surge_min_posts}건 이상</span></div>
       <h1>${heroLine(surgeComs)}</h1>
-      <p>${memo ? `${K.esc(memo.note)} 원인은 모두 가설입니다. 정독 비용 합계 $${(+memo.cost_usd).toFixed(2)} · 모델 ${K.esc(memo.model)}.` : "최신일에 급증한 커뮤니티가 없어 AI 메모가 없습니다."}</p></div>
+      <p>${memo && surgeComs.length ? `${K.esc(memo.note)} 원인은 모두 가설입니다. 정독 비용 합계 $${(+memo.cost_usd).toFixed(2)} · 모델 ${K.esc(memo.model)}.` : "최신일에 급증한 커뮤니티가 없어 AI 메모가 없습니다."}</p></div>
     <div class="surges">${surgeComs.length ? surgeComs.map(c => `<button class="sg" data-jump="${c.community_id}|${Y.date}"><small><span class="dot" style="background:${COM_COLOR[c.community_id]}"></span>${K.esc(COM_SHORT[c.community_id])} · ${K.esc(Y.date.slice(5).replace("-", "/"))}</small><b>${K.times(c.posts.ratio, 2)}</b><span class="tn">${K.num(c.posts.value)}건 · 평소 ${K.num(c.posts.base)}건</span></button>`).join("") : `<div class="sg" style="cursor:default"><small>${S.region} 급증일</small><b>없음</b><span>최신일 기준</span></div>`}</div>
   </section>
   <div class="main"><div>
@@ -421,7 +421,7 @@ function render() {
     <div class="cal">${calendar(dates)}</div>
     <div class="legend">
       <span>배수 <span class="ramp">${BINS.map(b => `<span><i style="background:var(${b[2]})"></i>${b[3]}</span>`).join("")}</span></span>
-      <span class="lgk"><span class="na"></span>평소 산출 전 · 수집 전</span>
+      <span class="lgk"><span class="na"></span>평소 산출 전 · 수집 전 · 평균 1건 미만(배수 생략)</span>
       <span class="lgk"><i class="ai">AI</i>AI 급증 메모 있음</span>
       <span class="lgk"><i>U</i>업데이트</span><span class="lgk"><i>!</i>문제 안내</span><span class="lgk"><i>◆</i>소통 · 방송</span><span class="lgk"><i>·</i>이벤트 · 상품 · 기타 공지</span>
       <span class="lgk"><span style="width:16px;height:12px;border-radius:3px;box-shadow:inset 0 0 0 2px var(--ink)"></span>급증일(${Y.rules.surge_ratio}배 · ${Y.rules.surge_min_posts}건 이상)</span>
@@ -463,7 +463,9 @@ function calendar(dates) {
       const P = dayVal(S.com, "posts", i), surge = P.r != null && P.r >= Y.rules.surge_ratio && P.v >= Y.rules.surge_min_posts;
       const day = +date.slice(8), first = day === 1 || i === 0;
       let cls = "day", style = "", txt = "";
-      if (V.r == null) { cls += " na"; txt = V.v == null ? "수집 전" : "평소 산출 전"; }
+      if (V.v == null) { cls += " na"; txt = "수집 전"; }
+      else if (V.b == null) { cls += " na"; txt = "평소 산출 전"; }
+      else if (V.b < 1) { cls += " na"; txt = `평균 1건 미만 <small>${K.num(V.v)}</small>`; }
       else { const bn = binOf(V.r); style = `background:var(${bn[2]});color:${DARK_TEXT.has(bn[2]) ? "#1b1f1d" : "#fff"}`; txt = `${V.r.toFixed(1)}배 <small>${K.num(V.v)}</small>`; }
       if (surge && S.metric === "posts") cls += " surge";
       if (date === S.date) cls += " sel";
