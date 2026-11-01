@@ -1,0 +1,2781 @@
+{
+ "generated": "2026-11-01",
+ "fields": {
+  "type": "a=로그인 없이 열리는 실제 대시보드·공개 데모·제품 둘러보기, b=대시보드 화면 사진이 있는 페이지, c=대시보드 화면이 나오는 영상",
+  "quote": "검색 결과(검색 도구의 요약 글 포함)에 나온 문장 그대로. 없으면 '근거 없음'",
+  "viewed": "직접 열어 화면을 본 경우 true"
+ },
+ "count": 277,
+ "items": [
+  {
+   "name": "YouScan – Real-Time Social Listening Dashboards (공개 대시보드 모음)",
+   "url": "https://youscan.io/social-listening-dashboards/",
+   "type": "a",
+   "image": null,
+   "quote": "The dashboards are always up to date and are public.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Gallery URL appeared in main-session search links; quote is search-tool summary wording."
+  },
+  {
+   "name": "Datatile – Social Media Listening dashboard (goto)",
+   "url": "https://goto.datatile.eu/dashboards/social-media-listening",
+   "type": "a",
+   "image": null,
+   "quote": "represents social media listening results across several social networks",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Public dashboard page per search snippet; this version does not mention games."
+  },
+  {
+   "name": "Datatile – Social Media Listening dashboard (video game: Avalon Adventure)",
+   "url": "https://datatile.eu/dashboards/social-media-listening",
+   "type": "a",
+   "image": null,
+   "quote": "Powered by AI-driven analytics, with interactive visualizations and audience sentiment mapping",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Snippet says it covers the video game industry (Avalon Adventure and competitors); whether it opens without login not confirmed."
+  },
+  {
+   "name": "Datatile – Global Brand Tracking dashboard",
+   "url": "https://datatile.eu/dashboards/global-brand-tracking",
+   "type": "a",
+   "image": null,
+   "quote": "brand health dashboard for monitoring brand awareness, perception, and purchase intent across markets",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Brand tracking (survey-type) rather than social listening; open access not confirmed."
+  },
+  {
+   "name": "YouScan – Social listening dashboards (blog post on public Ambassador dashboards)",
+   "url": "https://youscan.io/blog/social-listening-dashboards/",
+   "type": "a",
+   "image": null,
+   "quote": "show live mentions, sentiment, visuals, and trends",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Blog post describing a public dashboard gallery; the gallery URL youscan.io/social-listening-dashboards/ itself did not appear in results. Type a uncertain."
+  },
+  {
+   "name": "Chattermill – Self-guided product tour",
+   "url": "https://chattermill.com/product-tour",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Search result says page offers a self-guided product tour; access gating not verified"
+  },
+  {
+   "name": "Enterpret – VoC dashboard template",
+   "url": "https://www.enterpret.com/templates/enterpret",
+   "type": "a",
+   "image": null,
+   "quote": "Enterpret offers a Voice of Customer dashboard template with an interactive demo",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Uncertain: result says template page has an interactive demo; may be gated"
+  },
+  {
+   "name": "Clootrack – Product tour (interactive and recorded demos)",
+   "url": "https://www.clootrack.com/product-tour",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Result says page lists interactive and recorded demos; gating not verified"
+  },
+  {
+   "name": "Caplena – G2 listing with vendor interactive demo",
+   "url": "https://www.g2.com/products/caplena",
+   "type": "a",
+   "image": null,
+   "quote": "gives you a clear overview of NPS and overall sentiment",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Uncertain: interactive demo hosted on G2 per result; G2 is a review site page"
+  },
+  {
+   "name": "Canny – Interactive demo (Supademo)",
+   "url": "https://supademo.com/product-demo/canny",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party hosted interactive demo"
+  },
+  {
+   "name": "Productboard – Interactive demo (Supademo)",
+   "url": "https://supademo.com/product-demo/productboard",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party hosted interactive demo"
+  },
+  {
+   "name": "Pendo – Self-guided product tour",
+   "url": "https://www.pendo.io/product-tour",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": ""
+  },
+  {
+   "name": "Pendo – Quick product demo: learn how customers use your product (part 2)",
+   "url": "https://www.pendo.io/tour/learn-how-customers-use-your-product-part-2",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Result says this tour part covers analytics/dashboard widget"
+  },
+  {
+   "name": "Pendo – Interactive demo (Supademo)",
+   "url": "https://supademo.com/product-demo/pendo",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party hosted interactive demo"
+  },
+  {
+   "name": "Hotjar – Interactive demo",
+   "url": "https://www.hotjar.com/hotjar-demo/",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Result: official interactive demo, free to start; may require signup"
+  },
+  {
+   "name": "Gainsight – Interactive demo (Supademo)",
+   "url": "https://supademo.com/product-demo/gainsight",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party hosted interactive demo"
+  },
+  {
+   "name": "Hello Customer – Online demo / product tour",
+   "url": "https://www.hellocustomer.com/en/watch-online-demo-request",
+   "type": "a",
+   "image": null,
+   "quote": "real-time AI analysis and root-cause identification",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Uncertain: URL suggests a request form gate"
+  },
+  {
+   "name": "Usersnap – G2 listing with vendor interactive demo",
+   "url": "https://www.g2.com/products/usersnap/reviews",
+   "type": "a",
+   "image": null,
+   "quote": "trends, scores, summary by date range in the project insights dashboard",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Uncertain: interactive demo hosted on G2 review site"
+  },
+  {
+   "name": "AppFollow – Public app profile page (example: YouTube Studio)",
+   "url": "https://appfollow.io/ios/youtube-studio/888530356?country=ca",
+   "type": "a",
+   "image": null,
+   "quote": "Ratings & Reviews performance provides an overview of what users think of your app.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Public app profile page; example app chosen only because it appeared in results. Unsure whether full content opens without login."
+  },
+  {
+   "name": "Appfigures – Ratings & Reviews report (app profile)",
+   "url": "https://appfigures.com/reports/app-profile/41862202668/ratings-reviews",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Uncertain whether this report opens without login; app id taken from search result."
+  },
+  {
+   "name": "Kimola – Steam mobile app feedback analysis report (public sample)",
+   "url": "https://kimola.com/reports/unlock-insights-with-our-steam-app-feedback-analysis-report-google-play-tr-148566",
+   "type": "a",
+   "image": null,
+   "quote": "The report pages also mention a lightning-fast dashboard for further analysis.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Public report page based on Google Play reviews of the Steam app; full dashboard may require purchase."
+  },
+  {
+   "name": "Review Agent – Interactive demo",
+   "url": "https://reviewagent.onrender.com/demo",
+   "type": "a",
+   "image": null,
+   "quote": "The demo includes an interactive analytics dashboard and sample hotel reviews.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Vendor claims no signup required; not verified."
+  },
+  {
+   "name": "VG Insights (Sensor Tower) – Game page example",
+   "url": "https://app.sensortower.com/vgi/game/vigor",
+   "type": "a",
+   "image": null,
+   "quote": "Every individual game's page now shows an overview of quick stats about the game as well as player insights.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific; uncertain whether it opens without login; example game taken from results."
+  },
+  {
+   "name": "Guideflow – Create a dashboard from the dashboards library in Zendesk Explore",
+   "url": "https://www.guideflow.com/tutorial/how-to-create-a-dashboard-from-the-dashboards-library-in-zendesk-explore",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Click-by-click tutorial; type a assumed (interactive guide), uncertain."
+  },
+  {
+   "name": "Guideflow – View all email reports in Help Scout",
+   "url": "https://www.guideflow.com/tutorial/how-to-view-all-email-reports-in-help-scout-",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Interactive tutorial assumed; type uncertain."
+  },
+  {
+   "name": "CommunityOne – Analytics Report (sample)",
+   "url": "https://communityone.io/fr/reports/content-analytics/sample/",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "URL suggests a public sample report; login-free access not verified (uncertain type)."
+  },
+  {
+   "name": "Streams Charts – Game Publishers ranking",
+   "url": "https://streamscharts.com/games/publishers",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Public B2B streaming-analytics ranking page; detailed features behind PRO."
+  },
+  {
+   "name": "GameAnalytics – Toolbox (demo video + interactive self-guided tour)",
+   "url": "https://gameanalytics.com/toolbox",
+   "type": "a",
+   "image": null,
+   "quote": "Turn game data into insights with real-time analytics",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Search says page offers a demo video and an interactive self-guided tour; login-free status not verified."
+  },
+  {
+   "name": "devtodev – Demo walkthrough",
+   "url": "https://insights.devtodev.com/demo-ease-of-use",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Labelled DEMO WALKTHROUGH; whether it opens a live demo without login is uncertain."
+  },
+  {
+   "name": "Metaplay – LiveOps Dashboard interactive demo",
+   "url": "https://orca-demo-assets.p1.metaplay.io",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Search says it is a clickable guided demo on a casual merge game; login-free status not verified."
+  },
+  {
+   "name": "Video Game Insights – Steam market analytics",
+   "url": "https://vginsights.com",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Public industry analytics site (now Sensor Tower); extent of login-free access uncertain."
+  },
+  {
+   "name": "Mixpanel – Create dashboard interactive demo (Storylane)",
+   "url": "https://www.storylane.io/tutorials/how-to-create-dashboard-in-mixpanel",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Third-party interactive tour; not game-specific."
+  },
+  {
+   "name": "Amplitude – User Activity Dashboard template (with 'View dashboard in demo')",
+   "url": "https://www.amplitude.com/templates/user-activity-dashboard.md",
+   "type": "a",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Links to a demo path under app.amplitude.com/analytics/demo/ (exact URL not in results); anonymous access may be unreliable. Not game-specific."
+  },
+  {
+   "name": "Brandwatch – Dashboard Wizard blog",
+   "url": "https://www.brandwatch.com/blog/dashboard-wizard-social-analytics-10x-faster/",
+   "type": "b",
+   "image": null,
+   "quote": "builds Rules and Categories and sets up a Dashboard, charting and filtering your data",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Brandwatch – Vizia command center for agencies",
+   "url": "https://brandwatch.com/products/vizia/agencies",
+   "type": "b",
+   "image": null,
+   "quote": "engaging, real-time displays that can be managed at scale",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Brand24 – Social listening dashboard page",
+   "url": "https://brand24.com/social-listening-dashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Brand24 – Mentions tab overview (help center)",
+   "url": "https://help.brand24.com/en/articles/9772539-mentions-tab-overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Meltwater – Media Monitoring product page",
+   "url": "https://www.meltwater.com/en/products/media-monitoring",
+   "type": "b",
+   "image": null,
+   "quote": "See Meltwater Media Monitoring in action",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Search summary says page has a dashboard image."
+  },
+  {
+   "name": "Meltwater – Media Intelligence page (product tour)",
+   "url": "https://meltwater.com/en/capabilities/media-intelligence",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Search summary says the page has a product tour; whether it is gated not confirmed (possible type a)."
+  },
+  {
+   "name": "Sprinklr – Create Listening dashboard widgets to visualize data in real-time (help)",
+   "url": "https://www.sprinklr.com/help/articles/listening-dashboards/create-listening-dashboard-widgets-to-visualize-data-in-realtime/6808fd11cffeb5201c6cffbf",
+   "type": "b",
+   "image": null,
+   "quote": "Create Listening dashboard widgets to visualize data in real-time",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Sprinklr – Create a Listening dashboard (help)",
+   "url": "https://www.sprinklr.com/help/articles/listening-dashboards/create-a-listening-dashboard-to-listen-engage-and-respond-to-conversations/6808fcadcbfca249dfef594d",
+   "type": "b",
+   "image": null,
+   "quote": "Listening Dashboards enable you to analyze topic queries via widgets within Standard and Custom dashboards.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote attributed to Sprinklr help articles generally in the summary. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Sprinklr – Create Custom Listening dashboards (help)",
+   "url": "https://www.sprinklr.com/help/articles/custom-listening-dashboards/create-custom-listening-dashboards/645cfd4b0104980882a5abc7",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Sprinklr – Display (command center)",
+   "url": "https://www.sprinklr.com/display",
+   "type": "b",
+   "image": null,
+   "quote": "create dynamic screens that stream real-time social media content",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Sprinklr – Social command center data visualization (blog)",
+   "url": "https://www.sprinklr.com/blog/social-command-center-data-visualization/",
+   "type": "b",
+   "image": null,
+   "quote": "put the actual words, pictures, and sentiment of your customers on display in real time",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Mention – The Mention dashboard explained (help)",
+   "url": "https://support.mention.com/en/articles/13354362-the-mention-dashboard-explained",
+   "type": "b",
+   "image": null,
+   "quote": "gives an overview of performance for your entire Mention account",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote attributed to Mention help center generally in the summary. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Mention – Explore the Mention dashboard (help)",
+   "url": "https://en.support.mention.com/en/articles/6029091-explore-the-mention-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "updates in real time to display the configurations you have in mind",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote attributed to Mention help center generally in the summary. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Mentionlytics – Overview dashboard (help)",
+   "url": "https://intercom.help/mentionlytics/en/articles/3580353-overview-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "Mentionlytics Overview Dashboard",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Mentionlytics – All your mentions now available in the Overview Dashboard (update)",
+   "url": "https://www.mentionlytics.com/?p=32177",
+   "type": "b",
+   "image": null,
+   "quote": "Handy Update: All your mentions now available in the Overview Dashboard",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Awario – Dashboard overview (help)",
+   "url": "https://awario.com/help/dashboard/dashboard-overview",
+   "type": "b",
+   "image": null,
+   "quote": "The Dashboard displays analytics for your alerts, mentions, and influencers. Updated in real-time, it's fully interactive, which allows you to see the mentions behind the stats.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Awario – TrustRadius product details (dashboard screenshots)",
+   "url": "https://www.trustradius.com/products/awario/details",
+   "type": "b",
+   "image": null,
+   "quote": "Screenshot of Awario dashboard",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Third-party listing page."
+  },
+  {
+   "name": "Pulsar – TRAC product page",
+   "url": "https://pulsarplatform.com/pulsar-trac",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Pulsar – TRAC Media Pack (PDF)",
+   "url": "https://www.pulsarplatform.com/wp-content/uploads/2025/05/Pulsar-TRAC-Media-Pack.pdf",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Digimind – Social Wall launch (news page on digimind.com)",
+   "url": "https://www.digimind.com/en/news/digimind-launches-social-wall",
+   "type": "b",
+   "image": null,
+   "quote": "Digimind Launches Social Wall, the Most Powerful Data Visualization Tool to Share Consumer Voice Across the Business",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Vendor announcement (2017). Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Sprout Social – Listening widget (help)",
+   "url": "https://support.sproutsocial.com/hc/en-us/articles/9057304731405-Listening-widget",
+   "type": "b",
+   "image": null,
+   "quote": "The Topic Summary widget reports metrics such as total volume and engagements",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is search-summary wording. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Hootsuite – Listening by Talkwalker in the Hootsuite dashboard",
+   "url": "https://www.hootsuite.com/whats-new/listening-by-talkwalker-in-the-hootsuite-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "providing deep insights across multiple source types with AI-powered summaries, peak detection, forecasting, and many more features",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Talkwalker – Social listening product page",
+   "url": "https://www.talkwalker.com/lp/products/social-listening",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Emplifi – Social listening product page",
+   "url": "https://emplifi.io/product/social-listening",
+   "type": "b",
+   "image": null,
+   "quote": "get instant notifications via email and in the Emplifi platform when spikes arise",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Determ – Monitor your media and competitors in one feed",
+   "url": "https://determ.com/?p=8177",
+   "type": "b",
+   "image": null,
+   "quote": "Monitor your media and competitors in one feed",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Determ – Brochure (PDF)",
+   "url": "https://www.determ.com/wp-content/uploads/2023/11/Determ-Brochure.pdf?x15088",
+   "type": "b",
+   "image": null,
+   "quote": "a feed filled with mentions of your keywords updates in real time",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is search-summary wording. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "BrandMentions – What is the Analytics section (help)",
+   "url": "https://help.brandmentions.com/en/articles/12700543-what-is-the-analytics-section-in-brandmentions",
+   "type": "b",
+   "image": null,
+   "quote": "The Analytics section is the main overview.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is search-summary wording. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Agorapulse – What's in the Inbox (help)",
+   "url": "https://support.agorapulse.com/en/articles/9592260-what-s-in-the-inbox",
+   "type": "b",
+   "image": null,
+   "quote": "It helps you to efficiently monitor and manage engagement on any social profiles you've connected to Agorapulse.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Cision – CisionOne Media Monitoring page",
+   "url": "https://cision.com/lp/media-monitoring",
+   "type": "b",
+   "image": null,
+   "quote": "instantly apply powerful filters across your entire dashboard",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote attributed to Cision marketing pages generally; mapping to this URL uncertain. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Cision – The CisionOne app (help)",
+   "url": "https://intercom.help/cisionone-academy/en/articles/13610617-the-cisionone-app",
+   "type": "b",
+   "image": null,
+   "quote": "The CisionOne app is a great way to stay up to date with what's happening with your media monitoring with access to the Monitoring and Social parts of CisionOne on your smartphone or tablet.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Muck Rack – PR Reporting and Analytics",
+   "url": "https://muckrack.com/reporting-measurement",
+   "type": "b",
+   "image": null,
+   "quote": "Dashboards are collections of customizable graphs, charts and metrics.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote mapping to this exact URL uncertain (several Muck Rack pages in results). Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Signal AI – AI-powered media monitoring page",
+   "url": "https://signal-ai.com/ai-powered-media-monitoring-and-intelligence/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Synthesio (Ipsos) – G2 product page",
+   "url": "https://www.g2.com/products/synthesio",
+   "type": "b",
+   "image": null,
+   "quote": "every widget found in a Synthesio Dashboard is enhanced with a detailed contextual report",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Third-party listing. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Rival IQ – Marketing analytics dashboard launch (blog)",
+   "url": "https://www.rivaliq.com/blog/marketing-analytics-dashboard-launch/",
+   "type": "b",
+   "image": null,
+   "quote": "It gives an at-a-glance update of the most important analytics and content about you and your competitors.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote mapping to this exact URL uncertain (several Rival IQ pages in results). Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Dash Hudson – Social listening trends and topics feature page",
+   "url": "https://dashhudson.com/features/social-listening-trends-and-topics",
+   "type": "b",
+   "image": null,
+   "quote": "analyzing multiple channels and brands all within one easy-to-use Dashboard",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote attributed to 'a product page'; mapping uncertain. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "BuzzSumo – How to monitor your brand (help)",
+   "url": "https://help.buzzsumo.com/en/articles/1959861-how-to-monitor-your-brand",
+   "type": "b",
+   "image": null,
+   "quote": "The dashboard shows a list of mentions today, in the last 7 days, and last 30, plus a graph showing the number of mentions per day.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is search-summary wording. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "NewsWhip – Dashboard templates (help)",
+   "url": "https://help.newswhip.com/hc/en-us/articles/4417103734289",
+   "type": "b",
+   "image": null,
+   "quote": "preconfigured Monitoring template that combines real-time feeds from web articles, Facebook, Reddit, and Twitter",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is search-summary wording. Screenshot presence not verified from search results."
+  },
+  {
+   "name": "SentiOne – Starting with SentiOne Listen (help)",
+   "url": "https://listen.help.sentione.com/docs/starting-with-sentione-listen",
+   "type": "b",
+   "image": null,
+   "quote": "an analytical view presenting data through charts, tables, and widgets",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Screenshot presence not verified from search results."
+  },
+  {
+   "name": "Chattermill – Dashboards product page",
+   "url": "https://www.chattermill.com/product/dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "See CX insights from every angle with custom dashboard for every user",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified from search text"
+  },
+  {
+   "name": "Chattermill – Help: How dashboards work",
+   "url": "https://docs.chattermill.com/en/articles/1657528-how-dashboards-work",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Chattermill – Feedback analytics platform landing page",
+   "url": "https://chattermill.com/lp/feedback-analytics-platform",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "Thematic – Help: Summarization widget",
+   "url": "https://help.getthematic.com/article/114-summerization",
+   "type": "b",
+   "image": null,
+   "quote": "In your Dashboard, add a Summary widget (or widgets!) to get an easy to read overview of your data.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Unwrap – AI Customer Feedback Dashboards page",
+   "url": "https://www.unwrap.ai/dashboards-reporting",
+   "type": "b",
+   "image": null,
+   "quote": "Each team gets a live dashboard, executives get a scheduled digest, and alerts flag emerging themes",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Product page; screenshot presence not verified"
+  },
+  {
+   "name": "Enterpret – Help: Monitor feedback for my product area",
+   "url": "https://helpcenter.enterpret.com/en/articles/8906705-how-do-i-monitor-feedback-for-my-product-area",
+   "type": "b",
+   "image": null,
+   "quote": "the dashboard displays Quantify charts scoped to feedback about the product area.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Qualtrics – Getting Started with CX Dashboards (support)",
+   "url": "https://www.qualtrics.com/support/vocalize/sharing-dashboards/publishing-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Support doc; screenshot presence not verified"
+  },
+  {
+   "name": "QuestionPro – QuestionPro CX dashboard overview (help)",
+   "url": "https://www.questionpro.com/help/customer-experience/cx-dashboard-overview.html",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "QuestionPro CX help doc; screenshot presence not verified"
+  },
+  {
+   "name": "Survicate – Dashboards feature page",
+   "url": "https://survicate.com/features/dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "Survicate says it can combine NPS, CSAT, insights, and survey data in one customizable dashboard.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": ""
+  },
+  {
+   "name": "Survicate – Help: Dashboards",
+   "url": "https://help.survicate.com/en/articles/10502162-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "you can view survey results and Insights Hub data in one centralized view.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Zonka Feedback – Help: Understanding your dashboard and navigation",
+   "url": "https://help.zonkafeedback.com/en/articles/4005988-understanding-your-zonka-feedback-dashboard-and-navigations",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Clootrack – Customer experience analytics AI (sample dashboard screenshots)",
+   "url": "https://www.clootrack.com/resources/customer-experience-analytics-ai",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Result says page includes sample dashboard screenshots"
+  },
+  {
+   "name": "Keatext – Help: How do I navigate dashboards",
+   "url": "https://help.keatext.ai/en/articles/5864303-how-do-i-navigate-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Kimola Cognitive – Help: Viewing reports",
+   "url": "https://kimola.com/support/cognitive/viewing-reports",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Wonderflow – Voice of Customer analysis platform page",
+   "url": "https://wonderflow.ai/product/voice-of-customer-analysis-platform",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Product page; screenshot presence not verified"
+  },
+  {
+   "name": "Userpilot – Analytics dashboards product page",
+   "url": "https://userpilot.com/product/product-analytics/analytics-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Product page; screenshot presence not verified"
+  },
+  {
+   "name": "Sprig – Dashboards tutorial",
+   "url": "https://www.sprig.com/tutorials/dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "Sprig lets you group results from several studies into one dashboard",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Tutorial page; may be video (c); not verified"
+  },
+  {
+   "name": "Hotjar – Dashboard how-to-use",
+   "url": "https://hotjar.com/dashboard/how-to-use",
+   "type": "b",
+   "image": null,
+   "quote": "The dashboard overview is the main screen after sign-in.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "Hotjar – Update: Dashboard is now Dashboards",
+   "url": "https://www.hotjar.com/updates/en/dashboard-is-now-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Product update; screenshot presence not verified"
+  },
+  {
+   "name": "Delighted – Customer insights at a glance (reporting page)",
+   "url": "https://delighted.com/?p=2481",
+   "type": "b",
+   "image": null,
+   "quote": "Customer insights at a glance: Automated survey data analysis and reporting",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "Delighted – NPS blog page linking a live NPS dashboard demo",
+   "url": "https://blog.delighted.com/nps",
+   "type": "b",
+   "image": null,
+   "quote": "Explore a live demo of the NPS dashboard.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Live demo URL itself not in results; Delighted product status not checked"
+  },
+  {
+   "name": "Geckoboard – Delighted NPS dashboard",
+   "url": "https://www.geckoboard.com/product/data-sources/delighted/",
+   "type": "b",
+   "image": null,
+   "quote": "monitor live NPS data on TVs around your workspace",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party dashboard tool page fed by Delighted"
+  },
+  {
+   "name": "Klipfolio – AskNicely dashboard integration",
+   "url": "https://www.klipfolio.com/integrations/asknicely-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "keeps your customer feedback updates automatically on a live dashboard",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Third-party dashboard tool page fed by AskNicely"
+  },
+  {
+   "name": "Featurebase – Features page",
+   "url": "https://www.featurebase.app/features",
+   "type": "b",
+   "image": null,
+   "quote": "describes its dashboard as a central place to analyze and manage feedback",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "Idiomatic – Gladly help: Idiomatic overview",
+   "url": "https://help.gladly.com/docs/idiomatic-overview.md",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Partner help doc; screenshot presence uncertain"
+  },
+  {
+   "name": "InMoment – XI Platform page",
+   "url": "https://inmoment.com/?p=51511",
+   "type": "b",
+   "image": null,
+   "quote": "InMoment's expert-designed, mobile-optimized reports and dashboards give clarity into your CX efforts—at the business, location, and even individual experience level.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "Gainsight – NPS Reporting (marketplace)",
+   "url": "https://www.gainsight.com/marketplace/item/nps-reporting/",
+   "type": "b",
+   "image": null,
+   "quote": "an NPS reporting dashboard for trends and individual responses, shared across an organization",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "BuildBetter – Docs: Signals visualization and citation",
+   "url": "https://docs.buildbetter.ai/pages/Signals/visualization-and-citation",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Docs page; screenshot presence not verified"
+  },
+  {
+   "name": "Dovetail – SaaS UI dashboard pattern screenshots",
+   "url": "https://www.saasui.design/pattern/dashboard/dovetail",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "UI screenshot gallery of the real product (not a concept)"
+  },
+  {
+   "name": "nps.today – Guide: create and share a live dashboard",
+   "url": "https://docs.nps.today/guides/Howtocreateandsharealivedashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Docs page; screenshot presence not verified"
+  },
+  {
+   "name": "Listen360 – Dashboard Overview (help)",
+   "url": "https://support.listen360.com/hc/en-us/articles/48336515301787-Listen360-Dashboard-Overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "SentiSum – Freshworks Marketplace listing",
+   "url": "https://www.freshworks.com/apps/sentisum",
+   "type": "b",
+   "image": null,
+   "quote": "users can view topic trends over any time frame",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Marketplace listing; screenshot presence not verified"
+  },
+  {
+   "name": "Qualaroo – Help: Understanding the Dashboard",
+   "url": "https://help.qualaroo.com/dashboard-guide",
+   "type": "b",
+   "image": null,
+   "quote": "the first screen you'll see when you log into your account",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Help article; screenshot presence not verified"
+  },
+  {
+   "name": "Forsta – Interactive dashboards page",
+   "url": "https://forsta.com/?p=1669",
+   "type": "b",
+   "image": null,
+   "quote": "A template library and drag-and-drop tools let you reinvent reporting so it's visual, interactive, and accessible from anywhere.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Screenshot presence not verified"
+  },
+  {
+   "name": "AppFollow – What is AppFollow (help center)",
+   "url": "https://support.appfollow.io/hc/en-us/articles/360020979778-What-is-AppFollow",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Help article; presence of full dashboard screenshot not verified from search text."
+  },
+  {
+   "name": "AppFollow – Steam Integration (Beta) help article",
+   "url": "https://support.appfollow.io/hc/en-us/articles/46180743357841-Steam-Integration-Beta",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific (Steam reviews). Screenshot presence not verified."
+  },
+  {
+   "name": "AppFollow – G2 listing with demo screens",
+   "url": "https://g2.com/products/appfollow/reviews",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Third-party listing; search text says it shows vendor demo screens."
+  },
+  {
+   "name": "AppFollow – AI info / product page",
+   "url": "https://appfollow.io/ai-info",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Product page; screenshot presence not verified."
+  },
+  {
+   "name": "Appbot – Dashboards feature page",
+   "url": "https://appbot.co/features/dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "Appbot's dashboard shows review sentiment alongside ratings and topics, and it covers several app stores in one view.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Quote is from search-result summary text."
+  },
+  {
+   "name": "Appbot – App review sentiment analysis page",
+   "url": "https://appbot.co/app-review-sentiment-analysis/",
+   "type": "b",
+   "image": null,
+   "quote": "A Versions view allows you to easily compare the sentiment of your different app versions at a glance.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "Appfigures – Mobile app page",
+   "url": "https://appfigures.com/app",
+   "type": "b",
+   "image": null,
+   "quote": "It pulls reviews from every app store into one view and translates them into your chosen language.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "MobileAction – Reviews (help center)",
+   "url": "https://helpcenter.mobileaction.co/reviews",
+   "type": "b",
+   "image": null,
+   "quote": "The tool gathers app reviews into one interactive dashboard, with a Review Analysis tab for ratings over time, platforms, and countries.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "MobileAction – Store Analytics product page",
+   "url": "https://www.mobileaction.co/aso-tools/store-analytics/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "ReviewTrackers – ReviewTrackers Dashboard (support article 360007938133)",
+   "url": "https://support.reviewtrackers.com/hc/en-us/articles/360007938133-ReviewTrackers-Dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "the dashboard brings together a high level view of your review data, helps you spot trends in sentiment, and draws attention to areas that need improvement",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Search text notes sources found don't include a current screenshot; screenshot uncertain."
+  },
+  {
+   "name": "ReviewTrackers – ReviewTrackers Dashboard (support article 360034788473)",
+   "url": "https://support.reviewtrackers.com/hc/en-us/articles/360034788473-ReviewTrackers-Dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "the dashboard lets you view and sort recent review reports and performance, keyword sentiment analysis, distribution for your reviews, and location score trends.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot uncertain."
+  },
+  {
+   "name": "Birdeye – What each element of the Birdeye Dashboard means (help)",
+   "url": "https://birdeye.helpjuice.com/en_US/birdeye-overview-/1205417-what-does-each-of-the-elements-within-the-birdeye-dashboard-mean",
+   "type": "b",
+   "image": null,
+   "quote": "On login, users land on an Overview page that gives a top-line summary of metrics tied to online reputation work.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "Birdeye – A comprehensive guide to Birdeye Dashboards (help)",
+   "url": "https://birdeye.helpjuice.com/dashboards/a-comprehensive-guide-to-birdeye-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "With the capability to create your own custom dashboard from scratch, you can add up to 20 reports spanning all products in a single dashboard.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "Reputation.com – Dashboards User Guide (PDF)",
+   "url": "https://go.reputation.com/hubfs/Training/Guides/Dashboards_User_Guide.pdf",
+   "type": "b",
+   "image": null,
+   "quote": "The user guide describes pre-built dashboards that track sentiment, Reputation Score, survey performance, and high-level metrics per solution.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "PDF guide; screenshots likely but not verified."
+  },
+  {
+   "name": "Yext – Analytics Overview (help center)",
+   "url": "https://help.yext.com/hc/en-us/articles/360001288826-Analytics-Overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "Yext – Create Analytics Dashboards (Hitchhikers training)",
+   "url": "https://hitchhikers.yext.com/modules/ana103-analytics-dashboards/01-create-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "Analytics dashboards pull insights from Pages, Listings, and Reviews into one customizable, centralized view.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "AgencyAnalytics – Birdeye reporting dashboard",
+   "url": "https://agencyanalytics.com/feature/birdeye-reporting",
+   "type": "b",
+   "image": null,
+   "quote": "AgencyAnalytics' integration page lists average-rating tracking, historical rating graphs, and individual review monitoring as dashboard features.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Third-party reporting tool built on Birdeye data."
+  },
+  {
+   "name": "AgencyAnalytics – Yext reporting dashboard",
+   "url": "https://agencyanalytics.com/feature/yext-reporting",
+   "type": "b",
+   "image": null,
+   "quote": "AgencyAnalytics offers a prebuilt Yext dashboard that can show rating trends, review volume, profile engagement, and call or direction requests.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "AgencyAnalytics – Grade.us dashboard",
+   "url": "https://agencyanalytics.com/feature/gradeus-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Third-party reporting tool built on Grade.us data."
+  },
+  {
+   "name": "TrustYou CXP – Insights dashboards (help center category)",
+   "url": "https://support.cxp.trustyou.com/hc/en-us/categories/23295685277341-Insights",
+   "type": "b",
+   "image": null,
+   "quote": "It is described as a centralized view of your most important reputation metrics and KPIs, and it helps you track changes over time.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Quote refers to the Reviews dashboard within Insights."
+  },
+  {
+   "name": "FirstLook – Player Sentiment docs",
+   "url": "https://docs.firstlook.gg/player/sentiment/",
+   "type": "b",
+   "image": null,
+   "quote": "There's an Overview page for trending tags and topics, a Tags page that groups feedback into categories, and a Weekly Summaries page under Sentiment for week-over-week shifts and engagement",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific (Discord + Steam reviews). Screenshot presence not verified."
+  },
+  {
+   "name": "Affogata – Player feedback analytics (home)",
+   "url": "https://affogata.com/",
+   "type": "b",
+   "image": null,
+   "quote": "Affogata pulls feedback from Discord, Steam, Reddit, app stores, forums into one dashboard.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific. Screenshot presence not verified."
+  },
+  {
+   "name": "Affogata – MadHead Games case study",
+   "url": "https://affogata.com/blog/empowering-player-feedback-analysis-for-madhead-games",
+   "type": "b",
+   "image": null,
+   "quote": "the dashboard has proven to be very insightful in both finding critical points to look into, as well as summarising the general sentiment",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game studio case study; screenshot presence not verified."
+  },
+  {
+   "name": "Player XP – Product details (TrustRadius listing)",
+   "url": "https://tr-web.dev.trustradius.com/products/playerxp/details",
+   "type": "b",
+   "image": null,
+   "quote": "The product pulls in user reviews, forum posts, and social data into a live, interactive dashboard, helping teams react quickly and make decisions based on player feedback.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific; third-party listing, screenshot uncertain."
+  },
+  {
+   "name": "Roblox – Feedback dashboard (Creator docs)",
+   "url": "https://create.roblox.com/docs/en-us/production/analytics/feedback",
+   "type": "b",
+   "image": null,
+   "quote": "Roblox offers its own Feedback dashboard, which shows a detailed breakdown of ratings on your game, showing trends in sentiment over time.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Platform-native player rating/feedback dashboard for game creators."
+  },
+  {
+   "name": "Google Play Console – Ratings and reviews (product page)",
+   "url": "https://play.google.com/console/about/ratings",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Developer-facing; screenshot presence not verified."
+  },
+  {
+   "name": "Google Play Console Help – View and analyze ratings and reviews",
+   "url": "https://support.google.com/googleplay/android-developer/answer/138230",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Help article; screenshot presence not verified."
+  },
+  {
+   "name": "Kimola – How to scrape and analyze App Store reviews (support)",
+   "url": "https://kimola.com/support/how-to-scrape-and-analyze-app-store-reviews",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "Chattermill – Announcing Chattermill's new look",
+   "url": "https://chattermill.com/blog/announcing-chattermill-new-look",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Vendor blog on product UI; screenshot presence not verified."
+  },
+  {
+   "name": "Wonderflow – Customer insights platform",
+   "url": "https://wonderflow.ai/product/customer-insights-platform",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Search text says no public demo; demo by booking only."
+  },
+  {
+   "name": "Revuze – Product details (TrustRadius)",
+   "url": "https://www.trustradius.com/products/revuze/details",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Third-party listing; screenshot uncertain."
+  },
+  {
+   "name": "Grafana – Mobile App Stores - Reviews dashboard (10821)",
+   "url": "https://grafana.com/grafana/dashboards/10821-mobile-app-stores-reviews/",
+   "type": "b",
+   "image": null,
+   "quote": "It shows iTunes and Google Play reviews for all your iOS/Android apps",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Community dashboard listing page."
+  },
+  {
+   "name": "Grafana – Mobile App Stores - Per app dashboard (10100)",
+   "url": "https://grafana.com/grafana/dashboards/10100-mobile-app-stores-per-app/",
+   "type": "b",
+   "image": null,
+   "quote": "shows iTunes and Google Play score and number of reviews per iOS/Android app",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Community dashboard listing page."
+  },
+  {
+   "name": "Geckoboard – Data.ai dashboards",
+   "url": "https://www.geckoboard.com/product/data-sources/data-ai/",
+   "type": "b",
+   "image": null,
+   "quote": "Help your team keep an eye on key ad metrics, app ratings, recent reviews, downloads, sales data, app store ranking, and more",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": ""
+  },
+  {
+   "name": "VG Insights – Platform updates",
+   "url": "https://vginsights.com/platform-updates",
+   "type": "b",
+   "image": null,
+   "quote": "Logged-in users got their own home screen – customizable with the most relevant charts, tables and news.",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "BetaHub – Sentiment analysis feature",
+   "url": "https://betahub.io/features/sentiment_analysis",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Game-specific (Discord); screenshot presence not verified."
+  },
+  {
+   "name": "GitHub – nogibjj/Steam_Review__Analyzer (README)",
+   "url": "https://github.com/nogibjj/Steam_Review__Analyzer",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Open-source Steam review dashboard. README PNG checked was not a dashboard screen; README Animation.gif not viewed."
+  },
+  {
+   "name": "Zendesk – Getting started with prebuilt dashboards (Explore)",
+   "url": "https://support.zendesk.com/hc/en-us/articles/4408846844826-Getting-started-with-prebuilt-dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "All versions of Zendesk Explore include prebuilt dashboards that display your Zendesk business information in an easy-to-read format",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Help-center article; screenshot presence not verified (site not fetchable)."
+  },
+  {
+   "name": "Zendesk – Overview of the Explore live dashboard",
+   "url": "https://support.zendesk.com/hc/en-us/articles/4408843771546-Overview-of-the-Explore-live-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Help-center article; screenshot presence not verified."
+  },
+  {
+   "name": "Geckoboard – Zendesk dashboards",
+   "url": "https://www.geckoboard.com/zendesk/",
+   "type": "b",
+   "image": null,
+   "quote": "Examples might include dashboards for monitoring high level metrics from across your whole support operation",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Vendor marketing page."
+  },
+  {
+   "name": "Geckoboard – Zendesk Support data source",
+   "url": "https://www.geckoboard.com/product/data-sources/zendesk-support/",
+   "type": "b",
+   "image": null,
+   "quote": "see if key SLAs are on track and quickly spot issues",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote attributed in search summary to the 'Zendesk-focused page'; exact page attribution uncertain."
+  },
+  {
+   "name": "Geckoboard dashboards for support (SupportApps listing)",
+   "url": "https://supportapps.org/zendesk/geckoboard-dashboards-for-support",
+   "type": "b",
+   "image": null,
+   "quote": "broadcast real-time Zendesk KPIs like queue health, SLA risk, and agent performance on TV wallboards",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Third-party app listing."
+  },
+  {
+   "name": "Geckoboard – Intercom dashboard examples",
+   "url": "https://www.geckoboard.com/dashboard-examples/support/intercom-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Public example-dashboard page; may be static images rather than live (type uncertain)."
+  },
+  {
+   "name": "Geckoboard – HubSpot Service Hub dashboard examples",
+   "url": "https://www.geckoboard.com/dashboard-examples/support/hubspot-service-hub-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Public example-dashboard page; type uncertain."
+  },
+  {
+   "name": "Geckoboard – Aircall dashboard examples",
+   "url": "https://www.geckoboard.com/dashboard-examples/support/aircall-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Public example-dashboard page; type uncertain."
+  },
+  {
+   "name": "Geckoboard – Intercom integration",
+   "url": "https://www.geckoboard.com/integrations/intercom/",
+   "type": "b",
+   "image": null,
+   "quote": "Geckoboard lets teams share read-only, real-time dashboards they can view but not edit in any browser.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Helpshift – Support Analytics (Power BI app, Microsoft AppSource)",
+   "url": "https://appsource.microsoft.com/en-us/product/power-bi/helpshift.helpshift-support-analytics",
+   "type": "b",
+   "image": null,
+   "quote": "These analytics include an easy-to-understand dashboard overview as well as detailed reports.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Helpshift is used by game studios."
+  },
+  {
+   "name": "Intercom – Announcing our new real-time dashboard (blog)",
+   "url": "https://www.intercom.com/blog/announcing-real-time-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "Monitor your most important metrics in one place",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote is the page title."
+  },
+  {
+   "name": "Intercom – Helpdesk Reporting product page",
+   "url": "https://www.intercom.com/customer-service-platform/reporting",
+   "type": "b",
+   "image": null,
+   "quote": "real-time performance metrics",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Intercom – Intercom reports explained (help article)",
+   "url": "https://www.intercom.com/help/en/articles/200-intercom-reports-explained",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Screenshot presence not verified."
+  },
+  {
+   "name": "Coupler.io – Intercom dashboard example",
+   "url": "https://www.coupler.io/dashboard-examples/intercom-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Template gallery page; type uncertain."
+  },
+  {
+   "name": "Freshdesk – Overview of curated reports",
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000005983",
+   "type": "b",
+   "image": null,
+   "quote": "Helpdesk Performance gives an overview of your helpdesk's Time and SLA metrics.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Freshworks – Freshdesk team dashboards",
+   "url": "https://www.freshworks.com/freshdesk/reporting-analytics/team-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Product page."
+  },
+  {
+   "name": "Klipfolio – Freshdesk dashboard",
+   "url": "https://klipfolio.com/integrations/freshdesk-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Six & Flow – HubSpot Service Hub Help Desk Board update",
+   "url": "https://www.sixandflow.com/hupdates/help-desk-board",
+   "type": "b",
+   "image": null,
+   "quote": "Key features include a new Help Desk Board, Summary Tab, and Analyse Tab, each providing a comprehensive view of ticket progress, team efficiency, and performance data.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "HubSpot partner site, not HubSpot."
+  },
+  {
+   "name": "HubSpot – Analyze help desk (knowledge base, Italian)",
+   "url": "https://knowledge.hubspot.com/it/help-desk/analyze-help-desk?src=bl-po",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Italian-language page; screenshot presence not verified."
+  },
+  {
+   "name": "Gorgias – Create dashboards to track KPIs",
+   "url": "https://docs.gorgias.com/en-US/create-dashboards-to-track-kpis-in-gorgias-1093828",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Help doc; screenshot presence not verified."
+  },
+  {
+   "name": "Help Scout – Understanding Reports",
+   "url": "https://docs.helpscout.com/article/385-reports",
+   "type": "b",
+   "image": null,
+   "quote": "The company report gives you insight into performance across your team.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Databox – Customer Support dashboard examples",
+   "url": "https://databox.com/dashboard-examples/customer-support",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Template gallery (Help Desk, Support Tickets, Customer Success templates)."
+  },
+  {
+   "name": "Front – Understanding Analytics",
+   "url": "https://help.front.com/en/articles/2154",
+   "type": "b",
+   "image": null,
+   "quote": "Overview is the homepage for Analytics with a summary of the most important metrics.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Same help content also states: live dashboard 'is your one-stop shop for viewing open or unassigned conversations in real time' (page attribution within help center not certain)."
+  },
+  {
+   "name": "Gladly – What is Liveboards",
+   "url": "https://help.gladly.com/docs/what-is-liveboards",
+   "type": "b",
+   "image": null,
+   "quote": "The Summary Liveboard gives you a high-level snapshot of how your contact center is performing as a whole right now.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote came from Gladly help results; exact page among Gladly Liveboards docs uncertain."
+  },
+  {
+   "name": "Gladly – Use Liveboards to monitor your contact center",
+   "url": "https://help.gladly.com/docs/use-liveboards-to-monitor-your-contact-center.md",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ".md version of help doc as listed in search results."
+  },
+  {
+   "name": "Talkdesk – Talkdesk Live Overview (support article)",
+   "url": "https://support.talkdesk.com/hc/en-us/articles/360039023791-Talkdesk-Live-Overview",
+   "type": "b",
+   "image": null,
+   "quote": "Live's Key Performance Indicator (KPI) widgets and live contact monitoring capabilities allow users to easily manage queue and agent performance in real time, all in one view.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Talkdesk – Live real-time dashboards product page",
+   "url": "https://www.talkdesk.com/call-center-software/reporting-analytics/live/",
+   "type": "b",
+   "image": null,
+   "quote": "INTERACTION & QUALITY ANALYTICS | REAL-TIME DASHBOARDS",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote is the page title."
+  },
+  {
+   "name": "Genesys Cloud – Queues Activity Summary view",
+   "url": "https://help.genesys.cloud/articles/queues-activity-summary-view/",
+   "type": "b",
+   "image": null,
+   "quote": "This view updates in real time.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "eMite – Queue Performance Wallboard (Genesys Cloud OOTB Dashboard)",
+   "url": "https://prophecyinternational.atlassian.net/wiki/spaces/eMite/pages/1831142256/Queue+Performance+Wallboard+Genesys+Cloud+PureCloud+-OOTB+Dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "Queue Performance Wallboard",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote is the page title; partner documentation."
+  },
+  {
+   "name": "NICE CXone – Performance Management (Native)",
+   "url": "https://help.nicecxone.com/Content/cxonepm/cxonepm.htm",
+   "type": "b",
+   "image": null,
+   "quote": "Wallboards: Display real-time performance data on large screens.",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "NICE CXone – Wallboards (Phase 2)",
+   "url": "https://help.nicecxone.com/Content/cxonepm/wallboard2.htm",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "NICE CXone – ACD Dashboards",
+   "url": "https://help.nicecxone.com/content/reporting/dashboards/dashboards.htm",
+   "type": "b",
+   "image": null,
+   "quote": "Data for real-time widgets refresh automatically every 5 seconds",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Five9 – Supervisor Desktop",
+   "url": "https://five9.com/products/capabilities/supervisor-desktop",
+   "type": "b",
+   "image": null,
+   "quote": "single metrics dashboard",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Aircall – Introducing Live Monitoring (blog)",
+   "url": "https://aircall.io/en-gb/blog/features/introducing-live-monitoring/",
+   "type": "b",
+   "image": null,
+   "quote": "24/7 overview of your call center's performance",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Aircall – Live Monitoring feature page",
+   "url": "https://aircall.io/call-center-software-features/live-feed/",
+   "type": "b",
+   "image": null,
+   "quote": "real-time metrics for tracking your team's most important metrics",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Aircall – How to Get the Most Out of Aircall's Analytics Dashboards",
+   "url": "https://aircall.io/blog/features/analytics-dashboards-how-to-use/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Salesforce Trailhead – Omni Supervisor",
+   "url": "https://trailhead.salesforce.com/ko/content/learn/modules/omni-channel-lex/omni-supervisor",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Korean-locale Trailhead unit; screenshot presence not verified."
+  },
+  {
+   "name": "MaestroQA – Reporting features",
+   "url": "https://www.maestroqa.com/features/reporting",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "QA dashboards product page."
+  },
+  {
+   "name": "SupportLogic – Support Manager Daily Activity Guide",
+   "url": "https://support.supportlogic.com/support/solutions/articles/73000571022-support-manager-daily-activity-guide",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Help-center article; screenshot presence not verified."
+  },
+  {
+   "name": "eesel – Kustomer reporting guide",
+   "url": "https://www.eesel.ai/blog/kustomer-reporting",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Third-party guide (eesel); screenshot presence not verified."
+  },
+  {
+   "name": "Chatwoot – Live view of reports",
+   "url": "https://chatwoot.com/features/live-view-of-reports",
+   "type": "b",
+   "image": null,
+   "quote": "View the status of your conversations and agents in real-time",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Open-source helpdesk. Quote is the page title. GitHub README screenshot (dashboard.png) was downloaded and opened: it shows the conversation inbox, not a reports screen, so the README is not listed."
+  },
+  {
+   "name": "Chatwoot – Reading conversations, agents, labels, inbox and team reports",
+   "url": "https://www.chatwoot.com/hc/user-guide/articles/1677694691-reading-conversations-agents-labels-inbox-and-team-reports",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "Grafana – Technical Support Statistics Dashboard (osTicket, #11403)",
+   "url": "https://grafana.com/grafana/dashboards/11403-technical-support-statistics-dashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Community dashboard listing; no live play.grafana.org instance found."
+  },
+  {
+   "name": "phData – ServiceNow Tableau Dashboard Example",
+   "url": "https://www.phdata.io/blog/servicenow-tableau-dashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "executive overview of incidents, problems, and requests",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "IT service desk oriented."
+  },
+  {
+   "name": "Tableau Exchange – Customer Support Analysis from ServiceCloud",
+   "url": "https://exchange.tableau.com/products/837",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Accelerator by Visualitics."
+  },
+  {
+   "name": "Discord – Server Insights (help center article)",
+   "url": "https://support.discord.com/hc/en-us/articles/360032807371",
+   "type": "b",
+   "image": null,
+   "quote": "Server Insights is a new experimental feature from Discord that gives you visibility into how your server is doing.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Screenshot presence not confirmed from search text."
+  },
+  {
+   "name": "Discord – Getting to Know Your Server With Server Insights",
+   "url": "https://discord.com/community/understanding-server-insights",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Official guide; screenshot presence not confirmed."
+  },
+  {
+   "name": "Discord – How to Use Server Insights to Grow Your Community",
+   "url": "https://discord.com/community/growing-your-community-through-server-insights",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Official guide; screenshot presence not confirmed."
+  },
+  {
+   "name": "CommunityOne – Discord Analytics",
+   "url": "https://communityone.io/analytics/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Vendor product page; screenshot presence not confirmed."
+  },
+  {
+   "name": "Statbot – Discord analytics bot listing (top.gg)",
+   "url": "https://top.gg/bot/491769129318088714",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Listing advertises a Web Dashboard; a demo at statbot.net is mentioned in results but that URL did not appear in a Links list. Screenshot presence uncertain."
+  },
+  {
+   "name": "InsightCord – Discord analytics bot listing (top.gg)",
+   "url": "https://top.gg/bot/869707510523789312",
+   "type": "b",
+   "image": null,
+   "quote": "real-time tracking of growth, engagement, and voice activity",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording of the listing. Bot-to-ID mapping per search result; screenshot presence uncertain."
+  },
+  {
+   "name": "Koya – Server Stats Bot feature page",
+   "url": "https://koya.gg/en/features/server-stats-bot",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Charts said to live on the website; screenshot presence not confirmed."
+  },
+  {
+   "name": "Cially – open-source self-hosted Discord analytics dashboard (GitHub)",
+   "url": "https://github.com/skellgreco/cially",
+   "type": "b",
+   "image": null,
+   "quote": "Monitor member activity, track engagement trends, and make data-driven decisions with ease.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "README contains several screenshots, but they are private-user-images URLs with expiring JWT tokens, so not downloadable/recorded."
+  },
+  {
+   "name": "Common Room – Community-led growth solution page",
+   "url": "https://commonroom.io/solutions/community-led-growth/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Screenshot presence not confirmed."
+  },
+  {
+   "name": "Orbit – Intro to activities (docs)",
+   "url": "https://orbit.love/docs/all/intro-to-activities",
+   "type": "b",
+   "image": null,
+   "quote": "Orbit provides an overview of all activity across a community",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording; exact source page among Orbit results uncertain."
+  },
+  {
+   "name": "Orbit – How to monitor engagement for a group of members (docs)",
+   "url": "https://orbit.love/docs/all/how-to-monitor-engagement-for-a-group-of-members",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Orbit has been sunset; page may be archived."
+  },
+  {
+   "name": "Orbit – June 3 changelog: Segments, Dashboards",
+   "url": "https://api.orbit.love/changelog/june-3-segments-dashboards-more",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Discourse – Redesigned admin dashboard (Meta topic)",
+   "url": "https://meta.discourse.org/t/better-insights-into-your-community-with-the-redesigned-admin-dashboard/404528?tl=en",
+   "type": "b",
+   "image": null,
+   "quote": "The admin dashboard has a new design that puts your most important community signals front and center, with a customizable reports section, date range controls, and category-level controls.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Discourse – Introducing the All-New Admin Dashboard (blog)",
+   "url": "https://blog.discourse.org/2026/08/introducing-the-all-new-admin-dashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Vendor product blog (not media)."
+  },
+  {
+   "name": "Circle – Introducing Analytics 3.0 (product update)",
+   "url": "https://circle.so/product-updates/introducing-analytics-3-0",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Screenshot presence not confirmed."
+  },
+  {
+   "name": "Khoros – Aurora: Accessing the Analytics Dashboard",
+   "url": "https://community.khoros.com/t5/Analytics/Accessing-Analytics-Dashboard/ta-p/736524",
+   "type": "b",
+   "image": null,
+   "quote": "an overview of community performance, tracking page views, visits, member registrations, and more",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording of the article."
+  },
+  {
+   "name": "Khoros – About Aurora Analytics (knowledge base)",
+   "url": "https://community.khoros.com/t5/Analytics/About-Aurora-Analytics/ta-p/732067",
+   "type": "b",
+   "image": null,
+   "quote": "\"at-a-glance\" view of activities that indicate overall community health and engagement",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Khoros – Community Analytics capability page",
+   "url": "https://khoros.com/platform/communities/capabilities/community-analytics",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Higher Logic Vanilla – Analytics & reporting features",
+   "url": "https://vanilla.higherlogic.com/vanilla/analytics-reporting-features",
+   "type": "b",
+   "image": null,
+   "quote": "analytics for tracking community health and growth",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording."
+  },
+  {
+   "name": "social.plus – Dashboard (new) overview docs",
+   "url": "https://learn.social.plus/analytics-and-moderation/dashboard-new/overview.md",
+   "type": "b",
+   "image": null,
+   "quote": "It combines user activity, content output, billable usage, and community engagement into one scrollable view.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Search result says the page includes a screenshot. Quote is search-summary wording."
+  },
+  {
+   "name": "social.plus – Console analytics overview docs",
+   "url": "https://learn.social.plus/analytics-and-moderation/console/analytics/overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "GGWP – Player Reports moderation dashboard",
+   "url": "https://ggwp.com/player-reports",
+   "type": "b",
+   "image": null,
+   "quote": "The dashboard prioritizes incidents and players for your human moderators to review and take action on.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Screenshot presence not confirmed."
+  },
+  {
+   "name": "GGWP – Documentation home",
+   "url": "https://docs.ggwp.com/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "GGWP – Success Story: Omeda (PDF)",
+   "url": "https://www.ggwp.com/wp-content/uploads/2025/10/GGWP-Success-Story-Omeda.pdf",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Case study; dashboard screenshot presence uncertain."
+  },
+  {
+   "name": "Unity Moderation – Introduction to the Moderation dashboard (docs)",
+   "url": "https://docs.unity.com/en-us/safe-text/overview",
+   "type": "b",
+   "image": null,
+   "quote": "Unity's dashboard is where you take action on incidents, review evidence that come from Safe Text, and monitor community health scores.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording."
+  },
+  {
+   "name": "Unity Moderation – Overview and community health (docs, ja-jp)",
+   "url": "https://docs.unity.com/ja-jp/safe-text/overview-and-community-health",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Japanese locale URL as returned by search."
+  },
+  {
+   "name": "Unity – Moderation product page",
+   "url": "https://unity.com/products/moderation",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Microsoft – Community Sift product page",
+   "url": "https://developer.microsoft.com/en-us/games/products/community-sift/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Dashboard screenshot presence not confirmed."
+  },
+  {
+   "name": "Watchers – Moderation Dashboard (docs)",
+   "url": "https://docs.watchers.io/docs/moderation-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Stream Hatchet – Web Dashboard",
+   "url": "https://streamhatchet.com/products/web-dashboard/",
+   "type": "b",
+   "image": null,
+   "quote": "manage your streaming presence across major streaming platforms in one integrated view",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Stream Hatchet – Video Game Publisher Solutions",
+   "url": "https://streamhatchet.com:443/video-game-publishers",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Stream Hatchet – Welcome to Stream Hatchet Starter (blog)",
+   "url": "https://streamhatchet.com/blog/welcome-to-stream-hatchet-starter-an-introduction-to-live-streaming-data-analytics/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Vendor blog on free Starter tier."
+  },
+  {
+   "name": "StreamElements – Dashboard Overview (support article)",
+   "url": "https://support.streamelements.com/hc/en-us/articles/10474723554962-StreamElements-Dashboard-Overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Creator-side tool; screenshot presence not confirmed."
+  },
+  {
+   "name": "GameAnalytics – Realtime overview (docs)",
+   "url": "https://docs.gameanalytics.com/products-and-features/analytics-iq/realtime/overview",
+   "type": "b",
+   "image": null,
+   "quote": "Realtime lets you monitor your game's activity as it happens.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "GameAnalytics – Dashboards (docs)",
+   "url": "https://docs.gameanalytics.com/features/dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "Quickly browse through your apps key metrics using the Overview dashboard",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "GameAnalytics – Game overview (docs)",
+   "url": "https://docs.gameanalytics.com/features/game-overview/overview",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Phaser – Game Analytics tutorial part 4: Viewing your game data",
+   "url": "https://phaser.io/tutorials/game-analytics/part4",
+   "type": "b",
+   "image": null,
+   "quote": "The real-time dashboard gives you visual insight into your number of concurrent users, incoming events, new users, returning users, transactions, total revenue, first time revenue and error logs.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote attributed to 'a Phaser tutorial'; may be part4 or part5 (uncertain)."
+  },
+  {
+   "name": "devtodev – How to Create an Ideal Dashboard for Analyzing Mobile Games and Apps",
+   "url": "https://devtodev.com/resources/articles/how-to-create-an-ideal-dashboard-for-analyzing-mobile-games-and-apps",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Search says screenshots are labeled as coming from the devtodev demo."
+  },
+  {
+   "name": "Unity Analytics – Dashboards (docs)",
+   "url": "https://docs.unity.com/en-us/analytics/dashboards/dashboards",
+   "type": "b",
+   "image": null,
+   "quote": "The game performance dashboard gives you an overview of your game's health.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Unity Analytics – Analytics Dashboard (legacy 2020.3 manual)",
+   "url": "https://docs.unity3d.com/2020.3/Documentation/Manual/UnityAnalyticsDashboard.html",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Legacy docs."
+  },
+  {
+   "name": "PlayFab – Game Manager reference (Title Overview)",
+   "url": "https://devdocs.xbox.com/services/playfab/live-service-management/gamemanager/reference",
+   "type": "b",
+   "image": null,
+   "quote": "the tables in the Overview tab allow you to monitor PlayStream events in real time",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "PlayFab – Game Manager quickstart",
+   "url": "https://devdocs.xbox.com/services/playfab/live-service-management/gamemanager/quickstart",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Heroic Labs – Satori: Analytics Dashboards, Reimagined (blog)",
+   "url": "https://heroiclabs.com/blog/satori-analytics-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "reimagined analytics dashboards that show live operations, player metrics, and experiments in one view",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Quote is search-summary wording."
+  },
+  {
+   "name": "Heroic Labs – Satori performance monitoring (docs)",
+   "url": "https://heroiclabs.com/docs/satori/concepts/performance-monitoring/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Metaplay – Introduction to the LiveOps Dashboard (docs)",
+   "url": "https://docs.metaplay.io/liveops-dashboard/introduction-to-the-liveops-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Magify – Reports and Dashboards (help)",
+   "url": "https://help.magify.com/reports-and-dashboards/",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Sensor Tower – Game Intelligence product page",
+   "url": "https://go.sensortower.com/game-intelligence.html",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Screenshot presence not confirmed."
+  },
+  {
+   "name": "Gamesight – Marketing Measurement (docs)",
+   "url": "https://docs.gamesight.io/docs/marketing-measurement",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Gamesight – Creator Marketing product page",
+   "url": "https://gamesight.io/products/creator-marketing",
+   "type": "b",
+   "image": null,
+   "quote": "real-time dashboard",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": ""
+  },
+  {
+   "name": "Mixpanel – Introducing Dashboards (blog)",
+   "url": "https://mixpanel.com/blog/mixpanel-dashboards-launch/",
+   "type": "b",
+   "image": null,
+   "quote": "Introducing Dashboards: Product metrics all in one place",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Not game-specific."
+  },
+  {
+   "name": "Amplitude – Product Analytics Dashboard template",
+   "url": "https://amplitude.com/en-us/templates/product-analytics-dashboard",
+   "type": "b",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Not game-specific."
+  },
+  {
+   "name": "Brandwatch – Consumer Research 5-minute product tour",
+   "url": "https://www.brandwatch.com/?p=173237",
+   "type": "c",
+   "image": null,
+   "quote": "Learn more about the capabilities of Brandwatch Consumer Research in this 5-minute product tour.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Video tour; may be gated by form, not confirmed."
+  },
+  {
+   "name": "Brandwatch – Tutorials video series (German blog)",
+   "url": "https://www.brandwatch.com/de/blog/brandwatch-tutorials/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Blog hosting tutorial videos; first video covers queries and channels."
+  },
+  {
+   "name": "Brandwatch – Tutorial (YouTube)",
+   "url": "https://www.youtube.com/watch?v=_nlxfRY1Te8",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Brand24 – Dashboard walkthrough video (YouTube)",
+   "url": "https://www.youtube.com/watch?v=h_SYDuIrft0",
+   "type": "c",
+   "image": null,
+   "quote": "Brand24 dashboard walkthrough",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Quote is the search summary's description of the video."
+  },
+  {
+   "name": "Brand24 – Everything to know about Analysis Tab (YouTube)",
+   "url": "https://www.youtube.com/watch?v=rwN8M7tax6o",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Brand24 – Tutorial 2026 (YouTube)",
+   "url": "https://www.youtube.com/watch?v=cmzZaNafmS0",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Sprinklr – Working with Custom Dashboards (YouTube)",
+   "url": "https://m.youtube.com/watch?v=rnrhECALYJQ&pp=0gcJCdgAo7VqN5tD",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Sprout Social – How to Analyze Topic Insights in Listening (YouTube)",
+   "url": "https://www.youtube.com/watch?v=tC-M5Ro-3lU",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Hootsuite – How to Do Social Listening on Hootsuite (YouTube)",
+   "url": "https://www.youtube.com/watch?v=4RbWAQXTdnI",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Emplifi – Product tour: Unified Analytics and Dynamic Dashboards",
+   "url": "https://emplifi.io/product-tours/how-to-simplify-reporting-with-unified-analytics/",
+   "type": "c",
+   "image": null,
+   "quote": "In this 20-minute product tour, Solutions Consultant Caren Garcia will walk you through Emplifi's Unified Analytics and Dynamic Dashboards.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Webinar-style video tour; mapping of quote to this URL inferred from URL slug."
+  },
+  {
+   "name": "Emplifi – Product tour: Tap into social conversations (Social Listening)",
+   "url": "https://emplifi.io/product-tours/tap-into-social-conversations/",
+   "type": "c",
+   "image": null,
+   "quote": "In less than 20 minutes, see how Emplifi's Social Listening cuts through digital noise to deliver real, decision-ready intelligence.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Mapping of quote to this URL inferred from URL slug; uncertain."
+  },
+  {
+   "name": "Emplifi – Product tour: Listening, Community and Care",
+   "url": "https://emplifi.io/product-tours/master-the-three-pillars-of-social-success-listening-community-and-care/",
+   "type": "c",
+   "image": null,
+   "quote": "Watch this on demand product tour led by Emplifi's Solutions Consultant Lubomir Kachur.",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Mapping inferred from URL slug."
+  },
+  {
+   "name": "Agorapulse – Advanced Social Media Listening (YouTube)",
+   "url": "https://www.youtube.com/watch?v=ci5YDPvcshY",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": "Attributed to Agorapulse by search summary only; uncertain."
+  },
+  {
+   "name": "SentiOne – Analysis Dashboard user guide (YouTube)",
+   "url": "https://www.youtube.com/watch?v=D9wnmTdalrE",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "YouScan – Social Listening platform overview (YouTube)",
+   "url": "https://www.youtube.com/watch?v=7aW0dTEZ0VE",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "social-listening",
+   "note": ""
+  },
+  {
+   "name": "Chattermill – Product demo video series",
+   "url": "https://chattermill.com/watch-demo/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Demo video series page; hosting (YouTube or embedded) not verified"
+  },
+  {
+   "name": "Thematic – Dashboards Demo (YouTube)",
+   "url": "https://www.youtube.com/watch?v=sok5wDrXMjI&pp=0gcJCa0JAYcqIYzv",
+   "type": "c",
+   "image": null,
+   "quote": "Customer Analytics Dashboards That Tell the Complete Story | Thematic Demo",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": ""
+  },
+  {
+   "name": "Thematic – Analysis Demo (YouTube)",
+   "url": "https://www.youtube.com/watch?v=msfuYb6Csx4",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": ""
+  },
+  {
+   "name": "Enterpret – Introducing Enterpret 2.0 (YouTube)",
+   "url": "https://www.youtube.com/watch?v=brTWaZCvTq4",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Launch video; uncertain whether dashboard is shown"
+  },
+  {
+   "name": "Medallia – Experience Cloud demo video / product tour",
+   "url": "https://www.medallia.com/platform/mec-product-tour/",
+   "type": "c",
+   "image": null,
+   "quote": "It is a brief demo that covers capturing customer and employee feedback, getting a holistic view of customer experience health, and taking action on it.",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": ""
+  },
+  {
+   "name": "Qualtrics – On-demand webinar: Maximizing ROI from CX Dashboards",
+   "url": "https://basecamp.qualtrics.com/on-demand-webinar-maximizing-roi-from-your-cx-dashboards-insights",
+   "type": "c",
+   "image": null,
+   "quote": "platform demonstration showcasing the latest CX dashboard features",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Basecamp may require registration"
+  },
+  {
+   "name": "Qualtrics CX – Iowa DX training recorded demo (YouTube chapters)",
+   "url": "https://dxtraining.iowa.gov/qualtrics/understanding-qualtrics-cx",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Customer (State of Iowa) training page linking a recorded Qualtrics CX demo; YouTube URL itself not in results"
+  },
+  {
+   "name": "AskNicely – G2 listing with vendor demo videos",
+   "url": "https://www.g2.com/products/asknicely/details",
+   "type": "c",
+   "image": null,
+   "quote": "visualize your results in real-time on an easy-to-read dashboard",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Uncertain: demo media hosted on G2 review site"
+  },
+  {
+   "name": "Gainsight – Customer Success Demo Center",
+   "url": "https://www.gainsight.com/demo-center/cs/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Result: short two-minute product demo videos"
+  },
+  {
+   "name": "Dovetail – Live demos page",
+   "url": "https://dovetail.com/live-demos/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Live/recorded demo sessions; may require registration"
+  },
+  {
+   "name": "SentiSum – Gousto customer video (YouTube)",
+   "url": "https://www.youtube.com/watch?v=M84erafOFpI",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "voc-feedback",
+   "note": "Customer story video; uncertain whether dashboard is shown"
+  },
+  {
+   "name": "Appbot – Video demo (app review analysis, alerts & replies)",
+   "url": "https://support.appbot.co/help-docs/video-demo-app-review-analysis-alerts-replies/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "review-analytics",
+   "note": "Help page hosting the official ~10 min video demo; YouTube URL itself not found in results."
+  },
+  {
+   "name": "YouTube – Build a custom Zendesk dashboard in 8 Minutes (Geckoboard Speed Run)",
+   "url": "https://www.youtube.com/watch?v=YH34iYwvz0o",
+   "type": "c",
+   "image": null,
+   "quote": "builds a live, shareable dashboard from Zendesk data",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Quote is from search-result description."
+  },
+  {
+   "name": "YouTube – Zendesk Overview Demo",
+   "url": "https://www.youtube.com/watch?v=f2tu2G5MYH4",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Official product overview; whether analytics screens appear not confirmed."
+  },
+  {
+   "name": "YouTube – Helpshift + Power BI Webinar",
+   "url": "https://www.youtube.com/watch?v=myyxni5RH1o",
+   "type": "c",
+   "image": null,
+   "quote": "granular, down-to-the-minute insights into agent performance and trends in issues",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "YouTube – [DEMO] Helpshift Product Overview Video - 2022",
+   "url": "https://www.youtube.com/watch?v=ZC3afeMwF0k",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Whether reporting/dashboard screens appear is not confirmed."
+  },
+  {
+   "name": "YouTube – Advanced Analytics for Freshdesk",
+   "url": "https://www.youtube.com/watch?v=uUUMdINqCkg",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Search summary links this to Zoho Analytics integration; uncertain."
+  },
+  {
+   "name": "Talkdesk – Product Demo: Reporting and Analytics (webinar)",
+   "url": "https://www.talkdesk.com/resources/webinars/product-demo-talkdesk-reporting-and-analytics/",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "Webinar page; may require registration."
+  },
+  {
+   "name": "YouTube – Consilium UniDashboard (Cisco Contact Center wallboard)",
+   "url": "https://www.youtube.com/watch?v=snwNEu7JXWg",
+   "type": "c",
+   "image": null,
+   "quote": "displays real-time statistics of key Contact Center metrics",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "YouTube – 2Ring Dashboards & Wallboards for Cisco Contact Centers",
+   "url": "https://www.youtube.com/watch?v=o7uvIUaIFb4",
+   "type": "c",
+   "image": null,
+   "quote": "cloud-based (or self-hosted) real-time reporting solution",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "YouTube – Comstice Wallboard for Avaya Contact Centers",
+   "url": "https://www.youtube.com/watch?v=Gw-KoBU9N7s",
+   "type": "c",
+   "image": null,
+   "quote": "monitor real-time activity and get alerted when thresholds are reached",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": ""
+  },
+  {
+   "name": "YouTube – Gainsight Tutorial/Overview",
+   "url": "https://www.youtube.com/watch?v=T02YCzLuc3Q",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "support-analytics",
+   "note": "CS platform walkthrough; dashboard content not confirmed."
+  },
+  {
+   "name": "Common Room – Intro to Common Room (recorded product webinar)",
+   "url": "https://www.commonroom.io/uncommon/events/04-12-2022--intro-to-common-room/",
+   "type": "c",
+   "image": null,
+   "quote": "The community responsiveness overview breaks down response rates and median response time by source to see your most engaged platforms.",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Recorded demo/webinar; video format inferred from search text."
+  },
+  {
+   "name": "GameAnalytics – Custom dashboards walkthrough video (blog)",
+   "url": "https://gameanalytics.com/?p=1279",
+   "type": "c",
+   "image": null,
+   "quote": "근거 없음",
+   "viewed": false,
+   "category": "game-community-liveops",
+   "note": "Blog post embedding a dashboards walkthrough video by product designer."
+  }
+ ]
+}
