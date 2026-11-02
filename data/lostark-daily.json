@@ -5,102 +5,112 @@
    "community": "인벤",
    "community_id": "inven",
    "posts": {
-    "base": 2169.0,
-    "ratio": 0.96,
-    "value": 2090
+    "base": 2859.7,
+    "ratio": 0.98,
+    "value": 2797
    },
    "region": "국내",
    "rising": [
     {
-     "base": 15.8,
-     "count": 57,
+     "base": 5.1,
+     "count": 43,
      "new": false,
-     "ratio": 3.6,
-     "word": "인벤"
+     "ratio": 8.4,
+     "word": "8주년"
+    },
+    {
+     "base": 9.9,
+     "count": 38,
+     "new": false,
+     "ratio": 3.9,
+     "word": "종익"
+    },
+    {
+     "base": 6.7,
+     "count": 31,
+     "new": false,
+     "ratio": 4.6,
+     "word": "동료"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 5.8,
-     "ratio": 6.38,
-     "value": 37
+     "base": 4.7,
+     "ratio": 1.06,
+     "value": 5
     },
     "복귀 · 신규 표현": {
-     "base": 13.5,
-     "ratio": 2.15,
-     "value": 29
+     "base": 16.3,
+     "ratio": 1.6,
+     "value": 26
     },
     "이탈 표현": {
-     "base": 18.0,
-     "ratio": 1.11,
-     "value": 20
+     "base": 30.3,
+     "ratio": 1.19,
+     "value": 36
     }
    },
-   "surge": true,
-   "surge_reasons": [
-    "버그 신호 37건(평소 5.8건의 6.38배)",
-    "복귀 · 신규 표현 29건(평소 13.5건의 2.15배)"
-   ],
+   "surge": false,
+   "surge_reasons": [],
    "top": [
     {
      "board": "자유게시판",
-     "comments": 139,
+     "comments": 146,
      "community": "인벤",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "니가 이겼다 재학아 ㅇㅇ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4272120",
-     "views": 36218
+     "title": "전재학이 종막 익스트림 난이도를 너프해야하는 이유",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4275171",
+     "views": 20560
     },
     {
      "board": "자유게시판",
-     "comments": 105,
+     "comments": 138,
      "community": "인벤",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "사멸밑줄 클 많다고 하는데",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4273218",
-     "views": 25010
+     "title": "너프는 반대 밸패는 필요하다고 생각",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4275790",
+     "views": 16559
     },
     {
      "board": "자유게시판",
-     "comments": 93,
+     "comments": 129,
      "community": "인벤",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "왜 자꾸 너프를 하라는 거지?",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4272272",
-     "views": 19622
+     "title": "인구수 박살나면 회복이 안되는 게임인데 이걸 스마게만 모르는 것 같음",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4274749",
+     "views": 33232
     },
     {
      "board": "자유게시판",
-     "comments": 70,
+     "comments": 27,
      "community": "인벤",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "조회",
      "sentiment": null,
-     "title": "이분도 로아 접으셧네 ㄷㄷ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4273598",
-     "views": 38335
+     "title": "ㅇㅂ)인기씨 여기 와보세요 애청자로써 진지하게 할 말이 있습니다",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4274399",
+     "views": 42800
     },
     {
      "board": "자유게시판",
-     "comments": 30,
+     "comments": 91,
      "community": "인벤",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "조회",
      "sentiment": null,
-     "title": "아근데 금강선 ㅈㄴ억울하긴하겠다 ㅋㅋㅋ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4272010",
-     "views": 28164
+     "title": "ㅇㅂ)인기한테 그만 좀 해라",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4274343",
+     "views": 38596
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-19",
      "2026-10-20",
      "2026-10-21",
      "2026-10-22",
@@ -113,10 +123,10 @@
      "2026-10-29",
      "2026-10-30",
      "2026-10-31",
-     "2026-11-01"
+     "2026-11-01",
+     "2026-11-02"
     ],
     "posts": [
-     2913,
      2797,
      3984,
      3102,
@@ -129,7 +139,8 @@
      6839,
      5073,
      2671,
-     2090
+     2090,
+     2797
     ]
    }
   },
@@ -138,27 +149,27 @@
    "community": "아카라이브",
    "community_id": "arca",
    "posts": {
-    "base": 814.0,
-    "ratio": 0.98,
-    "value": 799
+    "base": 968.7,
+    "ratio": 0.84,
+    "value": 809
    },
    "region": "국내",
    "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 1.2,
-     "ratio": 0.0,
-     "value": 0
+     "base": 2.7,
+     "ratio": 0.37,
+     "value": 1
     },
     "복귀 · 신규 표현": {
-     "base": 4.0,
-     "ratio": 1.5,
+     "base": 5.3,
+     "ratio": 1.13,
      "value": 6
     },
     "이탈 표현": {
-     "base": 4.8,
-     "ratio": 1.67,
-     "value": 8
+     "base": 3.3,
+     "ratio": 0.3,
+     "value": 1
     }
    },
    "surge": false,
@@ -166,63 +177,62 @@
    "top": [
     {
      "board": "로스트아크 채널",
-     "comments": 50,
+     "comments": 42,
      "community": "아카라이브",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "일정 메모용 보지맛",
-     "url": "https://arca.live/b/lostark/187729080",
-     "views": 628
+     "title": "나도 카제익스 깼어.. 힘들었다",
+     "url": "https://arca.live/b/lostark/187824474",
+     "views": 472
+    },
+    {
+     "board": "로스트아크 채널",
+     "comments": 41,
+     "community": "아카라이브",
+     "date": "2026-11-02",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "잼드시발 안상말고 쓸게 없다고",
+     "url": "https://arca.live/b/lostark/187783132",
+     "views": 168
     },
     {
      "board": "로스트아크 채널",
      "comments": 35,
      "community": "아카라이브",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "악세랑 팔찌값 왤케 내려가지",
-     "url": "https://arca.live/b/lostark/187758855",
-     "views": 231
+     "title": "아카정도면 개씹음지라 생각했는데",
+     "url": "https://arca.live/b/lostark/187784507",
+     "views": 198
     },
     {
      "board": "로스트아크 채널",
-     "comments": 35,
+     "comments": 27,
      "community": "아카라이브",
-     "date": "2026-11-01",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "내 글카는 사면 그걸 산다고? 음머~ ㅂㅅㅋㅋ 소리듣는 글카였는데",
-     "url": "https://arca.live/b/lostark/187680360",
-     "views": 165
-    },
-    {
-     "board": "로스트아크 채널",
-     "comments": 22,
-     "community": "아카라이브",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "조회",
      "sentiment": null,
-     "title": "모든속성 사도는 우르스랑 비비 둘밖에없나?",
-     "url": "https://arca.live/b/lostark/187737885",
-     "views": 534
+     "title": "아 개씨발",
+     "url": "https://arca.live/b/lostark/187846535",
+     "views": 540
     },
     {
      "board": "로스트아크 채널",
-     "comments": 9,
+     "comments": 7,
      "community": "아카라이브",
-     "date": "2026-11-01",
+     "date": "2026-11-02",
      "pick": "조회",
      "sentiment": null,
-     "title": "로챈도 많이 줄었나버",
-     "url": "https://arca.live/b/lostark/187765080",
-     "views": 307
+     "title": "으 so cold",
+     "url": "https://arca.live/b/lostark/187815073",
+     "views": 407
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-19",
      "2026-10-20",
      "2026-10-21",
      "2026-10-22",
@@ -235,10 +245,10 @@
      "2026-10-29",
      "2026-10-30",
      "2026-10-31",
-     "2026-11-01"
+     "2026-11-01",
+     "2026-11-02"
     ],
     "posts": [
-     940,
      979,
      1401,
      1146,
@@ -251,7 +261,8 @@
      3530,
      1110,
      770,
-     799
+     799,
+     809
     ]
    }
   },
@@ -261,132 +272,10 @@
    "community_id": "lostark_free",
    "posts": {
     "base": 15.0,
-    "ratio": 0.47,
-    "value": 7
-   },
-   "region": "국내",
-   "rising": [],
-   "signals": {
-    "버그 신호": {
-     "base": 0.0,
-     "ratio": null,
-     "value": 0
-    },
-    "복귀 · 신규 표현": {
-     "base": 0.0,
-     "ratio": null,
-     "value": 0
-    },
-    "이탈 표현": {
-     "base": 0.0,
-     "ratio": null,
-     "value": 0
-    }
-   },
-   "surge": false,
-   "surge_reasons": [],
-   "top": [
-    {
-     "board": "공식 자유게시판",
-     "comments": 13,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-01",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "레이드잘못내서 돈은돈대로 쓰게만들고 리셋 ㅅㅅ",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14611811",
-     "views": 250
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 7,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-01",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "보석 원정대화는 누구 머리에서 나온거냐? 재학이냐?",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14611640",
-     "views": 651
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 7,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-01",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "ㅊㅊ",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14612394",
-     "views": 38
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 3,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-01",
-     "pick": "조회",
-     "sentiment": null,
-     "title": "싸고 라이트한 게임 방향성 좋다 이거야! 대신 다계정 불법 타인명의 계정으로 골드찍어내는 유사작업장 애들은 처단해줘 병탁이형",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14612106",
-     "views": 104
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 5,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-01",
-     "pick": "조회",
-     "sentiment": null,
-     "title": "유각아드레날린 각인6스텍5초 짜리 10초 변경좀 ?",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14612261",
-     "views": 74
-    }
-   ],
-   "trend": {
-    "dates": [
-     "2026-10-19",
-     "2026-10-20",
-     "2026-10-21",
-     "2026-10-22",
-     "2026-10-23",
-     "2026-10-24",
-     "2026-10-25",
-     "2026-10-26",
-     "2026-10-27",
-     "2026-10-28",
-     "2026-10-29",
-     "2026-10-30",
-     "2026-10-31",
-     "2026-11-01"
-    ],
-    "posts": [
-     18,
-     10,
-     15,
-     12,
-     8,
-     14,
-     13,
-     15,
-     16,
-     13,
-     20,
-     25,
-     14,
-     7
-    ]
-   }
-  },
-  {
-   "base_kind": "같은 요일 평균",
-   "community": "레딧",
-   "community_id": "reddit",
-   "posts": {
-    "base": 6.8,
-    "ratio": 1.32,
+    "ratio": 0.6,
     "value": 9
    },
-   "region": "해외",
+   "region": "국내",
    "rising": [],
    "signals": {
     "버그 신호": {
@@ -400,8 +289,8 @@
      "value": 1
     },
     "이탈 표현": {
-     "base": 0.2,
-     "ratio": 0.0,
+     "base": 0.0,
+     "ratio": null,
      "value": 0
     }
    },
@@ -409,42 +298,63 @@
    "surge_reasons": [],
    "top": [
     {
-     "board": "r/lostarkgame",
-     "comments": 53,
-     "community": "레딧",
-     "date": "2026-11-01",
+     "board": "공식 자유게시판",
+     "comments": 7,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "So many good things coming in winterloaon but they missed the biggest - more playtime on our mains..",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xkme2k/",
-     "views": null
+     "title": "로아 이거 괜찮은거맞아??",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14613624",
+     "views": 207
     },
     {
-     "board": "r/lostarkgame",
-     "comments": 48,
-     "community": "레딧",
-     "date": "2026-11-01",
+     "board": "공식 자유게시판",
+     "comments": 6,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "It's not fair...",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xkybmb/",
-     "views": null
+     "title": "ㅊㅊ",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14614088",
+     "views": 36
     },
     {
-     "board": "r/lostarkgame",
-     "comments": 37,
-     "community": "레딧",
-     "date": "2026-11-01",
+     "board": "공식 자유게시판",
+     "comments": 5,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-02",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Lost Ark is a great game and I really wanted to come back",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xkwxj1/",
-     "views": null
+     "title": "그 동안 고생하신 전재학 디렉터님",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14613066",
+     "views": 478
+    },
+    {
+     "board": "공식 자유게시판",
+     "comments": 2,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-02",
+     "pick": "조회",
+     "sentiment": null,
+     "title": "방향성은 명확하다",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14613010",
+     "views": 137
+    },
+    {
+     "board": "공식 자유게시판",
+     "comments": 3,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-02",
+     "pick": "조회",
+     "sentiment": null,
+     "title": "대병탁이시어 12렙 보석을 출시해주소서",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14612891",
+     "views": 117
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-19",
      "2026-10-20",
      "2026-10-21",
      "2026-10-22",
@@ -457,10 +367,110 @@
      "2026-10-29",
      "2026-10-30",
      "2026-10-31",
-     "2026-11-01"
+     "2026-11-01",
+     "2026-11-02"
     ],
     "posts": [
-     7,
+     10,
+     15,
+     12,
+     8,
+     14,
+     13,
+     15,
+     16,
+     13,
+     20,
+     25,
+     14,
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "base_kind": "같은 요일 평균",
+   "community": "레딧",
+   "community_id": "reddit",
+   "posts": {
+    "base": 11.0,
+    "ratio": 0.82,
+    "value": 9
+   },
+   "region": "해외",
+   "rising": [],
+   "signals": {
+    "버그 신호": {
+     "base": 0.2,
+     "ratio": 10.0,
+     "value": 2
+    },
+    "복귀 · 신규 표현": {
+     "base": 0.8,
+     "ratio": 0.0,
+     "value": 0
+    },
+    "이탈 표현": {
+     "base": 0.0,
+     "ratio": null,
+     "value": 0
+    }
+   },
+   "surge": false,
+   "surge_reasons": [],
+   "top": [
+    {
+     "board": "r/lostarkgame",
+     "comments": 24,
+     "community": "레딧",
+     "date": "2026-11-02",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "Outfits",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xlwdam/",
+     "views": null
+    },
+    {
+     "board": "r/lostarkgame",
+     "comments": 19,
+     "community": "레딧",
+     "date": "2026-11-02",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "Are there any games like Lost Ark but for coop with friends ?",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xlhy83/",
+     "views": null
+    },
+    {
+     "board": "r/lostarkgame",
+     "comments": 17,
+     "community": "레딧",
+     "date": "2026-11-02",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "game crashing",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xlqjv5/",
+     "views": null
+    }
+   ],
+   "trend": {
+    "dates": [
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26",
+     "2026-10-27",
+     "2026-10-28",
+     "2026-10-29",
+     "2026-10-30",
+     "2026-10-31",
+     "2026-11-01",
+     "2026-11-02"
+    ],
+    "posts": [
      9,
      15,
      16,
@@ -473,14 +483,15 @@
      19,
      17,
      10,
+     9,
      9
     ]
    }
   }
  ],
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "game": "lostark",
- "generated_at": "2026-11-02T05:15:40+09:00",
+ "generated_at": "2026-11-03T05:45:28+09:00",
  "name": "로스트아크",
  "rules": {
   "rise_days": 14,
@@ -497,7 +508,6 @@
  },
  "series": {
   "dates": [
-   "2026-09-07",
    "2026-09-08",
    "2026-09-09",
    "2026-09-10",
@@ -552,7 +562,8 @@
    "2026-10-29",
    "2026-10-30",
    "2026-10-31",
-   "2026-11-01"
+   "2026-11-01",
+   "2026-11-02"
   ],
   "holidays": {
    "2026-09-24": "추석",
@@ -578,14 +589,13 @@
      null,
      null,
      null,
-     778.0,
      838.5,
      1146.0,
      734.0,
      734.0,
      735.5,
      732.5,
-     792.7,
+     774.5,
      843.7,
      1299.3,
      862.5,
@@ -619,10 +629,10 @@
      962.2,
      1643.0,
      911.8,
-     814.0
+     814.0,
+     968.7
     ],
     "value": [
-     829,
      847,
      1184,
      925,
@@ -677,12 +687,12 @@
      3530,
      1110,
      770,
-     799
+     799,
+     809
     ]
    },
    "community:inven": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -737,10 +747,10 @@
      2636.0,
      4764.0,
      2521.0,
-     2169.0
+     2169.0,
+     2859.7
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -795,7 +805,8 @@
      6839,
      5073,
      2671,
-     2090
+     2090,
+     2797
     ]
    },
    "community:lostark_free": {
@@ -814,14 +825,13 @@
      null,
      null,
      null,
-     6.5,
      7.0,
      8.5,
      7.8,
      7.8,
      5.5,
      10.0,
-     7.3,
+     7.0,
      6.3,
      8.3,
      7.5,
@@ -855,10 +865,10 @@
      9.8,
      17.7,
      16.8,
+     15.0,
      15.0
     ],
     "value": [
-     8,
      4,
      8,
      9,
@@ -913,7 +923,8 @@
      20,
      25,
      14,
-     7
+     8,
+     9
     ]
    },
    "community:reddit": {
@@ -932,21 +943,20 @@
      null,
      null,
      null,
-     4.5,
      11.0,
      18.0,
      27.0,
      13.0,
      13.0,
      14.5,
-     7.0,
+     9.5,
      9.3,
      15.3,
      20.3,
      13.0,
      11.0,
      12.0,
-     7.2,
+     9.0,
      9.2,
      12.8,
      16.2,
@@ -973,10 +983,10 @@
      7.8,
      7.2,
      13.2,
-     6.8
+     6.8,
+     11.0
     ],
     "value": [
-     2,
      10,
      9,
      15,
@@ -1031,12 +1041,12 @@
      19,
      17,
      10,
+     9,
      9
     ]
    },
    "region:국내": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1091,10 +1101,10 @@
      3648.7,
      6518.5,
      3449.5,
-     2998.0
+     2998.0,
+     3843.3
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1149,7 +1159,8 @@
      10389,
      6208,
      3455,
-     2896
+     2897,
+     3615
     ]
    },
    "region:해외": {
@@ -1168,21 +1179,20 @@
      null,
      null,
      null,
-     4.5,
      11.0,
      18.0,
      27.0,
      13.0,
      13.0,
      14.5,
-     7.0,
+     9.5,
      9.3,
      15.3,
      20.3,
      13.0,
      11.0,
      12.0,
-     7.2,
+     9.0,
      9.2,
      12.8,
      16.2,
@@ -1209,10 +1219,10 @@
      7.8,
      7.2,
      13.2,
-     6.8
+     6.8,
+     11.0
     ],
     "value": [
-     2,
      10,
      9,
      15,
@@ -1267,6 +1277,7 @@
      19,
      17,
      10,
+     9,
      9
     ]
    }
@@ -1289,14 +1300,13 @@
       null,
       null,
       null,
-      2.0,
       3.0,
       2.0,
       3.0,
       3.0,
       5.0,
       1.0,
-      1.3,
+      1.0,
       2.0,
       9.7,
       3.5,
@@ -1330,10 +1340,10 @@
       3.5,
       5.7,
       3.2,
-      1.2
+      1.2,
+      2.7
      ],
      "value": [
-      2,
       1,
       1,
       2,
@@ -1388,7 +1398,8 @@
       4,
       3,
       0,
-      0
+      0,
+      1
      ]
     },
     "복귀 · 신규 표현": {
@@ -1407,14 +1418,13 @@
       null,
       null,
       null,
-      11.5,
       9.0,
       5.5,
       4.8,
       4.8,
       5.0,
       4.5,
-      9.0,
+      4.0,
       8.0,
       6.7,
       11.0,
@@ -1448,10 +1458,10 @@
       6.2,
       4.0,
       6.8,
-      4.0
+      4.0,
+      5.3
      ],
      "value": [
-      19,
       10,
       10,
       11,
@@ -1506,6 +1516,7 @@
       16,
       11,
       15,
+      6,
       6
      ]
     },
@@ -1525,14 +1536,13 @@
       null,
       null,
       null,
-      1.5,
       2.0,
       0.0,
       0.5,
       0.5,
       0.0,
       1.0,
-      1.0,
+      0.0,
       1.3,
       0.7,
       0.0,
@@ -1566,10 +1576,10 @@
       2.5,
       3.0,
       1.5,
-      4.8
+      4.8,
+      3.3
      ],
      "value": [
-      3,
       2,
       0,
       0,
@@ -1624,14 +1634,14 @@
       3,
       3,
       1,
-      8
+      8,
+      1
      ]
     }
    },
    "community:inven": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1686,10 +1696,10 @@
       6.7,
       8.0,
       7.2,
-      5.8
+      5.8,
+      4.7
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -1744,12 +1754,12 @@
       16,
       10,
       7,
-      37
+      37,
+      5
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1804,10 +1814,10 @@
       12.0,
       14.5,
       10.2,
-      13.5
+      13.5,
+      16.3
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -1862,12 +1872,12 @@
       53,
       64,
       30,
-      29
+      29,
+      26
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1922,10 +1932,10 @@
       24.3,
       38.0,
       19.2,
-      18.0
+      18.0,
+      30.3
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -1980,7 +1990,8 @@
       38,
       47,
       20,
-      20
+      20,
+      36
      ]
     }
    },
@@ -2040,8 +2051,8 @@
       0.0,
       0.0,
       0.0,
-      0.0,
       0.2,
+      0.0,
       0.0
      ],
      "value": [
@@ -2091,8 +2102,8 @@
       0,
       0,
       0,
-      0,
       1,
+      0,
       0,
       0,
       0,
@@ -2119,14 +2130,13 @@
       null,
       null,
       null,
-      0.5,
       0.0,
       0.0,
       0.2,
       0.2,
       0.5,
       0.0,
-      0.7,
+      0.5,
       0.0,
       0.0,
       0.0,
@@ -2158,12 +2168,12 @@
       0.0,
       0.2,
       0.2,
+      0.0,
       0.0,
       0.0,
       0.0
      ],
      "value": [
-      1,
       0,
       0,
       0,
@@ -2218,7 +2228,8 @@
       1,
       0,
       0,
-      0
+      0,
+      1
      ]
     },
     "이탈 표현": {
@@ -2333,8 +2344,8 @@
       0,
       0,
       0,
-      0,
       1,
+      0,
       0,
       0
      ]
@@ -2357,7 +2368,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       1.0,
@@ -2398,10 +2408,10 @@
       0.5,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.2
      ],
      "value": [
-      0,
       0,
       0,
       1,
@@ -2456,7 +2466,8 @@
       1,
       0,
       0,
-      0
+      0,
+      2
      ]
     },
     "복귀 · 신규 표현": {
@@ -2476,7 +2487,6 @@
       null,
       null,
       0.0,
-      0.0,
       1.0,
       1.0,
       1.0,
@@ -2489,7 +2499,7 @@
       0.7,
       1.3,
       0.0,
-      0.5,
+      0.7,
       0.0,
       1.0,
       0.5,
@@ -2516,10 +2526,10 @@
       0.8,
       0.2,
       0.5,
-      0.0
+      0.0,
+      0.8
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -2574,7 +2584,8 @@
       2,
       0,
       0,
-      1
+      1,
+      0
      ]
     },
     "이탈 표현": {
@@ -2593,7 +2604,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -2634,10 +2644,10 @@
       0.0,
       0.0,
       0.5,
-      0.2
+      0.2,
+      0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2672,6 +2682,7 @@
       0,
       2,
       1,
+      0,
       0,
       0,
       0,
@@ -2738,7 +2749,6 @@
       null,
       null,
       null,
-      null,
       9.0,
       6.0,
       null,
@@ -2754,10 +2764,10 @@
       11.0,
       14.0,
       10.8,
-      7.0
+      7.0,
+      7.3
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2812,12 +2822,12 @@
       20,
       13,
       7,
-      37
+      37,
+      6
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2872,10 +2882,10 @@
       17.7,
       19.0,
       17.0,
-      17.5
+      17.5,
+      21.7
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2930,12 +2940,12 @@
       70,
       75,
       45,
-      35
+      35,
+      33
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2990,10 +3000,10 @@
       27.3,
       41.0,
       20.8,
-      22.8
+      22.8,
+      33.7
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3048,7 +3058,8 @@
       41,
       51,
       21,
-      28
+      28,
+      37
      ]
     }
    },
@@ -3069,7 +3080,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       1.0,
@@ -3110,10 +3120,10 @@
       0.5,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.2
      ],
      "value": [
-      0,
       0,
       0,
       1,
@@ -3168,7 +3178,8 @@
       1,
       0,
       0,
-      0
+      0,
+      2
      ]
     },
     "복귀 · 신규 표현": {
@@ -3188,7 +3199,6 @@
       null,
       null,
       0.0,
-      0.0,
       1.0,
       1.0,
       1.0,
@@ -3201,7 +3211,7 @@
       0.7,
       1.3,
       0.0,
-      0.5,
+      0.7,
       0.0,
       1.0,
       0.5,
@@ -3228,10 +3238,10 @@
       0.8,
       0.2,
       0.5,
-      0.0
+      0.0,
+      0.8
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3286,7 +3296,8 @@
       2,
       0,
       0,
-      1
+      1,
+      0
      ]
     },
     "이탈 표현": {
@@ -3305,7 +3316,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -3346,10 +3356,10 @@
       0.0,
       0.0,
       0.5,
-      0.2
+      0.2,
+      0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -3404,330 +3414,12 @@
       0,
       0,
       0,
+      0,
       0
      ]
     }
    }
   }
  },
- "surge_memo": {
-  "classify": "분류 요청함",
-  "communities": [
-   {
-    "community": "인벤",
-    "community_id": "inven",
-    "reads": [
-     {
-      "cost_usd": 0.0491,
-      "count": 2090,
-      "label": "그날 글 전체",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 139,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 231,
-        "title": "니가 이겼다 재학아 ㅇㅇ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4272120"
-       },
-       {
-        "body": "있음",
-        "comments": 62,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 179,
-        "title": "전재학씨 사임하는건 알겠는데 그전에 한달전 편지로 약속한 것을 이행하세요",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4273963"
-       },
-       {
-        "body": "있음",
-        "comments": 93,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 144,
-        "title": "왜 자꾸 너프를 하라는 거지?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4272272"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "낙원 지옥 주 2회로 너프하는거 찬성...",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4272641"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "너프 절대 안됨 ㅇㅇ 이관은 지랄 걍 하드리셋때리고 처음부터 출발하자",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4273720"
-       },
-       {
-        "body": "있음",
-        "comments": 7,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "라면 끓여 주면 1만 이니씩 쏜다!! 댓글 단 사람만!",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4272937"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "글 수가 평소 수준(0.96배)이어서 실제 급증은 확인되지 않는다. 디렉터 사임과 종막 밸런스 논란이 주요 화제이나, 목록에 등록된 업데이트나 공지와는 연결되지 않는다."
-        }
-       ],
-       "confidence": "low",
-       "endorsed_vs_common": "추천 상위 글은 디렉터 사임, 종막 밸런스, 너프 논쟁을 길고 구체적으로 다루며 높은 추천과 댓글을 받았다. 무작위 글은 너프 관련 짧은 의견이나 무관한 잡담이 대부분이고, 추천 반응은 확인되지 않는다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "디렉터 사임에 대한 반발과 게임 이탈 선언",
-         "posts": [
-          1,
-          2
-         ],
-         "quote": "니가 이겼다 재학아",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "익스트림 레이드 종막의 직업 간 밸런스 조정 요구",
-         "posts": [
-          1,
-          2
-         ],
-         "quote": "더 늦기 전에 종막에도 밸런스 조정을 하십시오",
-         "quote_post": 2
-        },
-        {
-         "count": 2,
-         "name": "레이드 너프 찬반 논쟁",
-         "posts": [
-          3,
-          5
-         ],
-         "quote": "너프하면 안되는 거 아닌가?",
-         "quote_post": 3
-        },
-        {
-         "count": 2,
-         "name": "패키지 판매와 수익 위주 운영 비판",
-         "posts": [
-          1,
-          2
-         ],
-         "quote": "2주마다 또대급 패키지 팔고",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "낙원 지옥 주 2회 축소 찬성(낙원 지옥의 정확한 의미는 불명확하다)",
-         "posts": [
-          4
-         ],
-         "quote": "낙원 지옥 주 2회로 너프하는거 찬성...",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "게임과 무관한 잡담",
-         "posts": [
-          6
-         ],
-         "quote": "라면 끓여줭",
-         "quote_post": 6
-        }
-       ],
-       "summary": "추천 상위 글은 디렉터 사임 소식에 대한 분노와 이탈 선언, 익스트림 레이드 종막의 직업 간 밸런스 조정 요구, 너프 찬반 논쟁을 다룬다. 다만 이날 전체 글 수는 2090건으로 평소(2169.0건)의 0.96배 수준이며, 실제 증가는 확인되지 않는다. 같은 날과 전날에 등록된 업데이트나 공지도 없다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0278,
-      "count": 57,
-      "label": "'인벤'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 18,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 40,
-        "title": "겜 안하는데 인벤 왜오냐는 새끼는 뭐임?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4273016"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 6,
-        "title": "인벤 << 병신ㅋㅋ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4274256"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 3,
-        "title": "인벤 터진김에 바드가 절정하는 야짤 달린다",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4274015"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "인벤 누가 또 조회수 주작기 돌리냐.. 로딩이 느려..",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4272542"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "오히려 모두가 인장필터써서 인벤 터트려야함",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4273382"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "인벤 나만 느림?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4273497"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "인벤 사이트의 서버 장애 또는 속도 저하가 발생해 이용자들이 이를 언급하는 글을 다수 게시한 것으로 보인다. 목록에 해당하는 게임 업데이트나 공지는 없다."
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 운영진 비판, 이용자 간 언쟁, 장애 상황을 소재로 한 장난성 글이 중심이다. 무작위 글은 로딩 지연과 글 작성 지연이라는 장애 증상 자체와 그 원인 추정에 더 집중한다.",
-       "subissues": [
-        {
-         "count": 4,
-         "name": "인벤 사이트 속도 저하 및 장애",
-         "posts": [
-          3,
-          4,
-          5,
-          6
-         ],
-         "quote": "글올라가는데 한세월이네",
-         "quote_post": 6
-        },
-        {
-         "count": 2,
-         "name": "인벤 운영진의 게시판·서버 관리 비판",
-         "posts": [
-          2,
-          5
-         ],
-         "quote": "게시판관리도못해 서버관리도못해",
-         "quote_post": 2
-        },
-        {
-         "count": 2,
-         "name": "속도 저하 원인 추정(조회수 조작, 인장필터)",
-         "posts": [
-          4,
-          5
-         ],
-         "quote": "인벤 누가 또 조회수 주작기 돌리냐",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "인벤 방문 이유를 둘러싼 이용자 간 언쟁",
-         "posts": [
-          1
-         ],
-         "quote": "겜 안하는데 인벤 왜오냐는 새끼는 뭐임?",
-         "quote_post": 1
-        }
-       ],
-       "summary": "이날 인벤 커뮤니티에서 사이트 로딩과 글 작성이 느려지거나 접속이 불안정하다는 글이 다수 게시됐고, 운영진의 게시판·서버 관리를 비판하는 글도 확인된다. 일부 이용자는 조회수 조작 도구나 '인장필터' 사용 증가를 속도 저하의 원인으로 추정했다. 게임 자체가 아니라 커뮤니티 사이트 장애가 '인벤' 언급 증가의 원인으로 보인다."
-      },
-      "status": "ok"
-     }
-    ],
-    "reasons": [
-     "버그 신호 37건(평소 5.8건의 6.38배)",
-     "복귀 · 신규 표현 29건(평소 13.5건의 2.15배)"
-    ],
-    "sentiment": {
-     "base_classified": 8676,
-     "classified": 2090,
-     "neg": 0.499,
-     "neg_base": 0.4263,
-     "of": 2090,
-     "topics": [
-      {
-       "base": 0.2726,
-       "name": "기타",
-       "share": 0.2483,
-       "topic": "other"
-      },
-      {
-       "base": 0.2039,
-       "name": "컨텐츠 · 업데이트",
-       "share": 0.1861,
-       "topic": "content"
-      },
-      {
-       "base": 0.1663,
-       "name": "파티 · 커뮤니티",
-       "share": 0.1215,
-       "topic": "social"
-      },
-      {
-       "base": 0.0946,
-       "name": "운영 · 이벤트",
-       "share": 0.1191,
-       "topic": "operation"
-      },
-      {
-       "base": 0.0718,
-       "name": "밸런스 · 직업",
-       "share": 0.1187,
-       "topic": "balance"
-      }
-     ]
-    }
-   }
-  ],
-  "cost_usd": 0.0769,
-  "date": "2026-11-01",
-  "events": [],
-  "game": "lostark",
-  "generated_at": "2026-11-02T05:29:05+09:00",
-  "model": "claude-opus-5-5",
-  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
- },
- "surges": [
-  {
-   "community": "인벤",
-   "community_id": "inven",
-   "reasons": [
-    "버그 신호 37건(평소 5.8건의 6.38배)",
-    "복귀 · 신규 표현 29건(평소 13.5건의 2.15배)"
-   ]
-  }
- ]
+ "surges": []
 }
