@@ -4105,6 +4105,561 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "인벤",
+    "community_id": "inven",
+    "reads": [
+     {
+      "cost_usd": 0.0419,
+      "count": 2626,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 60,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 191,
+        "title": "게임이 꼬우면 쳐접고 락카칠 해야된다는걸 확실히 증명",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281509"
+       },
+       {
+        "body": "있음",
+        "comments": 81,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 184,
+        "title": "이번 8주년 존나 슬픈 이유",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282623"
+       },
+       {
+        "body": "있음",
+        "comments": 22,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 160,
+        "title": "밈 넣은거보면 대충 유저들이 울부짖는거나 문제점도 안다는 얘긴데",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281424"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "아 ㅅㅂ 이벤트에서 고정젬 8개줫다고 100만골무과금햇네",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4283327"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "재학이형 디렉터 해야겠는걸?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4283157"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "친구비 받습니다",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282356"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "게시량은 평소보다 감소했으며, 목록에 해당 일자의 업데이트나 공지가 없어 감소를 설명할 이벤트는 확인되지 않는다. 게시글에 언급된 8주년 이벤트 공개 이후 반응이 전날 이전에 집중됐을 가능성이 있다."
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 모두 8주년 운영과 편의 개선 지연, 밈 활용에 대한 강한 불신과 실망을 다룬다. 무작위 글은 고정젬 보상, 아크랜드 콘텐츠 평가, 친구 관련 잡담 등으로 주제가 분산되어 있고 운영 비판의 강도가 낮다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "뒤늦은 편의 개선에 대한 불만(아드 각물 쿨 분리, 탈것 모션 삭제, 복원 공명 자동)",
+         "posts": [
+          1
+         ],
+         "quote": "이렇게 쉽고 금방 해줄 수 있었으면서 지금까지 왜?",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "이벤트 속 커뮤니티 밈 활용과 유저 불만 무시 의혹",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "그거알고도 여태 싹다개무시한거지?",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "8주년 행사에 대한 실망과 상실감",
+         "posts": [
+          2
+         ],
+         "quote": "유저 마음도 슬프게 만든거야",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "이벤트 고정젬 지급과 무과금 성장 체감",
+         "posts": [
+          4
+         ],
+         "quote": "이벤트에서 고정젬 8개줫다고 100만골무과금햇네",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "으스스한 아크랜드 콘텐츠 재미 부족",
+         "posts": [
+          5
+         ],
+         "quote": "으스스한 아크랜드 하고왔는데 너무 개노잼이라",
+         "quote_post": 5
+        }
+       ],
+       "summary": "이날 인벤 전체 게시글은 2626건으로 평소 3494.0건의 0.75배 수준이며, 실제로는 증가가 아니라 감소했다. 추천 상위 글은 8주년 시점에 '아드 각물 쿨 분리', 탈것 모션 삭제, 복원 공명 자동 등 편의 개선이 한꺼번에 공개된 데 대해, 쉽게 해줄 수 있었던 것을 그동안 미뤄왔다고 비판한다. 이벤트에 커뮤니티 밈을 넣은 것을 근거로 운영진이 유저 불만을 알면서도 무시했다는 불신과 상실감도 확인된다. 그날과 전날의 업데이트·공지가 목록에 없어 게시량 감소의 원인은 게시글로 설명되지 않는다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.048,
+      "count": 65,
+      "label": "'8주년'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 81,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 184,
+        "title": "이번 8주년 존나 슬픈 이유",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282623"
+       },
+       {
+        "body": "있음",
+        "comments": 68,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 79,
+        "title": "8주년 2막 익스트림 기록 잘못된것도 문의하면 수정해주나요?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281535"
+       },
+       {
+        "body": "있음",
+        "comments": 25,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 4,
+        "title": "8주년 아바타 행복회로",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4283236"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "8주년에 깜짝 선언 있는거 아냐?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4283357"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "로아휴식중인데 8주년은 받으러가야함?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281720"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "8주년 섬 준비는 참 잘해놨네..",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282890"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "8주년 주년섬 및 관련 이벤트가 진행 중이어서 해당 콘텐츠 체험과 평가 글이 집중적으로 게시됐을 가능성이 있다. 다만 목록에 해당 업데이트는 확인되지 않는다."
+        },
+        {
+         "event": "없음",
+         "hypothesis": "최근 운영 논란 이후 8주년을 계기로 운영 방향 발표나 번복을 기대하거나 실망을 표출하는 글이 증가했을 가능성이 있다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 8주년 분위기 속 운영에 대한 실망감과 익스트림 기록 문제를 강조했고, 무작위 글은 8주년 깜짝 발표 기대, 보상 수령 여부, 주년섬 평가 등 보다 일상적인 질문과 감상을 다뤘다. 다만 주년섬은 잘 만들었으나 운영은 아쉽다는 정서는 양쪽에서 공통으로 확인된다. 글 1의 '로이괜', '새로운 초식'은 의미가 불명확하다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "주년섬 준비는 인정하나 운영 불만으로 씁쓸하다는 반응",
+         "posts": [
+          1,
+          6
+         ],
+         "quote": "주년섬 퀘스트 깨는데 즐겁기보다는 씁쓸하네 그냥",
+         "quote_post": 6
+        },
+        {
+         "count": 2,
+         "name": "운영 실패에 대한 실망과 수정 거부 발언에 대한 반발",
+         "posts": [
+          1,
+          4
+         ],
+         "quote": "최초 이벤트 실패 했지만 수정은 없습니다 선언했자나",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "8주년 2막 익스트림 기록 오류 수정 문의",
+         "posts": [
+          2
+         ],
+         "quote": "익스트림 기록 잘못된것도 문의하면 수정해주나요?",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "8주년 아바타 디자인 예측",
+         "posts": [
+          3
+         ],
+         "quote": "즉 나팔바지x 장치마o",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "휴식 중인 유저의 8주년 보상 수령 여부 고민",
+         "posts": [
+          5
+         ],
+         "quote": "로아휴식중인데 8주년은 받으러가야함?",
+         "quote_post": 5
+        }
+       ],
+       "summary": "8주년 주년섬 콘텐츠가 이미 진행 중인 것으로 보이며, 커뮤니티 밈을 활용한 섬 구성은 인정하면서도 평소 운영과 편의성에 대한 불만 때문에 씁쓸하다는 반응이 다수 게시됐다. 이 외에 8주년 2막 익스트림 기록 수정 문의, 8주년 아바타 예측, 휴식 중인 유저의 복귀 여부 질문 등이 함께 게시되어 '8주년' 언급이 평소 대비 6.2배 증가한 것으로 보인다. 다만 해당일과 전날의 공지는 목록에서 확인되지 않는다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0303,
+      "count": 57,
+      "label": "'니케'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 53,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 30,
+        "title": "펌) 니케 해킹 때문에 스팀 계정 다 털림 시발.jpg",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282880"
+       },
+       {
+        "body": "있음",
+        "comments": 39,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 24,
+        "title": "니케 최초 제보자가 받았던 취급.jpg",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282229"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 5,
+        "title": "니케도 스마게처럼 데미지케어팀 굴리나보네",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4283075"
+       },
+       {
+        "body": "있음",
+        "comments": 3,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "니케 어제 시작햇는데 내 컴은 멀쩡한데?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281485"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "니케 해킹사건 대형사고긴 하네",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282658"
+       },
+       {
+        "body": "있음",
+        "comments": 9,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "ㅌㄱ) 니케 해킹 뭐임...?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281773"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "타 게임 니케의 PC 클라이언트 해킹 사건이 알려지면서 로스트아크 커뮤니티에서도 화제가 되어 언급량이 증가한 것으로 보인다. 목록에 해당하는 로스트아크 업데이트나 공지는 확인되지 않는다."
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 계정 탈취 사례와 제보자 대우, 운영사 대응 비판 등 사건의 심각성을 강조하는 이미지 위주 글이다. 무작위 글은 본인 PC의 안전 여부를 묻거나 사고 수습을 관전하는 반응이 중심이며, 같은 사건을 다루지만 개인적 우려에 더 비중을 둔다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "니케 해킹으로 인한 계정 탈취 피해",
+         "posts": [
+          1,
+          5
+         ],
+         "quote": "니케 해킹 때문에 스팀 계정 다 털림",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "PC 클라이언트 실행 시 보안 우려와 포맷 필요 여부",
+         "posts": [
+          4,
+          6
+         ],
+         "quote": "9월말 이후로 pc클라이언트 켰으면 컴퓨터 포맷해야한다는뎅",
+         "quote_post": 6
+        },
+        {
+         "count": 3,
+         "name": "운영사의 보안 관리 및 사후 대응 비판",
+         "posts": [
+          2,
+          3,
+          5
+         ],
+         "quote": "갤러리에서 회사 욕하는거 칼삭 칼차단 하더니만",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "스마일게이트 운영 방식과의 비교",
+         "posts": [
+          3
+         ],
+         "quote": "니케도 스마게처럼 데미지케어팀 굴리나보네",
+         "quote_post": 3
+        }
+       ],
+       "summary": "타 게임인 니케의 PC 클라이언트 해킹 사건에 관한 글이 로스트아크 인벤에 집중적으로 게시됐다. 스팀 계정 탈취 사례, 최초 제보자가 받은 대우, 9월 말 이후 PC 클라이언트 실행 시 포맷 필요 여부, 운영사의 커뮤니티 대응 등이 거론됐다. 로스트아크 자체 업데이트와는 관련이 없고, 외부 게임의 보안 사고가 화제가 되어 언급량이 증가한 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0348,
+      "count": 51,
+      "label": "'이벤트'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 34,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 94,
+        "title": "로스트아크 이벤트가 모순인점",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4280884"
+       },
+       {
+        "body": "있음",
+        "comments": 30,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 52,
+        "title": "이벤트 빈병 지도 획득방법 +사진 추가",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4282055"
+       },
+       {
+        "body": "있음",
+        "comments": 33,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 2,
+        "title": "이벤트 귀골 888,888만 먹은사람잇네 ㅅㅂ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281363"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "이벤트 고양이 쓰담하면 어캐됨?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281408"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "원래 로아가 주년 이벤트 볼륨이 적었나",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281369"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "이벤트 할 시간이 어딧노 익카제 가야지",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4281221"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "8주년 기념 이벤트 및 피시방 보상이 시작되어 공략·보상 관련 글이 증가한 것으로 보인다"
+        },
+        {
+         "event": "없음",
+         "hypothesis": "서버 이관 발표 이후 이벤트 보상에 이관 관련 재화가 빠진 점이 불만 글을 유발한 것으로 보인다"
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 이관 관련 보상 구성 비판과 빈병 지도 획득 공략처럼 정보성·비판성 내용에 집중했다. 무작위 글은 이벤트 보상 문의, 볼륨 불만, 참여 시간 부족 등 짧은 개인 소감이 중심이다. '익카제'의 정확한 의미는 불분명하다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "이관 발표 이후 이벤트 보상 구성의 모순",
+         "posts": [
+          1
+         ],
+         "quote": "이관 관련 성장재화 다 빠져있은걸로 보임",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "이벤트 빈병 지도 획득 공략",
+         "posts": [
+          2
+         ],
+         "quote": "npc들이 웃으면서 찬양하면 무조건 지도나옴",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "이벤트 귀골 고액 보상 획득 사례",
+         "posts": [
+          3
+         ],
+         "quote": "이벤트 귀골 888,888만 먹은사람잇네",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "고양이 쓰다듬기 이벤트 보상 문의",
+         "posts": [
+          4
+         ],
+         "quote": "만족\"할때까지 쓰담하라는데 뭐 칭호주나..?",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "주년 이벤트 볼륨에 대한 불만",
+         "posts": [
+          5
+         ],
+         "quote": "원래 로아가 주년 이벤트 볼륨이 적었나",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "익카제 등 다른 콘텐츠로 인한 이벤트 참여 시간 부족",
+         "posts": [
+          6
+         ],
+         "quote": "이벤트 할 시간이 어딧노 익카제 가야지",
+         "quote_post": 6
+        }
+       ],
+       "summary": "8주년 기념 이벤트로 보이는 신규 이벤트의 보상 구성, 빈병 지도 획득 방법, 고양이 쓰다듬기, 귀골 보상 등 이벤트 세부 내용을 다룬 글이 다수 게시됐다. 추천 상위 글에서는 이관 발표 이후 나온 8주년 피시방 보상에 카르마·혼돌 등 이관 관련 성장재화가 빠진 점을 모순으로 지적했다. 이벤트 볼륨이 적다는 의견도 확인되며, 공지 목록에는 없으나 주년 이벤트 시작이 '이벤트' 언급 증가의 원인으로 보인다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "버그 신호 25건(평소 11.8건의 2.12배)"
+    ],
+    "sentiment": {
+     "base_classified": 13976,
+     "classified": 2626,
+     "neg": 0.3863,
+     "neg_base": 0.4386,
+     "of": 2626,
+     "topics": [
+      {
+       "base": 0.2473,
+       "name": "기타",
+       "share": 0.3275,
+       "topic": "other"
+      },
+      {
+       "base": 0.2413,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1877,
+       "topic": "content"
+      },
+      {
+       "base": 0.1351,
+       "name": "운영 · 이벤트",
+       "share": 0.1569,
+       "topic": "operation"
+      },
+      {
+       "base": 0.1266,
+       "name": "파티 · 커뮤니티",
+       "share": 0.0922,
+       "topic": "social"
+      },
+      {
+       "base": 0.0618,
+       "name": "성장 · 강화",
+       "share": 0.0781,
+       "topic": "growth"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.1549,
+  "date": "2026-11-04",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-05T07:19:46+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "인벤",
