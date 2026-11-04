@@ -665,7 +665,7 @@ const firstSentence = t => { const m = String(t || "").match(/^(.+?[.!?])(?=\s|$
 // ---------- 색 · 이름 ----------
 // 색은 이름으로 정한다(정렬 순서로 정하면 입력이 바뀔 때 같은 항목의 색이 흔들린다. 스킬 bot-pages-dashboard 함정).
 // 국내 셋은 dataviz 색 검사 도구로 모든 쌍을 확인했다(2026-10-28 다시 실행: 가장 가까운 쌍 색각 이상 ΔE 8.2, 일반 시각 24.1)
-const COM_COLOR = {inven: "#3b6fd8", arca: "#1f9d6b", lostark_free: "#e8692d", reddit: "#d55181", steam: "#1495b8"};
+const COM_COLOR = {inven: "#3b6fd8", arca: "#1f9d6b", lostark_free: "#e8692d", reddit: "#d55181", steam: "#1495b8", dcinside: "#802080"};
 const SENTI_COLOR = {pos: "#15803d", neg: "#c81e3f", neu: "#9aa0a6", unk: "#cfcfd4"};
 const SENTI_STACK = ["neg", "unk", "neu", "pos"];  // 아래에서 위로: 부정 · 판단 불가 · 중립 · 긍정(순서 있는 척도)
 const NAVY = "#1e3a5f", TICK = "#475569", GRID = "#eef2f6", BASE_LINE = "#cbd5e1", UPD = "#475569", NOTE_LINE = "#94a3b8", SIGNAL = "#c8372f";
