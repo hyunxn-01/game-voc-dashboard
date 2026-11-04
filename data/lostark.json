@@ -26730,8 +26730,8 @@
    "server": "kr"
   },
   {
-   "access": "미수집. 이용약관 제16조 ①이 사전 서면 동의 없는 크롤링을 금지한다.",
-   "enabled": false,
+   "access": "디시인사이드 정책팀의 확인을 받아 2027년 10월 31일까지 수집한다. 원데이터는 공개하지 않고 그날 폐기한다.",
+   "enabled": true,
    "id": "dcinside",
    "name": "디시인사이드",
    "region": "국내",
@@ -32712,7 +32712,7 @@
    "minutes_apart": 27
   }
  },
- "generated_at": "2026-11-02T06:20:20+09:00",
+ "generated_at": "2026-11-05T02:32:37+09:00",
  "holiday_excluded_weeks": [],
  "holidays": {
   "2025-12-22": [
