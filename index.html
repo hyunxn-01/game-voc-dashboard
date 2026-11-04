@@ -1735,7 +1735,7 @@ function methodFlow() {
     <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
     <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. 확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
-    <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 본문은 저장하지 않는다.</li>
+    <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
     <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권할 행동 초안을 쓰고, 담당자가 판단 표에서 확인한다.</li>
     <li><b>공개</b>집계 값, 대표 글의 제목 · 링크, 본문에 실재하는 ${(dr.max_quote_words ?? 14) + 1}어절 미만 인용만 공개한다.</li></ol>`;
 }
