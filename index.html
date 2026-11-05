@@ -591,14 +591,14 @@ tr.chosen td { background: var(--tint); }
         <summary>프로젝트 소개<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
         <div class="intro-body">
           <ol class="flow" aria-label="처리 단계">
-            <li><b>수집</b> 커뮤니티 4곳의 게시판 목록을 매일 수집</li>
+            <li><b>수집</b> 커뮤니티 5곳의 게시판 목록과 본문을 매일 수집</li>
             <li><b>분류</b> 제목을 Claude가 주제 · 긍정/부정 · 의견 유형으로 분류(AI)</li>
             <li><b>집계</b> 커뮤니티별 평시 대비 급증 항목을 이슈 후보로 선정</li>
             <li><b>본문 정독</b> 후보마다 본문 6건을 Claude가 정독해 요약(AI)</li>
             <li><b>공개</b> 집계 값과 대표 글의 제목 · 링크만 공개</li>
           </ol>
           <p><b>만든 이유</b>게임 운영 · 사업 담당자는 업데이트 뒤 유저 반응을 매주 점검해야 한다. 커뮤니티 글은 한 주에 2만 건이 넘어 사람이 모두 읽을 수 없고, 무엇이 평소보다 증가했는지 숫자로 비교하기 어렵다. 그래서 게시글을 매주 자동으로 수집 · 분류해 평시와 달라진 이슈를 찾는 대시보드를 직접 만들었다.</p>
-          <p><b>작동 방식</b>매일 새벽 커뮤니티 4곳의 게시판 목록을 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 분석한다. 제목은 Claude Haiku 5.5가 분류하고 확신도가 낮은 글만 Opus 5.5가 재분류한다. 커뮤니티별로 직전 8주 평시와 비교해 급증한 항목을 이슈 후보로 선정하고, 후보마다 본문 6건을 Opus 5.5가 정독해 요약한다.</p>
+          <p><b>작동 방식</b>매일 새벽 커뮤니티 5곳의 게시판 목록과 본문을 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 분석한다. 제목은 Claude Haiku 5.5가 분류하고 확신도가 낮은 글만 Opus 5.5가 재분류한다. 커뮤니티별로 직전 8주 평시와 비교해 급증한 항목을 이슈 후보로 선정하고, 후보마다 본문 6건을 Opus 5.5가 정독해 요약한다.</p>
           <p><b>읽을 수 있는 정보</b>이번 주 어떤 주제와 표현이 평시보다 증가했는지, 같은 주에 어떤 업데이트 · 운영 대응이 있었는지, 커뮤니티별 여론 변화와 불만 · 개선 요청이 많은 주제를 읽을 수 있다.</p>
           <p><b>활용</b>업데이트 뒤 반응 점검, 이슈 대응 우선순위 판단, 주간 VOC 보고 작성에 쓴다.</p>
         </div>
@@ -1535,7 +1535,7 @@ function renderReport() {
     <section class="p-sec"><h3>같은 주 운영 대응</h3>${m.R !== "국내" ? '<p class="empty">운영 대응 공지는 국내 서버 공지만 모은다.</p>' : (m.wk.responses || []).length ? `<ul class="p-list">${m.wk.responses.map(r => `<li><span class="tag">${esc(r.kind)}</span>${esc(shortDay(r.date))} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : `<p class="empty">${respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다."}</p>`}</section>
     <section class="p-sec"><h3>판단 확인과 비교 기준</h3><p class="p-basis">판단: AI 초안 ${m.nAi}건 · 담당자 확인 ${m.nConf}건${(m.wk.items || []).length && !m.nAi && !m.nConf ? "(판단 초안 없음)" : ""}. 확인 전 판단은 AI 초안으로 적고, 확정은 담당자가 한다.
       비교 기준: 커뮤니티마다 직전 8주 평시(미수집 주 제외, 글 수는 평일 · 주말 하루 평균으로 낸 기대값이며 공휴일은 주말로 친다)와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
-      자료: 커뮤니티 게시판 목록(제목 · 링크만), 제목 분류 Claude ${esc(mname(D.classify.model))}${D.classify.escalate ? " · " + esc(mname(D.classify.escalate)) : ""}, 본문 정독 Claude ${esc(mname(((D.method || {}).deepread || {}).model))}.</p></section>
+      자료: 커뮤니티 게시판 목록(공개는 제목 · 링크만), 제목 분류 Claude ${esc(mname(D.classify.model))}${D.classify.escalate ? " · " + esc(mname(D.classify.escalate)) : ""}, 본문 정독 Claude ${esc(mname(((D.method || {}).deepread || {}).model))}.</p></section>
   </article>`;
   if (m.top) drawEvidence(m.top, $("#pChart"), $("#pTable"), 150);
 }
@@ -1732,7 +1732,7 @@ function methodFlow() {
   const enabled = D.communities.filter(c => c.enabled), cl = D.classify, dr = (D.method || {}).deepread || {};
   const nb = D.boards.length, dom = enabled.filter(c => c.region === "국내").length, abroad = enabled.length - dom;
   return `<ol class="steps">
-    <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
+    <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록과 본문을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
     <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. 확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
     <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
@@ -1774,7 +1774,7 @@ function renderMethod() {
     <p class="note">분류 완료 글 ${fmt(D.classified_total)}건(적용 방식: ${esc(mname(D.classify.model))}${D.classify.escalate ? " + " + esc(mname(D.classify.escalate)) : ""}).</p><div style="height:14px"></div>`;
   h += fold("비용", `<dl class="kvl"><dt>월 운영비(추정)</dt><dd>${chosen ? `${usd(chosen.monthly_total_usd[0])} ~ ${usd(chosen.monthly_total_usd[1])}(주간 분류 · 낮은 확신도 글 재분류 · 본문 정독 · 검수 포함)` : "–"}</dd>
     <dt>누적 API 비용</dt><dd>${items.length ? items.map(([k, v]) => `${esc(k)} ${usd(v)}`).join(" · ") + ` · 합계 ${usd(total)}` : "–"}</dd></dl>
-    <p class="note" style="margin-top:6px">분류 요청에는 게시글 제목만 사용하고, 즉시 결과가 필요 없는 작업은 배치 처리(비용 50%)로 처리한다. 본문 정독은 이슈 후보에만 수행한다.</p>`);
+    <p class="note" style="margin-top:6px">화면 수치를 만드는 분류에는 게시글 제목만 사용하고, 본문 앞 1,000자를 넣은 분류는 비교용으로 따로 돌리며, 즉시 결과가 필요 없는 작업은 배치 처리(비용 50%)로 처리한다. 본문 정독은 이슈 후보에만 수행한다.</p>`);
   h += fold("수집 현황(분모)", `<div class="tablewrap"><table><thead><tr><th>지역</th><th>게시판</th><th class="r">완료 주 수</th><th class="r">글 수</th><th class="r">중복 제목 제외 글</th></tr></thead><tbody>
     ${totals.map(x => `<tr><td>${esc(x.b.region)}</td><td>${esc(x.b.board_name && x.b.community_name.includes(x.b.board_name) ? x.b.community_name : x.b.community_name + " " + x.b.board_name)}</td><td class="r">${x.weeks}</td><td class="r">${fmt(x.total)}</td><td class="r">${fmt(x.spam)}</td></tr>`).join("")}</tbody></table></div>
     <p class="note" style="margin-top:6px">수집 기간: ${esc(yearWeek(D.weeks[0]))} 주부터 ${esc(yearWeek(D.weeks[D.weeks.length - 1]))} 주까지(완료된 주만, 게시판별 수집 기간 상이). 키워드 필터 없이 게시판 목록 전체를 수집한다.</p>`);
@@ -1828,7 +1828,7 @@ function renderHead() {
   $$(".nav a[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   const last = D.weeks[D.weeks.length - 1], next = addWeek(addWeek(last)), gen = D.generated_at;
   // 가장 최근 주가 아님을 알리는 글은 판 맨 위 한 줄(latestNote)로 옮겼다(Glance Test 수정 4)
-  // 다음 집계는 날짜만 적는다. 월요일 분석은 새벽 4시 수집이 끝난 뒤 서버에서 돌고, 수집 시간은 그날 글 수에 달려(인벤 글 한 건에 2초) 끝나는 시각이 날마다 다르다(2026-10-31 진단)
+  // 다음 집계는 날짜만 적는다. 월요일 분석은 새벽 1시에 시작한 수집이 끝난 뒤 서버에서 돌고, 수집 시간은 그날 글 수에 달려(인벤 글 한 건에 2초) 끝나는 시각이 날마다 다르다(2026-10-31 진단)
   $("#fresh").textContent = `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)})`;
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
   $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
@@ -1877,7 +1877,7 @@ function ydayBar() {
   const tops = coms.filter(c => (c.top || []).length).map(c => `<div><h3>${esc(shortCom(c.community))}</h3><ul class="yd-top">${c.top.map(t => `<li><a href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">${esc(t.title)}</a> <span class="muted num">${t.pick === "댓글" ? `댓글 ${fmt(t.comments)}` : `조회 ${fmt(t.views)}`}</span></li>`).join("")}</ul></div>`).join("");
   return `<details class="yday"><summary>${head}<span class="jmore">${dd.surge_memo && surges.length ? "급증 메모 보기" : "자세히"}${CHEV}</span></summary>
     <div class="yd-b">${table}${memo}<details class="tablefold" style="padding:0;margin-top:10px"><summary>반응 큰 글(댓글 순 3건 · 조회 순 2건)</summary><div class="yd-tops">${tops}</div></details>
-    <p class="note" style="margin-top:8px">평소는 같은 요일 직전 4주 평균이다(평일 공휴일은 주말 평균). 급증은 글 수가 평소의 2배 이상이면서 30건 이상 많거나, 신호 낱말이 2배 이상이면서 10건 이상 많을 때다. 수집은 하루 한 번(새벽 4시)이라 실시간이 아니다.</p></div></details>`;
+    <p class="note" style="margin-top:8px">평소는 같은 요일 직전 4주 평균이다(평일 공휴일은 주말 평균). 급증은 글 수가 평소의 2배 이상이면서 30건 이상 많거나, 신호 낱말이 2배 이상이면서 10건 이상 많을 때다. 수집은 하루 한 번(새벽 1시 시작)이라 실시간이 아니다.</p></div></details>`;
 }
 function memoBlock(m, coms) {
   const cs = (m.communities || []).filter(c => coms.some(x => x.community_id === c.community_id));
