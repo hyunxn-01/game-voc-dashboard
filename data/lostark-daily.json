@@ -5,129 +5,112 @@
    "community": "인벤",
    "community_id": "inven",
    "posts": {
-    "base": 3494.0,
-    "ratio": 0.75,
-    "value": 2626
+    "base": 3686.8,
+    "ratio": 0.57,
+    "value": 2105
    },
    "region": "국내",
    "rising": [
     {
-     "base": 10.4,
-     "count": 65,
+     "base": 8.6,
+     "count": 34,
      "new": false,
-     "ratio": 6.2,
-     "word": "8주년"
+     "ratio": 4.0,
+     "word": "사멸"
     },
     {
-     "base": 3.9,
-     "count": 57,
+     "base": 2.9,
+     "count": 28,
      "new": false,
-     "ratio": 14.5,
-     "word": "니케"
-    },
-    {
-     "base": 10.4,
-     "count": 51,
-     "new": false,
-     "ratio": 4.9,
-     "word": "이벤트"
-    },
-    {
-     "base": 0.1,
-     "count": 39,
-     "new": false,
-     "ratio": 273.0,
+     "ratio": 9.6,
      "word": "이벤트섬"
     },
     {
-     "base": 0.2,
-     "count": 35,
+     "base": 7.9,
+     "count": 25,
      "new": false,
-     "ratio": 163.3,
-     "word": "아크랜드"
+     "ratio": 3.2,
+     "word": "대리"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 11.8,
-     "ratio": 2.12,
-     "value": 25
+     "base": 9.0,
+     "ratio": 1.11,
+     "value": 10
     },
     "복귀 · 신규 표현": {
-     "base": 20.5,
-     "ratio": 0.83,
-     "value": 17
+     "base": 22.2,
+     "ratio": 0.59,
+     "value": 13
     },
     "이탈 표현": {
-     "base": 50.8,
-     "ratio": 0.33,
-     "value": 17
+     "base": 27.8,
+     "ratio": 0.32,
+     "value": 9
     }
    },
-   "surge": true,
-   "surge_reasons": [
-    "버그 신호 25건(평소 11.8건의 2.12배)"
-   ],
+   "surge": false,
+   "surge_reasons": [],
    "top": [
     {
      "board": "자유게시판",
-     "comments": 175,
+     "comments": 180,
      "community": "인벤",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "오늘 회사 여직원한테 답이 왔는데 일에 집중하고 싶대",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4282699",
-     "views": 24390
+     "title": "아직도 다들 객관화가 안된거임?",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4285752",
+     "views": 6826
     },
     {
      "board": "자유게시판",
-     "comments": 150,
+     "comments": 133,
      "community": "인벤",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "여호크 제발 아르데로 나오지 말아줬으면",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4282405",
-     "views": 23759
+     "title": "근데 사멸들 이중잣대 오짐 ㅋㅋ",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4283844",
+     "views": 10808
     },
     {
      "board": "자유게시판",
-     "comments": 128,
+     "comments": 123,
      "community": "인벤",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "ㅇㅂ)포피셜 사멸이 타대보다 훨신 쉬운 캐릭이다.",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4282288",
-     "views": 13096
+     "title": "나 죽을거같아 어케 해야해?",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4284765",
+     "views": 19245
     },
     {
      "board": "자유게시판",
-     "comments": 64,
+     "comments": 66,
      "community": "인벤",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "클뜯 떴넹",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4280795",
-     "views": 45249
+     "title": "근데 로아는 뭐하는 애들임?",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4283540",
+     "views": 39004
     },
     {
      "board": "자유게시판",
-     "comments": 47,
+     "comments": 53,
      "community": "인벤",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "ㅅㅂ 보자마자 터짐 ㅋㅋ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4281446",
-     "views": 43260
+     "title": "이번 섬 보고 솔직히 더 화남 알고도 가만있었던게",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4283621",
+     "views": 31868
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-22",
      "2026-10-23",
      "2026-10-24",
      "2026-10-25",
@@ -140,10 +123,10 @@
      "2026-11-01",
      "2026-11-02",
      "2026-11-03",
-     "2026-11-04"
+     "2026-11-04",
+     "2026-11-05"
     ],
     "posts": [
-     3102,
      3229,
      2477,
      2726,
@@ -156,7 +139,8 @@
      2090,
      2797,
      2460,
-     2626
+     2627,
+     2105
     ]
    }
   },
@@ -165,63 +149,35 @@
    "community": "아카라이브",
    "community_id": "arca",
    "posts": {
-    "base": 1218.2,
-    "ratio": 0.92,
-    "value": 1115
+    "base": 1634.8,
+    "ratio": 0.54,
+    "value": 890
    },
    "region": "국내",
    "rising": [
     {
-     "base": 0.4,
-     "count": 40,
+     "base": 0.6,
+     "count": 22,
      "new": false,
-     "ratio": 112.0,
-     "word": "니케"
-    },
-    {
-     "base": 5.1,
-     "count": 24,
-     "new": false,
-     "ratio": 4.7,
-     "word": "벨노종하"
-    },
-    {
-     "base": 3.9,
-     "count": 18,
-     "new": false,
-     "ratio": 4.7,
-     "word": "벨하"
-    },
-    {
-     "base": 2.4,
-     "count": 15,
-     "new": false,
-     "ratio": 6.4,
-     "word": "지3"
-    },
-    {
-     "base": 3.0,
-     "count": 15,
-     "new": false,
-     "ratio": 5.0,
-     "word": "이벤트"
+     "ratio": 38.5,
+     "word": "아카"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 5.2,
-     "ratio": 0.96,
-     "value": 5
+     "base": 4.2,
+     "ratio": 0.24,
+     "value": 1
     },
     "복귀 · 신규 표현": {
-     "base": 6.5,
-     "ratio": 0.77,
-     "value": 5
+     "base": 8.0,
+     "ratio": 0.75,
+     "value": 6
     },
     "이탈 표현": {
-     "base": 4.0,
-     "ratio": 0.0,
-     "value": 0
+     "base": 3.0,
+     "ratio": 0.33,
+     "value": 1
     }
    },
    "surge": false,
@@ -229,63 +185,62 @@
    "top": [
     {
      "board": "로스트아크 채널",
-     "comments": 48,
+     "comments": 55,
      "community": "아카라이브",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "어 ㅅㅂ 이상한게 보인다?",
-     "url": "https://arca.live/b/lostark/188042111",
-     "views": 877
+     "title": "저격) 인겜닉 박제 당한 썰 푼다",
+     "url": "https://arca.live/b/lostark/188147553",
+     "views": 642
     },
     {
      "board": "로스트아크 채널",
-     "comments": 44,
+     "comments": 42,
      "community": "아카라이브",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "뉴 파딱이 탄생했습니다 박수로 맞이해주세요",
-     "url": "https://arca.live/b/lostark/188040124",
-     "views": 674
+     "title": "전섭 최초임???",
+     "url": "https://arca.live/b/lostark/188145633",
+     "views": 633
     },
     {
      "board": "로스트아크 채널",
-     "comments": 41,
+     "comments": 38,
      "community": "아카라이브",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "야 이 병신새끼야",
-     "url": "https://arca.live/b/lostark/187969331",
-     "views": 1080
+     "title": "맘터 부기 추천 ㄱㄱㄱㄱ",
+     "url": "https://arca.live/b/lostark/188135662",
+     "views": 140
     },
     {
      "board": "로스트아크 채널",
-     "comments": 5,
+     "comments": 13,
      "community": "아카라이브",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "주년섬 빙고판 퀘스트들 시작위치",
-     "url": "https://arca.live/b/lostark/188003944",
-     "views": 3685
+     "title": "나만 챈 이런가",
+     "url": "https://arca.live/b/lostark/188158151",
+     "views": 810
     },
     {
      "board": "로스트아크 채널",
      "comments": 11,
      "community": "아카라이브",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "??? : 대문 한번 삶았음? 화질 왜 이럼?",
-     "url": "https://arca.live/b/lostark/187999218",
-     "views": 989
+     "title": "회랑에 나도 나오기는하네",
+     "url": "https://arca.live/b/lostark/188173277",
+     "views": 320
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-22",
      "2026-10-23",
      "2026-10-24",
      "2026-10-25",
@@ -298,10 +253,10 @@
      "2026-11-01",
      "2026-11-02",
      "2026-11-03",
-     "2026-11-04"
+     "2026-11-04",
+     "2026-11-05"
     ],
     "posts": [
-     1146,
      970,
      828,
      811,
@@ -314,7 +269,8 @@
      799,
      809,
      780,
-     1115
+     1115,
+     890
     ]
    }
   },
@@ -323,9 +279,9 @@
    "community": "로스트아크 공식 자유게시판",
    "community_id": "lostark_free",
    "posts": {
-    "base": 14.0,
-    "ratio": 1.57,
-    "value": 22
+    "base": 12.2,
+    "ratio": 1.56,
+    "value": 19
    },
    "region": "국내",
    "rising": [],
@@ -333,12 +289,12 @@
     "버그 신호": {
      "base": 0.0,
      "ratio": null,
-     "value": 1
+     "value": 2
     },
     "복귀 · 신규 표현": {
-     "base": 0.2,
-     "ratio": 10.0,
-     "value": 2
+     "base": 0.5,
+     "ratio": 2.0,
+     "value": 1
     },
     "이탈 표현": {
      "base": 0.0,
@@ -351,63 +307,62 @@
    "top": [
     {
      "board": "공식 자유게시판",
-     "comments": 8,
+     "comments": 4,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
      "title": "cc",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14617307",
-     "views": 31
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14617750",
+     "views": 46
     },
     {
      "board": "공식 자유게시판",
-     "comments": 4,
+     "comments": 3,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "2개월쯤 복귀할때 마하라카 섬 쉽게 지도 보고 했고만 ..아니면 화면창 이동하고 .이제는 아무것도 보이지 안게 하고 알아서 가라네 하튼 안해",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14617117",
-     "views": 51
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 4,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-04",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "ㅇㅅㅇ",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14616116",
-     "views": 40
+     "title": "수수료25%",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14618505",
+     "views": 71
     },
     {
      "board": "공식 자유게시판",
      "comments": 2,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "낙원 벌써 확률 조정했나보네",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14618728",
+     "views": 73
+    },
+    {
+     "board": "공식 자유게시판",
+     "comments": 0,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "아바타 오늘 나오는거 아니였냐?",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14616676",
-     "views": 139
+     "title": "888,888골드",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14618243",
+     "views": 110
     },
     {
      "board": "공식 자유게시판",
      "comments": 2,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "조회",
      "sentiment": null,
-     "title": "이게임 신규못함(헌질뺴고) 무기 19에서 20강 책. 슴 다 써도 거진 장기백이라 1강만하는데 골드 아비도스 @@ 1720 고비..",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14616796",
-     "views": 101
+     "title": "망해가서 그런가?이게임 이벤트(8주년아크랜드)엄청 불친철함 ㅋㅋ 처음에 2개월쯤에 시작할떄 마라하카 화면에 이벤 띄어주고.바로이동 좋았고만",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14618513",
+     "views": 58
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-22",
      "2026-10-23",
      "2026-10-24",
      "2026-10-25",
@@ -420,10 +375,10 @@
      "2026-11-01",
      "2026-11-02",
      "2026-11-03",
-     "2026-11-04"
+     "2026-11-04",
+     "2026-11-05"
     ],
     "posts": [
-     12,
      8,
      14,
      13,
@@ -436,165 +391,8 @@
      8,
      9,
      10,
-     22
-    ]
-   }
-  },
-  {
-   "base_kind": "같은 요일 평균",
-   "community": "디시인사이드",
-   "community_id": "dcinside",
-   "posts": {
-    "base": 1949.8,
-    "ratio": 0.7,
-    "value": 1372
-   },
-   "region": "국내",
-   "rising": [
-    {
-     "base": 0.5,
-     "count": 38,
-     "new": false,
-     "ratio": 76.0,
-     "word": "파딱"
-    },
-    {
-     "base": 0.0,
-     "count": 27,
-     "new": true,
-     "ratio": null,
-     "word": "니케"
-    },
-    {
-     "base": 1.1,
-     "count": 23,
-     "new": false,
-     "ratio": 21.5,
-     "word": "탈것"
-    },
-    {
-     "base": 0.1,
-     "count": 17,
-     "new": false,
-     "ratio": 238.0,
-     "word": "이벤트섬"
-    },
-    {
-     "base": 0.0,
-     "count": 15,
-     "new": true,
-     "ratio": null,
-     "word": "해킹"
-    }
-   ],
-   "signals": {
-    "버그 신호": {
-     "base": 4.8,
-     "ratio": 1.04,
-     "value": 5
-    },
-    "복귀 · 신규 표현": {
-     "base": 11.0,
-     "ratio": 0.36,
-     "value": 4
-    },
-    "이탈 표현": {
-     "base": 15.5,
-     "ratio": 0.19,
-     "value": 3
-    }
-   },
-   "surge": false,
-   "surge_reasons": [],
-   "top": [
-    {
-     "board": "로아온 마이너 갤러리",
-     "comments": 33,
-     "community": "디시인사이드",
-     "date": "2026-11-04",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "스포) 이벤트 진짜 개웃기네 ㅋㅋㅋㅋㅋ",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2864797",
-     "views": 2488
-    },
-    {
-     "board": "로아온 마이너 갤러리",
-     "comments": 28,
-     "community": "디시인사이드",
-     "date": "2026-11-04",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "갤 1호임?",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2864841",
-     "views": 2348
-    },
-    {
-     "board": "로아온 마이너 갤러리",
-     "comments": 27,
-     "community": "디시인사이드",
-     "date": "2026-11-04",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "뭐여 파딱 잘렸네",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2865203",
-     "views": 325
-    },
-    {
-     "board": "로아온 마이너 갤러리",
-     "comments": 13,
-     "community": "디시인사이드",
-     "date": "2026-11-04",
-     "pick": "조회",
-     "sentiment": null,
-     "title": "오리밈 작성자 성불하다.jpg",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2864767",
-     "views": 2300
-    },
-    {
-     "board": "로아온 마이너 갤러리",
-     "comments": 16,
-     "community": "디시인사이드",
-     "date": "2026-11-04",
-     "pick": "조회",
-     "sentiment": null,
-     "title": "와 ㅈㄴ 음란하게 생겼네",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2864753",
-     "views": 1990
-    }
-   ],
-   "trend": {
-    "dates": [
-     "2026-10-22",
-     "2026-10-23",
-     "2026-10-24",
-     "2026-10-25",
-     "2026-10-26",
-     "2026-10-27",
-     "2026-10-28",
-     "2026-10-29",
-     "2026-10-30",
-     "2026-10-31",
-     "2026-11-01",
-     "2026-11-02",
-     "2026-11-03",
-     "2026-11-04"
-    ],
-    "posts": [
-     1778,
-     1573,
-     1236,
-     1176,
-     1238,
-     1327,
-     1575,
-     4727,
-     2444,
-     1265,
-     1104,
-     1186,
-     1163,
-     1372
+     23,
+     19
     ]
    }
   },
@@ -603,22 +401,22 @@
    "community": "레딧",
    "community_id": "reddit",
    "posts": {
-    "base": 10.8,
-    "ratio": 0.46,
-    "value": 5
+    "base": 11.5,
+    "ratio": 0.17,
+    "value": 2
    },
    "region": "해외",
    "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 0.2,
+     "base": 0.8,
      "ratio": 0.0,
      "value": 0
     },
     "복귀 · 신규 표현": {
-     "base": 1.5,
-     "ratio": 1.33,
-     "value": 2
+     "base": 1.2,
+     "ratio": 0.0,
+     "value": 0
     },
     "이탈 표현": {
      "base": 0.0,
@@ -631,41 +429,29 @@
    "top": [
     {
      "board": "r/lostarkgame",
-     "comments": 32,
+     "comments": 75,
      "community": "레딧",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "I'm 99.9% sure LOA's AMAZON client is rigged",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xn46w8/",
+     "title": "After reading the \"There Is Hope\" thread, what do players who are trying to return actually expect?",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xntdau/",
      "views": null
     },
     {
      "board": "r/lostarkgame",
-     "comments": 6,
+     "comments": 16,
      "community": "레딧",
-     "date": "2026-11-04",
+     "date": "2026-11-05",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Weekly Q&A [HELP NEW + Returning players] - November 04, 2026",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xn9ebq/",
-     "views": null
-    },
-    {
-     "board": "r/lostarkgame",
-     "comments": 1,
-     "community": "레딧",
-     "date": "2026-11-04",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "How to save Lost Ark?",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xn8qqx/",
+     "title": "Should i start playing the game?",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xoeqno/",
      "views": null
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-22",
      "2026-10-23",
      "2026-10-24",
      "2026-10-25",
@@ -678,10 +464,10 @@
      "2026-11-01",
      "2026-11-02",
      "2026-11-03",
-     "2026-11-04"
+     "2026-11-04",
+     "2026-11-05"
     ],
     "posts": [
-     16,
      11,
      16,
      15,
@@ -694,14 +480,15 @@
      9,
      9,
      4,
-     5
+     5,
+     2
     ]
    }
   }
  ],
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "game": "lostark",
- "generated_at": "2026-11-05T07:00:21+09:00",
+ "generated_at": "2026-11-06T07:00:21+09:00",
  "name": "로스트아크",
  "rules": {
   "rise_days": 14,
@@ -718,7 +505,6 @@
  },
  "series": {
   "dates": [
-   "2026-09-10",
    "2026-09-11",
    "2026-09-12",
    "2026-09-13",
@@ -773,7 +559,8 @@
    "2026-11-01",
    "2026-11-02",
    "2026-11-03",
-   "2026-11-04"
+   "2026-11-04",
+   "2026-11-05"
   ],
   "holidays": {
    "2026-09-24": "추석",
@@ -798,7 +585,6 @@
      null,
      null,
      null,
-     null,
      734.0,
      734.0,
      735.5,
@@ -806,14 +592,14 @@
      774.5,
      842.0,
      1357.0,
-     862.5,
+     null,
      995.0,
      735.5,
      765.0,
      812.1,
      828.3,
      1255.0,
-     855.0,
+     820.0,
      812.1,
      854.0,
      780.8,
@@ -840,10 +626,10 @@
      814.0,
      968.7,
      934.8,
-     1218.2
+     1218.2,
+     1634.8
     ],
     "value": [
-     925,
      928,
      809,
      845,
@@ -898,12 +684,12 @@
      799,
      809,
      780,
-     1115
+     1115,
+     890
     ]
    },
    "community:dcinside": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -924,14 +710,14 @@
      1198.5,
      1248.5,
      2317.0,
-     1469.5,
+     null,
      1562.0,
      1192.5,
      1123.3,
      1315.9,
      1475.3,
      2122.7,
-     1458.3,
+     1440.5,
      1315.9,
      1553.3,
      1137.8,
@@ -958,10 +744,10 @@
      1245.8,
      1496.0,
      1549.2,
-     1949.8
+     1949.8,
+     2319.8
     ],
     "value": [
-     1494,
      1472,
      1253,
      980,
@@ -1016,12 +802,12 @@
      1104,
      1186,
      1163,
-     1372
+     1372,
+     null
     ]
    },
    "community:inven": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1076,10 +862,10 @@
      2169.0,
      2859.7,
      2816.0,
-     3494.0
+     3494.0,
+     3686.8
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1134,12 +920,12 @@
      2090,
      2797,
      2460,
-     2626
+     2627,
+     2105
     ]
    },
    "community:lostark_free": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1160,14 +946,14 @@
      7.0,
      7.5,
      8.5,
-     7.5,
+     null,
      11.0,
      5.5,
      8.3,
      11.1,
      9.7,
      10.3,
-     8.3,
+     8.0,
      11.1,
      11.3,
      11.0,
@@ -1194,10 +980,10 @@
      15.0,
      15.0,
      12.2,
-     14.0
+     14.0,
+     12.2
     ],
     "value": [
-     9,
      10,
      8,
      7,
@@ -1252,7 +1038,8 @@
      8,
      9,
      10,
-     22
+     23,
+     19
     ]
    },
    "community:reddit": {
@@ -1271,21 +1058,20 @@
      null,
      null,
      null,
-     27.0,
      13.0,
      13.0,
      14.5,
      9.5,
      9.0,
      18.5,
-     20.3,
+     23.0,
      13.0,
      11.0,
      12.0,
      9.0,
      9.0,
      14.0,
-     16.2,
+     16.7,
      10.5,
      11.8,
      10.0,
@@ -1312,10 +1098,10 @@
      6.8,
      11.0,
      9.5,
-     10.8
+     10.8,
+     11.5
     ],
     "value": [
-     15,
      6,
      10,
      8,
@@ -1370,12 +1156,12 @@
      9,
      9,
      4,
-     5
+     5,
+     2
     ]
    },
    "region:국내": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1430,10 +1216,10 @@
      4243.8,
      5339.3,
      5312.2,
-     6676.0
+     6676.0,
+     7653.5
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1488,7 +1274,8 @@
      4001,
      4801,
      4413,
-     5135
+     5137,
+     null
     ]
    },
    "region:해외": {
@@ -1507,21 +1294,20 @@
      null,
      null,
      null,
-     27.0,
      13.0,
      13.0,
      14.5,
      9.5,
      9.0,
      18.5,
-     20.3,
+     23.0,
      13.0,
      11.0,
      12.0,
      9.0,
      9.0,
      14.0,
-     16.2,
+     16.7,
      10.5,
      11.8,
      10.0,
@@ -1548,10 +1334,10 @@
      6.8,
      11.0,
      9.5,
-     10.8
+     10.8,
+     11.5
     ],
     "value": [
-     15,
      6,
      10,
      8,
@@ -1606,7 +1392,8 @@
      9,
      9,
      4,
-     5
+     5,
+     2
     ]
    }
   },
@@ -1627,7 +1414,6 @@
       null,
       null,
       null,
-      null,
       3.0,
       3.0,
       5.0,
@@ -1635,14 +1421,14 @@
       1.0,
       2.5,
       14.0,
-      3.5,
+      null,
       5.5,
       5.0,
       0.7,
       1.9,
       3.0,
       10.3,
-      2.7,
+      3.0,
       1.9,
       3.7,
       0.5,
@@ -1669,10 +1455,10 @@
       1.2,
       2.7,
       1.8,
-      5.2
+      5.2,
+      4.2
      ],
      "value": [
-      2,
       8,
       3,
       1,
@@ -1727,12 +1513,12 @@
       0,
       1,
       4,
-      5
+      5,
+      1
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1753,14 +1539,14 @@
       4.0,
       7.0,
       5.0,
-      11.0,
+      null,
       11.5,
       5.0,
       5.0,
       4.6,
       5.7,
       4.3,
-      10.3,
+      10.0,
       4.6,
       4.7,
       4.5,
@@ -1787,10 +1573,10 @@
       4.0,
       5.3,
       5.0,
-      6.5
+      6.5,
+      8.0
      ],
      "value": [
-      11,
       11,
       8,
       8,
@@ -1845,7 +1631,8 @@
       6,
       6,
       4,
-      5
+      5,
+      6
      ]
     },
     "이탈 표현": {
@@ -1863,22 +1650,21 @@
       null,
       null,
       null,
+      0.5,
+      0.5,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
       null,
-      0.5,
-      0.5,
-      0.0,
-      1.0,
-      0.0,
-      1.0,
-      1.0,
-      0.0,
       0.5,
       0.0,
       0.7,
       0.6,
       1.0,
       1.0,
-      0.3,
+      0.5,
       0.6,
       0.0,
       1.0,
@@ -1905,10 +1691,10 @@
       4.8,
       3.3,
       1.5,
-      4.0
+      4.0,
+      3.0
      ],
      "value": [
-      0,
       1,
       0,
       0,
@@ -1963,14 +1749,14 @@
       8,
       1,
       3,
-      0
+      0,
+      1
      ]
     }
    },
    "community:dcinside": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1991,14 +1777,14 @@
       5.0,
       1.0,
       14.5,
-      4.0,
+      null,
       8.5,
       4.5,
       1.7,
       3.1,
       1.7,
       14.0,
-      4.3,
+      5.5,
       3.1,
       3.7,
       2.8,
@@ -2025,10 +1811,10 @@
       4.0,
       4.0,
       2.0,
+      4.8,
       4.8
      ],
      "value": [
-      2,
       12,
       7,
       1,
@@ -2083,12 +1869,12 @@
       5,
       1,
       4,
-      5
+      5,
+      null
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2109,14 +1895,14 @@
       10.5,
       9.0,
       13.5,
-      15.0,
+      null,
       10.0,
       14.0,
       10.0,
       10.4,
       10.0,
       12.0,
-      13.7,
+      13.5,
       10.4,
       12.0,
       9.2,
@@ -2143,10 +1929,10 @@
       9.0,
       8.3,
       8.0,
-      11.0
+      11.0,
+      12.8
      ],
      "value": [
-      14,
       8,
       8,
       9,
@@ -2201,12 +1987,12 @@
       6,
       13,
       11,
-      4
+      4,
+      null
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2227,14 +2013,14 @@
       2.5,
       3.5,
       10.0,
-      4.5,
+      null,
       2.0,
       4.5,
       3.7,
       5.4,
       4.3,
       9.7,
-      8.7,
+      10.0,
       5.4,
       8.7,
       3.0,
@@ -2261,10 +2047,10 @@
       7.5,
       11.0,
       8.5,
-      15.5
+      15.5,
+      13.8
      ],
      "value": [
-      6,
       2,
       4,
       2,
@@ -2319,14 +2105,14 @@
       10,
       6,
       7,
-      3
+      3,
+      null
      ]
     }
    },
    "community:inven": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2381,10 +2167,10 @@
       5.8,
       4.7,
       4.0,
-      11.8
+      11.8,
+      9.0
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2439,12 +2225,12 @@
       37,
       5,
       7,
-      25
+      25,
+      10
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2499,10 +2285,10 @@
       13.5,
       16.3,
       17.8,
-      20.5
+      20.5,
+      22.2
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2557,12 +2343,12 @@
       29,
       26,
       14,
-      17
+      17,
+      13
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2617,10 +2403,10 @@
       18.0,
       30.3,
       33.2,
-      50.8
+      50.8,
+      27.8
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2675,7 +2461,8 @@
       20,
       36,
       29,
-      17
+      17,
+      9
      ]
     }
    },
@@ -2695,15 +2482,14 @@
       null,
       null,
       null,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       null,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -2737,10 +2523,10 @@
       0.0,
       0.0,
       0.0,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2795,7 +2581,8 @@
       0,
       0,
       0,
-      1
+      1,
+      2
      ]
     },
     "복귀 · 신규 표현": {
@@ -2813,15 +2600,14 @@
       null,
       null,
       null,
+      0.2,
+      0.2,
+      0.5,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
       null,
-      0.2,
-      0.2,
-      0.5,
-      0.0,
-      0.5,
-      0.0,
-      0.0,
-      0.0,
       0.0,
       0.5,
       0.0,
@@ -2855,7 +2641,8 @@
       0.0,
       0.0,
       0.0,
-      0.2
+      0.2,
+      0.5
      ],
      "value": [
       0,
@@ -2866,7 +2653,6 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       1,
@@ -2913,7 +2699,8 @@
       0,
       1,
       0,
-      2
+      2,
+      1
      ]
     },
     "이탈 표현": {
@@ -2931,14 +2718,14 @@
       null,
       null,
       null,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       null,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -3025,12 +2812,12 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       0,
       0,
       0,
+      1,
       1
      ]
     }
@@ -3052,21 +2839,20 @@
       null,
       null,
       null,
-      1.0,
       0.0,
       0.0,
       0.5,
       0.0,
       0.0,
       0.0,
-      0.7,
+      0.5,
       0.0,
       0.3,
       0.3,
       0.0,
       0.0,
       0.0,
-      0.5,
+      0.3,
       0.0,
       0.2,
       0.2,
@@ -3093,10 +2879,10 @@
       0.0,
       0.2,
       0.0,
-      0.2
+      0.2,
+      0.8
      ],
      "value": [
-      1,
       0,
       0,
       0,
@@ -3150,6 +2936,7 @@
       0,
       0,
       2,
+      0,
       0,
       0
      ]
@@ -3171,20 +2958,19 @@
       null,
       null,
       1.0,
-      1.0,
       1.5,
       0.0,
       0.0,
       0.0,
       1.0,
-      0.7,
+      1.0,
       0.7,
       1.3,
       0.0,
       0.7,
       0.0,
       1.0,
-      0.5,
+      0.7,
       0.5,
       1.0,
       0.0,
@@ -3211,10 +2997,10 @@
       0.0,
       0.8,
       0.8,
-      1.5
+      1.5,
+      1.2
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3269,7 +3055,8 @@
       1,
       0,
       0,
-      2
+      2,
+      0
      ]
     },
     "이탈 표현": {
@@ -3288,7 +3075,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -3329,10 +3115,10 @@
       0.2,
       0.0,
       0.0,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -3364,6 +3150,7 @@
       0,
       2,
       1,
+      0,
       0,
       0,
       0,
@@ -3430,7 +3217,6 @@
       null,
       null,
       null,
-      null,
       10.5,
       10.5,
       null,
@@ -3449,10 +3235,10 @@
       11.0,
       11.3,
       7.8,
-      21.8
+      21.8,
+      18.0
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3507,12 +3293,12 @@
       42,
       7,
       15,
-      36
+      36,
+      null
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3567,10 +3353,10 @@
       26.5,
       30.0,
       30.8,
-      38.2
+      38.2,
+      43.5
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3625,12 +3411,12 @@
       41,
       46,
       29,
-      28
+      28,
+      null
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3685,10 +3471,10 @@
       30.2,
       44.7,
       43.2,
-      70.2
+      70.2,
+      44.5
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3743,7 +3529,8 @@
       38,
       43,
       39,
-      21
+      21,
+      null
      ]
     }
    },
@@ -3764,21 +3551,20 @@
       null,
       null,
       null,
-      1.0,
       0.0,
       0.0,
       0.5,
       0.0,
       0.0,
       0.0,
-      0.7,
+      0.5,
       0.0,
       0.3,
       0.3,
       0.0,
       0.0,
       0.0,
-      0.5,
+      0.3,
       0.0,
       0.2,
       0.2,
@@ -3805,10 +3591,10 @@
       0.0,
       0.2,
       0.0,
-      0.2
+      0.2,
+      0.8
      ],
      "value": [
-      1,
       0,
       0,
       0,
@@ -3862,6 +3648,7 @@
       0,
       0,
       2,
+      0,
       0,
       0
      ]
@@ -3883,20 +3670,19 @@
       null,
       null,
       1.0,
-      1.0,
       1.5,
       0.0,
       0.0,
       0.0,
       1.0,
-      0.7,
+      1.0,
       0.7,
       1.3,
       0.0,
       0.7,
       0.0,
       1.0,
-      0.5,
+      0.7,
       0.5,
       1.0,
       0.0,
@@ -3923,10 +3709,10 @@
       0.0,
       0.8,
       0.8,
-      1.5
+      1.5,
+      1.2
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3981,7 +3767,8 @@
       1,
       0,
       0,
-      2
+      2,
+      0
      ]
     },
     "이탈 표현": {
@@ -4000,7 +3787,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -4041,10 +3827,10 @@
       0.2,
       0.0,
       0.0,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -4099,574 +3885,12 @@
       0,
       0,
       0,
+      0,
       0
      ]
     }
    }
   }
  },
- "surge_memo": {
-  "classify": "분류 요청함",
-  "communities": [
-   {
-    "community": "인벤",
-    "community_id": "inven",
-    "reads": [
-     {
-      "cost_usd": 0.0419,
-      "count": 2626,
-      "label": "그날 글 전체",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 60,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 191,
-        "title": "게임이 꼬우면 쳐접고 락카칠 해야된다는걸 확실히 증명",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281509"
-       },
-       {
-        "body": "있음",
-        "comments": 81,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 184,
-        "title": "이번 8주년 존나 슬픈 이유",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282623"
-       },
-       {
-        "body": "있음",
-        "comments": 22,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 160,
-        "title": "밈 넣은거보면 대충 유저들이 울부짖는거나 문제점도 안다는 얘긴데",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281424"
-       },
-       {
-        "body": "있음",
-        "comments": 4,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "아 ㅅㅂ 이벤트에서 고정젬 8개줫다고 100만골무과금햇네",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4283327"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "재학이형 디렉터 해야겠는걸?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4283157"
-       },
-       {
-        "body": "있음",
-        "comments": 6,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "친구비 받습니다",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282356"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "게시량은 평소보다 감소했으며, 목록에 해당 일자의 업데이트나 공지가 없어 감소를 설명할 이벤트는 확인되지 않는다. 게시글에 언급된 8주년 이벤트 공개 이후 반응이 전날 이전에 집중됐을 가능성이 있다."
-        }
-       ],
-       "confidence": "low",
-       "endorsed_vs_common": "추천 상위 글은 모두 8주년 운영과 편의 개선 지연, 밈 활용에 대한 강한 불신과 실망을 다룬다. 무작위 글은 고정젬 보상, 아크랜드 콘텐츠 평가, 친구 관련 잡담 등으로 주제가 분산되어 있고 운영 비판의 강도가 낮다.",
-       "subissues": [
-        {
-         "count": 1,
-         "name": "뒤늦은 편의 개선에 대한 불만(아드 각물 쿨 분리, 탈것 모션 삭제, 복원 공명 자동)",
-         "posts": [
-          1
-         ],
-         "quote": "이렇게 쉽고 금방 해줄 수 있었으면서 지금까지 왜?",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "이벤트 속 커뮤니티 밈 활용과 유저 불만 무시 의혹",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "그거알고도 여태 싹다개무시한거지?",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "8주년 행사에 대한 실망과 상실감",
-         "posts": [
-          2
-         ],
-         "quote": "유저 마음도 슬프게 만든거야",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "이벤트 고정젬 지급과 무과금 성장 체감",
-         "posts": [
-          4
-         ],
-         "quote": "이벤트에서 고정젬 8개줫다고 100만골무과금햇네",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "으스스한 아크랜드 콘텐츠 재미 부족",
-         "posts": [
-          5
-         ],
-         "quote": "으스스한 아크랜드 하고왔는데 너무 개노잼이라",
-         "quote_post": 5
-        }
-       ],
-       "summary": "이날 인벤 전체 게시글은 2626건으로 평소 3494.0건의 0.75배 수준이며, 실제로는 증가가 아니라 감소했다. 추천 상위 글은 8주년 시점에 '아드 각물 쿨 분리', 탈것 모션 삭제, 복원 공명 자동 등 편의 개선이 한꺼번에 공개된 데 대해, 쉽게 해줄 수 있었던 것을 그동안 미뤄왔다고 비판한다. 이벤트에 커뮤니티 밈을 넣은 것을 근거로 운영진이 유저 불만을 알면서도 무시했다는 불신과 상실감도 확인된다. 그날과 전날의 업데이트·공지가 목록에 없어 게시량 감소의 원인은 게시글로 설명되지 않는다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.048,
-      "count": 65,
-      "label": "'8주년'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 81,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 184,
-        "title": "이번 8주년 존나 슬픈 이유",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282623"
-       },
-       {
-        "body": "있음",
-        "comments": 68,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 79,
-        "title": "8주년 2막 익스트림 기록 잘못된것도 문의하면 수정해주나요?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281535"
-       },
-       {
-        "body": "있음",
-        "comments": 25,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 4,
-        "title": "8주년 아바타 행복회로",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4283236"
-       },
-       {
-        "body": "있음",
-        "comments": 4,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "8주년에 깜짝 선언 있는거 아냐?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4283357"
-       },
-       {
-        "body": "있음",
-        "comments": 6,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "로아휴식중인데 8주년은 받으러가야함?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281720"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "8주년 섬 준비는 참 잘해놨네..",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282890"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "8주년 주년섬 및 관련 이벤트가 진행 중이어서 해당 콘텐츠 체험과 평가 글이 집중적으로 게시됐을 가능성이 있다. 다만 목록에 해당 업데이트는 확인되지 않는다."
-        },
-        {
-         "event": "없음",
-         "hypothesis": "최근 운영 논란 이후 8주년을 계기로 운영 방향 발표나 번복을 기대하거나 실망을 표출하는 글이 증가했을 가능성이 있다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 8주년 분위기 속 운영에 대한 실망감과 익스트림 기록 문제를 강조했고, 무작위 글은 8주년 깜짝 발표 기대, 보상 수령 여부, 주년섬 평가 등 보다 일상적인 질문과 감상을 다뤘다. 다만 주년섬은 잘 만들었으나 운영은 아쉽다는 정서는 양쪽에서 공통으로 확인된다. 글 1의 '로이괜', '새로운 초식'은 의미가 불명확하다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "주년섬 준비는 인정하나 운영 불만으로 씁쓸하다는 반응",
-         "posts": [
-          1,
-          6
-         ],
-         "quote": "주년섬 퀘스트 깨는데 즐겁기보다는 씁쓸하네 그냥",
-         "quote_post": 6
-        },
-        {
-         "count": 2,
-         "name": "운영 실패에 대한 실망과 수정 거부 발언에 대한 반발",
-         "posts": [
-          1,
-          4
-         ],
-         "quote": "최초 이벤트 실패 했지만 수정은 없습니다 선언했자나",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "8주년 2막 익스트림 기록 오류 수정 문의",
-         "posts": [
-          2
-         ],
-         "quote": "익스트림 기록 잘못된것도 문의하면 수정해주나요?",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "8주년 아바타 디자인 예측",
-         "posts": [
-          3
-         ],
-         "quote": "즉 나팔바지x 장치마o",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "휴식 중인 유저의 8주년 보상 수령 여부 고민",
-         "posts": [
-          5
-         ],
-         "quote": "로아휴식중인데 8주년은 받으러가야함?",
-         "quote_post": 5
-        }
-       ],
-       "summary": "8주년 주년섬 콘텐츠가 이미 진행 중인 것으로 보이며, 커뮤니티 밈을 활용한 섬 구성은 인정하면서도 평소 운영과 편의성에 대한 불만 때문에 씁쓸하다는 반응이 다수 게시됐다. 이 외에 8주년 2막 익스트림 기록 수정 문의, 8주년 아바타 예측, 휴식 중인 유저의 복귀 여부 질문 등이 함께 게시되어 '8주년' 언급이 평소 대비 6.2배 증가한 것으로 보인다. 다만 해당일과 전날의 공지는 목록에서 확인되지 않는다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0303,
-      "count": 57,
-      "label": "'니케'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 53,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 30,
-        "title": "펌) 니케 해킹 때문에 스팀 계정 다 털림 시발.jpg",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282880"
-       },
-       {
-        "body": "있음",
-        "comments": 39,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 24,
-        "title": "니케 최초 제보자가 받았던 취급.jpg",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282229"
-       },
-       {
-        "body": "있음",
-        "comments": 5,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 5,
-        "title": "니케도 스마게처럼 데미지케어팀 굴리나보네",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4283075"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "니케 어제 시작햇는데 내 컴은 멀쩡한데?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281485"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "니케 해킹사건 대형사고긴 하네",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282658"
-       },
-       {
-        "body": "있음",
-        "comments": 9,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "ㅌㄱ) 니케 해킹 뭐임...?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281773"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "타 게임 니케의 PC 클라이언트 해킹 사건이 알려지면서 로스트아크 커뮤니티에서도 화제가 되어 언급량이 증가한 것으로 보인다. 목록에 해당하는 로스트아크 업데이트나 공지는 확인되지 않는다."
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 계정 탈취 사례와 제보자 대우, 운영사 대응 비판 등 사건의 심각성을 강조하는 이미지 위주 글이다. 무작위 글은 본인 PC의 안전 여부를 묻거나 사고 수습을 관전하는 반응이 중심이며, 같은 사건을 다루지만 개인적 우려에 더 비중을 둔다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "니케 해킹으로 인한 계정 탈취 피해",
-         "posts": [
-          1,
-          5
-         ],
-         "quote": "니케 해킹 때문에 스팀 계정 다 털림",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "PC 클라이언트 실행 시 보안 우려와 포맷 필요 여부",
-         "posts": [
-          4,
-          6
-         ],
-         "quote": "9월말 이후로 pc클라이언트 켰으면 컴퓨터 포맷해야한다는뎅",
-         "quote_post": 6
-        },
-        {
-         "count": 3,
-         "name": "운영사의 보안 관리 및 사후 대응 비판",
-         "posts": [
-          2,
-          3,
-          5
-         ],
-         "quote": "갤러리에서 회사 욕하는거 칼삭 칼차단 하더니만",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "스마일게이트 운영 방식과의 비교",
-         "posts": [
-          3
-         ],
-         "quote": "니케도 스마게처럼 데미지케어팀 굴리나보네",
-         "quote_post": 3
-        }
-       ],
-       "summary": "타 게임인 니케의 PC 클라이언트 해킹 사건에 관한 글이 로스트아크 인벤에 집중적으로 게시됐다. 스팀 계정 탈취 사례, 최초 제보자가 받은 대우, 9월 말 이후 PC 클라이언트 실행 시 포맷 필요 여부, 운영사의 커뮤니티 대응 등이 거론됐다. 로스트아크 자체 업데이트와는 관련이 없고, 외부 게임의 보안 사고가 화제가 되어 언급량이 증가한 것으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0348,
-      "count": 51,
-      "label": "'이벤트'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 34,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 94,
-        "title": "로스트아크 이벤트가 모순인점",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4280884"
-       },
-       {
-        "body": "있음",
-        "comments": 30,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 52,
-        "title": "이벤트 빈병 지도 획득방법 +사진 추가",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4282055"
-       },
-       {
-        "body": "있음",
-        "comments": 33,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 2,
-        "title": "이벤트 귀골 888,888만 먹은사람잇네 ㅅㅂ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281363"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "이벤트 고양이 쓰담하면 어캐됨?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281408"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "원래 로아가 주년 이벤트 볼륨이 적었나",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281369"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "이벤트 할 시간이 어딧노 익카제 가야지",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4281221"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "8주년 기념 이벤트 및 피시방 보상이 시작되어 공략·보상 관련 글이 증가한 것으로 보인다"
-        },
-        {
-         "event": "없음",
-         "hypothesis": "서버 이관 발표 이후 이벤트 보상에 이관 관련 재화가 빠진 점이 불만 글을 유발한 것으로 보인다"
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 이관 관련 보상 구성 비판과 빈병 지도 획득 공략처럼 정보성·비판성 내용에 집중했다. 무작위 글은 이벤트 보상 문의, 볼륨 불만, 참여 시간 부족 등 짧은 개인 소감이 중심이다. '익카제'의 정확한 의미는 불분명하다.",
-       "subissues": [
-        {
-         "count": 1,
-         "name": "이관 발표 이후 이벤트 보상 구성의 모순",
-         "posts": [
-          1
-         ],
-         "quote": "이관 관련 성장재화 다 빠져있은걸로 보임",
-         "quote_post": 1
-        },
-        {
-         "count": 1,
-         "name": "이벤트 빈병 지도 획득 공략",
-         "posts": [
-          2
-         ],
-         "quote": "npc들이 웃으면서 찬양하면 무조건 지도나옴",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "이벤트 귀골 고액 보상 획득 사례",
-         "posts": [
-          3
-         ],
-         "quote": "이벤트 귀골 888,888만 먹은사람잇네",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "고양이 쓰다듬기 이벤트 보상 문의",
-         "posts": [
-          4
-         ],
-         "quote": "만족\"할때까지 쓰담하라는데 뭐 칭호주나..?",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "주년 이벤트 볼륨에 대한 불만",
-         "posts": [
-          5
-         ],
-         "quote": "원래 로아가 주년 이벤트 볼륨이 적었나",
-         "quote_post": 5
-        },
-        {
-         "count": 1,
-         "name": "익카제 등 다른 콘텐츠로 인한 이벤트 참여 시간 부족",
-         "posts": [
-          6
-         ],
-         "quote": "이벤트 할 시간이 어딧노 익카제 가야지",
-         "quote_post": 6
-        }
-       ],
-       "summary": "8주년 기념 이벤트로 보이는 신규 이벤트의 보상 구성, 빈병 지도 획득 방법, 고양이 쓰다듬기, 귀골 보상 등 이벤트 세부 내용을 다룬 글이 다수 게시됐다. 추천 상위 글에서는 이관 발표 이후 나온 8주년 피시방 보상에 카르마·혼돌 등 이관 관련 성장재화가 빠진 점을 모순으로 지적했다. 이벤트 볼륨이 적다는 의견도 확인되며, 공지 목록에는 없으나 주년 이벤트 시작이 '이벤트' 언급 증가의 원인으로 보인다."
-      },
-      "status": "ok"
-     }
-    ],
-    "reasons": [
-     "버그 신호 25건(평소 11.8건의 2.12배)"
-    ],
-    "sentiment": {
-     "base_classified": 13976,
-     "classified": 2626,
-     "neg": 0.3863,
-     "neg_base": 0.4386,
-     "of": 2626,
-     "topics": [
-      {
-       "base": 0.2473,
-       "name": "기타",
-       "share": 0.3275,
-       "topic": "other"
-      },
-      {
-       "base": 0.2413,
-       "name": "컨텐츠 · 업데이트",
-       "share": 0.1877,
-       "topic": "content"
-      },
-      {
-       "base": 0.1351,
-       "name": "운영 · 이벤트",
-       "share": 0.1569,
-       "topic": "operation"
-      },
-      {
-       "base": 0.1266,
-       "name": "파티 · 커뮤니티",
-       "share": 0.0922,
-       "topic": "social"
-      },
-      {
-       "base": 0.0618,
-       "name": "성장 · 강화",
-       "share": 0.0781,
-       "topic": "growth"
-      }
-     ]
-    }
-   }
-  ],
-  "cost_usd": 0.1549,
-  "date": "2026-11-04",
-  "events": [],
-  "game": "lostark",
-  "generated_at": "2026-11-05T07:19:46+09:00",
-  "model": "claude-opus-5-5",
-  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
- },
- "surges": [
-  {
-   "community": "인벤",
-   "community_id": "inven",
-   "reasons": [
-    "버그 신호 25건(평소 11.8건의 2.12배)"
-   ]
-  }
- ]
+ "surges": []
 }
