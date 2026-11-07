@@ -5,113 +5,121 @@
    "community": "인벤",
    "community_id": "inven",
    "posts": {
-    "base": 4867.0,
-    "ratio": 0.78,
-    "value": 3773
+    "base": 2442.5,
+    "ratio": 0.95,
+    "value": 2322
    },
    "region": "국내",
    "rising": [
     {
-     "base": 17.2,
+     "base": 12.8,
      "count": 112,
      "new": false,
-     "ratio": 6.5,
-     "word": "8주년"
+     "ratio": 8.8,
+     "word": "나이스단"
     },
     {
-     "base": 22.3,
-     "count": 109,
+     "base": 8.6,
+     "count": 31,
      "new": false,
-     "ratio": 4.9,
-     "word": "아바타"
+     "ratio": 3.6,
+     "word": "원대화"
     },
     {
-     "base": 12.6,
-     "count": 43,
+     "base": 5.9,
+     "count": 27,
+     "new": false,
+     "ratio": 4.6,
+     "word": "6회제한"
+    },
+    {
+     "base": 8.0,
+     "count": 27,
      "new": false,
      "ratio": 3.4,
-     "word": "로아온"
+     "word": "캐릭"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 8.7,
-     "ratio": 1.03,
-     "value": 9
+     "base": 7.0,
+     "ratio": 1.71,
+     "value": 12
     },
     "복귀 · 신규 표현": {
-     "base": 31.0,
-     "ratio": 0.74,
-     "value": 23
+     "base": 14.8,
+     "ratio": 2.5,
+     "value": 37
     },
     "이탈 표현": {
-     "base": 41.0,
-     "ratio": 0.85,
-     "value": 35
+     "base": 17.8,
+     "ratio": 0.39,
+     "value": 7
     }
    },
-   "surge": false,
-   "surge_reasons": [],
+   "surge": true,
+   "surge_reasons": [
+    "복귀 · 신규 표현 37건(평소 14.8건의 2.5배)"
+   ],
    "top": [
     {
      "board": "자유게시판",
-     "comments": 269,
+     "comments": 99,
      "community": "인벤",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "5명 이벤트) 5만골 우편",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4288015",
-     "views": 6301
+     "title": "나이스단 강요시켰으니 직변권 내놓으라는 초식은ㅋㅋ",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4290653",
+     "views": 34483
     },
     {
      "board": "자유게시판",
-     "comments": 142,
+     "comments": 86,
      "community": "인벤",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "노인장 겜접분이 느꼈던 스마게가 진짜 싸패같았던 포인트",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4287332",
-     "views": 24987
+     "title": "오늘 못깻으니 박제는 해야지",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4292557",
+     "views": 13584
     },
     {
      "board": "자유게시판",
-     "comments": 134,
+     "comments": 83,
      "community": "인벤",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "로스트아크 M 출시",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4287330",
-     "views": 32038
+     "title": "솔직히 뉴비 입장으로써 이번에 바라는점",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4292317",
+     "views": 15768
     },
     {
      "board": "자유게시판",
-     "comments": 64,
+     "comments": 18,
      "community": "인벤",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "2026-11-06 로스트아크 On-Air (8주년 기념)",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4288117",
-     "views": 85239
+     "title": "깼다 내가 진짜 존나 니새기 때문에 접을뻔함",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4290365",
+     "views": 29324
     },
     {
      "board": "자유게시판",
-     "comments": 74,
+     "comments": 36,
      "community": "인벤",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "\"이관설명\" 오늘 절대 안하고 20일에 하는 이유 다 알잖아?",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4287544",
-     "views": 46646
+     "title": "\"박현준. 탱크 무력화해.\"",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4291358",
+     "views": 27085
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-24",
      "2026-10-25",
      "2026-10-26",
      "2026-10-27",
@@ -124,10 +132,10 @@
      "2026-11-03",
      "2026-11-04",
      "2026-11-05",
-     "2026-11-06"
+     "2026-11-06",
+     "2026-11-07"
     ],
     "posts": [
-     2477,
      2726,
      3126,
      2781,
@@ -140,7 +148,8 @@
      2460,
      2627,
      2105,
-     3773
+     3773,
+     2322
     ]
    }
   },
@@ -149,56 +158,27 @@
    "community": "아카라이브",
    "community_id": "arca",
    "posts": {
-    "base": 1528.7,
-    "ratio": 1.04,
-    "value": 1587
+    "base": 831.5,
+    "ratio": 0.94,
+    "value": 782
    },
    "region": "국내",
-   "rising": [
-    {
-     "base": 11.6,
-     "count": 42,
-     "new": false,
-     "ratio": 3.6,
-     "word": "라방"
-    },
-    {
-     "base": 2.0,
-     "count": 28,
-     "new": false,
-     "ratio": 14.0,
-     "word": "8주년"
-    },
-    {
-     "base": 1.4,
-     "count": 22,
-     "new": false,
-     "ratio": 16.2,
-     "word": "고코선"
-    },
-    {
-     "base": 4.1,
-     "count": 19,
-     "new": false,
-     "ratio": 4.6,
-     "word": "로아온"
-    }
-   ],
+   "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 5.0,
-     "ratio": 1.0,
-     "value": 5
+     "base": 3.0,
+     "ratio": 1.33,
+     "value": 4
     },
     "복귀 · 신규 표현": {
-     "base": 6.7,
-     "ratio": 1.79,
-     "value": 12
+     "base": 9.5,
+     "ratio": 0.84,
+     "value": 8
     },
     "이탈 표현": {
-     "base": 3.0,
-     "ratio": 0.33,
-     "value": 1
+     "base": 1.8,
+     "ratio": 0.0,
+     "value": 0
     }
    },
    "surge": false,
@@ -206,63 +186,62 @@
    "top": [
     {
      "board": "로스트아크 채널",
-     "comments": 63,
+     "comments": 51,
      "community": "아카라이브",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "아주...귀여운 도렘을 보앗어...",
-     "url": "https://arca.live/b/lostark/188253054",
-     "views": 200
+     "title": "나 우울해 죽고싶어",
+     "url": "https://arca.live/b/lostark/188337330",
+     "views": 817
     },
     {
      "board": "로스트아크 채널",
-     "comments": 39,
+     "comments": 48,
      "community": "아카라이브",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "ㅋㅋ 유저콘테스트 그거 그냥 유행따라가려는 원툴이잔아",
-     "url": "https://arca.live/b/lostark/188281619",
-     "views": 910
+     "title": "개키우면 돈이 많이깨지나?",
+     "url": "https://arca.live/b/lostark/188364438",
+     "views": 291
     },
     {
      "board": "로스트아크 채널",
-     "comments": 37,
+     "comments": 43,
      "community": "아카라이브",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "영구파딱 오메데토~~",
-     "url": "https://arca.live/b/lostark/188275574",
-     "views": 991
+     "title": "로트크 정리 다했다",
+     "url": "https://arca.live/b/lostark/188307420",
+     "views": 223
     },
     {
      "board": "로스트아크 채널",
-     "comments": 10,
+     "comments": 21,
      "community": "아카라이브",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "로스트아크 8주년 방송 요약본",
-     "url": "https://arca.live/b/lostark/188274079",
-     "views": 1802
+     "title": "로아 생일임?",
+     "url": "https://arca.live/b/lostark/188306373",
+     "views": 669
     },
     {
      "board": "로스트아크 채널",
-     "comments": 35,
+     "comments": 2,
      "community": "아카라이브",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "쿠폰 바꿔놨으니까 일해라절해라 하지마새요",
-     "url": "https://arca.live/b/lostark/188274761",
-     "views": 870
+     "title": "8주년 아바타",
+     "url": "https://arca.live/b/lostark/188312516",
+     "views": 542
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-24",
      "2026-10-25",
      "2026-10-26",
      "2026-10-27",
@@ -275,10 +254,10 @@
      "2026-11-03",
      "2026-11-04",
      "2026-11-05",
-     "2026-11-06"
+     "2026-11-06",
+     "2026-11-07"
     ],
     "posts": [
-     828,
      811,
      985,
      983,
@@ -291,7 +270,8 @@
      780,
      1115,
      890,
-     1587
+     1587,
+     782
     ]
    }
   },
@@ -300,26 +280,26 @@
    "community": "로스트아크 공식 자유게시판",
    "community_id": "lostark_free",
    "posts": {
-    "base": 19.3,
-    "ratio": 1.09,
-    "value": 21
+    "base": 14.5,
+    "ratio": 0.9,
+    "value": 13
    },
    "region": "국내",
    "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 0.0,
-     "ratio": null,
+     "base": 0.2,
+     "ratio": 0.0,
      "value": 0
     },
     "복귀 · 신규 표현": {
      "base": 0.0,
      "ratio": null,
-     "value": 0
+     "value": 1
     },
     "이탈 표현": {
-     "base": 0.3,
-     "ratio": 0.0,
+     "base": 0.0,
+     "ratio": null,
      "value": 0
     }
    },
@@ -328,63 +308,62 @@
    "top": [
     {
      "board": "공식 자유게시판",
-     "comments": 6,
+     "comments": 9,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "멘탈 탈탈 털렸다 제길.....",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14619296",
-     "views": 261
+     "title": "9월복귀후 2개월오자마자낙원및마하카라하니1700에서 1740 거진꽁짜로 가더라 운나쁘면 3개월은해야 더나쁘면5개월. 1770까진 귀골가야",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14621357",
+     "views": 78
     },
     {
      "board": "공식 자유게시판",
-     "comments": 4,
+     "comments": 7,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "강화 확률 개 같이 내려놨네 ㅋㅋㅋ",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14620580",
-     "views": 86
+     "title": "오토 작업장을 어떻게 막아야 하나",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14621193",
+     "views": 113
     },
     {
      "board": "공식 자유게시판",
-     "comments": 4,
+     "comments": 7,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "c",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14619242",
-     "views": 45
+     "title": "ㅊㅊ",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14621604",
+     "views": 40
     },
     {
      "board": "공식 자유게시판",
-     "comments": 1,
+     "comments": 5,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "8주년 기념 쿠폰",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14620476",
-     "views": 101
+     "title": "로아 클래식을 하고 싶습니다",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14621106",
+     "views": 131
     },
     {
      "board": "공식 자유게시판",
      "comments": 3,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "딴건 그렇다치는데 제발 유튭 라이브말고 옆집처럼 전용 라이브 파면 안됨?",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14620045",
-     "views": 75
+     "title": "서버마다 벌목하는봇들 왜안잡나?",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14620949",
+     "views": 114
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-24",
      "2026-10-25",
      "2026-10-26",
      "2026-10-27",
@@ -397,10 +376,10 @@
      "2026-11-03",
      "2026-11-04",
      "2026-11-05",
-     "2026-11-06"
+     "2026-11-06",
+     "2026-11-07"
     ],
     "posts": [
-     14,
      13,
      15,
      16,
@@ -413,7 +392,8 @@
      10,
      23,
      19,
-     21
+     21,
+     13
     ]
    }
   },
@@ -422,63 +402,35 @@
    "community": "디시인사이드",
    "community_id": "dcinside",
    "posts": {
-    "base": 2691.3,
-    "ratio": 0.76,
-    "value": 2055
+    "base": 1349.5,
+    "ratio": 0.74,
+    "value": 995
    },
    "region": "국내",
    "rising": [
     {
-     "base": 7.0,
-     "count": 52,
+     "base": 0.6,
+     "count": 19,
      "new": false,
-     "ratio": 7.4,
-     "word": "8주년"
-    },
-    {
-     "base": 9.1,
-     "count": 30,
-     "new": false,
-     "ratio": 3.3,
-     "word": "아바타"
-    },
-    {
-     "base": 6.4,
-     "count": 27,
-     "new": false,
-     "ratio": 4.2,
-     "word": "탁디"
-    },
-    {
-     "base": 3.9,
-     "count": 21,
-     "new": false,
-     "ratio": 5.4,
-     "word": "이병탁"
-    },
-    {
-     "base": 4.8,
-     "count": 21,
-     "new": false,
-     "ratio": 4.4,
-     "word": "칭호"
+     "ratio": 29.6,
+     "word": "마스코트"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 6.7,
-     "ratio": 0.15,
-     "value": 1
+     "base": 2.5,
+     "ratio": 1.6,
+     "value": 4
     },
     "복귀 · 신규 표현": {
-     "base": 16.3,
-     "ratio": 0.74,
-     "value": 12
+     "base": 7.8,
+     "ratio": 1.28,
+     "value": 10
     },
     "이탈 표현": {
-     "base": 15.3,
-     "ratio": 0.26,
-     "value": 4
+     "base": 4.5,
+     "ratio": 0.44,
+     "value": 2
     }
    },
    "surge": false,
@@ -486,63 +438,62 @@
    "top": [
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 51,
+     "comments": 46,
      "community": "디시인사이드",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "로트크 켜긴 했는데 일단 미접 상태임",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2868865",
-     "views": 754
+     "title": "탁d는 확실히 첫 행보 성공함ㅋㅋㅋㅋㅋㅋㅋ",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2868979",
+     "views": 2905
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 37,
+     "comments": 39,
      "community": "디시인사이드",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "클리어 기념 후기",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2866830",
-     "views": 1527
+     "title": "낙서",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2869073",
+     "views": 1684
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 29,
+     "comments": 28,
      "community": "디시인사이드",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "항상 응원하고 있어.",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2867263",
-     "views": 111
+     "title": "꿀잼컨텐츠 생각나씀(재미없으면 죽음)",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2869268",
+     "views": 123
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 26,
+     "comments": 16,
      "community": "디시인사이드",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "두서없이 정리한 이번 라방 (스압)",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2868226",
-     "views": 2458
+     "title": "마스코트🌱 교체🔁 ❗️❓️❗️❓️❗️❓️❗️",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2869225",
+     "views": 2181
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 20,
+     "comments": 13,
      "community": "디시인사이드",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "조회",
      "sentiment": null,
-     "title": "걍 이젠 겜이 안타깝다",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2866772",
-     "views": 2395
+     "title": "나도 다있었어",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2868992",
+     "views": 2131
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-24",
      "2026-10-25",
      "2026-10-26",
      "2026-10-27",
@@ -555,10 +506,10 @@
      "2026-11-03",
      "2026-11-04",
      "2026-11-05",
-     "2026-11-06"
+     "2026-11-06",
+     "2026-11-07"
     ],
     "posts": [
-     1236,
      1176,
      1238,
      1327,
@@ -571,7 +522,8 @@
      1163,
      1372,
      916,
-     2055
+     2055,
+     995
     ]
    }
   },
@@ -580,8 +532,8 @@
    "community": "레딧",
    "community_id": "reddit",
    "posts": {
-    "base": 10.8,
-    "ratio": 0.56,
+    "base": 12.2,
+    "ratio": 0.49,
     "value": 6
    },
    "region": "해외",
@@ -593,13 +545,13 @@
      "value": 0
     },
     "복귀 · 신규 표현": {
-     "base": 0.2,
+     "base": 0.5,
      "ratio": 0.0,
      "value": 0
     },
     "이탈 표현": {
-     "base": 0.0,
-     "ratio": null,
+     "base": 0.5,
+     "ratio": 0.0,
      "value": 0
     }
    },
@@ -608,41 +560,40 @@
    "top": [
     {
      "board": "r/lostarkgame",
-     "comments": 17,
+     "comments": 67,
      "community": "레딧",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "[LIVE] Lost Ark On Air | Nov 6, 2026, 19:00",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xp8tdx/",
+     "title": "KR's 8th Anniversary Stream Summary - Maxroll.gg",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xpg4a6/",
      "views": null
     },
     {
      "board": "r/lostarkgame",
-     "comments": 17,
+     "comments": 15,
      "community": "레딧",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Hit a banger",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xp0epm/",
+     "title": "Thank you lost ark gods",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xpoi3q/",
      "views": null
     },
     {
      "board": "r/lostarkgame",
-     "comments": 17,
+     "comments": 5,
      "community": "레딧",
-     "date": "2026-11-06",
+     "date": "2026-11-07",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Lost Ark could never...",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xownam/",
+     "title": "Back in the Raid Zone! ⚔️🖤",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xpkfwa/",
      "views": null
     }
    ],
    "trend": {
     "dates": [
-     "2026-10-24",
      "2026-10-25",
      "2026-10-26",
      "2026-10-27",
@@ -655,10 +606,10 @@
      "2026-11-03",
      "2026-11-04",
      "2026-11-05",
-     "2026-11-06"
+     "2026-11-06",
+     "2026-11-07"
     ],
     "posts": [
-     16,
      15,
      24,
      11,
@@ -671,14 +622,15 @@
      4,
      5,
      2,
+     6,
      6
     ]
    }
   }
  ],
- "date": "2026-11-06",
+ "date": "2026-11-07",
  "game": "lostark",
- "generated_at": "2026-11-07T07:00:21+09:00",
+ "generated_at": "2026-11-08T07:00:22+09:00",
  "name": "로스트아크",
  "rules": {
   "rise_days": 14,
@@ -695,7 +647,6 @@
  },
  "series": {
   "dates": [
-   "2026-09-12",
    "2026-09-13",
    "2026-09-14",
    "2026-09-15",
@@ -750,7 +701,8 @@
    "2026-11-03",
    "2026-11-04",
    "2026-11-05",
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-07"
   ],
   "holidays": {
    "2026-09-24": "추석",
@@ -774,23 +726,22 @@
      null,
      null,
      null,
-     734.0,
-     734.0,
-     735.5,
+     null,
+     null,
      732.5,
      774.5,
      842.0,
      1357.0,
      null,
      null,
-     735.5,
+     null,
      765.0,
-     812.1,
+     812.7,
      828.3,
      1255.0,
      820.0,
-     812.1,
-     854.0,
+     812.7,
+     876.5,
      780.8,
      795.3,
      864.5,
@@ -817,10 +768,10 @@
      934.8,
      1218.2,
      1634.8,
-     1528.7
+     1528.7,
+     831.5
     ],
     "value": [
-     809,
      845,
      727,
      830,
@@ -875,7 +826,8 @@
      780,
      1115,
      890,
-     1587
+     1587,
+     782
     ]
    },
    "community:dcinside": {
@@ -892,23 +844,22 @@
      null,
      null,
      null,
-     1113.8,
-     1113.8,
-     1192.5,
+     null,
+     null,
      1035.0,
      1198.5,
      1248.5,
      2317.0,
      null,
      null,
-     1192.5,
+     null,
      1123.3,
-     1315.9,
+     1326.3,
      1475.3,
      2122.7,
      1440.5,
-     1315.9,
-     1553.3,
+     1326.3,
+     1703.5,
      1137.8,
      1373.7,
      1601.5,
@@ -935,10 +886,10 @@
      1549.2,
      1949.8,
      2319.8,
-     2691.3
+     2691.3,
+     1349.5
     ],
     "value": [
-     1253,
      980,
      1269,
      1453,
@@ -993,12 +944,12 @@
      1163,
      1372,
      916,
-     2055
+     2055,
+     995
     ]
    },
    "community:inven": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1053,10 +1004,10 @@
      2816.0,
      3494.0,
      3686.8,
-     4867.0
+     4867.0,
+     2442.5
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1111,7 +1062,8 @@
      2460,
      2627,
      2105,
-     3773
+     3773,
+     2322
     ]
    },
    "community:lostark_free": {
@@ -1128,23 +1080,22 @@
      null,
      null,
      null,
-     7.8,
-     7.8,
-     5.5,
+     null,
+     null,
      10.0,
      7.0,
      7.5,
      8.5,
      null,
      null,
-     5.5,
+     null,
      8.3,
-     11.1,
+     11.7,
      9.7,
      10.3,
      8.0,
-     11.1,
-     11.3,
+     11.7,
+     13.0,
      11.0,
      6.3,
      10.2,
@@ -1171,10 +1122,10 @@
      12.2,
      14.0,
      12.2,
-     19.3
+     19.3,
+     14.5
     ],
     "value": [
-     8,
      7,
      5,
      10,
@@ -1229,7 +1180,8 @@
      10,
      23,
      19,
-     21
+     21,
+     13
     ]
    },
    "community:reddit": {
@@ -1248,21 +1200,20 @@
      null,
      null,
      null,
-     13.0,
      14.5,
      9.5,
      9.0,
      18.5,
      23.0,
      16.5,
-     11.0,
+     11.5,
      12.0,
      9.0,
      9.0,
      14.0,
      16.7,
      12.0,
-     11.8,
+     12.3,
      10.0,
      7.8,
      8.0,
@@ -1289,10 +1240,10 @@
      9.5,
      10.8,
      11.5,
-     10.8
+     10.8,
+     12.2
     ],
     "value": [
-     10,
      8,
      7,
      12,
@@ -1347,12 +1298,12 @@
      4,
      5,
      2,
+     6,
      6
     ]
    },
    "region:국내": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1407,10 +1358,10 @@
      5312.2,
      6676.0,
      7653.5,
-     9106.3
+     9106.3,
+     4638.0
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1465,7 +1416,8 @@
      4413,
      5137,
      3930,
-     7436
+     7436,
+     4112
     ]
    },
    "region:해외": {
@@ -1484,21 +1436,20 @@
      null,
      null,
      null,
-     13.0,
      14.5,
      9.5,
      9.0,
      18.5,
      23.0,
      16.5,
-     11.0,
+     11.5,
      12.0,
      9.0,
      9.0,
      14.0,
      16.7,
      12.0,
-     11.8,
+     12.3,
      10.0,
      7.8,
      8.0,
@@ -1525,10 +1476,10 @@
      9.5,
      10.8,
      11.5,
-     10.8
+     10.8,
+     12.2
     ],
     "value": [
-     10,
      8,
      7,
      12,
@@ -1583,6 +1534,7 @@
      4,
      5,
      2,
+     6,
      6
     ]
    }
@@ -1603,23 +1555,22 @@
       null,
       null,
       null,
-      3.0,
-      3.0,
-      5.0,
+      null,
+      null,
       1.0,
       1.0,
       2.5,
       14.0,
       null,
       null,
-      5.0,
+      null,
       0.7,
-      1.9,
+      1.7,
       3.0,
       10.3,
       3.0,
-      1.9,
-      3.7,
+      1.7,
+      4.0,
       0.5,
       0.7,
       3.0,
@@ -1646,10 +1597,10 @@
       1.8,
       5.2,
       4.2,
-      5.0
+      5.0,
+      3.0
      ],
      "value": [
-      3,
       1,
       2,
       5,
@@ -1704,7 +1655,8 @@
       4,
       5,
       1,
-      5
+      5,
+      4
      ]
     },
     "복귀 · 신규 표현": {
@@ -1721,23 +1673,22 @@
       null,
       null,
       null,
-      4.8,
-      4.8,
-      5.0,
+      null,
+      null,
       4.5,
       4.0,
       7.0,
       5.0,
       null,
       null,
+      null,
       5.0,
-      5.0,
-      4.6,
+      4.0,
       5.7,
       4.3,
       10.0,
-      4.6,
-      4.7,
+      4.0,
+      3.0,
       4.5,
       3.7,
       6.8,
@@ -1764,10 +1715,10 @@
       5.0,
       6.5,
       8.0,
-      6.7
+      6.7,
+      9.5
      ],
      "value": [
-      8,
       8,
       4,
       8,
@@ -1822,7 +1773,8 @@
       4,
       5,
       6,
-      12
+      12,
+      8
      ]
     },
     "이탈 표현": {
@@ -1839,22 +1791,21 @@
       null,
       null,
       null,
-      0.5,
-      0.5,
-      0.0,
+      null,
+      null,
       1.0,
       0.0,
       1.0,
       1.0,
       null,
       null,
-      0.0,
+      null,
       0.7,
-      0.6,
+      0.7,
       1.0,
       1.0,
       0.5,
-      0.6,
+      0.7,
       0.0,
       1.0,
       0.7,
@@ -1882,10 +1833,10 @@
       1.5,
       4.0,
       3.0,
-      3.0
+      3.0,
+      1.8
      ],
      "value": [
-      0,
       0,
       0,
       2,
@@ -1940,7 +1891,8 @@
       3,
       0,
       1,
-      1
+      1,
+      0
      ]
     }
    },
@@ -1959,23 +1911,22 @@
       null,
       null,
       null,
-      3.0,
-      3.0,
-      4.5,
+      null,
+      null,
       1.5,
       5.0,
       1.0,
       14.5,
       null,
       null,
-      4.5,
+      null,
       1.7,
-      3.1,
+      2.5,
       1.7,
       14.0,
       5.5,
-      3.1,
-      3.7,
+      2.5,
+      2.0,
       2.8,
       4.3,
       1.8,
@@ -2002,10 +1953,10 @@
       2.0,
       4.8,
       4.8,
-      6.7
+      6.7,
+      2.5
      ],
      "value": [
-      7,
       1,
       8,
       1,
@@ -2060,7 +2011,8 @@
       4,
       5,
       4,
-      1
+      1,
+      4
      ]
     },
     "복귀 · 신규 표현": {
@@ -2077,23 +2029,22 @@
       null,
       null,
       null,
-      10.8,
-      10.8,
-      14.0,
+      null,
+      null,
       7.5,
       10.5,
       9.0,
       13.5,
       null,
       null,
-      14.0,
+      null,
       10.0,
-      10.4,
+      10.8,
       10.0,
       12.0,
       13.5,
-      10.4,
-      12.0,
+      10.8,
+      14.0,
       9.2,
       11.3,
       9.8,
@@ -2120,10 +2071,10 @@
       8.0,
       11.0,
       12.8,
-      16.3
+      16.3,
+      7.8
      ],
      "value": [
-      8,
       9,
       10,
       12,
@@ -2178,7 +2129,8 @@
       11,
       4,
       9,
-      12
+      12,
+      10
      ]
     },
     "이탈 표현": {
@@ -2195,23 +2147,22 @@
       null,
       null,
       null,
-      4.0,
-      4.0,
-      4.5,
+      null,
+      null,
       3.5,
       2.5,
       3.5,
       10.0,
       null,
       null,
-      4.5,
+      null,
       3.7,
-      5.4,
+      5.7,
       4.3,
       9.7,
       10.0,
-      5.4,
-      8.7,
+      5.7,
+      11.0,
       3.0,
       4.0,
       8.2,
@@ -2238,10 +2189,10 @@
       8.5,
       15.5,
       13.8,
-      15.3
+      15.3,
+      4.5
      ],
      "value": [
-      4,
       2,
       2,
       4,
@@ -2296,14 +2247,14 @@
       7,
       3,
       1,
-      4
+      4,
+      2
      ]
     }
    },
    "community:inven": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2358,10 +2309,10 @@
       4.0,
       11.8,
       9.0,
-      8.7
+      8.7,
+      7.0
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2416,12 +2367,12 @@
       7,
       25,
       10,
-      9
+      9,
+      12
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2476,10 +2427,10 @@
       17.8,
       20.5,
       22.2,
-      31.0
+      31.0,
+      14.8
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2534,12 +2485,12 @@
       14,
       17,
       13,
-      23
+      23,
+      37
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2594,10 +2545,10 @@
       33.2,
       50.8,
       27.8,
-      41.0
+      41.0,
+      17.8
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2652,7 +2603,8 @@
       29,
       17,
       9,
-      35
+      35,
+      7
      ]
     }
    },
@@ -2671,16 +2623,15 @@
       null,
       null,
       null,
-      0.0,
-      0.0,
-      0.0,
+      null,
+      null,
       0.0,
       0.0,
       0.0,
       0.0,
       null,
       null,
-      0.0,
+      null,
       0.0,
       0.0,
       0.0,
@@ -2714,10 +2665,10 @@
       0.0,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.2
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2772,6 +2723,7 @@
       0,
       1,
       2,
+      0,
       0
      ]
     },
@@ -2789,53 +2741,52 @@
       null,
       null,
       null,
-      0.2,
-      0.2,
-      0.5,
+      null,
+      null,
       0.0,
       0.5,
       0.0,
       0.0,
       null,
       null,
-      0.5,
-      0.0,
-      0.1,
-      0.0,
-      0.0,
-      0.0,
-      0.1,
-      0.3,
-      0.0,
-      0.3,
+      null,
       0.0,
       0.2,
-      0.3,
-      0.0,
-      0.3,
-      0.0,
-      0.3,
-      0.0,
-      0.2,
-      0.3,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.2,
-      0.2,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
       0.2,
       0.5,
+      0.0,
+      0.3,
+      0.0,
+      0.2,
+      0.3,
+      0.0,
+      0.3,
+      0.0,
+      0.3,
+      0.0,
+      0.2,
+      0.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2,
+      0.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2,
+      0.5,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2890,7 +2841,8 @@
       0,
       2,
       1,
-      0
+      0,
+      1
      ]
     },
     "이탈 표현": {
@@ -2907,19 +2859,15 @@
       null,
       null,
       null,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
       null,
       null,
       0.0,
       0.0,
       0.0,
       0.0,
+      null,
+      null,
+      null,
       0.0,
       0.0,
       0.0,
@@ -2950,7 +2898,11 @@
       0.0,
       0.0,
       0.0,
-      0.3
+      0.0,
+      0.0,
+      0.0,
+      0.3,
+      0.0
      ],
      "value": [
       0,
@@ -3000,7 +2952,6 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       0,
@@ -3008,6 +2959,7 @@
       0,
       1,
       1,
+      0,
       0
      ]
     }
@@ -3029,21 +2981,20 @@
       null,
       null,
       null,
-      0.0,
       0.5,
       0.0,
       0.0,
       0.0,
       0.5,
       0.0,
-      0.3,
-      0.3,
-      0.0,
-      0.0,
-      0.0,
+      0.5,
       0.3,
       0.0,
-      0.2,
+      0.0,
+      0.0,
+      0.3,
+      0.0,
+      0.3,
       0.2,
       0.0,
       0.0,
@@ -3070,6 +3021,7 @@
       0.0,
       0.2,
       0.8,
+      0.0,
       0.0
      ],
      "value": [
@@ -3077,7 +3029,6 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       0,
@@ -3125,6 +3076,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0,
@@ -3147,14 +3099,13 @@
       null,
       null,
       null,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
       1.5,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      1.0,
-      1.0,
-      1.3,
       0.0,
       0.7,
       0.0,
@@ -3188,10 +3139,10 @@
       0.8,
       1.5,
       1.2,
-      0.2
+      0.2,
+      0.5
      ],
      "value": [
-      1,
       0,
       0,
       0,
@@ -3246,6 +3197,7 @@
       0,
       2,
       0,
+      0,
       0
      ]
     },
@@ -3271,15 +3223,14 @@
       0.0,
       0.0,
       0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       0.0,
       0.3,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.2,
       0.0,
       0.0,
       0.0,
@@ -3306,10 +3257,10 @@
       0.0,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.5
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -3339,6 +3290,7 @@
       0,
       2,
       1,
+      0,
       0,
       0,
       0,
@@ -3405,7 +3357,6 @@
       null,
       null,
       null,
-      null,
       10.5,
       10.5,
       null,
@@ -3426,10 +3377,10 @@
       7.8,
       21.8,
       18.0,
-      20.3
+      20.3,
+      12.8
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3484,12 +3435,12 @@
       15,
       36,
       17,
-      15
+      15,
+      20
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3544,10 +3495,10 @@
       30.8,
       38.2,
       43.5,
-      54.0
+      54.0,
+      32.0
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3602,12 +3553,12 @@
       29,
       28,
       29,
-      47
+      47,
+      56
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3662,10 +3613,10 @@
       43.2,
       70.2,
       44.5,
-      59.7
+      59.7,
+      24.0
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3720,7 +3671,8 @@
       39,
       21,
       12,
-      40
+      40,
+      9
      ]
     }
    },
@@ -3741,21 +3693,20 @@
       null,
       null,
       null,
-      0.0,
       0.5,
       0.0,
       0.0,
       0.0,
       0.5,
       0.0,
-      0.3,
-      0.3,
-      0.0,
-      0.0,
-      0.0,
+      0.5,
       0.3,
       0.0,
-      0.2,
+      0.0,
+      0.0,
+      0.3,
+      0.0,
+      0.3,
       0.2,
       0.0,
       0.0,
@@ -3782,6 +3733,7 @@
       0.0,
       0.2,
       0.8,
+      0.0,
       0.0
      ],
      "value": [
@@ -3789,7 +3741,6 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       0,
@@ -3837,6 +3788,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0,
@@ -3859,14 +3811,13 @@
       null,
       null,
       null,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
       1.5,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      1.0,
-      1.0,
-      1.3,
       0.0,
       0.7,
       0.0,
@@ -3900,10 +3851,10 @@
       0.8,
       1.5,
       1.2,
-      0.2
+      0.2,
+      0.5
      ],
      "value": [
-      1,
       0,
       0,
       0,
@@ -3958,6 +3909,7 @@
       0,
       2,
       0,
+      0,
       0
      ]
     },
@@ -3983,15 +3935,14 @@
       0.0,
       0.0,
       0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       0.0,
       0.3,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.2,
       0.0,
       0.0,
       0.0,
@@ -4018,10 +3969,10 @@
       0.0,
       0.0,
       0.0,
-      0.0
+      0.0,
+      0.5
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -4076,11 +4027,20 @@
       0,
       0,
       0,
+      0,
       0
      ]
     }
    }
   }
  },
- "surges": []
+ "surges": [
+  {
+   "community": "인벤",
+   "community_id": "inven",
+   "reasons": [
+    "복귀 · 신규 표현 37건(평소 14.8건의 2.5배)"
+   ]
+  }
+ ]
 }
