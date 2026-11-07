@@ -4034,6 +4034,561 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "인벤",
+    "community_id": "inven",
+    "reads": [
+     {
+      "cost_usd": 0.0324,
+      "count": 2322,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 65,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 139,
+        "title": "병탁이형 미어터지는 원대창고좀 늘려주세요",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290930"
+       },
+       {
+        "body": "있음",
+        "comments": 99,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 138,
+        "title": "나이스단 강요시켰으니 직변권 내놓으라는 초식은ㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290653"
+       },
+       {
+        "body": "있음",
+        "comments": 39,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 83,
+        "title": "만찬 원대캐릭 같이 먹이게 좀 해줘",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292410"
+       },
+       {
+        "body": "있음",
+        "comments": 38,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "권왕 공이속 빨라지는법 아시는분?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292353"
+       },
+       {
+        "body": "있음",
+        "comments": 8,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "6회 제한 진짜 신중하게 풀어야하지않나",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292276"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "8주년 남자아바타는 머리 빼고 써야겠네..",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292731"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "게시량이 평소 대비 0.95배로 실제 급증이 아니며, 특정 사건에 따른 증가로 보기 어렵다."
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 창고·만찬 등 원정대 단위 편의성 개선 요구와 직업 변경권 논쟁에 집중된다. 무작위 글은 세팅 문의, 제한 완화 우려, 아바타 평가 등 개별 주제로 분산되며 공통된 쟁점은 확인되지 않는다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "원정대 창고 공간 부족 및 동일 보상 미합산",
+         "posts": [
+          1
+         ],
+         "quote": "보상 구성도 이름도 같은것들이 안합쳐져서 창고 자리만 차지하는데",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "만찬 원정대 공유 등 편의성 개선 요구",
+         "posts": [
+          3
+         ],
+         "quote": "이번 겨울에 편의성 좀 제대로 손봐라 진짜",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "나이스단 강요 및 직업 변경권 요구에 대한 반발(나이스단의 의미는 불명확하다)",
+         "posts": [
+          2
+         ],
+         "quote": "나이스단 강요시켰으니 직변권 내놓으라는 초식은ㅋㅋ",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "6회 제한 완화 시 배럭 육성 부담 우려",
+         "posts": [
+          5
+         ],
+         "quote": "퇴근하고 6케릭키우기도힘든데 12케릭언제키워",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "권왕 공격·이동속도 세팅 문의",
+         "posts": [
+          4
+         ],
+         "quote": "서폿9 만찬5 밖에 답이없는건가?",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "8주년 남자 아바타 헤어 디자인 불만",
+         "posts": [
+          6
+         ],
+         "quote": "헤드만 빼고 써야지",
+         "quote_post": 6
+        }
+       ],
+       "summary": "이날 인벤 전체 게시글은 2322건으로 평소(2442.5건)의 0.95배 수준이며, 실제 급증은 확인되지 않는다. 추천 상위 글은 원정대 창고 공간 부족, 만찬을 캐릭터별로 먹여야 하는 불편 등 편의성 개선 요구와 '나이스단'·직업 변경권 관련 갈등을 다룬다. 무작위 글은 권왕 공이속 세팅, 6회 제한 완화 우려, 8주년 남자 아바타 평가 등 주제가 분산돼 있다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0429,
+      "count": 112,
+      "label": "'나이스단'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 99,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 138,
+        "title": "나이스단 강요시켰으니 직변권 내놓으라는 초식은ㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290653"
+       },
+       {
+        "body": "있음",
+        "comments": 32,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 7,
+        "title": "나이스단 입장으로써 이번 보석 패치 너무 좋은데?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292066"
+       },
+       {
+        "body": "있음",
+        "comments": 67,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 2,
+        "title": "질문)나이스단 입장에서 보석원대화 꼬움??",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4291387"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "나이스단 다 죽이고 개랏폿이다 살려내라",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4291999"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "나이스단은 애초에 나락간게 아니다",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4291053"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "근데 나이스단이 뒤진게 아니라",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292176"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 원대화 관련 패치가 적용되거나 발표되면서 나이스단 플레이어의 손익 논쟁이 증가했을 가능성이 있으나, 제공된 업데이트·공지 목록에서는 확인되지 않는다."
+        },
+        {
+         "event": "없음",
+         "hypothesis": "보석 패치에 따른 직업 변경권 보상 요구 글이 게시되고 이에 대한 반박 글이 이어지며 언급량이 증가했을 가능성이 있다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 보석 패치와 직업 변경권 요구를 두고 찬반 의견을 구체적으로 다루며, 특히 직변권 요구에 대한 반발 글이 가장 많은 추천을 받았다. 무작위 글은 나이스단이 사라지지 않았다거나 모두가 나이스단이 됐다는 짧은 반응과 서포터 부족 언급이 중심이다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "직업 변경권 보상 요구에 대한 반발",
+         "posts": [
+          1
+         ],
+         "quote": "나이스단 강요시켰으니 직변권 내놓으라는 초식은ㅋㅋ",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "보석 원대화 패치에 대한 나이스단 입장의 평가",
+         "posts": [
+          2,
+          3
+         ],
+         "quote": "보석 창고 이동 안해도 돼서 너무 좋고",
+         "quote_post": 2
+        },
+        {
+         "count": 3,
+         "name": "다캐릭 플레이어와 나이스단의 구분이 사라졌다는 인식",
+         "posts": [
+          3,
+          5,
+          6
+         ],
+         "quote": "우리가 나이스단 된거아님?",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "서포터 구인 어려움",
+         "posts": [
+          4
+         ],
+         "quote": "내방에 10분째 서폿안옴 ㅠㅜ",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "신규 플레이어에 대한 우려",
+         "posts": [
+          3
+         ],
+         "quote": "난 오히려 뉴비들 걱정은 좀 되긴 하는데",
+         "quote_post": 3
+        }
+       ],
+       "summary": "게시글은 보석 원대화(보석 공유로 추정된다) 관련 패치를 두고 '나이스단' 플레이어가 손해를 보는지, 이득을 보는지를 논의한다. '나이스단'의 정확한 의미는 불명확하나, 글에서는 다캐릭 플레이어와 대비되는 표현으로 사용된다. 보석 패치 이후 직업 변경권 보상 요구에 대한 반발, 패치에 만족한다는 의견, 오히려 모두가 나이스단이 됐다는 의견이 함께 게시되어 언급량이 평소 대비 8.8배 증가한 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0396,
+      "count": 31,
+      "label": "'원대화'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 5,
+        "title": "보석 원대화 18일날 들어온다고?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290186"
+       },
+       {
+        "body": "있음",
+        "comments": 22,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 2,
+        "title": "보석 원대화를 반대하는 나이스가 있음?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290998"
+       },
+       {
+        "body": "있음",
+        "comments": 13,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 2,
+        "title": "보석 원대화 나이스단이 왜 손해에요?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290991"
+       },
+       {
+        "body": "있음",
+        "comments": 19,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "나이스단 입장에서 보석 원대화 안하는게 좋긴함",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4291006"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "원대화의 장점",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290807"
+       },
+       {
+        "body": "있음",
+        "comments": 3,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "보석 원대화 언제부터함? 2주뒤?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292258"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "공지 목록 외 경로(방송, 예고, 커뮤니티 전파 등)로 18일 패치에 보석 원대화가 포함된다는 정보가 알려지면서 관련 논의가 증가한 것으로 보인다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 원대화 도입을 반기며 적용일을 기다리거나 손해가 없다는 입장을 보인다. 무작위 글은 적용 시점 문의와 함께 나이스단의 상대적 이득 감소에 대한 아쉬움, 파티 구성 시 판별 기준 변화 등 부수적 영향을 더 다룬다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 원대화 적용 시점 확인",
+         "posts": [
+          1,
+          6
+         ],
+         "quote": "보석 원대화 18일날 들어온다고?",
+         "quote_post": 1
+        },
+        {
+         "count": 3,
+         "name": "여러 캐릭터 육성 부담 완화에 대한 기대",
+         "posts": [
+          1,
+          2,
+          3
+         ],
+         "quote": "동시에 본캐급으로 키워줄수있겠다 생각하니까 너무 좋은데",
+         "quote_post": 2
+        },
+        {
+         "count": 3,
+         "name": "나이스단의 상대적 이득 소멸 논쟁 ('나이스단'의 정확한 의미는 불명확하나, 다캐릭단과 대비되는 집단으로 쓰였다)",
+         "posts": [
+          2,
+          3,
+          4
+         ],
+         "quote": "다캐릭단 대비 누리던 상대적 이득이 없어짐.",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "서포터 보석 점수 부담",
+         "posts": [
+          2
+         ],
+         "quote": "서폿은 보석 점수가 너무 심해",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "원정대 레벨 대비 보석으로 쌀먹 유저 판별",
+         "posts": [
+          5
+         ],
+         "quote": "쌀먹쉐끼니까 파티 거르면됨",
+         "quote_post": 5
+        }
+       ],
+       "summary": "보석 원대화(원정대 단위로 보석을 공유하는 변경으로 보인다)가 18일 또는 2주 뒤 패치에 적용된다는 소식이 공유되면서, 적용 시점을 묻는 글과 찬반 의견이 같은 날 집중적으로 게시됐다. 특히 '나이스단'이 이 변경으로 손해를 보는지를 두고 댓글이 많은 논쟁 글이 다수 게시됐다. 해당 날짜와 전날의 공지 목록에는 관련 항목이 없어, 목록 외 경로로 전해진 예고 정보가 언급량 증가의 계기로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0422,
+      "count": 27,
+      "label": "'6회제한'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 38,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 1,
+        "title": "6회제한 푸는건 좋은데 조건 걸어야 할듯",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290707"
+       },
+       {
+        "body": "있음",
+        "comments": 3,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 1,
+        "title": "6회제한 풀리면, 골드안받는 캐릭들 '더보기 3회 무료' 없어지는거 아닌가?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290804"
+       },
+       {
+        "body": "있음",
+        "comments": 17,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 0,
+        "title": "6회제한은 좀 걱정되긴한다.",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290258"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "6회제한 풀면 골드는 오히려 덜캐게됨",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290724"
+       },
+       {
+        "body": "있음",
+        "comments": 3,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "6회제한 이거 왜 걱정이 앞서냐",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4290230"
+       },
+       {
+        "body": "있음",
+        "comments": 7,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "6회제한 푼건 좋은데",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4292142"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "6회 제한 해제 방침이 공개되어 골드 경제 영향에 대한 논의가 집중된 것으로 보이나, 제공된 업데이트·공지 목록에는 해당 발표가 확인되지 않는다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 골드 유통량 증가 우려와 조건부 해제 요구, 더보기 무료 혜택 문제를 다뤘고 댓글도 많이 달렸다. 무작위 글도 인플레이션 우려와 더보기 무료 문제를 같은 방식으로 제기했으나, 골드 획득이 오히려 감소할 것이라는 상반된 의견이 함께 확인된다. 글에 나오는 '귀골'과 '병탁햄'은 의미가 불명확하다.",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "6회 제한 해제에 따른 골드 인플레이션 우려",
+         "posts": [
+          1,
+          3,
+          5
+         ],
+         "quote": "사실상 골드 인플레가 미친듯이 발생하는?",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "해제 시 신뢰도·레벨 등 조건 부여 요구",
+         "posts": [
+          1
+         ],
+         "quote": "제한적으로 조건 걸면서 풀어야 할거같음",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "골드 미획득 캐릭터의 더보기 무료 혜택 유지 여부",
+         "posts": [
+          2,
+          6
+         ],
+         "quote": "더보기 무료도 사라질려나??",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "해제 후 골드 획득량이 오히려 감소할 것이라는 반론",
+         "posts": [
+          4
+         ],
+         "quote": "해방감 때문에 하고싶은 캐릭만 하게됨",
+         "quote_post": 4
+        }
+       ],
+       "summary": "게시글들은 캐릭터당 골드 획득 6회 제한이 해제되는 것을 전제로 그 영향을 논의하고 있으며, 부캐릭터 추가로 유통 골드가 증가해 골드 인플레이션이 발생할 수 있다는 우려가 중심이다. 일부는 골드를 받지 않는 캐릭터의 '더보기 3회 무료' 혜택이 사라질지를 문의했고, 반대로 제한 해제 후 오히려 골드 획득량이 감소할 것이라는 의견도 게시됐다. 해제 소식이 알려진 경위는 목록에 없으나, 이 소식이 언급량 증가의 직접적 배경으로 보인다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 37건(평소 14.8건의 2.5배)"
+    ],
+    "sentiment": {
+     "base_classified": 9770,
+     "classified": 2322,
+     "neg": 0.3058,
+     "neg_base": 0.4319,
+     "of": 2322,
+     "topics": [
+      {
+       "base": 0.2625,
+       "name": "기타",
+       "share": 0.2636,
+       "topic": "other"
+      },
+      {
+       "base": 0.0842,
+       "name": "성장 · 강화",
+       "share": 0.1688,
+       "topic": "growth"
+      },
+      {
+       "base": 0.214,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1507,
+       "topic": "content"
+      },
+      {
+       "base": 0.1144,
+       "name": "운영 · 이벤트",
+       "share": 0.1279,
+       "topic": "operation"
+      },
+      {
+       "base": 0.1444,
+       "name": "파티 · 커뮤니티",
+       "share": 0.1141,
+       "topic": "social"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.1571,
+  "date": "2026-11-07",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-08T07:24:39+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "인벤",
