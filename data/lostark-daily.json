@@ -4012,6 +4012,186 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "디시인사이드",
+    "community_id": "dcinside",
+    "reads": [
+     {
+      "cost_usd": 0.0336,
+      "count": 803,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 26,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 24,
+        "title": "이유를 알아버린 환수사",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870073"
+       },
+       {
+        "body": "있음",
+        "comments": 29,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 21,
+        "title": "아니 시바 이게 되네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870679"
+       },
+       {
+        "body": "비어 있음",
+        "comments": 14,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 21,
+        "title": "공홈 익스 리샤 댓글 재밌네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870083"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "옜날에 모아둔 영상 보는데 재밌었던거 하나 꺼내옴",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870094"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "근데 보석원대화되면 뉴비는 레이드 싱글강제네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870178"
+       },
+       {
+        "body": "있음",
+        "comments": 9,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "실린 직업중에 무난무난한 딜러 직업있나요?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2870714"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "글 수가 평소보다 감소한 날이며, 이를 설명할 업데이트나 공지는 확인되지 않는다."
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 환수사 유머, 확률 성공 인증, 공홈 댓글 등 가벼운 화제 위주이다. 무작위 글은 보석 체계 변화에 따른 뉴비 레이드 우려와 초보 직업 문의 등 성장·입문 관련 질문이 포함되어 있어 주제가 서로 다르다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "환수사 직업 관련 유머",
+         "posts": [
+          1
+         ],
+         "quote": "두가지맛으로 즐겨요",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "낮은 확률 성공 인증으로 보이는 글(대상 불명확)",
+         "posts": [
+          2
+         ],
+         "quote": "시바 이거 20퍼 아님 ㄹㅇ 아님",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "공홈 익스 리샤 관련 댓글 반응(이미지 글)",
+         "posts": [
+          3
+         ],
+         "quote": "",
+         "quote_post": null
+        },
+        {
+         "count": 1,
+         "name": "보석원대화 시 뉴비의 레이드 파티 구성 우려(보석원대화의 정확한 의미는 불명확하다)",
+         "posts": [
+          5
+         ],
+         "quote": "근데 보석원대화되면 뉴비는 레이드 싱글강제네",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "초보자용 기믹형 딜러 직업 문의",
+         "posts": [
+          6
+         ],
+         "quote": "초보가하기 괜찮은 기믹형 딜러? 이런게 있남..",
+         "quote_post": 6
+        }
+       ],
+       "summary": "이날 디시인사이드의 전체 글은 803건으로 평소 1226.5건의 0.65배 수준이며, 실제로는 증가가 아니라 감소했다. 게시글은 환수사 관련 농담, 20% 확률 성공으로 보이는 인증, 공홈 익스 리샤 댓글, 보석원대화와 뉴비 레이드 문제, 초보용 딜러 직업 문의 등으로 흩어져 있어 하나의 공통 이슈는 확인되지 않는다. 그날과 전날의 업데이트나 공지도 없어 글 수 변화를 설명할 뚜렷한 계기는 보이지 않는다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 19건(평소 8.8건의 2.16배)"
+    ],
+    "sentiment": {
+     "base_classified": 0,
+     "classified": 803,
+     "neg": 0.3283,
+     "neg_base": null,
+     "of": 803,
+     "topics": [
+      {
+       "base": null,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2316,
+       "topic": "content"
+      },
+      {
+       "base": null,
+       "name": "기타",
+       "share": 0.1731,
+       "topic": "other"
+      },
+      {
+       "base": null,
+       "name": "성장 · 강화",
+       "share": 0.1544,
+       "topic": "growth"
+      },
+      {
+       "base": null,
+       "name": "파티 · 커뮤니티",
+       "share": 0.1432,
+       "topic": "social"
+      },
+      {
+       "base": null,
+       "name": "운영 · 이벤트",
+       "share": 0.1158,
+       "topic": "operation"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.0336,
+  "date": "2026-11-08",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-09T07:20:47+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "디시인사이드",
