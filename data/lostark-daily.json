@@ -3934,6 +3934,538 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "인벤",
+    "community_id": "inven",
+    "reads": [
+     {
+      "cost_usd": 0.0461,
+      "count": 2228,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 131,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 107,
+        "title": "솔직히 지금 밸런스 심각한 수준임",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304726"
+       },
+       {
+        "body": "있음",
+        "comments": 135,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 94,
+        "title": "보석원대화가 띠거운 놈들",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304887"
+       },
+       {
+        "body": "있음",
+        "comments": 48,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 94,
+        "title": "전재학 이 ㅆ발롬아 니가 QA델고 이 판 깨 봐",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304295"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "창술 웰케 구려졋냐",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304914"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "이정도면 국민 원대 가능?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4306433"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "모르둠 교환 언제까지임??",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4306197"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "이날은 게시량이 평소 대비 약 절반으로 감소했으며, 그날과 전날에 공지나 업데이트가 없어 화제를 만든 사건이 확인되지 않는다. 게시글 내용으로도 감소 원인은 설명되지 않는다."
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 밸런스, 보석 원정대화, 레이드 패턴 등 시스템 전반에 대한 비판과 분석을 담고 있다. 무작위 글은 창술 직업 약화 체감 외에는 원정대 구성 문의와 이벤트 기간 질문 등 개인적이고 짧은 질문 위주로, 추천 상위 글의 밸런스 불만과 일부만 겹친다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "직업 밸런스 격차 불만(벨가 기준 상하위 직업 딜 차이)",
+         "posts": [
+          1,
+          4
+         ],
+         "quote": "그냥 밸런스 자체가 망가져있다...",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "보석 원정대화에 따른 유저 계층별 유불리와 골드 판매 유저 불이익",
+         "posts": [
+          2
+         ],
+         "quote": "보석원대화로 스펙올라서 쾌적한 레이드",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "레이드 관문 패턴의 운 요소와 개발진에 대한 불만",
+         "posts": [
+          3
+         ],
+         "quote": "실력보다 패턴뽑기",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "원정대 캐릭터 구성 문의(국민 원대의 의미는 불명확하다)",
+         "posts": [
+          5
+         ],
+         "quote": "이정도면 국민 원대 가능?",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "이벤트 교환 기간 문의(모르둠의 의미는 불명확하다)",
+         "posts": [
+          6
+         ],
+         "quote": "이벤트 배너 봐도 안보이네",
+         "quote_post": 6
+        }
+       ],
+       "summary": "이날 인벤 전체 글은 2228건으로 평소 4593.5건의 0.49배 수준이며, 급증이 아니라 오히려 감소한 날로 확인된다. 추천 상위 글은 직업 간 딜 격차를 지적하는 밸런스 불만, 보석 원정대화 도입에 대한 유저 계층별 유불리 분석, 특정 관문(2-3)의 패턴 운 요소에 대한 강한 불만을 다룬다. 공지나 업데이트가 없는 날이어서 게시량 감소의 원인은 게시글로 설명되지 않는다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0495,
+      "count": 81,
+      "label": "'뉴비'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 45,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 90,
+        "title": "뉴비 10겁이고 나발이고",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305559"
+       },
+       {
+        "body": "있음",
+        "comments": 29,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 79,
+        "title": "2026 모베캠 후발대 뉴비의 성장 추이",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305191"
+       },
+       {
+        "body": "있음",
+        "comments": 45,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 66,
+        "title": "뉴비 걱정 할거면 보석은 우선 순위가 아닝",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305809"
+       },
+       {
+        "body": "있음",
+        "comments": 28,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "그래서 뉴비가 어딨는데",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305747"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "뉴비",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305677"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "우리 길드 뉴비들은 보석원대화 좋아하던데 대체 어떤 뉴비랑 겜하고있음?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305886"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 원대화 관련 변경 또는 논의가 커뮤니티에서 확산되면서 뉴비에게 미치는 영향을 두고 찬반 글이 집중적으로 게시된 것으로 보인다. 해당 날짜와 전날의 공지 목록에서는 관련 업데이트가 확인되지 않는다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 원대화 논쟁에서 뉴비를 명분으로 삼는 주장을 비판하고 실제 진입 장벽과 뉴비 성장 사례를 구체적으로 제시했다. 무작위 글은 뉴비의 존재 자체를 냉소하는 단문이 다수이고, 한 건만 원대화가 뉴비에게도 이득이라는 같은 방향의 주장을 제시했다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 원대화가 뉴비에게 불리하다는 주장에 대한 반박",
+         "posts": [
+          1,
+          6
+         ],
+         "quote": "원대 체급도 같이 올리는 갓패치아님??",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "뉴비 진입 장벽(펫 특성, 크리스탈 비용, 깨포, 장시간 퀘스트)",
+         "posts": [
+          3
+         ],
+         "quote": "크리스탈 충전기능 볼까요? 이 감성이 말이 안되지",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "실제 뉴비의 성장 사례와 지인과 함께 할 콘텐츠 부족",
+         "posts": [
+          2
+         ],
+         "quote": "유입들은 묵묵히 열심히 즐기고 있다는거 알아주셨으면 해요",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "뉴비 존재 여부에 대한 냉소와 단문 글",
+         "posts": [
+          4,
+          5
+         ],
+         "quote": "보이지도않는 뉴비죽는다고 그러고있어",
+         "quote_post": 4
+        }
+       ],
+       "summary": "보석 '원대화'(원정대 단위 적용으로 보이나 정확한 의미는 게시글만으로 확인되지 않는다)가 뉴비에게 불리하다는 주장을 두고 반박 글이 다수 게시됐다. 추천 상위 글은 뉴비를 핑계로 한 주장을 비판하거나 보석보다 펫 특성, 크리스탈 비용, 긴 퀘스트 같은 진입 장벽이 우선 과제라고 지적했다. 2026년 8월에 시작한 뉴비의 1760 달성 사례도 함께 게시되면서 '뉴비' 언급이 평소의 15.1배로 증가한 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0424,
+      "count": 64,
+      "label": "'원대화'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 25,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 47,
+        "title": "보석 원대화 시기는 모르겠고 10광 외형이나 좀 바꿔줬으면",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305402"
+       },
+       {
+        "body": "있음",
+        "comments": 24,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 38,
+        "title": "원대화는 진짜 뉴비방패세우면안됨",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304561"
+       },
+       {
+        "body": "있음",
+        "comments": 18,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 26,
+        "title": "보석 원대화는 단점이 1도 없는 장점만 있는 시스템이지",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305163"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "그니깐 다계정 보석맞출때까지 원대화 유예하란거잖아",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305608"
+       },
+       {
+        "body": "있음",
+        "comments": 7,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 1,
+        "title": "나 다계정쌀숭이인데 보석 원대화 좋다",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304611"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "나 응애 모코코인데 보석 원대화 찬성한다",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305697"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 원대화 도입 및 시기를 둘러싼 커뮤니티 논쟁이 확산되면서 관련 글이 집중 게시된 것으로 보인다. 원대화 유예를 주장하는 의견에 대한 반박 글이 연쇄적으로 증가한 것으로 추정된다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글과 무작위 글 모두 보석 원대화에 찬성하는 입장이다. 추천 상위 글은 구조적 문제와 기대 효과를 구체적으로 제시했고, 무작위 글은 다계정 이용자나 신규 이용자라는 입장에서 짧게 지지 의사를 밝히거나 유예 주장을 비꼬는 데 그쳤다.",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "보석 원대화 찬성 및 기대 효과",
+         "posts": [
+          3,
+          5,
+          6
+         ],
+         "quote": "보석 원대화는 단점이 1도 없는 장점만 있는 시스템이지",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "뉴비 보호를 근거로 한 원대화 유예 주장에 대한 반박",
+         "posts": [
+          2,
+          4
+         ],
+         "quote": "원대화는 진짜 뉴비방패세우면안됨",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "같은 캐릭터 복수 육성 구조(나이스단, 의미 불명확) 문제",
+         "posts": [
+          2,
+          3
+         ],
+         "quote": "같은캐릭 2개키워야하나 << 시작부터 이런생각하게됨",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "보석 시세 안정 및 배럭 투력 컷 완화 기대",
+         "posts": [
+          3
+         ],
+         "quote": "내 배럭이 이제 투력 컷에서 벗어나 빠르게 숙제를 뺄 수 있다.",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "10광 보석 외형 개선 요구",
+         "posts": [
+          1
+         ],
+         "quote": "10광 외형이나 좀 바꿔줬으면",
+         "quote_post": 1
+        }
+       ],
+       "summary": "보석 원대화(문맥상 보석 효과를 원정대 단위로 공유하는 방식으로 보인다)의 도입 여부와 시기를 두고 찬반 의견이 집중 게시됐다. 추천 상위 글은 원대화가 같은 직업 다캐릭 육성(나이스단, 의미 불명확)과 보석 대여 문제를 해소하고 배럭 숙제를 수월하게 한다는 찬성 논리를 제시했으며, 뉴비 보호를 이유로 원대화를 미루자는 주장에 반박했다. 해당일과 전날 공지·업데이트는 확인되지 않아, 공식 발표보다는 커뮤니티 내 논쟁 확산이 언급량 증가의 원인으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0499,
+      "count": 42,
+      "label": "'보석원대화'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 135,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 94,
+        "title": "보석원대화가 띠거운 놈들",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304887"
+       },
+       {
+        "body": "있음",
+        "comments": 73,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 31,
+        "title": "보석원대화 빨리들어오는 이유가 뭐에요 ㅋㅋ??",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304462"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 6,
+        "title": "보석원대화가 왜 뉴비한테 안좋냐?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305954"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "보석원대화 빨리 들어오는거로 뭐라하는거면",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4304516"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "지금 보석원대화 내가 반대하는 이유",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305371"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "좋아 준비다됬으니까 빨리 보석원대화 ㄱㄱ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4305226"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "개발 측이 보석원대화 도입을 회의 후 빠르게 진행하겠다고 밝힌 뒤 도입 시기와 이해관계를 둘러싼 논쟁이 확대된 것으로 보이지만, 목록에 해당 공지가 없어 확인되지 않는다"
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 보석원대화에 찬성하면서 반대 측을 다계정 쌀먹 유저로 비판하거나 뉴비에게 유리하다는 논리를 제시한다. 무작위 글은 같은 찬성 입장도 있지만, 2부 이전 조기 도입에 반대하는 짧은 의견도 포함되어 입장이 더 다양하다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "반대 측을 다계정 나이스단·쌀먹 유저로 규정하는 주장",
+         "posts": [
+          1,
+          4
+         ],
+         "quote": "배럭들 보석원대화로 스펙이 뒤쳐지니 띠거울만함",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "도입 시기 재촉과 개발 측 회의 대기에 대한 논쟁",
+         "posts": [
+          2,
+          6
+         ],
+         "quote": "분명 확장렙도 안정해졌고 빠른시일내 회의해서 하겠다는데",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "보석원대화가 뉴비 성장과 배럭 육성에 유리하다는 의견",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "보석원대화하면 오히려 초기 적은투자로도",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "2부 업데이트 전 조기 도입 시 재미가 감소한다는 반대 의견('로벤'의 의미는 불명확하다)",
+         "posts": [
+          5
+         ],
+         "quote": "2부 아직 한달넘게 남아서 벌써 들어오면 로벤 재미없어짐",
+         "quote_post": 5
+        }
+       ],
+       "summary": "보석 원정대 공유(보석원대화) 도입을 둘러싸고 반대하는 유저의 이해관계, 도입 시기, 뉴비에게 미치는 영향을 두고 논쟁하는 글이 집중 게시됐다. 추천 상위 글은 다계정 '나이스단'·쌀먹 유저가 보유 보석을 판매해 상대적으로 손해를 보기 때문에 반대한다고 주장한다. 글 2는 개발 측이 회의를 거쳐 빠른 시일 안에 도입하겠다고 이미 밝혔다고 언급하지만, 그날과 전날의 업데이트·공지 목록에서는 관련 공지가 확인되지 않는다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 151건(평소 29건의 5.21배)"
+    ],
+    "sentiment": {
+     "base_classified": 18374,
+     "classified": 2228,
+     "neg": 0.3645,
+     "neg_base": 0.4365,
+     "of": 2228,
+     "topics": [
+      {
+       "base": 0.1985,
+       "name": "기타",
+       "share": 0.3671,
+       "topic": "other"
+      },
+      {
+       "base": 0.0895,
+       "name": "성장 · 강화",
+       "share": 0.184,
+       "topic": "growth"
+      },
+      {
+       "base": 0.1,
+       "name": "파티 · 커뮤니티",
+       "share": 0.1293,
+       "topic": "social"
+      },
+      {
+       "base": 0.1543,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1158,
+       "topic": "content"
+      },
+      {
+       "base": 0.275,
+       "name": "운영 · 이벤트",
+       "share": 0.0566,
+       "topic": "operation"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.1879,
+  "date": "2026-11-13",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-14T07:20:37+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "인벤",
