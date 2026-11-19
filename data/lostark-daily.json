@@ -5,129 +5,121 @@
    "community": "인벤",
    "community_id": "inven",
    "posts": {
-    "base": 2876.0,
-    "ratio": 1.38,
-    "value": 3956
+    "base": 3468.0,
+    "ratio": 0.69,
+    "value": 2386
    },
    "region": "국내",
    "rising": [
     {
-     "base": 9.6,
-     "count": 192,
+     "base": 0.6,
+     "count": 86,
      "new": false,
-     "ratio": 19.9,
-     "word": "바드"
+     "ratio": 133.8,
+     "word": "리트냥이"
     },
     {
-     "base": 9.1,
-     "count": 107,
+     "base": 0.4,
+     "count": 67,
      "new": false,
-     "ratio": 11.8,
-     "word": "밸패"
-    },
-    {
-     "base": 12.3,
-     "count": 110,
-     "new": false,
-     "ratio": 9.0,
-     "word": "서폿"
-    },
-    {
-     "base": 2.9,
-     "count": 92,
-     "new": false,
-     "ratio": 32.2,
-     "word": "홀나"
+     "ratio": 156.3,
+     "word": "재난문자"
     },
     {
      "base": 5.4,
-     "count": 84,
+     "count": 50,
      "new": false,
-     "ratio": 15.7,
+     "ratio": 9.3,
+     "word": "수능"
+    },
+    {
+     "base": 11.3,
+     "count": 34,
+     "new": false,
+     "ratio": 3.0,
      "word": "다중치명타"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 13.2,
-     "ratio": 3.64,
-     "value": 48
+     "base": 10.5,
+     "ratio": 2.19,
+     "value": 23
     },
     "복귀 · 신규 표현": {
-     "base": 18.0,
-     "ratio": 1.0,
-     "value": 18
+     "base": 23.2,
+     "ratio": 0.73,
+     "value": 17
     },
     "이탈 표현": {
-     "base": 18.0,
-     "ratio": 1.72,
-     "value": 31
+     "base": 18.8,
+     "ratio": 0.64,
+     "value": 12
     }
    },
    "surge": true,
    "surge_reasons": [
-    "버그 신호 48건(평소 13.2건의 3.64배)"
+    "버그 신호 23건(평소 10.5건의 2.19배)"
    ],
    "top": [
     {
      "board": "자유게시판",
-     "comments": 282,
+     "comments": 149,
      "community": "인벤",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "바드들 뭔 부앙특화바드만 사기인거처럼 말하네",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4316940",
-     "views": 22230
+     "title": "아직도 스마게가 소통한다 착각하는 애들이 많네",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4322664",
+     "views": 20537
     },
     {
      "board": "자유게시판",
-     "comments": 257,
+     "comments": 119,
      "community": "인벤",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "어제 벨나에서 못하는사람 뭐라했더니 우편옴",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4319506",
-     "views": 21972
+     "title": "제발 내일 병탁이형 한번만 대리언급좀해줘..",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4323421",
+     "views": 4861
     },
     {
      "board": "자유게시판",
-     "comments": 190,
+     "comments": 109,
      "community": "인벤",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "체급높은 나이스단 옹호 논리가 웃기긴함 ㅋㅋ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4319948",
-     "views": 15675
+     "title": "30추 인기님 욕한거 왜 글삭함?",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4322057",
+     "views": 21779
     },
     {
      "board": "자유게시판",
-     "comments": 57,
+     "comments": 99,
      "community": "인벤",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "ㅇㅂ) 포피셜 서폿 정리",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4317432",
-     "views": 64466
+     "title": "고정팟 알카 징징대길래 이거 보여줬다",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4321468",
+     "views": 43841
     },
     {
      "board": "자유게시판",
-     "comments": 45,
+     "comments": 100,
      "community": "인벤",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "포셔 개화났네 ㅋㅋㅋ",
-     "url": "https://www.inven.co.kr/board/lostark/6271/4318376",
-     "views": 51789
+     "title": "이건 누구 아이디어냐 병탁아?",
+     "url": "https://www.inven.co.kr/board/lostark/6271/4321321",
+     "views": 35476
     }
    ],
    "trend": {
     "dates": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -140,10 +132,10 @@
      "2026-11-15",
      "2026-11-16",
      "2026-11-17",
-     "2026-11-18"
+     "2026-11-18",
+     "2026-11-19"
     ],
     "posts": [
-     2105,
      3773,
      2322,
      1662,
@@ -156,7 +148,8 @@
      1848,
      2250,
      2303,
-     3956
+     3956,
+     2386
     ]
    }
   },
@@ -165,129 +158,112 @@
    "community": "아카라이브",
    "community_id": "arca",
    "posts": {
-    "base": 1162.8,
-    "ratio": 1.2,
-    "value": 1395
+    "base": 1588.5,
+    "ratio": 0.71,
+    "value": 1122
    },
    "region": "국내",
    "rising": [
     {
-     "base": 1.3,
+     "base": 0.0,
      "count": 37,
-     "new": false,
-     "ratio": 28.8,
-     "word": "바드"
+     "new": true,
+     "ratio": null,
+     "word": "리트냥이"
     },
     {
-     "base": 1.1,
-     "count": 33,
+     "base": 2.0,
+     "count": 28,
      "new": false,
-     "ratio": 30.8,
-     "word": "뭉가"
+     "ratio": 14.0,
+     "word": "수능"
     },
     {
-     "base": 6.4,
-     "count": 37,
-     "new": false,
-     "ratio": 5.8,
-     "word": "세나지3"
-    },
-    {
-     "base": 1.3,
-     "count": 27,
-     "new": false,
-     "ratio": 21.0,
-     "word": "다중치명타"
-    },
-    {
-     "base": 0.9,
+     "base": 0.1,
      "count": 25,
      "new": false,
-     "ratio": 26.9,
-     "word": "다중치명"
+     "ratio": 175.0,
+     "word": "재난문자"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 5.2,
-     "ratio": 4.23,
-     "value": 22
-    },
-    "복귀 · 신규 표현": {
-     "base": 5.0,
-     "ratio": 1.6,
+     "base": 2.2,
+     "ratio": 3.64,
      "value": 8
     },
+    "복귀 · 신규 표현": {
+     "base": 8.0,
+     "ratio": 0.25,
+     "value": 2
+    },
     "이탈 표현": {
-     "base": 1.5,
-     "ratio": 2.0,
-     "value": 3
+     "base": 2.8,
+     "ratio": 0.0,
+     "value": 0
     }
    },
-   "surge": true,
-   "surge_reasons": [
-    "버그 신호 22건(평소 5.2건의 4.23배)"
-   ],
+   "surge": false,
+   "surge_reasons": [],
    "top": [
     {
      "board": "로스트아크 채널",
-     "comments": 54,
+     "comments": 58,
      "community": "아카라이브",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "로아에 변화의 바람이 크게 불고잇어서 이해는 하는데",
-     "url": "https://arca.live/b/lostark/189508769",
-     "views": 956
+     "title": "누군지 닉은 안까겠는데 댓삭튀로 비틱질 하는 놈",
+     "url": "https://arca.live/b/lostark/189572209",
+     "views": 964
     },
     {
      "board": "로스트아크 채널",
-     "comments": 42,
+     "comments": 38,
      "community": "아카라이브",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "흠 걍 로아 한주 쉴까",
-     "url": "https://arca.live/b/lostark/189466057",
-     "views": 213
+     "title": "난 콜라 먹다가 30퍼쯤 남으면 물 부어서 마심",
+     "url": "https://arca.live/b/lostark/189601106",
+     "views": 130
     },
     {
      "board": "로스트아크 채널",
-     "comments": 37,
+     "comments": 35,
      "community": "아카라이브",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "기분 쏘쏘한데 서로 죽탱이 한대씩 갈기고 요단강 구경가실분",
-     "url": "https://arca.live/b/lostark/189492763",
-     "views": 121
+     "title": "3000번대 글카로 AI돌리는사람 이거써보샘",
+     "url": "https://arca.live/b/lostark/189661623",
+     "views": 186
     },
     {
      "board": "로스트아크 채널",
-     "comments": 5,
+     "comments": 25,
      "community": "아카라이브",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "클뜯",
-     "url": "https://arca.live/b/lostark/189478337",
-     "views": 1338
+     "title": "사실 주딱 파딱이 모두 AI라면???",
+     "url": "https://arca.live/b/lostark/189599922",
+     "views": 548
     },
     {
      "board": "로스트아크 채널",
-     "comments": 24,
+     "comments": 19,
      "community": "아카라이브",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "ㅍ) 다중 치명타와 뭉가",
-     "url": "https://arca.live/b/lostark/189536034",
-     "views": 770
+     "title": "일단 올려보라며",
+     "url": "https://arca.live/b/lostark/189631750",
+     "views": 532
     }
    ],
    "trend": {
     "dates": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -300,10 +276,10 @@
      "2026-11-15",
      "2026-11-16",
      "2026-11-17",
-     "2026-11-18"
+     "2026-11-18",
+     "2026-11-19"
     ],
     "posts": [
-     890,
      1587,
      782,
      774,
@@ -316,7 +292,8 @@
      856,
      673,
      664,
-     1395
+     1395,
+     1122
     ]
    }
   },
@@ -325,22 +302,22 @@
    "community": "로스트아크 공식 자유게시판",
    "community_id": "lostark_free",
    "posts": {
-    "base": 15.8,
-    "ratio": 0.38,
-    "value": 6
+    "base": 16.8,
+    "ratio": 0.83,
+    "value": 14
    },
    "region": "국내",
    "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 0.2,
-     "ratio": 0.0,
-     "value": 0
+     "base": 0.5,
+     "ratio": 2.0,
+     "value": 1
     },
     "복귀 · 신규 표현": {
-     "base": 0.8,
-     "ratio": 0.0,
-     "value": 0
+     "base": 0.5,
+     "ratio": 4.0,
+     "value": 2
     },
     "이탈 표현": {
      "base": 0.2,
@@ -353,63 +330,62 @@
    "top": [
     {
      "board": "공식 자유게시판",
-     "comments": 9,
+     "comments": 4,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "증명의 전장없어졌다고? 와 진짜 로아 무능 그자체구나",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14638163",
-     "views": 344
+     "title": "나진짜 궁금한게있는데",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14639697",
+     "views": 272
+    },
+    {
+     "board": "공식 자유게시판",
+     "comments": 4,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-19",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "ㅊㅊ",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14640664",
+     "views": 22
+    },
+    {
+     "board": "공식 자유게시판",
+     "comments": 3,
+     "community": "로스트아크 공식 자유게시판",
+     "date": "2026-11-19",
+     "pick": "댓글",
+     "sentiment": null,
+     "title": "ㆍ",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14639792",
+     "views": 37
     },
     {
      "board": "공식 자유게시판",
      "comments": 2,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-18",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "ㅊㅊ",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14638967",
-     "views": 21
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 1,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-18",
-     "pick": "댓글",
-     "sentiment": null,
-     "title": "지금 애플 아이디로 로긴되니? 난 안되는데;;",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14637729",
-     "views": 53
-    },
-    {
-     "board": "공식 자유게시판",
-     "comments": 1,
-     "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "아니근데 궁금한게",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14638873",
-     "views": 46
+     "title": "그러면 안경쓴사람들 다 피해볼수있겟네?",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14639566",
+     "views": 115
     },
     {
      "board": "공식 자유게시판",
-     "comments": 0,
+     "comments": 2,
      "community": "로스트아크 공식 자유게시판",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "내가 왜 빌런이에욤 뀨?",
-     "url": "https://lostark.game.onstove.com/Community/Free/Views/14638869",
-     "views": 36
+     "title": "[로랜디 v1.0.1] 정식 서버 오픈 · 베타 *** 모집 (~11/25)",
+     "url": "https://lostark.game.onstove.com/Community/Free/Views/14639503",
+     "views": 87
     }
    ],
    "trend": {
     "dates": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -422,10 +398,10 @@
      "2026-11-15",
      "2026-11-16",
      "2026-11-17",
-     "2026-11-18"
+     "2026-11-18",
+     "2026-11-19"
     ],
     "posts": [
-     19,
      21,
      13,
      26,
@@ -438,7 +414,8 @@
      5,
      18,
      14,
-     6
+     7,
+     14
     ]
    }
   },
@@ -447,129 +424,105 @@
    "community": "디시인사이드",
    "community_id": "dcinside",
    "posts": {
-    "base": 1518.5,
-    "ratio": 1.38,
-    "value": 2092
+    "base": 2101.2,
+    "ratio": 0.47,
+    "value": 995
    },
    "region": "국내",
    "rising": [
     {
-     "base": 2.9,
-     "count": 120,
+     "base": 4.4,
+     "count": 21,
      "new": false,
-     "ratio": 41.0,
-     "word": "바드"
-    },
-    {
-     "base": 4.6,
-     "count": 74,
-     "new": false,
-     "ratio": 15.9,
-     "word": "서폿"
-    },
-    {
-     "base": 3.0,
-     "count": 48,
-     "new": false,
-     "ratio": 16.0,
-     "word": "밸패"
-    },
-    {
-     "base": 0.6,
-     "count": 40,
-     "new": false,
-     "ratio": 62.2,
-     "word": "특화"
-    },
-    {
-     "base": 1.6,
-     "count": 39,
-     "new": false,
-     "ratio": 24.8,
+     "ratio": 4.8,
      "word": "뭉가"
+    },
+    {
+     "base": 0.3,
+     "count": 15,
+     "new": false,
+     "ratio": 52.5,
+     "word": "리트냥이"
     }
    ],
    "signals": {
     "버그 신호": {
-     "base": 5.2,
-     "ratio": 8.46,
-     "value": 44
+     "base": 3.2,
+     "ratio": 3.44,
+     "value": 11
     },
     "복귀 · 신규 표현": {
-     "base": 6.2,
-     "ratio": 1.13,
-     "value": 7
+     "base": 11.8,
+     "ratio": 0.42,
+     "value": 5
     },
     "이탈 표현": {
-     "base": 7.2,
-     "ratio": 0.69,
-     "value": 5
+     "base": 10.5,
+     "ratio": 0.19,
+     "value": 2
     }
    },
-   "surge": true,
-   "surge_reasons": [
-    "버그 신호 44건(평소 5.2건의 8.46배)"
-   ],
+   "surge": false,
+   "surge_reasons": [],
    "top": [
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 34,
+     "comments": 31,
      "community": "디시인사이드",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "도화가 밸런스의 관해서.manhwa",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880635",
-     "views": 1516
+     "title": "피면 많은 캐를 찾는 당신",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2882148",
+     "views": 154
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 29,
+     "comments": 25,
      "community": "디시인사이드",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "다중치명타 오피셜",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879798",
-     "views": 1975
+     "title": "씹스트아크",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881563",
+     "views": 1834
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 28,
+     "comments": 24,
      "community": "디시인사이드",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "\"병신\"",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880249",
-     "views": 1783
+     "title": "저히기상이옙흐죠ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2882347",
+     "views": 125
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 12,
+     "comments": 19,
      "community": "디시인사이드",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "근데 존나 웃기네 사전에 방향성도 공개하고 한 패치인데",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879995",
-     "views": 2218
+     "title": "아 병신겜",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881575",
+     "views": 1791
     },
     {
      "board": "로아온 마이너 갤러리",
-     "comments": 21,
+     "comments": 17,
      "community": "디시인사이드",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "조회",
      "sentiment": null,
-     "title": "서폿 저점패치는 진짜 잘한게 맞네요",
-     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880350",
-     "views": 2050
+     "title": "개병탁",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881572",
+     "views": 1765
     }
    ],
    "trend": {
     "dates": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -582,10 +535,10 @@
      "2026-11-15",
      "2026-11-16",
      "2026-11-17",
-     "2026-11-18"
+     "2026-11-18",
+     "2026-11-19"
     ],
     "posts": [
-     916,
      2055,
      995,
      803,
@@ -598,7 +551,8 @@
      685,
      1151,
      949,
-     2092
+     2092,
+     995
     ]
    }
   },
@@ -607,22 +561,22 @@
    "community": "레딧",
    "community_id": "reddit",
    "posts": {
-    "base": 10.2,
-    "ratio": 1.18,
-    "value": 12
+    "base": 11.0,
+    "ratio": 1.0,
+    "value": 11
    },
    "region": "해외",
    "rising": [],
    "signals": {
     "버그 신호": {
-     "base": 0.2,
+     "base": 0.8,
      "ratio": 0.0,
      "value": 0
     },
     "복귀 · 신규 표현": {
-     "base": 1.8,
-     "ratio": 0.56,
-     "value": 1
+     "base": 0.8,
+     "ratio": 0.0,
+     "value": 0
     },
     "이탈 표현": {
      "base": 0.0,
@@ -635,41 +589,40 @@
    "top": [
     {
      "board": "r/lostarkgame",
-     "comments": 131,
+     "comments": 49,
      "community": "레딧",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Echoes of Thunder",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xypz69/",
+     "title": "The community didn't learn anything",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1y08tbq/",
      "views": null
     },
     {
      "board": "r/lostarkgame",
-     "comments": 36,
+     "comments": 24,
      "community": "레딧",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "New KR class balance patch",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xz1wow/",
+     "title": "Praise be whoever decided to remove NIM extreme act 3 & Kaz",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xzy8zb/",
      "views": null
     },
     {
      "board": "r/lostarkgame",
-     "comments": 33,
+     "comments": 13,
      "community": "레딧",
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "pick": "댓글",
      "sentiment": null,
-     "title": "Smilegate, I feel stupid .",
-     "url": "https://www.reddit.com/r/lostarkgame/comments/1xywa22/",
+     "title": "Isle of Remembrance New Una Task/Reputation",
+     "url": "https://www.reddit.com/r/lostarkgame/comments/1xzx4ql/",
      "views": null
     }
    ],
    "trend": {
     "dates": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -682,10 +635,10 @@
      "2026-11-15",
      "2026-11-16",
      "2026-11-17",
-     "2026-11-18"
+     "2026-11-18",
+     "2026-11-19"
     ],
     "posts": [
-     2,
      6,
      6,
      4,
@@ -698,14 +651,15 @@
      4,
      3,
      6,
-     12
+     12,
+     11
     ]
    }
   }
  ],
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "game": "lostark",
- "generated_at": "2026-11-19T04:57:48+09:00",
+ "generated_at": "2026-11-20T03:08:20+09:00",
  "name": "로스트아크",
  "rules": {
   "rise_days": 14,
@@ -722,7 +676,6 @@
  },
  "series": {
   "dates": [
-   "2026-09-24",
    "2026-09-25",
    "2026-09-26",
    "2026-09-27",
@@ -777,10 +730,10 @@
    "2026-11-15",
    "2026-11-16",
    "2026-11-17",
-   "2026-11-18"
+   "2026-11-18",
+   "2026-11-19"
   ],
   "holidays": {
-   "2026-09-24": "추석",
    "2026-09-25": "추석",
    "2026-09-26": "추석",
    "2026-10-05": "대체공휴일(개천절)",
@@ -789,7 +742,6 @@
   "posts": {
    "community:arca": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -844,10 +796,10 @@
      803.2,
      888.0,
      886.0,
-     1162.8
+     1162.8,
+     1588.5
     ],
     "value": [
-     1187,
      826,
      731,
      830,
@@ -902,12 +854,12 @@
      856,
      673,
      664,
-     1395
+     1395,
+     1122
     ]
    },
    "community:dcinside": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -962,10 +914,10 @@
      1141.2,
      1206.5,
      1172.5,
-     1518.5
+     1518.5,
+     2101.2
     ],
     "value": [
-     2277,
      1484,
      1371,
      1300,
@@ -1020,12 +972,12 @@
      685,
      1151,
      949,
-     2092
+     2092,
+     995
     ]
    },
    "community:inven": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1080,10 +1032,10 @@
      2258.0,
      2764.8,
      2532.5,
-     2876.0
+     2876.0,
+     3468.0
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1138,12 +1090,12 @@
      1848,
      2250,
      2303,
-     3956
+     3956,
+     2386
     ]
    },
    "community:lostark_free": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1198,10 +1150,10 @@
      15.5,
      12.5,
      11.2,
-     15.8
+     15.8,
+     16.8
     ],
     "value": [
-     7,
      6,
      7,
      5,
@@ -1256,7 +1208,8 @@
      5,
      18,
      14,
-     6
+     7,
+     14
     ]
    },
    "community:reddit": {
@@ -1275,21 +1228,20 @@
      null,
      null,
      null,
-     5.5,
      8.0,
      10.5,
      5.5,
      6.0,
      7.0,
      6.5,
-     6.3,
+     6.0,
      7.0,
      11.0,
      6.3,
      7.0,
      9.0,
      6.7,
-     5.5,
+     5.0,
      7.8,
      11.0,
      4.8,
@@ -1316,10 +1268,10 @@
      7.0,
      12.5,
      7.5,
-     10.2
+     10.2,
+     11.0
     ],
     "value": [
-     7,
      13,
      7,
      7,
@@ -1374,12 +1326,12 @@
      4,
      3,
      6,
-     12
+     12,
+     11
     ]
    },
    "region:국내": {
     "base": [
-     null,
      null,
      null,
      null,
@@ -1434,10 +1386,10 @@
      4218.0,
      4871.8,
      4602.2,
-     5573.0
+     5573.0,
+     7174.5
     ],
     "value": [
-     null,
      null,
      null,
      null,
@@ -1492,7 +1444,8 @@
      3394,
      4092,
      3930,
-     7449
+     7450,
+     4517
     ]
    },
    "region:해외": {
@@ -1511,21 +1464,20 @@
      null,
      null,
      null,
-     5.5,
      8.0,
      10.5,
      5.5,
      6.0,
      7.0,
      6.5,
-     6.3,
+     6.0,
      7.0,
      11.0,
      6.3,
      7.0,
      9.0,
      6.7,
-     5.5,
+     5.0,
      7.8,
      11.0,
      4.8,
@@ -1552,10 +1504,10 @@
      7.0,
      12.5,
      7.5,
-     10.2
+     10.2,
+     11.0
     ],
     "value": [
-     7,
      13,
      7,
      7,
@@ -1610,7 +1562,8 @@
      4,
      3,
      6,
-     12
+     12,
+     11
     ]
    }
   },
@@ -1618,7 +1571,6 @@
    "community:arca": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1673,10 +1625,10 @@
       1.5,
       1.2,
       2.2,
-      5.2
+      5.2,
+      2.2
      ],
      "value": [
-      6,
       1,
       4,
       0,
@@ -1731,12 +1683,12 @@
       5,
       0,
       5,
-      22
+      22,
+      8
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1791,10 +1743,10 @@
       4.5,
       7.0,
       4.2,
-      5.0
+      5.0,
+      8.0
      ],
      "value": [
-      2,
       4,
       2,
       6,
@@ -1849,12 +1801,12 @@
       6,
       3,
       9,
-      8
+      8,
+      2
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -1909,10 +1861,10 @@
       3.8,
       1.8,
       2.2,
-      1.5
+      1.5,
+      2.8
      ],
      "value": [
-      4,
       2,
       0,
       0,
@@ -1967,14 +1919,14 @@
       1,
       0,
       3,
-      3
+      3,
+      0
      ]
     }
    },
    "community:dcinside": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2029,10 +1981,10 @@
       3.8,
       3.5,
       2.2,
-      5.2
+      5.2,
+      3.2
      ],
      "value": [
-      16,
       1,
       1,
       2,
@@ -2087,12 +2039,12 @@
       3,
       0,
       0,
-      44
+      44,
+      11
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2147,10 +2099,10 @@
       10.5,
       10.0,
       8.0,
-      6.2
+      6.2,
+      11.8
      ],
      "value": [
-      14,
       13,
       9,
       15,
@@ -2205,12 +2157,12 @@
       8,
       12,
       3,
-      7
+      7,
+      5
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2265,10 +2217,10 @@
       9.2,
       8.2,
       5.8,
-      7.2
+      7.2,
+      10.5
      ],
      "value": [
-      2,
       9,
       8,
       4,
@@ -2323,14 +2275,14 @@
       8,
       4,
       4,
-      5
+      5,
+      2
      ]
     }
    },
    "community:inven": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2385,10 +2337,10 @@
       14.0,
       4.5,
       4.8,
-      13.2
+      13.2,
+      10.5
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2443,12 +2395,12 @@
       3,
       2,
       1,
-      48
+      48,
+      23
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2503,10 +2455,10 @@
       20.0,
       21.0,
       16.5,
-      18.0
+      18.0,
+      23.2
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2561,12 +2513,12 @@
       20,
       19,
       23,
-      18
+      18,
+      17
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2621,10 +2573,10 @@
       15.8,
       31.0,
       21.5,
-      18.0
+      18.0,
+      18.8
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -2679,14 +2631,14 @@
       6,
       14,
       25,
-      31
+      31,
+      12
      ]
     }
    },
    "community:lostark_free": {
     "버그 신호": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2741,10 +2693,10 @@
       0.0,
       0.0,
       0.0,
-      0.2
+      0.2,
+      0.5
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2799,12 +2751,12 @@
       0,
       0,
       0,
-      0
+      0,
+      1
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2859,10 +2811,10 @@
       1.0,
       0.2,
       0.0,
-      0.8
+      0.8,
+      0.5
      ],
      "value": [
-      0,
       0,
       0,
       0,
@@ -2917,12 +2869,12 @@
       0,
       3,
       1,
-      0
+      0,
+      2
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -2977,6 +2929,7 @@
       0.0,
       0.0,
       0.0,
+      0.2,
       0.2
      ],
      "value": [
@@ -3015,7 +2968,6 @@
       0,
       0,
       0,
-      0,
       1,
       0,
       0,
@@ -3023,6 +2975,7 @@
       0,
       1,
       1,
+      0,
       0,
       0,
       0,
@@ -3057,7 +3010,6 @@
       null,
       null,
       0.0,
-      0.0,
       0.5,
       0.0,
       0.0,
@@ -3097,11 +3049,11 @@
       0.0,
       0.8,
       0.0,
-      0.2
+      0.2,
+      0.8
      ],
      "value": [
       0,
-      0,
       1,
       0,
       0,
@@ -3140,6 +3092,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0,
@@ -3175,20 +3128,19 @@
       null,
       null,
       0.0,
-      0.0,
       0.5,
       0.0,
       1.0,
       0.5,
       1.5,
-      0.7,
+      1.0,
       0.0,
       0.7,
       0.0,
       1.7,
       1.0,
       1.3,
-      0.8,
+      1.0,
       0.0,
       0.5,
       0.0,
@@ -3215,10 +3167,10 @@
       0.2,
       0.2,
       0.0,
-      1.8
+      1.8,
+      0.8
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3273,7 +3225,8 @@
       0,
       0,
       1,
-      1
+      1,
+      0
      ]
     },
     "이탈 표현": {
@@ -3292,7 +3245,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.5,
       0.0,
@@ -3333,10 +3285,10 @@
       0.0,
       0.0,
       0.0,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3354,6 +3306,7 @@
       0,
       2,
       1,
+      0,
       0,
       0,
       0,
@@ -3420,7 +3373,6 @@
       null,
       null,
       null,
-      null,
       10.5,
       10.5,
       null,
@@ -3453,10 +3405,10 @@
       19.2,
       9.2,
       9.2,
-      24.0
+      24.0,
+      16.5
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3511,12 +3463,12 @@
       11,
       2,
       6,
-      114
+      114,
+      43
      ]
     },
     "복귀 · 신규 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3571,10 +3523,10 @@
       36.0,
       38.2,
       28.8,
-      30.0
+      30.0,
+      43.5
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3629,12 +3581,12 @@
       34,
       37,
       36,
-      33
+      33,
+      26
      ]
     },
     "이탈 표현": {
      "base": [
-      null,
       null,
       null,
       null,
@@ -3689,10 +3641,10 @@
       28.8,
       41.0,
       29.5,
-      27.0
+      27.0,
+      32.2
      ],
      "value": [
-      null,
       null,
       null,
       null,
@@ -3747,7 +3699,8 @@
       15,
       18,
       32,
-      39
+      39,
+      14
      ]
     }
    },
@@ -3768,7 +3721,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.5,
       0.0,
@@ -3809,11 +3761,11 @@
       0.0,
       0.8,
       0.0,
-      0.2
+      0.2,
+      0.8
      ],
      "value": [
       0,
-      0,
       1,
       0,
       0,
@@ -3852,6 +3804,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0,
@@ -3887,20 +3840,19 @@
       null,
       null,
       0.0,
-      0.0,
       0.5,
       0.0,
       1.0,
       0.5,
       1.5,
-      0.7,
+      1.0,
       0.0,
       0.7,
       0.0,
       1.7,
       1.0,
       1.3,
-      0.8,
+      1.0,
       0.0,
       0.5,
       0.0,
@@ -3927,10 +3879,10 @@
       0.2,
       0.2,
       0.0,
-      1.8
+      1.8,
+      0.8
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -3985,7 +3937,8 @@
       0,
       0,
       1,
-      1
+      1,
+      0
      ]
     },
     "이탈 표현": {
@@ -4004,7 +3957,6 @@
       null,
       null,
       null,
-      0.0,
       0.0,
       0.5,
       0.0,
@@ -4045,10 +3997,10 @@
       0.0,
       0.0,
       0.0,
+      0.0,
       0.0
      ],
      "value": [
-      0,
       0,
       1,
       0,
@@ -4103,1607 +4055,19 @@
       0,
       0,
       0,
+      0,
       0
      ]
     }
    }
   }
  },
- "surge_memo": {
-  "classify": "분류 요청함",
-  "communities": [
-   {
-    "community": "인벤",
-    "community_id": "inven",
-    "reads": [
-     {
-      "cost_usd": 0.0336,
-      "count": 3956,
-      "label": "그날 글 전체",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 102,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 144,
-        "title": "ㅋㅋ지랄하네 바드 머리채를 왜 잡냐고?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317849"
-       },
-       {
-        "body": "있음",
-        "comments": 34,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 144,
-        "title": "병탁아 소신껏 해라",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317765"
-       },
-       {
-        "body": "있음",
-        "comments": 96,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 123,
-        "title": "병탁이에 대한 기대가 확 무너져버림",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317566"
-       },
-       {
-        "body": "있음",
-        "comments": 6,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "나라별 담배값",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318930"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 1,
-        "title": "버릇없는 어른새끼들 내일 이 몸께서 수능을 보는데 감히 출근을 해?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4320375"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "치지직 내가보던 성불팟 5개터졌다 ㅠ....",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4316401"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "서포터 관련 밸런스 패치 또는 예고가 게시되어 바드 편중과 디렉터에 대한 논쟁이 증가했을 가능성이 있다. 다만 제공된 업데이트·공지 목록에는 해당 패치가 확인되지 않는다."
-        },
-        {
-         "event": "없음",
-         "hypothesis": "수능 전날이라 학생 이용자의 잡담 게시글이 증가했을 가능성이 있다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 서포터 패치와 디렉터 운영 방향을 두고 불만과 옹호가 엇갈리는 게임 관련 논쟁이 중심이다. 무작위 글은 수능, 담뱃값, 방송 시청 등 게임과 무관한 잡담이어서 다른 주제를 다룬다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "서포터 밸런스 불만(바드 편중)",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "바드만 세팅의 선택지가 있다는 거 자체가 말이 안된다고",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "디렉터 운영 방향에 대한 기대 하락과 옹호",
-         "posts": [
-          2,
-          3
-         ],
-         "quote": "서폿 패치한거보고 기대감이 무너짐 :(",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "향후 일정(라이브 방송·로아온·신규 레이드) 기대",
-         "posts": [
-          2
-         ],
-         "quote": "20일라방만.. 겨울 로아온만.. 다음 신규 레이드만..",
-         "quote_post": 2
-        },
-        {
-         "count": 3,
-         "name": "게임 외 잡담(수능·방송 등)",
-         "posts": [
-          4,
-          5,
-          6
-         ],
-         "quote": "치지직 내가보던 성불팟 5개터졌다",
-         "quote_post": 6
-        }
-       ],
-       "summary": "추천 상위 글은 서포터 밸런스 패치에 대한 반응이 중심이며, 바드만 세팅 선택지가 있고 엔드 콘텐츠 파티 구성에서 다른 서포터가 밀린다는 불만과 디렉터(병탁으로 지칭)에 대한 기대가 무너졌다는 글이 게시됐다. 반면 운영 방향을 유지하라는 의견도 함께 확인된다. 무작위 글은 수능, 담뱃값, 방송 시청 등 게임과 무관한 잡담이 다수여서, 전체 글 수가 1.38배로 증가한 원인은 서포터 패치 논란과 일반 잡담 증가가 겹친 것으로 보이나 공지 목록에는 해당 패치가 확인되지 않는다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0481,
-      "count": 192,
-      "label": "'바드'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 102,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 144,
-        "title": "ㅋㅋ지랄하네 바드 머리채를 왜 잡냐고?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317849"
-       },
-       {
-        "body": "있음",
-        "comments": 113,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 113,
-        "title": "바드가 고점컨셉인게 당연하다는 무슨 씨발 뒤지려고",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317101"
-       },
-       {
-        "body": "있음",
-        "comments": 35,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 95,
-        "title": "사실 바드 입장에서도 당황스럽다는거임",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317732"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "바드 아덴 잘 차는 버그는 고의로 한게 아니니까 지금 빨리 숙제 바드랑 가야겠네?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318350"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "도홀발 그냥 바드로 캐릭이관 ㄱㄱ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317273"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "아 바드 특화하기싫은데",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318011"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "바드 관련 밸런스 패치 또는 아덴 게이지 버그 소식이 알려지면서 서포터 간 형평성 논쟁이 확산된 것으로 보이나, 제공된 목록에서 해당 이벤트는 확인되지 않는다. 글 5의 '도홀발', '븅탁이햄'은 의미가 불분명하다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 다른 서포터 대비 바드의 성능 우위와 패치 방향을 강하게 비판하는 장문 의견이 중심이다. 무작위 글은 같은 바드 이슈를 다루지만 버그 풍자, 바드로의 이관 농담, 특화 세팅 부담 등 짧은 반응 위주로 비판 강도가 낮다.",
-       "subissues": [
-        {
-         "count": 3,
-         "name": "서포터 직업 간 성능 격차와 바드 쏠림",
-         "posts": [
-          1,
-          2,
-          5
-         ],
-         "quote": "앤컨에서 2천점 차이나는 서폿한테 취업 경쟁 밀리는 구도가 정상임?",
-         "quote_post": 1
-        },
-        {
-         "count": 3,
-         "name": "바드에게만 주어진 세팅 선택지와 고점 컨셉 논란",
-         "posts": [
-          1,
-          2,
-          6
-         ],
-         "quote": "모든 직업 똑같이 고점 저점 세팅 주던가",
-         "quote_post": 2
-        },
-        {
-         "count": 2,
-         "name": "패치 방향과 운영 의도에 대한 불신",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "그런 의도가 아니라면 이런 패치방향이 설명이 안됨",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "바드 아덴 게이지 관련 버그 언급",
-         "posts": [
-          4
-         ],
-         "quote": "바드 아덴 잘 차는 버그는 고의로 한게 아니니까",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "바드 세팅 강제(특화) 부담",
-         "posts": [
-          6
-         ],
-         "quote": "강제 특화 넣게생겼네",
-         "quote_post": 6
-        }
-       ],
-       "summary": "서포터 직업 4개 중 바드만 성능과 세팅 선택지에서 우위에 있다는 불만과, 바드를 고점 직업으로 보는 시각에 대한 반발이 집중적으로 게시됐다. 추천 상위 글들은 질서 해달 계열 서포터와의 성능 편차, 파티 구인 경쟁에서의 격차, 이해하기 어려운 패치 방향을 문제로 제기했다. 같은 날과 전날에 등록된 업데이트·공지가 없어 직접적인 계기는 확인되지 않지만, 글 3·글 4의 내용으로 보아 바드 관련 패치 또는 버그 이슈가 언급량 증가와 관련된 것으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0595,
-      "count": 107,
-      "label": "'밸패'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 39,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 23,
-        "title": "불타는 벤에 밸패 내용 % 정리",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317867"
-       },
-       {
-        "body": "있음",
-        "comments": 9,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 18,
-        "title": "밸패를 ㅈㄴ큰 업데이트처럼 하는게 개빡치네",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318781"
-       },
-       {
-        "body": "있음",
-        "comments": 19,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 17,
-        "title": "밸패를 정리 해 보자면 (+ 본 서버 추가)",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317152"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "스마게 밸패 프로세스 유출",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4320461"
-       },
-       {
-        "body": "비어 있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "다음 밸패 겨울 큰거 오나?",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317338"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "카제 익스전에 밸패 안한 이유는 알겠다",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4320003"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "이날 밸런스 패치가 공개 또는 적용되면서 수치 정리 글과 평가 글이 집중 게시된 것으로 보이나, 제공된 업데이트·공지 목록에는 해당 패치가 확인되지 않는다."
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 패치 수치를 정리한 정보성 글 두 건과 패치 주기를 비판한 글 한 건으로 구성돼 정보 공유와 구조적 불만이 함께 지지를 받았다. 무작위 글은 내용 분석 없이 개발사를 비꼬거나 다음 패치를 묻는 짧은 글이 대부분이어서 감정적 반응 비중이 더 높다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "밸런스 패치 직업별 수치 정리",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "계산기 돌려서 소숫점 3자리에서 반올림 했습니다",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "치명타 적중률 트라이포드 상한 조정 및 다중 치명타 도입",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "치명타확률 증가 트포 최대 80%로 조정",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "서포터 낙인 지속시간 및 공증 구조 변경",
-         "posts": [
-          1,
-          3
-         ],
-         "quote": "낙인 유지시간 대폭 상향",
-         "quote_post": 1
-        },
-        {
-         "count": 1,
-         "name": "긴 패치 주기와 소폭 수치 조정에 대한 불만",
-         "posts": [
-          2
-         ],
-         "quote": "그럴바에 그냥 짧은 턴으로 바로바로 좀 쳐하라고",
-         "quote_post": 2
-        },
-        {
-         "count": 2,
-         "name": "개발사 밸런스 조정 역량에 대한 조롱",
-         "posts": [
-          4,
-          6
-         ],
-         "quote": "본인들의 밸패 실력을 알아서임",
-         "quote_post": 6
-        },
-        {
-         "count": 1,
-         "name": "다음 밸런스 패치 시기에 대한 기대",
-         "posts": [
-          5
-         ],
-         "quote": "다음 밸패 겨울 큰거 오나?",
-         "quote_post": 5
-        }
-       ],
-       "summary": "이날 인벤에는 밸런스 패치(밸패) 내용을 직업별 수치로 정리한 글이 게시됐다. 다중 치명타 도입, 치명타 적중률 트라이포드 최대 80% 조정, 서포터 낙인 지속시간 상향 등이 주요 내용으로 확인된다. 동시에 몇 달 만의 패치가 소폭 수치 조정에 그쳤다는 불만과 개발사 역량을 비꼬는 글이 함께 게시됐으며, 밸패 시행 자체가 언급량을 11.8배로 증가시킨 것으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0322,
-      "count": 110,
-      "label": "'서폿'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 21,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 109,
-        "title": "지금 서폿 밸런스 불타야지 뭘 기다려",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318075"
-       },
-       {
-        "body": "있음",
-        "comments": 57,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 102,
-        "title": "ㅇㅂ) 포피셜 서폿 정리",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4317432"
-       },
-       {
-        "body": "있음",
-        "comments": 32,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 94,
-        "title": "사실 서폿에게 진짜 필요했던 패치",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318478"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "서폿 이렇게 패치할거면 그냥 모든스킬 동일하고 걍 스킨제로하자",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318669"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "이게 다 서폿 밸런스를 맞춰가는 과정이지 ㅇㅇ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4318385"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "성당3에서 능조 안뜨는 레전드 서폿 만남 ㅋㅋㅋ",
-        "url": "https://www.inven.co.kr/board/lostark/6271/4316213"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "서포터 직업 밸런스 패치 내용(또는 예고)이 공개되면서 홀리나이트·도화가 관련 불만이 집중된 것으로 보이나, 제공된 업데이트 목록에는 해당 공지가 확인되지 않는다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 패치가 실패했다는 평가와 개발진에 대한 항의 촉구, 구체적 요구사항(마흐 스택)을 직접적으로 제시한다. 무작위 글은 같은 불만을 비꼬는 방식으로 표현하며, 일부는 본문 내용이 없어 주제와 무관하다.",
-       "subissues": [
-        {
-         "count": 3,
-         "name": "홀리나이트·도화가 밸런스 패치 실패 평가",
-         "posts": [
-          2,
-          4,
-          5
-         ],
-         "quote": "도아가 홀나 이번밸패 존나 망햇다",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "12월 패치 전 강한 항의 촉구 및 개발진 불신",
-         "posts": [
-          1
-         ],
-         "quote": "지금 서폿 밸런스 불타야지 뭘 기다려",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "서포터 직업 간 차별성 상실 및 바드 편중 비판",
-         "posts": [
-          4,
-          5
-         ],
-         "quote": "바드만 남기면 밸런스 완벽하겠구만",
-         "quote_post": 5
-        },
-        {
-         "count": 1,
-         "name": "서포터 실제 요구사항 미반영(마흐 스택 축소)",
-         "posts": [
-          3
-         ],
-         "quote": "마흐 5스택으로 줄여주기",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "레이드 파티 내 서포터 플레이 품질",
-         "posts": [
-          6
-         ],
-         "quote": "",
-         "quote_post": null
-        }
-       ],
-       "summary": "서포터 직업(홀리나이트, 도화가, 발키리, 바드)에 적용된 밸런스 패치 내용에 대한 불만 글이 집중적으로 게시됐다. 홀리나이트와 도화가 패치가 실패했다는 평가, 지금 강하게 항의해야 12월 패치에 반영된다는 주장, 서포터 직업을 바드 하나로 정리하라는 식의 비꼬는 글이 확인된다. 업데이트 목록에는 해당 일자의 공지가 없지만, 글 내용으로 보아 서포터 밸런스 패치 내용이 공개된 직후 반응이 몰리면서 '서폿' 언급이 증가한 것으로 보인다."
-      },
-      "status": "ok"
-     }
-    ],
-    "reasons": [
-     "버그 신호 48건(평소 13.2건의 3.64배)"
-    ],
-    "sentiment": {
-     "base_classified": 11504,
-     "classified": 3937,
-     "neg": 0.4389,
-     "neg_base": 0.3974,
-     "of": 3956,
-     "topics": [
-      {
-       "base": 0.0628,
-       "name": "밸런스 · 직업",
-       "share": 0.3693,
-       "topic": "balance"
-      },
-      {
-       "base": 0.2945,
-       "name": "기타",
-       "share": 0.1925,
-       "topic": "other"
-      },
-      {
-       "base": 0.2419,
-       "name": "컨텐츠 · 업데이트",
-       "share": 0.1054,
-       "topic": "content"
-      },
-      {
-       "base": 0.0664,
-       "name": "성장 · 강화",
-       "share": 0.0899,
-       "topic": "growth"
-      },
-      {
-       "base": 0.1336,
-       "name": "운영 · 이벤트",
-       "share": 0.0853,
-       "topic": "operation"
-      }
-     ]
-    }
-   },
-   {
-    "community": "아카라이브",
-    "community_id": "arca",
-    "reads": [
-     {
-      "cost_usd": 0.0333,
-      "count": 1395,
-      "label": "그날 글 전체",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 24,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 16,
-        "title": "ㅍ) 다중 치명타와 뭉가",
-        "url": "https://arca.live/b/lostark/189536034"
-       },
-       {
-        "body": "받지 못함",
-        "comments": 5,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 15,
-        "title": "클뜯",
-        "url": "https://arca.live/b/lostark/189478337"
-       },
-       {
-        "body": "있음",
-        "comments": 54,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 14,
-        "title": "로아에 변화의 바람이 크게 불고잇어서 이해는 하는데",
-        "url": "https://arca.live/b/lostark/189508769"
-       },
-       {
-        "body": "있음",
-        "comments": 9,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "아 건슬 이거 아드들면 치적 130 빼면 110이네",
-        "url": "https://arca.live/b/lostark/189520967"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "전기 끊어지는 원인 찾았다",
-        "url": "https://arca.live/b/lostark/189539122"
-       },
-       {
-        "body": "있음",
-        "comments": 10,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "제조업. txt",
-        "url": "https://arca.live/b/lostark/189511341"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "다중 치명타 개념 도입과 뭉툭한 가시 변경 등 전투 시스템 패치가 적용되어 세팅 논의가 증가했을 가능성이 있으나, 목록에 해당 업데이트는 확인되지 않는다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 다중 치명타·뭉가 패치 분석과 변화에 대한 공지 확인을 다루며 시스템 변경에 집중했다. 무작위 글은 치적 수치 고민 1건을 제외하면 전기·제조업 등 게임과 무관한 잡담이다.",
-       "subissues": [
-        {
-         "count": 1,
-         "name": "다중 치명타 도입과 뭉툭한 가시 각인 효율 재평가",
-         "posts": [
-          1
-         ],
-         "quote": "고점의 뭉가는 더 이상 존재하지 않는다",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "치명타 적중률 세팅 조정 고민",
-         "posts": [
-          1,
-          4
-         ],
-         "quote": "아드들면 치적 130 빼면 110이네",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "게임 변화에 따른 공지 확인 필요성",
-         "posts": [
-          3
-         ],
-         "quote": "로아에 변화의 바람이 크게 불고잇어서 이해는 하는데",
-         "quote_post": 3
-        },
-        {
-         "count": 2,
-         "name": "게임과 무관한 일상 잡담",
-         "posts": [
-          5,
-          6
-         ],
-         "quote": "전기 끊어지는 원인 찾았다",
-         "quote_post": 5
-        }
-       ],
-       "summary": "추천 상위 글은 다중 치명타 개념과 뭉툭한 가시 각인의 효율 변화를 분석하며, 패치 반영 후 뭉가 사용 여부를 직업별 조건으로 정리했다. 다른 글에서는 로아에 큰 변화가 진행 중이라며 공지를 읽어야 한다는 언급과 치적 수치 조정 고민도 게시됐다. 다만 목록에 해당일 업데이트가 없고 무작위 글 다수가 게임과 무관해, 1.2배의 소폭 증가는 전투 시스템 변경 논의와 일상 잡담이 섞인 결과로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0302,
-      "count": 37,
-      "label": "'바드'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 10,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 2,
-        "title": "바드 버그쓰려고 바드가 정단끼고 있네 ㅋㅋㅋㅋㅋㅋ",
-        "url": "https://arca.live/b/lostark/189566519"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 1,
-        "title": "바드의 버그를 고치면 안됩니다",
-        "url": "https://arca.live/b/lostark/189517002"
-       },
-       {
-        "body": "있음",
-        "comments": 13,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 0,
-        "title": "바드 신규 세팅은 하루 정도면 나오겠지?",
-        "url": "https://arca.live/b/lostark/189496128"
-       },
-       {
-        "body": "있음",
-        "comments": 4,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "바드 아덴버그 떴냐",
-        "url": "https://arca.live/b/lostark/189504255"
-       },
-       {
-        "body": "있음",
-        "comments": 10,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "바드 특화계수 자체는 좋은편은 아님",
-        "url": "https://arca.live/b/lostark/189503141"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "고정팟 바드부터 빼야지",
-        "url": "https://arca.live/b/lostark/189527777"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "바드 아덴 수급 버그가 커뮤니티에서 공유되면서 관련 언급이 증가한 것으로 보이나, 이와 연결되는 공지나 업데이트는 목록에 없다."
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 버그 악용 행태 비판, 버그 유지 요구, 신규 세팅 분석에 비중을 두었다. 무작위 글은 버그 발견 확인과 파티 구성 변경 같은 짧은 반응 및 특화 계수 논의가 중심이며, 아덴 버그라는 핵심 소재는 공통으로 확인된다.",
-       "subissues": [
-        {
-         "count": 3,
-         "name": "바드 아덴 수급 버그 발견 및 악용",
-         "posts": [
-          1,
-          4,
-          6
-         ],
-         "quote": "바드 버그쓰려고 바드가 정단끼고 있네",
-         "quote_post": 1
-        },
-        {
-         "count": 1,
-         "name": "버그 수정 대신 타 서포터 상향 요구",
-         "posts": [
-          2
-         ],
-         "quote": "반대로 다른 서포터의 아덴 수급을 더 올려야 합니다",
-         "quote_post": 2
-        },
-        {
-         "count": 1,
-         "name": "바드 신규 세팅(각인·보석·특성) 논의",
-         "posts": [
-          3
-         ],
-         "quote": "작열을 빼서 이걸 수연 겁화 주고",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "바드 특화 계수와 타 서포터 대비 경쟁력",
-         "posts": [
-          5
-         ],
-         "quote": "바드 특화계수 자체는 좋은편은 아님",
-         "quote_post": 5
-        }
-       ],
-       "summary": "바드 직업의 아덴(아이덴티티 게이지) 수급 버그가 발견됐다는 글이 다수 게시됐고, 이를 활용하기 위한 세팅 변경과 고정 파티 구성 변경 언급이 이어졌다. 일부는 버그를 고치지 말고 다른 서포터의 아덴 수급을 상향해야 한다고 주장했으며, 특화 계수와 신규 세팅에 대한 논의도 함께 확인된다. 그날과 전날 공지된 업데이트가 없어 버그 발견 자체가 언급량 증가의 직접적 요인으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0485,
-      "count": 33,
-      "label": "'뭉가'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 24,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 16,
-        "title": "ㅍ) 다중 치명타와 뭉가",
-        "url": "https://arca.live/b/lostark/189536034"
-       },
-       {
-        "body": "있음",
-        "comments": 22,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 0,
-        "title": "격폭 결국은 뭉가로 가겠군",
-        "url": "https://arca.live/b/lostark/189519145"
-       },
-       {
-        "body": "있음",
-        "comments": 19,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 0,
-        "title": "근대 막 치적 130퍼 이런 애들은 뭉가 드는게 효율일거같기도 하고",
-        "url": "https://arca.live/b/lostark/189513745"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "로붕 난 사실 뭉가가 쓰기 싫었어",
-        "url": "https://arca.live/b/lostark/189504952"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "뭉가는 다중치명타 안터지네 ㄲㅂ",
-        "url": "https://arca.live/b/lostark/189484754"
-       },
-       {
-        "body": "있음",
-        "comments": 7,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "뭉가 바뀐거때문에 다중치명 쓸지 뭉가 쓸지 고민되는데",
-        "url": "https://arca.live/b/lostark/189502479"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "뭉툭한 가시 각인 변경과 다중 치명타 도입이 함께 반영되어 세팅 재계산 논의가 집중된 것으로 보인다. 글 1에 패치 반영 언급이 있으나 제공된 목록에는 해당 업데이트가 확인되지 않는다."
-        }
-       ],
-       "confidence": "high",
-       "endorsed_vs_common": "추천 상위 글은 진피·치피 기준을 제시하며 뭉가 사용 조건을 분석하거나 특정 직업의 뭉가 채택을 논의하는 데 집중한다. 무작위 글은 같은 변경을 다루지만 다중 치명타 미발동 확인, 개인 수치 계산, 흰 글씨 감성 같은 짧은 개인 반응 위주다.",
-       "subissues": [
-        {
-         "count": 3,
-         "name": "뭉가 효율 재평가와 대체 각인 비교",
-         "posts": [
-          1,
-          2,
-          3
-         ],
-         "quote": "고점의 뭉가는 더 이상 존재하지 않는다.",
-         "quote_post": 1
-        },
-        {
-         "count": 3,
-         "name": "다중 치명타와 뭉가 중 선택 고민",
-         "posts": [
-          1,
-          5,
-          6
-         ],
-         "quote": "뭉가 바뀐거때문에 다중치명 쓸지 뭉가 쓸지 고민되는데",
-         "quote_post": 6
-        },
-        {
-         "count": 3,
-         "name": "뭉가 변경 내용(치적 고정, 초과 치적 진피 변환)",
-         "posts": [
-          3,
-          5,
-          6
-         ],
-         "quote": "초과 치적 1퍼당 진피 1.4 변환 있어서",
-         "quote_post": 6
-        },
-        {
-         "count": 1,
-         "name": "뭉가에 대한 감성적 거부감",
-         "posts": [
-          4
-         ],
-         "quote": "그냥 흰글씨뜨는 감성이 미웠어",
-         "quote_post": 4
-        }
-       ],
-       "summary": "게시글들은 뭉툭한 가시(뭉가) 각인의 변경과 새로 도입된 다중 치명타 개념을 함께 다루며, 뭉가를 계속 쓸지 음돌·마용·예둔 등 다른 각인으로 바꿀지에 대한 효율 계산과 고민을 공유한다. 치명타 적중률 80% 고정과 초과 치적의 진화형 피해 변환 같은 변경 내용이 언급되며, 다중 치명타 및 뭉가 관련 패치가 반영됐다는 서술도 확인된다. 다만 제공된 업데이트 목록에는 해당 변경이 없어, 목록에 없는 밸런스 변경이 언급 증가의 원인으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0323,
-      "count": 37,
-      "label": "'세나지3'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 13,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 0,
-        "title": "로부아 세나지3 벌써 다 빼버린거니....?",
-        "url": "https://arca.live/b/lostark/189554523"
-       },
-       {
-        "body": "있음",
-        "comments": 12,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 0,
-        "title": "세나지3 가실븜?(지옥의 랏폿)",
-        "url": "https://arca.live/b/lostark/189491800"
-       },
-       {
-        "body": "있음",
-        "comments": 8,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 0,
-        "title": "세나지3 2호차 완",
-        "url": "https://arca.live/b/lostark/189504924"
-       },
-       {
-        "body": "있음",
-        "comments": 7,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "세나지3 가자 완",
-        "url": "https://arca.live/b/lostark/189539973"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "세나지3",
-        "url": "https://arca.live/b/lostark/189547093"
-       },
-       {
-        "body": "있음",
-        "comments": 5,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "세나지3이 또 가고싶구나",
-        "url": "https://arca.live/b/lostark/189522897"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "해당 일자에 등록된 업데이트·공지가 없어 특정 이벤트와 연결되지 않으며, 주간 초기화 이후 모집이 몰린 일상적 증가일 가능성이 있다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글과 무작위 글 모두 추천 0의 단순 모집글로 내용 차이는 크지 않다. 추천 상위 글은 댓글이 더 많고 서포터 부족을 강조한 반면, 무작위 글은 방 번호와 레벨·직업만 적은 형식이 대부분이다.",
-       "subissues": [
-        {
-         "count": 6,
-         "name": "'세나지3' 파티 모집 및 방 번호 공유",
-         "posts": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-         ],
-         "quote": "모이면 파고호출",
-         "quote_post": 4
-        },
-        {
-         "count": 2,
-         "name": "마지막 서포터 자리 구인 어려움",
-         "posts": [
-          1,
-          2
-         ],
-         "quote": "세나지3 가실븜?(지옥의 랏폿)",
-         "quote_post": 2
-        },
-        {
-         "count": 3,
-         "name": "모집 완료 및 반복 참여",
-         "posts": [
-          3,
-          4,
-          6
-         ],
-         "quote": "세나지3이 또 가고싶구나",
-         "quote_post": 6
-        }
-       ],
-       "summary": "게시글은 모두 '세나지3' 파티 모집글로, 'ㄹㅇㅊ' 뒤에 방 번호로 보이는 숫자와 캐릭터 레벨·직업(58브커, 70폿키리, 1782 배마 등)을 적는 형식이다. 서포터 마지막 자리를 구하는 글과 '완' 표기로 모집 완료를 알리는 글이 함께 게시됐다. 같은 날 이 콘텐츠의 모집 수요가 집중되면서 언급량이 증가한 것으로 보이나, '세나지3'과 'ㄹㅇㅊ'의 정확한 의미는 불명확하다."
-      },
-      "status": "ok"
-     }
-    ],
-    "reasons": [
-     "버그 신호 22건(평소 5.2건의 4.23배)"
-    ],
-    "sentiment": {
-     "base_classified": 4651,
-     "classified": 1377,
-     "neg": 0.2939,
-     "neg_base": 0.3434,
-     "of": 1395,
-     "topics": [
-      {
-       "base": 0.4021,
-       "name": "기타",
-       "share": 0.2934,
-       "topic": "other"
-      },
-      {
-       "base": 0.0286,
-       "name": "밸런스 · 직업",
-       "share": 0.2542,
-       "topic": "balance"
-      },
-      {
-       "base": 0.0669,
-       "name": "성장 · 강화",
-       "share": 0.167,
-       "topic": "growth"
-      },
-      {
-       "base": 0.2546,
-       "name": "컨텐츠 · 업데이트",
-       "share": 0.106,
-       "topic": "content"
-      },
-      {
-       "base": 0.1038,
-       "name": "파티 · 커뮤니티",
-       "share": 0.0828,
-       "topic": "social"
-      }
-     ]
-    }
-   },
-   {
-    "community": "디시인사이드",
-    "community_id": "dcinside",
-    "reads": [
-     {
-      "cost_usd": 0.0308,
-      "count": 2092,
-      "label": "그날 글 전체",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 27,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 29,
-        "title": "도구 하는 새끼들 대부분 애미가 길바닥에 버려서 장애 생긴 애들이라",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879931"
-       },
-       {
-        "body": "있음",
-        "comments": 34,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 28,
-        "title": "도화가 밸런스의 관해서.manhwa",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880635"
-       },
-       {
-        "body": "있음",
-        "comments": 5,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 21,
-        "title": "병신탁 이병신이 로아 말아먹을 거 같으면 개추",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879621"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "다중치명타는 잘만든거 같음",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881283"
-       },
-       {
-        "body": "있음",
-        "comments": 20,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 13,
-        "title": "도화가는 사실 미래를 볼 수 있음",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881183"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "길드 20렙 아슬아슬하게 세이프..",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879213"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "도화가 등 서포터 버프를 포함한 대형 밸런스 패치가 적용되어 반발 글이 증가했을 가능성이 있다. 다만 제공된 업데이트 목록에서는 해당 패치가 확인되지 않는다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 도화가 버프와 디렉터를 강하게 비난하는 데 집중한다. 무작위 글도 도화가를 조롱하는 글이 있으나, 다중치명타 평가나 길드 잡담처럼 주제가 분산되어 있다.",
-       "subissues": [
-        {
-         "count": 4,
-         "name": "도화가(서포터) 버프에 대한 불만",
-         "posts": [
-          1,
-          2,
-          3,
-          5
-         ],
-         "quote": "사기캐를 더 사기로 만드는 보법은",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "디렉터의 첫 대형 밸런스 패치에 대한 비판",
-         "posts": [
-          3
-         ],
-         "quote": "디렉터로서 첫 대형밸런스패치했는데",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "도화가 유저의 반발에 대한 반박",
-         "posts": [
-          1
-         ],
-         "quote": "서폿이란거 자체가 사기캐인데 근들갑 좆됨 그냥",
-         "quote_post": 1
-        },
-        {
-         "count": 1,
-         "name": "다중치명타 시스템 평가",
-         "posts": [
-          4
-         ],
-         "quote": "다중치명타는 잘만든거 같음",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "길드 레벨 유지 부담",
-         "posts": [
-          6
-         ],
-         "quote": "매주 이러는데 통나무 진짜 놔버리고 싶네",
-         "quote_post": 6
-        }
-       ],
-       "summary": "추천 상위 글은 서포터 직업 도화가(도구)가 버프된 밸런스 패치를 비판하며, 사기 직업을 더 강하게 만들었다는 불만과 디렉터에 대한 비난을 담고 있다. 무작위 글에서도 도화가 관련 조롱성 글이 확인되며, 다중치명타 등 다른 밸런스 요소와 길드 활동에 대한 잡담도 섞여 있다. 공지 목록에는 해당 사항이 없으나, 글 내용상 대형 밸런스 패치에 대한 반응이 게시글 증가의 원인으로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.04,
-      "count": 120,
-      "label": "'바드'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 4,
-        "title": "병신탁 병신새끼 걍 바드 좆사기 확정으로 만들었노",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879576"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 2,
-        "title": "역대급 부앙컵이던 익르둠에서 바드 깐부 끼고 못 깨놓고",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880223"
-       },
-       {
-        "body": "있음",
-        "comments": 6,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 1,
-        "title": "바드 스티그마 범위 화면 전체",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880316"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "팩트는 공팟 바드 버프력은 더 낮아질거란거임",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880237"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "걍 바드 발키리 겜임",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880436"
-       },
-       {
-        "body": "있음",
-        "comments": 4,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "바드 버그 정확히 먼지 아시는분?",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881289"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "바드 또는 서폿 특화 관련 밸런스 조정 소식이 공개되어 반응이 집중됐을 가능성이 있으나, 제공된 업데이트·공지 목록에서는 확인되지 않는다."
-        },
-        {
-         "event": "없음",
-         "hypothesis": "바드 스티그마 범위·충전 관련 버그가 발견·공유되어 문의와 제보가 증가했을 가능성이 있다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 바드가 지나치게 강해졌다는 불만과 스티그마 범위 버그 제보에 집중했다. 무작위 글은 같은 바드 강세를 언급하면서도 공팟 특화 바드의 실제 버프 효율에 대한 회의와 버그 내용 확인 문의 등 실사용 측면을 더 다뤘다.",
-       "subissues": [
-        {
-         "count": 3,
-         "name": "서폿 특화 밸런스와 바드 강세 불만",
-         "posts": [
-          1,
-          2,
-          5
-         ],
-         "quote": "걍 바드 발키리 겜임",
-         "quote_post": 5
-        },
-        {
-         "count": 2,
-         "name": "바드 스티그마 범위 및 스킬 버그",
-         "posts": [
-          3,
-          6
-         ],
-         "quote": "왼쪽끝에 깔았는데 루메에 딜박히고있음",
-         "quote_post": 3
-        },
-        {
-         "count": 1,
-         "name": "공팟 특화 바드의 실제 버프 기여도 우려",
-         "posts": [
-          4
-         ],
-         "quote": "오히려 바드 거르면 돼서 더 편해짐",
-         "quote_post": 4
-        }
-       ],
-       "summary": "게시글들은 서포터 직업 바드가 특화 세팅 관련 밸런스 변화로 과도하게 강해졌다는 불만과 스티그마 스킬의 범위·충전 버그에 대한 문의를 주로 다룬다. 한 글은 바드를 '사기 확정'으로 표현했고, 다른 글들은 스티그마 범위가 화면 전체에 적용되는 현상과 버그의 정확한 내용을 묻는다. 그날과 전날의 공지 목록에는 해당 사항이 없으나, 바드 관련 밸런스 조정이나 버그 발견이 언급량 증가의 계기로 보인다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0319,
-      "count": 74,
-      "label": "'서폿'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 21,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 20,
-        "title": "서폿 저점패치는 진짜 잘한게 맞네요",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880350"
-       },
-       {
-        "body": "있음",
-        "comments": 9,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 11,
-        "title": "죄다 서폿 얘기만 쳐하네 ㅆㅂ",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880637"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 2,
-        "title": "왜케 서폿들 난리임",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880306"
-       },
-       {
-        "body": "있음",
-        "comments": 0,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "서폿 << 특색 없애고 사지절단이나 시키셈",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880154"
-       },
-       {
-        "body": "있음",
-        "comments": 3,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "서폿 머 스킬트리 새로 배워야함?",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881208"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "서폿 특화계수 무조건 조정 있음",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879636"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "글들이 '저점패치', '패치 후'를 언급하므로 서포터 밸런스 패치 적용이 급증 원인으로 보이나, 제공된 목록에 해당 업데이트가 없어 연결할 수 있는 이벤트는 확인되지 않는다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 저점 패치에 대한 긍정 평가와 서포터 논의 쏠림에 대한 불만 등 패치 전반의 반응을 다룬다. 무작위 글은 스킬트리 재세팅, 특화 계수 조정 등 실무적 질문과 직업 특색 논쟁에 집중해 강조점이 다르다.",
-       "subissues": [
-        {
-         "count": 1,
-         "name": "서포터 저점 패치에 대한 긍정 평가",
-         "posts": [
-          1
-         ],
-         "quote": "서폿 저점패치는 진짜 잘한게 맞네요",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "서포터 직업 간 서열과 특색 논쟁(바드 쏠림, 도화가 등 불만)",
-         "posts": [
-          3,
-          4
-         ],
-         "quote": "고점만 보니까 바드델고가는거아니여",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "서포터 특화 계수 추가 조정 전망",
-         "posts": [
-          6
-         ],
-         "quote": "서폿 특화계수 무조건 조정 있음",
-         "quote_post": 6
-        },
-        {
-         "count": 1,
-         "name": "패치 후 서포터 스킬트리 재세팅 여부 문의",
-         "posts": [
-          5
-         ],
-         "quote": "서폿 머 스킬트리 새로 배워야함?",
-         "quote_post": 5
-        },
-        {
-         "count": 1,
-         "name": "서포터 논의 쏠림과 딜러 정보 부족에 대한 불만",
-         "posts": [
-          2
-         ],
-         "quote": "패치 후 빌드 연구글이랑 직업별 배율 나온게 하나도 없어",
-         "quote_post": 2
-        }
-       ],
-       "summary": "'서폿'이 포함된 글이 평소 4.6건에서 74건으로 15.9배 증가했으며, 글들은 서포터 직업의 저점 보완 패치, 직업 간 서열(바드 1위 여부), 특화 계수 조정 전망, 스킬트리 재세팅 필요 여부를 다룬다. 글 내용상 서포터 관련 밸런스 패치가 적용된 직후로 보이나, 제공된 업데이트·공지 목록에는 해당 패치가 확인되지 않는다. 게시판 대화가 서포터 이야기로 집중되면서 딜러 관련 논의가 감소했다는 불만도 함께 게시됐다."
-      },
-      "status": "ok"
-     },
-     {
-      "cost_usd": 0.0419,
-      "count": 48,
-      "label": "'밸패'이(가) 든 글",
-      "read": [
-       {
-        "body": "있음",
-        "comments": 18,
-        "group": "추천 상위",
-        "n": 1,
-        "recommends": 3,
-        "title": "밸패 이건 잘하긴했네",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880539"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "추천 상위",
-        "n": 2,
-        "recommends": 3,
-        "title": "어캐 밸패를 할수록 병신이냐",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2881046"
-       },
-       {
-        "body": "있음",
-        "comments": 5,
-        "group": "추천 상위",
-        "n": 3,
-        "recommends": 2,
-        "title": "밸패는 모르겠고 보석 원정대화를 오늘 들여와라",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879257"
-       },
-       {
-        "body": "있음",
-        "comments": 1,
-        "group": "무작위",
-        "n": 4,
-        "recommends": 0,
-        "title": "레이드나올때만 밸패 무조건 하면 딱 좋지싶은데",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2879923"
-       },
-       {
-        "body": "있음",
-        "comments": 14,
-        "group": "무작위",
-        "n": 5,
-        "recommends": 0,
-        "title": "이러니저러니해도 밸패 잘하지않을까싶음",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880504"
-       },
-       {
-        "body": "있음",
-        "comments": 2,
-        "group": "무작위",
-        "n": 6,
-        "recommends": 0,
-        "title": "종익 끝나고 밸패하는게 맞냐? vs 종익 이따위인데 밸패도 안하고 내는거 맞냐?",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2880047"
-       }
-      ],
-      "result": {
-       "causes": [
-        {
-         "event": "없음",
-         "hypothesis": "글 5의 '오늘밸패' 표현으로 보아 이날 밸런스 패치가 적용되어 반응 글이 집중 게시된 것으로 보인다. 그러나 제공된 업데이트·공지 목록에는 해당 패치가 확인되지 않는다."
-        }
-       ],
-       "confidence": "medium",
-       "endorsed_vs_common": "추천 상위 글은 특정 조정에 대한 짧은 호불호와 보석 원정대화 같은 성장 시스템 요구에 집중했다. 무작위 글은 패치 시점과 향후 조정 방향을 더 길게 논의했으며, 비교적 관망하는 시각이 많다. 글 1의 '스샤', 글 2의 '재~학', 글 4·5의 '더퍼', 글 6의 '종익'은 의미가 불분명하다.",
-       "subissues": [
-        {
-         "count": 2,
-         "name": "개별 스킬·직업 조정 결과에 대한 평가",
-         "posts": [
-          1,
-          2
-         ],
-         "quote": "풀죽음 짤짤이 30%는 너무 높긴했음",
-         "quote_post": 1
-        },
-        {
-         "count": 2,
-         "name": "밸런스 패치 시점에 대한 문제 제기(레이드 출시 전 선반영 요구)",
-         "posts": [
-          4,
-          6
-         ],
-         "quote": "출시예정이면 그 전전주에 미리 밸패하라구...",
-         "quote_post": 4
-        },
-        {
-         "count": 1,
-         "name": "단계적 조정과 지표 수집 이후 개선 기대",
-         "posts": [
-          5
-         ],
-         "quote": "일단 준비한거 적당히 풀고 지표보려고 하는거같음",
-         "quote_post": 5
-        },
-        {
-         "count": 1,
-         "name": "밸패보다 보석 원정대화 도입 요구",
-         "posts": [
-          3
-         ],
-         "quote": "보석 원정대화만 해줘도 골드 안먹는 캐릭까지 재밌게 할거같은데",
-         "quote_post": 3
-        }
-       ],
-       "summary": "글 5에 '오늘밸패'라는 표현이 있어 이날 밸런스 패치가 적용된 것으로 보이며, 이에 대한 반응 글이 게시되면서 '밸패' 언급이 평소 대비 16.0배 증가했다. 특정 스킬 하향에는 긍정 평가가 있는 반면, 패치할수록 나빠진다는 불만과 패치 시점에 대한 문제 제기, 지표 수집 후 추가 조정을 기대하는 의견이 함께 확인된다. 다만 제공된 업데이트·공지 목록에는 해당 패치가 포함되어 있지 않다."
-      },
-      "status": "ok"
-     }
-    ],
-    "reasons": [
-     "버그 신호 44건(평소 5.2건의 8.46배)"
-    ],
-    "sentiment": {
-     "base_classified": 6074,
-     "classified": 2088,
-     "neg": 0.3864,
-     "neg_base": 0.3947,
-     "of": 2092,
-     "topics": [
-      {
-       "base": 0.0853,
-       "name": "밸런스 · 직업",
-       "share": 0.4555,
-       "topic": "balance"
-      },
-      {
-       "base": 0.0917,
-       "name": "성장 · 강화",
-       "share": 0.1499,
-       "topic": "growth"
-      },
-      {
-       "base": 0.2952,
-       "name": "컨텐츠 · 업데이트",
-       "share": 0.1073,
-       "topic": "content"
-      },
-      {
-       "base": 0.1762,
-       "name": "기타",
-       "share": 0.1063,
-       "topic": "other"
-      },
-      {
-       "base": 0.1195,
-       "name": "파티 · 커뮤니티",
-       "share": 0.0728,
-       "topic": "social"
-      }
-     ]
-    }
-   }
-  ],
-  "cost_usd": 0.4625,
-  "date": "2026-11-18",
-  "events": [],
-  "game": "lostark",
-  "generated_at": "2026-11-19T05:18:34+09:00",
-  "model": "claude-opus-5-5",
-  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
- },
  "surges": [
   {
    "community": "인벤",
    "community_id": "inven",
    "reasons": [
-    "버그 신호 48건(평소 13.2건의 3.64배)"
-   ]
-  },
-  {
-   "community": "아카라이브",
-   "community_id": "arca",
-   "reasons": [
-    "버그 신호 22건(평소 5.2건의 4.23배)"
-   ]
-  },
-  {
-   "community": "디시인사이드",
-   "community_id": "dcinside",
-   "reasons": [
-    "버그 신호 44건(평소 5.2건의 8.46배)"
+    "버그 신호 23건(평소 10.5건의 2.19배)"
    ]
   }
  ]
