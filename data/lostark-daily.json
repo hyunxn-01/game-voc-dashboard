@@ -4078,6 +4078,1060 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "인벤",
+    "community_id": "inven",
+    "reads": [
+     {
+      "cost_usd": 0.0501,
+      "count": 2956,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 60,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 189,
+        "title": "나는 왜 광휘 나이스단때가 생각나냐",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328658"
+       },
+       {
+        "body": "있음",
+        "comments": 71,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 185,
+        "title": "커뮤가 죹 기형아스럽긴하다ㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328108"
+       },
+       {
+        "body": "있음",
+        "comments": 63,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 173,
+        "title": "접고오면 이득보는게임에서 접으면 손해보는게임",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329036"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "보석 먼일있음?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328476"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 5,
+        "title": "올해 초부터 주장했다 이제 진짜 들어올때 됐다",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329817"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "치명타 자체를 삭제하는건 어떻게 생각함?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329992"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 이동 시 신뢰도를 적용하는 패치 논의가 커뮤니티에서 확산되며 찬반 글이 증가한 것으로 보인다. 목록에 해당 공지나 업데이트는 확인되지 않는다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 보석 이동 신뢰도 패치를 지지하고 보석을 자주 옮기는 유저 집단을 강하게 비판하는 주장에 집중했다. 무작위 글은 보석 시세 변화에 대한 단순 질문이나 내용이 짧은 글, 무관한 스탯 제안이 섞여 있어 논의의 강도가 낮다. 글 1의 '광휘', '나이스단', '로창' 등은 의미가 불분명하다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 이동 신뢰도 패치에 대한 찬반 여론",
+         "posts": [
+          1,
+          2
+         ],
+         "quote": "보석이동시 신뢰도 패치는 이게 일반 유저는 들어와도 큰 피해가 없는데",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "다계정 보석 이동과 접을 때 보석 회수 행위 비판",
+         "posts": [
+          1,
+          2
+         ],
+         "quote": "다계정 우편 보석 줫다받앗다 줫다받앗다",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "접었다 복귀하면 이득을 보는 구조 비판과 유입 논리 반박",
+         "posts": [
+          2,
+          3
+         ],
+         "quote": "접으면이득보는게임에 누가유입함?",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "보석 시세 불안과 현금화 고민",
+         "posts": [
+          4
+         ],
+         "quote": "가격좀 오르면 현금으로 던지고 접을라했는데 지금 던져야함?",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "치명타 스탯 삭제 제안",
+         "posts": [
+          6
+         ],
+         "quote": "특화, 신속 이거 두개만 남기면안되나?",
+         "quote_post": 6
+        }
+       ],
+       "summary": "추천 상위 글 3건은 보석 이동 시 신뢰도를 적용하는 패치 논의를 다루며, 다계정 간 보석 이동이나 접을 때 보석을 회수하는 행위를 비판하고 해당 패치를 지지했다. 무작위 글에서는 보석 시세 변동을 우려하여 현금화를 고민하는 글이 게시됐고, 치명타 스탯 삭제 제안처럼 무관한 글도 확인된다. 증가 폭이 1.3배로 크지 않고 당일과 전날 공지가 없어, 보석 이동 패치 논의가 커뮤니티 안에서 확산되며 글 수가 증가한 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0453,
+      "count": 263,
+      "label": "'보석'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 12,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 69,
+        "title": "뉴비가 보석 회수안된다고 안온대 습박 ㅋㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328155"
+       },
+       {
+        "body": "있음",
+        "comments": 25,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 56,
+        "title": "“보석 친구 빌려주는건 신뢰도안까이게해줘”",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330266"
+       },
+       {
+        "body": "있음",
+        "comments": 61,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 48,
+        "title": "보석으로 지랄하는애들 10겁작은있냐",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330325"
+       },
+       {
+        "body": "있음",
+        "comments": 11,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "보석 원대화하면 귀속되는겨?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330064"
+       },
+       {
+        "body": "있음",
+        "comments": 9,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "보석 신뢰도는 맞다 틀리다를 떠나서 걍 기분이 나쁘긴함",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328921"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "근데 보석 저런다고",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330327"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 거래 또는 신뢰도 제도와 관련한 변경 발표나 소식이 전해져 보석 회수와 대여 문제가 논쟁으로 확산된 것으로 보인다."
+        },
+        {
+         "event": "없음",
+         "hypothesis": "글 6이 언급한 성휘 관련 소식으로 보석 시세 변동 기대가 형성되어 보석 언급이 증가했을 가능성이 있다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 보석 회수 요구자를 조롱하거나 신뢰도 정책 완화를 요구하는 주장 중심이다. 무작위 글은 같은 보석·신뢰도 주제를 다루되 개인적 불쾌감, 시세 전망, 귀속 여부 문의 등 실무적 내용에 무게를 뒀다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 회수(환급) 요구를 둘러싼 논쟁",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "회수를 논하고있냐",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "보석 친구 대여와 신뢰도 불이익, 신뢰도 우회에 대한 불만",
+         "posts": [
+          2,
+          5
+         ],
+         "quote": "보석 친구 빌려주는건 신뢰도안까이게해줘",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "보석 시세 하락과 향후 가격 전망",
+         "posts": [
+          5,
+          6
+         ],
+         "quote": "반토막 났는데 절대 그 가격까진 안오고",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "보석 원대화 시 귀속 여부 문의(원대화의 정확한 의미는 불명확하다)",
+         "posts": [
+          4
+         ],
+         "quote": "보석 원대화하면 귀속되는겨?",
+         "quote_post": 4
+        }
+       ],
+       "summary": "이날 인벤에서는 보석 회수(환급) 요구, 보석을 친구에게 빌려줄 때 적용되는 신뢰도 문제, 보석 시세 하락을 다룬 글이 집중적으로 게시됐다. 추천 상위 글은 보석 회수를 요구하는 이용자를 비꼬거나 친구 대여 시 신뢰도 불이익 면제를 요구했고, 무작위 글은 신뢰도 우회에 대한 불만과 시세 전망을 다뤘다. 보석 거래나 신뢰도와 관련한 변경 또는 논의가 있었던 것으로 보이나, 제공된 업데이트·공지 목록에서는 해당 계기가 확인되지 않는다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.035,
+      "count": 158,
+      "label": "'신뢰'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 71,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 80,
+        "title": "누가보면 복귀할때 보석사도 신뢰도 깎는줄 알겠네",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330129"
+       },
+       {
+        "body": "있음",
+        "comments": 34,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 75,
+        "title": "타 게임은 왜 신뢰도 시스템 없냐는 멍청한 소리하는데",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328855"
+       },
+       {
+        "body": "있음",
+        "comments": 69,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 64,
+        "title": "정상적인 유저들 = 신뢰도 쓸 곳 좀 만들어라 병탁아 ㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329433"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "님들 신뢰도 걱정 안해도됨",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330339"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "신뢰도 맞추기게임",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329969"
+       },
+       {
+        "body": "있음",
+        "comments": 99,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "보석 신뢰도 먹는게 장기적으론 문제가 될거같긴함",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330026"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "공지된 업데이트 없이 신뢰도와 보석 거래 차감 방식에 대한 유저 간 찬반 논쟁이 확산되어 언급량이 증가한 것으로 보인다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 복귀 유저 우려를 과장으로 반박하거나 신뢰도 시스템을 옹호하고 쌀팔이를 비난하는 내용이 중심이다. 무작위 글은 신뢰도 산정 방식에 대한 풍자와 보석 거래 시 신뢰도 차감이 장기적으로 복귀를 막을 것이라는 우려가 중심이며, 추천 상위 글과 다른 주장을 담고 있다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 구매 시 신뢰도 차감과 복귀 유저 부담 우려",
+         "posts": [
+          1,
+          6
+         ],
+         "quote": "접었다 했다 두번만 반복해도 신뢰도 세금이 어마어마할거같은데",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "신뢰도 시스템의 필요성 옹호(파괴·하락 없는 성장 구조 유지)",
+         "posts": [
+          2
+         ],
+         "quote": "유저에게 파괴나 하락 감성을 주고 싶지 않아서 스마게가 제시한 방책임",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "신뢰도 사용처 요구와 골드 판매 유저(쌀팔이) 비난",
+         "posts": [
+          3
+         ],
+         "quote": "신뢰도 쓸 곳 좀 만들어라",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "신뢰도 산정 기준에 대한 혼란과 풍자",
+         "posts": [
+          4,
+          5
+         ],
+         "quote": "제 신뢰도는 몇일까요",
+         "quote_post": 5
+        }
+       ],
+       "summary": "인벤에서 '신뢰도' 시스템을 두고 논쟁이 집중됐다. 보석 구매 등 거래에 신뢰도가 차감되어 접었다 복귀하는 유저에게 세금처럼 작용할 것이라는 우려, 신뢰도가 파괴·하락 없는 성장 구조를 유지하기 위한 장치라는 옹호, 신뢰도를 쓸 곳을 만들라는 요구와 골드 판매 유저(쌀팔이) 비난이 함께 게시됐다. 같은 날과 전날에 공지된 업데이트가 없어 특정 발표보다는 신뢰도 시스템에 대한 유저 간 논쟁이 확산되면서 언급량이 평소의 35.1배로 증가한 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0587,
+      "count": 101,
+      "label": "'팔찌'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 43,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 55,
+        "title": "그냥 힘민지랑 팔찌 공이속은 지들 편한대로 한거임 ㅋㅋㅋ",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4331337"
+       },
+       {
+        "body": "있음",
+        "comments": 23,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 48,
+        "title": "내 장비 이관 미리보기 & 팔찌 등급 계산기!",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328424"
+       },
+       {
+        "body": "있음",
+        "comments": 25,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 7,
+        "title": "무공 공이속 팔찌 못먹는 직업이 그렇게 많음?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330762"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "팔찌",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4330568"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "팔찌 넘어 가는거 소지하고 있는거에서 높은걸로 가는거임?",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4329800"
+       },
+       {
+        "body": "있음",
+        "comments": 9,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "서폿은 신특 팔찌 아니면 확 내려가네..",
+        "url": "https://www.inven.co.kr/board/lostark/6271/4328569"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "게시글에 언급된 라이브 방송에서 팔찌 등급 이관 방식이 공개되어 옵션별 등급 산정에 대한 비판과 이관 기준 문의가 증가한 것으로 보인다. 다만 해당 방송은 제공된 업데이트·공지 목록에서 확인되지 않는다."
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 옵션별 티어 산정 논리를 구체적인 수치로 비판하거나 계산 도구를 제공하는 등 분석 중심이다. 무작위 글은 이관 대상 팔찌 기준을 묻는 단순 문의와 서포터 팔찌 등급에 대한 개인 불만이 중심이며, 이관 방식에 대한 관심이라는 주제는 추천 상위 글과 같다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "팔찌 옵션 티어 산정 기준에 대한 불만(힘민지·무공의 가격·전투력 미반영)",
+         "posts": [
+          1
+         ],
+         "quote": "전투력 기준으로 했다는 것도 안 맞음",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "공이속 팔찌의 저평가",
+         "posts": [
+          1,
+          3
+         ],
+         "quote": "공이속 팔찌면 질증 미채용이여도 질증낄수 있으니 고르는거 진짜 많았는데",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "이관 대상 팔찌 기준(착용 중인 팔찌인지 보관 중인 팔찌인지) 문의",
+         "posts": [
+          4,
+          5
+         ],
+         "quote": "아님 점검전에 끼고 있던거에서 높은걸로 가는거임?",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "서포터 팔찌 등급 하락 불만",
+         "posts": [
+          6
+         ],
+         "quote": "기본 특화 특성보다 등급이 낮은게 말이되냐",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "외부 사이트의 이관 미리보기·팔찌 등급 계산기 공개",
+         "posts": [
+          2
+         ],
+         "quote": "팔찌 이관 예상 등급 계산기 를 추가했습니다",
+         "quote_post": 2
+        }
+       ],
+       "summary": "게시글은 라이브 방송에서 공개된 것으로 보이는 팔찌 등급 이관 방식에 집중되어 있다. 추천 상위 글은 힘민지·공이속·무공 옵션의 티어 산정이 거래소 가격이나 전투력 기준과 맞지 않는다고 비판했고, 한 외부 사이트 운영자는 팔찌 이관 예상 등급 계산기를 공개했다. 무작위 글은 착용 팔찌와 보관 팔찌 중 어느 것이 이관 기준인지 묻거나 서포터 팔찌의 등급 하락을 지적했으며, 이러한 이관 관련 문의와 불만이 '팔찌' 언급 급증의 원인으로 보인다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "이탈 표현 67건(평소 13건의 5.15배)",
+     "복귀 · 신규 표현 73건(평소 25.2건의 2.9배)"
+    ],
+    "sentiment": {
+     "base_classified": 9096,
+     "classified": 2956,
+     "neg": 0.3262,
+     "neg_base": 0.3847,
+     "of": 2956,
+     "topics": [
+      {
+       "base": 0.1085,
+       "name": "성장 · 강화",
+       "share": 0.3041,
+       "topic": "growth"
+      },
+      {
+       "base": 0.2795,
+       "name": "기타",
+       "share": 0.1901,
+       "topic": "other"
+      },
+      {
+       "base": 0.0327,
+       "name": "거래 · 경제",
+       "share": 0.1495,
+       "topic": "economy"
+      },
+      {
+       "base": 0.0995,
+       "name": "운영 · 이벤트",
+       "share": 0.1049,
+       "topic": "operation"
+      },
+      {
+       "base": 0.2156,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.0785,
+       "topic": "content"
+      }
+     ]
+    }
+   },
+   {
+    "community": "디시인사이드",
+    "community_id": "dcinside",
+    "reads": [
+     {
+      "cost_usd": 0.0361,
+      "count": 1443,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 8,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 27,
+        "title": "근데 병탁이도 존나 황당하긴 할듯",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885152"
+       },
+       {
+        "body": "있음",
+        "comments": 16,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 20,
+        "title": "제가 쌀숭이라 아는데 쌀숭이 입장에서 봤을때",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885776"
+       },
+       {
+        "body": "비어 있음",
+        "comments": 11,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 20,
+        "title": "ㅤ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885753"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "거가재료 팔까말까 고민되네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885806"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "지역챗으로 지랄하는 다계 쌀숭이들 안보이겠네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2886269"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "마력 옵션작 이건 얼마나 헬이길래 장기지",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2886239"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "전날 방송에서 이관 및 재화 신뢰도 차감 정책이 발표되어 쌀먹 · 보석 회수 논쟁이 증가한 것으로 보이나, 제공된 업데이트 · 공지 목록에는 해당 항목이 없다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 이관 · 신뢰도 정책을 지지하고 쌀먹 유저의 반발을 비판하는 주장에 집중했다. 무작위 글도 다계정 쌀먹 유저의 이탈을 반기는 같은 논조를 보였으나, 재료 판매 고민이나 마력 주입 옵션작 확률처럼 개인 성장 · 경제 문제를 다룬 글도 확인된다. 이관과 '거가재료'(거래 가능 재료로 추정)의 정확한 범위는 글에서 확인되지 않는다.",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "이관 · 보석 회수 정책과 쌀먹 유저 반발",
+         "posts": [
+          1,
+          2,
+          5
+         ],
+         "quote": "나온건 쌀숭이의 보석 회수시위",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "거래소 가치 기준 신뢰도 차감으로 인한 우회 차단 지지",
+         "posts": [
+          2
+         ],
+         "quote": "모든 재화 거래소가치만큼 신뢰도차감하면 진짜 우회할 방법이 없어요",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "정책 변화에 따른 거래 가능 재료 판매 고민",
+         "posts": [
+          4
+         ],
+         "quote": "거가재료 팔까말까 고민되네",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "마력 주입 옵션작 확률과 장기 성장 부담",
+         "posts": [
+          6
+         ],
+         "quote": "6개 돌리는 빠칭코라는건 알겠어",
+         "quote_post": 6
+        }
+       ],
+       "summary": "게시글은 전날 방송에서 발표된 것으로 보이는 이관 및 신뢰도 관련 정책, 특히 재화의 거래소 가치만큼 신뢰도를 차감하는 방식과 보석 회수 논란을 중심으로 게시됐다. 추천 상위 글은 쌀먹 유저의 반발(보석 회수시위)을 비판하고 정책 방향을 지지하는 내용이며, 일부 글은 거래 가능 재료 판매 고민과 마력 주입 옵션작의 확률 문제를 언급했다. 업데이트 · 공지 목록에는 해당 날짜의 항목이 없으나 글 2가 '어제 방송'을 언급하므로 방송 발표에 대한 반응이 글 수 증가의 원인으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0348,
+      "count": 92,
+      "label": "'보석'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 10,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 12,
+        "title": "난 이번 보석 신뢰도 패치 존~나 잘했다고 보는데",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885431"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 3,
+        "title": "보석 회수되는데?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885154"
+       },
+       {
+        "body": "있음",
+        "comments": 9,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 2,
+        "title": "그래...딱 한번만 보석 더 사자...",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2886190"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "보석 원대화되면",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2886099"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 1,
+        "title": "사실 엔컨 끝내고 보석 내리기는 병탁체제에서도 가능함",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2886042"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "근데 보석 뚫려도 뻥투력 정상화 한댔으니",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885955"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "보석 신뢰도와 거래 방식 변경 패치가 발표 또는 예고되어 이에 대한 찬반 논의가 증가한 것으로 보인다."
+        },
+        {
+         "event": "없음",
+         "hypothesis": "보석 원대화와 전투력 정상화 계획이 함께 언급되면서 보석 가치에 대한 전망 글이 증가한 것으로 보인다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 신뢰도 패치를 옹호하거나 보석 회수 가능 여부를 질문하는 등 패치 자체에 대한 반응을 중심으로 다룬다. 무작위 글은 원대화, 거래소 활용, 전투력 정상화 등 패치 이후 보석 운용과 가치 변화를 전망하는 내용이 중심이다.",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "보석 신뢰도 패치에 대한 평가",
+         "posts": [
+          1,
+          5
+         ],
+         "quote": "난 이번 보석 신뢰도 패치 존~나 잘했다고 보는데",
+         "quote_post": 1
+        },
+        {
+         "count": 3,
+         "name": "다계정 보석 이동 및 회수 가능 여부",
+         "posts": [
+          1,
+          2,
+          4
+         ],
+         "quote": "취업 안되는 부캐한테 쪼개줄 일도 없겠네",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "거래소를 통한 보석 등급 하향 및 재구매",
+         "posts": [
+          5
+         ],
+         "quote": "10겁작을 8겁작으로 내릴수 있다는거임",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "전투력 정상화에 따른 보석 가치 하락 전망",
+         "posts": [
+          6
+         ],
+         "quote": "보석이 투력에 미치는 영향은 지금보다 훨씬 줄어들듯?",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "보석 추가 구매 의향",
+         "posts": [
+          3
+         ],
+         "quote": "그래...딱 한번만 보석 더 사자...",
+         "quote_post": 3
+        }
+       ],
+       "summary": "게시글들은 보석 신뢰도 패치, 보석 회수, 보석 원대화(원정대 귀속화로 추정되나 정확한 의미는 불명확하다), 전투력 정상화에 따른 보석 가치 변화를 주로 다룬다. 추천 상위 글은 음수 처리와 페온 수수료를 조건으로 판매를 허용한 신뢰도 패치를 긍정적으로 평가했고, 무작위 글은 본캐와 부캐 간 보석 이동과 거래소를 통한 보석 등급 조정 방법을 논의했다. 업데이트 공지 목록에는 해당 항목이 없으나, 게시글 내용으로 보아 보석 거래 및 신뢰도 관련 패치 발표나 예고가 언급량 증가의 계기가 된 것으로 보인다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0345,
+      "count": 56,
+      "label": "'신뢰'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 10,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 12,
+        "title": "난 이번 보석 신뢰도 패치 존~나 잘했다고 보는데",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885431"
+       },
+       {
+        "body": "있음",
+        "comments": 7,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 2,
+        "title": "보석 신뢰도 패치를하면 소비심리가 줄어듬",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885733"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 2,
+        "title": "라방에서 신뢰도 실패했다고 하길래",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885986"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "신뢰도 정상화 아쉽네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885372"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "템옮길때 신뢰도 얼마나 쓰는지 말해줌?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885366"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "신뢰도 거래소도 까임?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885370"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "라이브 방송에서 보석 신뢰도 제도 강화 방침이 발표되어 관련 게시글이 증가한 것으로 보인다. 다만 제공된 업데이트·공지 목록에서는 해당 발표가 확인되지 않는다."
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 패치의 타당성과 보석 가치·소비에 미칠 영향에 대한 찬반 평가를 중심으로 의견을 제시했다. 무작위 글은 기존 골드 획득 방식이 종료된 데 대한 아쉬움과 거래소 판매·아이템 이동 시 신뢰도 차감 방식에 대한 질문을 중심으로 작성됐다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "보석 신뢰도 패치에 대한 찬성 의견(음수 처리 후 수수료 부과 방식 수용)",
+         "posts": [
+          1
+         ],
+         "quote": "음수처리 페온 수수료 내라잖아",
+         "quote_post": 1
+        },
+        {
+         "count": 1,
+         "name": "보석 소비 위축과 가격 하락 우려",
+         "posts": [
+          2
+         ],
+         "quote": "걍 보석 신뢰도패치는 득보다 실이 더 많음",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "라이브 방송에서 밝힌 신뢰도 제도 강화 방침",
+         "posts": [
+          3
+         ],
+         "quote": "실패했으니 강화시킨다였음",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "지인·다계정을 이용한 보석 거래 및 골드 획득 차단",
+         "posts": [
+          1,
+          4
+         ],
+         "quote": "주령된 지인들거로 골드 야무지게 캐놧는데",
+         "quote_post": 4
+        },
+        {
+         "count": 2,
+         "name": "아이템 이동·거래소 판매 시 신뢰도 차감 방식 문의",
+         "posts": [
+          5,
+          6
+         ],
+         "quote": "거래소로 보석팔면 신뢰도 까이는 구조?",
+         "quote_post": 6
+        }
+       ],
+       "summary": "게시글들은 보석 거래에 적용되는 '신뢰도' 제도 변경(보석 신뢰도 패치)을 다루며, 라이브 방송에서 개발진이 기존 신뢰도 제도가 실패했다고 언급하고 이를 강화하겠다고 밝힌 내용이 언급됐다. 이용자들은 패치에 대한 찬반 의견, 지인 계정을 이용한 골드 획득 방식의 종료, 거래소 판매와 아이템 이동 시 신뢰도 차감 방식에 대한 질문을 게시했다. 이 패치 발표가 '신뢰' 언급 게시글이 평소 대비 8.7배 증가한 원인으로 보이나, 제공된 업데이트·공지 목록에서는 해당 발표가 확인되지 않는다."
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.029,
+      "count": 53,
+      "label": "'팔찌'이(가) 든 글",
+      "read": [
+       {
+        "body": "비어 있음",
+        "comments": 6,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 3,
+        "title": "아니 내 팔찌 점수가 ㅋㅋㅋ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885295"
+       },
+       {
+        "body": "있음",
+        "comments": 13,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 0,
+        "title": "님들 팔찌 젤 괜찮은게 몇등급임",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885941"
+       },
+       {
+        "body": "비어 있음",
+        "comments": 12,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 0,
+        "title": "다들 본캐 팔찌 예상 등급 몇나옴?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885306"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "로펙 팔찌 1등급인 사람이 이정도구나",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885296"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "팔찌 ㅈ댓네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885225"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "내 서폿 팔찌 다 좆망함",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2885360"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "외부 평가 기준(로펙으로 보이며 정확한 의미는 불분명하다)에 팔찌 등급 산정 기능이 추가되거나 변경되어 이용자들이 결과를 인증한 것으로 보인다. 목록에 해당하는 공지는 없다."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 본인 팔찌 등급을 공유하고 다른 이용자의 등급을 묻는 참여형 글이 중심이며 댓글 수가 많다. 무작위 글은 같은 등급 산정을 다루면서도 낮은 등급 결과에 대한 불만과 상위 등급에 대한 감탄을 더 직접적으로 표현했다.",
+       "subissues": [
+        {
+         "count": 4,
+         "name": "팔찌 등급·점수 인증 및 비교",
+         "posts": [
+          1,
+          2,
+          3,
+          4
+         ],
+         "quote": "님들 팔찌 젤 괜찮은게 몇등급임",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "낮은 등급 산정에 대한 불만(서폿 팔찌 포함)",
+         "posts": [
+          5,
+          6
+         ],
+         "quote": "둘다 로펙 19퍼인데 11등급 12등급 이러네",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "상위 등급 팔찌에 대한 관심",
+         "posts": [
+          4
+         ],
+         "quote": "로펙 팔찌 1등급인 사람이 이정도구나",
+         "quote_post": 4
+        }
+       ],
+       "summary": "게시글들은 팔찌의 '등급' 또는 '점수'를 서로 공유하고 비교하는 내용이 중심이며, 일부 이용자는 '로펙' 기준 수치와 등급이 기대보다 낮게 나왔다고 불만을 표시했다. 공지된 업데이트는 없으나, 팔찌 등급을 산정하는 외부 기준(로펙으로 보이며 정확한 의미는 불분명하다)이 새로 적용되거나 변경되어 이용자들이 자기 팔찌 등급을 확인하고 인증한 것이 언급량 증가의 원인으로 보인다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "이탈 표현 24건(평소 2.5건의 9.6배)",
+     "복귀 · 신규 표현 28건(평소 8건의 3.5배)"
+    ],
+    "sentiment": {
+     "base_classified": 4187,
+     "classified": 1443,
+     "neg": 0.3478,
+     "neg_base": 0.3801,
+     "of": 1443,
+     "topics": [
+      {
+       "base": 0.1364,
+       "name": "성장 · 강화",
+       "share": 0.3569,
+       "topic": "growth"
+      },
+      {
+       "base": 0.0845,
+       "name": "운영 · 이벤트",
+       "share": 0.1254,
+       "topic": "operation"
+      },
+      {
+       "base": 0.0494,
+       "name": "거래 · 경제",
+       "share": 0.1234,
+       "topic": "economy"
+      },
+      {
+       "base": 0.2766,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1137,
+       "topic": "content"
+      },
+      {
+       "base": 0.1624,
+       "name": "기타",
+       "share": 0.0873,
+       "topic": "other"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.3235,
+  "date": "2026-11-21",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-22T03:23:53+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "인벤",
