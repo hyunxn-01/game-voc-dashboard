@@ -151,7 +151,7 @@ h3 .h3sub { font: 400 12.5px var(--font); color: var(--muted); margin-left: 6px;
 .ins-h .ins-st b { color: #fff; font-weight: 700; }
 .ins-items { display: grid; grid-template-columns: 1fr 1fr; }
 .ins-items.one { grid-template-columns: 1fr; }
-.ins-items.w21 { grid-template-columns: 2fr 1fr; }   /* 단계가 다르면 높은 쪽을 넓게(Glance Test 수정 2) */
+.ins-items.w21 { grid-template-columns: 1fr 1fr; }   /* 단계가 달라도 두 칸을 같은 폭으로(사용자 2026-11-23 "너무 끝에있어 옮겨줘". Glance Test 수정 2의 2 : 1을 바꿈) */
 .ins-it { padding: 14px 20px 15px; min-width: 0; }
 .ins-it + .ins-it { border-left: 1px solid var(--border); }
 .hl { font: 800 19px/1.35 var(--title); color: var(--text); }
@@ -585,7 +585,7 @@ tr.chosen td { background: var(--tint); }
 }
 /* 카드: 흰 바탕, 얇은 회색 테두리, 위쪽 진한 초록 선, 머리에 굵은 제목 */
 .card, .ins, .kv{ border-color:#d3d9d5 !important; border-radius:8px; }
-.card{ border-top:3px solid #1f6f54 !important; }
+.card.judge{ border-top:3px solid #1f6f54 !important; }   /* 위쪽 초록 선은 '이번 주 주요 이슈' 판에만(사용자 2026-11-23) */
 .card-h h2{ color:#16201b; }
 /* 이번 주 결론 띠는 진한 초록 */
 .ins-h{ background:#1f5a46 !important; }
