@@ -52,6 +52,9 @@ ul, ol { margin: 0; padding: 0; }
 .logo { width: 28px; height: 28px; border-radius: 7px; background: var(--navy); display: grid; place-items: center; flex: none; }
 .grp { font-size: 12px; color: var(--muted); margin: 18px 10px 6px; }
 .grp:first-of-type { margin-top: 0; }
+/* 2026-11-22 왼쪽 메뉴 구분선(사용자 "왼쪽 메뉴 구분선좀 그어줘"): 메뉴와 본문 사이 세로선, 메뉴 묶음(모니터링 · 분석) 사이 가로선 */
+.side { border-right: 1px solid var(--border); }
+.nav + .grp { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
 .nav { display: flex; flex-direction: column; gap: 2px; }
 .nav a { display: flex; align-items: center; gap: 10px; height: 34px; padding: 0 10px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 14px; }
 .nav a:hover { color: var(--text); background: var(--hover); }
@@ -573,6 +576,36 @@ tr.chosen td { background: var(--tint); }
   .kd-grid { grid-template-columns: minmax(0, 1fr); }
   .kt-tab { min-width: 900px; }   /* 대표 글 칸이 좁아 행마다 여러 줄로 꺾이지 않게 */
 }
+</style>
+<style>/* 2026-11-22 참고 화면 스타일(작업업무 대시보드): 색 · 카드 · 표 · 입력란 · 단추 */
+:root{
+  --ground:#f3f5f3; --surface:#ffffff; --border:#d3d9d5; --rule:#e6eae7; --control:#c9d0cb; --hover:#eef2ef; --subtle:#f7f8f7;
+  --text:#16201b; --body:#3d4842; --muted:#5f6862; --navy:#1f6f54; --tint:#e4efe9; --tint2:#cfe3d8;
+  --neu-bg:#e4efe9; --neu-ink:#1f5a46;
+}
+/* 카드: 흰 바탕, 얇은 회색 테두리, 위쪽 진한 초록 선, 머리에 굵은 제목 */
+.card, .ins, .kv{ border-color:#d3d9d5 !important; border-radius:8px; }
+.card{ border-top:3px solid #1f6f54 !important; }
+.card-h h2{ color:#16201b; }
+/* 이번 주 결론 띠는 진한 초록 */
+.ins-h{ background:#1f5a46 !important; }
+.ins-h span{ color:#cfe3d8 !important; }
+/* 왼쪽 메뉴: 고른 메뉴는 옅은 초록 바탕 */
+.nav a[aria-current="page"]{ background:#e4efe9 !important; color:#1f5a46 !important; }
+/* 국내 · 해외: 회색 바탕 안에 흰 칸이 눌린 세그먼트 단추 */
+.seg{ background:#eceeec !important; border:0 !important; border-radius:8px !important; padding:3px; height:34px !important; gap:2px; }
+.seg button{ border-radius:6px; }
+.seg button + button{ border-left:0 !important; }
+.seg button[aria-pressed="true"]{ background:#fff !important; color:#16201b !important; box-shadow:0 1px 2px rgba(22,32,27,.18); }
+/* 주된 단추: 진한 초록 바탕 흰 글자 */
+.primary{ background:#1f6f54 !important; }
+.primary:hover{ background:#17503d !important; }
+/* 입력란: 흰 바탕, 옅은 회색 테두리 */
+.sel{ border-color:#d3d9d5 !important; }
+.sel:hover, .sel:focus{ border-color:#1f6f54 !important; }
+/* 표: 머리줄은 옅은 회색 바탕 + 굵은 글자, 행 사이 얇은 선 */
+th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; border-bottom:1px solid #d3d9d5 !important; }
+.jt tr.jrow:hover td{ background:#f7f8f7 !important; }
 </style>
 </head>
 <body>
