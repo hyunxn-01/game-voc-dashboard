@@ -1331,17 +1331,15 @@ function respCard(rs) {
     body = `<p class="note card-note" style="padding-top:0">${respReady() ? "이번 주 대응 공지(문제 안내 · 소통 · 제재 · 변경 예고)가 없다." : "대응 공지 분류 전이다."}${ref.length ? " 같은 주 공식 공지를 참고로 보인다." : ""}</p>`
       + (ref.length ? `<ul class="list">${ref.map(r => `<li><span class="tt"><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(eventShort(r.title))}</a>` : esc(eventShort(r.title))}</span><span class="k">${esc(shortDay(r.date))}</span></li>`).join("")}</ul>` : "");
   }
-  return `<section class="card" aria-labelledby="h-resp"><div class="card-h"><h2 id="h-resp">이번 주 운영 대응</h2><span class="sub">공식 공지</span></div>${body}</section>`;
+  return `<section class="card" aria-labelledby="h-resp"><div class="card-h"><h2 id="h-resp">이번 주 운영 대응</h2></div>${body}</section>`;
 }
 function risingCard() {
   // 다섯은 평시 대비 배수 순서(평시가 있는 낱말 먼저, 평시에 없던 낱말은 그 뒤). 전체 목록은 '키워드 지형'의 급상승 키워드 표
   const rising = ((D.rising || {})[state.region] || {})[state.week] || [], s = sumOf();
   const top = rising.slice().sort((a, b) => (a.new ? 1 : 0) - (b.new ? 1 : 0) || (b.ratio || 0) - (a.ratio || 0) || b.count - a.count).slice(0, 5);
-  const coms = [...new Set(top.map(r => r.community))];
-  const sub = coms.length === 1 ? `${shortCom(coms[0])} · 평시 대비` : "커뮤니티별 평시 대비";
-  const body = top.length ? `<ul class="list">${top.map(r => `<li><span class="tt">${esc(r.word)}${coms.length > 1 ? ` <span class="muted" style="font-size:12.5px">${esc(shortCom(r.community))}</span>` : ""}</span><span class="k">${fmt(r.count)}건 · ${r.new ? "신규" : times1(r.ratio)}</span></li>`).join("")}</ul>`
+  const body = top.length ? `<ul class="list">${top.map(r => `<li><span class="tt">${esc(r.word)} <span class="muted" style="font-size:12.5px">${esc(shortCom(r.community))}</span></span><span class="k">${fmt(r.count)}건 · ${r.new ? "신규" : times1(r.ratio)}</span></li>`).join("")}</ul>`
     : `<div class="card-b"><p class="frame-empty">${s && (s.what.compared || []).length && !s.holiday_week ? "기준(평시의 3배 이상)을 넘은 키워드가 없다." : "평시 기준이 없어 판정하지 않았다."}</p></div>`;
-  return `<section class="card" aria-labelledby="h-rise"><div class="card-h"><h2 id="h-rise">급상승 키워드</h2><span class="sub">${esc(sub)}</span></div>${body}
+  return `<section class="card" aria-labelledby="h-rise"><div class="card-h"><h2 id="h-rise">급상승 키워드</h2></div>${body}
     <a class="more" href="?view=terrain" data-go="terrain">키워드 지형에서 대표 글 · 이어진 이슈 보기</a></section>`;
 }
 function drawEvidence(it, el, tableEl, height = 160) {
@@ -1397,7 +1395,7 @@ function trendSpan() {
 }
 function renderTrendView() {
   const el = $("#v-trend"), {weeks} = trendSpan(), gm = D.game_metrics;
-  el.innerHTML = `<section class="card" aria-labelledby="h-idx"><div class="card-h"><h2 id="h-idx">글 수 지수(평시 = 100)</h2><span class="sub">커뮤니티마다 직전 8주 평시를 100으로</span></div>
+  el.innerHTML = `<section class="card" aria-labelledby="h-idx"><div class="card-h"><h2 id="h-idx">글 수 지수(평시 = 100)</h2></div>
       <div class="ctrl"><span class="g"><span class="clab">기간</span>${seg("trange", [["13", "13주"], ["26", "26주"], ["all", "전체"]], state.trange, "기간")}</span></div>
       <div class="card-b"><div id="idxChart"></div>
       <p class="src">긴 점선은 큰 업데이트, 짧은 점선은 운영 대응 공지, 노란 음영은 공휴일이 든 주, 옅은 남색 음영은 기준 주다.</p></div>
@@ -1564,7 +1562,7 @@ function renderResponse() {
     cmp = `<div class="tablewrap"><table><thead><tr><th>대응 주</th><th>대응 공지</th>${coms.map(sc => `<th class="r">${esc(shortCom(sc.name))}<span class="sub" style="display:block">그 주 · 다음 주(평시 대비)</span></th>`).join("")}<th>같은 주 다른 사건</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`
       + (dropped.length ? `<p class="note card-note" style="padding-top:8px;padding-bottom:0">${esc(dropped.join(" · "))}${eun(dropped[dropped.length - 1])} 이 기간 대응 주에 부정 비율이 없어(분류 전 · 평시 기록 부족) 열에서 뺐다.</p>` : "");
   }
-  el.innerHTML = listCard + `<section class="card" aria-labelledby="h-cmp"><div class="card-h"><h2 id="h-cmp">대응 전후 비교</h2><span class="sub">커뮤니티마다 직전 8주 평시와 비교</span></div>${cmp}
+  el.innerHTML = listCard + `<section class="card" aria-labelledby="h-cmp"><div class="card-h"><h2 id="h-cmp">대응 전후 비교</h2></div>${cmp}
     <p class="note card-note">대응과 반응 변화 사이에 다른 일이 겹칠 수 있어 이 표는 원인을 말하지 않는다. ▲는 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(이슈 후보 기준)이다.</p></section>`;
 }
 
@@ -1587,13 +1585,13 @@ function reportModel() {
   return {W, R, s, wk, items, rows, concl, nums: numbers(), top: picks[0] || items[0], judged: judgedText(W)};
 }
 function renderReport() {
-  const el = $("#v-report"), m = reportModel(), gen = D.generated_at;
+  const el = $("#v-report"), m = reportModel();
   // 판단 칸은 단계 표시(높음 · 보통 · 관찰)만 적는다(2026-11-23 사용자 요청으로 담당자 표시와 결론 제목 옆 상태를 뺐다)
   const lvl = j => j && j.level ? `<span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span>` : DASH;
   const body = m.concl.lines.length || m.concl.ex.length ? `<p class="p-concl">${m.concl.lines.map(esc).join(" ")}${m.concl.ex.map(t => `<span class="x">${esc(t.text)}</span>`).join("")}</p>` : "";
   el.innerHTML = `${latestNote()}<article class="paper" id="paper" aria-labelledby="h-paper">
     <h2 id="h-paper">${esc(D.name)} 유저 동향 주간 보고서</h2>
-    <p class="p-meta num">${esc(yearWeek(m.W))} · ${esc(m.R)} 커뮤니티 · 커뮤니티마다 직전 8주 평시와 비교 · 데이터 ${esc(gen.slice(5, 10).replace("-", "/"))} 생성</p>
+    <p class="p-meta num">${esc(yearWeek(m.W))} · ${esc(m.R)} 커뮤니티</p>
     <section class="p-sec"><h3>이번 주 결론</h3>${m.concl.lead ? `<p class="p-lead">${esc(m.concl.lead)}</p>` : ""}${body}</section>
     <section class="p-sec"><h3>숫자</h3><div class="p-nums">${m.nums.map((x, n) => kvCell(x, "", "r" + n)).join("")}</div></section>
     <section class="p-sec"><h3>이슈 ${m.items.length}건${(m.wk.items || []).length > m.items.length ? ` <span class="h3sub">전체 ${(m.wk.items || []).length}건 가운데 판단 순서로 5건</span>` : ""}</h3>
@@ -2080,7 +2078,7 @@ function renderTerrain() {
           <span class="kt-ir2">${nm(it).dup ? "" : esc(shortCom(it.community)) + " · "}<span class="up num">▲ ${esc(it.change)}</span> · 이어진 키워드 ${n}개</span></a></li>`;
       }).join("")}</ol>`
     : `<p class="kt-ih">같은 주 이슈 후보</p><p class="frame-empty">이번 주 이슈 후보가 없다.</p>`;
-  const card = `<section class="card" aria-labelledby="h-kt" style="margin-top:16px"><div class="card-h"><h2 id="h-kt">급상승 키워드 지형 · ${kws.length}개</h2><span class="sub num">커뮤니티마다 직전 8주 평시와 비교 · ${esc(weekRange(W))} · ${esc(R)}</span></div>
+  const card = `<section class="card" aria-labelledby="h-kt" style="margin-top:16px"><div class="card-h"><h2 id="h-kt">급상승 키워드 지형 · ${kws.length}개</h2></div>
     <p class="kt-lead">${lead}</p>
     <div class="kt-ctrl">${comCtl}<label class="kt-chk"><input type="checkbox" id="ktOnly"${state.ktOnly ? " checked" : ""}${linked.length ? "" : " disabled"}><span>이슈와 이어진 키워드만 <span class="num muted">${linked.length}개</span></span></label>
       <span class="kt-key"><span>${svgSwatch(NAVY)}같은 글로 이어짐</span><span>${svgSwatch(NOTE_LINE, "4 3")}글자만 겹침</span><span>${ring}이어진 키워드</span></span></div>
