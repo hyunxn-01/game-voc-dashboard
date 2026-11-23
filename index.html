@@ -105,7 +105,6 @@ h1:focus { outline: none; }
 .seg button[aria-pressed="true"] { background: var(--navy); color: #fff; font-weight: 700; }
 .seg button:disabled { color: #94a3b8; cursor: not-allowed; }
 .seg button:focus-visible { outline-offset: -3px; }
-.fresh { margin-left: auto; font-size: 12.5px; color: var(--muted); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- 판(카드) ---------- */
@@ -204,7 +203,6 @@ td.nw { white-space: nowrap; }
 .pill { display: inline-block; height: 26px; line-height: 26px; padding: 0 12px; border-radius: 999px; font-size: 13.5px; font-weight: 700; white-space: nowrap; flex: none; }
 .p-high { background: var(--neg-bg); color: var(--neg-ink); } .p-mid { background: var(--warn-bg); color: var(--warn-ink); }
 .p-watch { background: var(--neu-bg); color: var(--neu-ink); } .p-ign { background: var(--ign-bg); color: var(--ign-ink); }
-.by { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; white-space: nowrap; }
 .t1 { font: 800 15.5px/1.35 var(--title); color: var(--text); }
 .jt .t1, .jt .t2, .jt .c-ch .t2 { white-space: nowrap; }
 button.t1 { border: 0; background: none; padding: 0; cursor: pointer; text-align: left; }
@@ -409,7 +407,6 @@ tr.chosen td { background: var(--tint); }
   .p-issues .lk { padding: 5px 0; margin-top: 0; }
   .past > summary { flex-wrap: wrap; }
   .past > summary .sub { order: 3; flex-basis: 100%; }
-  .fresh { grid-column: 1 / -1; margin-left: 0; }
   .ins-items, .ins-items.w21 { grid-template-columns: 1fr; }
   .ins-it + .ins-it { border-left: 0; border-top: 1px solid var(--border); }
   .ins-h { padding: 9px 16px; }
@@ -607,6 +604,37 @@ tr.chosen td { background: var(--tint); }
 th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; border-bottom:1px solid #d3d9d5 !important; }
 .jt tr.jrow:hover td{ background:#f7f8f7 !important; }
 </style>
+<style>/* 2026-11-23 머리 영역 초록: 제목 줄 · 선택 줄을 진한 초록 띠로, 글자는 흰색(사용자 요청, 시장분석 대시보드 머리 영역과 같은 색) */
+.mhead{ background:#1f6f54; margin:-28px -32px 0; padding:24px 32px 20px; }
+.mhead-in{ max-width:1400px; }
+.mhead h1{ color:#fff; }
+.mhead :focus-visible{ outline-color:#fff; }
+.mhead .primary{ background:#fff !important; color:#1f5a46 !important; }
+.mhead .primary:hover{ background:#e4efe9 !important; }
+.mhead .ghost{ border-color:#fff; }
+.mhead .copy-status{ color:rgba(255,255,255,.85); }
+.mhead .sel{ border-color:#fff !important; }
+@media screen and (max-width: 1100px){ .mhead{ margin:-20px -24px 0; padding:20px 24px 18px; } }
+@media screen and (max-width: 820px){ .mhead{ margin:-16px -16px 0; padding:16px 16px 16px; } }
+@media print{ .mhead{ display:none !important; } }
+/* 결론 띠 오른쪽 '기간 · 지역' 글: 판단 상태를 뺀 뒤 주마다 글 폭이 달라져 자리가 움직였다. 모든 주 · 두 지역에서 잰 가장 긴 폭(113.5px)에 맞춘다 */
+@media screen and (min-width: 821px){ .ins-h .ins-st{ display:inline-block; min-width:114px; text-align:right; } }
+@media screen and (max-width: 820px){ .ins-h .ins-st{ flex-basis:100%; } }   /* 휴대폰: 결론 제목 길이에 따라 같은 줄 · 다음 줄을 오가지 않게 늘 제 줄에 둔다 */
+</style>
+<style>/* 2026-11-23 모서리: 시장분석 대시보드와 같게 카드 · 판 · 칸 · 말풍선은 4px, 단추 · 선택 상자 · 지역 전환 · 메뉴 항목은 알약(사용자 요청) */
+.card, .ins, .kv, .frame-empty, .banner, .info-pop, .kv-pop, .wknote, .jdet .dsec, .ai-box, .svgchart .tip, .kt-wrap .tip,
+.past > summary:hover, .steps li, .paper, .p-nums, .yday, .memo, .intro > summary, .kt-il a, .lg{ border-radius:4px !important; }
+.judge .jh{ border-radius:2px 2px 0 0 !important; }   /* 위 테두리 3px 안쪽 모서리. 값은 DESIGN.md rounded.mark */
+.kt-det{ border-radius:0 0 4px 4px !important; }
+.primary, .ghost, .sel, .seg, .seg button, .mbar .menu-btn, .side-close, .skip, .nav a{ border-radius:999px !important; }
+</style>
+<style>/* 2026-11-23 AI 정독 요약 강조: 요약 칸은 옅은 초록 바탕, 'AI 정독 요약' 표시는 진한 초록 바탕 흰 글자, 요약은 불릿(사용자 요청) */
+.ai-box .dsec-sum{ background:#e9f3ed !important; }
+.ai-box .dsec-sum .ai-l{ background:#1f6f54; color:#fff; }
+.ai-box ul.sum{ margin:8px 0 0; padding-left:18px; color:var(--text); font-size:14px; line-height:1.6; }
+.ai-box ul.sum li + li{ margin-top:2px; }
+.ai-box ul.sum li::marker{ color:#1f6f54; }
+</style>
 </head>
 <body>
 <a class="skip" href="#main">본문 바로가기</a>
@@ -658,7 +686,7 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
   </aside>
 
   <main class="main" id="main">
-    <div class="main-in">
+    <div class="mhead"><div class="mhead-in">
       <div class="titlerow">
         <div><h1 id="h1" tabindex="-1">유저 동향 주간 점검</h1></div>
         <div class="actions" id="actions"></div>
@@ -667,8 +695,9 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
         <label class="sr" for="gameSel">게임</label><select class="sel" id="gameSel"></select>
         <div class="seg" id="regionSeg" role="group" aria-label="지역"></div>
         <label class="sr" for="weekSel">기준 주</label><select class="sel num" id="weekSel"></select>
-        <span class="fresh num" id="fresh"></span>
       </div>
+    </div></div>
+    <div class="main-in">
 
       <section class="view" data-view="judge" id="v-judge" aria-labelledby="h1"><p class="empty" style="margin-top:16px;min-height:600px">불러오는 중</p></section>
       <section class="view" data-view="trend" id="v-trend" aria-labelledby="h1" hidden></section>
@@ -710,7 +739,7 @@ const muted = t => `<span class="muted">${t}</span>`;
 const DASH = '<span class="dash" aria-label="없음">–</span>';
 const CHEV = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';   // 접기 표시(프로젝트 소개와 같은 모양)
 const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const firstSentence = t => { const m = String(t || "").match(/^(.+?[.!?])(?=\s|$)/); return m ? m[1] : String(t || ""); };
+const firstSentence = t => { const x = String(t || ""); if (x.includes("\n")) return x.split(/\n+/)[0].trim(); const m = x.match(/^(.+?[.!?])(?=\s|$)/); return m ? m[1] : x; };
 
 // ---------- 색 · 이름 ----------
 // 색은 이름으로 정한다(정렬 순서로 정하면 입력이 바뀔 때 같은 항목의 색이 흔들린다. 스킬 bot-pages-dashboard 함정).
@@ -1063,26 +1092,26 @@ function judgedText(W = state.week) {
   const miss = notJudged(W);
   return compared.map(shortCom).join(" · ") + (miss.length ? `(${miss.map(x => esc(shortCom(x.name)) + eun(shortCom(x.name)) + " " + esc(x.why)).join(", ")})` : "");
 }
+// 정독 요약은 불릿으로 보인다(2026-11-23 사용자 "불릿으로 ~다 말고 짧게"): 줄바꿈으로 나뉜 요약은 줄마다, 줄바꿈이 없는 옛 문단은 문장마다 한 줄
+const sumLines = t => { const x = String(t || "").trim(); return x ? (x.includes("\n") ? x.split(/\n+/) : x.split(/(?<=[.!?])\s+/)).map(y => y.replace(/^[-•·]\s*/, "").trim()).filter(Boolean) : []; };
 function deepCard(c) {
   const d = (D.deepread || {})[c.id];
   if (!d || !d.result) return `<div class="ai-box"><div class="dsec"><div class="head"><span class="ai-l">AI 정독 요약</span></div><p class="empty" style="margin-top:6px">정독 요약이 없다. 해당 글이 3건보다 적거나 아직 정독하지 않은 후보다.</p></div></div>`;
   const r = d.result, read = d.read || [];
-  const nTop = read.filter(p => p.group === "추천 상위").length, nRnd = read.length - nTop;
   const link = n => { const p = read[n - 1]; return p ? ` <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">글 ${n}</a>` : ""; };
   // 구간(제목 + 내용)마다 묶음(div.dsec)으로 감싼다. 펼친 행에서는 묶음마다 흰 바탕 칸이 된다(2026-11-21 구간 나누기)
-  return `<div class="ai-box"><div class="dsec"><div class="head"><span class="ai-l">AI 정독 요약</span><span class="meta">본문 ${read.length}건(추천 상위 ${nTop}건 · 무작위 ${nRnd}건) · 확신도 ${esc(CONF[r.confidence] || "–")}(모델 판단) · <span class="nw">${esc(mname(d.model))}</span></span></div>
-    <p class="sum">${esc(r.summary)}</p></div>
-    ${(r.subissues || []).length ? `<div class="dsec"><h3 class="dh">하위 문제</h3><ul>${r.subissues.map(s => `<li>${esc(s.name)} <span class="muted">(정독 ${read.length}건 중 ${s.count}건)</span>${s.quote ? ` <span class="q">“${esc(s.quote)}”</span>${link(s.quote_post)}` : ""}</li>`).join("")}</ul></div>` : ""}
-    ${r.endorsed_vs_common ? `<div class="dsec"><h3 class="dh">추천 상위 글과 일반 글의 차이</h3><p>${esc(r.endorsed_vs_common)}</p></div>` : ""}
+  return `<div class="ai-box"><div class="dsec dsec-sum"><div class="head"><span class="ai-l">AI 정독 요약</span></div>
+    <ul class="sum">${sumLines(r.summary).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
     ${(r.causes || []).length ? `<div class="dsec"><h3 class="dh">원인 가설</h3><ul>${r.causes.map(x => `<li>${esc(x.hypothesis)}${x.event && x.event !== "없음" ? ` <span class="muted">(${esc(x.event)})</span>` : ""}</li>`).join("")}</ul></div>` : ""}
-    <div class="dsec dsec-fold"><details><summary>정독한 글 ${read.length}건(요약 속 글 번호와 같음)</summary><ol>${read.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>
+    ${(r.subissues || []).length ? `<div class="dsec"><h3 class="dh">하위 문제</h3><ul>${r.subissues.map(s => `<li>${esc(s.name)} <span class="muted">(정독 ${read.length}건 중 ${s.count}건)</span>${s.quote ? ` <span class="q">“${esc(s.quote)}”</span>${link(s.quote_post)}` : ""}</li>`).join("")}</ul></div>` : ""}
+    <div class="dsec dsec-fold"><details><summary>정독한 글 ${read.length}건</summary><ol>${read.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>
       <span class="muted">${esc(p.group)}, 추천 ${fmt(p.recommends || 0)}, 댓글 ${fmt(p.comments || 0)}</span></li>`).join("")}</ol></details></div></div>`;
 }
 
 // ---------- 주간 점검 항목(weekly.items) 표시 ----------
 function pill(j) {
   if (!j || !j.level) return DASH;
-  return `<span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span>${j.by === "담당자" ? '<span class="by">담당자</span>' : ""}`;
+  return `<span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span>`;
 }
 // 지속: 2주 이상 이어지면 'n주 연속', 13주 안에 처음이면 '처음', 띄엄띄엄 나왔으면 '13주 중 n번'
 function durText(it) {
@@ -1115,7 +1144,6 @@ function respLine(it, rs) {
   return `관련 공지: ${esc(eventShort(d.notice.title, d.notice.date))}${r && r.reward ? " · 보상" : ""}`;
 }
 // 모든 행이 같은 관련 공지 줄일 때 표 끝에 한 번 적는 문장
-// 'AI 초안' 표시는 판의 상태 줄에 한 번만 둔다(Glance Test 수정 5)
 function sharedText(line, n) {
   if (line.startsWith("관련 공지: ")) return `이슈 ${n}건 모두 관련 공지는 ${line.slice(7)}`;
   if (line === "관련 공지 없음") return `이슈 ${n}건 모두 같은 주 공지 가운데 관련 공지가 없다`;
@@ -1131,12 +1159,6 @@ function insightText(it) {
 const headlineHtml = h => `${esc(shortLead(h.lead))} <em class="num">${esc(h.em)}</em>${h.tail ? " " + esc(h.tail) : ""}`;
 const headlineText = h => `${shortLead(h.lead)} ${h.em}${h.tail ? " " + h.tail : ""}`;
 const endDot = t => /[.!?]$/.test(String(t).trim()) ? String(t).trim() : String(t).trim() + ".";
-// 판단 상태 한 줄(판마다 한 번, Glance Test 수정 5): 확인 전 판단이 확정처럼 보이지 않게 한다(설계안 5-3 원칙 4)
-function judgeState(items) {
-  const nAi = items.filter(x => x.judgment && x.judgment.by === "AI 초안").length, nConf = items.filter(x => x.judgment && x.judgment.by === "담당자").length;
-  if (!nAi && !nConf) return "판단 초안 없음";
-  return nAi ? `AI 초안 · 담당자 확인 ${nConf}건` : `담당자 확인 ${nConf}건`;
-}
 const RANK = {"높음": 0, "보통": 1, "관찰": 2};
 const rankOf = it => it.judgment && it.judgment.level in RANK ? RANK[it.judgment.level] : 3;
 // 같은 주에 이름이 같은 이슈가 둘 이상이면 이름 뒤에 커뮤니티를 붙인다(Glance Test 수정 8: 같은 이슈가 두 번 나온 것처럼 보였다)
@@ -1214,10 +1236,10 @@ const kvCell = (x, cls = "", key = "") => `<div><div class="l">${esc(x.l)}</div>
 function renderJudge() {
   const el = $("#v-judge"), W = state.week, R = state.region, s = sumOf(), wk = WK(), items = wk.items || [];
   const compared = s ? (s.what.compared || []) : [];
-  // 인사이트: 띠 제목 자리에 이번 주 결론 한 문장(판단 초안이 쓴다), 없으면 '이번 주 인사이트'. 띠 오른쪽은 판단 상태 · 기간 · 지역(Glance Test 수정 1 · 5)
+  // 인사이트: 띠 제목 자리에 이번 주 결론 한 문장(판단 초안이 쓴다), 없으면 '이번 주 인사이트'. 띠 오른쪽은 기간 · 지역(Glance Test 수정 1. 판단 상태는 2026-11-23에 뺐다)
   let ins;
   const concl = items.length && wk.conclusion ? endDot(wk.conclusion) : null;
-  const insHead = `<div class="ins-h"><h2 id="h-ins"${concl ? ' class="concl"' : ""}>${concl ? `<span class="ins-k">이번 주 결론</span>${esc(concl)}` : "이번 주 인사이트"}</h2><span class="ins-st num">${items.length ? `<b>${esc(judgeState(items))}</b> · ` : ""}${esc(weekRange(W))} · ${esc(R)}</span></div>`;
+  const insHead = `<div class="ins-h"><h2 id="h-ins"${concl ? ' class="concl"' : ""}>${concl ? `<span class="ins-k">이번 주 결론</span>${esc(concl)}` : "이번 주 인사이트"}</h2><span class="ins-st num">${esc(weekRange(W))} · ${esc(R)}</span></div>`;
   const one = (hl, ex) => `<div class="ins-items one"><div class="ins-it"><div class="hl">${hl}</div>${ex ? `<p class="ex">${ex}</p>` : ""}</div></div>`;
   if (!s) ins = one("이 주는 요약이 없다", "한 주 전체가 수집되지 않은 주는 0이 아니라 빈칸으로 표시한다.");
   else if (s.holiday_week) ins = one("연휴 주라 평시와 비교하지 않았다", "연휴 주는 평시 비교에서 제외해 이슈 후보와 급상승 키워드를 선정하지 않는다.");
@@ -1238,7 +1260,6 @@ function renderJudge() {
   let h = `${ydayBar()}${latestNote()}<section class="ins" aria-labelledby="h-ins">${insHead}${ins}</section>`;
   h += `<section class="kv" aria-label="이번 주 숫자">${numbers().map((x, n) => kvCell(x, " num", "j" + n)).join("")}</section>`;
   // 판단 표
-  const headNote = `${judgeState(items)} · 커뮤니티마다 직전 8주 평시와 비교`;
   let table, shared = null;
   if (!items.length) {
     const why = !s ? "이 주는 요약이 없다." : s.holiday_week ? "연휴 주는 이슈 후보를 선정하지 않는다." : !compared.length ? "평시와 비교할 수 있는 커뮤니티가 없어 판정하지 않았다." : "평시보다 크게 달라진 항목이 없다.";
@@ -1259,7 +1280,7 @@ function renderJudge() {
   // 지시문이 바뀐 주는 펼침 단추 이름에 '분류 지시문 변경'을 더해, 판정 대상 목록과 섞이지 않게 한다(완성본 검토 2차)
   const fl = compared.length ? `판정 대상: ${judgedText()}` : "";
   const more = (fl ? "표 읽는 법" : "펼치기") + (cn ? " · 분류 지시문 변경" : "");
-  const judgeCard = `<section class="card judge" aria-labelledby="h-judge"><div class="jh"><h2 id="h-judge">이번 주 주요 이슈 · ${items.length}건</h2><span>${esc(headNote)}</span></div>${table}
+  const judgeCard = `<section class="card judge" aria-labelledby="h-judge"><div class="jh"><h2 id="h-judge">이번 주 주요 이슈 · ${items.length}건</h2></div>${table}
     <details class="jfoot"><summary><span>${fl || "표 읽는 법"}</span><span class="jmore">${more}${CHEV}</span></summary><div class="jnotes">${notes.map(x => `<p class="note">${x}</p>`).join("")}</div></details></section>`;
   // 근거 그래프
   const top = items.find(x => x.id === (wk.insights || [])[0]) || items[0];
@@ -1289,8 +1310,7 @@ function judgeRow(it, n, rs, shared = null, nm = namer([it])) {
 function detail(it, rs) {
   const c = candOf(it.id) || {}, j = it.judgment, d = it.draft;
   let jd;
-  if (j && j.by === "담당자") jd = `<p><span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span> 담당자 확인${j.note ? ` · ${esc(j.note)}` : ""}</p>${d ? `<p class="note" style="margin-top:6px">AI 초안: ${esc(d.level || "–")}${d.reason ? " · " + esc(d.reason) : ""}</p>` : ""}`;
-  else if (d) jd = `<p><span class="ai-l">AI 초안 · 확인 전</span> <b>${esc(d.level || "–")}</b></p>${d.reason ? `<p style="margin-top:4px">${esc(d.reason)}</p>` : ""}${d.action ? `<p style="margin-top:4px"><span class="muted">권할 다음 행동:</span> ${esc(d.action)}</p>` : ""}`;
+  if (d) jd = `<p><span class="ai-l">AI 초안</span> <b>${esc(d.level || "–")}</b></p>${d.reason ? `<p style="margin-top:4px">${esc(d.reason)}</p>` : ""}${d.action ? `<p style="margin-top:4px"><span class="muted">권장 대응:</span> ${esc(d.action)}</p>` : ""}`;
   else jd = `<p class="muted">판단 초안이 없다.</p>`;
   const respHtml = state.region !== "국내" ? muted("운영 대응 공지는 국내 서버 공지만 모은다.") : rs.length ? `<ul class="reps">${rs.map(r => `<li><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)} <span class="muted num">${esc(shortDay(r.date))}</span>${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : muted(respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다.");
   return `<div class="dgrid">${deepCard(it)}
@@ -1552,7 +1572,6 @@ function renderResponse() {
 function reportModel() {
   const W = state.week, R = state.region, s = sumOf(), wk = WK(), items = (wk.items || []).slice(0, 5);
   const picks = (wk.insights || []).map(id => (wk.items || []).find(x => x.id === id)).filter(Boolean);
-  const nAi = (wk.items || []).filter(x => x.judgment && x.judgment.by === "AI 초안").length, nConf = (wk.items || []).filter(x => x.judgment && x.judgment.by === "담당자").length;
   let concl;
   if (!s) concl = {lines: ["이 주는 요약이 없다."], ex: []};
   else if (s.holiday_week) concl = {lines: ["연휴 주라 평시와 비교하지 않았다."], ex: []};
@@ -1565,17 +1584,17 @@ function reportModel() {
     const c = candOf(it.id) || {}, t = it.draft && it.draft.reason ? {text: it.draft.reason, by: "AI 초안"} : insightText(it);
     return {it, nn: nm(it), why: t, reps: repPosts(c.metric, it.community, 2)};
   });
-  return {W, R, s, wk, items, rows, concl, nAi, nConf, state: judgeState(wk.items || []), nums: numbers(), top: picks[0] || items[0], judged: judgedText(W)};
+  return {W, R, s, wk, items, rows, concl, nums: numbers(), top: picks[0] || items[0], judged: judgedText(W)};
 }
 function renderReport() {
   const el = $("#v-report"), m = reportModel(), gen = D.generated_at;
-  // 'AI 초안' 표시는 결론 제목 옆 상태 한 번만(행마다 붙이지 않는다, Glance Test 수정 5). 담당자가 확인한 행만 '담당자 확인'을 적는다
-  const lvl = j => j && j.level ? `<span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span>${j.by === "담당자" ? '<span class="by">담당자 확인</span>' : ""}` : DASH;
+  // 판단 칸은 단계 표시(높음 · 보통 · 관찰)만 적는다(2026-11-23 사용자 요청으로 담당자 표시와 결론 제목 옆 상태를 뺐다)
+  const lvl = j => j && j.level ? `<span class="pill ${LEVEL_CLS[j.level] || "p-ign"}">${esc(j.level)}</span>` : DASH;
   const body = m.concl.lines.length || m.concl.ex.length ? `<p class="p-concl">${m.concl.lines.map(esc).join(" ")}${m.concl.ex.map(t => `<span class="x">${esc(t.text)}</span>`).join("")}</p>` : "";
   el.innerHTML = `${latestNote()}<article class="paper" id="paper" aria-labelledby="h-paper">
     <h2 id="h-paper">${esc(D.name)} 유저 동향 주간 보고서</h2>
     <p class="p-meta num">${esc(yearWeek(m.W))} · ${esc(m.R)} 커뮤니티 · 커뮤니티마다 직전 8주 평시와 비교 · 데이터 ${esc(gen.slice(5, 10).replace("-", "/"))} 생성</p>
-    <section class="p-sec"><h3>이번 주 결론${(m.wk.items || []).length ? ` <span class="ai-l">${esc(m.state)}</span>` : ""}</h3>${m.concl.lead ? `<p class="p-lead">${esc(m.concl.lead)}</p>` : ""}${body}</section>
+    <section class="p-sec"><h3>이번 주 결론</h3>${m.concl.lead ? `<p class="p-lead">${esc(m.concl.lead)}</p>` : ""}${body}</section>
     <section class="p-sec"><h3>숫자</h3><div class="p-nums">${m.nums.map((x, n) => kvCell(x, "", "r" + n)).join("")}</div></section>
     <section class="p-sec"><h3>이슈 ${m.items.length}건${(m.wk.items || []).length > m.items.length ? ` <span class="h3sub">전체 ${(m.wk.items || []).length}건 가운데 판단 순서로 5건</span>` : ""}</h3>
       ${m.items.length ? `<table class="p-issues"><thead><tr><th>판단</th><th>이슈</th><th>변화</th><th>지속</th><th>근거 · 대표 글</th></tr></thead><tbody>${m.rows.map(({it, nn, why, reps}) => `<tr${it.judgment && it.judgment.level === "관찰" ? ' class="watch"' : ""}>
@@ -1585,8 +1604,7 @@ function renderReport() {
         : `<p class="empty">판단할 이슈 후보가 없다.</p>`}</section>
     ${m.top ? `<section class="p-sec"><h3>13주 추이: ${esc(shortCom(m.top.community))} ${esc(m.top.issue)} <span class="h3sub">실선 이번 주까지 · 점선 평시(직전 8주)</span></h3><div class="p-chart" id="pChart"></div><details class="tablefold no-print" style="padding:6px 0 0"><summary>표로 보기</summary><div class="tablewrap" id="pTable"></div></details></section>` : ""}
     <section class="p-sec"><h3>같은 주 운영 대응</h3>${m.R !== "국내" ? '<p class="empty">운영 대응 공지는 국내 서버 공지만 모은다.</p>' : (m.wk.responses || []).length ? `<ul class="p-list">${m.wk.responses.map(r => `<li><span class="tag">${esc(r.kind)}</span>${esc(shortDay(r.date))} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : `<p class="empty">${respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다."}</p>`}</section>
-    <section class="p-sec"><h3>판단 확인과 비교 기준</h3><p class="p-basis">판단: AI 초안 ${m.nAi}건 · 담당자 확인 ${m.nConf}건${(m.wk.items || []).length && !m.nAi && !m.nConf ? "(판단 초안 없음)" : ""}. 확인 전 판단은 AI 초안으로 적고, 확정은 담당자가 한다.
-      비교 기준: 커뮤니티마다 직전 8주 평시와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
+    <section class="p-sec"><h3>비교 기준과 자료</h3><p class="p-basis">비교 기준: 커뮤니티마다 직전 8주 평시와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
       자료: 커뮤니티 게시판 목록(공개는 제목 · 링크만), 제목 분류 Claude ${esc(mname(D.classify.model))}${D.classify.escalate ? " · " + esc(mname(D.classify.escalate)) : ""}, 본문 정독 Claude ${esc(mname(((D.method || {}).deepread || {}).model))}.</p></section>
   </article>`;
   if (m.top) drawEvidence(m.top, $("#pChart"), $("#pTable"), 150);
@@ -1596,7 +1614,7 @@ function reportText() {
   const L = [];
   L.push(`[${D.name} 유저 동향 주간 보고서] ${yearWeek(m.W)} · ${m.R}`);
   L.push("");
-  L.push(`■ 이번 주 결론${(m.wk.items || []).length ? `(${m.state})` : ""}`);
+  L.push("■ 이번 주 결론");
   if (m.concl.lead) L.push(m.concl.lead);
   m.concl.lines.forEach(t => L.push(t));
   m.concl.ex.forEach(t => L.push(t.text));
@@ -1607,7 +1625,7 @@ function reportText() {
   L.push(`■ 이슈 ${m.items.length}건`);
   if (!m.items.length) L.push("- 판단할 이슈 후보가 없다.");
   m.rows.forEach(({it, why, reps}, n) => {
-    const j = it.judgment && it.judgment.level ? `${it.judgment.level}${it.judgment.by === "담당자" ? " · 담당자 확인" : ""}` : "판단 전";
+    const j = it.judgment && it.judgment.level ? `${it.judgment.level}` : "판단 전";
     L.push(`${n + 1}. [${j}] ${shortCom(it.community)} ${it.issue}: ${it.change}(${it.value}), ${durText(it)}`);
     L.push(`   근거: ${why ? why.text : shortLead(it.facts)}`);
     reps.forEach(p => L.push(`   대표 글: ${p.title} ${p.url}`));
@@ -1618,7 +1636,6 @@ function reportText() {
   else if ((m.wk.responses || []).length) m.wk.responses.forEach(r => L.push(`- [${r.kind}] ${shortDay(r.date)} ${r.title}${r.reward ? " (보상)" : ""}${r.url ? " " + r.url : ""}`));
   else L.push(`- ${respReady() ? "같은 주 대응 공지 없음" : "대응 공지 분류 전"}`);
   L.push("");
-  L.push(`■ 판단 확인: AI 초안 ${m.nAi}건 · 담당자 확인 ${m.nConf}건. 확인 전 판단은 AI 초안이다.`);
   L.push(`■ 비교 기준: 커뮤니티마다 직전 8주 평시와 비교.${m.judged ? " 판정 대상: " + m.judged.replace(/<[^>]+>/g, "") + "." : ""}`);
   L.push(`화면: ${url}`);
   return L.join("\n");
@@ -1787,7 +1804,7 @@ function methodFlow() {
     <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. 확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
     <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
-    <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권할 행동 초안을 쓰고, 담당자가 판단 표에서 확인한다.</li>
+    <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권장 대응 초안을 쓴다.</li>
     <li><b>공개</b>집계 값, 대표 글의 제목 · 링크, 본문에 실재하는 ${(dr.max_quote_words ?? 14) + 1}어절 미만 인용만 공개한다.</li></ol>`;
 }
 function methodCompare() {
@@ -1837,7 +1854,7 @@ function renderMethod() {
   h += fold("판정 기준(자체 설정 값)", `<dl class="kvl">
     <dt>평시</dt><dd>직전 ${ru.base_weeks}주 평균(미수집 주 제외, ${ru.min_base_weeks}주 이상일 때만 산출). 연휴가 든 주도 넣는다. 글 수는 앞 ${ru.base_weeks}주의 평일 하루 평균 × 평일 수 + 주말 하루 평균 × (주말 + 공휴일 수)로 낸 기대값과 비교한다</dd>
     <dt>이슈 후보</dt><dd>키워드 그룹 · 신호 · 주제는 비중이 평시의 ${ru.surge_ratio}배 이상이고 ${ru.surge_min_posts}건 이상일 때, 부정 비율은 평시 대비 ${pp(ru.neg_alert_pp)} 이상이고 분류 글이 ${ru.surge_min_posts}건 이상일 때 선정한다. 커뮤니티별로 비교한다</dd>
-    <dt>판단 초안</dt><dd>높음 · 보통 · 관찰 세 단계(AI 초안). 담당자가 판단 표에 적은 중요도가 있으면 그것을 보인다</dd>
+    <dt>판단 초안</dt><dd>높음 · 보통 · 관찰 세 단계(AI 초안)</dd>
     <dt>업데이트 효과</dt><dd>점검 날부터 7일과 직전 7일 · 평시(그 앞 7일 8개 평균) 비교. 점검 뒤 7일 글 ${ru.update_min_posts}건 이상인 커뮤니티만 산출</dd>
     <dt>큰 업데이트</dt><dd>${(D.updates || []).filter(u => u.major).map(u => `${esc(u.date)} ${esc(u.name)}`).join(" · ") || "해당 없음"}(공식 공지와 조사로 별도 선정한 목록)</dd>
     <dt>변동 폭 기준(참고 기록)</dt><dd>평시 평균 + 표준편차 × ${ru.z_threshold}</dd>
@@ -1866,10 +1883,7 @@ function renderHead() {
   // 휴대폰 · 태블릿 위 막대는 큰 제목이 말하지 않는 것을 적는다: 첫 화면은 메뉴 이름, 다른 메뉴는 화면 이름(Glance Test 수정 10)
   $("#mWhere").textContent = v === "judge" ? name : "유저 동향 주간 점검";
   $$(".nav a[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-  const last = D.weeks[D.weeks.length - 1], next = addWeek(addWeek(last)), gen = D.generated_at;
-  // 가장 최근 주가 아님을 알리는 글은 판 맨 위 한 줄(latestNote)로 옮겼다(Glance Test 수정 4)
-  // 다음 집계는 날짜만 적는다. 월요일 분석은 새벽 1시에 시작한 수집이 끝난 뒤 서버에서 돌고, 수집 시간은 그날 글 수에 달려(인벤 글 한 건에 2초) 끝나는 시각이 날마다 다르다(2026-10-31 진단)
-  $("#fresh").textContent = `데이터 ${shortDay(gen.slice(0, 10))} ${gen.slice(11, 16)} 생성 · 다음 집계 ${shortDay(next)}(${dow(next)})`;
+  // 머리 영역의 '데이터 … 생성 · 다음 집계 …' 줄은 2026-11-23 사용자 요청으로 뺐다
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
   $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
     <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}(확신도가 낮은 글은 ${esc(mname(cl.escalate))}), 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
@@ -1956,15 +1970,15 @@ function renderMonthly() {
   h += `<div class="card-note"><p class="note">부정 비율 · 순긍정은 제목 분류로 집계한다(게임과 상관없는 글은 뺀다). 순긍정은 긍정 비율에서 부정 비율을 뺀 값(%p)이다.${partial.length ? ` ${partial.map(c => `${esc(shortCom(c.community))}은 그달 글의 ${pct(c.classified_share, 0)}만 분류돼`).join(", ")} 긍정/부정 · 주제를 내지 않았다(분류는 7/22부터).` : ""} 떠오른 낱말은 글 1천 건당 나온 수가 직전 3개월 평균의 3배 이상이면서 30건 이상인 낱말이다.</p></div></section>`;
   if (!state.mcom || !coms.some(c => c.community_id === state.mcom)) state.mcom = (coms.find(c => c.topics) || coms[0]).community_id;
   const mc = coms.find(c => c.community_id === state.mcom);
-  h += `<section class="card" aria-labelledby="h-mtop"><div class="card-h"><h2 id="h-mtop">주제 비중과 긍정/부정이 강한 주제</h2></div>
+  h += `<section class="card" aria-labelledby="h-mtop"><div class="card-h"><h2 id="h-mtop">주제 비중과 긍정/부정이 강한 주제</h2><button type="button" class="info" aria-expanded="false" aria-controls="i-mtop" aria-label="지표 설명">${INFO_ICON}</button></div>
+    <div class="info-pop" id="i-mtop" hidden><p>주제 비중은 그 주제가 붙은 글의 비율이다(한 글에 주제가 둘이면 두 주제에 모두 집계한다). 긍정/부정이 강한 주제는 그달 30건 이상인 주제에서 고른다.</p></div>
     <div class="ctrl"><span class="g"><span class="clab">커뮤니티</span>${seg("mcom", coms.map(c => [c.community_id, shortCom(c.community)]), state.mcom, "커뮤니티")}</span></div>`;
   if (!mc.topics) h += `<div class="card-b"><p class="frame-empty">이 달은 분류된 글이 모자라 주제를 내지 않았다.</p></div></section>`;
   else {
     const trow = t => `<tr><td>${esc(t.name)}</td><td class="r num">${pct(t.share)}</td><td class="r num">${t.share_prev != null ? pct(t.share_prev) : "–"}</td><td class="r num">${t.share_prev != null ? ppz(t.share - t.share_prev) : "–"}</td></tr>`;
     const slist = (xs, k, lab) => `<div><h3>${lab}</h3><table class="mt"><thead><tr><th>주제</th><th class="r">${k === "neg" ? "부정" : "긍정"} 비율</th><th class="r">글</th></tr></thead><tbody>${xs.map(x => `<tr><td>${esc(x.name)}</td><td class="r num">${pct(x[k])}</td><td class="r num">${fmt(x.n)}</td></tr>`).join("")}</tbody></table></div>`;
     h += `<div class="card-b two"><div class="mcol"><h3>주제 비중</h3><table class="mt"><thead><tr><th>주제</th><th class="r">이번 달</th><th class="r">전달</th><th class="r">차이</th></tr></thead><tbody>${mc.topics.map(trow).join("")}</tbody></table></div>
-      <div class="mstrong">${slist(mc.strong_neg || [], "neg", "부정이 강한 주제")}${slist(mc.strong_pos || [], "pos", "긍정이 강한 주제")}</div></div>
-      <div class="card-note"><p class="note">주제 비중은 그 주제가 붙은 글의 비율이다(한 글에 주제가 둘이면 두 주제에 모두 집계한다). 긍정/부정이 강한 주제는 그달 30건 이상인 주제에서 고른다.</p></div></section>`;
+      <div class="mstrong">${slist(mc.strong_neg || [], "neg", "부정이 강한 주제")}${slist(mc.strong_pos || [], "pos", "긍정이 강한 주제")}</div></div></section>`;
   }
   const issues = rep.issues || [], ups = rep.updates || [], eff = rep.update_effects || [];
   h += `<section class="card" aria-labelledby="h-miss"><div class="card-h"><h2 id="h-miss">그달의 이슈와 업데이트</h2></div><div class="card-b two">
@@ -2059,7 +2073,7 @@ function renderTerrain() {
   const ring = `<svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="${NAVY}" stroke-width="1.6"/><circle cx="8" cy="8" r="3.5" fill="#94a3b8"/></svg>`;
   const nm = namer(items);
   const issCol = items.length
-    ? `<p class="kt-ih">같은 주 이슈 후보 ${items.length}건 · ${esc(judgeState(items))}</p><ol class="kt-il" id="ktIl">${items.map(it => {
+    ? `<p class="kt-ih">같은 주 이슈 후보 ${items.length}건</p><ol class="kt-il" id="ktIl">${items.map(it => {
         const n = kws.filter(k => k.links.some(l => l.id === it.id)).length, lv = it.judgment && it.judgment.level;
         return `<li data-id="${esc(it.id)}"><a href="${esc(queryFor("judge", it.id))}" class="kt-go" data-issue="${esc(it.id)}">
           <span class="kt-ir1">${lv ? `<span class="pill sm ${LEVEL_CLS[lv] || "p-ign"}">${esc(lv)}</span>` : ""}<span class="kt-in">${esc(nm(it).name)}</span></span>
