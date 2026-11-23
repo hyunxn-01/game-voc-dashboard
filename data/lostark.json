@@ -57413,7 +57413,7 @@
    "minutes_apart": 46
   }
  },
- "generated_at": "2026-11-23T14:45:51+09:00",
+ "generated_at": "2026-11-23T16:19:42+09:00",
  "holiday_excluded_weeks": [],
  "holidays": {
   "2025-12-22": [
@@ -57894,6 +57894,7 @@
    "본문 정독": 4.52,
    "분류": 136.07,
    "시범 · 모델 비교": 2.11,
+   "주제 설명": 0.29,
    "판단 초안": 1.4
   }
  },
@@ -342657,13 +342658,15 @@
       "title": "로스트아크 샵 내 일부 상품 판매 중단 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13296"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2025-12-01": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-08": {
     "conclusion": null,
@@ -342705,13 +342708,15 @@
       "title": "12월 12일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13313"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2025-12-15": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-22": {
     "conclusion": null,
@@ -342779,7 +342784,8 @@
       "title": "불량 이용자 조치내역 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13329"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2025-12-29": {
     "conclusion": null,
@@ -342833,7 +342839,8 @@
       "title": "2026년 1월 2일(금) 로스트아크 1부 완결 기념 라이브 방송 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13335"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-01-05": {
     "conclusion": null,
@@ -342901,7 +342908,8 @@
       "title": "라이브 방송 ‘퀴즈 이벤트 및 로스트아크 설정집 추가 증정 모험가’ 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13343"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-01-12": {
     "conclusion": null,
@@ -342963,7 +342971,8 @@
       "title": "1월 13일(화) 니나브 서버 점검 완료 및 수정 사항 안내 (내용 추가)",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13348"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-01-19": {
     "conclusion": null,
@@ -343009,7 +343018,8 @@
       "value": "1.4% · 평시 0.7%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-01-26": {
     "conclusion": null,
@@ -343063,13 +343073,15 @@
       "title": "2026년 1월 30일(금) '로스트아크 1부 스토리 완결 코멘터리 영상' 공개 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13359"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-02-02": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-09": {
     "conclusion": null,
@@ -343168,7 +343180,8 @@
       "title": "2월 13일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13371"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-02-16": {
     "conclusion": null,
@@ -343214,13 +343227,15 @@
       "value": "0.3% · 평시 0.2%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-23": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-02": {
     "conclusion": null,
@@ -343312,7 +343327,8 @@
       "title": "2026년 3월 6일(금) 로스트아크 라이브 방송 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13384"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-03-09": {
     "conclusion": null,
@@ -343366,7 +343382,8 @@
       "title": "불량 이용자 조치내역 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13391"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-03-16": {
     "conclusion": null,
@@ -343450,7 +343467,8 @@
       "value": "1.7% · 평시 0.8%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-23": {
     "conclusion": null,
@@ -343534,13 +343552,15 @@
       "value": "2.5% · 평시 1.6%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-30": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-06": {
     "conclusion": null,
@@ -343586,7 +343606,8 @@
       "value": "4.1% · 평시 2.5%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-13": {
     "conclusion": null,
@@ -343600,7 +343621,8 @@
       "title": "2026년 4월 17일(금) 로스트아크 라이브 방송 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13412"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-04-20": {
     "conclusion": null,
@@ -343668,7 +343690,8 @@
       "title": "일부 캐릭터의 비정상 접속 종료 현상 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13419"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-04-27": {
     "conclusion": null,
@@ -343722,7 +343745,8 @@
       "title": "불량 이용자 조치내역 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13424"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-05-04": {
     "conclusion": null,
@@ -343806,13 +343830,15 @@
       "value": "0.3% · 평시 0.2%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-11": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-18": {
     "conclusion": null,
@@ -343887,7 +343913,8 @@
       "title": "5월 22일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13446"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-05-25": {
     "conclusion": null,
@@ -343933,7 +343960,8 @@
       "value": "1.1% · 평시 0.7%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-01": {
     "conclusion": null,
@@ -344054,7 +344082,8 @@
       "value": "2.3% · 평시 1.5%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-08": {
     "conclusion": null,
@@ -344197,7 +344226,8 @@
       "title": "[정상화] 아크라시아 풋볼 챔피언 이벤트 페이지 임시 점검 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13461"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-06-15": {
     "conclusion": null,
@@ -344251,7 +344281,8 @@
       "title": "[정상화] 일부 캐릭터의 비정상 접속 종료 현상 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13463"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-06-22": {
     "conclusion": null,
@@ -344439,7 +344470,8 @@
       "title": "불량 이용자 조치내역 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13476"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-06-29": {
     "conclusion": null,
@@ -344485,7 +344517,8 @@
       "value": "4.6% · 평시 1.6%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-06": {
     "conclusion": null,
@@ -344584,7 +344617,8 @@
       "title": "7월 9일(목) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13487"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-07-13": {
     "conclusion": null,
@@ -344630,13 +344664,15 @@
       "value": "1.2% · 평시 0.7%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-20": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-27": {
     "conclusion": null,
@@ -344735,7 +344771,8 @@
       "title": "실리안 서버 일부 캐릭터의 비정상 접속 종료 현상 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13504"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-08-03": {
     "conclusion": null,
@@ -344856,7 +344893,8 @@
       "title": "8월 7일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13512"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-08-10": {
     "conclusion": null,
@@ -344917,7 +344955,8 @@
       "title": "8월 13일(목) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13520"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-08-17": {
     "conclusion": null,
@@ -345083,7 +345122,8 @@
       "title": "[정상화] 로스트아크 공식 홈페이지 및 게임 내 일부 웹 페이지 순단 현상 발생 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13527"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-08-24": {
     "conclusion": null,
@@ -345219,7 +345259,8 @@
       "title": "8월 27일(목) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13534"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-08-31": {
     "conclusion": null,
@@ -345311,7 +345352,8 @@
       "title": "[정상화] 로스트아크 공식 홈페이지 및 게임 내 일부 웹 페이지 순단 현상 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13538"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-09-07": {
     "conclusion": null,
@@ -345654,7 +345696,8 @@
       "value": "0.6% · 평시 0.4%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-09-14": {
     "conclusion": null,
@@ -345746,7 +345789,8 @@
       "title": "리샤의 편지에서 '카제로스 레이드 익스트림'과 가을 이벤트 소식을 전합니다.",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13546"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-09-21": {
     "conclusion": null,
@@ -345926,7 +345970,8 @@
       "title": "9월 24일(목) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13554"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-09-28": {
     "conclusion": "디렉터 공지 뒤 너프 논의와 해명 반발이 겹쳤으나 후속 공지는 없다.",
@@ -346430,7 +346475,8 @@
       "title": "카단 서버 일부 캐릭터의 비정상 접속 종료 현상 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13562"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-10-05": {
     "conclusion": "업데이트 주간 반응이 분산됐고 운영 불만에 대한 공식 대응은 없다",
@@ -346741,7 +346787,8 @@
       "title": "10월 9일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13569"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-10-12": {
     "conclusion": "라이브 방송 전후 운영 비판이 집중됐으나 후속 대응은 확인되지 않는다",
@@ -347016,7 +347063,8 @@
       "title": "2026년 10월 16일(금) 로스트아크 라이브 방송 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13573"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-10-19": {
     "conclusion": "이탈 언급이 늘었으나 구체적 원인과 관련 공지는 확인되지 않는다.",
@@ -347134,7 +347182,8 @@
       "title": "11월 25일(수) 장기 미접속 계정 내 캐릭터명 초기화 사전 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13577"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-10-26": {
     "conclusion": "라이브 방송 발표에 반응이 몰렸고 후속 공지는 없다.",
@@ -347668,7 +347717,8 @@
       "title": "10월 28일(수) 로스트아크 정기 점검 완료 안내 (내용 수정)",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13582"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-11-02": {
     "conclusion": "8주년 상품과 라이브 방송에 반응이 몰렸으나 아바타 불만 대응 공지는 없다",
@@ -348237,7 +348287,11 @@
       "title": "11월 5일(목) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13592"
      }
-    ]
+    ],
+    "topic_notes": {
+     "growth": "라이브 방송 보석 원대화 예고 뒤 보석 구매 시점 · 시세 논의 · 카드 확장과 카드 BM 우려",
+     "monetization": "8주년 기념 아바타 출시 지연 · 표지와 다른 디자인 불만 · 신규 펫 호평"
+    }
    },
    "2026-11-09": {
     "conclusion": "8주년 직후 잡담과 신규 이용자 논쟁이 늘었고 관련 공지는 없다.",
@@ -348439,7 +348493,8 @@
       "title": "알려진 이슈를 안내해 드립니다. (11/12 수정)",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13594"
      }
-    ]
+    ],
+    "topic_notes": null
    },
    "2026-11-16": {
     "conclusion": "라이브 방송 개편 발표와 업데이트에 반응이 몰렸으나 후속 공지는 없다.",
@@ -349526,7 +349581,12 @@
       "title": "11월 20일(금) 로스트아크 임시 점검 완료 안내",
       "url": "https://lostark.game.onstove.com/News/Notice/Views/13603"
      }
-    ]
+    ],
+    "topic_notes": {
+     "balance": "수요일 패치 뒤 서포터 저점 패치 평가 · 딜러 마나 부족 불만 · 다중치명타 피해 검증",
+     "economy": "라이브 방송 거래 신뢰도 차감 · 보석 수수료 예고에 쌀먹 제재 논쟁 · 골드 비축 고민",
+     "growth": "라이브 방송 슬롯 재련 · 장비 이관 공개 뒤 팔찌 등급 산정 불만 · 각인 슬롯 개편 논의"
+    }
    }
   },
   "해외": {
@@ -349534,229 +349594,267 @@
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-01": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-08": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-15": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-22": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2025-12-29": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-01-05": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-01-12": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-01-19": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-01-26": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-02": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-09": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-16": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-02-23": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-02": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-09": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-16": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-23": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-03-30": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-06": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-13": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-20": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-04-27": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-04": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-11": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-18": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-05-25": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-01": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-08": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-15": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-22": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-06-29": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-06": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-13": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-20": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-07-27": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-08-03": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-08-10": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-08-17": {
     "conclusion": null,
@@ -349802,37 +349900,45 @@
       "value": "30.8% · 평시 20.3%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "content": "브렐슈드 나이트메어 클리어 영상 · 직업별 공략 공유, 진행 속도 부담 토로"
+    }
    },
    "2026-08-24": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-08-31": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-09-07": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-09-14": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-09-21": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-09-28": {
     "conclusion": "한국 서버 너프 소식에 대한 부정 반응이 작은 표본에서 늘었다.",
@@ -349891,13 +349997,15 @@
       "value": "38.5% · 평시 22.3%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-10-05": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-10-12": {
     "conclusion": "레이드 난이도 하향 불만이 있으나 표본이 작고 계기가 불명확하다",
@@ -349952,7 +350060,8 @@
       "value": "35.7% · 평시 23.1%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": null
    },
    "2026-10-19": {
     "conclusion": "신규 레이드 출시 반응이 중심이며 콘텐츠 누락 관련 안내는 없다.",
@@ -350007,7 +350116,10 @@
       "value": "42.7% · 평시 20.9%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "content": "신규 그림자 레이드 벨가르딘 출시 첫날 솔로 모드 호평 · 공략 치트시트와 관문별 클리어 영상 공유"
+    }
    },
    "2026-10-26": {
     "conclusion": "레이드 클리어 공유로 콘텐츠 글이 늘었고 공식 계기는 없다.",
@@ -350062,25 +350174,42 @@
       "value": "46.6% · 평시 23.5%"
      }
     ],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "content": "벨가르딘 나이트메어 클리어 영상 공유 · 1750 배럭 골드 레이드 선택과 가디언 토벌 질문"
+    }
    },
    "2026-11-02": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "monetization": "아웃핏 꾸미기 논의 · Sylvains용 Ascendant Witch Festival 머리 장식 구매처 문의",
+     "operation": "한국 서버 8주년 방송 요약 공유 · 아마존 클라이언트 조작 의혹 불만"
+    }
    },
    "2026-11-09": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "balance": "신규 유저의 직업 픽률 불균형 의문 · 가디언나이트 피해 감소 논의",
+     "economy": "구매자 감사 거래 후기 · 캐릭터 귀속 골드 한도 관련 질문",
+     "social": "파티 내 사칭 유저에 대한 커뮤니티 관용 비판 · 대형 스트리머 디스코드 분위기 언급"
+    }
    },
    "2026-11-16": {
     "conclusion": null,
     "insights": [],
     "items": [],
-    "responses": []
+    "responses": [],
+    "topic_notes": {
+     "balance": "한국 서버 새 직업 밸런스 패치와 라이브 방송 내용 논의",
+     "content": "한국 서버 11월 20일 방송의 파트2 주요 변경 요약 공유 · 로아온 기대감",
+     "growth": "귀속 재료 의견 교환 · 한국 서버 방송에서 공개된 보석 변경점 논의"
+    }
    }
   }
  },

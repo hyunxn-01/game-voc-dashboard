@@ -650,6 +650,8 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 .ovb-t span.dn{ right:50%; background:#b9bcc4; border-radius:2px 0 0 2px; }
 .ovb-v{ text-align:right; font-weight:700; color:var(--text); }
 .ovb-v.dn{ color:var(--muted); }
+.ovb-x{ grid-column:1/-1; margin:-2px 0 4px; font-size:13px; line-height:1.45; color:var(--body); }
+.ovl li.muted{ display:block; font-size:13.5px; }
 .ovl{ list-style:none; margin:0; padding:0; display:grid; gap:9px; }
 .ovl li{ display:grid; grid-template-columns:5.6em minmax(0,1fr); gap:10px; font-size:14px; line-height:1.5; }
 .ovl b{ color:var(--muted); font-size:13px; font-weight:700; }
@@ -1253,18 +1255,21 @@ const kvInfo = (x, key) => !x.info ? "" : `<div class="kv-foot no-print"><button
 const kvCell = (x, cls = "", key = "") => `<div><div class="l">${esc(x.l)}</div>${x.v != null ? `<div class="v${x.weak ? " weak" : ""}${cls}">${esc(x.v)}<small>${esc(x.u || "")}</small></div>` : `<div class="v na${cls}">${esc(x.na || "–")}</div>`}${x.d ? `<div class="d">${esc(x.d)}</div>` : ""}<div class="c">${esc(x.c || "")}</div>${kvInfo(x, key)}</div>`;
 
 // ---------- ① 주요 이슈(첫 화면) ----------
-// 이번 주 결론 띠 아래: 지역 전체(국내면 국내 커뮤니티 합계)의 동향 두 칸. 값은 화면 데이터의 지역 계열에서 계산한다(2026-11-23 사용자 요청)
+// 이번 주 결론 띠 아래: 지역 전체(국내면 국내 커뮤니티 합계)의 동향 두 칸. 값은 화면 데이터의 지역 계열에서 계산한다(2026-11-23 사용자 요청).
+// 늘어난 주제 줄 아래 한 줄은 주요 주제 설명(topic_notes.py가 쓴 weekly.topic_notes). 지역 전체 평시가 없는 주는 비교하지 않고 그렇다고 쓴다
 function overallHtml() {
-  const R = state.region, ser = (D.series || {})["region:" + R] || {}, i = wi(), s = sumOf();
+  const R = state.region, ser = (D.series || {})["region:" + R] || {}, i = wi(), s = sumOf(), tn = WK().topic_notes || {};
   const at = k => { const m = ser[k]; if (!m) return null; const v = (m.value || [])[i], b = (m.base || [])[i]; return v == null ? null : {v, b, r: (m.ratio || [])[i], c: (m.count || [])[i]}; };
-  const tops = D.topics.filter(t => t.id !== "other").map(t => ({name: t.name, def: t.definition || "", ...(at("topic:" + t.id) || {})})).filter(x => x.v != null && x.b != null).map(x => ({...x, d: x.v - x.b}));
+  const all = D.topics.filter(t => t.id !== "other").map(t => ({id: t.id, name: t.name, def: t.definition || "", ...(at("topic:" + t.id) || {})})).filter(x => x.v != null);
+  const tops = all.filter(x => x.b != null).map(x => ({...x, d: x.v - x.b}));
   const up = tops.filter(x => x.d >= 0.01).sort((a, b) => b.d - a.d).slice(0, 3), dn = tops.filter(x => x.d <= -0.01).sort((a, b) => a.d - b.d).slice(0, 3);
   const rows = up.concat(dn), mx = Math.max(0.01, ...rows.map(x => Math.abs(x.d)));
-  const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>`).join("")
-    : `<p class="muted" style="grid-column:1/-1">평시와 1%p 넘게 달라진 주제 없음</p>`;
+  const note = x => x.d > 0 && tn[x.id] ? `<div class="ovb-x">${esc(tn[x.id])}</div>` : "";
+  const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>${note(x)}`).join("")
+    : `<p class="muted" style="grid-column:1/-1">${tops.length ? "평시와 1%p 넘게 달라진 주제 없음" : all.length ? "지역 전체 평시 없음" : "지역 전체 주제 비중 없음"}</p>`;
   const lines = [];
   const n = at("neg");
-  if (n && n.b != null) lines.push(["분위기", `부정 비율 ${pct(n.v)} · 평시 ${pct(n.b)}보다 ${n.v - n.b > 0.01 ? "높음" : n.v - n.b < -0.01 ? "낮음" : "비슷"}`]);
+  if (n) lines.push(["분위기", n.b != null ? `부정 비율 ${pct(n.v)} · 평시 ${pct(n.b)}보다 ${n.v - n.b > 0.01 ? "높음" : n.v - n.b < -0.01 ? "낮음" : "비슷"}` : `부정 비율 ${pct(n.v)}`]);
   const op = D.opinions.map(o => ({name: o.name, ...(at("opinion:" + o.id) || {})})).filter(x => x.v != null && x.b != null).map(x => ({...x, d: x.v - x.b})).sort((a, b) => Math.abs(b.d) - Math.abs(a.d))[0];
   if (op && Math.abs(op.d) >= 0.02) lines.push(["글 성격", `${op.name} 글 ${pct(op.v)} · 평시 ${pct(op.b)}보다 ${op.d > 0 ? "많음" : "적음"}`]);
   const gs = Object.keys(ser).filter(k => k.startsWith("group:")).map(k => ({name: k.slice(6), ...(at(k) || {})})).filter(x => x.v != null && x.b && x.r >= 1.5 && (x.c || 0) >= 20).sort((a, b) => b.r - a.r).slice(0, 3);
@@ -1272,8 +1277,9 @@ function overallHtml() {
   const clean = t => String(t).replace(/^\d{4}년\s*/, "").replace(/\((월|화|수|목|금|토|일)\)/g, "").replace(/로스트아크\s*/g, "").replace(/\s*\(내용 수정\)/g, "").replace(/\s+/g, " ").trim().replace(/(\d+월) (\d+일)/g, "$1\u00a0$2");
   const wt = s ? s.why_then || {} : {}, ev = [...(wt.updates || []), ...(wt.events || [])].map(x => clean(x.name)).slice(0, 2);
   if (ev.length) lines.push(["계기", ev.join(", ")]);
+  const ul = lines.length ? lines.map(([k, v]) => `<li><b>${esc(k)}</b><span>${esc(v)}</span></li>`).join("") : `<li class="muted">지역 전체 값 없음</li>`;
   return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div></div>
-    <div><h3>${esc(R)} 커뮤니티 전체</h3><ul class="ovl">${lines.map(([k, v]) => `<li><b>${esc(k)}</b><span>${esc(v)}</span></li>`).join("")}</ul></div></div>`;
+    <div><h3>${esc(R)} 커뮤니티 전체</h3><ul class="ovl">${ul}</ul></div></div>`;
 }
 function renderJudge() {
   const el = $("#v-judge"), W = state.week, R = state.region, s = sumOf(), wk = WK(), items = wk.items || [];
