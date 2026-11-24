@@ -4011,6 +4011,322 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "디시인사이드",
+    "community_id": "dcinside",
+    "reads": [
+     {
+      "cost_usd": 0.0441,
+      "count": 831,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 37,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 28,
+        "title": "로붕이는 ■■이다? 만화.manhwa",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888892"
+       },
+       {
+        "body": "있음",
+        "comments": 18,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 25,
+        "title": "신뢰도 부분 다시보고 왔는데 추후 철회할수도 있다네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888511"
+       },
+       {
+        "body": "있음",
+        "comments": 8,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 22,
+        "title": "전재학 보고싶다",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888314"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "슈모익 때 기공사 만들어 놓을걸",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888820"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "유각 ㅈㄴ 읽고 싶다",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888399"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "1750배럭들 우짜지",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888438"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "글 수가 평소보다 감소해 급증 자체가 확인되지 않는다"
+        },
+        {
+         "event": "없음",
+         "hypothesis": "신뢰도 관련 조치와 이관 내용이 화제가 된 것으로 보이나 목록의 공지와 연결되지 않는다"
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 운영 조치와 디렉터 평가를 다루고, 무작위 글은 유각 시세와 배럭 육성 같은 개인 성장 고민을 다룬다",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "신뢰도 조치와 쌀먹 이용자 추가 조치 언급",
+         "posts": [
+          2
+         ],
+         "quote": "앞으로 나올 추가조치도 받아라",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "이관 내용에 따른 1750 배럭 육성 고민",
+         "posts": [
+          6
+         ],
+         "quote": "이관내용보니까 1775는 해줘야할거같은뎅",
+         "quote_post": 6
+        },
+        {
+         "count": 1,
+         "name": "유각 가격 하락에 대한 불안",
+         "posts": [
+          5
+         ],
+         "quote": "막상 헐값 되니까 무섭노",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "본캐 변경 고민(슬레에서 기공사로 변경, '빨간약'의 의미는 불분명하다)",
+         "posts": [
+          4
+         ],
+         "quote": "슬레 빨간약을 너무 늦게 먹었다",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "전 디렉터에 대한 그리움",
+         "posts": [
+          3
+         ],
+         "quote": "내 마음속 1등 디렉터",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "이용자 풍자 만화 게시(본문 내용이 짧아 의미가 불분명하다)",
+         "posts": [
+          1
+         ],
+         "quote": "만화 그만보고 님들도 만화나 그려요",
+         "quote_post": 1
+        }
+       ],
+       "summary": "이날 글 수는 831건으로 평소 1054.8건보다 감소했고 급증이 확인되지 않는다\n추천 상위 글은 신뢰도 조치 철회 가능성과 쌀숭이 대상 추가 조치를 언급한다\n무작위 글은 유각 시세 하락, 이관 이후 1750 배럭 대응, 본캐 변경을 다룬다\n그날과 전날의 업데이트·공지가 없어 증감 원인을 특정할 수 없다"
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0398,
+      "count": 22,
+      "label": "'요즈콘'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 17,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 19,
+        "title": "요즈콘 재배포 <-- 이거 wwe인줄 아는 사람들 많더라",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888687"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 4,
+        "title": "로아가 아플때도 열심히 했더니 요즈콘 재배포",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888707"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 3,
+        "title": "요즈콘이 진짜 로릿고개때 들어 왔었구나",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888838"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "요즈콘 풀거면",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888742"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "요즈콘 재배포가 어느정도인지 알려줌",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888690"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "아무리 요즈사랑갤러리라지만 요즈콘 진심이었다고?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2888711"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "요즈콘 재배포 결정 또는 소식 확산으로 관련 글이 증가했다고 추정된다. 요즈콘의 정확한 성격(이모티콘 또는 게임 내 보상 여부)은 의미가 불분명하다"
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 재배포 결정자에 대한 반감과 기존 보유자 박탈감을 강조했고, 무작위 글은 보상 요구와 비유로 같은 불만을 가볍게 표현했다",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "요즈콘 재배포에 대한 기존 이용자 불만",
+         "posts": [
+          1,
+          2,
+          5
+         ],
+         "quote": "로아가 아플때도 열심히 했더니 요즈콘 재배포",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "복귀 이용자 우대에 대한 상대적 박탈감",
+         "posts": [
+          2
+         ],
+         "quote": "그냥 한번 찡찡거리면 다주는데?",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "요즈콘의 출시 시점과 한정성 재조명",
+         "posts": [
+          3,
+          6
+         ],
+         "quote": "요즈콘이 진짜 로릿고개때 들어 왔었구나",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "재배포 시 보상 요구",
+         "posts": [
+          4
+         ],
+         "quote": "블루크리스탈 800개면 인정햇다",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "한정 칭호 일괄 지급에 빗댄 비판",
+         "posts": [
+          5
+         ],
+         "quote": "돌로리스 죽부자 심홍혹뇌파군 심끝마 칭호 다 뿌린급임",
+         "quote_post": 5
+        }
+       ],
+       "summary": "요즈콘 재배포 소식에 대한 반응 글이 하루 22건 게시됐다\n기존 보유자 혜택이 사라진다는 불만이 다수 확인된다\n한정 칭호 일괄 지급에 비유하며 재배포를 비판했다\n재배포 관련 공지는 제공된 목록에서 확인되지 않는다"
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 19건(평소 7.8건의 2.44배)"
+    ],
+    "sentiment": {
+     "base_classified": 4219,
+     "classified": 831,
+     "neg": 0.3596,
+     "neg_base": 0.379,
+     "of": 831,
+     "topics": [
+      {
+       "base": 0.2069,
+       "name": "기타",
+       "share": 0.1901,
+       "topic": "other"
+      },
+      {
+       "base": 0.2301,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1721,
+       "topic": "content"
+      },
+      {
+       "base": 0.1292,
+       "name": "성장 · 강화",
+       "share": 0.1697,
+       "topic": "growth"
+      },
+      {
+       "base": 0.0993,
+       "name": "운영 · 이벤트",
+       "share": 0.1203,
+       "topic": "operation"
+      },
+      {
+       "base": 0.1372,
+       "name": "파티 · 커뮤니티",
+       "share": 0.1155,
+       "topic": "social"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.0839,
+  "date": "2026-11-24",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-25T04:35:03+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "디시인사이드",
