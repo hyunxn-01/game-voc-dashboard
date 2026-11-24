@@ -1372,7 +1372,7 @@ function overallHtml() {
   const all = D.topics.filter(t => t.id !== "other").map(t => ({id: t.id, name: t.name, def: t.definition || "", ...(at("topic:" + t.id) || {})})).filter(x => x.v != null);
   const tops = all.filter(x => x.b != null).map(x => ({...x, d: x.v - x.b}));
   const up = tops.filter(x => x.d >= 0.01).sort((a, b) => b.d - a.d).slice(0, 3), dn = tops.filter(x => x.d <= -0.01).sort((a, b) => a.d - b.d).slice(0, 3);
-  const rows = up.concat(dn), mx = Math.max(0.01, ...rows.map(x => Math.abs(x.d)));
+  const rows = up.concat([...dn].reverse()), mx = Math.max(0.01, ...rows.map(x => Math.abs(x.d)));   // 고르는 주제는 늘어난 폭 · 줄어든 폭이 큰 셋씩, 놓는 순서는 위에서 아래로 값이 작아지게(2026-11-25 사용자 "높은것부터 낮은순으로 해야되는거 아니야?" · "그렇게해줘")
   const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>`).join("")
     : `<p class="muted" style="grid-column:1/-1">${tops.length ? "평시와 1%p 넘게 달라진 주제 없음" : all.length ? "지역 전체 평시 없음" : "지역 전체 주제 비중 없음"}</p>`;
   // 이번 주 요약: 성격이 다른 값을 다르게 보인다(2026-11-24 사용자 "성겨깅다른것들은 좀 다르게 표시해줘야 가독성이있지"). 커뮤니티 값은 큰 숫자 + 평시 비교 칸, 급증 키워드는 알약, 게임 지표는 따로 한 줄
