@@ -490,6 +490,13 @@ tr.chosen td { background: var(--tint); }
 .memo-more { margin-top: 8px; }
 .memo-more > summary { cursor: pointer; font-size: 13px; color: var(--navy); }
 .memo-one { margin: 2px 0 0; font-size: 13.5px; color: var(--body); line-height: 1.6; }
+/* 새로 나온 이야기(2026-11-24): 접힌 머리는 PC에서 한 줄을 지키고 넘치면 말줄임, 펼친 안쪽은 커뮤니티 표와 같은 표 */
+.yd-n b { font-weight: 700; color: var(--text); margin-right: 4px; }
+.yd-new { margin-top: 14px; }
+.yd-new h3 { font-size: 13.5px; margin: 0 0 4px; color: var(--text); }
+.yd-nt td:first-child b { color: var(--text); }
+@media (min-width: 761px) { .yday > summary:has(.yd-n) { flex-wrap: nowrap; } .yday > summary:has(.yd-n) > * { flex: none; } .yday > summary .yd-n { flex: 0 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } }
+@media (max-width: 760px) { .yd-nt { min-width: 760px; } .yd-nt td:first-child { min-width: 190px; } }
 @media (max-width: 760px) { .yd-t { min-width: 640px; } .mt.mcoms { min-width: 700px; } }
 
 /* 키워드 지형(2026-11-01, pending/2026-11-01-VOC-키워드지형-설계안.md) */
@@ -1368,7 +1375,9 @@ function overallHtml() {
   const n = at("neg");
   if (n) { const d = n.b != null ? n.v - n.b : 0;
     kpi("부정 비율", bn(pct(n.v).slice(0, -1), "%"), n.v, n.b, n.b != null ? dt(d) : "", d > 0.01 ? "bad" : d < -0.01 ? "good" : "", n.b != null ? `평시 ${pct(n.b)}` : "평시 비교 불가"); }
-  const gs = Object.keys(ser).filter(k => k.startsWith("group:")).map(k => ({name: k.slice(6), ...(at(k) || {})})).filter(x => x.v != null && x.b && x.r >= 1.5 && (x.c || 0) >= 20).sort((a, b) => b.r - a.r).slice(0, 3);
+  // AI가 찾은 묶음은 찾은 지역 · 찾은 주부터만(지난 주 화면이 바뀌지 않게)
+  const foundOk = n => { const g = ((D.lexicon || {}).groups || {})[n] || {}; return (!g.found_region || g.found_region === R) && (g.found_since || "") <= state.week; };
+  const gs = Object.keys(ser).filter(k => k.startsWith("group:") && foundOk(k.slice(6))).map(k => ({name: k.slice(6), ...(at(k) || {})})).filter(x => x.v != null && x.b && x.r >= 1.5 && (x.c || 0) >= 20).sort((a, b) => b.r - a.r).slice(0, 3);
   const kw = gs.map(x => `<span class="kchip">${esc(x.name)}<b class="num">${times1(x.r)}</b></span>`).join("");
   // 게임 지표 카드는 지역에 맞는 것: 국내는 PC방 점유율(순위) · PC방 사용시간 둘(뜻이 다른 값이라 나눈다), 해외는 스팀 동시 접속(스팀은 해외판 서버). 값이 없으면 카드를 두지 않는다(2026-11-24 사용자 요청)
   let gp = "";   // PC방 값이 다른 주의 것일 때의 기간
@@ -1475,7 +1484,7 @@ function detail(it, rs) {
       <div class="dsec"><h3 class="dh">대표 글</h3>${repList(ofCom((((D.representatives || {})[state.region] || {})[state.week] || {})[c.metric], it.community))}</div>
       <div class="dsec"><h3 class="dh">다른 커뮤니티의 같은 지표</h3><div>${c.id ? candOthers(c) : muted("–")}</div></div>
       <div class="dsec"><h3 class="dh">같은 주 운영 대응</h3>${respHtml}</div>
-      ${c.rules ? `<div class="dsec dsec-note"><p class="note">충족 기준: ${esc(ruleText(c))}</p></div>` : ""}</div></div>`;
+      ${c.rules ? `<div class="dsec dsec-note"><p class="note">충족 기준: ${esc(ruleText(c))}</p>${c.found ? `<p class="note">키워드 사전에 없던 낱말을 AI가 찾아 묶은 이슈다. 낱말: ${esc((((D.lexicon || {}).groups || {})[c.name] || {words: []}).words.join(", "))}</p>` : ""}</div>` : ""}</div></div>`;
 }
 // 같은 주 운영 대응 목록은 최신 공지가 위로(2026-11-24 사용자 "최신글 위에로 바꿔줘")
 const newestFirst = rs => [...rs].sort((a, b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
@@ -1891,7 +1900,7 @@ function vocTable(blocks, i) {
 }
 function renderTopics() {
   const el = $("#topics-body"), i = wi(), W = state.week, {pick, pickName} = scopeOptions();
-  const groups = Object.keys((D.lexicon || {}).groups || {});
+  const groups = Object.entries((D.lexicon || {}).groups || {}).filter(([, g]) => !g.found_region || g.found_region === state.region).map(([n]) => n);
   if (!state.group || !groups.includes(state.group)) state.group = groups[0];
   const cb = (D.classified_blocks || {})[pick], b = cb && cb[i];
   let h = `<h3>주제별 불만 · 개선 요청 <span class="h3sub">${esc(pickName)}, ${esc(weekRange(W))}</span></h3>`
@@ -1962,6 +1971,7 @@ function methodFlow() {
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
     <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
     <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권장 대응 초안을 쓴다.</li>
+    ${(D.method || {}).new_issues ? `<li><b>새 이슈 찾기 <span class="ai-l">AI</span></b>키워드 사전에 없는데 갑자기 늘어난 낱말의 글 제목을 Claude가 읽고 게임 운영에 대한 불만 · 요구 · 문의를 찾는다(${esc(D.method.new_issues.regions.join(" · "))}). 매일 찾은 것은 맨 위 어제 칸의 '새로 나온 이야기'에 보이고, 매주 찾은 것 가운데 이슈 후보 기준을 넘는 것은 임시 키워드 그룹으로 묶어 이슈 후보에 더한다. 8주 동안 이슈가 되지 않은 임시 그룹은 뺀다.</li>` : ""}
     <li><b>공개</b>집계 값, 대표 글의 제목 · 링크, 본문에 실재하는 ${(dr.max_quote_words ?? 14) + 1}어절 미만 인용만 공개한다.</li></ol>`;
 }
 // 모델 하나만 쓰는 게임(2026-11-23 아이온2): 참고 게임 정답 표의 같은 모델 정확도와 이 게임 글로 확인한 두 모델의 일치율
@@ -2031,7 +2041,7 @@ function renderMethod() {
       : `<dt>분류 모델 변경</dt><dd>${esc(v.week)} 주부터(${esc(mname(v.from.model))} → ${esc(mname(v.to.model))}, 지시문 판 ${esc(v.from.pv)} → ${esc(v.to.pv)})</dd>`).join("")}</dl>
     <p class="note" style="margin-top:6px">${esc(ru.note || "")}</p>`);
   h += fold("키워드 사전", `<div class="tablewrap"><table><thead><tr><th>키워드 그룹</th><th>키워드</th><th>제외 키워드</th></tr></thead><tbody>
-    ${Object.entries(lex.groups).map(([n, g]) => `<tr><td class="nw">${esc(n)}<span class="sub" style="display:block">${esc((D.topics.find(t => t.id === g.topic) || {}).name || "")}</span></td><td>${esc(g.words.join(", "))}</td><td class="muted">${esc(g.exclude.join(", "))}</td></tr>`).join("")}
+    ${Object.entries(lex.groups).map(([n, g]) => `<tr><td class="nw">${esc(n)}<span class="sub" style="display:block">${esc((D.topics.find(t => t.id === g.topic) || {}).name || "")}${g.found_since ? ` · AI가 찾음 · ${esc(shortDay(g.found_since))} 주부터` : ""}</span></td><td>${esc(g.words.join(", "))}</td><td class="muted">${esc(g.exclude.join(", "))}</td></tr>`).join("")}
     ${Object.entries(lex.signals).map(([n, g]) => `<tr><td class="nw"><b>${esc(n)}</b></td><td>${esc(g.words.join(", "))}</td><td class="muted">${esc(g.exclude.join(", "))}</td></tr>`).join("")}</tbody></table></div>
     <p class="note" style="margin-top:6px">세 글자 이상 한글 키워드는 제목의 띄어쓰기를 제거하고 검색하고, 두 글자 이하는 띄어쓰기를 그대로 유지한 채 검색한다. 영어 키워드는 단어 단위로 검색한다(lag는 flag 안에서 검색하지 않는다).</p>`);
   h += fold("한계와 해석 시 유의점", `<ul class="limits">${(D.limits || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul>`);
@@ -2077,6 +2087,7 @@ function ydayBar() {
   if (!coms.length) return "";
   // 급증한 날도 한 줄로 두고 빨간 변화 값만 보인다(2026-10-31 사용자 "한 줄로"). 요약 날짜가 실제 어제가 아니면 '어제' 대신 날짜로 적는다
   const surges = coms.filter(c => c.surge), day = `${shortDay(dd.date)}(${dow(dd.date)})`;
+  const nw = ((dd.new_issues || {}).regions || {})[state.region] || null;   // 사전에 없는 새로 나온 이야기(new_issues.py, 2026-11-24). 찾지 않는 지역 · 날은 null
   const yest = new Date(Date.now() + 9 * 3600e3 - 864e5).toISOString().slice(0, 10);
   const when = dd.date === yest ? `어제 ${day}` : `${day} 일간 요약`;
   const ratio = c => c.posts.ratio == null ? "–" : (c.surge && c.posts.ratio >= 2 ? `<span class="up">▲ ${times(c.posts.ratio)}</span>` : times(c.posts.ratio));
@@ -2084,7 +2095,8 @@ function ydayBar() {
     ...Object.entries(c.signals || {}).filter(([, s]) => sigOver(s)).map(([n, s]) => `${esc(n)} <span class="up">▲ ${times(s.ratio)}</span>`)].filter(Boolean);
   const head = surges.length
     ? `<span class="yd-k">${esc(when)} 급증 ${surges.length}곳</span><span>${surges.map(c => `${esc(shortCom(c.community))} ${upItems(c).join(" · ")}`).join(" / ")}</span>`
-    : `<span class="yd-k">${esc(when)} 급증 없음</span><span class="muted">${coms.map(c => `${esc(shortCom(c.community))} ${fmt(c.posts.value)}건(평소의 ${c.posts.ratio != null ? times(c.posts.ratio) : "–"})`).join(" · ")}</span>`;
+    : `<span class="yd-k">${esc(when)} 급증 없음</span>${nw && nw.items.length ? "" : `<span class="muted">${coms.map(c => `${esc(shortCom(c.community))} ${fmt(c.posts.value)}건(평소의 ${c.posts.ratio != null ? times(c.posts.ratio) : "–"})`).join(" · ")}</span>`}`;
+  const newHead = nw && nw.items.length ? `<span class="yd-n"><b>새 이야기 ${nw.items.length}건</b>${nw.items.map(x => `${esc(x.name)}${x.days > 1 ? `(${x.days}일째)` : ""}`).join(" · ")}</span>` : "";
   const rows = coms.map(c => {
     const sig = Object.entries(c.signals || {}).filter(([, s]) => sigOver(s)).map(([n, s]) => `${esc(n)} ${fmt(s.value)}건 <span class="up">▲ ${times(s.ratio)}</span>`);
     return `<tr><td class="nw"><span class="cdot" style="--c:${comColor(c.community_id)}"></span>${esc(shortCom(c.community))}</td>
@@ -2094,9 +2106,17 @@ function ydayBar() {
   const table = `<div class="tablewrap"><table class="yd-t"><thead><tr><th>커뮤니티</th><th class="r">글 수</th><th class="r">평소</th><th class="r">평소 대비</th><th>신호 급증</th><th>떠오른 낱말</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   const memo = dd.surge_memo ? memoBlock(dd.surge_memo, coms) : surges.length ? `<p class="note" style="margin-top:8px">급증 메모는 그날 글 분류가 끝나면 붙는다(보통 오전 9시 전후).</p>` : "";
   const tops = coms.filter(c => (c.top || []).length).map(c => `<div><h3>${esc(shortCom(c.community))}</h3><ul class="yd-top">${c.top.map(t => `<li><a href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">${esc(t.title)}</a> <span class="muted num">${t.pick === "댓글" ? `댓글 ${fmt(t.comments)}` : `조회 ${fmt(t.views)}`}</span></li>`).join("")}</ul></div>`).join("");
-  return `<details class="yday"><summary>${head}<span class="jmore">${dd.surge_memo && surges.length ? "급증 메모 보기" : "자세히"}${CHEV}</span></summary>
-    <div class="yd-b">${table}${memo}<details class="tablefold" style="padding:0;margin-top:10px"><summary>반응 큰 글(댓글 순 3건 · 조회 순 2건)</summary><div class="yd-tops">${tops}</div></details>
+  return `<details class="yday"><summary>${head}${newHead}<span class="jmore">${dd.surge_memo && surges.length ? "급증 메모 보기" : "자세히"}${CHEV}</span></summary>
+    <div class="yd-b">${table}${newBlock(nw)}${memo}<details class="tablefold" style="padding:0;margin-top:10px"><summary>반응 큰 글(댓글 순 3건 · 조회 순 2건)</summary><div class="yd-tops">${tops}</div></details>
     <p class="note" style="margin-top:8px">평소는 같은 요일 직전 4주 평균이다(평일 공휴일은 주말 평균). 급증은 글 수가 평소의 2배 이상이면서 30건 이상 많거나, 신호 낱말이 2배 이상이면서 10건 이상 많을 때다.</p></div></details>`;
+}
+// 새로 나온 이야기 표: 이야기(이름 · 한 줄) · 종류 · 커뮤니티별 글 수 · 며칠째 · 댓글 많은 글 하나
+function newBlock(nw) {
+  if (!nw) return "";
+  const one = r => `${esc(shortCom(r.community))} <span class="num">${fmt(r.count)}</span>건 <span class="muted">(${r.first_seen ? "처음 나옴" : r.base != null && r.base < 1 ? "평소 1건 미만" : r.ratio != null ? `평소의 ${times1(r.ratio)}` : "평소 없음"})</span>`;
+  const body = nw.items.length ? `<div class="tablewrap"><table class="yd-t yd-nt"><thead><tr><th>이야기</th><th>종류</th><th>커뮤니티별 글 수</th><th>지속</th><th>댓글 많은 글</th></tr></thead><tbody>${nw.items.map(x => `<tr><td><b>${dotKeep(x.name)}</b><br><span class="muted">${esc(x.evidence)}</span></td><td class="nw">${dotKeep(x.kind)}</td><td class="nw">${x.rows.map(one).join("<br>")}</td><td class="nw">${x.days > 1 ? `${esc(shortDay(x.since))}부터 ${x.days}일째` : "처음"}</td><td><a href="${esc(x.post.url)}" target="_blank" rel="noopener noreferrer">${esc(x.post.title)}</a> <span class="muted num">댓글 ${fmt(x.post.comments)}</span></td></tr>`).join("")}</tbody></table></div>`
+    : `<p class="note">${nw.status === "fail" ? "AI가 답하지 않아 이날은 찾지 못했다." : "이날은 새로 나온 이야기가 없다."}</p>`;
+  return `<div class="yd-new"><h3>새로 나온 이야기 <span class="ai-l">AI</span></h3>${body}<p class="note" style="margin-top:6px">키워드 사전에 없는데 하루 사이 크게 늘어난 낱말의 글 제목을 AI가 읽고 게임 운영에 대한 불만 · 요구 · 문의만 골랐다. 본문은 읽지 않았다. 매주 월요일 분석에서 다시 보고, 기준을 넘으면 이슈 표에 오른다.</p></div>`;
 }
 function memoBlock(m, coms) {
   const cs = (m.communities || []).filter(c => coms.some(x => x.community_id === c.community_id));

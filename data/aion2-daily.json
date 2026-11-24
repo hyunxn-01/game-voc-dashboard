@@ -528,8 +528,41 @@
  ],
  "date": "2026-11-23",
  "game": "aion2",
- "generated_at": "2026-11-24T08:56:00+09:00",
+ "generated_at": "2026-11-24T12:13:42+09:00",
  "name": "아이온2",
+ "new_issues": {
+  "model": "claude-haiku-5-5",
+  "regions": {
+   "국내": {
+    "items": [
+     {
+      "days": 2,
+      "evidence": "혈투 계승 · 돌파 효율과 퀘스트 구조가 손해라는 불만과 문의",
+      "kind": "불만",
+      "name": "혈투 계승 · 돌파 효율 의문",
+      "post": {
+       "comments": 22,
+       "community": "디시인사이드",
+       "title": "유튜브에 올라온공약인데 혈투셋 배럭주면500k된다고함",
+       "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3152551"
+      },
+      "rows": [
+       {
+        "base": 3.0,
+        "community": "디시인사이드",
+        "community_id": "dcinside",
+        "count": 42,
+        "first_seen": false,
+        "ratio": 14.0
+       }
+      ],
+      "since": "2026-11-22"
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
  "rules": {
   "rise_days": 14,
   "rise_min": {
