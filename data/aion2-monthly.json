@@ -1,0 +1,3731 @@
+{
+ "game": "aion2",
+ "generated_at": "2026-11-24T02:17:00+09:00",
+ "months": [
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09",
+  "2026-10"
+ ],
+ "name": "아이온2",
+ "reports": {
+  "2026-06": {
+   "communities": [
+    {
+     "classified": 0,
+     "classified_share": 0.0,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "posts": 125327,
+     "posts_change": null,
+     "posts_per_day": 4177.6,
+     "posts_prev": null,
+     "region": "국내",
+     "rising": [],
+     "sentiment": null,
+     "sentiment_prev": null
+    }
+   ],
+   "first": "2026-06-01",
+   "issues": [
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/group:과금 · 큐나",
+     "label": "과금 · 큐나 언급",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/group:마석 · 영석 · 신석",
+     "label": "마석 · 영석 · 신석 언급",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/group:펫",
+     "label": "펫 언급",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/signal:복귀 · 신규 표현",
+     "label": "복귀 · 신규 표현",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-22/dcinside/group:스티그마",
+     "label": "스티그마 언급",
+     "level": null,
+     "week": "2026-06-22"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:스티그마",
+     "label": "스티그마 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/signal:복귀 · 신규 표현",
+     "label": "복귀 · 신규 표현",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:과금 · 큐나",
+     "label": "과금 · 큐나 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:펫",
+     "label": "펫 언급",
+     "level": null,
+     "week": "2026-06-29"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-06-29/dcinside/group:각인 · 조율",
+     "label": "각인 · 조율 언급",
+     "level": null,
+     "week": "2026-06-29"
+    }
+   ],
+   "last": "2026-06-30",
+   "month": "2026-06",
+   "update_effects": [
+    {
+     "community": "디시인사이드",
+     "date": "2026-06-04",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-06-10",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-06-17",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 1.0
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-06-24",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.756
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-06-04",
+     "major": false,
+     "name": "[안내] 6/4(목) 업데이트 노트"
+    },
+    {
+     "date": "2026-06-10",
+     "major": false,
+     "name": "[안내] 6/10(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-06-17",
+     "major": false,
+     "name": "[안내] 6/17(수) 업데이트 노트 (수정 6/25 14:26)"
+    },
+    {
+     "date": "2026-06-24",
+     "major": false,
+     "name": "[안내] 6/24(수) 업데이트 노트 (수정 6/24 10:07)"
+    }
+   ]
+  },
+  "2026-07": {
+   "communities": [
+    {
+     "classified": 3284,
+     "classified_share": 0.2846,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "posts": 11538,
+     "posts_change": null,
+     "posts_per_day": 372.2,
+     "posts_prev": null,
+     "region": "국내",
+     "rising": [],
+     "sentiment": null,
+     "sentiment_prev": null
+    },
+    {
+     "classified": 40346,
+     "classified_share": 0.3067,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "posts": 131557,
+     "posts_change": 0.0497,
+     "posts_per_day": 4243.8,
+     "posts_prev": 125327,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 4005,
+       "new": false,
+       "ratio": 3.7,
+       "word": "권성"
+      },
+      {
+       "count": 2538,
+       "new": false,
+       "ratio": 3.0,
+       "word": "뉴비"
+      },
+      {
+       "count": 2207,
+       "new": false,
+       "ratio": 3.1,
+       "word": "시엘"
+      },
+      {
+       "count": 2087,
+       "new": false,
+       "ratio": 5.4,
+       "word": "버스"
+      },
+      {
+       "count": 1970,
+       "new": false,
+       "ratio": 15.1,
+       "word": "새싹"
+      },
+      {
+       "count": 1941,
+       "new": false,
+       "ratio": 3.5,
+       "word": "지켈"
+      },
+      {
+       "count": 1223,
+       "new": true,
+       "ratio": null,
+       "word": "데려움"
+      },
+      {
+       "count": 1175,
+       "new": false,
+       "ratio": 4.7,
+       "word": "서버이전"
+      },
+      {
+       "count": 814,
+       "new": false,
+       "ratio": 27.7,
+       "word": "표층"
+      },
+      {
+       "count": 631,
+       "new": false,
+       "ratio": 3.8,
+       "word": "방어구"
+      }
+     ],
+     "sentiment": null,
+     "sentiment_prev": null
+    },
+    {
+     "classified": 135,
+     "classified_share": 0.4441,
+     "community": "레딧",
+     "community_id": "reddit",
+     "posts": 304,
+     "posts_change": null,
+     "posts_per_day": 9.8,
+     "posts_prev": null,
+     "region": "해외",
+     "rising": [],
+     "sentiment": null,
+     "sentiment_prev": null
+    }
+   ],
+   "first": "2026-07-01",
+   "issues": [
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-06/dcinside/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-07-06"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-06/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-07-06"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-06/dcinside/signal:복귀 · 신규 표현",
+     "label": "복귀 · 신규 표현",
+     "level": null,
+     "week": "2026-07-06"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-13/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-07-13"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-13/dcinside/group:외형 · 의상",
+     "label": "외형 · 의상 언급",
+     "level": null,
+     "week": "2026-07-13"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-13/dcinside/group:마석 · 영석 · 신석",
+     "label": "마석 · 영석 · 신석 언급",
+     "level": null,
+     "week": "2026-07-13"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-20/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-07-20"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-20/dcinside/group:과금 · 큐나",
+     "label": "과금 · 큐나 언급",
+     "level": null,
+     "week": "2026-07-20"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-20/dcinside/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-07-20"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-20/dcinside/group:마석 · 영석 · 신석",
+     "label": "마석 · 영석 · 신석 언급",
+     "level": null,
+     "week": "2026-07-20"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-07-27"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-07-27"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:펫",
+     "label": "펫 언급",
+     "level": null,
+     "week": "2026-07-27"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-07-27"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:과금 · 큐나",
+     "label": "과금 · 큐나 언급",
+     "level": null,
+     "week": "2026-07-27"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-07-27/dcinside/group:마석 · 영석 · 신석",
+     "label": "마석 · 영석 · 신석 언급",
+     "level": null,
+     "week": "2026-07-27"
+    }
+   ],
+   "last": "2026-07-31",
+   "month": "2026-07",
+   "update_effects": [
+    {
+     "community": "아카라이브",
+     "date": "2026-07-01",
+     "major": true,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-07-01",
+     "major": true,
+     "neg_diff": null,
+     "posts_ratio": 1.216
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-07-08",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-07-08",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.855
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-07-15",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-07-15",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.973
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-07-22",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.907
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-07-22",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.972
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-07-29",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.635
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-07-29",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.799
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-07-01",
+     "major": true,
+     "name": "챕터 1 '모래와 서리의 땅'"
+    },
+    {
+     "date": "2026-07-01",
+     "major": false,
+     "name": "[안내] 7/1(수) 업데이트 노트 (수정 7/1 10:15)"
+    },
+    {
+     "date": "2026-07-08",
+     "major": false,
+     "name": "[안내] 7/8(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-07-15",
+     "major": false,
+     "name": "[안내] 7/15(수) 업데이트 노트 (수정 7/20 15:09)"
+    },
+    {
+     "date": "2026-07-22",
+     "major": false,
+     "name": "[안내] 7/22(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-07-29",
+     "major": false,
+     "name": "[안내] 7/29(수) 업데이트 노트"
+    }
+   ]
+  },
+  "2026-08": {
+   "communities": [
+    {
+     "classified": 7411,
+     "classified_share": 0.9956,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "posts": 7444,
+     "posts_change": -0.3548,
+     "posts_per_day": 240.1,
+     "posts_prev": 11538,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 69,
+       "new": false,
+       "ratio": 5.1,
+       "word": "전피증"
+      },
+      {
+       "count": 61,
+       "new": false,
+       "ratio": 18.9,
+       "word": "포인트"
+      },
+      {
+       "count": 55,
+       "new": true,
+       "ratio": null,
+       "word": "노이란"
+      },
+      {
+       "count": 55,
+       "new": false,
+       "ratio": 17.0,
+       "word": "데우스"
+      },
+      {
+       "count": 41,
+       "new": false,
+       "ratio": 3.2,
+       "word": "정붕이"
+      },
+      {
+       "count": 36,
+       "new": false,
+       "ratio": 8.0,
+       "word": "작업장"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.3358,
+      "net": -0.2234,
+      "pos": 0.1124
+     },
+     "sentiment_prev": null,
+     "strong_neg": [
+      {
+       "n": 204,
+       "name": "버그 · 서버",
+       "neg": 0.6324,
+       "topic": "bug"
+      },
+      {
+       "n": 162,
+       "name": "복귀 · 이탈",
+       "neg": 0.4444,
+       "topic": "churn"
+      },
+      {
+       "n": 670,
+       "name": "운영 · 이벤트",
+       "neg": 0.4388,
+       "topic": "operation"
+      },
+      {
+       "n": 332,
+       "name": "거래 · 경제",
+       "neg": 0.4247,
+       "topic": "economy"
+      },
+      {
+       "n": 634,
+       "name": "밸런스 · 직업",
+       "neg": 0.358,
+       "topic": "balance"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 317,
+       "name": "과금 · 상품",
+       "pos": 0.1546,
+       "topic": "monetization"
+      },
+      {
+       "n": 1024,
+       "name": "성장 · 강화",
+       "pos": 0.1465,
+       "topic": "growth"
+      },
+      {
+       "n": 1275,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.138,
+       "topic": "content"
+      },
+      {
+       "n": 634,
+       "name": "밸런스 · 직업",
+       "pos": 0.1167,
+       "topic": "balance"
+      },
+      {
+       "n": 162,
+       "name": "복귀 · 이탈",
+       "pos": 0.1049,
+       "topic": "churn"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.172,
+       "share_prev": null,
+       "topic": "content"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1382,
+       "share_prev": null,
+       "topic": "growth"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1036,
+       "share_prev": null,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.0904,
+       "share_prev": null,
+       "topic": "operation"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0855,
+       "share_prev": null,
+       "topic": "balance"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0448,
+       "share_prev": null,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0428,
+       "share_prev": null,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0275,
+       "share_prev": null,
+       "topic": "bug"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0219,
+       "share_prev": null,
+       "topic": "churn"
+      }
+     ]
+    },
+    {
+     "classified": 104150,
+     "classified_share": 0.9998,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "posts": 104173,
+     "posts_change": -0.2082,
+     "posts_per_day": 3360.4,
+     "posts_prev": 131557,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 1431,
+       "new": false,
+       "ratio": 8.1,
+       "word": "기여"
+      },
+      {
+       "count": 1426,
+       "new": false,
+       "ratio": 10.9,
+       "word": "전피증"
+      },
+      {
+       "count": 1366,
+       "new": false,
+       "ratio": 4.5,
+       "word": "작업장"
+      },
+      {
+       "count": 1000,
+       "new": false,
+       "ratio": 31.1,
+       "word": "데우스"
+      },
+      {
+       "count": 977,
+       "new": false,
+       "ratio": 3.7,
+       "word": "이슈타르"
+      },
+      {
+       "count": 791,
+       "new": false,
+       "ratio": 4.8,
+       "word": "낫터기"
+      },
+      {
+       "count": 743,
+       "new": false,
+       "ratio": 4.4,
+       "word": "아그로"
+      },
+      {
+       "count": 358,
+       "new": false,
+       "ratio": 6.4,
+       "word": "후피증"
+      },
+      {
+       "count": 326,
+       "new": false,
+       "ratio": 5.3,
+       "word": "카이라"
+      },
+      {
+       "count": 324,
+       "new": false,
+       "ratio": 9.9,
+       "word": "딜버스"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.417,
+      "net": -0.3394,
+      "pos": 0.0776
+     },
+     "sentiment_prev": null,
+     "strong_neg": [
+      {
+       "n": 2536,
+       "name": "복귀 · 이탈",
+       "neg": 0.64,
+       "topic": "churn"
+      },
+      {
+       "n": 2083,
+       "name": "버그 · 서버",
+       "neg": 0.5939,
+       "topic": "bug"
+      },
+      {
+       "n": 11647,
+       "name": "운영 · 이벤트",
+       "neg": 0.5485,
+       "topic": "operation"
+      },
+      {
+       "n": 15586,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.4955,
+       "topic": "social"
+      },
+      {
+       "n": 9025,
+       "name": "거래 · 경제",
+       "neg": 0.4853,
+       "topic": "economy"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 17740,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1129,
+       "topic": "content"
+      },
+      {
+       "n": 16792,
+       "name": "밸런스 · 직업",
+       "pos": 0.0874,
+       "topic": "balance"
+      },
+      {
+       "n": 2650,
+       "name": "과금 · 상품",
+       "pos": 0.0857,
+       "topic": "monetization"
+      },
+      {
+       "n": 15989,
+       "name": "성장 · 강화",
+       "pos": 0.0788,
+       "topic": "growth"
+      },
+      {
+       "n": 15586,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0682,
+       "topic": "social"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1703,
+       "share_prev": null,
+       "topic": "content"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.1612,
+       "share_prev": null,
+       "topic": "balance"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1535,
+       "share_prev": null,
+       "topic": "growth"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1496,
+       "share_prev": null,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1118,
+       "share_prev": null,
+       "topic": "operation"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0867,
+       "share_prev": null,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0254,
+       "share_prev": null,
+       "topic": "monetization"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0243,
+       "share_prev": null,
+       "topic": "churn"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.02,
+       "share_prev": null,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 429,
+     "classified_share": 1.0,
+     "community": "레딧",
+     "community_id": "reddit",
+     "posts": 429,
+     "posts_change": 0.4112,
+     "posts_per_day": 13.8,
+     "posts_prev": 304,
+     "region": "해외",
+     "rising": [],
+     "sentiment": {
+      "neg": 0.1667,
+      "net": -0.0904,
+      "pos": 0.0763
+     },
+     "sentiment_prev": null,
+     "strong_neg": [
+      {
+       "n": 52,
+       "name": "운영 · 이벤트",
+       "neg": 0.2308,
+       "topic": "operation"
+      },
+      {
+       "n": 53,
+       "name": "과금 · 상품",
+       "neg": 0.2075,
+       "topic": "monetization"
+      },
+      {
+       "n": 69,
+       "name": "컨텐츠 · 업데이트",
+       "neg": 0.1739,
+       "topic": "content"
+      },
+      {
+       "n": 53,
+       "name": "밸런스 · 직업",
+       "neg": 0.1509,
+       "topic": "balance"
+      },
+      {
+       "n": 43,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.1163,
+       "topic": "social"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 69,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1884,
+       "topic": "content"
+      },
+      {
+       "n": 53,
+       "name": "과금 · 상품",
+       "pos": 0.1509,
+       "topic": "monetization"
+      },
+      {
+       "n": 43,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0698,
+       "topic": "social"
+      },
+      {
+       "n": 47,
+       "name": "성장 · 강화",
+       "pos": 0.0213,
+       "topic": "growth"
+      },
+      {
+       "n": 52,
+       "name": "운영 · 이벤트",
+       "pos": 0.0192,
+       "topic": "operation"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1608,
+       "share_prev": null,
+       "topic": "content"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.1235,
+       "share_prev": null,
+       "topic": "balance"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.1235,
+       "share_prev": null,
+       "topic": "monetization"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1212,
+       "share_prev": null,
+       "topic": "operation"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1096,
+       "share_prev": null,
+       "topic": "growth"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1002,
+       "share_prev": null,
+       "topic": "social"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0653,
+       "share_prev": null,
+       "topic": "bug"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.028,
+       "share_prev": null,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.007,
+       "share_prev": null,
+       "topic": "churn"
+      }
+     ]
+    }
+   ],
+   "first": "2026-08-01",
+   "issues": [
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-03/dcinside/group:마석 · 영석 · 신석",
+     "label": "마석 · 영석 · 신석 언급",
+     "level": null,
+     "week": "2026-08-03"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-03/dcinside/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-08-03"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-03/dcinside/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-08-03"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-03/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-08-03"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-08-03/arca/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-08-03"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-10/dcinside/group:날개",
+     "label": "날개 언급",
+     "level": null,
+     "week": "2026-08-10"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-10/dcinside/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-08-10"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-10/dcinside/group:각인 · 조율",
+     "label": "각인 · 조율 언급",
+     "level": null,
+     "week": "2026-08-10"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-10/dcinside/group:버스",
+     "label": "버스 언급",
+     "level": null,
+     "week": "2026-08-10"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-17/dcinside/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-08-17"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-17/dcinside/group:날개",
+     "label": "날개 언급",
+     "level": null,
+     "week": "2026-08-17"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-17/dcinside/signal:이탈 표현",
+     "label": "이탈 표현",
+     "level": null,
+     "week": "2026-08-17"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-17/dcinside/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-08-17"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-24/dcinside/topic:balance",
+     "label": "밸런스 · 직업 주제",
+     "level": null,
+     "week": "2026-08-24"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-08-24/dcinside/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-08-24"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-08-24/arca/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": null,
+     "week": "2026-08-24"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-08-24/arca/topic:balance",
+     "label": "밸런스 · 직업 주제",
+     "level": null,
+     "week": "2026-08-24"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-08-24/arca/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-08-24"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-08-24/arca/topic_neg:churn",
+     "label": "복귀 · 이탈 주제의 부정 비율",
+     "level": null,
+     "week": "2026-08-24"
+    }
+   ],
+   "last": "2026-08-31",
+   "month": "2026-08",
+   "update_effects": [
+    {
+     "community": "아카라이브",
+     "date": "2026-08-05",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.639
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-08-05",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.826
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-08-12",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.773
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-08-12",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": 0.878
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-08-19",
+     "major": false,
+     "neg_diff": 0.02123,
+     "posts_ratio": 0.789
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-08-19",
+     "major": false,
+     "neg_diff": 0.04247,
+     "posts_ratio": 0.865
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-08-26",
+     "major": false,
+     "neg_diff": 0.00482,
+     "posts_ratio": 0.79
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-08-26",
+     "major": false,
+     "neg_diff": 0.00691,
+     "posts_ratio": 0.917
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-08-05",
+     "major": false,
+     "name": "[안내] 8/5(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-08-12",
+     "major": false,
+     "name": "[안내] 8/12(수) 업데이트 노트 (수정 8/12 20:14)"
+    },
+    {
+     "date": "2026-08-19",
+     "major": false,
+     "name": "[안내] 8/19(수) 업데이트 노트 (수정 8/19 15:00)"
+    },
+    {
+     "date": "2026-08-26",
+     "major": false,
+     "name": "[안내] 8/26(수) 업데이트 노트 (수정 9/22 22:22)"
+    }
+   ]
+  },
+  "2026-09": {
+   "communities": [
+    {
+     "classified": 10957,
+     "classified_share": 0.9996,
+     "community": "인벤",
+     "community_id": "inven",
+     "posts": 10961,
+     "posts_change": null,
+     "posts_per_day": 365.4,
+     "posts_prev": null,
+     "region": "국내",
+     "rising": [],
+     "sentiment": {
+      "neg": 0.4203,
+      "net": -0.3499,
+      "pos": 0.0704
+     },
+     "sentiment_prev": null,
+     "strong_neg": [
+      {
+       "n": 288,
+       "name": "버그 · 서버",
+       "neg": 0.5938,
+       "topic": "bug"
+      },
+      {
+       "n": 267,
+       "name": "복귀 · 이탈",
+       "neg": 0.5843,
+       "topic": "churn"
+      },
+      {
+       "n": 1612,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.5434,
+       "topic": "social"
+      },
+      {
+       "n": 1245,
+       "name": "운영 · 이벤트",
+       "neg": 0.5181,
+       "topic": "operation"
+      },
+      {
+       "n": 341,
+       "name": "과금 · 상품",
+       "neg": 0.4692,
+       "topic": "monetization"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 2253,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.111,
+       "topic": "content"
+      },
+      {
+       "n": 1174,
+       "name": "성장 · 강화",
+       "pos": 0.0903,
+       "topic": "growth"
+      },
+      {
+       "n": 1245,
+       "name": "운영 · 이벤트",
+       "pos": 0.0659,
+       "topic": "operation"
+      },
+      {
+       "n": 267,
+       "name": "복귀 · 이탈",
+       "pos": 0.0637,
+       "topic": "churn"
+      },
+      {
+       "n": 2237,
+       "name": "밸런스 · 직업",
+       "pos": 0.0617,
+       "topic": "balance"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2056,
+       "share_prev": null,
+       "topic": "content"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.2042,
+       "share_prev": null,
+       "topic": "balance"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1471,
+       "share_prev": null,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1136,
+       "share_prev": null,
+       "topic": "operation"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1071,
+       "share_prev": null,
+       "topic": "growth"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0348,
+       "share_prev": null,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0311,
+       "share_prev": null,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0263,
+       "share_prev": null,
+       "topic": "bug"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0244,
+       "share_prev": null,
+       "topic": "churn"
+      }
+     ]
+    },
+    {
+     "classified": 6538,
+     "classified_share": 0.9983,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "posts": 6549,
+     "posts_change": -0.1202,
+     "posts_per_day": 218.3,
+     "posts_prev": 7444,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 195,
+       "new": false,
+       "ratio": 443.3,
+       "word": "비탄"
+      },
+      {
+       "count": 137,
+       "new": false,
+       "ratio": 7.3,
+       "word": "성역"
+      },
+      {
+       "count": 72,
+       "new": false,
+       "ratio": 35.2,
+       "word": "인장"
+      },
+      {
+       "count": 41,
+       "new": false,
+       "ratio": 13.7,
+       "word": "불신"
+      },
+      {
+       "count": 39,
+       "new": false,
+       "ratio": 3.4,
+       "word": "카이라"
+      },
+      {
+       "count": 37,
+       "new": false,
+       "ratio": 14.0,
+       "word": "신규성역"
+      },
+      {
+       "count": 32,
+       "new": false,
+       "ratio": 112.8,
+       "word": "쉬움"
+      },
+      {
+       "count": 30,
+       "new": false,
+       "ratio": 4.5,
+       "word": "무보통"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.3173,
+      "net": -0.1852,
+      "pos": 0.1321
+     },
+     "sentiment_prev": {
+      "neg": 0.3358,
+      "net": -0.2234,
+      "pos": 0.1124
+     },
+     "strong_neg": [
+      {
+       "n": 193,
+       "name": "버그 · 서버",
+       "neg": 0.6373,
+       "topic": "bug"
+      },
+      {
+       "n": 480,
+       "name": "밸런스 · 직업",
+       "neg": 0.4125,
+       "topic": "balance"
+      },
+      {
+       "n": 508,
+       "name": "운영 · 이벤트",
+       "neg": 0.4075,
+       "topic": "operation"
+      },
+      {
+       "n": 86,
+       "name": "복귀 · 이탈",
+       "neg": 0.3605,
+       "topic": "churn"
+      },
+      {
+       "n": 182,
+       "name": "거래 · 경제",
+       "neg": 0.3571,
+       "topic": "economy"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 1551,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1663,
+       "topic": "content"
+      },
+      {
+       "n": 920,
+       "name": "성장 · 강화",
+       "pos": 0.1641,
+       "topic": "growth"
+      },
+      {
+       "n": 327,
+       "name": "과금 · 상품",
+       "pos": 0.159,
+       "topic": "monetization"
+      },
+      {
+       "n": 480,
+       "name": "밸런스 · 직업",
+       "pos": 0.125,
+       "topic": "balance"
+      },
+      {
+       "n": 182,
+       "name": "거래 · 경제",
+       "pos": 0.1154,
+       "topic": "economy"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2372,
+       "share_prev": 0.172,
+       "topic": "content"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1407,
+       "share_prev": 0.1382,
+       "topic": "growth"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1118,
+       "share_prev": 0.1036,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.0777,
+       "share_prev": 0.0904,
+       "topic": "operation"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0734,
+       "share_prev": 0.0855,
+       "topic": "balance"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.05,
+       "share_prev": 0.0428,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0295,
+       "share_prev": 0.0275,
+       "topic": "bug"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0278,
+       "share_prev": 0.0448,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0132,
+       "share_prev": 0.0219,
+       "topic": "churn"
+      }
+     ]
+    },
+    {
+     "classified": 98044,
+     "classified_share": 0.9998,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "posts": 98068,
+     "posts_change": -0.0586,
+     "posts_per_day": 3268.9,
+     "posts_prev": 104173,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 3058,
+       "new": false,
+       "ratio": 1152.7,
+       "word": "비탄"
+      },
+      {
+       "count": 2695,
+       "new": false,
+       "ratio": 3.6,
+       "word": "성역"
+      },
+      {
+       "count": 1041,
+       "new": false,
+       "ratio": 52.1,
+       "word": "인장"
+      },
+      {
+       "count": 983,
+       "new": false,
+       "ratio": 7.0,
+       "word": "카이라"
+      },
+      {
+       "count": 924,
+       "new": false,
+       "ratio": 11.5,
+       "word": "성역4"
+      },
+      {
+       "count": 884,
+       "new": false,
+       "ratio": 6.5,
+       "word": "글섭"
+      },
+      {
+       "count": 751,
+       "new": false,
+       "ratio": 5.5,
+       "word": "이슈"
+      },
+      {
+       "count": 723,
+       "new": false,
+       "ratio": 954.1,
+       "word": "달제"
+      },
+      {
+       "count": 703,
+       "new": false,
+       "ratio": 3.2,
+       "word": "아스펠"
+      },
+      {
+       "count": 700,
+       "new": false,
+       "ratio": 5.3,
+       "word": "수검호치"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.4006,
+      "net": -0.3136,
+      "pos": 0.087
+     },
+     "sentiment_prev": {
+      "neg": 0.417,
+      "net": -0.3394,
+      "pos": 0.0776
+     },
+     "strong_neg": [
+      {
+       "n": 2102,
+       "name": "버그 · 서버",
+       "neg": 0.6113,
+       "topic": "bug"
+      },
+      {
+       "n": 1848,
+       "name": "복귀 · 이탈",
+       "neg": 0.5898,
+       "topic": "churn"
+      },
+      {
+       "n": 9042,
+       "name": "운영 · 이벤트",
+       "neg": 0.539,
+       "topic": "operation"
+      },
+      {
+       "n": 16039,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.5053,
+       "topic": "social"
+      },
+      {
+       "n": 15918,
+       "name": "밸런스 · 직업",
+       "neg": 0.4431,
+       "topic": "balance"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 23569,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1215,
+       "topic": "content"
+      },
+      {
+       "n": 2591,
+       "name": "과금 · 상품",
+       "pos": 0.1077,
+       "topic": "monetization"
+      },
+      {
+       "n": 15918,
+       "name": "밸런스 · 직업",
+       "pos": 0.0857,
+       "topic": "balance"
+      },
+      {
+       "n": 13677,
+       "name": "성장 · 강화",
+       "pos": 0.0845,
+       "topic": "growth"
+      },
+      {
+       "n": 3953,
+       "name": "거래 · 경제",
+       "pos": 0.0688,
+       "topic": "economy"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2404,
+       "share_prev": 0.1703,
+       "topic": "content"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1636,
+       "share_prev": 0.1496,
+       "topic": "social"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.1624,
+       "share_prev": 0.1612,
+       "topic": "balance"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.1395,
+       "share_prev": 0.1535,
+       "topic": "growth"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.0922,
+       "share_prev": 0.1118,
+       "topic": "operation"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0403,
+       "share_prev": 0.0867,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0264,
+       "share_prev": 0.0254,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0214,
+       "share_prev": 0.02,
+       "topic": "bug"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0188,
+       "share_prev": 0.0243,
+       "topic": "churn"
+      }
+     ]
+    },
+    {
+     "classified": 1674,
+     "classified_share": 1.0,
+     "community": "레딧",
+     "community_id": "reddit",
+     "posts": 1674,
+     "posts_change": 2.9021,
+     "posts_per_day": 55.8,
+     "posts_prev": 429,
+     "region": "해외",
+     "rising": [
+      {
+       "count": 37,
+       "new": false,
+       "ratio": 3.3,
+       "word": "steam"
+      },
+      {
+       "count": 36,
+       "new": false,
+       "ratio": 5.4,
+       "word": "test"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.1952,
+      "net": -0.1131,
+      "pos": 0.0821
+     },
+     "sentiment_prev": {
+      "neg": 0.1667,
+      "net": -0.0904,
+      "pos": 0.0763
+     },
+     "strong_neg": [
+      {
+       "n": 158,
+       "name": "버그 · 서버",
+       "neg": 0.4684,
+       "topic": "bug"
+      },
+      {
+       "n": 48,
+       "name": "거래 · 경제",
+       "neg": 0.2917,
+       "topic": "economy"
+      },
+      {
+       "n": 162,
+       "name": "과금 · 상품",
+       "neg": 0.1975,
+       "topic": "monetization"
+      },
+      {
+       "n": 250,
+       "name": "운영 · 이벤트",
+       "neg": 0.184,
+       "topic": "operation"
+      },
+      {
+       "n": 201,
+       "name": "컨텐츠 · 업데이트",
+       "neg": 0.1692,
+       "topic": "content"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 99,
+       "name": "성장 · 강화",
+       "pos": 0.1616,
+       "topic": "growth"
+      },
+      {
+       "n": 201,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1343,
+       "topic": "content"
+      },
+      {
+       "n": 162,
+       "name": "과금 · 상품",
+       "pos": 0.0864,
+       "topic": "monetization"
+      },
+      {
+       "n": 250,
+       "name": "운영 · 이벤트",
+       "pos": 0.084,
+       "topic": "operation"
+      },
+      {
+       "n": 163,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0798,
+       "topic": "social"
+      }
+     ],
+     "topics": [
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1493,
+       "share_prev": 0.1212,
+       "topic": "operation"
+      },
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1201,
+       "share_prev": 0.1608,
+       "topic": "content"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.1135,
+       "share_prev": 0.1235,
+       "topic": "balance"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.0974,
+       "share_prev": 0.1002,
+       "topic": "social"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0968,
+       "share_prev": 0.1235,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0944,
+       "share_prev": 0.0653,
+       "topic": "bug"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.0591,
+       "share_prev": 0.1096,
+       "topic": "growth"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0287,
+       "share_prev": 0.028,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0119,
+       "share_prev": 0.007,
+       "topic": "churn"
+      }
+     ]
+    }
+   ],
+   "first": "2026-09-01",
+   "issues": [
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-07/dcinside/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-09-07"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-07/dcinside/topic:content",
+     "label": "컨텐츠 · 업데이트 주제",
+     "level": null,
+     "week": "2026-09-07"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-07/dcinside/group:장신구",
+     "label": "장신구 언급",
+     "level": null,
+     "week": "2026-09-07"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-09-07/arca/group:장신구",
+     "label": "장신구 언급",
+     "level": null,
+     "week": "2026-09-07"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-14/dcinside/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-14/dcinside/group:장신구",
+     "label": "장신구 언급",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-14/reddit/topic:other",
+     "label": "기타 주제",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-14/reddit/topic:bug",
+     "label": "버그 · 서버 주제",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-14/reddit/neg",
+     "label": "부정 비율",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-14/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-14/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-09-14/arca/group:장신구",
+     "label": "장신구 언급",
+     "level": null,
+     "week": "2026-09-14"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-21/dcinside/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-21"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-21/dcinside/group:장신구",
+     "label": "장신구 언급",
+     "level": null,
+     "week": "2026-09-21"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-09-21/arca/topic:monetization",
+     "label": "과금 · 상품 주제",
+     "level": null,
+     "week": "2026-09-21"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-28/dcinside/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-09-28/dcinside/group:과금 · 큐나",
+     "label": "과금 · 큐나 언급",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/topic_neg:growth",
+     "label": "성장 · 강화 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/neg",
+     "label": "부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/topic_neg:operation",
+     "label": "운영 · 이벤트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/topic:bug",
+     "label": "버그 · 서버 주제",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-09-28/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-09-28/inven/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-09-28/inven/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-09-28/inven/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-09-28"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-09-28/inven/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": null,
+     "week": "2026-09-28"
+    }
+   ],
+   "last": "2026-09-30",
+   "month": "2026-09",
+   "update_effects": [
+    {
+     "community": "인벤",
+     "date": "2026-09-02",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-09-02",
+     "major": false,
+     "neg_diff": 0.00176,
+     "posts_ratio": 0.816
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-09-02",
+     "major": false,
+     "neg_diff": 0.02153,
+     "posts_ratio": 0.957
+    },
+    {
+     "community": "인벤",
+     "date": "2026-09-09",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-09-09",
+     "major": false,
+     "neg_diff": -0.02098,
+     "posts_ratio": 0.901
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-09-09",
+     "major": false,
+     "neg_diff": -0.0221,
+     "posts_ratio": 0.982
+    },
+    {
+     "community": "인벤",
+     "date": "2026-09-16",
+     "major": false,
+     "neg_diff": null,
+     "posts_ratio": null
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-09-16",
+     "major": false,
+     "neg_diff": -0.02471,
+     "posts_ratio": 0.763
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-09-16",
+     "major": false,
+     "neg_diff": -0.00935,
+     "posts_ratio": 0.857
+    },
+    {
+     "community": "인벤",
+     "date": "2026-09-23",
+     "major": false,
+     "neg_diff": -0.01051,
+     "posts_ratio": 0.812
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-09-23",
+     "major": false,
+     "neg_diff": -0.04869,
+     "posts_ratio": 0.869
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-09-23",
+     "major": false,
+     "neg_diff": -0.02639,
+     "posts_ratio": 0.902
+    },
+    {
+     "community": "인벤",
+     "date": "2026-09-30",
+     "major": false,
+     "neg_diff": 0.02648,
+     "posts_ratio": 1.056
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-09-30",
+     "major": false,
+     "neg_diff": 0.01221,
+     "posts_ratio": 0.715
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-09-30",
+     "major": false,
+     "neg_diff": -0.00012,
+     "posts_ratio": 0.88
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-09-02",
+     "major": false,
+     "name": "[안내] 9/2(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-09-09",
+     "major": false,
+     "name": "[안내] 9/9(수) 업데이트 노트 (수정 9/9 12:35)"
+    },
+    {
+     "date": "2026-09-16",
+     "major": false,
+     "name": "[안내] 9/16(수) 업데이트 노트 (수정 9/18 12:50)"
+    },
+    {
+     "date": "2026-09-23",
+     "major": false,
+     "name": "[안내] 9/23(수) 업데이트 노트"
+    },
+    {
+     "date": "2026-09-30",
+     "major": false,
+     "name": "[안내] 9/30(수) 업데이트 노트"
+    }
+   ]
+  },
+  "2026-10": {
+   "communities": [
+    {
+     "classified": 10599,
+     "classified_share": 0.9996,
+     "community": "인벤",
+     "community_id": "inven",
+     "posts": 10603,
+     "posts_change": -0.0327,
+     "posts_per_day": 342.0,
+     "posts_prev": 10961,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 283,
+       "new": false,
+       "ratio": 6.1,
+       "word": "pvp"
+      },
+      {
+       "count": 265,
+       "new": false,
+       "ratio": 4.6,
+       "word": "글섭"
+      },
+      {
+       "count": 194,
+       "new": false,
+       "ratio": 100.3,
+       "word": "아웃랜드"
+      },
+      {
+       "count": 182,
+       "new": false,
+       "ratio": 17.1,
+       "word": "달제"
+      },
+      {
+       "count": 138,
+       "new": false,
+       "ratio": 4.6,
+       "word": "pve"
+      },
+      {
+       "count": 123,
+       "new": false,
+       "ratio": 5.5,
+       "word": "모바일"
+      },
+      {
+       "count": 96,
+       "new": false,
+       "ratio": 9.9,
+       "word": "테섭"
+      },
+      {
+       "count": 83,
+       "new": false,
+       "ratio": 14.3,
+       "word": "본섭"
+      },
+      {
+       "count": 82,
+       "new": false,
+       "ratio": 3.7,
+       "word": "글로벌"
+      },
+      {
+       "count": 75,
+       "new": false,
+       "ratio": 11.1,
+       "word": "막기"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.4905,
+      "net": -0.4301,
+      "pos": 0.0604
+     },
+     "sentiment_prev": {
+      "neg": 0.4203,
+      "net": -0.3499,
+      "pos": 0.0704
+     },
+     "strong_neg": [
+      {
+       "n": 1189,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.6299,
+       "topic": "social"
+      },
+      {
+       "n": 190,
+       "name": "버그 · 서버",
+       "neg": 0.6158,
+       "topic": "bug"
+      },
+      {
+       "n": 438,
+       "name": "복귀 · 이탈",
+       "neg": 0.5776,
+       "topic": "churn"
+      },
+      {
+       "n": 396,
+       "name": "과금 · 상품",
+       "neg": 0.5707,
+       "topic": "monetization"
+      },
+      {
+       "n": 2207,
+       "name": "운영 · 이벤트",
+       "neg": 0.5528,
+       "topic": "operation"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 1784,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1138,
+       "topic": "content"
+      },
+      {
+       "n": 784,
+       "name": "성장 · 강화",
+       "pos": 0.0689,
+       "topic": "growth"
+      },
+      {
+       "n": 438,
+       "name": "복귀 · 이탈",
+       "pos": 0.0525,
+       "topic": "churn"
+      },
+      {
+       "n": 396,
+       "name": "과금 · 상품",
+       "pos": 0.0505,
+       "topic": "monetization"
+      },
+      {
+       "n": 2207,
+       "name": "운영 · 이벤트",
+       "pos": 0.0476,
+       "topic": "operation"
+      }
+     ],
+     "topics": [
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.2082,
+       "share_prev": 0.1136,
+       "topic": "operation"
+      },
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1683,
+       "share_prev": 0.2056,
+       "topic": "content"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1122,
+       "share_prev": 0.1471,
+       "topic": "social"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.1054,
+       "share_prev": 0.2042,
+       "topic": "balance"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.074,
+       "share_prev": 0.1071,
+       "topic": "growth"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0579,
+       "share_prev": 0.0348,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0413,
+       "share_prev": 0.0244,
+       "topic": "churn"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0374,
+       "share_prev": 0.0311,
+       "topic": "monetization"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0179,
+       "share_prev": 0.0263,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 3891,
+     "classified_share": 0.9964,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "posts": 3905,
+     "posts_change": -0.4037,
+     "posts_per_day": 126.0,
+     "posts_prev": 6549,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 53,
+       "new": false,
+       "ratio": 8.7,
+       "word": "글섭"
+      },
+      {
+       "count": 48,
+       "new": false,
+       "ratio": 13.4,
+       "word": "하우징"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.334,
+      "net": -0.2107,
+      "pos": 0.1234
+     },
+     "sentiment_prev": {
+      "neg": 0.3173,
+      "net": -0.1852,
+      "pos": 0.1321
+     },
+     "strong_neg": [
+      {
+       "n": 67,
+       "name": "버그 · 서버",
+       "neg": 0.6866,
+       "topic": "bug"
+      },
+      {
+       "n": 95,
+       "name": "복귀 · 이탈",
+       "neg": 0.5053,
+       "topic": "churn"
+      },
+      {
+       "n": 150,
+       "name": "거래 · 경제",
+       "neg": 0.4867,
+       "topic": "economy"
+      },
+      {
+       "n": 165,
+       "name": "밸런스 · 직업",
+       "neg": 0.4182,
+       "topic": "balance"
+      },
+      {
+       "n": 445,
+       "name": "운영 · 이벤트",
+       "neg": 0.4135,
+       "topic": "operation"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 471,
+       "name": "성장 · 강화",
+       "pos": 0.1847,
+       "topic": "growth"
+      },
+      {
+       "n": 819,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1661,
+       "topic": "content"
+      },
+      {
+       "n": 239,
+       "name": "과금 · 상품",
+       "pos": 0.1339,
+       "topic": "monetization"
+      },
+      {
+       "n": 445,
+       "name": "운영 · 이벤트",
+       "pos": 0.0921,
+       "topic": "operation"
+      },
+      {
+       "n": 393,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0763,
+       "topic": "social"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2105,
+       "share_prev": 0.2372,
+       "topic": "content"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.121,
+       "share_prev": 0.1407,
+       "topic": "growth"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1144,
+       "share_prev": 0.0777,
+       "topic": "operation"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.101,
+       "share_prev": 0.1118,
+       "topic": "social"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0614,
+       "share_prev": 0.05,
+       "topic": "monetization"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0424,
+       "share_prev": 0.0734,
+       "topic": "balance"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0386,
+       "share_prev": 0.0278,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0244,
+       "share_prev": 0.0132,
+       "topic": "churn"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0172,
+       "share_prev": 0.0295,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 72514,
+     "classified_share": 0.9998,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "posts": 72528,
+     "posts_change": -0.2604,
+     "posts_per_day": 2339.6,
+     "posts_prev": 98068,
+     "region": "국내",
+     "rising": [
+      {
+       "count": 2696,
+       "new": false,
+       "ratio": 9.4,
+       "word": "글섭"
+      },
+      {
+       "count": 2208,
+       "new": false,
+       "ratio": 8.0,
+       "word": "이슈"
+      },
+      {
+       "count": 889,
+       "new": false,
+       "ratio": 265.0,
+       "word": "아웃랜드"
+      },
+      {
+       "count": 719,
+       "new": false,
+       "ratio": 4.0,
+       "word": "달제"
+      },
+      {
+       "count": 660,
+       "new": false,
+       "ratio": 18.1,
+       "word": "테섭"
+      },
+      {
+       "count": 529,
+       "new": false,
+       "ratio": 5.0,
+       "word": "글로벌"
+      },
+      {
+       "count": 441,
+       "new": false,
+       "ratio": 20.0,
+       "word": "본섭"
+      },
+      {
+       "count": 423,
+       "new": false,
+       "ratio": 4.1,
+       "word": "하우징"
+      },
+      {
+       "count": 401,
+       "new": false,
+       "ratio": 6.5,
+       "word": "한섭"
+      },
+      {
+       "count": 384,
+       "new": false,
+       "ratio": 3.5,
+       "word": "본부"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.4281,
+      "net": -0.3388,
+      "pos": 0.0893
+     },
+     "sentiment_prev": {
+      "neg": 0.4006,
+      "net": -0.3136,
+      "pos": 0.087
+     },
+     "strong_neg": [
+      {
+       "n": 2562,
+       "name": "복귀 · 이탈",
+       "neg": 0.6007,
+       "topic": "churn"
+      },
+      {
+       "n": 1262,
+       "name": "버그 · 서버",
+       "neg": 0.5729,
+       "topic": "bug"
+      },
+      {
+       "n": 10628,
+       "name": "운영 · 이벤트",
+       "neg": 0.5425,
+       "topic": "operation"
+      },
+      {
+       "n": 12435,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.4871,
+       "topic": "social"
+      },
+      {
+       "n": 7324,
+       "name": "밸런스 · 직업",
+       "neg": 0.4506,
+       "topic": "balance"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 14982,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.1301,
+       "topic": "content"
+      },
+      {
+       "n": 2735,
+       "name": "과금 · 상품",
+       "pos": 0.0969,
+       "topic": "monetization"
+      },
+      {
+       "n": 6590,
+       "name": "성장 · 강화",
+       "pos": 0.0939,
+       "topic": "growth"
+      },
+      {
+       "n": 1262,
+       "name": "버그 · 서버",
+       "pos": 0.0864,
+       "topic": "bug"
+      },
+      {
+       "n": 12435,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0823,
+       "topic": "social"
+      }
+     ],
+     "topics": [
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2066,
+       "share_prev": 0.2404,
+       "topic": "content"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.1715,
+       "share_prev": 0.1636,
+       "topic": "social"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1466,
+       "share_prev": 0.0922,
+       "topic": "operation"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.101,
+       "share_prev": 0.1624,
+       "topic": "balance"
+      },
+      {
+       "name": "성장 · 강화",
+       "share": 0.0909,
+       "share_prev": 0.1395,
+       "topic": "growth"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0514,
+       "share_prev": 0.0403,
+       "topic": "economy"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0377,
+       "share_prev": 0.0264,
+       "topic": "monetization"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0353,
+       "share_prev": 0.0188,
+       "topic": "churn"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.0174,
+       "share_prev": 0.0214,
+       "topic": "bug"
+      }
+     ]
+    },
+    {
+     "classified": 10137,
+     "classified_share": 0.9998,
+     "community": "레딧",
+     "community_id": "reddit",
+     "posts": 10139,
+     "posts_change": 5.0568,
+     "posts_per_day": 327.1,
+     "posts_prev": 1674,
+     "region": "해외",
+     "rising": [
+      {
+       "count": 311,
+       "new": false,
+       "ratio": 4.4,
+       "word": "abyss"
+      },
+      {
+       "count": 257,
+       "new": false,
+       "ratio": 5.1,
+       "word": "transfer"
+      },
+      {
+       "count": 147,
+       "new": false,
+       "ratio": 3.1,
+       "word": "weapon"
+      },
+      {
+       "count": 131,
+       "new": false,
+       "ratio": 16.2,
+       "word": "bots"
+      },
+      {
+       "count": 103,
+       "new": false,
+       "ratio": 3.0,
+       "word": "account"
+      },
+      {
+       "count": 102,
+       "new": false,
+       "ratio": 3.4,
+       "word": "boss"
+      },
+      {
+       "count": 96,
+       "new": false,
+       "ratio": 3.4,
+       "word": "assassin"
+      },
+      {
+       "count": 94,
+       "new": false,
+       "ratio": 3.8,
+       "word": "skin"
+      },
+      {
+       "count": 93,
+       "new": false,
+       "ratio": 7.7,
+       "word": "drops"
+      },
+      {
+       "count": 92,
+       "new": false,
+       "ratio": 15.2,
+       "word": "drop"
+      }
+     ],
+     "sentiment": {
+      "neg": 0.3738,
+      "net": -0.3125,
+      "pos": 0.0613
+     },
+     "sentiment_prev": {
+      "neg": 0.1952,
+      "net": -0.1131,
+      "pos": 0.0821
+     },
+     "strong_neg": [
+      {
+       "n": 1024,
+       "name": "버그 · 서버",
+       "neg": 0.75,
+       "topic": "bug"
+      },
+      {
+       "n": 149,
+       "name": "복귀 · 이탈",
+       "neg": 0.5436,
+       "topic": "churn"
+      },
+      {
+       "n": 600,
+       "name": "거래 · 경제",
+       "neg": 0.4583,
+       "topic": "economy"
+      },
+      {
+       "n": 1084,
+       "name": "운영 · 이벤트",
+       "neg": 0.4262,
+       "topic": "operation"
+      },
+      {
+       "n": 877,
+       "name": "파티 · 커뮤니티",
+       "neg": 0.4036,
+       "topic": "social"
+      }
+     ],
+     "strong_pos": [
+      {
+       "n": 1475,
+       "name": "컨텐츠 · 업데이트",
+       "pos": 0.118,
+       "topic": "content"
+      },
+      {
+       "n": 877,
+       "name": "파티 · 커뮤니티",
+       "pos": 0.0753,
+       "topic": "social"
+      },
+      {
+       "n": 869,
+       "name": "과금 · 상품",
+       "pos": 0.0667,
+       "topic": "monetization"
+      },
+      {
+       "n": 1568,
+       "name": "성장 · 강화",
+       "pos": 0.0548,
+       "topic": "growth"
+      },
+      {
+       "n": 1084,
+       "name": "운영 · 이벤트",
+       "pos": 0.0434,
+       "topic": "operation"
+      }
+     ],
+     "topics": [
+      {
+       "name": "성장 · 강화",
+       "share": 0.1547,
+       "share_prev": 0.0591,
+       "topic": "growth"
+      },
+      {
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.1455,
+       "share_prev": 0.1201,
+       "topic": "content"
+      },
+      {
+       "name": "운영 · 이벤트",
+       "share": 0.1069,
+       "share_prev": 0.1493,
+       "topic": "operation"
+      },
+      {
+       "name": "버그 · 서버",
+       "share": 0.101,
+       "share_prev": 0.0944,
+       "topic": "bug"
+      },
+      {
+       "name": "파티 · 커뮤니티",
+       "share": 0.0865,
+       "share_prev": 0.0974,
+       "topic": "social"
+      },
+      {
+       "name": "과금 · 상품",
+       "share": 0.0857,
+       "share_prev": 0.0968,
+       "topic": "monetization"
+      },
+      {
+       "name": "밸런스 · 직업",
+       "share": 0.0809,
+       "share_prev": 0.1135,
+       "topic": "balance"
+      },
+      {
+       "name": "거래 · 경제",
+       "share": 0.0592,
+       "share_prev": 0.0287,
+       "topic": "economy"
+      },
+      {
+       "name": "복귀 · 이탈",
+       "share": 0.0147,
+       "share_prev": 0.0119,
+       "topic": "churn"
+      }
+     ]
+    }
+   ],
+   "first": "2026-10-01",
+   "issues": [
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-05/dcinside/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:balance",
+     "label": "밸런스 · 직업 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:growth",
+     "label": "성장 · 강화 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/neg",
+     "label": "부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/signal:복귀 · 신규 표현",
+     "label": "복귀 · 신규 표현",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:operation",
+     "label": "운영 · 이벤트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic:bug",
+     "label": "버그 · 서버 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:economy",
+     "label": "거래 · 경제 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:content",
+     "label": "컨텐츠 · 업데이트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-05/reddit/topic_neg:churn",
+     "label": "복귀 · 이탈 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic:other",
+     "label": "기타 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic_neg:balance",
+     "label": "밸런스 · 직업 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-05/inven/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": null,
+     "week": "2026-10-05"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-12/dcinside/group:외형 · 의상",
+     "label": "외형 · 의상 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-12/dcinside/topic:monetization",
+     "label": "과금 · 상품 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-12/dcinside/signal:이탈 표현",
+     "label": "이탈 표현",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-12/dcinside/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic:growth",
+     "label": "성장 · 강화 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:balance",
+     "label": "밸런스 · 직업 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:growth",
+     "label": "성장 · 강화 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/neg",
+     "label": "부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic:churn",
+     "label": "복귀 · 이탈 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/topic_neg:operation",
+     "label": "운영 · 이벤트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/group:펫",
+     "label": "펫 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/group:키나 · 거래소",
+     "label": "키나 · 거래소 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-12/reddit/signal:버그 신호",
+     "label": "버그 신호",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-12/arca/signal:복귀 · 신규 표현",
+     "label": "복귀 · 신규 표현",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-12/arca/topic:monetization",
+     "label": "과금 · 상품 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-12/arca/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-12/inven/group:외형 · 의상",
+     "label": "외형 · 의상 언급",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-12/inven/topic:monetization",
+     "label": "과금 · 상품 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-12/inven/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": null,
+     "week": "2026-10-12"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-19/dcinside/topic:social",
+     "label": "파티 · 커뮤니티 주제",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:content",
+     "label": "컨텐츠 · 업데이트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic:growth",
+     "label": "성장 · 강화 주제",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:balance",
+     "label": "밸런스 · 직업 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:operation",
+     "label": "운영 · 이벤트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/neg",
+     "label": "부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:growth",
+     "label": "성장 · 강화 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-19/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-19/arca/topic_neg:content",
+     "label": "컨텐츠 · 업데이트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "인벤",
+     "id": "2026-10-19/inven/topic_neg:content",
+     "label": "컨텐츠 · 업데이트 주제의 부정 비율",
+     "level": null,
+     "week": "2026-10-19"
+    },
+    {
+     "community": "디시인사이드",
+     "id": "2026-10-26/dcinside/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:monetization",
+     "label": "과금 · 상품 주제의 부정 비율",
+     "level": "높음",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic:growth",
+     "label": "성장 · 강화 주제",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:social",
+     "label": "파티 · 커뮤니티 주제의 부정 비율",
+     "level": "높음",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:content",
+     "label": "컨텐츠 · 업데이트 주제의 부정 비율",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/group:장비 제작",
+     "label": "장비 제작 언급",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:balance",
+     "label": "밸런스 · 직업 주제의 부정 비율",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/group:작업장 · 매크로",
+     "label": "작업장 · 매크로 언급",
+     "level": "관찰",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:operation",
+     "label": "운영 · 이벤트 주제의 부정 비율",
+     "level": "높음",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/neg",
+     "label": "부정 비율",
+     "level": "높음",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:bug",
+     "label": "버그 · 서버 주제의 부정 비율",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "레딧",
+     "id": "2026-10-26/reddit/topic_neg:economy",
+     "label": "거래 · 경제 주제의 부정 비율",
+     "level": "관찰",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-26/arca/topic:economy",
+     "label": "거래 · 경제 주제",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-26/arca/topic:operation",
+     "label": "운영 · 이벤트 주제",
+     "level": "보통",
+     "week": "2026-10-26"
+    },
+    {
+     "community": "아카라이브",
+     "id": "2026-10-26/arca/topic_neg:economy",
+     "label": "거래 · 경제 주제의 부정 비율",
+     "level": "관찰",
+     "week": "2026-10-26"
+    }
+   ],
+   "last": "2026-10-31",
+   "month": "2026-10",
+   "update_effects": [
+    {
+     "community": "인벤",
+     "date": "2026-10-07",
+     "major": false,
+     "neg_diff": 0.08644,
+     "posts_ratio": 0.949
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-10-07",
+     "major": false,
+     "neg_diff": 0.01391,
+     "posts_ratio": 0.653
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-10-07",
+     "major": false,
+     "neg_diff": 0.05003,
+     "posts_ratio": 0.895
+    },
+    {
+     "community": "인벤",
+     "date": "2026-10-14",
+     "major": false,
+     "neg_diff": 0.06984,
+     "posts_ratio": 1.052
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-10-14",
+     "major": false,
+     "neg_diff": 0.01304,
+     "posts_ratio": 0.573
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-10-14",
+     "major": false,
+     "neg_diff": 0.02846,
+     "posts_ratio": 0.662
+    },
+    {
+     "community": "인벤",
+     "date": "2026-10-21",
+     "major": false,
+     "neg_diff": 0.05766,
+     "posts_ratio": 0.754
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-10-21",
+     "major": false,
+     "neg_diff": 0.00886,
+     "posts_ratio": 0.514
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-10-21",
+     "major": false,
+     "neg_diff": -0.01133,
+     "posts_ratio": 0.637
+    },
+    {
+     "community": "인벤",
+     "date": "2026-10-28",
+     "major": false,
+     "neg_diff": -0.02149,
+     "posts_ratio": 0.817
+    },
+    {
+     "community": "아카라이브",
+     "date": "2026-10-28",
+     "major": false,
+     "neg_diff": 0.0046,
+     "posts_ratio": 0.572
+    },
+    {
+     "community": "디시인사이드",
+     "date": "2026-10-28",
+     "major": false,
+     "neg_diff": -0.00803,
+     "posts_ratio": 0.548
+    }
+   ],
+   "updates": [
+    {
+     "date": "2026-10-05",
+     "major": true,
+     "name": "글로벌 정식 출시(스팀 · 퍼플)"
+    },
+    {
+     "date": "2026-10-07",
+     "major": false,
+     "name": "[안내] 10/7(수) 업데이트 노트 (수정 10/8 11:14)"
+    },
+    {
+     "date": "2026-10-14",
+     "major": false,
+     "name": "[안내] 10/14(수) 업데이트 노트 (수정 10/14 07:02)"
+    },
+    {
+     "date": "2026-10-21",
+     "major": false,
+     "name": "[안내] 10/21(수) 업데이트 노트 (수정 10/21 10:37)"
+    },
+    {
+     "date": "2026-10-28",
+     "major": false,
+     "name": "[안내] 10/28(수) 업데이트 노트"
+    }
+   ]
+  }
+ },
+ "rules": {
+  "coverage": "커뮤니티의 모든 게시판이 그 달 전체를 받은 달만",
+  "min_classified": 0.95,
+  "rise_base_months": 3,
+  "rise_min": 30,
+  "rise_ratio": 3.0,
+  "sentiment": "제목 분류. 게임과 상관없는 글(주제 기타)은 긍정/부정에서 뺀다",
+  "strong_min": 30,
+  "topic_top": 10
+ }
+}

@@ -74,9 +74,6 @@ ul, ol { margin: 0; padding: 0; }
 .intro-body .flow b { color: var(--text); }
 .intro-body p { margin: 0 0 10px; }
 .intro-body p b { display: block; color: var(--text); font-size: 12.5px; }
-.maker { padding: 12px 10px 0; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--muted); line-height: 1.6; }
-.maker b { color: var(--text); font-weight: 700; }
-.maker span { display: inline-flex; align-items: center; gap: 5px; }
 .side-close { display: none; }
 
 /* 휴대폰 · 태블릿 위 줄(메뉴 단추로 왼쪽 메뉴를 접는다) */
@@ -84,7 +81,6 @@ ul, ol { margin: 0; padding: 0; }
 
 .main { flex: 1; min-width: 0; padding: 28px 32px 48px; }
 .main-in { max-width: 1400px; }
-.titlerow { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; }
 h1 { font: 800 28px/1.25 var(--title); letter-spacing: -.01em; color: var(--text); }
 h1:focus { outline: none; }
 .actions { display: flex; gap: 8px; flex: none; align-items: center; }
@@ -121,7 +117,7 @@ h3:first-child { margin-top: 4px; }
 h3 .h3sub { font: 400 12.5px var(--font); color: var(--muted); margin-left: 6px; }
 .view > * + * { margin-top: var(--gap); }
 .view > :first-child { margin-top: 16px; }
-.view > .ins, .view > .kv { margin-top: 14px; }
+.view > .ins { margin-top: 14px; }
 .empty { color: var(--muted); font-size: 13.5px; }
 .frame-empty { border: 1px dashed var(--control); border-radius: 8px; padding: 12px 14px; color: var(--muted); font-size: 13.5px; }
 .banner { border: 1px solid #f3d9a6; background: #fffbeb; color: #92400e; border-radius: 8px; padding: 10px 14px; font-size: 13.5px; }
@@ -133,7 +129,7 @@ h3 .h3sub { font: 400 12.5px var(--font); color: var(--muted); margin-left: 6px;
 .info-pop { margin: 0 18px 12px; padding: 10px 14px; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; color: var(--body); }
 .info-pop p + p { margin-top: 4px; }
 /* 숫자 칸의 ⓘ: 칸 오른쪽 아래(비교 줄이 있던 자리)에 두고, 누르면 칸 아래에 말풍선이 뜬다(모양은 그래프 말풍선과 같다). 2026-11-20 사용자 지시 */
-.kv > div, .p-nums > div { position: relative; }
+.p-nums > div { position: relative; }
 .kv-foot { display: flex; justify-content: flex-end; margin: 0 -8px -4px 0; }   /* 22px 단추가 비교 줄 한 줄(18px)만큼만 자리를 차지한다. 변화 줄 옆에 두면 1440px에서 변화 줄이 꺾인다 */
 .p-nums .kv-foot { margin: 0 -4px -5px 0; }
 .kv-pop { position: absolute; right: 8px; top: calc(100% - 4px); z-index: 6; width: max-content; max-width: min(360px, calc(100vw - 48px)); text-wrap: balance; background: var(--surface); border: 1px solid var(--control); border-radius: 6px; padding: 6px 9px; font-size: 12.5px; line-height: 1.5; color: var(--text); box-shadow: 0 4px 12px rgba(15,23,42,.08); }   /* taste-skill-ignore: 칸 위에 뜨는 말풍선(떠 있는 것에만 그림자) */
@@ -161,19 +157,6 @@ h3 .h3sub { font: 400 12.5px var(--font); color: var(--muted); margin-left: 6px;
 .wknote .ghost { height: 32px; padding: 0 12px; font-size: 13px; }
 .ex { font-size: 14.5px; color: var(--body); margin-top: 5px; line-height: 1.5; }
 .ex .ai-l { margin-left: 6px; }
-
-/* ---------- 숫자 다섯 칸: 한 판을 선으로 나눈 칸(아이콘 · 추세선 없음) ---------- */
-.kv { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
-.kv > div { padding: 12px 16px; border-left: 1px solid var(--border); min-width: 0; }
-.kv > div:first-child { border-left: 0; }
-.kv .l { font-size: 12.5px; color: var(--muted); }
-.kv .v { font: 800 22px/1.3 var(--title); color: var(--text); font-variant-numeric: tabular-nums; }
-.kv .v small { font: 400 12.5px var(--title); color: var(--muted); margin-left: 2px; }   /* 단위도 숫자와 같은 글꼴(한 줄 안에서 글꼴이 바뀌지 않게) */
-.kv .v.na { font: 500 15px/28.6px var(--font); color: var(--muted); }
-/* 평시와 비교할 수 없는 값은 작고 흐리게, 변화가 있는 값은 굵은 변화 줄로(Glance Test 수정 3: 가장 큰 숫자가 해석할 수 있는 숫자가 되게) */
-.kv .v.weak { font: 800 16px/28.6px var(--title); color: var(--muted); }
-.kv .d { font: 800 14px/1.4 var(--title); color: var(--text); font-variant-numeric: tabular-nums; }
-.kv .c { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
 /* ---------- 판단 표 + 오른쪽 기둥 384px ---------- */
 .a-grid { display: grid; grid-template-columns: minmax(0, 1fr) 384px; gap: var(--gap); margin-top: 16px; align-items: start; }
@@ -345,7 +328,7 @@ tr.chosen td { background: var(--tint); }
 .p-concl { font-size: 15px; line-height: 1.6; color: var(--text); }
 .p-concl b { font-weight: 700; }
 .p-concl .x { display: block; color: var(--body); font-size: 14px; margin-top: 2px; }
-.p-nums { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border: 1px solid var(--border); border-radius: 6px; }
+.p-nums { display: grid; grid-template-columns: repeat(var(--kvn, 5), minmax(0, 1fr)); border: 1px solid var(--border); border-radius: 6px; }
 .p-nums > div { padding: 8px 10px; border-left: 1px solid var(--border); min-width: 0; }
 .p-nums > div:first-child { border-left: 0; }
 .p-nums .l { font-size: 12px; color: var(--muted); }
@@ -398,7 +381,6 @@ tr.chosen td { background: var(--tint); }
 @media screen and (max-width: 820px) {
   .main { padding: 16px 16px 36px; }
   h1 { font-size: 22px; }
-  .titlerow { flex-wrap: wrap; align-items: center; }
   .scope { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.3fr); gap: 8px; }
   .scope .sel { width: 100%; min-width: 0; padding: 0 24px 0 10px; background-position: right 9px center; font-size: 13.5px; }
   .scope .seg button { padding: 0 11px; font-size: 13.5px; }
@@ -416,11 +398,6 @@ tr.chosen td { background: var(--tint); }
   .wknote .wk-cur { display: none; }
   .ins-it { padding: 12px 16px 13px; }
   .hl { font-size: 17.5px; }
-  .kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .kv > div { border-left: 0; border-top: 1px solid var(--border); }
-  .kv > div:nth-child(even) { border-left: 1px solid var(--border); }
-  .kv > div:nth-child(-n+2) { border-top: 0; }
-  .kv > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .kv-i::after { inset: -10px; }   /* 휴대폰: 숫자 칸 ⓘ의 누르는 영역 40px(보이는 원은 22px 그대로) */
   .a-grid { display: flex; flex-direction: column; align-items: stretch; }
   .a-left { display: contents; }
@@ -477,7 +454,7 @@ tr.chosen td { background: var(--tint); }
 @media print {
   @page { size: A4; margin: 11mm 12mm; }
   html, body { background: var(--surface); }
-  .side, .mbar, .skip, .titlerow, .scope, .foot, .view:not([data-view="report"]), .no-print { display: none !important; }
+  .side, .mbar, .skip, .foot, .view:not([data-view="report"]), .no-print { display: none !important; }
   .shell { display: block; min-height: 0; }
   .main { padding: 0; }
   .view > * + *, .view > :first-child { margin-top: 0; }
@@ -581,7 +558,7 @@ tr.chosen td { background: var(--tint); }
   --neu-bg:#e4efe9; --neu-ink:#1f5a46;
 }
 /* 카드: 흰 바탕, 얇은 회색 테두리, 위쪽 진한 초록 선, 머리에 굵은 제목 */
-.card, .ins, .kv{ border-color:#d3d9d5 !important; border-radius:8px; }
+.card, .ins{ border-color:#d3d9d5 !important; border-radius:8px; }
 .card.judge{ border-top:3px solid #1f6f54 !important; }   /* 위쪽 초록 선은 '이번 주 주요 이슈' 판에만(사용자 2026-11-23) */
 .card-h h2{ color:#16201b; }
 /* 이번 주 결론 띠는 진한 초록 */
@@ -604,25 +581,12 @@ tr.chosen td { background: var(--tint); }
 th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; border-bottom:1px solid #d3d9d5 !important; }
 .jt tr.jrow:hover td{ background:#f7f8f7 !important; }
 </style>
-<style>/* 2026-11-23 머리 영역 초록: 제목 줄 · 선택 줄을 진한 초록 띠로, 글자는 흰색(사용자 요청, 시장분석 대시보드 머리 영역과 같은 색) */
-.mhead{ background:#1f6f54; margin:-28px -32px 0; padding:24px 32px 20px; }
-.mhead-in{ max-width:1400px; }
-.mhead h1{ color:#fff; }
-.mhead :focus-visible{ outline-color:#fff; }
-.mhead .primary{ background:#fff !important; color:#1f5a46 !important; }
-.mhead .primary:hover{ background:#e4efe9 !important; }
-.mhead .ghost{ border-color:#fff; }
-.mhead .copy-status{ color:rgba(255,255,255,.85); }
-.mhead .sel{ border-color:#fff !important; }
-@media screen and (max-width: 1100px){ .mhead{ margin:-20px -24px 0; padding:20px 24px 18px; } }
-@media screen and (max-width: 820px){ .mhead{ margin:-16px -16px 0; padding:16px 16px 16px; } }
-@media print{ .mhead{ display:none !important; } }
-/* 결론 띠 오른쪽 '기간 · 지역' 글: 판단 상태를 뺀 뒤 주마다 글 폭이 달라져 자리가 움직였다. 모든 주 · 두 지역에서 잰 가장 긴 폭(113.5px)에 맞춘다 */
+<style>/* 결론 띠 오른쪽 '기간 · 지역' 글: 판단 상태를 뺀 뒤 주마다 글 폭이 달라져 자리가 움직였다. 모든 주 · 두 지역에서 잰 가장 긴 폭(113.5px)에 맞춘다 */
 @media screen and (min-width: 821px){ .ins-h .ins-st{ display:inline-block; min-width:114px; text-align:right; } }
 @media screen and (max-width: 820px){ .ins-h .ins-st{ flex-basis:100%; } }   /* 휴대폰: 결론 제목 길이에 따라 같은 줄 · 다음 줄을 오가지 않게 늘 제 줄에 둔다 */
 </style>
 <style>/* 2026-11-23 모서리: 시장분석 대시보드와 같게 카드 · 판 · 칸 · 말풍선은 4px, 단추 · 선택 상자 · 지역 전환 · 메뉴 항목은 알약(사용자 요청) */
-.card, .ins, .kv, .frame-empty, .banner, .info-pop, .kv-pop, .wknote, .jdet .dsec, .ai-box, .svgchart .tip, .kt-wrap .tip,
+.card, .ins, .frame-empty, .banner, .info-pop, .kv-pop, .wknote, .jdet .dsec, .ai-box, .svgchart .tip, .kt-wrap .tip,
 .past > summary:hover, .steps li, .paper, .p-nums, .yday, .memo, .intro > summary, .kt-il a, .lg{ border-radius:4px !important; }
 .judge .jh{ border-radius:2px 2px 0 0 !important; }   /* 위 테두리 3px 안쪽 모서리. 값은 DESIGN.md rounded.mark */
 .kt-det{ border-radius:0 0 4px 4px !important; }
@@ -636,7 +600,7 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 .ai-box ul.sum li::marker{ color:#1f6f54; }
 </style>
 <style>/* 이번 주 결론 띠 아래: 지역 전체 동향 두 칸(2026-11-23 사용자 요청) */
-.ov{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); }
+.ov{ display:grid; grid-template-columns:minmax(0,.56fr) minmax(0,1fr); }
 .ov > div{ padding:14px 20px 16px; min-width:0; }
 .ov > div + div{ border-left:1px solid var(--border); }
 .ov h3{ font:700 13.5px/1.4 var(--font); color:var(--text); margin:0 0 10px; }
@@ -650,12 +614,114 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 .ovb-t span.dn{ right:50%; background:#b9bcc4; border-radius:2px 0 0 2px; }
 .ovb-v{ text-align:right; font-weight:700; color:var(--text); }
 .ovb-v.dn{ color:var(--muted); }
-.ovb-x{ grid-column:1/-1; margin:-2px 0 4px; font-size:13px; line-height:1.45; color:var(--body); }
-.ovl li.muted{ display:block; font-size:13.5px; }
-.ovl{ list-style:none; margin:0; padding:0; display:grid; gap:9px; }
-.ovl li{ display:grid; grid-template-columns:5.6em minmax(0,1fr); gap:10px; font-size:14px; line-height:1.5; }
-.ovl b{ color:var(--muted); font-size:13px; font-weight:700; }
 @media screen and (max-width:820px){ .ov{ grid-template-columns:1fr; } .ov > div + div{ border-left:0; border-top:1px solid var(--border); } }
+</style>
+<style>/* 2026-11-23 제목 부분을 시장분석 대시보드와 같은 맨 위 초록 띠로(왼쪽 메뉴는 그대로, 사용자 요청) */
+.tophead{ background:var(--navy); padding:20px 32px 14px 24px; }   /* 왼쪽은 메뉴 글, 오른쪽은 본문 오른쪽 끝에 맞춘다 */
+.th-in{ display:flex; align-items:center; justify-content:space-between; gap:12px 24px; max-width:1638px; }
+.th-left{ min-width:0; }
+.th-row{ display:flex; align-items:center; gap:4px 12px; }
+.th-title{ font:700 20px/30px var(--title); color:#fff; white-space:nowrap; }
+.tophead .maker{ display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,.5); border-radius:999px; padding:5px 12px; font-size:14px; line-height:1; color:#fff; white-space:nowrap; }
+.tophead .maker-label{ font-size:12px; font-weight:700; letter-spacing:.1em; color:rgba(255,255,255,.9); }
+.tophead .maker-name{ font-weight:700; color:#fff; }
+.tophead .msep{ color:rgba(255,255,255,.5); }
+.tophead .maker-mail{ color:rgba(255,255,255,.85); display:inline-flex; align-items:center; gap:5px; }
+.tophead .subtitle{ margin:4px 0 0; font-size:15px; line-height:1.5; color:rgba(255,255,255,.85); }
+/* 고르기(게임 · 국내/해외 · 기준 주)와 주간 보고서 단추: 머리 오른쪽 위, 흰 알약 바탕 · 굵은 15px 글자(2026-11-24 사용자 "이걸 오른쪽상단 헤더쪽으로 옮기고 가시성 좋게해줘").
+   이름표는 시장분석 대시보드 메뉴 줄의 '시장' 이름표와 같은 13px 굵은 글자 */
+.th-ctl{ display:flex; align-items:center; gap:14px; flex:none; }
+.tophead .scope{ display:flex; align-items:center; gap:10px; margin:0; flex-wrap:nowrap; }
+.th-lab{ font-size:13px; font-weight:700; color:#fff; white-space:nowrap; }
+.tophead .sel{ width:auto; height:38px; padding:0 36px 0 16px; font-size:15px; font-weight:700; color:var(--text); background-color:#fff; background-position:right 15px center; border-color:#fff !important; }
+.tophead .sel:hover:not(:disabled){ background-color:#eef5f1; }
+.tophead .sel:disabled, .th-lab:has(+ .sel:disabled){ opacity:.45; cursor:default; }
+.tophead #gameSel{ min-width:150px; margin-right:4px; }
+.tophead #weekSel{ min-width:176px; }
+.tophead .seg{ height:38px !important; background:rgba(255,255,255,.14) !important; border:1px solid rgba(255,255,255,.55) !important; padding:2px; margin-right:4px; }
+.tophead .seg button{ padding:0 18px; font-size:15px; font-weight:700; color:#fff; }
+.tophead .seg button[aria-pressed="true"]{ background:#fff !important; color:var(--text) !important; box-shadow:none; }
+.tophead .seg button:not([aria-pressed="true"]):hover:not(:disabled){ color:#fff; background:rgba(255,255,255,.16); }
+.tophead .seg button:disabled{ color:rgba(255,255,255,.6); }
+.tophead .primary{ height:38px; padding:0 18px; border:1.5px solid #fff; font-size:15px; font-weight:700; background:transparent !important; color:#fff !important; }
+.tophead .primary:hover, .tophead .primary[aria-current="page"]{ background:rgba(255,255,255,.18) !important; }
+.tophead :focus-visible{ outline-color:#fff; }
+.mtop{ display:flex; align-items:center; justify-content:space-between; gap:8px 20px; flex-wrap:wrap; box-sizing:border-box; min-height:49px; max-width:1400px; margin:0 0 18px; padding:0 0 12px; border-bottom:1px solid var(--border); }
+.mtop h1{ margin:0; font:800 22px/1.3 var(--title); color:var(--text); }
+.mtop .copy-status:empty{ margin-right:-8px; }   /* 복사 알림 칸이 비어 있을 때 단추 앞 간격을 두지 않는다(휴대폰에서 단추가 8px 밀려 보였다) */
+/* 왼쪽 메뉴: 띠 높이만큼 짧게 해서 처음 화면에서 맨 아래 '프로젝트 소개'가 잘리지 않게 한다. 메뉴와 본문 사이 선은 본문 왼쪽에도 그려 끝까지 이어진다 */
+@media screen and (min-width:1101px){ .side{ height:calc(100vh - 91px); } .main{ box-shadow:-1px 0 0 var(--border); } }
+@media screen and (max-width:1395px){ .th-lab{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); } }   /* 폭이 좁으면 이름표는 화면 읽기에만 */
+@media screen and (min-width:1031px) and (max-width:1310px){ .th-row{ flex-direction:column; align-items:flex-start; } }   /* 만든 사람 표시를 제목 아래 줄로 */
+@media screen and (min-width:1101px) and (max-width:1310px){ .side{ height:calc(100vh - 121px); } }
+@media screen and (max-width:1100px){ .tophead{ padding-right:24px; } }
+@media screen and (max-width:1030px){ .th-in{ flex-direction:column; align-items:stretch; } .th-row{ flex-wrap:wrap; } .th-ctl{ justify-content:flex-end; } }
+@media screen and (max-width:820px){
+  .tophead{ padding:16px 16px 14px; }
+  .th-title{ font-size:18px; line-height:26px; }
+  .tophead .sel, .tophead .primary{ height:40px; }
+  .tophead .seg{ height:40px !important; }
+}
+@media screen and (max-width:700px){   /* 휴대폰: 두 줄(게임 | 국내 · 해외, 기준 주 | 주간 보고서) */
+  .th-ctl{ display:grid; grid-template-columns:minmax(0,1fr) 128px; gap:8px; }
+  .tophead .scope{ display:contents; }
+  .tophead #gameSel{ order:1; } .tophead #regionSeg{ order:2; } .tophead #weekSel{ order:3; } .tophead .actions{ order:4; }
+  .tophead .sel{ width:100%; min-width:0 !important; padding:0 28px 0 14px; font-size:14px; background-position:right 12px center; margin:0 !important; }
+  .tophead .seg{ margin:0; }
+  .tophead .seg button{ flex:1; padding:0; font-size:14px; }
+  .tophead .primary{ width:100%; justify-content:center; padding:0; font-size:14px; }
+}
+@media screen and (max-width:359px){ .tophead .maker-label{ display:none; } }
+@media print{ .tophead, .mtop{ display:none !important; } }
+/* 결론 판: 왼쪽은 주제 비중 변화 막대만, 오른쪽은 이번 주 요약과 그 아래 강조한 현재 유저 동향 요약(2026-11-24 사용자 요청) */
+.ovb{ gap:0 10px; grid-auto-rows:27px; } .ovb-t{ height:12px; }   /* 주제 줄 사이를 띄우지 않고 막대를 붙인다(막대 사이 2px 선만, 2026-11-24 사용자 "주제변화 주제들 사이에 공간없게 붙여줘.") */
+/* 이번 주 요약: 커뮤니티 값은 큰 숫자 칸, 급증 키워드는 알약, 게임 지표는 값마다 굵은 숫자(2026-11-24 사용자 "성겨깅다른것들은 좀 다르게 표시해줘야 가독성이있지", "급증키워드랑 PC방도 좀 손봐줘") */
+.ovn{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
+.ovn > div{ flex:1 1 auto; padding:11px 12px 11px; background:#f1f3f1; border-radius:4px; }
+.ovn .kt{ display:flex; align-items:center; justify-content:space-between; gap:6px; }
+.ovn .l{ font-size:13.5px; font-weight:700; color:var(--body); white-space:nowrap; }
+.kd{ padding:0 9px; border-radius:999px; background:#fff; color:var(--body); font-size:12.5px; font-weight:800; line-height:22px; white-space:nowrap; }
+.kd.good{ background:var(--tint2); color:#17503d; } .kd.bad{ background:var(--neg-bg); color:var(--neg-ink); }
+.ovn .v{ font:800 28px/1.3 var(--title); color:var(--text); white-space:nowrap; }
+.ovn .v small{ font:700 14px var(--title); color:var(--muted); margin-left:2px; }
+.kb{ position:relative; height:8px; margin:6px 0 5px; background:#d9e0dc; border-radius:2px; }
+.kb span{ position:absolute; left:0; top:0; bottom:0; background:var(--navy); border-radius:2px 0 0 2px; }
+.kb i{ position:absolute; top:-3px; bottom:-3px; width:2px; margin-left:-1px; background:var(--text); }
+.ovn .c{ font-size:12.5px; color:var(--muted); white-space:nowrap; }
+.ovk{ margin-top:16px; padding-top:14px; border-top:1px solid var(--border); }
+.kchip{ display:inline-flex; align-items:baseline; gap:7px; padding:0 11px; margin:2px 6px 2px 0; border:1px solid var(--control); border-radius:999px; background:#fff; font-size:13.5px; line-height:25px; white-space:nowrap; }
+.kchip b{ color:var(--signal); font-size:13.5px; font-weight:800; }
+@media screen and (max-width:820px){ .ovn{ flex-direction:column; } .ovn .c{ white-space:normal; } }
+.ovs{ margin-top:14px; padding:12px 16px 14px; background:#e4efe9; border-radius:4px; }
+.ov .ovs h3{ display:flex; align-items:center; gap:8px; margin:0 0 8px; font:800 16px/1.4 var(--title); color:var(--navy); }
+.ovs .ai-l{ font-style:normal; background:#fff; }
+.ovs ul{ list-style:none; margin:0; padding:0; display:grid; gap:6px; }
+.ovs li{ position:relative; padding-left:15px; font-size:14.5px; line-height:1.5; color:var(--text); word-break:keep-all; }
+.ovs li::before{ content:""; position:absolute; left:1px; top:.6em; width:6px; height:6px; border-radius:50%; background:var(--navy); }
+.ovs li b{ margin-right:8px; font-weight:800; color:var(--navy); }
+.ovs li span{ display:inline-block; margin-right:10px; }
+/* 이슈 표: 커뮤니티를 이슈 이름에서 떼어 이슈 칸 오른쪽의 알약으로(2026-11-23 사용자 "저 커뮤니티는 오른쪽에 붙이고 좀 다르게 해줘 인디케이팅되게").
+   앞에 점을 둔 표시에 2026-11-24 "이건 앞에 점있으니까 무슨 인디케이터같아 그냥 필로 바꿔서 가운데정렬해줘": 점 없이 커뮤니티 색을 옅게 채운 알약, 폭을 같게 해 글을 가운데에 두고, 알약은 행의 세로 가운데(판단 알약과 같은 높이)에 둔다 */
+.is-row{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.is-l{ min-width:0; }
+.ctag{ flex:none; box-sizing:border-box; min-width:78px; padding:0 6px; border-radius:999px; background:color-mix(in srgb, var(--c) 13%, #fff); color:color-mix(in srgb, var(--c) 62%, var(--text)); font-size:12px; font-weight:700; line-height:22px; text-align:center; white-space:nowrap; }
+.jt td.c-is .tog{ white-space:normal; word-break:keep-all; text-wrap:balance; }
+/* 행을 펼칠 때 펼친 칸의 내용이 표의 칸 폭을 다시 나누지 않게 한다(칸 오른쪽의 커뮤니티 알약이 옆으로 움직였다) */
+@media screen and (min-width:821px){ .jt .jdet > td > .dgrid{ width:0; min-width:100%; } }
+/* 알약이 들어갈 폭: 판단 칸의 남는 폭(22px)을 이슈 칸에 주고, 표의 폭에 따라 이슈 칸 폭을 정한다(290px = 가장 긴 이슈 이름 + 펼침 표시 + 알약).
+   관련 공지 줄은 그 칸보다 길 때만 줄을 바꾼다: 줄을 바꾸지 못해 이 칸이 넓어지면 이슈 이름이 서너 줄로 꺾이고 표가 옆으로 넘쳤다 */
+.judge .tablewrap{ container-type:inline-size; }
+.jt .c-why .t2{ white-space:normal; }
+@media screen and (min-width:821px){
+  .jt th.c-lv{ width:70px; } .jt thead th:nth-child(2){ width:290px; }
+  @container (max-width:799px){ .jt thead th:nth-child(2){ width:240px; } }
+  /* 표가 더 좁으면(오른쪽 기둥이 옆에 있는 1301 ~ 1439px) 이름과 한 줄에 둘 폭이 없어 알약을 건수 줄의 오른쪽 끝에 둔다 */
+  @container (max-width:729px){
+    .is-row{ display:grid; grid-template-columns:1fr auto; gap:3px 6px; } .is-l{ display:contents; } .is-row .tog{ grid-column:1 / -1; justify-self:start; } .is-row .t2{ margin-top:0; }
+    .jt thead th:nth-child(2){ width:206px; }
+  }
+}
+@media screen and (max-width:820px){ .is-row{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:3px 8px; } .is-l{ display:contents; } .is-row .tog{ grid-column:1 / -1; justify-self:start; } .is-row .t2{ margin-top:0; } }
 </style>
 </head>
 <body>
@@ -663,9 +729,23 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
   <pattern id="hatch" patternUnits="userSpaceOnUse" width="3" height="3" patternTransform="rotate(45)"><rect width="3" height="3" fill="#ffffff"/><rect width="1.3" height="3" fill="#94a3b8"/></pattern>
 </defs></svg>
+<div class="tophead"><div class="th-in">
+  <div class="th-left">
+    <div class="th-row"><div class="th-title">게임 유저 VOC · 동향 대시보드</div><div class="maker"><span class="maker-label">MADE BY</span><span class="maker-name">김동현</span><span class="msep">·</span><span class="maker-mail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>hyunxn_01@naver.com</span></div></div>
+    <p class="subtitle">국내 · 해외 게임 커뮤니티 게시글 주간 분석</p>
+  </div>
+  <div class="th-ctl">
+      <div class="scope" id="scopeRow">
+        <label class="th-lab" for="gameSel">게임</label><select class="sel" id="gameSel"></select>
+        <div class="seg" id="regionSeg" role="group" aria-label="지역"></div>
+        <label class="th-lab" for="weekSel">기준 주</label><select class="sel num" id="weekSel"></select>
+      </div>
+      <div class="actions" id="actions"></div>
+  </div>
+</div></div>
 <header class="mbar" id="mbar">
   <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="side"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>메뉴</button>
-  <div class="brand"><div class="logo" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M2 3h12v8H7l-3 3v-3H2z" fill="#fff"/><path d="M4 9l2.5-2 2 1L12 5" fill="none" stroke="#1e3a5f" stroke-width="1.4"/></svg></div><span id="mWhere">유저 동향 주간 점검</span></div>
+  <div class="brand"><div class="logo" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M2 3h12v8H7l-3 3v-3H2z" fill="#fff"/><path d="M4 9l2.5-2 2 1L12 5" fill="none" stroke="#1e3a5f" stroke-width="1.4"/></svg></div><span>유저 동향 주간 점검</span></div>
 </header>
 <div class="shell">
   <aside class="side" id="side" aria-label="화면 메뉴">
@@ -703,22 +783,11 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
           <p><b>활용</b>업데이트 뒤 반응 점검, 이슈 대응 우선순위 판단, 주간 VOC 보고 작성에 쓴다.</p>
         </div>
       </details>
-      <div class="maker"><b>만든 사람 김동현</b><br><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>hyunxn_01@naver.com</span></div>
     </div>
   </aside>
 
   <main class="main" id="main">
-    <div class="mhead"><div class="mhead-in">
-      <div class="titlerow">
-        <div><h1 id="h1" tabindex="-1">유저 동향 주간 점검</h1></div>
-        <div class="actions" id="actions"></div>
-      </div>
-      <div class="scope" id="scopeRow">
-        <label class="sr" for="gameSel">게임</label><select class="sel" id="gameSel"></select>
-        <div class="seg" id="regionSeg" role="group" aria-label="지역"></div>
-        <label class="sr" for="weekSel">기준 주</label><select class="sel num" id="weekSel"></select>
-      </div>
-    </div></div>
+    <div class="mtop"><h1 id="h1" tabindex="-1">주요 이슈</h1><div class="actions" id="viewActions"></div></div>
     <div class="main-in">
 
       <section class="view" data-view="judge" id="v-judge" aria-labelledby="h1"><p class="empty" style="margin-top:16px;min-height:600px">불러오는 중</p></section>
@@ -783,6 +852,13 @@ const LEVEL_CLS = {"높음": "p-high", "보통": "p-mid", "관찰": "p-watch", "
 // 한 게임 화면 안에서는 '로스트아크 공식 자유게시판'의 게임 이름이 모든 행에 같아 덜어 낸다(app-screens 7.4: 행마다 같은 말을 먼저 줄인다)
 const shortCom = n => (D && n && D.name && n.startsWith(D.name + " ")) ? n.slice(D.name.length + 1) : (n || "");
 const shortLead = t => (D && t && D.name && t.startsWith(D.name + " ")) ? t.slice(D.name.length + 1) : (t || "");
+// 게임 이름과 공지 제목에 쓰이는 다른 이름(설정 aliases, 2026-11-23 아이온2 'AION2')
+const gameNames = () => D ? [D.name, ...(D.aliases || [])].filter(Boolean) : [];
+// 공지 목록에 쓰는 제목: 머리의 '[안내]'만 덜어 낸다(아이온2 공지는 모두 '[안내]'로 시작한다. '[정상화]'처럼 뜻이 있는 꼬리표는 그대로 둔다)
+const noticeTitle = t => String(t || "").replace(/^\s*\[안내\]\s*/, "");
+// 업데이트 이름(업데이트 효과 표 · 월간 보고서): '(수정 …)'을 덜고, 한 줄에 '업데이트 노트'가 여럿이면 날짜만 이어 적는다
+const updNames = ns => { const a = ns.map(n => noticeTitle(n).replace(/\s*\(수정 [^)]*\)/g, "")), d = a.map(x => (x.match(/^(\d+\/\d+\([^)]*\)) 업데이트 노트$/) || [])[1]);
+  return a.length > 1 && d.every(Boolean) ? d.join(" · ") + " 업데이트 노트" : a.join(", "); };
 
 // ---------- 메뉴(화면) ----------
 const VIEWS = {
@@ -954,10 +1030,14 @@ function svgLine(el, o) {
     if (m.kind === "tick") { s += `<line x1="${x}" x2="${x}" y1="${T + ph - 7}" y2="${T + ph}" stroke="${NOTE_LINE}" stroke-width="2"/>`; continue; }
     s += `<line x1="${x}" x2="${x}" y1="${T - 4}" y2="${T + ph}" stroke="${red ? UPD : NOTE_LINE}" stroke-dasharray="${red ? "4 3" : "2 3"}"/>`;
     if (!m.label) continue;
-    const w = m.label.length * 10.6, right = X(m.i) + 4 + w > W - R, x1 = right ? X(m.i) - 4 - w : X(m.i) + 4;
+    // 글이 그래프 폭보다 길면 들어가는 만큼만 적고 말줄임한다(2026-11-24 아이온2: 공지 제목이 길어 휴대폰 폭에서 앞이 잘렸다. 실제 글자 폭으로 확인해 들어가는 글은 그대로 둔다)
+    let lab = m.label;
+    const right = X(m.i) + 4 + lab.length * 10.6 > W - R, room = right ? X(m.i) - 8 : W - R - X(m.i) - 8;
+    while (lab.length > 6 && ktW(lab, 11, 400) > room) lab = lab.replace(/…$/, "").slice(0, -2) + "…";
+    const w = lab.length * 10.6, x1 = right ? X(m.i) - 4 - w : X(m.i) + 4;
     if (used.some(u => x1 < u[1] + 6 && x1 + w > u[0] - 6)) continue;
     used.push([x1, x1 + w]);
-    s += `<text x="${(right ? X(m.i) - 4 : X(m.i) + 4).toFixed(1)}" y="${T - 10}" font-size="11" fill="${red ? UPD : TICK}" text-anchor="${right ? "end" : "start"}">${esc(m.label)}</text>`;
+    s += `<text x="${(right ? X(m.i) - 4 : X(m.i) + 4).toFixed(1)}" y="${T - 10}" font-size="11" fill="${red ? UPD : TICK}" text-anchor="${right ? "end" : "start"}">${esc(lab)}</text>`;
   }
   // 값이 빈 주(수집 빈 주)는 선을 끊고 옅은 띠와 이름으로 표시한다(완성본 검토: 선이 끊긴 이유가 보이지 않았다)
   const mv = o.series[0].values, stp = n > 1 ? pw / (n - 1) : pw;
@@ -1054,8 +1134,8 @@ function weekMarkers(offset, end = D.weeks.length - 1) {
 // 공지 제목을 그래프 · 표의 짧은 이름으로: 앞의 날짜와 게임 이름을 덜어 낸다('2026년 10월 16일(금) 로스트아크 라이브 방송 사전 안내' → '10/16 라이브 방송 사전 안내')
 // ('알려진 이슈를 안내해 드립니다. (10/15 수정)' → '알려진 이슈 안내', '… 라이브 방송 사전 안내' → '라이브 방송')
 function eventShort(title, date) {
-  let t = String(title || "").replace(/^\s*\d{4}년\s*/, "").replace(/^\d{1,2}월\s*\d{1,2}일\s*\([^)]*\)\s*/, "");
-  if (D && D.name) t = t.replace(new RegExp("^" + D.name + "\\s*"), "");
+  let t = String(title || "").replace(/^\s*\[[^\]]*\]\s*/, "").replace(/^\s*\d{4}년\s*/, "").replace(/^\d{1,2}월\s*\d{1,2}일\s*\([^)]*\)\s*/, "").replace(/^\d{1,2}\/\d{1,2}\s*\([^)]*\)\s*/, "");
+  for (const nm of gameNames()) t = t.replace(new RegExp("^" + nm + "\\s*"), "");
   for (let k = 0; k < 3; k++) t = t.replace(/\s*\([^)]*\)\s*$/, "").replace(/[.\s]+$/, "");
   t = t.replace(/\s*(을|를)\s*안내해\s*드립니다$/, " 안내").replace(/\s*사전 안내$/, "");
   if (t.length > 20) t = t.slice(0, 19) + "…";
@@ -1124,7 +1204,7 @@ function deepCard(c) {
   // 구간(제목 + 내용)마다 묶음(div.dsec)으로 감싼다. 펼친 행에서는 묶음마다 흰 바탕 칸이 된다(2026-11-21 구간 나누기)
   return `<div class="ai-box"><div class="dsec dsec-sum"><div class="head"><span class="ai-l">AI 정독 요약</span></div>
     <ul class="sum">${sumLines(r.summary).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
-    ${(r.causes || []).length ? `<div class="dsec"><h3 class="dh">원인 가설</h3><ul>${r.causes.map(x => `<li>${esc(x.hypothesis)}${x.event && x.event !== "없음" ? ` <span class="muted">(${esc(x.event)})</span>` : ""}</li>`).join("")}</ul></div>` : ""}
+    ${(r.causes || []).length ? `<div class="dsec"><h3 class="dh">원인 가설</h3><ul>${r.causes.map(x => `<li>${esc(x.hypothesis)}${x.event && x.event !== "없음" ? ` <span class="muted">(${esc(updNames([x.event]))})</span>` : ""}</li>`).join("")}</ul></div>` : ""}
     ${(r.subissues || []).length ? `<div class="dsec"><h3 class="dh">하위 문제</h3><ul>${r.subissues.map(s => `<li>${esc(s.name)} <span class="muted">(정독 ${read.length}건 중 ${s.count}건)</span>${s.quote ? ` <span class="q">“${esc(s.quote)}”</span>${link(s.quote_post)}` : ""}</li>`).join("")}</ul></div>` : ""}
     <div class="dsec dsec-fold"><details><summary>정독한 글 ${read.length}건</summary><ol>${read.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>
       <span class="muted">${esc(p.group)}, 추천 ${fmt(p.recommends || 0)}, 댓글 ${fmt(p.comments || 0)}</span></li>`).join("")}</ol></details></div></div>`;
@@ -1210,6 +1290,8 @@ function pcbangFor(w, exactOnly = false) {
   return prev ? {r: prev, exact: false} : null;
 }
 const steamFor = w => { const gm = D.game_metrics; return gm && (gm.steam || []).find(x => x.week === w) || null; };
+// 스팀 자료원이 없는 게임(2026-11-23 아이온2: SteamCharts가 집계하지 않음)은 스팀 칸 · 그래프 · 표 칸을 두지 않는다
+const hasSteam = () => !D.game_metrics || !!(D.game_metrics.sources || {}).steam;
 const periodText = r => `${shortDay(r.period_start)} ~ ${shortDay(r.period_end || addDays(r.period_start, 6))}`;
 
 // ---------- 숫자 다섯 칸(주요 이슈 · 주간 보고서가 같이 쓴다) ----------
@@ -1240,7 +1322,7 @@ function numbers() {
       info: !pc.exact || r.url ? {label: "PC방 점유율 자료 설명", t: pc.exact ? "" : `더로그 ${periodText(r)}(가장 가까운 앞 주)`, link: r.url ? {href: r.url, t: "더로그 리포트"} : null} : null});
   } else out.push({l: "PC방 점유율(국내)", v: null, na: "자료 준비 중", c: "더로그 PC방 주간 리포트 수집 전"});
   const st = steamFor(W);
-  if (st && st.avg != null) {
+  if (!hasSteam()) { /* 스팀 칸 없음 */ } else if (st && st.avg != null) {
     const prev = steamFor(D.weeks[i - 1] || ""), wow = prev && prev.avg ? (st.avg / prev.avg - 1) * 100 : null;
     out.push({l: "스팀 동시 접속(글로벌)", v: fmt(Math.round(st.avg)), u: "명",
       d: wow != null ? `${wow >= 0 ? "▲" : "▼"} 전주 대비 ${signPctNum(wow)}` : null});
@@ -1264,22 +1346,41 @@ function overallHtml() {
   const tops = all.filter(x => x.b != null).map(x => ({...x, d: x.v - x.b}));
   const up = tops.filter(x => x.d >= 0.01).sort((a, b) => b.d - a.d).slice(0, 3), dn = tops.filter(x => x.d <= -0.01).sort((a, b) => a.d - b.d).slice(0, 3);
   const rows = up.concat(dn), mx = Math.max(0.01, ...rows.map(x => Math.abs(x.d)));
-  const note = x => x.d > 0 && tn[x.id] ? `<div class="ovb-x">${esc(tn[x.id])}</div>` : "";
-  const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>${note(x)}`).join("")
+  const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>`).join("")
     : `<p class="muted" style="grid-column:1/-1">${tops.length ? "평시와 1%p 넘게 달라진 주제 없음" : all.length ? "지역 전체 평시 없음" : "지역 전체 주제 비중 없음"}</p>`;
-  const lines = [];
+  // 이번 주 요약: 성격이 다른 값을 다르게 보인다(2026-11-24 사용자 "성겨깅다른것들은 좀 다르게 표시해줘야 가독성이있지"). 커뮤니티 값은 큰 숫자 + 평시 비교 칸, 급증 키워드는 알약, 게임 지표는 따로 한 줄
+  const cells = [];
+  // 카드: 이름 · 알약 · 큰 숫자 · 비교 값 자리에 눈금이 있는 막대 · 비교 값(2026-11-24 사용자 요청)
+  const bar = (val, b) => { const mx = b ? Math.max(val, b) * 1.12 : 0; return mx ? `<div class="kb" aria-hidden="true"><span style="width:${(val / mx * 100).toFixed(1)}%"></span><i style="left:${(b / mx * 100).toFixed(1)}%"></i></div>` : ""; };
+  const kpi = (k, big, val, b, badge, tone, c) => cells.push(`<div><div class="kt"><span class="l">${esc(k)}</span>${badge ? `<span class="kd num ${tone}">${esc(badge)}</span>` : ""}</div><div class="v num">${big}</div>${bar(val, b)}<div class="c num">${esc(c)}</div></div>`);
+  const bn = (v, u) => `${esc(v)}<small>${esc(u)}</small>`, dt = d => Math.abs(d) < 0.01 ? "평시 수준" : `${d > 0 ? "▲" : "▼"} ${(Math.abs(d) * 100).toFixed(1)}%p`;
+  const up1 = w => w == null ? "" : Math.abs(w) < 1 ? "전주 수준" : `${w > 0 ? "▲" : "▼"} ${Math.abs(w).toFixed(1)}%`, tn1 = w => w >= 1 ? "good" : w <= -1 ? "bad" : "";
+  // 글 수: 숫자 칸에서 옮김(2026-11-23 사용자 "저네모안에있는걸 요약에 합치자 필요한거 넣고 겹치는거빼고"). 부정 비율 · 이슈 후보 수는 겹쳐 뺐다
+  const hm = s ? s.how_much : null;
+  if (hm && hm.posts != null) { const ok = hm.base != null && hm.ratio != null, r = ok ? hm.ratio - 1 : 0;
+    kpi("글 수", bn(fmt(hm.posts), "건"), hm.posts, ok ? hm.base : null, ok ? (Math.abs(r) < 0.05 ? "평시 수준" : `${r > 0 ? "▲" : "▼"} ${(Math.abs(r) * 100).toFixed(0)}%`) : "", "", ok ? `평시 ${fmt(Math.round(hm.base))}건` : "평시 비교 불가"); }
   const n = at("neg");
-  if (n) lines.push(["분위기", n.b != null ? `부정 비율 ${pct(n.v)} · 평시 ${pct(n.b)}보다 ${n.v - n.b > 0.01 ? "높음" : n.v - n.b < -0.01 ? "낮음" : "비슷"}` : `부정 비율 ${pct(n.v)}`]);
-  const op = D.opinions.map(o => ({name: o.name, ...(at("opinion:" + o.id) || {})})).filter(x => x.v != null && x.b != null).map(x => ({...x, d: x.v - x.b})).sort((a, b) => Math.abs(b.d) - Math.abs(a.d))[0];
-  if (op && Math.abs(op.d) >= 0.02) lines.push(["글 성격", `${op.name} 글 ${pct(op.v)} · 평시 ${pct(op.b)}보다 ${op.d > 0 ? "많음" : "적음"}`]);
+  if (n) { const d = n.b != null ? n.v - n.b : 0;
+    kpi("부정 비율", bn(pct(n.v).slice(0, -1), "%"), n.v, n.b, n.b != null ? dt(d) : "", d > 0.01 ? "bad" : d < -0.01 ? "good" : "", n.b != null ? `평시 ${pct(n.b)}` : "평시 비교 불가"); }
   const gs = Object.keys(ser).filter(k => k.startsWith("group:")).map(k => ({name: k.slice(6), ...(at(k) || {})})).filter(x => x.v != null && x.b && x.r >= 1.5 && (x.c || 0) >= 20).sort((a, b) => b.r - a.r).slice(0, 3);
-  if (gs.length) lines.push(["급증 키워드", gs.map(x => `${x.name} ${times1(x.r)}`).join(", ")]);
-  const clean = t => String(t).replace(/^\d{4}년\s*/, "").replace(/\((월|화|수|목|금|토|일)\)/g, "").replace(/로스트아크\s*/g, "").replace(/\s*\(내용 수정\)/g, "").replace(/\s+/g, " ").trim().replace(/(\d+월) (\d+일)/g, "$1\u00a0$2");
-  const wt = s ? s.why_then || {} : {}, ev = [...(wt.updates || []), ...(wt.events || [])].map(x => clean(x.name)).slice(0, 2);
-  if (ev.length) lines.push(["계기", ev.join(", ")]);
-  const ul = lines.length ? lines.map(([k, v]) => `<li><b>${esc(k)}</b><span>${esc(v)}</span></li>`).join("") : `<li class="muted">지역 전체 값 없음</li>`;
-  return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div></div>
-    <div><h3>${esc(R)} 커뮤니티 전체</h3><ul class="ovl">${ul}</ul></div></div>`;
+  const kw = gs.map(x => `<span class="kchip">${esc(x.name)}<b class="num">${times1(x.r)}</b></span>`).join("");
+  // 게임 지표 카드는 지역에 맞는 것: 국내는 PC방 점유율(순위) · PC방 사용시간 둘(뜻이 다른 값이라 나눈다), 해외는 스팀 동시 접속(스팀은 해외판 서버). 값이 없으면 카드를 두지 않는다(2026-11-24 사용자 요청)
+  let gp = "";   // PC방 값이 다른 주의 것일 때의 기간
+  if (R === "국내") { const pc = pcbangFor(state.week); if (pc && pc.r.share != null) { const r = pc.r, pv = (D.game_metrics.pcbang || []).find(x => x.period_start === addDays(r.period_start, -7)) || {}, man = h => (h / 1e4).toFixed(1);
+    if (!pc.exact) gp = `PC방은 ${periodText(r)} 값`;
+    kpi("PC방 점유율", bn(Number(r.share).toFixed(2), "%"), r.share, pv.share, r.rank != null ? `${r.rank}위` : "", "", pv.share != null ? `전주 ${Number(pv.share).toFixed(2)}%${pv.rank != null ? ` · ${pv.rank}위` : ""}` : "전주 값 없음");
+    if (r.hours != null) kpi("PC방 사용시간", bn(man(r.hours), "만 시간"), r.hours, pv.hours, up1(r.wow), tn1(r.wow), pv.hours != null ? `전주 ${man(pv.hours)}만 시간` : "전주 값 없음"); } }
+  else { const st = steamFor(state.week), pv = steamFor(D.weeks[i - 1] || "");
+    if (st && st.avg != null) { const wow = pv && pv.avg ? (st.avg / pv.avg - 1) * 100 : null; kpi("스팀 동시 접속", bn(fmt(Math.round(st.avg)), "명"), st.avg, pv && pv.avg, up1(wow), wow == null ? "" : tn1(wow), pv && pv.avg ? `전주 ${fmt(Math.round(pv.avg))}명` : "전주 값 없음"); }
+    else if (st && st.max != null) kpi("스팀 동시 접속", bn(fmt(st.max), "명"), st.max, null, "", "", "주 최고 값(주 평균 없음)"); }
+  const sum = cells.length ? `<div class="ovn">${cells.join("")}</div>` : `<p class="muted">지역 전체 값 없음</p>`;
+  // 현재 유저 동향 요약: 늘어난 주제마다 무슨 이야기가 늘었는지(topic_notes)와 판단이 높음인 이슈(이름과 판단 이유)
+  const seen = new Set(), hi = (WK().items || []).filter(x => x.judgment && x.judgment.level === "높음" && x.draft && x.draft.reason && !seen.has(x.issue) && seen.add(x.issue)).slice(0, 2);
+  const pts = up.filter(x => tn[x.id]).map(x => [x.name, esc(tn[x.id])]);
+  if (hi.length) pts.push(["우선 대응", hi.map(x => `<span>${esc(x.issue)}(${esc(x.draft.reason)})</span>`).join(" ")]);
+  const brief = pts.length ? `<div class="ovs"><h3>${state.week === D.weeks[D.weeks.length - 1] ? "현재 " : ""}유저 동향 요약<i class="ai-l">AI 요약</i></h3><ul>${pts.map(([k, v]) => `<li><b>${esc(k)}</b>${v}</li>`).join("")}</ul></div>` : "";
+  return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div>${kw ? `<div class="ovk"><h3>급증 키워드 <span>평시 대비</span></h3><div>${kw}</div></div>` : ""}</div>
+    <div><h3>이번 주 요약${gp ? ` <span>${esc(gp)}</span>` : ""}</h3>${sum}${brief}</div></div>`;
 }
 function renderJudge() {
   const el = $("#v-judge"), W = state.week, R = state.region, s = sumOf(), wk = WK(), items = wk.items || [];
@@ -1294,7 +1395,6 @@ function renderJudge() {
   else if (!compared.length) ins = one("평시와 비교할 수 있는 커뮤니티가 없다", "기록이 4주 이상 쌓인 커뮤니티부터 이슈 후보를 판정한다.");
   else ins = overallHtml();
   let h = `${ydayBar()}${latestNote()}<section class="ins" aria-labelledby="h-ins">${insHead}${ins}</section>`;
-  h += `<section class="kv" aria-label="이번 주 숫자">${numbers().map((x, n) => kvCell(x, " num", "j" + n)).join("")}</section>`;
   // 판단 표
   let table, shared = null;
   if (!items.length) {
@@ -1302,9 +1402,9 @@ function renderJudge() {
     table = `<div class="card-b" style="padding-top:14px"><p class="frame-empty">${why}</p></div>`;
   } else {
     // 이슈마다 관련 공지 줄을 만들고, 모든 행이 같으면 행에서는 빼고 표 끝에 한 번만 적는다(완성본 검토 2차: 같은 줄이 행마다 반복됐다)
-    const lines = items.map(it => respLine(it, wk.responses || [])), nm = namer(items);
+    const lines = items.map(it => respLine(it, wk.responses || []));
     shared = items.length > 1 && lines.every(x => x === lines[0]) ? lines[0] : null;
-    table = `<div class="tablewrap"><table class="jt"><thead><tr><th class="c-lv">판단</th><th>이슈</th><th>변화</th><th>지속</th><th>판단 이유 · 관련 공지</th></tr></thead><tbody>${items.map((it, n) => judgeRow(it, n, wk.responses || [], shared, nm)).join("")}${shared ? `<tr class="jshare"><td colspan="5">${sharedText(shared, items.length)}</td></tr>` : ""}</tbody></table></div>`;
+    table = `<div class="tablewrap"><table class="jt"><thead><tr><th class="c-lv">판단</th><th>이슈</th><th>변화</th><th>지속</th><th>판단 이유 · 관련 공지</th></tr></thead><tbody>${items.map((it, n) => judgeRow(it, n, wk.responses || [], shared)).join("")}${shared ? `<tr class="jshare"><td colspan="5">${sharedText(shared, items.length)}</td></tr>` : ""}</tbody></table></div>`;
   }
   const notes = [];
   notes.push(`지속 칸 13주 띠: ${strip([true], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 이슈 후보였던 주 · ${strip([false], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 아닌 주 · ${strip([null], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 비교하지 못한 주(수집 빈 주 · 연휴 · 기록 부족)`);
@@ -1332,12 +1432,12 @@ function renderJudge() {
   el.innerHTML = h;
   if (top) drawEvidence(top, $("#evChart"), $("#evTable"));
 }
-function judgeRow(it, n, rs, shared = null, nm = namer([it])) {
-  const open = state.open.has(it.id), rid = "jr-" + n, lv = it.judgment && it.judgment.level, nn = nm(it);
+function judgeRow(it, n, rs, shared = null) {
+  const open = state.open.has(it.id), rid = "jr-" + n, lv = it.judgment && it.judgment.level;
   const reason = it.draft && it.draft.reason ? esc(it.draft.reason) : DASH;
   return `<tr class="jrow${lv === "높음" ? " hi" : lv === "관찰" ? " watch" : ""}${open ? " open" : ""}" id="${rid}" data-id="${esc(it.id)}">
     <td class="c-lv">${pill(it.judgment)}</td>
-    <td class="c-is"><button type="button" class="t1 tog" aria-expanded="${open}" aria-controls="${rid}-d">${esc(nn.name)}</button><div class="t2">${nn.dup ? "" : esc(shortCom(it.community)) + " · "}${sizeText(it)}</div></td>
+    <td class="c-is"><div class="is-row"><div class="is-l"><button type="button" class="t1 tog" aria-expanded="${open}" aria-controls="${rid}-d" aria-label="${esc(it.issue)} · ${esc(shortCom(it.community))}">${esc(it.issue)}&#8288;</button><div class="t2">${sizeText(it)}</div></div><span class="ctag" style="--c:${comColor(it.community_id)}">${esc(shortCom(it.community))}</span></div></td>
     <td class="c-ch"><div class="chg">▲ ${esc(it.change)}</div><div class="t2 num">${esc(it.value)}</div></td>
     <td class="c-du"><div class="dur">${esc(durText(it))}</div>${strip(it.history || [])}</td>
     <td class="c-why"><div class="why1">${reason}</div>${shared ? "" : `<div class="t2">${respLine(it, rs)}</div>`}</td></tr>
@@ -1348,7 +1448,7 @@ function detail(it, rs) {
   let jd;
   if (d) jd = `<p><span class="ai-l">AI 초안</span> <b>${esc(d.level || "–")}</b></p>${d.reason ? `<p style="margin-top:4px">${esc(d.reason)}</p>` : ""}${d.action ? `<p style="margin-top:4px"><span class="muted">권장 대응:</span> ${esc(d.action)}</p>` : ""}`;
   else jd = `<p class="muted">판단 초안이 없다.</p>`;
-  const respHtml = state.region !== "국내" ? muted("운영 대응 공지는 국내 서버 공지만 모은다.") : rs.length ? `<ul class="reps">${rs.map(r => `<li><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)} <span class="muted num">${esc(shortDay(r.date))}</span>${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : muted(respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다.");
+  const respHtml = state.region !== "국내" ? muted("운영 대응 공지는 국내 서버 공지만 모은다.") : rs.length ? `<ul class="reps">${newestFirst(rs).map(r => `<li><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(noticeTitle(r.title))}</a>` : esc(noticeTitle(r.title))} <span class="muted num">${esc(shortDay(r.date))}</span>${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : muted(respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다.");
   return `<div class="dgrid">${deepCard(it)}
     <div class="dside"><div class="dsec"><h3 class="dh">판단</h3>${jd}</div>
       <div class="dsec"><h3 class="dh">대표 글</h3>${repList(ofCom((((D.representatives || {})[state.region] || {})[state.week] || {})[c.metric], it.community))}</div>
@@ -1356,10 +1456,12 @@ function detail(it, rs) {
       <div class="dsec"><h3 class="dh">같은 주 운영 대응</h3>${respHtml}</div>
       ${c.rules ? `<div class="dsec dsec-note"><p class="note">충족 기준: ${esc(ruleText(c))}</p></div>` : ""}</div></div>`;
 }
+// 같은 주 운영 대응 목록은 최신 공지가 위로(2026-11-24 사용자 "최신글 위에로 바꿔줘")
+const newestFirst = rs => [...rs].sort((a, b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
 function respCard(rs) {
   let body;
   if (state.region !== "국내") body = `<div class="card-b"><p class="frame-empty">운영 대응 공지는 국내 서버(공식 공지)만 모은다. 해외 서버 공지는 수집하지 않는다.</p></div>`;
-  else if (rs.length) body = `<ul class="list">${rs.map(r => `<li><span class="tt"><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</span><span class="k">${esc(shortDay(r.date))}</span></li>`).join("")}</ul>`;
+  else if (rs.length) body = `<ul class="list">${newestFirst(rs).map(r => `<li><span class="tt"><span class="tag">${esc(r.kind)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(noticeTitle(r.title))}</a>` : esc(noticeTitle(r.title))}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</span><span class="k">${esc(shortDay(r.date))}</span></li>`).join("")}</ul>`;
   else {
     // 대응 공지 분류가 아직 없거나 이 주에 없으면, 같은 주 공식 공지(업데이트 · 이벤트 · 소통)를 참고로 보인다
     const W = state.week, ref = [...(D.updates || []).filter(u => u.week === W && (u.server || "kr") === "kr").map(u => ({date: u.date, kind: u.major ? "큰 업데이트" : "업데이트", title: u.name, url: u.url})),
@@ -1436,9 +1538,9 @@ function renderTrendView() {
       <div class="card-b"><div id="idxChart"></div>
       <p class="src">긴 점선은 큰 업데이트, 짧은 점선은 운영 대응 공지, 노란 음영은 공휴일이 든 주, 옅은 남색 음영은 기준 주다.</p></div>
       <details class="tablefold"><summary>표로 보기: 주별 글 수와 지수</summary><div class="tablewrap" id="idxTable"></div></details></section>
-    <section class="card" aria-labelledby="h-gm"><div class="card-h"><h2 id="h-gm">게임 지표</h2><span class="sub">PC방은 국내 서버, 스팀은 글로벌 서버</span></div>
-      <div class="card-b">${gm ? `<div class="two"><div>${chartBox("pc", "PC방 점유율(%)", [], "short", false)}</div><div>${chartBox("steam", "스팀 동시 접속(명)", [{label: "주 평균", color: COM_COLOR.steam}, {label: "주 최고", color: COM_COLOR.steam, dash: true}], "short", false)}</div></div>
-        <p class="src">출처: 더로그 PC방 주간 리포트, SteamCharts 시간별 자료로 계산한 주 평균 · 최고.</p>
+    <section class="card" aria-labelledby="h-gm"><div class="card-h"><h2 id="h-gm">게임 지표</h2><span class="sub">${hasSteam() ? "PC방은 국내 서버, 스팀은 글로벌 서버" : "PC방은 국내 서버"}</span></div>
+      <div class="card-b">${gm ? `${hasSteam() ? `<div class="two"><div>${chartBox("pc", "PC방 점유율(%)", [], "short", false)}</div><div>${chartBox("steam", "스팀 동시 접속(명)", [{label: "주 평균", color: COM_COLOR.steam}, {label: "주 최고", color: COM_COLOR.steam, dash: true}], "short", false)}</div></div>` : chartBox("pc", "PC방 점유율(%)", [], "short", false)}
+        <p class="src">출처: 더로그 PC방 주간 리포트${hasSteam() ? ", SteamCharts 시간별 자료로 계산한 주 평균 · 최고" : ""}.</p>
         <details class="tablefold" style="padding:0;margin-top:8px"><summary>표로 보기: 주별 게임 지표</summary><div class="tablewrap" id="gmTable"></div></details>`
         : `<p class="frame-empty">게임 지표 수집 전이다. 수집이 시작되면 더로그 PC방 점유율 · 순위(국내)와 SteamCharts 동시 접속 평균 · 최고(글로벌)를 위 그래프와 같은 주 축으로 그린다.</p>`}</div></section>
     <section class="card" aria-labelledby="h-tl"><div class="card-h"><h2 id="h-tl">글 수 · 신호 추이(실제 건수)</h2><button type="button" class="info" aria-expanded="false" aria-controls="i-trend" aria-label="그래프 설명">${INFO_ICON}</button></div>
@@ -1474,12 +1576,12 @@ function drawGameMetrics() {
   const mk = Object.assign(weekMarkers(trendSpan().start, trendSpan().end), {top: true});
   chart("pc", $("#c-pc"), {type: "line", data: {labels, datasets: [{label: "PC방 점유율", data: pcs.map(r => r && r.share != null ? +r.share : null), borderColor: NAVY, backgroundColor: NAVY}]},
     options: opts({mk, xTicks: 7, yTick: v => v.toFixed(v < 10 ? 1 : 0) + "%", tip: {label: c => { const r = pcs[c.dataIndex]; return r ? `점유율 ${sharePct(r.share)} · ${r.rank ?? "–"}위` : "–"; }, afterLabel: c => { const r = pcs[c.dataIndex]; return r ? `더로그 ${periodText(r)}${r.hours != null ? " · 사용시간 " + fmt(r.hours) + "시간" : ""}` : ""; }}})});
-  chart("steam", $("#c-steam"), {type: "line", data: {labels, datasets: [
+  if (hasSteam()) chart("steam", $("#c-steam"), {type: "line", data: {labels, datasets: [
     {label: "주 평균", data: sts.map(x => x && x.avg != null ? Math.round(x.avg) : null), borderColor: COM_COLOR.steam, backgroundColor: COM_COLOR.steam},
     {label: "주 최고", data: sts.map(x => x && x.max != null ? x.max : null), borderColor: COM_COLOR.steam, backgroundColor: COM_COLOR.steam, borderDash: [5, 4], borderWidth: 1.6}]},
     options: opts({mk, xTicks: 7, tip: {label: c => `${c.dataset.label} ${fmt(c.parsed.y)}명`}})});
-  $("#gmTable").innerHTML = `<table><thead><tr><th>주</th><th class="r">PC방 점유율</th><th class="r">순위</th><th>더로그 기간</th><th class="r">사용시간</th><th class="r">스팀 평균</th><th class="r">스팀 최고</th><th>읽은 방법</th></tr></thead><tbody>${weeks.slice().reverse().map((w, kk) => { const k = weeks.length - 1 - kk, r = pcs[k], st = sts[k];
-    return `<tr><td class="num nw">${esc(weekRange(w))}</td><td class="r">${r ? sharePct(r.share) : "–"}</td><td class="r">${r && r.rank != null ? r.rank + "위" : "–"}</td><td class="nw">${r ? (r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(periodText(r))}</a>` : esc(periodText(r))) : "–"}</td><td class="r">${r && r.hours != null ? fmt(r.hours) + "시간" : "–"}</td><td class="r">${st && st.avg != null ? fmt(Math.round(st.avg)) : "–"}</td><td class="r">${st && st.max != null ? fmt(st.max) : "–"}</td><td class="muted">${r && r.source ? esc(r.source) : "–"}</td></tr>`; }).join("")}</tbody></table>
+  $("#gmTable").innerHTML = `<table><thead><tr><th>주</th><th class="r">PC방 점유율</th><th class="r">순위</th><th>더로그 기간</th><th class="r">사용시간</th>${hasSteam() ? '<th class="r">스팀 평균</th><th class="r">스팀 최고</th>' : ""}<th>읽은 방법</th></tr></thead><tbody>${weeks.slice().reverse().map((w, kk) => { const k = weeks.length - 1 - kk, r = pcs[k], st = sts[k];
+    return `<tr><td class="num nw">${esc(weekRange(w))}</td><td class="r">${r ? sharePct(r.share) : "–"}</td><td class="r">${r && r.rank != null ? r.rank + "위" : "–"}</td><td class="nw">${r ? (r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(periodText(r))}</a>` : esc(periodText(r))) : "–"}</td><td class="r">${r && r.hours != null ? fmt(r.hours) + "시간" : "–"}</td>${hasSteam() ? `<td class="r">${st && st.avg != null ? fmt(Math.round(st.avg)) : "–"}</td><td class="r">${st && st.max != null ? fmt(st.max) : "–"}</td>` : ""}<td class="muted">${r && r.source ? esc(r.source) : "–"}</td></tr>`; }).join("")}</tbody></table>
     ${D.game_metrics.steam_check ? `<p class="note" style="margin-top:6px">스팀 대조(최근): SteamCharts ${fmt(D.game_metrics.steam_check.chart_value)}명 · Valve 공식 API ${fmt(D.game_metrics.steam_check.api_value)}명(${D.game_metrics.steam_check.minutes_apart}분 간격, 차이 ${signPctNum((D.game_metrics.steam_check.diff_ratio || 0) * 100)}).</p>` : ""}`;
 }
 // 글 수 · 신호 추이(지난 화면의 '동향 타임라인' 그리기를 그대로 둔다)
@@ -1559,7 +1661,7 @@ function boardTable() {
 function renderResponse() {
   const el = $("#v-response"), i = wi(), start = Math.max(0, i - 12), weeks = D.weeks.slice(start, i + 1).reverse(), R = state.region;
   if (R !== "국내") {
-    el.innerHTML = `<section class="card"><div class="card-h"><h2>운영 대응 공지</h2></div><div class="card-b"><p class="frame-empty">운영 대응 공지는 국내 서버(로스트아크 공식 공지)만 모은다. 해외 서버 공지는 수집하지 않아 이 화면은 국내에서만 채워진다.</p></div></section>`;
+    el.innerHTML = `<section class="card"><div class="card-h"><h2>운영 대응 공지</h2></div><div class="card-b"><p class="frame-empty">운영 대응 공지는 국내 서버(${esc(D.name)} 공식 공지)만 모은다. 해외 서버 공지는 수집하지 않아 이 화면은 국내에서만 채워진다.</p></div></section>`;
     return;
   }
   const ready = respReady(), all = weeks.flatMap(w => (WK(w).responses || []).map(r => Object.assign({week: w}, r)));
@@ -1570,13 +1672,13 @@ function renderResponse() {
     const nRw = all.filter(r => r.reward).length;
     listCard = `<section class="card" aria-labelledby="h-rl"><div class="card-h"><h2 id="h-rl">대응 공지 · 최근 13주</h2><span class="sub">${all.length}건</span></div>
       <div class="kinds">${Object.entries(kinds).map(([k, n]) => `<span>${esc(k)} <b>${n}</b></span>`).join("")}<span>보상 포함 <b>${nRw}</b></span></div>
-      <div class="tablewrap"><table><thead><tr><th>주</th><th>날짜</th><th>종류</th><th>공지</th><th>보상</th></tr></thead><tbody>${weeks.map(w => (WK(w).responses || []).map((r, k) => `<tr><td class="nw num">${k ? "" : esc(weekRange(w))}</td><td class="nw num">${esc(shortDay(r.date))}</td><td class="nw"><span class="tag">${esc(r.kind)}</span></td><td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward && r.reward_evidence ? `<span class="sub" style="display:block">본문: ${esc(r.reward_evidence)}</span>` : ""}</td><td class="nw">${r.reward ? '<span class="tag rw">보상</span>' : DASH}</td></tr>`).join("")).join("")}</tbody></table></div></section>`;
+      <div class="tablewrap"><table><thead><tr><th>주</th><th>날짜</th><th>종류</th><th>공지</th><th>보상</th></tr></thead><tbody>${weeks.map(w => (WK(w).responses || []).map((r, k) => `<tr><td class="nw num">${k ? "" : esc(weekRange(w))}</td><td class="nw num">${esc(shortDay(r.date))}</td><td class="nw"><span class="tag">${esc(r.kind)}</span></td><td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(noticeTitle(r.title))}</a>` : esc(noticeTitle(r.title))}${r.reward && r.reward_evidence ? `<span class="sub" style="display:block">본문: ${esc(r.reward_evidence)}</span>` : ""}</td><td class="nw">${r.reward ? '<span class="tag rw">보상</span>' : DASH}</td></tr>`).join("")).join("")}</tbody></table></div></section>`;
   } else {
     const ref = weeks.flatMap(w => [...(D.updates || []).filter(u => u.week === w && (u.server || "kr") === "kr" && u.major).map(u => ({w, date: u.date, kind: "큰 업데이트", title: u.name, url: u.url})),
       ...(D.other_events || []).filter(e => e.week === w && (e.server || "kr") === "kr").map(e => ({w, date: e.date, kind: e.kind || "공지", title: e.name, url: e.url}))]);
     listCard = `<section class="card" aria-labelledby="h-rl"><div class="card-h"><h2 id="h-rl">대응 공지 · 최근 13주</h2></div>
       <div class="card-b"><p class="frame-empty">${ready ? "이 기간에 대응 공지(문제 안내 · 소통 · 제재 · 변경 예고)가 없다." : "대응 공지 분류 전이다."}</p></div>
-      ${ref.length ? `<h3 style="margin:0;padding:4px 18px 8px">같은 기간 공식 공지(참고: 큰 업데이트 · 이벤트 · 소통, 정기 업데이트 안내는 뺌)</h3><div class="tablewrap"><table><thead><tr><th>주</th><th>날짜</th><th>종류</th><th>공지</th></tr></thead><tbody>${ref.map((r, k) => `<tr><td class="nw num">${k && ref[k - 1].w === r.w ? "" : esc(weekRange(r.w))}</td><td class="nw num">${esc(shortDay(r.date))}</td><td class="nw"><span class="tag">${esc(r.kind)}</span></td><td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}</td></tr>`).join("")}</tbody></table></div><div style="height:6px"></div>` : ""}</section>`;
+      ${ref.length ? `<h3 style="margin:0;padding:4px 18px 8px">같은 기간 공식 공지(참고: 큰 업데이트 · 이벤트 · 소통, 정기 업데이트 안내는 뺌)</h3><div class="tablewrap"><table><thead><tr><th>주</th><th>날짜</th><th>종류</th><th>공지</th></tr></thead><tbody>${ref.map((r, k) => `<tr><td class="nw num">${k && ref[k - 1].w === r.w ? "" : esc(weekRange(r.w))}</td><td class="nw num">${esc(shortDay(r.date))}</td><td class="nw"><span class="tag">${esc(r.kind)}</span></td><td>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(noticeTitle(r.title))}</a>` : esc(noticeTitle(r.title))}</td></tr>`).join("")}</tbody></table></div><div style="height:6px"></div>` : ""}</section>`;
   }
   // 전후 비교: 대응 공지가 나온 주와 다음 주의 커뮤니티별 부정 비율(평시 대비). 원인이라고 쓰지 않고 같은 주 다른 사건을 함께 적는다
   const rwWeeks = weeks.filter(w => (WK(w).responses || []).length);   // 최근 주 먼저
@@ -1629,7 +1731,7 @@ function renderReport() {
     <h2 id="h-paper">${esc(D.name)} 유저 동향 주간 보고서</h2>
     <p class="p-meta num">${esc(yearWeek(m.W))} · ${esc(m.R)} 커뮤니티</p>
     <section class="p-sec"><h3>이번 주 결론</h3>${m.concl.lead ? `<p class="p-lead">${esc(m.concl.lead)}</p>` : ""}${body}</section>
-    <section class="p-sec"><h3>숫자</h3><div class="p-nums">${m.nums.map((x, n) => kvCell(x, "", "r" + n)).join("")}</div></section>
+    <section class="p-sec"><h3>숫자</h3><div class="p-nums" style="--kvn:${m.nums.length}">${m.nums.map((x, n) => kvCell(x, "", "r" + n)).join("")}</div></section>
     <section class="p-sec"><h3>이슈 ${m.items.length}건${(m.wk.items || []).length > m.items.length ? ` <span class="h3sub">전체 ${(m.wk.items || []).length}건 가운데 판단 순서로 5건</span>` : ""}</h3>
       ${m.items.length ? `<table class="p-issues"><thead><tr><th>판단</th><th>이슈</th><th>변화</th><th>지속</th><th>근거 · 대표 글</th></tr></thead><tbody>${m.rows.map(({it, nn, why, reps}) => `<tr${it.judgment && it.judgment.level === "관찰" ? ' class="watch"' : ""}>
         <td class="nw">${lvl(it.judgment)}</td><td><div class="t1">${esc(nn.name)}</div><div class="t2">${nn.dup ? "" : esc(shortCom(it.community)) + " · "}${sizeText(it)}</div></td>
@@ -1637,7 +1739,7 @@ function renderReport() {
         <td><div class="why">${why ? esc(why.text) : esc(shortLead(it.facts))}</div>${reps.map(p => `<a class="lk" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>`).join("")}</td></tr>`).join("")}</tbody></table>`
         : `<p class="empty">판단할 이슈 후보가 없다.</p>`}</section>
     ${m.top ? `<section class="p-sec"><h3>13주 추이: ${esc(shortCom(m.top.community))} ${esc(m.top.issue)} <span class="h3sub">실선 이번 주까지 · 점선 평시(직전 8주)</span></h3><div class="p-chart" id="pChart"></div><details class="tablefold no-print" style="padding:6px 0 0"><summary>표로 보기</summary><div class="tablewrap" id="pTable"></div></details></section>` : ""}
-    <section class="p-sec"><h3>같은 주 운영 대응</h3>${m.R !== "국내" ? '<p class="empty">운영 대응 공지는 국내 서버 공지만 모은다.</p>' : (m.wk.responses || []).length ? `<ul class="p-list">${m.wk.responses.map(r => `<li><span class="tag">${esc(r.kind)}</span>${esc(shortDay(r.date))} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : `<p class="empty">${respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다."}</p>`}</section>
+    <section class="p-sec"><h3>같은 주 운영 대응</h3>${m.R !== "국내" ? '<p class="empty">운영 대응 공지는 국내 서버 공지만 모은다.</p>' : (m.wk.responses || []).length ? `<ul class="p-list">${m.wk.responses.map(r => `<li><span class="tag">${esc(r.kind)}</span>${esc(shortDay(r.date))} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(noticeTitle(r.title))}</a>` : esc(noticeTitle(r.title))}${r.reward ? ` <span class="tag rw" title="${esc(r.reward_evidence || "")}">보상</span>` : ""}</li>`).join("")}</ul>` : `<p class="empty">${respReady() ? "같은 주 대응 공지가 없다." : "대응 공지 분류 전이다."}</p>`}</section>
     <section class="p-sec"><h3>비교 기준과 자료</h3><p class="p-basis">비교 기준: 커뮤니티마다 직전 8주 평시와 비교하며 커뮤니티를 합치지 않는다. 이슈 후보 기준은 비중 평시의 ${D.rules.surge_ratio}배 이상 · ${D.rules.surge_min_posts}건 이상, 부정 비율 평시 대비 ${pp(D.rules.neg_alert_pp)} 이상(정한 값).${m.judged ? ` 판정 대상: ${m.judged}.` : ""}
       자료: 커뮤니티 게시판 목록(공개는 제목 · 링크만), 제목 분류 Claude ${esc(mname(D.classify.model))}${D.classify.escalate ? " · " + esc(mname(D.classify.escalate)) : ""}, 본문 정독 Claude ${esc(mname(((D.method || {}).deepread || {}).model))}.</p></section>
   </article>`;
@@ -1701,7 +1803,7 @@ function renderMoodView() {
     <section class="card" aria-labelledby="h-mood" style="margin-top:14px"><div class="card-h"><h2 id="h-mood">여론 추이</h2><span class="sub">커뮤니티마다 말투와 성향이 달라 수준보다 추이를 비교한다</span><button type="button" class="info" aria-expanded="false" aria-controls="i-mood" aria-label="지표 설명">${INFO_ICON}</button></div>
       <div class="info-pop" id="i-mood" hidden>
         <p>순긍정 지수는 긍정 글과 부정 글의 차이를 둘의 합으로 나눈 값으로, 1에 가까울수록 긍정 글이 많다. 게임과 무관한 글(주제 '기타')은 제외한다.</p>
-        <p>공식 자유게시판처럼 주간 글이 적은 곳은 몇 건 차이로도 크게 변한다. 점선은 지역 전체(평소 글의 95%를 차지하는 게시판이 모두 수집된 주만)다.</p>
+        <p>주간 글이 적은 게시판은 몇 건 차이로도 크게 변한다. 점선은 지역 전체(평소 글의 95%를 차지하는 게시판이 모두 수집된 주만)다.</p>
         <p>긍정/부정 비율의 분모는 게임과 무관한 글을 제외한 분류 글이다. '판단 불가'는 제목만으로 긍정/부정을 판정할 수 없는 글이다.</p>
         <p>주제별 부정 비율은 해당 주제 글 가운데 부정 글의 비율이다. 평시는 직전 8주(미수집 주 제외)의 평균이며, 4주 이상일 때만 산출한다.</p></div>
       <div class="card-b" id="mood-body"></div></section>
@@ -1817,7 +1919,7 @@ function renderUpdates() {
   const R = state.region, rows = (D.update_effects || []).filter(r => r.region === R).slice().reverse(), ru = D.rules;
   const head = `<thead><tr><th>점검 뒤 7일</th><th>업데이트</th><th>커뮤니티</th><th class="r">글 수<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일</span></th><th class="r">평시 대비</th><th>상위 5개 비중<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일(평시 대비, 평시가 없으면 직전 7일 대비)</span></th><th>부정 비율<span class="sub" style="display:block">직전 7일 → 점검 뒤 7일(평시 대비)</span></th></tr></thead>`;
   const tr = r => { const po = overShare(r.posts.ratio_base, r.posts.zero), no = r.neg && overRate(r.neg.diff);
-    return `<tr${r.major ? ' class="major"' : ""}><td class="nw num">${esc(r.window ? dayRange(r.window) : weekRange(r.week))}</td><td>${r.major ? `<b>${esc(r.names.join(", "))}</b>` : esc(r.names.join(", "))}<span class="sub" style="display:block">${r.major ? "<b>큰 업데이트</b>" : "정기 업데이트"}</span></td>
+    return `<tr${r.major ? ' class="major"' : ""}><td class="nw num">${esc(r.window ? dayRange(r.window) : weekRange(r.week))}</td><td>${r.major ? `<b>${esc(updNames(r.names))}</b>` : esc(updNames(r.names))}<span class="sub" style="display:block">${r.major ? "<b>큰 업데이트</b>" : "정기 업데이트"}</span></td>
       <td class="nw">${esc(shortCom(r.community))}</td><td class="r">${fmt(r.posts.prev)} → ${fmt(r.posts.zero)}</td><td class="r${po ? " over" : ""}">${upMark(po)}${times(r.posts.ratio_base)}</td>
       <td class="chg2">${r.skipped ? muted(esc(r.skipped)) : (r.changes || []).map(c => { const o = overShare(c.ratio_base); return `${o ? "<b>" : ""}${upMark(o)}${esc(c.label)} ${pct(c.prev, 2)} → ${pct(c.zero, 2)}${o ? "</b>" : ""} <span class="muted">(${c.ratio_base != null ? times(c.ratio_base) : c.ratio_prev != null ? "직전 7일의 " + times(c.ratio_prev) : "–"})</span>`; }).join("<br>") || muted("평시 기준 없음")}</td>
       <td class="nw">${r.neg ? `${no ? "<b>" : ""}${upMark(no)}${pct(r.neg.prev)} → ${pct(r.neg.zero)}${no ? "</b>" : ""} <span class="muted">(${pp(r.neg.diff)})</span>` : muted("분류 전")}</td></tr>`; };
@@ -1835,15 +1937,24 @@ function methodFlow() {
   const nb = D.boards.length, dom = enabled.filter(c => c.region === "국내").length, abroad = enabled.length - dom;
   return `<ol class="steps">
     <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록과 본문을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
-    <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. 확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).</li>
+    <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. ${cl.escalate ? `확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).` : "배치 처리로 비용을 50% 줄인다."}</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
     <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
     <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권장 대응 초안을 쓴다.</li>
     <li><b>공개</b>집계 값, 대표 글의 제목 · 링크, 본문에 실재하는 ${(dr.max_quote_words ?? 14) + 1}어절 미만 인용만 공개한다.</li></ol>`;
 }
+// 모델 하나만 쓰는 게임(2026-11-23 아이온2): 참고 게임 정답 표의 같은 모델 정확도와 이 게임 글로 확인한 두 모델의 일치율
+function methodSingle() {
+  const sg = (D.method || {}).single, ref = sg && sg.reference, ag = sg && sg.agreement;
+  if (!ref && !ag) return '<p class="empty">모델 비교 결과가 아직 없다.</p>';
+  const rate = x => x == null ? "–" : pct(x, 0), rows = [];
+  if (ref) rows.push(`<tr><td>${esc(mname(sg.model))} 정확도<span class="sub" style="display:block">${esc(ref.game_name)} 정답 표 ${fmt(ref.gold_n)}건</span></td><td class="r">${accTxt(ref.topic)}</td><td class="r">${accTxt(ref.sentiment)}</td><td class="r">${accTxt(ref.opinion)}</td></tr>`);
+  if (ag) rows.push(`<tr><td>${esc((ag.models || []).map(mname).join(" · "))} 일치율<span class="sub" style="display:block">${esc(D.name)} 글 ${fmt(ag.n)}건</span></td><td class="r">${rate(ag.topic)}</td><td class="r">${rate(ag.sentiment)}</td><td class="r">${rate(ag.opinion)}</td></tr>`);
+  return `<div class="tablewrap"><table><thead><tr><th>기준</th><th class="r">주제</th><th class="r">긍정/부정</th><th class="r">의견 유형</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
+}
 function methodCompare() {
   const c = (D.method || {}).compare;
-  if (!c) return '<p class="empty">모델 비교 결과가 아직 없다.</p>';
+  if (!c) return methodSingle();
   const g = c.gold_makeup, cells = g ? Object.values(g.cells).reduce((a, x) => a + x, 0) : 0, chosen = c.combos.find(x => x.chosen);
   const pick = g ? Object.entries(g.picked).map(([k, n]) => `${esc(mname(k))} ${fmt(n)}칸`).join(" · ") : "";
   const solo = id => c.combos.find(x => x.models.length === 1 && x.models[0] === id), B = c.budget_monthly_usd;
@@ -1874,16 +1985,16 @@ function renderMethod() {
   let h = `<h2 class="mh">분석 절차</h2>${methodFlow()}<h2 class="mh">분류 모델 선정: 정확도와 비용</h2>${methodCompare()}
     ${acc ? `<p class="note">최근 주간 검수: ${fmt(acc.judged)}건 중 정답률 ${pct(acc.accuracy)}(오차 ±${pct(acc.ci95)}).</p>` : ""}
     <p class="note">분류 완료 글 ${fmt(D.classified_total)}건(적용 방식: ${esc(mname(D.classify.model))}${D.classify.escalate ? " + " + esc(mname(D.classify.escalate)) : ""}).</p><div style="height:14px"></div>`;
-  h += fold("비용", `<dl class="kvl"><dt>월 운영비(추정)</dt><dd>${chosen ? `${usd(chosen.monthly_total_usd[0])} ~ ${usd(chosen.monthly_total_usd[1])}(주간 분류 · 낮은 확신도 글 재분류 · 본문 정독 · 검수 포함)` : "–"}</dd>
+  h += fold("비용", `<dl class="kvl">${chosen ? `<dt>월 운영비(추정)</dt><dd>${usd(chosen.monthly_total_usd[0])} ~ ${usd(chosen.monthly_total_usd[1])}(주간 분류 · 낮은 확신도 글 재분류 · 본문 정독 · 검수 포함)</dd>` : ""}
     <dt>누적 API 비용</dt><dd>${items.length ? items.map(([k, v]) => `${esc(k)} ${usd(v)}`).join(" · ") + ` · 합계 ${usd(total)}` : "–"}</dd></dl>
-    <p class="note" style="margin-top:6px">화면 수치를 만드는 분류에는 게시글 제목만 사용하고, 본문 앞 1,000자를 넣은 분류는 비교용으로 따로 실행하며, 즉시 결과가 필요 없는 작업은 배치 처리(비용 50%)로 처리한다. 본문 정독은 이슈 후보에만 수행한다.</p>`);
+    <p class="note" style="margin-top:6px">화면 수치를 만드는 분류에는 게시글 제목만 사용하고, ${D.classify.body !== false ? "본문 앞 1,000자를 넣은 분류는 비교용으로 따로 실행하며, " : ""}즉시 결과가 필요 없는 작업은 배치 처리(비용 50%)로 처리한다. 본문 정독은 이슈 후보에만 수행한다.</p>`);
   h += fold("수집 현황(분모)", `<div class="tablewrap"><table><thead><tr><th>지역</th><th>게시판</th><th class="r">완료 주 수</th><th class="r">글 수</th><th class="r">중복 제목 제외 글</th></tr></thead><tbody>
     ${totals.map(x => `<tr><td>${esc(x.b.region)}</td><td>${esc(x.b.board_name && x.b.community_name.includes(x.b.board_name) ? x.b.community_name : x.b.community_name + " " + x.b.board_name)}</td><td class="r">${x.weeks}</td><td class="r">${fmt(x.total)}</td><td class="r">${fmt(x.spam)}</td></tr>`).join("")}</tbody></table></div>
     <p class="note" style="margin-top:6px">수집 기간: ${esc(yearWeek(D.weeks[0]))} 주부터 ${esc(yearWeek(D.weeks[D.weeks.length - 1]))} 주까지(완료된 주만, 게시판별 수집 기간 상이). 키워드 필터 없이 게시판 목록 전체를 수집한다.</p>`);
   h += fold("수집 대상과 이용 규칙", `<div class="tablewrap"><table><thead><tr><th>커뮤니티</th><th>지역</th><th>수집 여부</th><th>근거</th></tr></thead><tbody>
     ${D.communities.map(c => `<tr><td class="nw">${esc(c.name)}</td><td class="nw">${esc(c.region)}</td><td class="nw">${c.enabled ? "수집" : "미수집"}</td><td class="muted">${esc(c.access)}</td></tr>`).join("")}</tbody></table></div>`);
   h += fold("게임 지표 출처", `<dl class="kvl"><dt>PC방 점유율 · 순위</dt><dd>더로그 PC방 주간 리포트(한 주 월 ~ 일, 국내 서버). 순위 · 점유율 · 사용시간 숫자와 리포트 링크만 싣고 표 그림은 싣지 않는다. 대시보드 주(월 ~ 일)와 같은 기간의 더로그 주를 쓰고, 그 주 리포트가 없으면 가장 가까운 앞 주를 쓰며 기간을 함께 적는다.</dd>
-    <dt>스팀 동시 접속</dt><dd>SteamCharts 시간별 자료로 대시보드 주(월 ~ 일, 한국 시각)의 평균 · 최고를 계산하고, Valve 공식 API 현재 값으로 크기를 대조한다(글로벌 서버).</dd>
+    ${hasSteam() ? `<dt>스팀 동시 접속</dt><dd>SteamCharts 시간별 자료로 대시보드 주(월 ~ 일, 한국 시각)의 평균 · 최고를 계산하고, Valve 공식 API 현재 값으로 크기를 대조한다(글로벌 서버).</dd>` : ""}
     <dt>지금 상태</dt><dd>${gm ? `수집 중(최근 생성 ${esc(String(gm.generated_at || "").slice(0, 16).replace("T", " "))})` : "수집 전"}</dd></dl>`);
   h += fold("판정 기준(자체 설정 값)", `<dl class="kvl">
     <dt>평시</dt><dd>직전 ${ru.base_weeks}주 평균(미수집 주 제외, ${ru.min_base_weeks}주 이상일 때만 산출). 연휴가 든 주도 넣는다. 글 수는 앞 ${ru.base_weeks}주의 평일 하루 평균 × 평일 수 + 주말 하루 평균 × (주말 + 공휴일 수)로 낸 기대값과 비교한다</dd>
@@ -1909,18 +2020,17 @@ function renderMethod() {
 // ---------- 머리 · 선택 줄 · 꼬리말 ----------
 function renderHead() {
   const v = state.view, name = VIEWS[v].name;
-  $("#h1").textContent = v === "judge" ? `${D.name} 유저 동향 주간 점검` : name;
-  $("#actions").innerHTML = v === "report"
+  $("#h1").textContent = name;   // 대시보드 이름은 맨 위 띠에 있어 화면 이름만(2026-11-23)
+  $("#viewActions").innerHTML = v === "report"
     ? `<span class="copy-status" id="copyStatus" role="status" aria-live="polite"></span><button type="button" class="ghost" id="copyBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>글로 복사</button><button type="button" class="ghost" id="printBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 9V3h10v6M7 18H4v-7h16v7h-3M7 14h10v7H7z"/></svg>인쇄 · PDF로 저장</button>`
-    : `<a class="primary" href="?view=report" data-go="report">주간 보고서</a>`;
+    : "";
+  $("#actions").innerHTML = `<a class="primary" href="?view=report" data-go="report"${v === "report" ? ' aria-current="page"' : ""}>주간 보고서</a>`;
   document.title = `${D.name} 유저 동향 주간 점검 · ${name}`;
-  // 휴대폰 · 태블릿 위 막대는 큰 제목이 말하지 않는 것을 적는다: 첫 화면은 메뉴 이름, 다른 메뉴는 화면 이름(Glance Test 수정 10)
-  $("#mWhere").textContent = v === "judge" ? name : "유저 동향 주간 점검";
   $$(".nav a[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   // 머리 영역의 '데이터 … 생성 · 다음 집계 …' 줄은 2026-11-23 사용자 요청으로 뺐다
   const cl = D.classify, dr = (D.method || {}).deepread || {}, coms = D.communities.filter(c => c.enabled).map(c => c.name);
-  $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 로스트아크 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
-    <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}(확신도가 낮은 글은 ${esc(mname(cl.escalate))}), 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
+  $("#foot").innerHTML = `<p>데이터: ${esc(coms.join(", "))}의 게시판 목록과 ${esc(D.name)} 공식 공지. 매일 새벽 수집하고, 매주 월요일에 지난 한 주(월요일 ~ 일요일)를 집계한다.</p>
+    <p>AI: 제목 분류는 Claude ${esc(mname(cl.model))}${cl.escalate ? `(확신도가 낮은 글은 ${esc(mname(cl.escalate))})` : ""}, 이슈 후보 본문 정독과 판단 초안은 Claude ${esc(mname(dr.model))}. AI가 쓴 글은 'AI 초안' · 'AI 정독 요약'으로 표시한다.</p>
     <p>커뮤니티 게시글을 집계한 화면으로, 게시글을 작성하지 않는 유저의 의견은 포함되지 않는다. 대표 글은 제목과 원문 링크만 표시하고 본문은 게재하지 않는다. 게시글의 저작권은 각 작성자와 커뮤니티에 있다.</p>`;
 }
 function buildControls() {
@@ -2017,7 +2127,7 @@ function renderMonthly() {
   const issues = rep.issues || [], ups = rep.updates || [], eff = rep.update_effects || [];
   h += `<section class="card" aria-labelledby="h-miss"><div class="card-h"><h2 id="h-miss">그달의 이슈와 업데이트</h2></div><div class="card-b two">
     <div class="mcol"><h3>이슈 후보 ${issues.length}건</h3>${issues.length ? `<ul class="mlist">${issues.map(x => `<li><span class="num muted">${esc(weekRange(x.week))}</span> ${esc(shortCom(x.community))} · ${esc(x.label)}${x.level ? ` <span class="pill ${LEVEL_CLS[x.level] || "p-ign"}" style="height:22px;line-height:22px;font-size:12.5px;padding:0 9px">${esc(x.level)}</span>` : ""}</li>`).join("")}</ul>` : `<p class="frame-empty">이 달에는 이슈 후보가 없었다.</p>`}</div>
-    <div class="mcol"><h3>업데이트 ${ups.length}건</h3>${ups.length ? `<ul class="mlist">${ups.map(u => { const e = eff.filter(x => x.date === u.date); return `<li><span class="num muted">${esc(shortDay(u.date))}</span> ${u.major ? "<b>" + esc(u.name) + "</b>" : esc(u.name)}${e.length ? `<br><span class="muted">점검 뒤 7일 글 수: ${e.map(x => `${esc(shortCom(x.community))} 평시의 ${x.posts_ratio != null ? times(x.posts_ratio) : "–"}`).join(" · ")}</span>` : ""}</li>`; }).join("")}</ul>` : `<p class="frame-empty">이 달에 수집한 업데이트 공지가 없다.</p>`}</div></div></section>`;
+    <div class="mcol"><h3>업데이트 ${ups.length}건</h3>${ups.length ? `<ul class="mlist">${ups.map(u => { const e = eff.filter(x => x.date === u.date); return `<li><span class="num muted">${esc(shortDay(u.date))}</span> ${u.major ? "<b>" + esc(updNames([u.name])) + "</b>" : esc(updNames([u.name]))}${e.length ? `<br><span class="muted">점검 뒤 7일 글 수: ${e.map(x => `${esc(shortCom(x.community))} 평시의 ${x.posts_ratio != null ? times(x.posts_ratio) : "–"}`).join(" · ")}</span>` : ""}</li>`; }).join("")}</ul>` : `<p class="frame-empty">이 달에 수집한 업데이트 공지가 없다.</p>`}</div></div></section>`;
   const ms = months.slice(-6), at = (m, id) => dm.reports[m].communities.find(c => c.community_id === id) || {};
   const items = coms.map(c => ({label: shortCom(c.community), color: comColor(c.community_id)}));
   h += `<section class="card" aria-labelledby="h-mtr"><div class="card-h"><h2 id="h-mtr">최근 ${ms.length}개월 추이</h2></div><div class="card-b two"><div>${chartBox("mposts", "하루 평균 글 수(건, 로그 척도)", items, "short", false)}</div><div>${chartBox("mneg", "부정 비율(%)", items, "short", false)}</div></div></section>`;
@@ -2288,7 +2398,7 @@ function renderAll() {
   $$(".view").forEach(s => { s.hidden = s.dataset.view !== state.view; });
   Object.keys(CHARTS).forEach(k => { CHARTS[k].destroy(); delete CHARTS[k]; });
   RENDER[state.view]();
-  { const ws = $("#weekSel"); if (ws) ws.style.visibility = state.view === "monthly" ? "hidden" : ""; }
+  $("#weekSel").disabled = state.view === "monthly";   // 월간 보고서에는 기준 주가 없어 흐리게 두고 고를 수 없게 한다(띠 가운데가 비지 않게, 2026-11-24)
   navHrefs();
 }
 function queryFor(view, issue) {
@@ -2350,7 +2460,7 @@ function applyUrl(u) {
 
 // ---------- 휴대폰 · 태블릿 메뉴 ----------
 // 메뉴를 열면 뒤의 위 줄 · 본문을 키보드와 화면 읽기에서 막고(inert), 메뉴를 창(dialog)으로 알린다. Tab은 메뉴 안(닫기 단추 포함)만 돈다(기술 점검 P1-2)
-const NAV_BEHIND = [".skip", "#mbar", "#main"];
+const NAV_BEHIND = [".skip", ".tophead", "#mbar", "#main"];
 function openNav() {
   document.body.classList.add("nav-open"); $("#menuBtn").setAttribute("aria-expanded", "true");
   const side = $("#side"); side.setAttribute("role", "dialog"); side.setAttribute("aria-modal", "true");
