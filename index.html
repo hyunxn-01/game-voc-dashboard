@@ -741,6 +741,15 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
   .jt td.c-kw::before{ content:"키워드 "; color:var(--muted); font-size:12.5px; } .jt td.c-rs::before{ content:"공지 대응 "; color:var(--muted); font-size:12.5px; }
   .jt td.c-rs .t2{ display:inline; margin-left:6px; }
 }
+/* 우선 대응 강조 · 다른 커뮤니티 칸(2026-11-24, 견본/2026-11-24-우선대응-상세). 사용자 "우선 대응을 좀색을 바꾸면 좋을거같아. 강조되면 이걸 대응해야되는구나 알거같아" ·
+   "다른커뮤니티의 같은지표는 좀 가시성좋게 … 좀 나눠놓으면 좋을거같아 칸을 더차지하게하진말고" · "좋아" */
+.ovp{ display:grid; grid-template-columns:auto minmax(0,1fr); align-items:start; column-gap:12px; margin-top:8px; padding:6px 12px; background:var(--neg-bg); border:1px solid color-mix(in srgb, var(--neg-ink) 22%, #fff); border-radius:4px; }
+.ovs .ovp > b{ padding:0 11px; border-radius:999px; background:var(--neg-ink); color:#fff; font:800 13px/22px var(--title); margin-top:1px; white-space:nowrap; }
+.ovs .ovp ul{ gap:2px; } .ovs .ovp li{ padding-left:0; font-size:14.5px; line-height:23px; font-weight:700; color:var(--neg-ink); } .ovs .ovp li::before{ content:none; }
+.ovp i{ display:inline-block; margin-left:8px; padding:0 8px; border:1px solid color-mix(in srgb, var(--neg-ink) 40%, #fff); border-radius:999px; background:#fff; font-style:normal; font-size:12px; line-height:18px; vertical-align:1px; white-space:nowrap; }
+.oth{ display:grid; grid-template-columns:auto minmax(0,1fr) 72px; align-items:center; row-gap:3px; column-gap:10px; }
+.oth .ctag{ min-width:84px; line-height:17px; } .oth b, .oth .oc{ text-align:right; font-size:13.5px; line-height:19px; } .oth .oc{ font-weight:700; color:var(--body); white-space:nowrap; } .oth .oc.up{ color:var(--signal); }
+.jdet .dsec > .dh-o{ display:grid; grid-template-columns:minmax(0,1fr) auto 72px; column-gap:10px; align-items:baseline; } .dh-o span{ font:400 12px/1.35 var(--body-font, "Noto Sans KR", sans-serif); color:var(--muted); text-align:right; }
 </style>
 </head>
 <body>
@@ -1183,11 +1192,13 @@ function repList(groups, limit = 3) {
 }
 function candOthers(c) {
   const i = wi(), rate = c.diff != null;
-  return (c.others || []).map(x => {
-    if (rate) return `${esc(shortCom(x.community))} ${pct(x.value)}(${x.diff != null ? "평시 대비 " + pp(x.diff) : "평시 없음"})`;
-    const sc = comScopes().find(o => o.name === x.community), s = sc && S(sc.id, c.metric);
-    return `${esc(shortCom(x.community))} 비중 ${pct(x.value, 2)}(${x.ratio != null ? "평시 대비 " + times1(x.ratio) : s && s.base[i] === 0 ? "평시 미등장" : "평시 없음"})`;
-  }).join("<br>") || muted("없음");
+  const rows = (c.others || []).map(x => {
+    const sc = comScopes().find(o => o.name === x.community), s = !rate && sc && S(sc.id, c.metric), com = (D.communities || []).find(o => o.name === x.community);
+    const d = rate ? x.diff : x.ratio == null ? null : x.ratio - 1, up = d != null && d > (rate ? .0005 : .05), dn = d != null && d < (rate ? -.0005 : -.05);
+    const t = x.value === 0 ? "없음" : d == null ? (s && s.base[i] === 0 ? "평시 미등장" : "평시 없음") : rate ? pp(x.diff) : times1(x.ratio);
+    return `<span class="ctag" style="--c:${comColor(com ? com.id : x.community)}">${esc(shortCom(x.community))}</span><b class="num">${pct(x.value, rate ? 1 : 2)}</b><span class="oc num${up ? " up" : ""}">${up ? "▲ " : dn && x.value !== 0 ? "▼ " : ""}${t}</span>`;
+  }).join("");
+  return rows ? `<div class="oth">${rows}</div>` : muted("없음");
 }
 const eun = w => { const k = String(w).charCodeAt(String(w).length - 1) - 0xac00; return k >= 0 && k < 11172 && k % 28 ? "은" : "는"; };
 function notJudged(w) {
@@ -1224,7 +1235,7 @@ function deepCard(c) {
   return `<div class="ai-box"><div class="dsec dsec-sum"><div class="head"><span class="ai-l">AI 정독 요약</span></div>
     <ul class="sum">${sumLines(r.summary).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
     ${(r.causes || []).length ? `<div class="dsec"><h3 class="dh">원인 가설</h3><ul>${r.causes.map(x => `<li>${esc(x.hypothesis)}${x.event && x.event !== "없음" ? ` <span class="muted">(${esc(updNames([x.event]))})</span>` : ""}</li>`).join("")}</ul></div>` : ""}
-    ${(r.subissues || []).length ? `<div class="dsec"><h3 class="dh">하위 문제</h3><ul>${r.subissues.map(s => `<li>${esc(s.name)} <span class="muted">(정독 ${read.length}건 중 ${s.count}건)</span>${s.quote ? ` <span class="q">“${esc(s.quote)}”</span>${link(s.quote_post)}` : ""}</li>`).join("")}</ul></div>` : ""}
+    ${(r.subissues || []).length ? `<div class="dsec"><h3 class="dh">근거 게시글</h3><ul>${r.subissues.map(s => `<li>${esc(s.name)} <span class="muted">(정독 ${read.length}건 중 ${s.count}건)</span>${s.quote ? ` <span class="q">“${esc(s.quote)}”</span>${link(s.quote_post)}` : ""}</li>`).join("")}</ul></div>` : ""}
     <div class="dsec dsec-fold"><details><summary>정독한 글 ${read.length}건</summary><ol>${read.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>
       <span class="muted">${esc(p.group)}, 추천 ${fmt(p.recommends || 0)}, 댓글 ${fmt(p.comments || 0)}</span></li>`).join("")}</ol></details></div></div>`;
 }
@@ -1393,8 +1404,9 @@ function overallHtml() {
   const nameOf = x => x.draft.title || x.issue, noteOf = x => x.draft.title ? R === "국내" && {answered: "공지 대응함", trigger: "후속 공지 없음", none: "공지 없음"}[x.draft.response] || "" : x.draft.reason;
   const seen = new Set(), hi = (WK().items || []).filter(x => x.judgment && x.judgment.level === "높음" && x.draft && x.draft.reason && !seen.has(nameOf(x)) && seen.add(nameOf(x))).slice(0, 2);
   const pts = up.filter(x => tn[x.id]).map(x => [x.name, esc(tn[x.id])]);
-  if (hi.length) pts.push(["우선 대응", hi.map(x => `<span>${esc(nameOf(x))}${noteOf(x) ? `(${esc(noteOf(x))})` : ""}</span>`).join(" ")]);
-  const brief = pts.length ? `<div class="ovs"><h3>${state.week === D.weeks[D.weeks.length - 1] ? "현재 " : ""}유저 동향 요약<i class="ai-l">AI 요약</i></h3><ul>${pts.map(([k, v]) => `<li><b>${esc(k)}</b>${v}</li>`).join("")}</ul></div>` : "";
+  // 우선 대응(판단이 높음인 이슈)은 다른 줄과 다르게 붉은 바탕으로 강조한다
+  const pri = hi.length ? `<div class="ovp"><b>우선 대응</b><ul>${hi.map(x => `<li>${dotKeep(nameOf(x))}${noteOf(x) ? `<i>${esc(noteOf(x))}</i>` : ""}</li>`).join("")}</ul></div>` : "";
+  const brief = pts.length || pri ? `<div class="ovs"><h3>${state.week === D.weeks[D.weeks.length - 1] ? "현재 " : ""}유저 동향 요약<i class="ai-l">AI 요약</i></h3>${pts.length ? `<ul>${pts.map(([k, v]) => `<li><b>${esc(k)}</b>${v}</li>`).join("")}</ul>` : ""}${pri}</div>` : "";
   return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div>${kw ? `<div class="ovk"><h3>급증 키워드 <span>평시 대비</span></h3><div>${kw}</div></div>` : ""}</div>
     <div><h3>이번 주 요약${gp ? ` <span>${esc(gp)}</span>` : ""}</h3>${sum}${brief}</div></div>`;
 }
@@ -1482,7 +1494,7 @@ function detail(it, rs) {
   return `<div class="dgrid">${deepCard(it)}
     <div class="dside"><div class="dsec"><h3 class="dh">판단</h3>${jd}</div>
       <div class="dsec"><h3 class="dh">대표 글</h3>${repList(ofCom((((D.representatives || {})[state.region] || {})[state.week] || {})[c.metric], it.community))}</div>
-      <div class="dsec"><h3 class="dh">다른 커뮤니티의 같은 지표</h3><div>${c.id ? candOthers(c) : muted("–")}</div></div>
+      <div class="dsec"><h3 class="dh dh-o">다른 커뮤니티의 같은 지표<span>${c.diff != null ? "비율" : "비중"}</span><span>평시 대비</span></h3><div>${c.id ? candOthers(c) : muted("–")}</div></div>
       <div class="dsec"><h3 class="dh">같은 주 운영 대응</h3>${respHtml}</div>
       ${c.rules ? `<div class="dsec dsec-note"><p class="note">충족 기준: ${esc(ruleText(c))}</p>${c.found ? `<p class="note">키워드 사전에 없던 낱말을 AI가 찾아 묶은 이슈다. 낱말: ${esc((((D.lexicon || {}).groups || {})[c.name] || {words: []}).words.join(", "))}</p>` : ""}</div>` : ""}</div></div>`;
 }
@@ -1969,7 +1981,7 @@ function methodFlow() {
     <li><b>수집</b>커뮤니티 ${enabled.length}곳(국내 ${dom} · 해외 ${abroad})의 게시판 ${nb}개에서 게시글 목록과 본문을 매일 수집한다. 키워드 필터 없이 전체를 수집하고, 사이트별로 요청을 하나씩 순차 전송하며 요청 주체(User-Agent)를 사실대로 밝힌다. 작성자 정보는 수집하지 않는다.</li>
     <li><b>분류 <span class="ai-l">AI</span></b>게시글 제목을 ${esc(mname(cl.model))}가 주제(${D.topics.length}종) · 긍정/부정 · 의견 유형으로 분류한다. ${cl.escalate ? `확신도가 낮은 글만 ${esc(mname(cl.escalate))}가 재분류한다(배치 처리로 비용 50% 절감).` : "배치 처리로 비용을 50% 줄인다."}</li>
     <li><b>집계</b>커뮤니티별로 직전 ${D.rules.base_weeks}주 평시와 비교해, 비중이 급증한 키워드 그룹 · 신호 · 주제와 부정 비율을 이슈 후보로 선정한다. 커뮤니티는 합산하지 않는다.</li>
-    <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 하위 문제 · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
+    <li><b>본문 정독 <span class="ai-l">AI</span></b>이슈 후보마다 추천 상위 ${dr.n_top ?? 3}건과 무작위 ${dr.n_random ?? 3}건의 본문을 ${esc(mname(dr.model))}가 정독해 요약 · 근거 게시글(나온 의견과 그 글의 인용) · 원인 가설을 작성한다. 수집한 본문은 비공개로 보관하고 전문을 공개하지 않는다.</li>
     <li><b>판단 초안 <span class="ai-l">AI</span></b>후보마다 평시 대비 크기 · 몇 주째 · 표본 크기 · 정독 요약 · 같은 주 대응을 근거로 Claude가 중요도(높음 · 보통 · 관찰)와 이유 · 권장 대응 초안을 쓴다.</li>
     ${(D.method || {}).new_issues ? `<li><b>새 이슈 찾기 <span class="ai-l">AI</span></b>키워드 사전에 없는데 갑자기 늘어난 낱말의 글 제목을 Claude가 읽고 게임 운영에 대한 불만 · 요구 · 문의를 찾는다(${esc(D.method.new_issues.regions.join(" · "))}). 매일 찾은 것은 맨 위 어제 칸의 '새로 나온 이야기'에 보이고, 매주 찾은 것 가운데 이슈 후보 기준을 넘는 것은 임시 키워드 그룹으로 묶어 이슈 후보에 더한다. 8주 동안 이슈가 되지 않은 임시 그룹은 뺀다.</li>` : ""}
     <li><b>공개</b>집계 값, 대표 글의 제목 · 링크, 본문에 실재하는 ${(dr.max_quote_words ?? 14) + 1}어절 미만 인용만 공개한다.</li></ol>`;
@@ -2210,7 +2222,7 @@ function ktData(R = state.region, W = state.week) {
       if (has(it.issue) || has(it.headline && it.headline.lead)) where.push("이슈 이름");
       if (it.draft && ["insight", "reason", "action"].some(f => has(it.draft[f]))) where.push("판단 초안");
       if (has(res.summary)) where.push("정독 요약");
-      if ((res.subissues || []).some(s => has(s.name) || has(s.quote))) where.push("하위 문제");
+      if ((res.subissues || []).some(s => has(s.name) || has(s.quote))) where.push("근거 게시글");
       if ((res.causes || []).some(c => has(c.event) || has(c.hypothesis))) where.push("원인 가설");
       if (read.some(p => has(p.title))) where.push("정독한 글 제목");
       const same = (k.reps || []).some(p => read.some(q => q.url === p.url));
