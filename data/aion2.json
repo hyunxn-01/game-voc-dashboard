@@ -736,9 +736,72 @@
      "value": 0.07244,
      "week": "2026-07-06",
      "z": 1.8
+    },
+    {
+     "base": 0.00395,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 172,
+     "den": 26586,
+     "id": "2026-07-06/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "아카라이브",
+       "count": 10,
+       "ratio": null,
+       "value": 0.00426
+      }
+     ],
+     "ratio": 1.638,
+     "region": "국내",
+     "rules": [
+      "고정 기준"
+     ],
+     "value": 0.00647,
+     "week": "2026-07-06",
+     "z": 0.98
     }
    ],
    "2026-07-13": [
+    {
+     "base": 0.00431,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 561,
+     "den": 26820,
+     "id": "2026-07-13/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "아카라이브",
+       "count": 25,
+       "ratio": null,
+       "value": 0.01023
+      }
+     ],
+     "ratio": 4.853,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.02092,
+     "week": "2026-07-13",
+     "z": 6.54
+    },
     {
      "base": 0.00725,
      "community": "디시인사이드",
@@ -868,6 +931,38 @@
      "value": 0.06182,
      "week": "2026-07-20",
      "z": 8.97
+    },
+    {
+     "base": 0.00639,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 1321,
+     "den": 30458,
+     "id": "2026-07-20/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "아카라이브",
+       "count": 94,
+       "ratio": null,
+       "value": 0.03707
+      }
+     ],
+     "ratio": 6.792,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.04337,
+     "week": "2026-07-20",
+     "z": 5.85
     },
     {
      "base": 0.00376,
@@ -1772,6 +1867,37 @@
      "value": 0.01159,
      "week": "2026-08-24",
      "z": 1.52
+    },
+    {
+     "base": 0.00843,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "count": 41,
+     "den": 1928,
+     "id": "2026-08-24/arca/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "디시인사이드",
+       "count": 464,
+       "ratio": 1.431,
+       "value": 0.01775
+      }
+     ],
+     "ratio": 2.523,
+     "region": "국내",
+     "rules": [
+      "고정 기준"
+     ],
+     "value": 0.02127,
+     "week": "2026-08-24",
+     "z": 1.08
     }
    ],
    "2026-09-07": [
@@ -3616,6 +3742,44 @@
      "z": 2.35
     },
     {
+     "base": 0.00356,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 108,
+     "den": 16363,
+     "id": "2026-11-02/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "인벤",
+       "count": 12,
+       "ratio": 3.127,
+       "value": 0.00416
+      },
+      {
+       "community": "아카라이브",
+       "count": 2,
+       "ratio": 1.094,
+       "value": 0.00151
+      }
+     ],
+     "ratio": 1.854,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.0066,
+     "week": "2026-11-02",
+     "z": 2.01
+    },
+    {
      "base": 0.16418,
      "community": "인벤",
      "community_id": "inven",
@@ -3768,6 +3932,44 @@
      "value": 0.00891,
      "week": "2026-11-09",
      "z": 5.15
+    },
+    {
+     "base": 0.00403,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 370,
+     "den": 32088,
+     "id": "2026-11-09/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "인벤",
+       "count": 26,
+       "ratio": 2.398,
+       "value": 0.00433
+      },
+      {
+       "community": "아카라이브",
+       "count": 7,
+       "ratio": 2.172,
+       "value": 0.0034
+      }
+     ],
+     "ratio": 2.864,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.01153,
+     "week": "2026-11-09",
+     "z": 4.14
     },
     {
      "base": 0.00196,
@@ -4110,6 +4312,120 @@
     }
    ],
    "2026-11-16": [
+    {
+     "base": 0.00146,
+     "community": "아카라이브",
+     "community_id": "arca",
+     "count": 42,
+     "den": 1168,
+     "id": "2026-11-16/arca/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "인벤",
+       "count": 140,
+       "ratio": 16.068,
+       "value": 0.03679
+      },
+      {
+       "community": "디시인사이드",
+       "count": 797,
+       "ratio": 8.959,
+       "value": 0.04746
+      }
+     ],
+     "ratio": 24.662,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.03596,
+     "week": "2026-11-16",
+     "z": 34.33
+    },
+    {
+     "base": 0.00229,
+     "community": "인벤",
+     "community_id": "inven",
+     "count": 140,
+     "den": 3805,
+     "id": "2026-11-16/inven/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "아카라이브",
+       "count": 42,
+       "ratio": 24.662,
+       "value": 0.03596
+      },
+      {
+       "community": "디시인사이드",
+       "count": 797,
+       "ratio": 8.959,
+       "value": 0.04746
+      }
+     ],
+     "ratio": 16.068,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.03679,
+     "week": "2026-11-16",
+     "z": 24.43
+    },
+    {
+     "base": 0.0053,
+     "community": "디시인사이드",
+     "community_id": "dcinside",
+     "count": 797,
+     "den": 16793,
+     "id": "2026-11-16/dcinside/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [
+      {
+       "community": "인벤",
+       "count": 140,
+       "ratio": 16.068,
+       "value": 0.03679
+      },
+      {
+       "community": "아카라이브",
+       "count": 42,
+       "ratio": 24.662,
+       "value": 0.03596
+      }
+     ],
+     "ratio": 8.959,
+     "region": "국내",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.04746,
+     "week": "2026-11-16",
+     "z": 14.49
+    },
     {
      "base": 0.00207,
      "community": "디시인사이드",
@@ -5204,6 +5520,31 @@
    ],
    "2026-10-12": [
     {
+     "base": 0.00156,
+     "community": "레딧",
+     "community_id": "reddit",
+     "count": 48,
+     "den": 2437,
+     "id": "2026-10-12/reddit/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [],
+     "ratio": 12.628,
+     "region": "해외",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.0197,
+     "week": "2026-10-12",
+     "z": 7.78
+    },
+    {
      "base": 0.00958,
      "community": "레딧",
      "community_id": "reddit",
@@ -5599,6 +5940,31 @@
      "value": 0.04555,
      "week": "2026-10-19",
      "z": 4.43
+    },
+    {
+     "base": 0.00402,
+     "community": "레딧",
+     "community_id": "reddit",
+     "count": 55,
+     "den": 1932,
+     "id": "2026-10-19/reddit/group:서버 이전",
+     "importance": null,
+     "kind": "group",
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "name": "서버 이전",
+     "new": false,
+     "note": "",
+     "others": [],
+     "ratio": 7.078,
+     "region": "해외",
+     "rules": [
+      "고정 기준",
+      "변동 폭"
+     ],
+     "value": 0.02847,
+     "week": "2026-10-19",
+     "z": 3.64
     },
     {
      "base": 0.21958,
@@ -41980,6 +42346,107 @@
     "summary": "추천 상위 글 중심의 접음 선언 및 이탈 글 다수 게시\n작업장 방치, 밸런스 갈등, 반복 숙제로 인한 피로 누적 언급\n키나 가치 하락에 따른 재화 가치 논쟁 및 이탈 연결\n서버이전 시 지켈 서버 대규모 이탈 예상 글 게시"
    }
   },
+  "2026-08-24/arca/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 5,
+     "date": "2026-08-25",
+     "group": "추천 상위",
+     "recommends": 6,
+     "title": "[이스할겐] 서버이전은 할~겐! 길드는 \"잘썼어요\"",
+     "url": "https://arca.live/b/aion2/180983889"
+    },
+    {
+     "comments": 4,
+     "date": "2026-08-27",
+     "group": "추천 상위",
+     "recommends": 3,
+     "title": "마족 서버이전은? [에레]로 챈기온은? [땃지]로!",
+     "url": "https://arca.live/b/aion2/181180425"
+    },
+    {
+     "comments": 2,
+     "date": "2026-08-26",
+     "group": "추천 상위",
+     "recommends": 1,
+     "title": "서버이전기간이라 상점 오드는 물변에 있습니당",
+     "url": "https://arca.live/b/aion2/181056993"
+    },
+    {
+     "comments": 6,
+     "date": "2026-08-30",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "아.. 섭이전하면 날라가는구나",
+     "url": "https://arca.live/b/aion2/181517170"
+    },
+    {
+     "comments": 13,
+     "date": "2026-08-26",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "나 귀찮아서 서버이동 관련글을 하나도 안봐서 그런대",
+     "url": "https://arca.live/b/aion2/181123582"
+    },
+    {
+     "comments": 9,
+     "date": "2026-08-27",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "서버이전 컴터로 하는사람 있냐?",
+     "url": "https://arca.live/b/aion2/181215669"
+    }
+   ],
+   "read_at": "2026-11-24T10:31:46+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 8/26(수) 서버 이전 상품 안내",
+      "hypothesis": "서버 이전 상품 출시에 따른 이전 수요 및 길드 모집 글 증가"
+     },
+     {
+      "event": "[안내] 8/26(수) 업데이트 노트 (수정 9/22 22:22)",
+      "hypothesis": "업데이트와 함께 진행된 이전 기간 중 상점·절차 변경 관련 문의 증가"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 이전 수요를 노린 길드 모집·정보 안내 중심, 무작위 글은 이전 절차·손실 관련 개인 문의 중심",
+    "subissues": [
+     {
+      "count": 2,
+      "name": "서버 이전 대상 길드·레기온 모집 홍보",
+      "quote": "서버이전은 할~겐! 길드는 \"잘썼어요",
+      "quote_post": 1
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 시 서버창고 이동 여부 문의",
+      "quote": "서버창고도 같이 옮겨지는거마즘?",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 시 일부 데이터 소멸에 대한 아쉬움",
+      "quote": "섭이전하면 날라가는구나",
+      "quote_post": 4
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 진행 기기(PC·모바일) 관련 문의",
+      "quote": "컴 말고 폰으로 해라",
+      "quote_post": 6
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 기간 상점 오드 위치 변경 안내",
+      "quote": "상점 오드는 물변에 있습니당",
+      "quote_post": 3
+     }
+    ],
+    "summary": "8/26 서버 이전 상품 출시에 맞춘 길드·레기온 모집 글 게시\n이전 시 데이터 유실, 서버창고 이동 여부 등 절차 문의 증가\nPC·모바일 중 이전 방법 문의, 상점 오드 위치 안내 게시\n서버 이전 상품 안내 시점과 언급 증가 시점 일치"
+   }
+  },
   "2026-08-24/arca/topic:balance": {
    "model": "claude-opus-5-5",
    "read": [
@@ -49217,6 +49684,103 @@
     "summary": "10/13 퍼플 라이브 방송 이후 개발진 태도 비판 글 집중 게시\n과거 발언 번복 나열로 운영 신뢰 붕괴 주장\n결과물 없는 '열심히 했다' 호소에 대한 반발\n방송 시간 30분 단축·소통 주기 증가 불만"
    }
   },
+  "2026-10-12/reddit/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 50,
+     "date": "2026-10-14",
+     "group": "추천 상위",
+     "recommends": 15,
+     "title": "\"Server Transfer\" - LMAO",
+     "url": "https://www.reddit.com/r/aion2/comments/1x5pamb/"
+    },
+    {
+     "comments": 9,
+     "date": "2026-10-14",
+     "group": "추천 상위",
+     "recommends": 9,
+     "title": "Was a bit late to logging in by a mere 30 minutes and server transfers are just full",
+     "url": "https://www.reddit.com/r/aion2/comments/1x5qx3b/"
+    },
+    {
+     "comments": 18,
+     "date": "2026-10-15",
+     "group": "추천 상위",
+     "recommends": 8,
+     "title": "I'm very happy with my server transfer",
+     "url": "https://www.reddit.com/r/aion2/comments/1x5xkvo/"
+    },
+    {
+     "comments": 13,
+     "date": "2026-10-14",
+     "group": "무작위",
+     "recommends": 1,
+     "title": "Aion 2 EU – October 20 Server Transfers: Are You Staying or Moving? (Asmodian)",
+     "url": "https://www.reddit.com/r/aion2/comments/1x5lh3o/"
+    },
+    {
+     "comments": 6,
+     "date": "2026-10-18",
+     "group": "무작위",
+     "recommends": 1,
+     "title": "Server transfer",
+     "url": "https://www.reddit.com/r/aion2/comments/1x8pt76/"
+    },
+    {
+     "comments": 3,
+     "date": "2026-10-15",
+     "group": "무작위",
+     "recommends": 1,
+     "title": "Server Transfer",
+     "url": "https://www.reddit.com/r/aion2/comments/1x5ynbh/"
+    }
+   ],
+   "read_at": "2026-11-24T10:31:26+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "없음",
+      "hypothesis": "글로벌(EU) 서버 이전 시행에 따른 제한·마감 불만 및 후기 증가 추정"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 이전 제한·마감 불만과 이전 성공 후기 중심, 무작위 글은 일정 문의·주의 안내·인구 불균형 비판 중심",
+    "subissues": [
+     {
+      "count": 3,
+      "name": "이전 대상 서버 제한 및 조기 마감",
+      "quote": "Because 15 out of 22 servers are restricted.",
+      "quote_post": 1
+     },
+     {
+      "count": 1,
+      "name": "인원 쏠림에 따른 잔류 서버 인구 감소 및 진영 불균형",
+      "quote": "now in abyss on my servers it s 1 elyos for around 20 asmo",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "이전 후 활성 서버 만족 및 이전 권유",
+      "quote": "To any Ely with the same, try switching.",
+      "quote_post": 3
+     },
+     {
+      "count": 1,
+      "name": "10월 20일 이전 계획 및 서버 추천 문의",
+      "quote": "Are You Staying or Moving?",
+      "quote_post": 4
+     },
+     {
+      "count": 1,
+      "name": "서버 선택 확인 절차 부재 및 재이전 불가 안내",
+      "quote": "there is no additional \"are your sure\" dialog",
+      "quote_post": 6
+     }
+    ],
+    "summary": "글로벌(EU) 서버 이전 시행 관련 글 집중 게시\n22개 중 15개 서버 이전 제한, 조기 마감 불만\n인원 쏠림으로 잔류 서버 인구 감소 및 진영 불균형 지적\n이전 후 활성 서버 만족 후기도 일부 게시"
+   }
+  },
   "2026-10-12/reddit/group:작업장 · 매크로": {
    "model": "claude-opus-5-5",
    "read": [
@@ -51111,6 +51675,113 @@
      }
     ],
     "summary": "시간 고정 콘텐츠 증가와 반복 숙제 피로 비판\n아티공명전·어비스 보스 변수 부족, 강한 서버 일방 승리 지적\n재미·도파민 부족 등 짧은 불만 글 다수\n10/21 업데이트 전후 콘텐츠 구조 전반에 대한 부정 반응 증가"
+   }
+  },
+  "2026-10-19/reddit/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 120,
+     "date": "2026-10-22",
+     "group": "추천 상위",
+     "recommends": 59,
+     "title": "This server transfer is a shame",
+     "url": "https://www.reddit.com/r/aion2/comments/1xbr8nh/"
+    },
+    {
+     "comments": 50,
+     "date": "2026-10-23",
+     "group": "추천 상위",
+     "recommends": 30,
+     "title": "Server transfers kill my server more and can't leave",
+     "url": "https://www.reddit.com/r/aion2/comments/1xd3grl/"
+    },
+    {
+     "comments": 11,
+     "date": "2026-10-23",
+     "group": "추천 상위",
+     "recommends": 14,
+     "title": "Why does it take so long to switch server matching and balance abyss? It's been 3 weeks",
+     "url": "https://www.reddit.com/r/aion2/comments/1xcsbz0/"
+    },
+    {
+     "comments": 42,
+     "date": "2026-10-25",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "Indnath server is completely unbalanced after server transfers, and the gap keeps getting worse every day",
+     "url": "https://www.reddit.com/r/aion2/comments/1xei8oo/"
+    },
+    {
+     "comments": 0,
+     "date": "2026-10-20",
+     "group": "무작위",
+     "recommends": 1,
+     "title": "Server transfer questions",
+     "url": "https://www.reddit.com/r/aion2/comments/1xanxnd/"
+    },
+    {
+     "comments": 5,
+     "date": "2026-10-22",
+     "group": "무작위",
+     "recommends": 1,
+     "title": "Server Transfers",
+     "url": "https://www.reddit.com/r/aion2/comments/1xc1b5i/"
+    }
+   ],
+   "read_at": "2026-11-24T10:31:16+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "없음",
+      "hypothesis": "서버 이전 신청 재개 후 극히 짧은 마감에 따른 불만 게시 증가 추정"
+     },
+     {
+      "event": "없음",
+      "hypothesis": "이전 이후 누적된 진영 불균형으로 서버별 피해 호소 증가 추정"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 짧은 신청 창과 인구 감소 서버 탈출 불가 비판 중심, 무작위 글은 진영 불균형 상세 분석과 이전 절차 문의 중심",
+    "subissues": [
+     {
+      "count": 3,
+      "name": "이전 신청 창 조기 마감 및 정원 부족",
+      "quote": "1 minute. That’s how long the window lasted.",
+      "quote_post": 1
+     },
+     {
+      "count": 3,
+      "name": "서버 이전 후 진영 인구 불균형 심화",
+      "quote": "there is a 29 elyos to 71 asmos now",
+      "quote_post": 2
+     },
+     {
+      "count": 3,
+      "name": "공성·필드 보스·어비스 회랑 경쟁 불가 및 보상 격차",
+      "quote": "our server didn't win a single siege or world boss in 3 weeks",
+      "quote_post": 3
+     },
+     {
+      "count": 2,
+      "name": "매칭·진영 균형 조치 지연 비판",
+      "quote": "Instead, days keep passing with no solution",
+      "quote_post": 4
+     },
+     {
+      "count": 1,
+      "name": "이전 시 진행도·멤버십 유지 여부 문의",
+      "quote": "Do we keep the progression (pet, skins...) and what about the subscription ?",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "이전 신청 버그 여부 의문",
+      "quote": "Im trying to figure out if its bugged or if im doing something wrong.",
+      "quote_post": 6
+     }
+    ],
+    "summary": "서버 이전 신청 창이 수십 초~1분 만에 마감됐다는 불만 집중\n이전 이후 진영 인구 불균형 심화 지적(Fregion, Indnath)\n공성·필드 보스·어비스 회랑 경쟁 불가 호소\n이전 조건 문의와 신청 실패 여부 확인 글 동반 게시"
    }
   },
   "2026-10-19/reddit/group:장비 제작": {
@@ -54253,6 +54924,113 @@
     "summary": "공팟·버스방에서 겪은 이용자 비매너 불만 게시\n레기온팟 갈등, 무스펠 보통 공팟 구성 불만 포함\n1주년 오프라인 행사 인파·새치기 관련 부정 글 동반\n이용자 수준 비판이 부정 비율 상승의 주된 원인으로 추정"
    }
   },
+  "2026-11-02/dcinside/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 4,
+     "date": "2026-11-08",
+     "group": "추천 상위",
+     "recommends": 4,
+     "title": "마족 서버이전 꿀팁준다",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3098961"
+    },
+    {
+     "comments": 21,
+     "date": "2026-11-08",
+     "group": "추천 상위",
+     "recommends": 3,
+     "title": "천족 서버이전 순위 추천",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3100167"
+    },
+    {
+     "comments": 11,
+     "date": "2026-11-05",
+     "group": "추천 상위",
+     "recommends": 2,
+     "title": "근데 섭이전2번있었자나? 왜 크메 콰이링애들은 섭이전을 안했던거야",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3088087"
+    },
+    {
+     "comments": 0,
+     "date": "2026-11-08",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "무료서버이전은 서버통합 빌드업",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3098528"
+    },
+    {
+     "comments": 9,
+     "date": "2026-11-08",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "걍 장군급이상은 서버이전 못하게 막는게답인가보다그럼",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3100386"
+    },
+    {
+     "comments": 4,
+     "date": "2026-11-08",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "무료 서버 이전도 캐릭터 슬롯은 사야되는건가?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3099565"
+    }
+   ],
+   "read_at": "2026-11-24T10:31:04+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 11/4(수) 업데이트 노트",
+      "hypothesis": "업데이트 노트 내 무료 서버이전 시행 공지 가능성"
+     },
+     {
+      "event": "[안내] AION2 1st ANNIVERSARY 라이브 방송 안내",
+      "hypothesis": "1주년 라이브 방송 내 무료 서버이전 또는 서버통합 발표 가능성"
+     }
+    ],
+    "confidence": "medium",
+    "endorsed_vs_common": "추천 상위 글은 이전 대상 서버 팁·순위 공유 중심, 무작위 글은 통합 추측·이전 제한·슬롯 비용 등 제도 관련 의문 중심",
+    "subissues": [
+     {
+      "count": 2,
+      "name": "진영별 이전 대상 서버 추천·순위 공유",
+      "quote": "천족 서버이전 순위 추천",
+      "quote_post": 2
+     },
+     {
+      "count": 1,
+      "name": "무료 서버이전의 서버통합 전 단계 추측",
+      "quote": "무료서버이전은 서버통합 빌드업",
+      "quote_post": 4
+     },
+     {
+      "count": 1,
+      "name": "장군급 이상 고랭커 이전 제한 요구",
+      "quote": "장군급이상은 서버이전 못하게 막는게답인가보다",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "무료 이전 시 캐릭터 슬롯 구매 필요 여부 질문",
+      "quote": "무료 서버 이전도 캐릭터 슬롯은 사야되는건가?",
+      "quote_post": 6
+     },
+     {
+      "count": 1,
+      "name": "과거 이전 기회 미사용 특정 집단 언급",
+      "quote": "섭이전2번있었자나?",
+      "quote_post": 3
+     },
+     {
+      "count": 1,
+      "name": "크메, 콰이링 용어 의미 불분명",
+      "quote": "크메 콰이링애들은",
+      "quote_post": 3
+     }
+    ],
+    "summary": "전 게시글 본문 없음, 제목만으로 판단\n무료 서버이전 시행 관련 서버 선택 팁·순위 글 게시\n장군급 이상 이전 제한, 캐릭터 슬롯 구매 여부 질문\n11/4 업데이트 또는 1주년 방송 발표와의 연관 추정"
+   }
+  },
   "2026-11-02/dcinside/group:키나 · 거래소": {
    "model": "claude-opus-5-5",
    "read": [
@@ -56240,6 +57018,101 @@
     "summary": "신규 날개(토끼날개 · 시즌날개) 출시 관련 글 증가\n11/11 신규 외형 · 상품 출시와 시기 일치\n정복 종료 던전 날개 획득 경로 문의 게시\n날개 외형 적용 방법 · 강화 투력 문의 혼재"
    }
   },
+  "2026-11-09/dcinside/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 11,
+     "date": "2026-11-12",
+     "group": "추천 상위",
+     "recommends": 5,
+     "title": "바바룽 그동안 재밌었고 즐거웠다. 난 섭이전 간다",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3121818"
+    },
+    {
+     "comments": 4,
+     "date": "2026-11-10",
+     "group": "추천 상위",
+     "recommends": 5,
+     "title": "🚨이번 섭이전 💣 지뢰서버 ☢️ 대공개 😵‍💫🚨",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3105205"
+    },
+    {
+     "comments": 36,
+     "date": "2026-11-15",
+     "group": "추천 상위",
+     "recommends": 4,
+     "title": "★★마족 서버이전 예측(성지글)",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3132386"
+    },
+    {
+     "comments": 0,
+     "date": "2026-11-09",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "마족 서버이전 추천좀",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3102489"
+    },
+    {
+     "comments": 1,
+     "date": "2026-11-15",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "[재업] 천마서버이전투표 참고용",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3132640"
+    },
+    {
+     "comments": 10,
+     "date": "2026-11-09",
+     "group": "무작위",
+     "recommends": 2,
+     "title": "천족 기준 개인적으로 서버이전 추천 서버 종합",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3102838"
+    }
+   ],
+   "read_at": "2026-11-24T10:30:54+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 11/11(수) 업데이트 노트 (수정 11/14 09:16)",
+      "hypothesis": "무료 서버 이전·섭통 없음 공지 이후 이동 서버 선택 논의 증가 추정"
+     },
+     {
+      "event": "[안내] AION2 깜짝 퍼플 라이브 방송 안내",
+      "hypothesis": "방송 중 서버 이전 관련 안내 가능성, 본문 근거 없음"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 서버 티어 예측·이탈 사유 등 구체 분석 중심, 무작위 글은 추천 요청·투표 링크 등 단순 정보 요청 중심",
+    "subissues": [
+     {
+      "count": 2,
+      "name": "인기 서버 쏠림 및 선착순 마감 예측",
+      "quote": "평균만 가도 전부 다 1초컷 날 것으로 예상",
+      "quote_post": 3
+     },
+     {
+      "count": 2,
+      "name": "매칭 기준 지뢰 서버 지목",
+      "quote": "조만간 네몬 이스할겐한테 유린당할 서버들",
+      "quote_post": 2
+     },
+     {
+      "count": 1,
+      "name": "서버 내 레기온 갈등에 따른 이탈",
+      "quote": "난 이번 섭이전으로 바바룽떠난다",
+      "quote_post": 1
+     },
+     {
+      "count": 3,
+      "name": "진영별 이전 서버 추천 요청",
+      "quote": "",
+      "quote_post": null
+     }
+    ],
+    "summary": "무료 서버 이전 시행 앞두고 이동 서버 선택 논의 증가\n인기 서버 티어 예측, 지뢰 서버 지목 등 추천 글 다수 게시\n바바룽 등 인구 유출 서버 이용자의 이전 결심 글 게시\n서버 매칭 상대에 따른 유불리 판단이 선택 기준"
+   }
+  },
   "2026-11-09/dcinside/group:아르카나": {
    "model": "claude-opus-5-5",
    "read": [
@@ -58037,6 +58910,107 @@
     "summary": "던전 보스 선행 진입으로 전리품 기회 박탈 사례 비판 글 최다 추천\n커뮤니티 내 불평 이용자·WoW 이용자 대상 비판 글 다수 게시\n채팅 도배 미조치, 루드라 레이드 진입 장벽 관련 글 게시\n이 주 관련 업데이트·사건 없음, 이용자 간 갈등 글 누적이 비율 증가 요인으로 추정"
    }
   },
+  "2026-11-16/arca/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 10,
+     "date": "2026-11-18",
+     "group": "추천 상위",
+     "recommends": 6,
+     "title": "[이스할겐] 서버이전, 복귀, 신규는 어디? \"잘썼어요\"",
+     "url": "https://arca.live/b/aion2/189541037"
+    },
+    {
+     "comments": 7,
+     "date": "2026-11-19",
+     "group": "추천 상위",
+     "recommends": 1,
+     "title": "서버이전 고민중이라면 서버는 메스람타에다 레기온은 망몽호",
+     "url": "https://arca.live/b/aion2/189666254"
+    },
+    {
+     "comments": 2,
+     "date": "2026-11-17",
+     "group": "추천 상위",
+     "recommends": 1,
+     "title": "서버이전, 신뢰도도입, 무스펠쉬움, 밸패, 성역 물변권 추가",
+     "url": "https://arca.live/b/aion2/189445870"
+    },
+    {
+     "comments": 4,
+     "date": "2026-11-18",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "서버이전에 성공하며 닉변까지 공짜로 할수있다니",
+     "url": "https://arca.live/b/aion2/189544669"
+    },
+    {
+     "comments": 2,
+     "date": "2026-11-19",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "이거 서버이전 0/1이면 티켓팅 실패한 거임?",
+     "url": "https://arca.live/b/aion2/189659267"
+    },
+    {
+     "comments": 8,
+     "date": "2026-11-16",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "섭이전 하면 닉이랑 레기온",
+     "url": "https://arca.live/b/aion2/189259229"
+    }
+   ],
+   "read_at": "2026-11-24T10:30:44+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 11/18(수) 서버 이전 상품 안내",
+      "hypothesis": "서버 이전 상품 판매 개시에 따른 신청·문의 글 증가"
+     },
+     {
+      "event": "[안내] 11/18(수) 업데이트 노트",
+      "hypothesis": "업데이트 노트 내 서버 이전 포함으로 관련 언급 증가"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 서버·레기온 유치 홍보, 무작위 글은 신청 실패·닉네임 처리 등 실무 문의 중심",
+    "subissues": [
+     {
+      "count": 2,
+      "name": "이전 대상 서버·레기온 홍보",
+      "quote": "서버이전, 복귀, 신규는 어디?",
+      "quote_post": 1
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 신청 실패(선착순 경쟁)",
+      "quote": "바로 빨간불 뜨던데 말이 됨?",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "이전 시 닉네임 중복·레기온 탈퇴 여부 문의",
+      "quote": "레기온은 탈퇴되는거지??",
+      "quote_post": 6
+     },
+     {
+      "count": 1,
+      "name": "이전 성공 및 무료 닉네임 변경",
+      "quote": "닉변까지 공짜로 할수있다니",
+      "quote_post": 4
+     },
+     {
+      "count": 1,
+      "name": "업데이트 내용 종합 언급(신뢰도, 밸패, 성역 물변권)",
+      "quote": "성역 물변추가로 찬오 제련석 수급좀 나아지려나",
+      "quote_post": 3
+     }
+    ],
+    "summary": "11/18 서버 이전 상품 출시로 이전 관련 글 집중 게시\n추천 상위 글은 서버·레기온 홍보 글 중심\n무작위 글은 이전 신청 실패, 닉네임·레기온 처리 문의\n이전 성공 및 무료 닉변 언급도 일부 존재"
+   }
+  },
   "2026-11-16/arca/signal:복귀 · 신규 표현": {
    "model": "claude-opus-5-5",
    "read": [
@@ -58568,6 +59542,113 @@
     "summary": "새 시즌 날개 출시 관련 글 다수 게시\n시즌날개 획득에 패스 구매 필요 여부 질문\n부캐 날개강화 효율·투력 상승폭 문의\n날개강화 서버 공유 요구 및 토끼날개 외형 호평"
    }
   },
+  "2026-11-16/dcinside/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 7,
+     "date": "2026-11-21",
+     "group": "추천 상위",
+     "recommends": 6,
+     "title": "축 아스펠 여왕벌 드디어 오늘자 9시타임 서버이전 성공",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150503"
+    },
+    {
+     "comments": 1,
+     "date": "2026-11-18",
+     "group": "추천 상위",
+     "recommends": 6,
+     "title": "작업장 서버이전 이벤트 오픈함",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3143119"
+    },
+    {
+     "comments": 33,
+     "date": "2026-11-19",
+     "group": "추천 상위",
+     "recommends": 5,
+     "title": "천족기준 서버이전필수인이유",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3145174"
+    },
+    {
+     "comments": 1,
+     "date": "2026-11-18",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "시엘 섭이전 된사람?? 후기좀남겨바 ㅅㅂ",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3143699"
+    },
+    {
+     "comments": 3,
+     "date": "2026-11-18",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "서버이전왜안됨?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3141594"
+    },
+    {
+     "comments": 2,
+     "date": "2026-11-19",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "형들 서버이전할때 서버이전권 같은거 구매해야할게 있어요 ?",
+     "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3145089"
+    }
+   ],
+   "read_at": "2026-11-24T10:30:35+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 11/18(수) 서버 이전 상품 안내",
+      "hypothesis": "무료 서버 이전 개시(11/18 20시)로 신청·후기·문의 글 증가"
+     },
+     {
+      "event": "[안내] 11/18(수) 업데이트 노트",
+      "hypothesis": "이전 기간 거래소 정산 한도 해제 공지로 작업장 관련 비판 증가"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 작업장 비판·서버 전력 분석·이전 유저 조롱 중심, 무작위 글은 이전 절차·오류 단순 문의 중심",
+    "subissues": [
+     {
+      "count": 1,
+      "name": "거래소 정산 한도 해제의 작업장 수혜 비판",
+      "quote": "작업장'분들'이 신뢰도 때문에 시세 비싼 서버 못 가신다고",
+      "quote_post": 2
+     },
+     {
+      "count": 1,
+      "name": "서버별 인구 변동 및 PvP 전력 약화 분석, 이전 대상 서버 추천",
+      "quote": "서버이전으로 PvP 핵심 전력이 크게 약화",
+      "quote_post": 3
+     },
+     {
+      "count": 1,
+      "name": "향후 서버 통합 시 매칭 구도 변화 우려",
+      "quote": "진짜 중요한 건 서버통합 이후임",
+      "quote_post": 3
+     },
+     {
+      "count": 1,
+      "name": "서버 이전 신청 불가 불만",
+      "quote": "오늘부터라며",
+      "quote_post": 5
+     },
+     {
+      "count": 2,
+      "name": "이전권 구매 필요 여부·이전 후기 문의",
+      "quote": "서버이전권 같은거 구매해야할게 있어요 ?",
+      "quote_post": 6
+     },
+     {
+      "count": 1,
+      "name": "특정 유저·레기온의 이전을 둘러싼 서버 내 갈등",
+      "quote": "랭커들 서버이전시킨 곤듀님",
+      "quote_post": 1
+     }
+    ],
+    "summary": "11/18 무료 서버 이전 시작 이후 관련 글 급증\n이전 신청 불가·이전권 구매 필요 여부 등 문의 게시\n거래소 정산 한도 해제를 작업장 혜택으로 보는 비판\n인구 변동 기반 이전 추천·비추천 서버 분석 게시"
+   }
+  },
   "2026-11-16/dcinside/group:아르카나": {
    "model": "claude-opus-5-5",
    "read": [
@@ -58879,6 +59960,117 @@
      }
     ],
     "summary": "검성 PvP 우위 비판 및 정령 1위 통계 언급 게시\n궁성·권성 상향 요구 게시\n초월1단 기준 직업별 딜량·DPS 기준 논의 증가\n11/18 업데이트 이후 직업 성능 비교 증가 추정"
+   }
+  },
+  "2026-11-16/inven/group:서버 이전": {
+   "model": "claude-opus-5-5",
+   "read": [
+    {
+     "comments": 3,
+     "date": "2026-11-20",
+     "group": "추천 상위",
+     "recommends": 14,
+     "title": "서버 이전 왜 이따위로 만들었는지 이해할 수가 없다",
+     "url": "https://www.inven.co.kr/board/aion2/6388/303298"
+    },
+    {
+     "comments": 8,
+     "date": "2026-11-19",
+     "group": "추천 상위",
+     "recommends": 11,
+     "title": "서버이전 실패한 형들",
+     "url": "https://www.inven.co.kr/board/aion2/6388/302222"
+    },
+    {
+     "comments": 32,
+     "date": "2026-11-20",
+     "group": "추천 상위",
+     "recommends": 8,
+     "title": "서버이전..하다가........게임접음..",
+     "url": "https://www.inven.co.kr/board/aion2/6388/302739"
+    },
+    {
+     "comments": 15,
+     "date": "2026-11-16",
+     "group": "무작위",
+     "recommends": 2,
+     "title": "바카르마 서버이전 가이드 및 레기온 총정리",
+     "url": "https://www.inven.co.kr/board/aion2/6388/300334"
+    },
+    {
+     "comments": 2,
+     "date": "2026-11-18",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "서버이전 질문",
+     "url": "https://www.inven.co.kr/board/aion2/6388/301610"
+    },
+    {
+     "comments": 1,
+     "date": "2026-11-21",
+     "group": "무작위",
+     "recommends": 0,
+     "title": "서버이전 좀 제대로 해봐",
+     "url": "https://www.inven.co.kr/board/aion2/6388/303578"
+    }
+   ],
+   "read_at": "2026-11-24T10:30:23+09:00",
+   "result": {
+    "causes": [
+     {
+      "event": "[안내] 11/18(수) 서버 이전 상품 안내",
+      "hypothesis": "선착순 서버 이전 상품 판매에 따른 신청 실패·불만 게시 증가"
+     },
+     {
+      "event": "[안내] 11/18(수) 서버 이전 상품 안내 (수정 11/19 18:24)",
+      "hypothesis": "상품 안내 수정(11/19) 관련 추가 논의 가능성"
+     },
+     {
+      "event": "[안내] AION2 퍼플 라이브 방송 안내",
+      "hypothesis": "라이브 방송 어뷰징 제재 언급으로 레기온 내 이전 고려 증가"
+     }
+    ],
+    "confidence": "high",
+    "endorsed_vs_common": "추천 상위 글은 선착순 기획 비판과 반박 논쟁 중심, 무작위 글은 절차 문의·이산가족 불만·서버 가이드 중심",
+    "subissues": [
+     {
+      "count": 2,
+      "name": "선착순 방식 서버 이전 기획 비판",
+      "quote": "월급도 선착순 확률로 받아라",
+      "quote_post": 1
+     },
+     {
+      "count": 2,
+      "name": "이전 실패로 인한 지인·레기온 분리 및 이탈 언급",
+      "quote": "이산가족 되어서 다들 접것다 남준아 이거 맞냐",
+      "quote_post": 6
+     },
+     {
+      "count": 1,
+      "name": "본캐 미이전 등 부분 이전으로 인한 게임 중단",
+      "quote": "본케릭은 깡통케릭처럼 덩그러니.. 남게됨",
+      "quote_post": 3
+     },
+     {
+      "count": 1,
+      "name": "신청 화면 사전 설정 불가 등 절차 문의",
+      "quote": "왜 설정조차 못하지?",
+      "quote_post": 5
+     },
+     {
+      "count": 1,
+      "name": "이전 실패 불만에 대한 반박 의견",
+      "quote": "나름 공평하게 기회주는건데 그만 찡찡대라.",
+      "quote_post": 2
+     },
+     {
+      "count": 1,
+      "name": "이전 대상 서버 정보 및 레기온 평가 가이드",
+      "quote": "바카르마 서버이전 가이드 및 레기온 총정리",
+      "quote_post": 4
+     }
+    ],
+    "summary": "11/18 서버 이전 상품 선착순 판매로 이전 언급 급증\n선착순 방식·기획에 대한 강한 비판 게시\n이전 실패로 레기온·지인과 분리('이산가족') 불만\n본캐 미이전 등 부분 이전 사례와 반대 의견 공존"
    }
   },
   "2026-11-16/inven/topic:balance": {
@@ -60487,7 +61679,7 @@
   "steam": [],
   "steam_check": null
  },
- "generated_at": "2026-11-24T09:47:11+09:00",
+ "generated_at": "2026-11-24T10:40:40+09:00",
  "holiday_excluded_weeks": [],
  "holidays": {
   "2026-05-25": [
@@ -60619,6 +61811,27 @@
      "bus",
      "carry",
      "carries"
+    ]
+   },
+   "서버 이전": {
+    "exclude": [],
+    "topic": "operation",
+    "words": [
+     "서버이전",
+     "섭이전",
+     "썹이전",
+     "서버이동",
+     "섭이동",
+     "이전신청",
+     "이전권",
+     "이전컷",
+     "이전마감",
+     "이전실패",
+     "server transfer",
+     "server transfers",
+     "server change",
+     "change server",
+     "switch server"
     ]
    },
    "스티그마": {
@@ -60894,11 +62107,11 @@
    }
   },
   "spend": {
-   "본문 정독": 7.36,
+   "본문 정독": 7.66,
    "분류": 14.26,
    "시범 · 모델 비교": 0.65,
    "주제 설명": 0.43,
-   "판단 초안": 1.76
+   "판단 초안": 3.16
   }
  },
  "metrics": [
@@ -60997,6 +62210,12 @@
    "kind": "group",
    "label": "작업장 · 매크로 언급",
    "topic": "economy"
+  },
+  {
+   "id": "group:서버 이전",
+   "kind": "group",
+   "label": "서버 이전 언급",
+   "topic": "operation"
   },
   {
    "id": "signal:버그 신호",
@@ -63456,6 +64675,84 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 15,
+        "community": "아카라이브",
+        "date": "2026-07-10",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "근데 서버이전 나와도 난 못나갈듯?",
+        "url": "https://arca.live/b/aion2/176463084",
+        "views": 221
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 12,
+        "community": "아카라이브",
+        "date": "2026-07-10",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "AION2 서버 이전 일정 연기 안내",
+        "url": "https://arca.live/b/aion2/176454144",
+        "views": 310
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 11,
+        "community": "아카라이브",
+        "date": "2026-07-11",
+        "pick": "조회",
+        "sentiment": null,
+        "title": "씨발 서버이전 안되면 접을까",
+        "url": "https://arca.live/b/aion2/176568280",
+        "views": 242
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 21,
+        "community": "디시인사이드",
+        "date": "2026-07-11",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "서버이전 시엘은 절대 안풀린다고 글쓴애들",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2686036",
+        "views": 331
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 20,
+        "community": "디시인사이드",
+        "date": "2026-07-12",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "서버이전 진짜 꿀팁줄게",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2688431",
+        "views": 1093
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 11,
+        "community": "디시인사이드",
+        "date": "2026-07-12",
+        "pick": "조회",
+        "sentiment": null,
+        "title": "서버이전은 존나 쉬움 딱정리해줌",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2687533",
+        "views": 1876
+       }
+      ]
+     }
+    ],
     "group:장비 제작": [
      {
       "community": "아카라이브",
@@ -63929,6 +65226,100 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "아이온2 정보 모음",
+        "comments": 13,
+        "community": "인벤",
+        "date": "2026-07-16",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "서버 이전 핵심 요약 정리",
+        "url": "https://www.inven.co.kr/board/aion2/6444/2094",
+        "views": 16313
+       }
+      ]
+     },
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 19,
+        "community": "아카라이브",
+        "date": "2026-07-16",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "[이스할겐] 뉴비는 지금, 서버이전은 22일부터! 길드는 \"잘썼어요\"",
+        "url": "https://arca.live/b/aion2/177023978",
+        "views": 732
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 16,
+        "community": "아카라이브",
+        "date": "2026-07-14",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "[에레슈키갈] 서버이전이 다가오고 있어",
+        "url": "https://arca.live/b/aion2/176794899",
+        "views": 654
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 1,
+        "community": "아카라이브",
+        "date": "2026-07-16",
+        "pick": "조회",
+        "sentiment": null,
+        "title": "AION2 서버 이전 안내 (수정 7/16 22:34)",
+        "url": "https://arca.live/b/aion2/177088784",
+        "views": 253
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 23,
+        "community": "디시인사이드",
+        "date": "2026-07-19",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "섭이전 루미엘 아스펠 바바룽중 ㅇㄷ?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2715574",
+        "views": 585
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 22,
+        "community": "디시인사이드",
+        "date": "2026-07-15",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "이슈타르 서버이전 생각하시는분들 참고",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2699071",
+        "views": 771
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 14,
+        "community": "디시인사이드",
+        "date": "2026-07-19",
+        "pick": "조회",
+        "sentiment": null,
+        "title": "서버 티어표 (서버 이전 참고용)",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2715781",
+        "views": 2946
+       }
+      ]
+     }
+    ],
     "group:외형 · 의상": [
      {
       "community": "아카라이브",
@@ -64382,6 +65773,100 @@
         "title": "게임이 커다란 버스 본부 공장이 됐음",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2748223",
         "views": 8666
+       }
+      ]
+     }
+    ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "아이온2 정보 모음",
+        "comments": 1,
+        "community": "인벤",
+        "date": "2026-07-22",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버 이전 세팅은 20시 오픈 전 미리 해두세요",
+        "url": "https://www.inven.co.kr/board/aion2/6444/2125",
+        "views": 5625
+       }
+      ]
+     },
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 42,
+        "community": "아카라이브",
+        "date": "2026-07-21",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "[이스할겐] 그래서 서버이전 어디로 함? \"잘썼어요\"",
+        "url": "https://arca.live/b/aion2/177498988",
+        "views": 1007
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 31,
+        "community": "아카라이브",
+        "date": "2026-07-20",
+        "pick": "댓글",
+        "sentiment": null,
+        "title": "마족) 서버 이전 대비 서버별 특징 알려주세여",
+        "url": "https://arca.live/b/aion2/177472222",
+        "views": 276
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 6,
+        "community": "아카라이브",
+        "date": "2026-07-21",
+        "pick": "조회",
+        "sentiment": null,
+        "title": "서버 이전에 참고하세여 서버별 아티필드쟁 및 특징 정리",
+        "url": "https://arca.live/b/aion2/177561163",
+        "views": 771
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 129,
+        "community": "디시인사이드",
+        "date": "2026-07-23",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "아씨발ㅋㅋㅋㅋㅋㅋㅋㅋ서버이전 본캐 놔두고 부캐만 4개 옮겨짐ㅋㅋㅋㅋㅋㅋㅋ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2739681",
+        "views": 14288
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 100,
+        "community": "디시인사이드",
+        "date": "2026-07-23",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 전입전출 최대 30명~ 50명 예상됨",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2739978",
+        "views": 9619
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 76,
+        "community": "디시인사이드",
+        "date": "2026-07-22",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "에라이 모르겠다 섭이전 0.1초컷알려줌",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2735277",
+        "views": 16300
        }
       ]
      }
@@ -66452,6 +67937,84 @@
     ]
    },
    "2026-08-24": {
+    "group:서버 이전": [
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 21,
+        "community": "아카라이브",
+        "date": "2026-08-26",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 준비해야겠네",
+        "url": "https://arca.live/b/aion2/181072672",
+        "views": 204
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 16,
+        "community": "아카라이브",
+        "date": "2026-08-30",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전은 섭주가 예쁜 [에레슈키갈] 챈기온은 [땃지]",
+        "url": "https://arca.live/b/aion2/181503214",
+        "views": 210
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 5,
+        "community": "아카라이브",
+        "date": "2026-08-25",
+        "pick": "조회",
+        "sentiment": "neg",
+        "title": "[이스할겐] 서버이전은 할~겐! 길드는 \"잘썼어요\"",
+        "url": "https://arca.live/b/aion2/180983889",
+        "views": 841
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 127,
+        "community": "디시인사이드",
+        "date": "2026-08-29",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "서버 이전 막혀서 5명 접음 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2884464",
+        "views": 13769
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 60,
+        "community": "디시인사이드",
+        "date": "2026-08-30",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "오케이 섭이전 정리완 ※컴까기단 필독※",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2885341",
+        "views": 325
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 18,
+        "community": "디시인사이드",
+        "date": "2026-08-28",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "[ 서버 티어표 ] - 서버이전 중간정산 최신",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=2881585",
+        "views": 2230
+       }
+      ]
+     }
+    ],
     "posts": [
      {
       "community": "인벤",
@@ -71650,6 +73213,84 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "자유 게시판",
+        "comments": 13,
+        "community": "인벤",
+        "date": "2026-10-29",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "시골섭 기준 먼저 섭이전권 줘라",
+        "url": "https://www.inven.co.kr/board/aion2/6388/289047",
+        "views": 434
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 1,
+        "community": "인벤",
+        "date": "2026-10-29",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "PVE서버 하나 만들어주고 이전권줘라",
+        "url": "https://www.inven.co.kr/board/aion2/6388/289155",
+        "views": 325
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 0,
+        "community": "인벤",
+        "date": "2026-10-27",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "차라리 서버이전 이런거 걸어두면",
+        "url": "https://www.inven.co.kr/board/aion2/6388/288467",
+        "views": 519
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 14,
+        "community": "디시인사이드",
+        "date": "2026-10-26",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 언제 열리나",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3070537",
+        "views": 343
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 11,
+        "community": "디시인사이드",
+        "date": "2026-11-01",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "근데 좆시골섭 형들은 왜 서버이전안했음?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3081291",
+        "views": 351
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 9,
+        "community": "디시인사이드",
+        "date": "2026-10-30",
+        "pick": "조회",
+        "sentiment": "neg",
+        "title": "서버이전 한번 더 열리면 네몬이 망할수밖에 없는 이유",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3079097",
+        "views": 883
+       }
+      ]
+     }
+    ],
     "group:스티그마": [
      {
       "community": "인벤",
@@ -75129,6 +76770,111 @@
         "title": "딜버스 ㄹㅇ 오랜만에 타보는데 이거",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3082667",
         "views": 668
+       }
+      ]
+     }
+    ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "자유 게시판",
+        "comments": 3,
+        "community": "인벤",
+        "date": "2026-11-08",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "서버이전은 씨발 시골섭 멸망하란소리지 ㅋㅋㅋ",
+        "url": "https://www.inven.co.kr/board/aion2/6388/292910",
+        "views": 783
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 3,
+        "community": "인벤",
+        "date": "2026-11-08",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "이번 서버이전도 천족은 천족만 가능하겠죠?",
+        "url": "https://www.inven.co.kr/board/aion2/6388/293237",
+        "views": 604
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 1,
+        "community": "인벤",
+        "date": "2026-11-08",
+        "pick": "조회",
+        "sentiment": "neg",
+        "title": "11월 18일 무료서버이전이 PVP 유져 탈출 마지막이될꺼라는말이 나왔다...",
+        "url": "https://www.inven.co.kr/board/aion2/6388/293247",
+        "views": 1075
+       }
+      ]
+     },
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 3,
+        "community": "아카라이브",
+        "date": "2026-11-07",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 준비하자 애들아",
+        "url": "https://arca.live/b/aion2/188324980",
+        "views": 107
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 2,
+        "community": "아카라이브",
+        "date": "2026-11-05",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이동하면 닉변하나보냉",
+        "url": "https://arca.live/b/aion2/188152803",
+        "views": 101
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 21,
+        "community": "디시인사이드",
+        "date": "2026-11-08",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "천족 서버이전 순위 추천",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3100167",
+        "views": 1434
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 13,
+        "community": "디시인사이드",
+        "date": "2026-11-08",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "서버이전으로 서버가 박살난다고들 하는데",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3100356",
+        "views": 486
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 4,
+        "community": "디시인사이드",
+        "date": "2026-11-08",
+        "pick": "조회",
+        "sentiment": "pos",
+        "title": "마족 서버이전 꿀팁준다",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3098961",
+        "views": 772
        }
       ]
      }
@@ -78881,6 +80627,122 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "자유 게시판",
+        "comments": 14,
+        "community": "인벤",
+        "date": "2026-11-10",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 할때 하우징은???",
+        "url": "https://www.inven.co.kr/board/aion2/6388/294553",
+        "views": 454
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 10,
+        "community": "인벤",
+        "date": "2026-11-10",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "서버이전 뇌피셜 해봄.",
+        "url": "https://www.inven.co.kr/board/aion2/6388/294556",
+        "views": 661
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 7,
+        "community": "인벤",
+        "date": "2026-11-10",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "서버이전할때 참고해라",
+        "url": "https://www.inven.co.kr/board/aion2/6388/294513",
+        "views": 733
+       }
+      ]
+     },
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 22,
+        "community": "아카라이브",
+        "date": "2026-11-09",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "섭이전 할까말까..",
+        "url": "https://arca.live/b/aion2/188577197",
+        "views": 178
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 17,
+        "community": "아카라이브",
+        "date": "2026-11-14",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "이번 서버이전에 자신의 닉네임 뒤에 '암컷' 낙인을 붙이고 싶다면 여기로",
+        "url": "https://arca.live/b/aion2/189109417",
+        "views": 166
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 6,
+        "community": "아카라이브",
+        "date": "2026-11-09",
+        "pick": "조회",
+        "sentiment": "pos",
+        "title": "무료 섭이전이라 챈기온 있는곳 가고싶은데",
+        "url": "https://arca.live/b/aion2/188578110",
+        "views": 149
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 36,
+        "community": "디시인사이드",
+        "date": "2026-11-15",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "★★마족 서버이전 예측(성지글)",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3132386",
+        "views": 1753
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 30,
+        "community": "디시인사이드",
+        "date": "2026-11-09",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "형들,,,현 바카인데,,섭이전 추천좀해주세여...",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3102919",
+        "views": 597
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 2,
+        "community": "디시인사이드",
+        "date": "2026-11-14",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "[천족서버이전투표 참고용] 당신의 종착지는?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3132170",
+        "views": 1179
+       }
+      ]
+     }
+    ],
     "group:스티그마": [
      {
       "community": "인벤",
@@ -81535,14 +83397,14 @@
       "posts": [
        {
         "board": "자유 게시판",
-        "comments": 24,
+        "comments": 25,
         "community": "인벤",
         "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neg",
         "title": "각인키나 사용좀 편하게해달라했더니 작업장취급해버리네",
         "url": "https://www.inven.co.kr/board/aion2/6388/303681",
-        "views": 1472
+        "views": 1989
        },
        {
         "board": "자유 게시판",
@@ -81591,7 +83453,7 @@
         "sentiment": "neu",
         "title": "썩은물들 도움좀 (델트라스의 인장 영혼조율)",
         "url": "https://arca.live/b/aion2/189916913",
-        "views": 84
+        "views": 93
        },
        {
         "board": "아이온2 채널",
@@ -81629,7 +83491,7 @@
         "sentiment": "neu",
         "title": "헐 캐릭 3개가 800이상이면 초월 15판 비각인키나받음?",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3151136",
-        "views": 323
+        "views": 349
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -81718,7 +83580,7 @@
         "sentiment": "neu",
         "title": "영웅계승이제 2천이면 계승하는게더싼가?",
         "url": "https://arca.live/b/aion2/189791565",
-        "views": 146
+        "views": 147
        }
       ]
      },
@@ -81756,7 +83618,7 @@
         "sentiment": "neu",
         "title": "혈투 돌파법 정리",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150665",
-        "views": 1919
+        "views": 2453
        }
       ]
      }
@@ -81767,14 +83629,14 @@
       "posts": [
        {
         "board": "자유 게시판",
-        "comments": 21,
+        "comments": 20,
         "community": "인벤",
         "date": "2026-11-21",
         "pick": "댓글",
         "sentiment": "neg",
         "title": "이미 큐나가치 못돌릴거 아니까 막나가는거임",
         "url": "https://www.inven.co.kr/board/aion2/6388/303343",
-        "views": 4139
+        "views": 4320
        },
        {
         "board": "자유 게시판",
@@ -81834,7 +83696,7 @@
         "sentiment": "neu",
         "title": "큐나로 이쁜 커마 파는사람 손",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149225",
-        "views": 807
+        "views": 810
        }
       ]
      }
@@ -81852,7 +83714,7 @@
         "sentiment": "neu",
         "title": "하위던전 날개는 시련보상으로 풀때 됐지않냐?",
         "url": "https://www.inven.co.kr/board/aion2/6388/303604",
-        "views": 683
+        "views": 726
        },
        {
         "board": "자유 게시판",
@@ -81990,7 +83852,7 @@
         "sentiment": "neg",
         "title": "야이시발 신석합성 미친거아니냐",
         "url": "https://www.inven.co.kr/board/aion2/6388/303477",
-        "views": 524
+        "views": 552
        }
       ]
      },
@@ -82033,7 +83895,7 @@
         "sentiment": "neu",
         "title": "님들 원래 마석작 배럭캐가 대신 가능했음?",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149515",
-        "views": 386
+        "views": 392
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -82122,7 +83984,7 @@
         "sentiment": "neu",
         "title": "아 맴버십 끝났다",
         "url": "https://arca.live/b/aion2/189923642",
-        "views": 78
+        "views": 93
        },
        {
         "board": "아이온2 채널",
@@ -82211,7 +84073,7 @@
         "sentiment": "unk",
         "title": "나 지금 버스 안인데,",
         "url": "https://www.inven.co.kr/board/aion2/6388/303632",
-        "views": 793
+        "views": 860
        }
       ]
      },
@@ -82281,6 +84143,122 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "인벤",
+      "posts": [
+       {
+        "board": "자유 게시판",
+        "comments": 32,
+        "community": "인벤",
+        "date": "2026-11-20",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "서버이전..하다가........게임접음..",
+        "url": "https://www.inven.co.kr/board/aion2/6388/302739",
+        "views": 4148
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 29,
+        "community": "인벤",
+        "date": "2026-11-20",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "무료 서버 이전 수용 인원 대폭 확대를 요청합니다",
+        "url": "https://www.inven.co.kr/board/aion2/6388/302725",
+        "views": 2567
+       },
+       {
+        "board": "자유 게시판",
+        "comments": 3,
+        "community": "인벤",
+        "date": "2026-11-20",
+        "pick": "조회",
+        "sentiment": "neg",
+        "title": "서버 이전 왜 이따위로 만들었는지 이해할 수가 없다",
+        "url": "https://www.inven.co.kr/board/aion2/6388/303298",
+        "views": 2873
+       }
+      ]
+     },
+     {
+      "community": "아카라이브",
+      "posts": [
+       {
+        "board": "아이온2 채널",
+        "comments": 16,
+        "community": "아카라이브",
+        "date": "2026-11-16",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "[에레슈키갈] 땃지 뉴비/섭이전 환영",
+        "url": "https://arca.live/b/aion2/189260318",
+        "views": 175
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 14,
+        "community": "아카라이브",
+        "date": "2026-11-16",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "시골섭인 아붕이들 섭이전 할거야?",
+        "url": "https://arca.live/b/aion2/189295516",
+        "views": 132
+       },
+       {
+        "board": "아이온2 채널",
+        "comments": 10,
+        "community": "아카라이브",
+        "date": "2026-11-18",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "[이스할겐] 서버이전, 복귀, 신규는 어디? \"잘썼어요\"",
+        "url": "https://arca.live/b/aion2/189541037",
+        "views": 316
+       }
+      ]
+     },
+     {
+      "community": "디시인사이드",
+      "posts": [
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 87,
+        "community": "디시인사이드",
+        "date": "2026-11-21",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "바카 서버이전 잘못온거같다........",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150538",
+        "views": 1162
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 56,
+        "community": "디시인사이드",
+        "date": "2026-11-20",
+        "pick": "댓글",
+        "sentiment": "unk",
+        "title": "네자vs바카 서버이전시...",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3147240",
+        "views": 609
+       },
+       {
+        "board": "아이온2 마이너 갤러리",
+        "comments": 16,
+        "community": "디시인사이드",
+        "date": "2026-11-19",
+        "pick": "조회",
+        "sentiment": "neu",
+        "title": "[서버이전 1일차 인구수변화통계 참고용]",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3144750",
+        "views": 4124
+       }
+      ]
+     }
+    ],
     "group:스티그마": [
      {
       "community": "인벤",
@@ -82343,7 +84321,7 @@
         "sentiment": "neu",
         "title": "스티그마랑 용암템이 차이 크네요",
         "url": "https://arca.live/b/aion2/189923877",
-        "views": 126
+        "views": 145
        },
        {
         "board": "아이온2 채널",
@@ -82413,15 +84391,15 @@
         "views": 4141
        },
        {
-        "board": "자유 게시판",
+        "board": "아이온2 정보 모음",
         "comments": 8,
         "community": "인벤",
-        "date": "2026-11-16",
+        "date": "2026-11-21",
         "pick": "댓글",
         "sentiment": "neu",
-        "title": "새로 베럭 늘린거 아르카나 어케맞추지 ㅋㅋㅋㅋ",
-        "url": "https://www.inven.co.kr/board/aion2/6388/300498",
-        "views": 829
+        "title": "[AtwoLab] 아르카나-주신의기원 시뮬레이터",
+        "url": "https://www.inven.co.kr/board/aion2/6444/2432",
+        "views": 2066
        },
        {
         "board": "아이온2 정보 모음",
@@ -82548,7 +84526,7 @@
         "sentiment": "neu",
         "title": "이거 살성무기외형 뭐에요???",
         "url": "https://www.inven.co.kr/board/aion2/6388/303521",
-        "views": 706
+        "views": 737
        }
       ]
      },
@@ -82613,7 +84591,7 @@
         "sentiment": "neu",
         "title": "ㅎㅎ 신규의상 두개",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149832",
-        "views": 700
+        "views": 764
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -82624,7 +84602,7 @@
         "sentiment": "neu",
         "title": "다음주 신규의상 나와야함",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149825",
-        "views": 535
+        "views": 583
        }
       ]
      }
@@ -82635,14 +84613,14 @@
       "posts": [
        {
         "board": "자유 게시판",
-        "comments": 24,
+        "comments": 25,
         "community": "인벤",
         "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neg",
         "title": "각인키나 사용좀 편하게해달라했더니 작업장취급해버리네",
         "url": "https://www.inven.co.kr/board/aion2/6388/303681",
-        "views": 1472
+        "views": 1989
        },
        {
         "board": "자유 게시판",
@@ -82653,7 +84631,7 @@
         "sentiment": "neg",
         "title": "작업장 그대로네 각인키나 세탁루트 없애야할거같은데",
         "url": "https://www.inven.co.kr/board/aion2/6388/303630",
-        "views": 849
+        "views": 916
        },
        {
         "board": "자유 게시판",
@@ -82729,7 +84707,7 @@
         "sentiment": "pos",
         "title": "모바일이 없으니 봇이 적을거같은 글로벌 근황",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3151476",
-        "views": 311
+        "views": 335
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -82796,7 +84774,7 @@
         "sentiment": "neu",
         "title": "방어구 장신구 다 제작으로 바꿔야하나",
         "url": "https://arca.live/b/aion2/189821183",
-        "views": 89
+        "views": 90
        },
        {
         "board": "아이온2 채널",
@@ -82889,14 +84867,14 @@
        },
        {
         "board": "자유 게시판",
-        "comments": 8,
+        "comments": 9,
         "community": "인벤",
-        "date": "2026-11-20",
+        "date": "2026-11-22",
         "pick": "조회",
-        "sentiment": "unk",
-        "title": "20 펜던트 !!!",
-        "url": "https://www.inven.co.kr/board/aion2/6388/303299",
-        "views": 1222
+        "sentiment": "neu",
+        "title": "펜던트 28억 들었다",
+        "url": "https://www.inven.co.kr/board/aion2/6388/303783",
+        "views": 1444
        }
       ]
      },
@@ -82912,7 +84890,7 @@
         "sentiment": "neu",
         "title": "썩은물들 도움좀 (델트라스의 인장 영혼조율)",
         "url": "https://arca.live/b/aion2/189916913",
-        "views": 84
+        "views": 93
        },
        {
         "board": "아이온2 채널",
@@ -82990,18 +84968,18 @@
         "sentiment": "neu",
         "title": "키나벌이 준비 ON",
         "url": "https://www.inven.co.kr/board/aion2/6388/303653",
-        "views": 3045
+        "views": 3623
        },
        {
         "board": "자유 게시판",
-        "comments": 24,
+        "comments": 25,
         "community": "인벤",
         "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neg",
         "title": "각인키나 사용좀 편하게해달라했더니 작업장취급해버리네",
         "url": "https://www.inven.co.kr/board/aion2/6388/303681",
-        "views": 1472
+        "views": 1989
        },
        {
         "board": "자유 게시판",
@@ -83144,7 +85122,7 @@
         "sentiment": "pos",
         "title": "이번 패스펫 귀여운듯",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150074",
-        "views": 296
+        "views": 309
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -83166,7 +85144,7 @@
         "sentiment": "neu",
         "title": "펫이해도 지금 올강타 최대공이 맞냐?",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149245",
-        "views": 543
+        "views": 578
        }
       ]
      }
@@ -83244,7 +85222,7 @@
         "sentiment": "neg",
         "title": "아이온2 삭제...",
         "url": "https://arca.live/b/aion2/189913235",
-        "views": 309
+        "views": 515
        }
       ]
      },
@@ -83260,7 +85238,7 @@
         "sentiment": "neg",
         "title": "매칭 시엘 이스라펠붙이면 감 ㅈㄴ없는거지",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150551",
-        "views": 534
+        "views": 552
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -83376,7 +85354,7 @@
         "sentiment": "neg",
         "title": "매칭 시엘 이스라펠붙이면 감 ㅈㄴ없는거지",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150551",
-        "views": 534
+        "views": 552
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -83507,14 +85485,14 @@
        },
        {
         "board": "아이온2 마이너 갤러리",
-        "comments": 16,
+        "comments": 8,
         "community": "디시인사이드",
-        "date": "2026-11-18",
+        "date": "2026-11-22",
         "pick": "조회",
         "sentiment": "neg",
-        "title": "무쉬움은 아무리 생각해도 설계오류인게",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3144155",
-        "views": 439
+        "title": "서버이전 버그났음",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3152147",
+        "views": 520
        }
       ]
      }
@@ -83581,7 +85559,7 @@
         "sentiment": "neu",
         "title": "챈에서 자체적으로 뉴비 학원팟이라도 운영해야하나 싶음",
         "url": "https://arca.live/b/aion2/189915828",
-        "views": 216
+        "views": 233
        },
        {
         "board": "아이온2 채널",
@@ -83708,7 +85686,7 @@
         "sentiment": "neg",
         "title": "역대급 접는 사람많네 ㅋㅋ",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3148918",
-        "views": 538
+        "views": 541
        }
       ]
      }
@@ -83786,7 +85764,7 @@
         "sentiment": "unk",
         "title": "권성",
         "url": "https://arca.live/b/aion2/189819006",
-        "views": 386
+        "views": 457
        }
       ]
      },
@@ -83802,7 +85780,7 @@
         "sentiment": "neg",
         "title": "매칭 시엘 이스라펠붙이면 감 ㅈㄴ없는거지",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150551",
-        "views": 534
+        "views": 552
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -83891,7 +85869,7 @@
         "sentiment": "neg",
         "title": "아이온2 이거 안됨? 진짜 안됨? 왜 안됨?",
         "url": "https://arca.live/b/aion2/189945823",
-        "views": 229
+        "views": 483
        },
        {
         "board": "아이온2 채널",
@@ -83996,7 +85974,7 @@
         "sentiment": "unk",
         "title": "복귀하고나서 후기",
         "url": "https://arca.live/b/aion2/189936430",
-        "views": 146
+        "views": 180
        },
        {
         "board": "아이온2 채널",
@@ -84007,7 +85985,7 @@
         "sentiment": "neg",
         "title": "아이온2 삭제...",
         "url": "https://arca.live/b/aion2/189913235",
-        "views": 309
+        "views": 515
        },
        {
         "board": "아이온2 채널",
@@ -84034,7 +86012,7 @@
         "sentiment": "neu",
         "title": "영포티들은 게임 언제접나요",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149565",
-        "views": 506
+        "views": 513
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -84150,7 +86128,7 @@
         "sentiment": "neg",
         "title": "남준이형 무스펠 쉬움좀 바꿔",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3151055",
-        "views": 457
+        "views": 510
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -84190,18 +86168,18 @@
         "sentiment": "neu",
         "title": "키나벌이 준비 ON",
         "url": "https://www.inven.co.kr/board/aion2/6388/303653",
-        "views": 3045
+        "views": 3623
        },
        {
         "board": "자유 게시판",
         "comments": 25,
         "community": "인벤",
-        "date": "2026-11-18",
+        "date": "2026-11-22",
         "pick": "댓글",
-        "sentiment": "neu",
-        "title": "엄거래 막힌거임?",
-        "url": "https://www.inven.co.kr/board/aion2/6388/301375",
-        "views": 1715
+        "sentiment": "neg",
+        "title": "각인키나 사용좀 편하게해달라했더니 작업장취급해버리네",
+        "url": "https://www.inven.co.kr/board/aion2/6388/303681",
+        "views": 1989
        },
        {
         "board": "자유 게시판",
@@ -84397,14 +86375,14 @@
        },
        {
         "board": "아이온2 마이너 갤러리",
-        "comments": 31,
+        "comments": 33,
         "community": "디시인사이드",
         "date": "2026-11-22",
         "pick": "조회",
         "sentiment": "neu",
         "title": "피콜로 수정평가좀",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3151621",
-        "views": 3035
+        "views": 5248
        }
       ]
      }
@@ -84437,14 +86415,14 @@
        },
        {
         "board": "자유 게시판",
-        "comments": 21,
+        "comments": 20,
         "community": "인벤",
         "date": "2026-11-21",
         "pick": "조회",
         "sentiment": "neg",
         "title": "이미 큐나가치 못돌릴거 아니까 막나가는거임",
         "url": "https://www.inven.co.kr/board/aion2/6388/303343",
-        "views": 4139
+        "views": 4320
        }
       ]
      },
@@ -84509,7 +86487,7 @@
         "sentiment": "neg",
         "title": "ㄹㅇ 피시방에서7판마다 천장치는거 말안돼네진짜로",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149889",
-        "views": 388
+        "views": 399
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -84618,14 +86596,14 @@
        },
        {
         "board": "아이온2 마이너 갤러리",
-        "comments": 86,
+        "comments": 87,
         "community": "디시인사이드",
         "date": "2026-11-21",
         "pick": "댓글",
         "sentiment": "neg",
         "title": "바카 서버이전 잘못온거같다........",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150538",
-        "views": 1128
+        "views": 1162
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -84647,14 +86625,14 @@
       "posts": [
        {
         "board": "자유 게시판",
-        "comments": 86,
+        "comments": 121,
         "community": "인벤",
         "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neu",
-        "title": "[9일차 퀴즈] 푸른 숨의 섬에 잠들어 있던 생명체를 깨운 광석은?",
+        "title": "[종료] 푸른 숨의 섬에 잠들어 있던 생명체를 깨운 광석은?",
         "url": "https://www.inven.co.kr/board/aion2/6388/303714",
-        "views": 437
+        "views": 654
        },
        {
         "board": "자유 게시판",
@@ -84781,7 +86759,7 @@
         "sentiment": "neu",
         "title": "검성유저만 보세요",
         "url": "https://www.inven.co.kr/board/aion2/6388/303486",
-        "views": 2801
+        "views": 3002
        },
        {
         "board": "자유 게시판",
@@ -84846,7 +86824,7 @@
         "sentiment": "neu",
         "title": "트리 이전으로 사람도 많이가고",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149535",
-        "views": 733
+        "views": 744
        },
        {
         "board": "아이온2 마이너 갤러리",
@@ -86212,6 +88190,35 @@
     ]
    },
    "2026-10-12": {
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 50,
+        "community": "레딧",
+        "date": "2026-10-14",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "\"Server Transfer\" - LMAO",
+        "url": "https://www.reddit.com/r/aion2/comments/1x5pamb/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
+        "comments": 48,
+        "community": "레딧",
+        "date": "2026-10-14",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "NCsoft lied about EA server transfers – we still can't play with our friends",
+        "url": "https://www.reddit.com/r/aion2/comments/1x5tbw2/",
+        "views": null
+       }
+      ]
+     }
+    ],
     "group:작업장 · 매크로": [
      {
       "community": "레딧",
@@ -86678,6 +88685,35 @@
     ]
    },
    "2026-10-19": {
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 120,
+        "community": "레딧",
+        "date": "2026-10-22",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "This server transfer is a shame",
+        "url": "https://www.reddit.com/r/aion2/comments/1xbr8nh/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
+        "comments": 50,
+        "community": "레딧",
+        "date": "2026-10-23",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "Server transfers kill my server more and can't leave",
+        "url": "https://www.reddit.com/r/aion2/comments/1xd3grl/",
+        "views": null
+       }
+      ]
+     }
+    ],
     "group:장비 제작": [
      {
       "community": "레딧",
@@ -87128,6 +89164,35 @@
         "sentiment": "neu",
         "title": "So when I transfer craft my weapon, what does and what does not carry over?",
         "url": "https://www.reddit.com/r/aion2/comments/1xfu9dw/",
+        "views": null
+       }
+      ]
+     }
+    ],
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 37,
+        "community": "레딧",
+        "date": "2026-10-26",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "Aion 2 baiting players with \"Start on another server and transfer on Oct 14 annoucement\" only to have a few seconds server transfer windows is just stupid and unacceptable for an mmorpg",
+        "url": "https://www.reddit.com/r/aion2/comments/1xf51ms/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
+        "comments": 18,
+        "community": "레딧",
+        "date": "2026-11-01",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "Server Transfer Last week gutted my the Server im playing.",
+        "url": "https://www.reddit.com/r/aion2/comments/1xkvsyx/",
         "views": null
        }
       ]
@@ -88110,6 +90175,35 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 9,
+        "community": "레딧",
+        "date": "2026-11-02",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "Server Transfer",
+        "url": "https://www.reddit.com/r/aion2/comments/1xl90cf/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
+        "comments": 4,
+        "community": "레딧",
+        "date": "2026-11-03",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "Next server transfer ?",
+        "url": "https://www.reddit.com/r/aion2/comments/1xm9t8b/",
+        "views": null
+       }
+      ]
+     }
+    ],
     "group:스티그마": [
      {
       "community": "레딧",
@@ -89069,6 +91163,24 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 6,
+        "community": "레딧",
+        "date": "2026-11-10",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "When is the next server transfer window? Do we know?",
+        "url": "https://www.reddit.com/r/aion2/comments/1xsbtbv/",
+        "views": null
+       }
+      ]
+     }
+    ],
     "group:스티그마": [
      {
       "community": "레딧",
@@ -90006,6 +92118,35 @@
       ]
      }
     ],
+    "group:서버 이전": [
+     {
+      "community": "레딧",
+      "posts": [
+       {
+        "board": "r/aion2",
+        "comments": 4,
+        "community": "레딧",
+        "date": "2026-11-21",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "Next server transfer period",
+        "url": "https://www.reddit.com/r/aion2/comments/1y19lom/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
+        "comments": 2,
+        "community": "레딧",
+        "date": "2026-11-18",
+        "pick": "댓글",
+        "sentiment": "neu",
+        "title": "AION 2 KR SERVER TRANSFER",
+        "url": "https://www.reddit.com/r/aion2/comments/1xzamvx/",
+        "views": null
+       }
+      ]
+     }
+    ],
     "group:아르카나": [
      {
       "community": "레딧",
@@ -90146,7 +92287,7 @@
       "posts": [
        {
         "board": "r/aion2",
-        "comments": 187,
+        "comments": 190,
         "community": "레딧",
         "date": "2026-11-21",
         "pick": "댓글",
@@ -90320,6 +92461,17 @@
       "posts": [
        {
         "board": "r/aion2",
+        "comments": 276,
+        "community": "레딧",
+        "date": "2026-11-22",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "Open Letter to NCSoft: Why global players are quitting and how to save Aion 2 for Season 2",
+        "url": "https://www.reddit.com/r/aion2/comments/1y2ojyd/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
         "comments": 230,
         "community": "레딧",
         "date": "2026-11-18",
@@ -90327,17 +92479,6 @@
         "sentiment": "neg",
         "title": "Everyone quitting the game",
         "url": "https://www.reddit.com/r/aion2/comments/1xyyrk2/",
-        "views": null
-       },
-       {
-        "board": "r/aion2",
-        "comments": 106,
-        "community": "레딧",
-        "date": "2026-11-17",
-        "pick": "댓글",
-        "sentiment": "neg",
-        "title": "Can see why Ludra makes people quit game but thats not the only reason",
-        "url": "https://www.reddit.com/r/aion2/comments/1xyjc4t/",
         "views": null
        }
       ]
@@ -90418,13 +92559,13 @@
        },
        {
         "board": "r/aion2",
-        "comments": 230,
+        "comments": 276,
         "community": "레딧",
-        "date": "2026-11-18",
+        "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neg",
-        "title": "Everyone quitting the game",
-        "url": "https://www.reddit.com/r/aion2/comments/1xyyrk2/",
+        "title": "Open Letter to NCSoft: Why global players are quitting and how to save Aion 2 for Season 2",
+        "url": "https://www.reddit.com/r/aion2/comments/1y2ojyd/",
         "views": null
        }
       ]
@@ -90581,7 +92722,7 @@
       "posts": [
        {
         "board": "r/aion2",
-        "comments": 191,
+        "comments": 212,
         "community": "레딧",
         "date": "2026-11-22",
         "pick": "댓글",
@@ -90668,6 +92809,17 @@
       "posts": [
        {
         "board": "r/aion2",
+        "comments": 276,
+        "community": "레딧",
+        "date": "2026-11-22",
+        "pick": "댓글",
+        "sentiment": "neg",
+        "title": "Open Letter to NCSoft: Why global players are quitting and how to save Aion 2 for Season 2",
+        "url": "https://www.reddit.com/r/aion2/comments/1y2ojyd/",
+        "views": null
+       },
+       {
+        "board": "r/aion2",
         "comments": 230,
         "community": "레딧",
         "date": "2026-11-18",
@@ -90675,17 +92827,6 @@
         "sentiment": "neg",
         "title": "Everyone quitting the game",
         "url": "https://www.reddit.com/r/aion2/comments/1xyyrk2/",
-        "views": null
-       },
-       {
-        "board": "r/aion2",
-        "comments": 175,
-        "community": "레딧",
-        "date": "2026-11-17",
-        "pick": "댓글",
-        "sentiment": "neg",
-        "title": "Anyone else bored?",
-        "url": "https://www.reddit.com/r/aion2/comments/1xy8oe2/",
         "views": null
        }
       ]
@@ -90737,13 +92878,13 @@
        },
        {
         "board": "r/aion2",
-        "comments": 202,
+        "comments": 276,
         "community": "레딧",
-        "date": "2026-11-17",
+        "date": "2026-11-22",
         "pick": "댓글",
         "sentiment": "neg",
-        "title": "I love how the longer you play a game the more you get punished",
-        "url": "https://www.reddit.com/r/aion2/comments/1xxzd4a/",
+        "title": "Open Letter to NCSoft: Why global players are quitting and how to save Aion 2 for Season 2",
+        "url": "https://www.reddit.com/r/aion2/comments/1y2ojyd/",
         "views": null
        }
       ]
@@ -91921,7 +94062,9 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 254,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 4.9,
      "reps": [
@@ -92057,7 +94200,9 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 134,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 6.2,
      "reps": [
@@ -92197,7 +94342,9 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 675,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 8.7,
      "reps": [
@@ -92333,7 +94480,9 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 255,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 7.1,
      "reps": [
@@ -101641,20 +103790,22 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 423,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 8.1,
      "reps": [
       {
        "board": "아이온2 마이너 갤러리",
-       "comments": 86,
+       "comments": 87,
        "community": "디시인사이드",
        "date": "2026-11-21",
        "pick": "댓글",
        "sentiment": "neg",
        "title": "바카 서버이전 잘못온거같다........",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3150538",
-       "views": 1128
+       "views": 1162
       },
       {
        "board": "아이온2 마이너 갤러리",
@@ -101743,7 +103894,9 @@
      "community": "디시인사이드",
      "community_id": "dcinside",
      "count": 163,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 7.5,
      "reps": [
@@ -101817,14 +103970,14 @@
      "reps": [
       {
        "board": "아이온2 마이너 갤러리",
-       "comments": 49,
+       "comments": 52,
        "community": "디시인사이드",
        "date": "2026-11-21",
        "pick": "댓글",
        "sentiment": "pos",
        "title": "우루구구 보호막패턴 정말 쉽게하는 방법(최최종수정)",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149964",
-       "views": 5244
+       "views": 6690
       },
       {
        "board": "아이온2 마이너 갤러리",
@@ -101858,7 +104011,7 @@
        "sentiment": "neu",
        "title": "트리 이전으로 사람도 많이가고",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149535",
-       "views": 733
+       "views": 744
       },
       {
        "board": "아이온2 마이너 갤러리",
@@ -101892,7 +104045,7 @@
        "sentiment": "neu",
        "title": "1인던전 딜러중에 젤 쾌적한딜러가누구임? 검성빼고",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149417",
-       "views": 379
+       "views": 393
       },
       {
        "board": "아이온2 마이너 갤러리",
@@ -101903,7 +104056,7 @@
        "sentiment": "neg",
        "title": "살성 1인던전은 dps 낮은게 문제가 아님",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3151472",
-       "views": 354
+       "views": 417
       }
      ],
      "word": "1인던전"
@@ -101913,7 +104066,9 @@
      "community": "인벤",
      "community_id": "inven",
      "count": 93,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 28.6,
      "reps": [
@@ -102005,7 +104160,7 @@
        "sentiment": "neg",
        "title": "무스펠 쉬움은 지금이라도 데미지 절반으로 줄여야댐",
        "url": "https://gall.dcinside.com/mgallery/board/view/?id=aion2&no=3149661",
-       "views": 270
+       "views": 278
       }
      ],
      "word": "쉬움"
@@ -102272,12 +104427,12 @@
        "board": "자유 게시판",
        "comments": 12,
        "community": "인벤",
-       "date": "2026-11-20",
+       "date": "2026-11-22",
        "pick": "댓글",
        "sentiment": "neu",
-       "title": "지금 점핑권으로 누가 부캐 치유를 키우냐",
-       "url": "https://www.inven.co.kr/board/aion2/6388/302757",
-       "views": 553
+       "title": "아린이) 키나를 벌때가온거같은데 부캐는 필수인가요?",
+       "url": "https://www.inven.co.kr/board/aion2/6388/303807",
+       "views": 959
       }
      ],
      "word": "부캐"
@@ -102287,7 +104442,9 @@
      "community": "아카라이브",
      "community_id": "arca",
      "count": 22,
-     "groups": [],
+     "groups": [
+      "서버 이전"
+     ],
      "new": false,
      "ratio": 88.0,
      "reps": [
@@ -102379,7 +104536,7 @@
        "sentiment": "neg",
        "title": "1인 데바성 어려워",
        "url": "https://arca.live/b/aion2/189909947",
-       "views": 92
+       "views": 101
       }
      ],
      "word": "1인"
@@ -102402,7 +104559,7 @@
        "sentiment": "pos",
        "title": "비탄 보통 드디어 깼다....",
        "url": "https://arca.live/b/aion2/189932034",
-       "views": 128
+       "views": 150
       },
       {
        "board": "아이온2 채널",
@@ -102413,7 +104570,7 @@
        "sentiment": "neu",
        "title": "제발 비탄 보통 트라이 망호좀 파다오",
        "url": "https://arca.live/b/aion2/189846281",
-       "views": 147
+       "views": 150
       }
      ],
      "word": "보통"
@@ -102447,7 +104604,7 @@
        "sentiment": "unk",
        "title": "권성",
        "url": "https://arca.live/b/aion2/189819006",
-       "views": 386
+       "views": 457
       }
      ],
      "word": "권성"
@@ -106500,7 +108657,7 @@
       },
       {
        "board": "r/aion2",
-       "comments": 26,
+       "comments": 27,
        "community": "레딧",
        "date": "2026-11-21",
        "pick": "댓글",
@@ -106587,9 +108744,9 @@
   "base_weeks": 8,
   "daily_days": 56,
   "fired": {
-   "fixed": 217,
-   "tested": 2147,
-   "z": 280
+   "fixed": 228,
+   "tested": 2211,
+   "z": 289
   },
   "low_confidence_as_unk": false,
   "max_weeks": 26,
@@ -108120,6 +110277,204 @@
      -0.49,
      -1.71,
      -1.09
+    ]
+   },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.01317,
+     0.01148,
+     0.00979,
+     0.00901,
+     0.00843,
+     0.01095,
+     0.01072,
+     0.00945,
+     0.00535,
+     0.00493,
+     0.00487,
+     0.0046,
+     0.00418,
+     0.00169,
+     0.00138,
+     0.00157,
+     0.00146
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     4,
+     10,
+     25,
+     94,
+     9,
+     2,
+     8,
+     7,
+     41,
+     4,
+     0,
+     6,
+     2,
+     1,
+     2,
+     1,
+     1,
+     0,
+     2,
+     7,
+     42
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     3597,
+     2345,
+     2443,
+     2536,
+     1907,
+     1490,
+     1833,
+     1616,
+     1928,
+     1616,
+     1741,
+     1401,
+     1464,
+     1166,
+     906,
+     988,
+     765,
+     705,
+     1325,
+     2056,
+     1168
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.358,
+     0.117,
+     0.446,
+     0.481,
+     2.523,
+     0.226,
+     0.0,
+     0.453,
+     0.255,
+     0.174,
+     0.453,
+     0.22,
+     0.312,
+     0.0,
+     1.094,
+     2.172,
+     24.662
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00111,
+     0.00426,
+     0.01023,
+     0.03707,
+     0.00472,
+     0.00134,
+     0.00436,
+     0.00433,
+     0.02127,
+     0.00248,
+     0.0,
+     0.00428,
+     0.00137,
+     0.00086,
+     0.00221,
+     0.00101,
+     0.00131,
+     0.0,
+     0.00151,
+     0.0034,
+     0.03596
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.52,
+     -0.69,
+     -0.39,
+     -0.37,
+     1.08,
+     -0.69,
+     -0.86,
+     -0.4,
+     -0.6,
+     -0.6,
+     -0.39,
+     -0.52,
+     -0.41,
+     -1.3,
+     0.09,
+     1.45,
+     34.33
     ]
    },
    "group:스티그마": {
@@ -117034,6 +119389,204 @@
      -2.95
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     0.00396,
+     0.00414,
+     0.00395,
+     0.00431,
+     0.00639,
+     0.01161,
+     0.01277,
+     0.01244,
+     0.01216,
+     0.0124,
+     0.01425,
+     0.01426,
+     0.01201,
+     0.00676,
+     0.00598,
+     0.00598,
+     0.00579,
+     0.00538,
+     0.00397,
+     0.00356,
+     0.00403,
+     0.0053
+    ],
+    "count": [
+     50,
+     31,
+     176,
+     247,
+     106,
+     113,
+     172,
+     561,
+     1321,
+     263,
+     55,
+     153,
+     147,
+     464,
+     158,
+     74,
+     28,
+     87,
+     49,
+     82,
+     64,
+     95,
+     40,
+     108,
+     370,
+     797
+    ],
+    "den": [
+     31610,
+     28944,
+     33458,
+     31133,
+     21846,
+     37658,
+     26586,
+     26820,
+     30458,
+     25416,
+     21191,
+     26616,
+     21719,
+     26137,
+     23918,
+     25731,
+     20639,
+     20959,
+     19094,
+     19220,
+     18607,
+     14590,
+     12067,
+     16363,
+     32088,
+     16793
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     1.225,
+     0.725,
+     1.638,
+     4.853,
+     6.792,
+     0.891,
+     0.203,
+     0.462,
+     0.556,
+     1.431,
+     0.464,
+     0.202,
+     0.113,
+     0.614,
+     0.429,
+     0.714,
+     0.594,
+     1.211,
+     0.835,
+     1.854,
+     2.864,
+     8.959
+    ],
+    "value": [
+     0.00158,
+     0.00107,
+     0.00526,
+     0.00793,
+     0.00485,
+     0.003,
+     0.00647,
+     0.02092,
+     0.04337,
+     0.01035,
+     0.0026,
+     0.00575,
+     0.00677,
+     0.01775,
+     0.00661,
+     0.00288,
+     0.00136,
+     0.00415,
+     0.00257,
+     0.00427,
+     0.00344,
+     0.00651,
+     0.00331,
+     0.0066,
+     0.01153,
+     0.04746
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     0.27,
+     -0.4,
+     0.98,
+     6.54,
+     5.85,
+     -0.09,
+     -0.75,
+     -0.48,
+     -0.39,
+     0.39,
+     -0.57,
+     -0.85,
+     -0.79,
+     -0.49,
+     -0.66,
+     -0.33,
+     -0.45,
+     0.22,
+     -0.36,
+     2.01,
+     4.14,
+     14.49
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -125946,6 +128499,204 @@
      -1.59
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00128,
+     0.00156,
+     0.00175,
+     0.0017,
+     0.00165,
+     0.00133,
+     0.00181,
+     0.0023
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     12,
+     1,
+     1,
+     1,
+     6,
+     6,
+     4,
+     3,
+     3,
+     12,
+     26,
+     140
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     3128,
+     2709,
+     2220,
+     2080,
+     2263,
+     2217,
+     2822,
+     2376,
+     2237,
+     2881,
+     5987,
+     3783
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     2.065,
+     1.738,
+     0.81,
+     0.742,
+     0.814,
+     3.12,
+     2.4,
+     16.119
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00384,
+     0.00037,
+     0.00045,
+     0.00048,
+     0.00265,
+     0.00271,
+     0.00142,
+     0.00126,
+     0.00134,
+     0.00417,
+     0.00434,
+     0.03701
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.8,
+     0.72,
+     -0.22,
+     -0.32,
+     -0.24,
+     3.04,
+     1.99,
+     24.52
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -134849,6 +137600,204 @@
      -0.35,
      -0.35,
      -0.35,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.00568,
+     0.01402,
+     0.02538,
+     0.02538,
+     0.02538,
+     0.02538,
+     0.02538,
+     0.02538,
+     0.0197,
+     0.01136,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "count": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "den": [
+     22,
+     13,
+     12,
+     15,
+     12,
+     44,
+     21,
+     22,
+     15,
+     11,
+     4,
+     16,
+     5,
+     3,
+     18,
+     23,
+     28,
+     16,
+     3,
+     7,
+     9,
+     6,
+     8,
+     4,
+     21,
+     22
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     11.733,
+     6.486,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "value": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.04545,
+     0.06667,
+     0.09091,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     3.79,
+     2.89,
+     -0.68,
+     -0.68,
+     -0.68,
+     -0.68,
+     -0.68,
+     -0.68,
+     -0.53,
+     -0.35,
+     null,
      null,
      null,
      null,
@@ -143770,6 +146719,204 @@
      0.23
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00597,
+     0.00478,
+     0.00398,
+     0.00341,
+     0.00299,
+     0.00125,
+     0.00125,
+     0.00125,
+     0.0,
+     0.0003,
+     0.00084,
+     0.00156,
+     0.00402,
+     0.00758,
+     0.0087,
+     0.00891,
+     0.00902
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     8,
+     18,
+     48,
+     55,
+     13,
+     2,
+     1,
+     2
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     72,
+     58,
+     41,
+     100,
+     68,
+     72,
+     90,
+     98,
+     138,
+     119,
+     155,
+     514,
+     420,
+     1827,
+     3148,
+     2437,
+     1932,
+     1451,
+     1190,
+     1174,
+     1069
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     null,
+     14.713,
+     6.767,
+     12.628,
+     7.078,
+     1.182,
+     0.193,
+     0.096,
+     0.207
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.01389,
+     0.0,
+     0.0,
+     0.01,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.00238,
+     0.00438,
+     0.00572,
+     0.0197,
+     0.02847,
+     0.00896,
+     0.00168,
+     0.00085,
+     0.00187
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.84,
+     -0.71,
+     -0.63,
+     -0.57,
+     -0.53,
+     -0.35,
+     -0.35,
+     -0.35,
+     null,
+     4.85,
+     2.95,
+     7.78,
+     3.64,
+     0.13,
+     -0.69,
+     -0.8,
+     -0.72
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -152680,6 +155827,204 @@
      -0.49,
      -1.71,
      -1.09
+    ]
+   },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.01317,
+     0.01148,
+     0.00979,
+     0.00901,
+     0.00843,
+     0.01095,
+     0.01072,
+     0.00945,
+     0.00535,
+     0.00493,
+     0.00487,
+     0.0046,
+     0.00418,
+     0.00169,
+     0.00138,
+     0.00157,
+     0.00146
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     4,
+     10,
+     25,
+     94,
+     9,
+     2,
+     8,
+     7,
+     41,
+     4,
+     0,
+     6,
+     2,
+     1,
+     2,
+     1,
+     1,
+     0,
+     2,
+     7,
+     42
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     3597,
+     2345,
+     2443,
+     2536,
+     1907,
+     1490,
+     1833,
+     1616,
+     1928,
+     1616,
+     1741,
+     1401,
+     1464,
+     1166,
+     906,
+     988,
+     765,
+     705,
+     1325,
+     2056,
+     1168
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.358,
+     0.117,
+     0.446,
+     0.481,
+     2.523,
+     0.226,
+     0.0,
+     0.453,
+     0.255,
+     0.174,
+     0.453,
+     0.22,
+     0.312,
+     0.0,
+     1.094,
+     2.172,
+     24.662
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00111,
+     0.00426,
+     0.01023,
+     0.03707,
+     0.00472,
+     0.00134,
+     0.00436,
+     0.00433,
+     0.02127,
+     0.00248,
+     0.0,
+     0.00428,
+     0.00137,
+     0.00086,
+     0.00221,
+     0.00101,
+     0.00131,
+     0.0,
+     0.00151,
+     0.0034,
+     0.03596
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.52,
+     -0.69,
+     -0.39,
+     -0.37,
+     1.08,
+     -0.69,
+     -0.86,
+     -0.4,
+     -0.6,
+     -0.6,
+     -0.39,
+     -0.52,
+     -0.41,
+     -1.3,
+     0.09,
+     1.45,
+     34.33
     ]
    },
    "group:스티그마": {
@@ -161594,6 +164939,204 @@
      -2.95
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     0.00396,
+     0.00414,
+     0.00395,
+     0.00431,
+     0.00639,
+     0.01161,
+     0.01277,
+     0.01244,
+     0.01216,
+     0.0124,
+     0.01425,
+     0.01426,
+     0.01201,
+     0.00676,
+     0.00598,
+     0.00598,
+     0.00579,
+     0.00538,
+     0.00397,
+     0.00356,
+     0.00403,
+     0.0053
+    ],
+    "count": [
+     50,
+     31,
+     176,
+     247,
+     106,
+     113,
+     172,
+     561,
+     1321,
+     263,
+     55,
+     153,
+     147,
+     464,
+     158,
+     74,
+     28,
+     87,
+     49,
+     82,
+     64,
+     95,
+     40,
+     108,
+     370,
+     797
+    ],
+    "den": [
+     31610,
+     28944,
+     33458,
+     31133,
+     21846,
+     37658,
+     26586,
+     26820,
+     30458,
+     25416,
+     21191,
+     26616,
+     21719,
+     26137,
+     23918,
+     25731,
+     20639,
+     20959,
+     19094,
+     19220,
+     18607,
+     14590,
+     12067,
+     16363,
+     32088,
+     16793
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     1.225,
+     0.725,
+     1.638,
+     4.853,
+     6.792,
+     0.891,
+     0.203,
+     0.462,
+     0.556,
+     1.431,
+     0.464,
+     0.202,
+     0.113,
+     0.614,
+     0.429,
+     0.714,
+     0.594,
+     1.211,
+     0.835,
+     1.854,
+     2.864,
+     8.959
+    ],
+    "value": [
+     0.00158,
+     0.00107,
+     0.00526,
+     0.00793,
+     0.00485,
+     0.003,
+     0.00647,
+     0.02092,
+     0.04337,
+     0.01035,
+     0.0026,
+     0.00575,
+     0.00677,
+     0.01775,
+     0.00661,
+     0.00288,
+     0.00136,
+     0.00415,
+     0.00257,
+     0.00427,
+     0.00344,
+     0.00651,
+     0.00331,
+     0.0066,
+     0.01153,
+     0.04746
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     0.27,
+     -0.4,
+     0.98,
+     6.54,
+     5.85,
+     -0.09,
+     -0.75,
+     -0.48,
+     -0.39,
+     0.39,
+     -0.57,
+     -0.85,
+     -0.79,
+     -0.49,
+     -0.66,
+     -0.33,
+     -0.45,
+     0.22,
+     -0.36,
+     2.01,
+     4.14,
+     14.49
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -170504,6 +174047,204 @@
      -3.41,
      -2.18,
      -1.59
+    ]
+   },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00128,
+     0.00155,
+     0.00174,
+     0.00169,
+     0.00164,
+     0.00133,
+     0.0018,
+     0.00229
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     12,
+     1,
+     1,
+     1,
+     6,
+     6,
+     4,
+     3,
+     3,
+     12,
+     26,
+     140
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     3146,
+     2732,
+     2248,
+     2096,
+     2266,
+     2224,
+     2831,
+     2382,
+     2245,
+     2885,
+     6008,
+     3805
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     2.076,
+     1.741,
+     0.811,
+     0.743,
+     0.815,
+     3.127,
+     2.398,
+     16.068
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00381,
+     0.00037,
+     0.00044,
+     0.00048,
+     0.00265,
+     0.0027,
+     0.00141,
+     0.00126,
+     0.00134,
+     0.00416,
+     0.00433,
+     0.03679
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.81,
+     0.72,
+     -0.22,
+     -0.32,
+     -0.24,
+     3.04,
+     1.98,
+     24.43
     ]
    },
    "group:스티그마": {
@@ -179418,6 +183159,204 @@
      0.23
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00597,
+     0.00478,
+     0.00398,
+     0.00341,
+     0.00299,
+     0.00125,
+     0.00125,
+     0.00125,
+     0.0,
+     0.0003,
+     0.00084,
+     0.00156,
+     0.00402,
+     0.00758,
+     0.0087,
+     0.00891,
+     0.00902
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     8,
+     18,
+     48,
+     55,
+     13,
+     2,
+     1,
+     2
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     72,
+     58,
+     41,
+     100,
+     68,
+     72,
+     90,
+     98,
+     138,
+     119,
+     155,
+     514,
+     420,
+     1827,
+     3148,
+     2437,
+     1932,
+     1451,
+     1190,
+     1174,
+     1069
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     null,
+     14.713,
+     6.767,
+     12.628,
+     7.078,
+     1.182,
+     0.193,
+     0.096,
+     0.207
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.01389,
+     0.0,
+     0.0,
+     0.01,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.00238,
+     0.00438,
+     0.00572,
+     0.0197,
+     0.02847,
+     0.00896,
+     0.00168,
+     0.00085,
+     0.00187
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.84,
+     -0.71,
+     -0.63,
+     -0.57,
+     -0.53,
+     -0.35,
+     -0.35,
+     -0.35,
+     null,
+     4.85,
+     2.95,
+     7.78,
+     3.64,
+     0.13,
+     -0.69,
+     -0.8,
+     -0.72
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -188328,6 +192267,204 @@
      -1.32,
      -5.55,
      -2.9
+    ]
+   },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00342,
+     0.00323,
+     0.00336,
+     0.00332,
+     0.0036,
+     0.0032,
+     0.00363,
+     0.00471
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     174,
+     75,
+     35,
+     90,
+     56,
+     90,
+     69,
+     99,
+     43,
+     122,
+     403,
+     979
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     28680,
+     30204,
+     24288,
+     24519,
+     22526,
+     22350,
+     22426,
+     17737,
+     15017,
+     20573,
+     40152,
+     21766
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.728,
+     1.247,
+     0.915,
+     1.68,
+     0.794,
+     1.851,
+     2.762,
+     9.552
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00607,
+     0.00248,
+     0.00144,
+     0.00367,
+     0.00249,
+     0.00403,
+     0.00308,
+     0.00558,
+     0.00286,
+     0.00593,
+     0.01004,
+     0.04498
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.47,
+     0.45,
+     -0.18,
+     1.53,
+     -0.47,
+     2.19,
+     4.2,
+     16.21
     ]
    },
    "group:스티그마": {
@@ -197242,6 +201379,204 @@
      0.23
     ]
    },
+   "group:서버 이전": {
+    "base": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.00597,
+     0.00478,
+     0.00398,
+     0.00341,
+     0.00299,
+     0.00125,
+     0.00125,
+     0.00125,
+     0.0,
+     0.0003,
+     0.00084,
+     0.00156,
+     0.00402,
+     0.00758,
+     0.0087,
+     0.00891,
+     0.00902
+    ],
+    "count": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     8,
+     18,
+     48,
+     55,
+     13,
+     2,
+     1,
+     2
+    ],
+    "den": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     72,
+     58,
+     41,
+     100,
+     68,
+     72,
+     90,
+     98,
+     138,
+     119,
+     155,
+     514,
+     420,
+     1827,
+     3148,
+     2437,
+     1932,
+     1451,
+     1190,
+     1174,
+     1069
+    ],
+    "n_base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     5,
+     6,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "ratio": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     null,
+     14.713,
+     6.767,
+     12.628,
+     7.078,
+     1.182,
+     0.193,
+     0.096,
+     0.207
+    ],
+    "value": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     0.01389,
+     0.0,
+     0.0,
+     0.01,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.00238,
+     0.00438,
+     0.00572,
+     0.0197,
+     0.02847,
+     0.00896,
+     0.00168,
+     0.00085,
+     0.00187
+    ],
+    "z": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     -0.84,
+     -0.71,
+     -0.63,
+     -0.57,
+     -0.53,
+     -0.35,
+     -0.35,
+     -0.35,
+     null,
+     4.85,
+     2.95,
+     7.78,
+     3.64,
+     0.13,
+     -0.69,
+     -0.8,
+     -0.72
+    ]
+   },
    "group:스티그마": {
     "base": [
      null,
@@ -205335,13 +209670,14 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 3
+     "total": 4
     },
     "what": {
      "candidates": [
       "2026-07-06/dcinside/group:장비 제작",
       "2026-07-06/dcinside/group:버스",
-      "2026-07-06/dcinside/signal:복귀 · 신규 표현"
+      "2026-07-06/dcinside/signal:복귀 · 신규 표현",
+      "2026-07-06/dcinside/group:서버 이전"
      ],
      "compared": [
       "디시인사이드"
@@ -205419,10 +209755,11 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 3
+     "total": 4
     },
     "what": {
      "candidates": [
+      "2026-07-13/dcinside/group:서버 이전",
       "2026-07-13/dcinside/group:버스",
       "2026-07-13/dcinside/group:외형 · 의상",
       "2026-07-13/dcinside/group:마석 · 영석 · 신석"
@@ -205513,11 +209850,12 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 4
+     "total": 5
     },
     "what": {
      "candidates": [
       "2026-07-20/dcinside/group:버스",
+      "2026-07-20/dcinside/group:서버 이전",
       "2026-07-20/dcinside/group:과금 · 큐나",
       "2026-07-20/dcinside/group:키나 · 거래소",
       "2026-07-20/dcinside/group:마석 · 영석 · 신석"
@@ -205963,7 +210301,7 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 6
+     "total": 7
     },
     "what": {
      "candidates": [
@@ -205972,7 +210310,8 @@
       "2026-08-24/arca/topic:balance",
       "2026-08-24/arca/topic_neg:bug",
       "2026-08-24/arca/topic_neg:churn",
-      "2026-08-24/dcinside/signal:버그 신호"
+      "2026-08-24/dcinside/signal:버그 신호",
+      "2026-08-24/arca/group:서버 이전"
      ],
      "compared": [
       "아카라이브",
@@ -206922,7 +211261,7 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 9
+     "total": 10
     },
     "what": {
      "candidates": [
@@ -206934,6 +211273,7 @@
       "2026-11-02/arca/topic_neg:balance",
       "2026-11-02/arca/topic_neg:social",
       "2026-11-02/inven/topic_neg:balance",
+      "2026-11-02/dcinside/group:서버 이전",
       "2026-11-02/inven/topic:operation"
      ],
      "compared": [
@@ -207020,13 +211360,14 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 12
+     "total": 13
     },
     "what": {
      "candidates": [
       "2026-11-09/dcinside/signal:복귀 · 신규 표현",
       "2026-11-09/arca/topic:balance",
       "2026-11-09/dcinside/group:각인 · 조율",
+      "2026-11-09/dcinside/group:서버 이전",
       "2026-11-09/dcinside/group:날개",
       "2026-11-09/dcinside/topic:balance",
       "2026-11-09/inven/signal:복귀 · 신규 표현",
@@ -207149,10 +211490,13 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 9
+     "total": 12
     },
     "what": {
      "candidates": [
+      "2026-11-16/arca/group:서버 이전",
+      "2026-11-16/inven/group:서버 이전",
+      "2026-11-16/dcinside/group:서버 이전",
       "2026-11-16/dcinside/group:날개",
       "2026-11-16/dcinside/group:강화 · 돌파 · 계승",
       "2026-11-16/inven/topic:balance",
@@ -207973,10 +212317,11 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 15
+     "total": 16
     },
     "what": {
      "candidates": [
+      "2026-10-12/reddit/group:서버 이전",
       "2026-10-12/reddit/group:장비 제작",
       "2026-10-12/reddit/topic:growth",
       "2026-10-12/reddit/topic_neg:balance",
@@ -208047,11 +212392,12 @@
     "urgency": {
      "high": [],
      "judged": 0,
-     "total": 10
+     "total": 11
     },
     "what": {
      "candidates": [
       "2026-10-19/reddit/group:장비 제작",
+      "2026-10-19/reddit/group:서버 이전",
       "2026-10-19/reddit/topic_neg:social",
       "2026-10-19/reddit/topic_neg:monetization",
       "2026-10-19/reddit/topic_neg:content",
@@ -208581,6 +212927,16 @@
    "changes": [
     {
      "base": null,
+     "count": 41,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00073,
+     "ratio_base": null,
+     "ratio_prev": 2.0,
+     "zero": 0.00146
+    },
+    {
+     "base": null,
      "count": 86,
      "label": "외형 · 의상 언급",
      "metric": "group:외형 · 의상",
@@ -208618,16 +212974,6 @@
      "ratio_base": null,
      "ratio_prev": 1.067,
      "zero": 0.00238
-    },
-    {
-     "base": null,
-     "count": 78,
-     "label": "마석 · 영석 · 신석 언급",
-     "metric": "group:마석 · 영석 · 신석",
-     "prev": 0.00281,
-     "ratio_base": null,
-     "ratio_prev": 0.986,
-     "zero": 0.00277
     }
    ],
    "community": "디시인사이드",
@@ -208654,6 +213000,16 @@
   },
   {
    "changes": [
+    {
+     "base": null,
+     "count": 349,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00142,
+     "ratio_base": null,
+     "ratio_prev": 7.014,
+     "zero": 0.00996
+    },
     {
      "base": null,
      "count": 503,
@@ -208693,16 +213049,6 @@
      "ratio_base": null,
      "ratio_prev": 2.175,
      "zero": 0.01581
-    },
-    {
-     "base": null,
-     "count": 323,
-     "label": "작업장 · 매크로 언급",
-     "metric": "group:작업장 · 매크로",
-     "prev": 0.00474,
-     "ratio_base": null,
-     "ratio_prev": 1.945,
-     "zero": 0.00922
     }
    ],
    "community": "디시인사이드",
@@ -209097,6 +213443,16 @@
      "zero": 0.06586
     },
     {
+     "base": 0.00349,
+     "count": 235,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00301,
+     "ratio_base": 2.561,
+     "ratio_prev": 2.967,
+     "zero": 0.00893
+    },
+    {
      "base": 0.00494,
      "count": 264,
      "label": "외형 · 의상 언급",
@@ -209125,16 +213481,6 @@
      "ratio_base": 1.605,
      "ratio_prev": 1.021,
      "zero": 0.00767
-    },
-    {
-     "base": 0.00646,
-     "count": 251,
-     "label": "각인 · 조율 언급",
-     "metric": "group:각인 · 조율",
-     "prev": 0.00847,
-     "ratio_base": 1.476,
-     "ratio_prev": 1.125,
-     "zero": 0.00953
     }
    ],
    "community": "디시인사이드",
@@ -209161,6 +213507,16 @@
   },
   {
    "changes": [
+    {
+     "base": null,
+     "count": 43,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00472,
+     "ratio_base": null,
+     "ratio_prev": 3.676,
+     "zero": 0.01735
+    },
     {
      "base": null,
      "count": 81,
@@ -209219,6 +213575,16 @@
   {
    "changes": [
     {
+     "base": 0.00417,
+     "count": 786,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00893,
+     "ratio_base": 6.588,
+     "ratio_prev": 3.073,
+     "zero": 0.02744
+    },
+    {
      "base": 0.00778,
      "count": 1148,
      "label": "버스 언급",
@@ -209257,16 +213623,6 @@
      "ratio_base": 1.594,
      "ratio_prev": 1.701,
      "zero": 0.01589
-    },
-    {
-     "base": 0.00498,
-     "count": 217,
-     "label": "펫 언급",
-     "metric": "group:펫",
-     "prev": 0.00539,
-     "ratio_base": 1.521,
-     "ratio_prev": 1.406,
-     "zero": 0.00758
     }
    ],
    "community": "디시인사이드",
@@ -209295,6 +213651,16 @@
   },
   {
    "changes": [
+    {
+     "base": 0.00698,
+     "count": 82,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.01735,
+     "ratio_base": 4.782,
+     "ratio_prev": 1.923,
+     "zero": 0.03336
+    },
     {
      "base": 0.00521,
      "count": 31,
@@ -209377,6 +213743,16 @@
      "zero": 0.07058
     },
     {
+     "base": 0.00741,
+     "count": 1182,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.02744,
+     "ratio_base": 5.52,
+     "ratio_prev": 1.491,
+     "zero": 0.04091
+    },
+    {
      "base": 0.0039,
      "count": 237,
      "label": "과금 · 큐나 언급",
@@ -209405,16 +213781,6 @@
      "ratio_base": 1.661,
      "ratio_prev": 1.15,
      "zero": 0.01828
-    },
-    {
-     "base": 0.00831,
-     "count": 358,
-     "label": "작업장 · 매크로 언급",
-     "metric": "group:작업장 · 매크로",
-     "prev": 0.00887,
-     "ratio_base": 1.492,
-     "ratio_prev": 1.397,
-     "zero": 0.01239
     }
    ],
    "community": "디시인사이드",
@@ -210100,6 +214466,16 @@
   {
    "changes": [
     {
+     "base": 0.00863,
+     "count": 39,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00496,
+     "ratio_base": 2.577,
+     "ratio_prev": 4.482,
+     "zero": 0.02223
+    },
+    {
      "base": 0.07968,
      "count": 222,
      "label": "밸런스 · 직업 주제",
@@ -210138,16 +214514,6 @@
      "ratio_base": 1.091,
      "ratio_prev": 1.193,
      "zero": 0.02235
-    },
-    {
-     "base": 0.17136,
-     "count": 309,
-     "label": "컨텐츠 · 업데이트 주제",
-     "metric": "topic:content",
-     "prev": 0.16033,
-     "ratio_base": 1.033,
-     "ratio_prev": 1.104,
-     "zero": 0.17708
     }
    ],
    "community": "아카라이브",
@@ -210201,6 +214567,16 @@
      "zero": 0.24002
     },
     {
+     "base": 0.01281,
+     "count": 490,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00864,
+     "ratio_base": 1.533,
+     "ratio_prev": 2.274,
+     "zero": 0.01965
+    },
+    {
      "base": 0.00735,
      "count": 244,
      "label": "마석 · 영석 · 신석 언급",
@@ -210219,16 +214595,6 @@
      "ratio_base": 1.259,
      "ratio_prev": 1.568,
      "zero": 0.02603
-    },
-    {
-     "base": 0.00516,
-     "count": 162,
-     "label": "과금 · 큐나 언급",
-     "metric": "group:과금 · 큐나",
-     "prev": 0.00468,
-     "ratio_base": 1.258,
-     "ratio_prev": 1.389,
-     "zero": 0.0065
     }
    ],
    "community": "디시인사이드",
@@ -212159,6 +216525,16 @@
      "zero": 0.28077
     },
     {
+     "base": 0.00521,
+     "count": 91,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00433,
+     "ratio_base": 1.251,
+     "ratio_prev": 1.506,
+     "zero": 0.00652
+    },
+    {
      "base": 0.01397,
      "count": 222,
      "label": "복귀 · 신규 표현",
@@ -212187,16 +216563,6 @@
      "ratio_base": 1.064,
      "ratio_prev": 1.129,
      "zero": 0.22596
-    },
-    {
-     "base": 0.11395,
-     "count": 1584,
-     "label": "운영 · 이벤트 주제",
-     "metric": "topic:operation",
-     "prev": 0.12619,
-     "ratio_base": 0.996,
-     "ratio_prev": 0.899,
-     "zero": 0.11348
     }
    ],
    "community": "디시인사이드",
@@ -212473,6 +216839,16 @@
   {
    "changes": [
     {
+     "base": 0.00141,
+     "count": 31,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00142,
+     "ratio_base": 6.104,
+     "ratio_prev": 6.042,
+     "zero": 0.00858
+    },
+    {
      "base": 0.01489,
      "count": 133,
      "label": "키나 · 거래소 언급",
@@ -212511,16 +216887,6 @@
      "ratio_base": 1.647,
      "ratio_prev": 1.302,
      "zero": 0.28093
-    },
-    {
-     "base": 0.05044,
-     "count": 290,
-     "label": "거래 · 경제 주제",
-     "metric": "topic:economy",
-     "prev": 0.05345,
-     "ratio_base": 1.591,
-     "ratio_prev": 1.502,
-     "zero": 0.08027
     }
    ],
    "community": "인벤",
@@ -212635,6 +217001,16 @@
   {
    "changes": [
     {
+     "base": 0.00365,
+     "count": 309,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00303,
+     "ratio_base": 4.035,
+     "ratio_prev": 4.858,
+     "zero": 0.01472
+    },
+    {
      "base": 0.00978,
      "count": 578,
      "label": "키나 · 거래소 언급",
@@ -212673,16 +217049,6 @@
      "ratio_base": 1.557,
      "ratio_prev": 1.613,
      "zero": 0.05307
-    },
-    {
-     "base": 0.00341,
-     "count": 103,
-     "label": "각인 · 조율 언급",
-     "metric": "group:각인 · 조율",
-     "prev": 0.00178,
-     "ratio_base": 1.438,
-     "ratio_prev": 2.758,
-     "zero": 0.00491
     }
    ],
    "community": "디시인사이드",
@@ -212715,6 +217081,16 @@
   },
   {
    "changes": [
+    {
+     "base": 0.00243,
+     "count": 32,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.00858,
+     "ratio_base": 2.184,
+     "ratio_prev": 0.618,
+     "zero": 0.0053
+    },
     {
      "base": 0.00252,
      "count": 32,
@@ -212754,16 +217130,6 @@
      "ratio_base": 1.473,
      "ratio_prev": 1.316,
      "zero": 0.00729
-    },
-    {
-     "base": 0.00465,
-     "count": 38,
-     "label": "장비 제작 언급",
-     "metric": "group:장비 제작",
-     "prev": 0.00194,
-     "ratio_base": 1.354,
-     "ratio_prev": 3.247,
-     "zero": 0.0063
     }
    ],
    "community": "인벤",
@@ -212922,14 +217288,14 @@
      "zero": 0.03009
     },
     {
-     "base": 0.00254,
-     "count": 123,
-     "label": "아르카나 언급",
-     "metric": "group:아르카나",
-     "prev": 0.00295,
-     "ratio_base": 1.608,
-     "ratio_prev": 1.383,
-     "zero": 0.00408
+     "base": 0.00517,
+     "count": 293,
+     "label": "서버 이전 언급",
+     "metric": "group:서버 이전",
+     "prev": 0.01472,
+     "ratio_base": 1.88,
+     "ratio_prev": 0.661,
+     "zero": 0.00973
     }
    ],
    "community": "디시인사이드",
@@ -214168,6 +218534,43 @@
       "ratio": 1.672,
       "streak": 2,
       "value": "0.8% · 평시 0.5%"
+     },
+     {
+      "change": "1.6배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 172,
+      "den": 26586,
+      "diff": null,
+      "draft": null,
+      "facts": "0.6%(평시 0.4%) · 172건",
+      "headline": {
+       "em": "평시의 1.6배",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-07-06/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 1.638,
+      "streak": 1,
+      "value": "0.6% · 평시 0.4%"
      }
     ],
     "responses": [
@@ -214193,7 +218596,7 @@
     "conclusion": null,
     "insights": [
      "2026-07-13/dcinside/group:버스",
-     "2026-07-13/dcinside/group:외형 · 의상"
+     "2026-07-13/dcinside/group:서버 이전"
     ],
     "items": [
      {
@@ -214232,6 +218635,43 @@
       "ratio": 3.075,
       "streak": 4,
       "value": "2.2% · 평시 0.7%"
+     },
+     {
+      "change": "4.9배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 561,
+      "den": 26820,
+      "diff": null,
+      "draft": null,
+      "facts": "2.1%(평시 0.4%) · 561건",
+      "headline": {
+       "em": "2주 연속",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": "평시 초과"
+      },
+      "history": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       false,
+       false,
+       true,
+       true
+      ],
+      "id": "2026-07-13/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 4.853,
+      "streak": 2,
+      "value": "2.1% · 평시 0.4%"
      },
      {
       "change": "3.0배",
@@ -214338,7 +218778,7 @@
     "conclusion": null,
     "insights": [
      "2026-07-20/dcinside/group:버스",
-     "2026-07-20/dcinside/group:마석 · 영석 · 신석"
+     "2026-07-20/dcinside/group:서버 이전"
     ],
     "items": [
      {
@@ -214377,6 +218817,43 @@
       "ratio": 6.769,
       "streak": 5,
       "value": "6.2% · 평시 0.9%"
+     },
+     {
+      "change": "6.8배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 1321,
+      "den": 30458,
+      "diff": null,
+      "draft": null,
+      "facts": "4.3%(평시 0.6%) · 1,321건",
+      "headline": {
+       "em": "3주 연속",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": "평시 초과"
+      },
+      "history": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       false,
+       false,
+       true,
+       true,
+       true
+      ],
+      "id": "2026-07-20/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 6.792,
+      "streak": 3,
+      "value": "4.3% · 평시 0.6%"
      },
      {
       "change": "1.7배",
@@ -215470,6 +219947,43 @@
       "ratio": null,
       "streak": 1,
       "value": "71.2% · 평시 59.6%"
+     },
+     {
+      "change": "2.5배",
+      "community": "아카라이브",
+      "community_id": "arca",
+      "count": 41,
+      "den": 1928,
+      "diff": null,
+      "draft": null,
+      "facts": "2.1%(평시 0.8%) · 41건 · 본문 정독 6건",
+      "headline": {
+       "em": "평시의 2.5배",
+       "lead": "아카라이브 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       false,
+       false,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-08-24/arca/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 2.523,
+      "streak": 1,
+      "value": "2.1% · 평시 0.8%"
      },
      {
       "change": "1.8배",
@@ -217588,7 +222102,7 @@
     }
    },
    "2026-11-02": {
-    "conclusion": "1주년 방송과 업데이트 뒤 비판이 늘었으나 운영팀의 해명 공지는 없다.",
+    "conclusion": "1주년 방송 뒤 보상 · 전투 개편 비판이 늘었으나 후속 공지는 없다",
     "insights": [
      "2026-11-02/dcinside/topic:operation",
      "2026-11-02/arca/topic_neg:balance"
@@ -218058,6 +222572,59 @@
       "ratio": 2.195,
       "streak": 1,
       "value": "3.2% · 평시 1.5%"
+     },
+     {
+      "change": "1.9배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 108,
+      "den": 16363,
+      "diff": null,
+      "draft": {
+       "action": "이전 조건 문의 응대 확인",
+       "insight": "이용자들이 무료 서버 이전 대상 서버를 추천하고 이전 조건을 문의한다",
+       "level": "관찰",
+       "notice": {
+        "date": "2026-11-06",
+        "kind": "소통",
+        "title": "[안내] AION2 1st ANNIVERSARY 라이브 방송 안내"
+       },
+       "reaction": "정보 공유",
+       "reason": "무료 이전 정보 공유 · 표본 작음",
+       "response": "trigger",
+       "title": "무료 서버 이전 정보 · 문의"
+      },
+      "facts": "0.7%(평시 0.4%) · 108건 · 본문 정독 6건",
+      "headline": {
+       "em": "평시의 1.9배",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-11-02/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": {
+       "by": "AI 초안",
+       "level": "관찰"
+      },
+      "kind": "group",
+      "ratio": 1.854,
+      "streak": 1,
+      "value": "0.7% · 평시 0.4%"
      }
     ],
     "responses": [
@@ -218104,10 +222671,10 @@
     }
    },
    "2026-11-09": {
-    "conclusion": "11/11 업데이트 뒤 전투 개편 · 재화 구조 불만이 커졌고 후속 공지는 없다",
+    "conclusion": "전투 개편 업데이트 뒤 비판이 커뮤니티 전반에 몰렸으나 후속 공지는 없다.",
     "insights": [
      "2026-11-09/dcinside/topic:balance",
-     "2026-11-09/dcinside/group:키나 · 거래소"
+     "2026-11-09/dcinside/group:서버 이전"
     ],
     "items": [
      {
@@ -218158,6 +222725,55 @@
       "ratio": 2.204,
       "streak": 1,
       "value": "24.0% · 평시 10.9%"
+     },
+     {
+      "change": "2.9배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 370,
+      "den": 32088,
+      "diff": null,
+      "draft": {
+       "action": "인기 서버 쏠림 · 마감 동향 확인",
+       "insight": "이용자들이 무료 서버 이전을 앞두고 이동할 서버를 비교 · 추천한다.",
+       "level": "보통",
+       "notice": null,
+       "reaction": "정보 공유",
+       "reason": "선택 정보 공유 위주 · 2주 연속",
+       "response": "none",
+       "title": "무료 서버 이전 서버 선택 논의"
+      },
+      "facts": "1.2%(평시 0.4%) · 370건 · 본문 정독 6건",
+      "headline": {
+       "em": "2주 연속",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": "평시 초과"
+      },
+      "history": [
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true,
+       true
+      ],
+      "id": "2026-11-09/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": {
+       "by": "AI 초안",
+       "level": "보통"
+      },
+      "kind": "group",
+      "ratio": 2.864,
+      "streak": 2,
+      "value": "1.2% · 평시 0.4%"
      },
      {
       "change": "1.6배",
@@ -218767,12 +223383,61 @@
     }
    },
    "2026-11-16": {
-    "conclusion": "11/18 업데이트 뒤 밸런스 · 성장 논의가 늘었으나 후속 공지는 없다.",
+    "conclusion": "서버 이전 · 밸런스 패치 뒤 불만이 이어지나 이를 해명하는 공지는 없다.",
     "insights": [
-     "2026-11-16/inven/topic:balance",
-     "2026-11-16/dcinside/group:강화 · 돌파 · 계승"
+     "2026-11-16/dcinside/group:서버 이전",
+     "2026-11-16/inven/topic:balance"
     ],
     "items": [
+     {
+      "change": "9.0배",
+      "community": "디시인사이드",
+      "community_id": "dcinside",
+      "count": 797,
+      "den": 16793,
+      "diff": null,
+      "draft": {
+       "action": "인원 제한 · 창고 처리 안내 보완",
+       "insight": "이용자들이 이전 인원 제한과 신청 실패, 서버 창고 소실을 비판한다.",
+       "level": "높음",
+       "notice": null,
+       "reaction": "불만 일부",
+       "reason": "대형 커뮤니티 3주 연속 · 해명 공지 없음",
+       "response": "none",
+       "title": "서버 이전 인원 제한 · 실패 불만"
+      },
+      "facts": "4.7%(평시 0.5%) · 797건 · 본문 정독 6건",
+      "headline": {
+       "em": "3주 연속",
+       "lead": "디시인사이드 서버 이전 언급",
+       "tail": "평시 초과"
+      },
+      "history": [
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true,
+       true,
+       true
+      ],
+      "id": "2026-11-16/dcinside/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": {
+       "by": "AI 초안",
+       "level": "높음"
+      },
+      "kind": "group",
+      "ratio": 8.959,
+      "streak": 3,
+      "value": "4.7% · 평시 0.5%"
+     },
      {
       "change": "2.5배",
       "community": "인벤",
@@ -219023,6 +223688,55 @@
       "value": "2.7% · 평시 1.7%"
      },
      {
+      "change": "16.1배",
+      "community": "인벤",
+      "community_id": "inven",
+      "count": 140,
+      "den": 3805,
+      "diff": null,
+      "draft": {
+       "action": "수용 인원 · 신청 방식 개선 검토",
+       "insight": "이용자들이 선착순 신청 실패와 지인 · 레기온 분리를 비판한다.",
+       "level": "보통",
+       "notice": null,
+       "reaction": "불만 일부",
+       "reason": "선착순 방식 비판 · 해명 공지 없음",
+       "response": "none",
+       "title": "선착순 서버 이전 신청 실패 불만"
+      },
+      "facts": "3.7%(평시 0.2%) · 140건 · 본문 정독 6건",
+      "headline": {
+       "em": "평시의 16.1배",
+       "lead": "인벤 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-11-16/inven/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": {
+       "by": "AI 초안",
+       "level": "보통"
+      },
+      "kind": "group",
+      "ratio": 16.068,
+      "streak": 1,
+      "value": "3.7% · 평시 0.2%"
+     },
+     {
       "change": "2.3배",
       "community": "디시인사이드",
       "community_id": "dcinside",
@@ -219168,6 +223882,55 @@
       "ratio": 1.704,
       "streak": 2,
       "value": "9.2% · 평시 5.4%"
+     },
+     {
+      "change": "24.7배",
+      "community": "아카라이브",
+      "community_id": "arca",
+      "count": 42,
+      "den": 1168,
+      "diff": null,
+      "draft": {
+       "action": "디시인사이드 후보와 묶어 보고",
+       "insight": "이용자들이 서버 이전 신청 방법과 옮겨 갈 서버 추천을 묻는다.",
+       "level": "관찰",
+       "notice": null,
+       "reaction": "문의 위주",
+       "reason": "표본 작음 · 디시인사이드와 같은 이슈",
+       "response": "none",
+       "title": "서버 이전 신청 · 서버 선택 문의"
+      },
+      "facts": "3.6%(평시 0.1%) · 42건 · 본문 정독 6건",
+      "headline": {
+       "em": "평시의 24.7배",
+       "lead": "아카라이브 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       true,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-11-16/arca/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": {
+       "by": "AI 초안",
+       "level": "관찰"
+      },
+      "kind": "group",
+      "ratio": 24.662,
+      "streak": 1,
+      "value": "3.6% · 평시 0.1%"
      },
      {
       "change": "1.7배",
@@ -221018,6 +225781,43 @@
       "value": "1.7% · 평시 1.1%"
      },
      {
+      "change": "12.6배",
+      "community": "레딧",
+      "community_id": "reddit",
+      "count": 48,
+      "den": 2437,
+      "diff": null,
+      "draft": null,
+      "facts": "2.0%(평시 0.2%) · 48건 · 본문 정독 6건",
+      "headline": {
+       "em": "평시의 12.6배",
+       "lead": "레딧 서버 이전 언급",
+       "tail": ""
+      },
+      "history": [
+       null,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true
+      ],
+      "id": "2026-10-12/reddit/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 12.628,
+      "streak": 1,
+      "value": "2.0% · 평시 0.2%"
+     },
+     {
       "change": "2.0배",
       "community": "레딧",
       "community_id": "reddit",
@@ -221401,6 +226201,43 @@
       "ratio": 3.984,
       "streak": 3,
       "value": "4.6% · 평시 1.1%"
+     },
+     {
+      "change": "7.1배",
+      "community": "레딧",
+      "community_id": "reddit",
+      "count": 55,
+      "den": 1932,
+      "diff": null,
+      "draft": null,
+      "facts": "2.8%(평시 0.4%) · 55건 · 본문 정독 6건",
+      "headline": {
+       "em": "2주 연속",
+       "lead": "레딧 서버 이전 언급",
+       "tail": "평시 초과"
+      },
+      "history": [
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       false,
+       true,
+       true
+      ],
+      "id": "2026-10-19/reddit/group:서버 이전",
+      "issue": "서버 이전 언급",
+      "judgment": null,
+      "kind": "group",
+      "ratio": 7.078,
+      "streak": 2,
+      "value": "2.8% · 평시 0.4%"
      },
      {
       "change": "2.0배",

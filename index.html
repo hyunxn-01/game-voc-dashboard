@@ -1380,10 +1380,11 @@ function overallHtml() {
     if (st && st.avg != null) { const wow = pv && pv.avg ? (st.avg / pv.avg - 1) * 100 : null; kpi("스팀 동시 접속", bn(fmt(Math.round(st.avg)), "명"), st.avg, pv && pv.avg, up1(wow), wow == null ? "" : tn1(wow), pv && pv.avg ? `전주 ${fmt(Math.round(pv.avg))}명` : "전주 값 없음"); }
     else if (st && st.max != null) kpi("스팀 동시 접속", bn(fmt(st.max), "명"), st.max, null, "", "", "주 최고 값(주 평균 없음)"); }
   const sum = cells.length ? `<div class="ovn">${cells.join("")}</div>` : `<p class="muted">지역 전체 값 없음</p>`;
-  // 현재 유저 동향 요약: 늘어난 주제마다 무슨 이야기가 늘었는지(topic_notes)와 판단이 높음인 이슈(이름과 판단 이유)
-  const seen = new Set(), hi = (WK().items || []).filter(x => x.judgment && x.judgment.level === "높음" && x.draft && x.draft.reason && !seen.has(x.issue) && seen.add(x.issue)).slice(0, 2);
+  // 현재 유저 동향 요약: 늘어난 주제마다 무슨 이야기가 늘었는지(topic_notes)와 판단이 높음인 이슈(이슈 표와 같은 제목 + 공지 대응 상태. 제목이 없는 주는 항목 이름과 판단 이유, 2026-11-24 사용자 "맞춰줘")
+  const nameOf = x => x.draft.title || x.issue, noteOf = x => x.draft.title ? R === "국내" && {answered: "공지 대응함", trigger: "후속 공지 없음", none: "공지 없음"}[x.draft.response] || "" : x.draft.reason;
+  const seen = new Set(), hi = (WK().items || []).filter(x => x.judgment && x.judgment.level === "높음" && x.draft && x.draft.reason && !seen.has(nameOf(x)) && seen.add(nameOf(x))).slice(0, 2);
   const pts = up.filter(x => tn[x.id]).map(x => [x.name, esc(tn[x.id])]);
-  if (hi.length) pts.push(["우선 대응", hi.map(x => `<span>${esc(x.issue)}(${esc(x.draft.reason)})</span>`).join(" ")]);
+  if (hi.length) pts.push(["우선 대응", hi.map(x => `<span>${esc(nameOf(x))}${noteOf(x) ? `(${esc(noteOf(x))})` : ""}</span>`).join(" ")]);
   const brief = pts.length ? `<div class="ovs"><h3>${state.week === D.weeks[D.weeks.length - 1] ? "현재 " : ""}유저 동향 요약<i class="ai-l">AI 요약</i></h3><ul>${pts.map(([k, v]) => `<li><b>${esc(k)}</b>${v}</li>`).join("")}</ul></div>` : "";
   return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div>${kw ? `<div class="ovk"><h3>급증 키워드 <span>평시 대비</span></h3><div>${kw}</div></div>` : ""}</div>
     <div><h3>이번 주 요약${gp ? ` <span>${esc(gp)}</span>` : ""}</h3>${sum}${brief}</div></div>`;
