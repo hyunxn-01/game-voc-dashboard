@@ -678,7 +678,7 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 @media screen and (max-width:359px){ .tophead .maker-label{ display:none; } }
 @media print{ .tophead, .mtop{ display:none !important; } }
 /* 결론 판: 왼쪽은 주제 비중 변화 막대만, 오른쪽은 이번 주 요약과 그 아래 강조한 현재 유저 동향 요약(2026-11-24 사용자 요청) */
-.ovb{ gap:0 10px; grid-auto-rows:27px; } .ovb-t{ height:12px; }   /* 주제 줄 사이를 띄우지 않고 막대를 붙인다(막대 사이 2px 선만, 2026-11-24 사용자 "주제변화 주제들 사이에 공간없게 붙여줘.") */
+.ovb{ gap:0 10px; grid-auto-rows:27px; } .ovb.none{ grid-auto-rows:auto; } .ovb.none p{ margin:0; line-height:1.6; } .to-latest{ height:32px; margin-top:9px; padding:0 13px; font-size:13px; } .ovb-t{ height:12px; }   /* 주제 줄 사이를 띄우지 않고 막대를 붙인다(막대 사이 2px 선만, 2026-11-24 사용자 "주제변화 주제들 사이에 공간없게 붙여줘.") */
 /* 이번 주 요약: 커뮤니티 값은 큰 숫자 칸, 급증 키워드는 알약, 게임 지표는 값마다 굵은 숫자(2026-11-24 사용자 "성겨깅다른것들은 좀 다르게 표시해줘야 가독성이있지", "급증키워드랑 PC방도 좀 손봐줘") */
 .ovn{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
 .ovn > div{ flex:1 1 auto; padding:11px 12px 11px; background:#f1f3f1; border-radius:4px; }
@@ -1373,8 +1373,10 @@ function overallHtml() {
   const tops = all.filter(x => x.b != null).map(x => ({...x, d: x.v - x.b}));
   const up = tops.filter(x => x.d >= 0.01).sort((a, b) => b.d - a.d).slice(0, 3), dn = tops.filter(x => x.d <= -0.01).sort((a, b) => a.d - b.d).slice(0, 3);
   const rows = up.concat([...dn].reverse()), mx = Math.max(0.01, ...rows.map(x => Math.abs(x.d)));   // 고르는 주제는 늘어난 폭 · 줄어든 폭이 큰 셋씩, 놓는 순서는 위에서 아래로 값이 작아지게(2026-11-25 사용자 "높은것부터 낮은순으로 해야되는거 아니야?" · "그렇게해줘")
+  // 평시가 없는 주는 왜 없고 언제부터 비교하는지 적는다
+  const noBase = () => { const k = D.weeks.findIndex((w, j) => D.topics.some(t => ((ser["topic:" + t.id] || {}).base || [])[j] != null)); return `이 주는 비교할 기록이 모자라 평시가 없다.${k > i ? ` ${R} 전체는 <span style="white-space:nowrap">${weekRange(D.weeks[k])} 주</span>부터 평시와 비교한다.` : ""}${state.week !== landingWeek() ? `<br><button type="button" class="ghost to-latest no-print" data-week="${esc(landingWeek())}">가장 최근 주 보기</button>` : ""}`; };
   const bars = rows.length ? rows.map(x => `<div class="ovb-n" title="${esc(x.name)}: ${esc(x.def)}">${esc(x.name)}</div><div class="ovb-t" title="${esc(x.name)}: 이번 주 ${pct(x.v)} · 평시 ${pct(x.b)}"><span class="${x.d > 0 ? "up" : "dn"}" style="width:${(Math.abs(x.d) / mx * 50).toFixed(1)}%"></span></div><div class="ovb-v num ${x.d > 0 ? "up" : "dn"}">${pp(x.d)}</div>`).join("")
-    : `<p class="muted" style="grid-column:1/-1">${tops.length ? "평시와 1%p 넘게 달라진 주제 없음" : all.length ? "지역 전체 평시 없음" : "지역 전체 주제 비중 없음"}</p>`;
+    : `<p class="muted" style="grid-column:1/-1">${tops.length ? "평시와 1%p 넘게 달라진 주제 없음" : all.length ? noBase() : "지역 전체 주제 비중 없음"}</p>`;
   // 이번 주 요약: 성격이 다른 값을 다르게 보인다(2026-11-24 사용자 "성겨깅다른것들은 좀 다르게 표시해줘야 가독성이있지"). 커뮤니티 값은 큰 숫자 + 평시 비교 칸, 급증 키워드는 알약, 게임 지표는 따로 한 줄
   const cells = [];
   // 카드: 이름 · 알약 · 큰 숫자 · 비교 값 자리에 눈금이 있는 막대 · 비교 값(2026-11-24 사용자 요청)
@@ -1411,7 +1413,7 @@ function overallHtml() {
   const aiTag = `<i class="ai-l">AI 요약</i>`;
   const pri = hi.length ? `<div class="ovp"><h3>우선 대응${pts.length ? "" : aiTag}</h3><ul>${hi.map(x => x.draft.title ? `<li>${dotKeep(nameOf(x))}${noteOf(x) ? `<i>${esc(noteOf(x))}</i>` : ""}</li>` : `<li><b>${dotKeep(nameOf(x))}</b>${esc(noteOf(x))}</li>`).join("")}</ul></div>` : "";
   const brief = pts.length || pri ? `<div class="ovs">${pts.length ? `<h3>${state.week === D.weeks[D.weeks.length - 1] ? "현재 " : ""}유저 동향 요약${aiTag}</h3><ul>${pts.map(([k, v]) => `<li><b>${esc(k)}</b>${v}</li>`).join("")}</ul>` : ""}${pri}</div>` : "";
-  return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb">${bars}</div>${kw ? `<div class="ovk"><h3>급증 키워드 <span>평시 대비</span></h3><div>${kw}</div></div>` : ""}</div>
+  return `<div class="ov"><div><h3>주제 비중 변화 <span>평시 대비</span></h3><div class="ovb${rows.length ? "" : " none"}">${bars}</div>${kw ? `<div class="ovk"><h3>급증 키워드 <span>평시 대비</span></h3><div>${kw}</div></div>` : ""}</div>
     <div><h3>이번 주 요약${gp ? ` <span>${esc(gp)}</span>` : ""}</h3>${sum}${brief}</div></div>`;
 }
 function renderJudge() {
@@ -2460,7 +2462,8 @@ function renderAll() {
 }
 function queryFor(view, issue) {
   const q = new URLSearchParams();
-  q.set("game", state.game); q.set("region", state.region); q.set("week", state.week);
+  q.set("game", state.game); q.set("region", state.region);
+  if (state.week !== landingWeek()) q.set("week", state.week);   // 처음 여는 주는 적지 않는다. 적으면 열어 둔 탭 · 방문 기록 · 즐겨찾기가 다음 주에도 그 주로 열리고 새로 고쳐도 그대로다(2026-11-25)
   if (view && view !== "judge") q.set("view", view);
   // 월간 보고서에서 고른 달 · 커뮤니티도 주소에 남긴다(새로 고쳐도 그 달로 열린다, DESIGN.md 확인할 점 9)
   if (view === "monthly") { if (state.month) q.set("month", state.month); if (state.mcom) q.set("mcom", state.mcom); }
@@ -2501,9 +2504,10 @@ function readUrl(q, hash) {
 }
 // 주를 고르지 않고 들어오면(공개 주소 그대로) 이슈 후보가 있는 가장 최근 주를 연다. 가장 최근 주에 후보가 없을 때 첫 화면의
 // 판단 표가 비지 않게 하려는 것이다(2026-10-28 사용자 "공개주소를 그럼 10/14 화면으로 바꿔줘" · "이미 주소는 배포됐어"). 최근 13주에 없으면 가장 최근 주
+// 지역은 보지 않는다(어느 지역이든 후보가 있는 주). 지역마다 따로 고르면 아이온2 해외 → 로스트아크 → 국내로 옮겼을 때 로스트아크 해외의 옛 주(10/26 주)가 국내에 남았다(2026-11-25 사용자 "간혹 이렇게되고 안풀리는 버그가있는데")
 function landingWeek() {
-  const per = (D.weekly || {})[state.region] || {}, n = D.weeks.length;
-  for (let k = n - 1; k >= Math.max(0, n - 13); k--) if (((per[D.weeks[k]] || {}).items || []).length) return D.weeks[k];
+  const n = D.weeks.length, has = w => Object.values(D.weekly || {}).some(per => ((per[w] || {}).items || []).length);
+  for (let k = n - 1; k >= Math.max(0, n - 13); k--) if (has(D.weeks[k])) return D.weeks[k];
   return D.weeks[n - 1];
 }
 function applyUrl(u) {
@@ -2542,7 +2546,7 @@ document.addEventListener("click", e => {
   const nv = t.closest("a[data-view], a[data-go]");
   if (nv && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0) { e.preventDefault(); go(nv.dataset.view || nv.dataset.go, nv.dataset.anchor); return; }
   if (t.closest("#printBtn")) { window.print(); return; }
-  const lb = t.closest("#latestBtn"); if (lb) { setWeek(lb.dataset.week); $("#h1").focus({preventScroll: true}); return; }
+  const lb = t.closest("#latestBtn, .to-latest"); if (lb) { setWeek(lb.dataset.week); $("#h1").focus({preventScroll: true}); return; }
   if (t.closest("#copyBtn")) {
     const st = $("#copyStatus");
     copyText(reportText()).then(() => { st.textContent = "메일 · 메신저용 글을 복사했다."; })
@@ -2573,14 +2577,25 @@ document.addEventListener("keydown", e => {
   const b = $(".kv-i[aria-expanded='true']");   // 열린 숫자 칸 말풍선은 Esc로 닫고 초점을 단추에 둔다
   if (b) { closeKvPop(b); b.focus(); }
 });
+// 마우스 · 손가락으로 고른 선택 상자에서는 초점을 뗀다. 남아 있으면 화면을 내리려고 누른 화살표 키가 기준 주를 한 주씩 옮긴다(2026-11-25). 키보드로 고를 때는 그대로 둔다
+let selByPointer = false;
+document.addEventListener("pointerdown", e => { selByPointer = !!(e.target.closest && e.target.closest("select")); }, true);
+document.addEventListener("keydown", () => { selByPointer = false; }, true);
 document.addEventListener("change", e => {
   const t = e.target;
+  if (selByPointer && t.matches("select")) t.blur();
   if (t.id === "gameSel") { loadGame(t.value); return; }
   if (t.id === "weekSel") { setWeek(t.value); return; }
   if (t.id === "scopeSel") { state.scope = t.value; renderMood(); renderTopics(); return; }
   if (t.id === "groupSel") { state.group = t.value; drawGroup(); }
 });
-addEventListener("popstate", () => { if (!D) return; applyUrl(readUrl(new URLSearchParams(location.search), location.hash.slice(1))); renderAll(); });
+// 뒤로 · 앞으로 간 주소의 게임이 지금 게임과 다르면 그 게임의 자료부터 받는다
+addEventListener("popstate", () => {
+  if (!D) return;
+  const q = new URLSearchParams(location.search), u = readUrl(q, location.hash.slice(1)), g = q.get("game");
+  if (g && g !== state.game && GAMES.some(x => x.id === g && x.file)) { loadGame(g, false, u); return; }
+  applyUrl(u); renderAll();
+});
 let rsT = null;
 addEventListener("resize", () => { clearTimeout(rsT); rsT = setTimeout(() => { Object.entries(SVG_CHARTS).forEach(([id, o]) => { const el = document.getElementById(id); if (el && el.offsetParent) svgLine(el, o); }); if (innerWidth > 1100) closeNav(); }, 120); });
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { Object.values(CHARTS).forEach(c => c.update("none")); });
@@ -2593,17 +2608,21 @@ addEventListener("afterprint", () => printChart(false));
 matchMedia("print").addEventListener("change", e => printChart(e.matches));
 
 // ---------- 불러오기 ----------
-function loadGame(id, first = false) {
+let loadSeq = 0;   // 게임을 빠르게 두 번 바꾸면 늦게 온 앞 게임의 자료가 덮지 않게 마지막 요청만 쓴다
+function loadGame(id, first = false, u = null) {
+  const my = ++loadSeq;
   state.game = id;
   // 화면 데이터는 한 주에 한 번 바뀐다. 게임 목록의 생성 시각을 주소에 붙여, 같은 판이면 브라우저 저장본을 쓰고 새 판이면 새로 받는다(기술 점검 P2-1)
   const g = GAMES.find(x => x.id === id), v = g && g.generated_at ? "?v=" + encodeURIComponent(g.generated_at) : "";
   return fetch(`./data/${encodeURIComponent(id)}.json${v}`, v ? {} : {cache: "no-store"})
     .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(d => Promise.all([optJson(id + "-daily"), optJson(id + "-monthly")]).then(([dd, dm]) => { DDAY = dd; DMON = dm; return d; }))
+    .then(d => Promise.all([optJson(id + "-daily"), optJson(id + "-monthly")]).then(([dd, dm]) => { if (my !== loadSeq) return null; DDAY = dd; DMON = dm; return d; }))
     .then(d => {
+      if (!d) return;
       D = d;
       state.scope = null;
       if (first) applyUrl(readUrl(INIT_Q, INIT_HASH));
+      else if (u) applyUrl(u);   // 뒤로 · 앞으로
       else { state.week = landingWeek(); state.open.clear(); }
       buildControls(); renderAll(); setQuery();
       if (first) {
@@ -2612,7 +2631,7 @@ function loadGame(id, first = false) {
         if (target) requestAnimationFrame(() => target.scrollIntoView({block: u.issue ? "center" : "start"}));
       }
     })
-    .catch(e => { $("#v-judge").hidden = false; $("#v-judge").innerHTML = `<p class="banner" style="margin-top:16px">화면 데이터(data/${esc(id)}.json)를 불러오지 못했다: ${esc(e.message)}. 잠시 뒤 새로 고친다.</p>`; });
+    .catch(e => { if (my !== loadSeq) return; $("#v-judge").hidden = false; $("#v-judge").innerHTML = `<p class="banner" style="margin-top:16px">화면 데이터(data/${esc(id)}.json)를 불러오지 못했다: ${esc(e.message)}. 잠시 뒤 새로 고친다.</p>`; });
 }
 fetch("./games.json", {cache: "no-store"}).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(g => {
