@@ -158,8 +158,8 @@ h3 .h3sub { font: 400 12.5px var(--font); color: var(--muted); margin-left: 6px;
 .ex { font-size: 14.5px; color: var(--body); margin-top: 5px; line-height: 1.5; }
 .ex .ai-l { margin-left: 6px; }
 
-/* ---------- 판단 표 + 오른쪽 기둥 384px ---------- */
-.a-grid { display: grid; grid-template-columns: minmax(0, 1fr) 384px; gap: var(--gap); margin-top: 16px; align-items: start; }
+/* ---------- 판단 표 + 오른쪽 기둥 316px ---------- */
+.a-grid { display: grid; grid-template-columns: minmax(0, 1fr) 316px; gap: var(--gap); margin-top: 16px; align-items: start; }
 .a-left { min-width: 0; display: flex; flex-direction: column; gap: var(--gap); }
 .a-left > .card + .card { margin-top: 0; }
 .rail { display: flex; flex-direction: column; gap: var(--gap); min-width: 0; }
@@ -181,8 +181,7 @@ td.nw { white-space: nowrap; }
 .jt tr.jrow:hover td { background: #f8fafc; }
 .jt tr.hi td, .jt tr.hi:hover td { background: var(--hi); }
 .jt tr.jrow.open td { border-bottom-color: transparent; }
-.jt tr.jshare td { padding: 7px 18px; font-size: 13px; color: var(--body); background: var(--subtle); }
-.jt th.c-lv { width: 92px; }
+.jt th.c-lv { width: 66px; }
 .pill { display: inline-block; height: 26px; line-height: 26px; padding: 0 12px; border-radius: 999px; font-size: 13.5px; font-weight: 700; white-space: nowrap; flex: none; }
 .p-high { background: var(--neg-bg); color: var(--neg-ink); } .p-mid { background: var(--warn-bg); color: var(--warn-ink); }
 .p-watch { background: var(--neu-bg); color: var(--neu-ink); } .p-ign { background: var(--ign-bg); color: var(--ign-ink); }
@@ -195,8 +194,7 @@ tr.open button.t1::after { transform: translateY(0) rotate(-135deg); }
 .chg { font: 800 19px/1.3 var(--title); color: var(--signal); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .dur { font-weight: 700; font-size: 14px; white-space: nowrap; }
 .strip { display: block; margin-top: 5px; }
-.why1 { font-size: 14px; color: var(--text); line-height: 1.45; }
-.jt tr.watch .t1, .jt tr.watch .why1, .p-issues tr.watch .t1, .p-issues tr.watch .why { color: var(--muted); }   /* '관찰' 행은 이름 · 이유를 보조색으로(Glance Test 수정 8) */
+.jt tr.watch .t1, .p-issues tr.watch .t1, .p-issues tr.watch .why { color: var(--muted); }   /* '관찰' 행은 이름(주간 보고서는 이유도)을 보조색으로(Glance Test 수정 8) */
 /* 판단 표 아래 한 줄: 판정 대상은 늘 보이고, 13주 띠 읽는 법 · 분류 지시문 안내 · 참고 항목은 접어 둔다(완성본 검토: 주석 덩어리가 근거 그래프를 첫 화면 밖으로 밀었다) */
 .jfoot { border-top: 1px solid var(--border); }
 .jfoot > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 8px; padding: 9px 18px; font-size: 12.5px; color: var(--muted); line-height: 1.5; }
@@ -404,22 +402,22 @@ tr.chosen td { background: var(--tint); }
   .a-left > .judge { order: 1; }
   .rail { order: 2; display: flex; align-items: stretch; }   /* 1300px 규칙의 align-items: start를 되돌린다(완성본 검토 3차: 급상승 키워드 판이 좁게 줄었다) */
   .a-left > .ev { order: 3; }
-  /* 판단 표는 이슈마다 카드 한 장: 첫 줄 판단 · 이슈 · 변화 · 지속, 둘째 줄 이유 · 대응 */
+  /* 판단 표는 이슈마다 카드 한 장: 첫 줄 판단 · 이슈 · 변화(그 아래 지속), 둘째 줄 키워드 · 반응, 셋째 줄 공지 대응(국내) */
   .jt thead { display: none; }
   .jt, .jt tbody { display: block; }
-  .jt tr.jrow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; grid-template-areas: "lv is ch du" "why why why why"; column-gap: 12px; row-gap: 8px; align-items: start; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  .jt tr.jrow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "lv is ch" "lv is du" "kw kw rc" "rs rs rs"; column-gap: 12px; row-gap: 8px; align-items: start; padding: 12px 16px; border-bottom: 1px solid var(--border); }
   .jt tr.jrow:last-of-type { border-bottom: 0; }
   .jt tr.jrow.open { border-bottom-color: transparent; }
   .jt tr.hi { background: var(--hi); }
   .jt tr.jrow td { display: block; padding: 0; border: 0; background: transparent !important; }
-  .jt td.c-lv { grid-area: lv; } .jt td.c-is { grid-area: is; } .jt td.c-ch { grid-area: ch; text-align: right; } .jt td.c-du { grid-area: du; } .jt td.c-why { grid-area: why; }
+  .jt td.c-lv { grid-area: lv; } .jt td.c-is { grid-area: is; } .jt td.c-ch { grid-area: ch; text-align: right; } .jt td.c-du { grid-area: du; text-align: right; } .jt td.c-du .strip { margin-left: auto; }
+  .jt td.c-kw { grid-area: kw; } .jt td.c-rc { grid-area: rc; text-align: right; } .jt td.c-rs { grid-area: rs; }
+  .jt.no-rs tr.jrow { grid-template-areas: "lv is ch" "lv is du" "kw kw rc"; }
   .jt .chg { font-size: 17px; }
   .jt .t2, .jt .t1 { white-space: normal; }
   .ctrl .g { max-width: 100%; min-width: 0; }
   .ctrl .seg { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
   .jt tr.jdet { display: block; border-bottom: 1px solid var(--border); }
-  .jt tr.jshare, .jt tr.jshare td { display: block; }
-  .jt tr.jshare td { padding: 10px 16px; }
   .jt tr.jdet > td { display: block; padding: 0 16px 16px !important; }
   .dgrid { grid-template-columns: 1fr; }
   .card-h, .ctrl { padding-left: 16px; padding-right: 16px; }
@@ -442,9 +440,7 @@ tr.chosen td { background: var(--tint); }
 /* 좁은 휴대폰: 윗덩어리에 판단 · 이슈 · 변화(그 아래 지속), 그 아래 줄에 이유 · 대응을 전체 폭으로(완성본 검토: 이유가 지속 옆에 끼어 꺾였다).
    지속까지 한 줄에 두면 390px에서 이슈 칸이 80px 안팎으로 줄어 '아카라이브'가 글자마다 꺾였다(2026-10-28 그림 확인) */
 @media screen and (max-width: 480px) {
-  .jt tr.jrow { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "lv is ch" "lv is du" "why why why"; column-gap: 10px; row-gap: 6px; }
-  .jt td.c-du { text-align: right; }
-  .jt td.c-du .strip { margin-left: auto; }
+  .jt tr.jrow { column-gap: 10px; row-gap: 6px; }
   .jt .chg { font-size: 16px; }
   .jt .dur { font-size: 13px; }
 }
@@ -700,28 +696,44 @@ th{ background:#f1f3f1; color:#3d4842 !important; font-weight:700 !important; bo
 .ovs li::before{ content:""; position:absolute; left:1px; top:.6em; width:6px; height:6px; border-radius:50%; background:var(--navy); }
 .ovs li b{ margin-right:8px; font-weight:800; color:var(--navy); }
 .ovs li span{ display:inline-block; margin-right:10px; }
-/* 이슈 표: 커뮤니티를 이슈 이름에서 떼어 이슈 칸 오른쪽의 알약으로(2026-11-23 사용자 "저 커뮤니티는 오른쪽에 붙이고 좀 다르게 해줘 인디케이팅되게").
-   앞에 점을 둔 표시에 2026-11-24 "이건 앞에 점있으니까 무슨 인디케이터같아 그냥 필로 바꿔서 가운데정렬해줘": 점 없이 커뮤니티 색을 옅게 채운 알약, 폭을 같게 해 글을 가운데에 두고, 알약은 행의 세로 가운데(판단 알약과 같은 높이)에 둔다 */
-.is-row{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
-.is-l{ min-width:0; }
-.ctag{ flex:none; box-sizing:border-box; min-width:78px; padding:0 6px; border-radius:999px; background:color-mix(in srgb, var(--c) 13%, #fff); color:color-mix(in srgb, var(--c) 62%, var(--text)); font-size:12px; font-weight:700; line-height:22px; text-align:center; white-space:nowrap; }
+/* 이슈 표(2026-11-24 확정, 견본/2026-11-24-이슈표-칸): 판단 · 이슈(유저가 무슨 말을 하는지) · 변화 · 지속 · 키워드(평시보다 늘어난 항목) · 반응 · 공지 대응.
+   사용자 "판단이유가 좀더 이슈와 맞는거같고 판단이유는 키워드로바꿔서 위치를 둘이 바꿔줘 그리고 관련공지는 무슨섹션인지 모르겠는데 확실히 용도를 정하고 나눠서 주황색 열로 정렬해줘".
+   머리 이름만 가운데, 아래 값은 왼쪽("판단 이슈 변화 지속같은 목차는 가운데 정렬해줘" · "아래 내용은 말고") */
+.jt thead th{ text-align:center; }
+/* 이슈 열("이슈열을 좀 이쁘게 다듬어줘"): 제목을 칸 폭 그대로 써서 대부분 한 줄, 그 아래 줄에 커뮤니티 알약과 건수를 왼쪽부터 나란히 */
 .jt td.c-is .tog{ white-space:normal; word-break:keep-all; text-wrap:balance; }
-/* 행을 펼칠 때 펼친 칸의 내용이 표의 칸 폭을 다시 나누지 않게 한다(칸 오른쪽의 커뮤니티 알약이 옆으로 움직였다) */
-@media screen and (min-width:821px){ .jt .jdet > td > .dgrid{ width:0; min-width:100%; } }
-/* 알약이 들어갈 폭: 판단 칸의 남는 폭(22px)을 이슈 칸에 주고, 표의 폭에 따라 이슈 칸 폭을 정한다(290px = 가장 긴 이슈 이름 + 펼침 표시 + 알약).
-   관련 공지 줄은 그 칸보다 길 때만 줄을 바꾼다: 줄을 바꾸지 못해 이 칸이 넓어지면 이슈 이름이 서너 줄로 꺾이고 표가 옆으로 넘쳤다 */
-.judge .tablewrap{ container-type:inline-size; }
-.jt .c-why .t2{ white-space:normal; }
+.jt td.c-is .t1{ font-size:14.5px; line-height:1.4; letter-spacing:-.01em; }
+.is-meta{ display:flex; align-items:center; gap:9px; margin-top:7px; }
+.is-meta .t2{ margin:0; }
+/* 커뮤니티 알약은 속을 비우고 테두리만: 속을 채운 판단 알약과 헷갈리지 않게("판단이랑 헷갈리니까 커뮤티니 출처는 속빈걸로 하자"). 폭을 같게 해 글을 가운데에 둔다 */
+.ctag{ flex:none; box-sizing:border-box; min-width:80px; padding:0 6px; border:1px solid color-mix(in srgb, var(--c) 60%, #fff); border-radius:999px; color:color-mix(in srgb, var(--c) 62%, var(--text)); font-size:12px; font-weight:700; line-height:20px; text-align:center; white-space:nowrap; }
+.jt td.c-kw{ font-size:13.5px; color:var(--text); word-break:keep-all; text-wrap:balance; }
+.jt td.c-rc{ font-size:13.5px; color:var(--text); white-space:nowrap; }
+.jt td.c-rs .t2{ white-space:normal; word-break:keep-all; }
+.jt td.c-rs b{ font-size:13.5px; white-space:nowrap; }
+.rs-y{ color:#17503d; } .rs-n{ color:var(--warn-ink); }
 @media screen and (min-width:821px){
-  .jt th.c-lv{ width:70px; } .jt thead th:nth-child(2){ width:290px; }
-  @container (max-width:799px){ .jt thead th:nth-child(2){ width:240px; } }
-  /* 표가 더 좁으면(오른쪽 기둥이 옆에 있는 1301 ~ 1439px) 이름과 한 줄에 둘 폭이 없어 알약을 건수 줄의 오른쪽 끝에 둔다 */
-  @container (max-width:729px){
-    .is-row{ display:grid; grid-template-columns:1fr auto; gap:3px 6px; } .is-l{ display:contents; } .is-row .tog{ grid-column:1 / -1; justify-self:start; } .is-row .t2{ margin-top:0; }
-    .jt thead th:nth-child(2){ width:206px; }
-  }
+  .jt td, .jt th{ padding-left:8px; padding-right:8px; }
+  .jt th.c-kw{ width:88px; } .jt th.c-rc{ width:64px; } .jt th.c-rs{ width:98px; }
+  /* 행을 펼칠 때 펼친 칸의 내용이 표의 칸 폭을 다시 나누지 않게 한다(칸 오른쪽의 커뮤니티 알약이 옆으로 움직였다) */
+  .jt .jdet > td > .dgrid{ width:0; min-width:100%; }
 }
-@media screen and (max-width:820px){ .is-row{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:3px 8px; } .is-l{ display:contents; } .is-row .tog{ grid-column:1 / -1; justify-self:start; } .is-row .t2{ margin-top:0; } }
+/* 오른쪽 기둥이 옆에 있는 가장 좁은 폭에서는 칸 여백을 줄인다(공지 이름의 긴 영어 낱말 때문에 표가 8px 넘치던 주, 2026-11-24) */
+@media screen and (min-width:1301px) and (max-width:1330px){ .jt td, .jt th{ padding-left:6px; padding-right:6px; } }
+/* 오른쪽 기둥(이번 주 운영 대응 · 급상승 키워드): 384px → 316px, 글자와 여백을 한 단계 작게("조금 크기를 줄여서 이번주 주요이슈 칸 확보를 해주고") */
+@media screen and (min-width:1301px){
+  .a-grid{ gap:20px; }
+  .rail{ gap:16px; }
+  .rail .card-h{ padding:12px 14px 8px; } .rail .card-h h2{ font-size:15px; }
+  .rail .list li{ padding:8px 14px; gap:10px; font-size:13px; line-height:1.5; } .rail .list .k{ font-size:12px; }
+  .rail .list .tag{ font-size:11.5px; padding:0 5px; }
+  .rail .card-b, .rail .card-note{ padding-left:14px; padding-right:14px; }
+  .rail .more{ padding:9px 14px 12px; }
+}
+@media screen and (max-width:820px){
+  .jt td.c-kw::before{ content:"키워드 "; color:var(--muted); font-size:12.5px; } .jt td.c-rs::before{ content:"공지 대응 "; color:var(--muted); font-size:12.5px; }
+  .jt td.c-rs .t2{ display:inline; margin-left:6px; }
+}
 </style>
 </head>
 <body>
@@ -1236,7 +1248,7 @@ function respSummary(rs) {
   if (rs.length === 1) return `대응: ${esc(eventShort(rs[0].title, rs[0].date))}`;
   return `대응 ${rs.length}건: ${esc([...new Set(rs.map(r => r.kind))].join(" · "))}${rs.some(r => r.reward) ? " · 보상" : ""}`;
 }
-// 행마다 다른 대응 줄: 판단 초안이 같은 주 공지 가운데 이 이슈와 관련된 공지 하나를 골랐으면 그 공지, 관련 공지가 없다고 봤으면 '관련 대응 공지 없음'.
+// 공지 대응 칸에 정한 값(초안의 response)이 없을 때의 줄: 판단 초안이 같은 주 공지 가운데 이 이슈와 관련된 공지 하나를 골랐으면 그 공지, 관련 공지가 없다고 봤으면 '관련 공지 없음'.
 // 초안이 없으면 그 주 공지를 종류별로 센다(완성본 검토 2: 행마다 같은 '대응 2건'이 반복됐다)
 function respLine(it, rs) {
   const d = it.draft;
@@ -1244,12 +1256,6 @@ function respLine(it, rs) {
   if (!d.notice) return "관련 공지 없음";
   const r = rs.find(x => x.title === d.notice.title && x.date === d.notice.date);
   return `관련 공지: ${esc(eventShort(d.notice.title, d.notice.date))}${r && r.reward ? " · 보상" : ""}`;
-}
-// 모든 행이 같은 관련 공지 줄일 때 표 끝에 한 번 적는 문장
-function sharedText(line, n) {
-  if (line.startsWith("관련 공지: ")) return `이슈 ${n}건 모두 관련 공지는 ${line.slice(7)}`;
-  if (line === "관련 공지 없음") return `이슈 ${n}건 모두 같은 주 공지 가운데 관련 공지가 없다`;
-  return line;
 }
 // 인사이트 설명: AI 초안의 한 문장 → 없으면 정독 요약 첫 문장 → 없으면 생략. 어느 쪽이든 AI가 쓴 것이라 표시한다
 function insightText(it) {
@@ -1396,18 +1402,20 @@ function renderJudge() {
   else ins = overallHtml();
   let h = `${ydayBar()}${latestNote()}<section class="ins" aria-labelledby="h-ins">${insHead}${ins}</section>`;
   // 판단 표
-  let table, shared = null;
+  let table;
   if (!items.length) {
     const why = !s ? "이 주는 요약이 없다." : s.holiday_week ? "연휴 주는 이슈 후보를 선정하지 않는다." : !compared.length ? "평시와 비교할 수 있는 커뮤니티가 없어 판정하지 않았다." : "평시보다 크게 달라진 항목이 없다.";
     table = `<div class="card-b" style="padding-top:14px"><p class="frame-empty">${why}</p></div>`;
   } else {
-    // 이슈마다 관련 공지 줄을 만들고, 모든 행이 같으면 행에서는 빼고 표 끝에 한 번만 적는다(완성본 검토 2차: 같은 줄이 행마다 반복됐다)
-    const lines = items.map(it => respLine(it, wk.responses || []));
-    shared = items.length > 1 && lines.every(x => x === lines[0]) ? lines[0] : null;
-    table = `<div class="tablewrap"><table class="jt"><thead><tr><th class="c-lv">판단</th><th>이슈</th><th>변화</th><th>지속</th><th>판단 이유 · 관련 공지</th></tr></thead><tbody>${items.map((it, n) => judgeRow(it, n, wk.responses || [], shared)).join("")}${shared ? `<tr class="jshare"><td colspan="5">${sharedText(shared, items.length)}</td></tr>` : ""}</tbody></table></div>`;
+    // 공지는 국내만 모으므로 해외 표에는 '공지 대응' 열을 두지 않는다(오른쪽 '이번 주 운영 대응' 판이 이유를 적는다)
+    table = `<div class="tablewrap"><table class="jt${state.region === "국내" ? "" : " no-rs"}"><thead><tr><th class="c-lv">판단</th><th>이슈</th><th>변화</th><th>지속</th><th class="c-kw">키워드</th><th class="c-rc">반응</th>${state.region === "국내" ? `<th class="c-rs">공지 대응</th>` : ""}</tr></thead><tbody>${items.map((it, n) => judgeRow(it, n, wk.responses || [])).join("")}</tbody></table></div>`;
   }
   const notes = [];
   notes.push(`지속 칸 13주 띠: ${strip([true], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 이슈 후보였던 주 · ${strip([false], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 아닌 주 · ${strip([null], true).replace('class="strip"', 'class="strip" style="display:inline;margin:0"')} 비교하지 못한 주(수집 빈 주 · 연휴 · 기록 부족)`);
+  if (items.some(it => it.draft && it.draft.title)) {
+    notes.push(`이슈${R === "국내" ? " · 반응 · 공지 대응" : " · 반응"}: 본문 정독 요약${R === "국내" ? "과 같은 주 공식 공지를" : "을"} 보고 AI가 쓴 초안 · 키워드: 평시보다 늘어난 항목`);
+    if (R === "국내") notes.push("공지 대응: 대응함은 같은 주 공지가 이 이슈에 답한 것, 후속 없음은 그 공지에 유저가 반응했지만 이후 답한 공지가 없는 것, 공지 없음은 이 이슈를 다룬 같은 주 공지가 없는 것");
+  }
   const cn = s ? classifyNote(s) : "";
   if (cn) notes.push(cn);
   const zonly = ((D.z_only || {})[R] || {})[W] || [];
@@ -1432,16 +1440,28 @@ function renderJudge() {
   el.innerHTML = h;
   if (top) drawEvidence(top, $("#evChart"), $("#evTable"));
 }
-function judgeRow(it, n, rs, shared = null) {
+// 가운뎃점이 줄 맨 앞에 오지 않게 앞 낱말에 붙인다(이슈 제목 · 키워드)
+const dotKeep = s => esc(s).replace(/ · /g, "&nbsp;· ");
+// 공지 대응: 이 이슈에 같은 주 공식 공지가 답했는지(판단 초안이 근거에서 고른다). 공지는 국내만 모은다
+function respCell(it, rs) {
+  const d = it.draft, nt = d && d.notice ? eventShort(d.notice.title, d.notice.date) : "";
+  if (!d || !d.response) return `<span class="t2">${respLine(it, rs)}</span>`;
+  if (d.response === "answered") return `<b class="rs-y">대응함</b><div class="t2">${esc(nt)}</div>`;
+  if (d.response === "trigger") return `<b class="rs-n">후속 없음</b><div class="t2">${esc(nt)} 뒤</div>`;
+  return `<b class="rs-n">공지 없음</b>`;
+}
+function judgeRow(it, n, rs) {
   const open = state.open.has(it.id), rid = "jr-" + n, lv = it.judgment && it.judgment.level;
-  const reason = it.draft && it.draft.reason ? esc(it.draft.reason) : DASH;
+  const d = it.draft || {}, title = d.title || it.issue;
   return `<tr class="jrow${lv === "높음" ? " hi" : lv === "관찰" ? " watch" : ""}${open ? " open" : ""}" id="${rid}" data-id="${esc(it.id)}">
     <td class="c-lv">${pill(it.judgment)}</td>
-    <td class="c-is"><div class="is-row"><div class="is-l"><button type="button" class="t1 tog" aria-expanded="${open}" aria-controls="${rid}-d" aria-label="${esc(it.issue)} · ${esc(shortCom(it.community))}">${esc(it.issue)}&#8288;</button><div class="t2">${sizeText(it)}</div></div><span class="ctag" style="--c:${comColor(it.community_id)}">${esc(shortCom(it.community))}</span></div></td>
+    <td class="c-is"><button type="button" class="t1 tog" aria-expanded="${open}" aria-controls="${rid}-d" aria-label="${esc(title)} · ${esc(it.issue)} · ${esc(shortCom(it.community))}">${dotKeep(title)}&#8288;</button><div class="is-meta"><span class="ctag" style="--c:${comColor(it.community_id)}">${esc(shortCom(it.community))}</span><span class="t2">${sizeText(it)}</span></div></td>
     <td class="c-ch"><div class="chg">▲ ${esc(it.change)}</div><div class="t2 num">${esc(it.value)}</div></td>
     <td class="c-du"><div class="dur">${esc(durText(it))}</div>${strip(it.history || [])}</td>
-    <td class="c-why"><div class="why1">${reason}</div>${shared ? "" : `<div class="t2">${respLine(it, rs)}</div>`}</td></tr>
-  <tr class="jdet" id="${rid}-d"${open ? "" : " hidden"}><td colspan="5">${detail(it, rs)}</td></tr>`;
+    <td class="c-kw">${d.title ? dotKeep(it.issue) : DASH}</td>
+    <td class="c-rc">${d.reaction ? esc(d.reaction) : DASH}</td>
+    ${state.region === "국내" ? `<td class="c-rs">${respCell(it, rs)}</td>` : ""}</tr>
+  <tr class="jdet" id="${rid}-d"${open ? "" : " hidden"}><td colspan="${state.region === "국내" ? 7 : 6}">${detail(it, rs)}</td></tr>`;
 }
 function detail(it, rs) {
   const c = candOf(it.id) || {}, j = it.judgment, d = it.draft;
