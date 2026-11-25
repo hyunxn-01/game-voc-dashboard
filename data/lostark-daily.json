@@ -4136,6 +4136,519 @@
    }
   }
  },
+ "surge_memo": {
+  "classify": "분류 요청함",
+  "communities": [
+   {
+    "community": "디시인사이드",
+    "community_id": "dcinside",
+    "reads": [
+     {
+      "cost_usd": 0.035,
+      "count": 1267,
+      "label": "그날 글 전체",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 14,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 22,
+        "title": "재학이가 그리운 쌀숭이는 개추",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889990"
+       },
+       {
+        "body": "있음",
+        "comments": 30,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 20,
+        "title": "도화가 야짤.manhwa",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890155"
+       },
+       {
+        "body": "있음",
+        "comments": 16,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 18,
+        "title": "5억년만에 낙서",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889103"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "아제나 사지말라는 수준인건가?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889504"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "이젠 그이름을 불러봐도 되나요",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889375"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "뭐지 카던세팅왜갑자기 투력이 600됨",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890141"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "글 수 평소 대비 감소로 급증 자체 없음, 연결되는 업데이트·이벤트 없음"
+        }
+       ],
+       "confidence": "low",
+       "endorsed_vs_common": "추천 상위 글은 운영진 회상 밈·그림 중심, 무작위 글은 과금·세팅 관련 개인 질문 중심으로 주제 상이",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "이전 운영진(재학) 회상 및 비교",
+         "posts": [
+          1,
+          5
+         ],
+         "quote": "적어도 패죽이지는 않았던 재학이가 그리우면 개추",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "그림·밈성 창작 게시물",
+         "posts": [
+          2,
+          3
+         ],
+         "quote": "붓이 하늘에 서겠다",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "아제나 구매 연장 여부 고민",
+         "posts": [
+          4
+         ],
+         "quote": "그냥 아제나 없는 삶을살까 고민되네",
+         "quote_post": 4
+        },
+        {
+         "count": 1,
+         "name": "카던 세팅 투력 급감 문의",
+         "posts": [
+          6
+         ],
+         "quote": "카던세팅왜갑자기 투력이 600됨",
+         "quote_post": 6
+        }
+       ],
+       "summary": "글 수 1267건으로 평소 1499건 대비 0.85배 수준, 실제 증가 없음\n추천 상위 글은 전 디렉터 언급 밈과 그림 게시 위주\n무작위 글은 아제나 구매 고민, 카던 세팅 투력 문의 등 산발적 내용\n특정 이슈 집중 없음, 관련 업데이트·공지 없음"
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0321,
+      "count": 28,
+      "label": "'로아온'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 2,
+        "title": "로아온 << 렙제 1780으로 올려야하면 개추",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890032"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 1,
+        "title": "로아온 에스더 10강만 초대 ㄱㄱ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890044"
+       },
+       {
+        "body": "있음",
+        "comments": 24,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 0,
+        "title": "로아는 늘 로아온 시기가 늦더라",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889211"
+       },
+       {
+        "body": "있음",
+        "comments": 5,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "로아온 늦게하나 빨리하나 큰 의미가있을까요",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889216"
+       },
+       {
+        "body": "있음",
+        "comments": 8,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "로아온 신청사연 뭐라고적을까?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889440"
+       },
+       {
+        "body": "있음",
+        "comments": 4,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "이번에 로아온 못가면 앞으론 신청도안함",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889429"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "로아온 참가 신청 접수 또는 관련 안내 시점과 맞물린 언급 증가 가능성"
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 참가 자격 제한과 개최 시기 지적 중심, 무작위 글은 신청 사연과 당첨 기대 중심",
+       "subissues": [
+        {
+         "count": 2,
+         "name": "참가 자격 제한 상향 요구",
+         "posts": [
+          1,
+          2
+         ],
+         "quote": "1780<< 이정돈 되어야한다 생각하면 개추",
+         "quote_post": 1
+        },
+        {
+         "count": 2,
+         "name": "로아온 개최 시기 지연 지적",
+         "posts": [
+          3,
+          4
+         ],
+         "quote": "로아는 늘 로아온 시기가 늦더라",
+         "quote_post": 3
+        },
+        {
+         "count": 2,
+         "name": "참가 신청 사연 및 당첨 여부 관심",
+         "posts": [
+          5,
+          6
+         ],
+         "quote": "저 연속출석 1000일유저에요 라고하면 프리패스임?",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "좌석 수 부족 및 이용자 이탈 우려",
+         "posts": [
+          6
+         ],
+         "quote": "진짜 3000명에 접은인원도 많은시기에",
+         "quote_post": 6
+        }
+       ],
+       "summary": "로아온 참가 신청 시기 관련 글 집중 게시\n참가 자격 레벨 제한 상향 요구 및 신청 사연 작성 문의\n로아온 개최 시기가 늦다는 지적과 축소 우려 공존\n관련 공지 목록 없음, 신청 일정 화제로 인한 증가 추정"
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0429,
+      "count": 21,
+      "label": "'닉네임'이(가) 든 글",
+      "read": [
+       {
+        "body": "비어 있음",
+        "comments": 5,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 7,
+        "title": "회수된 닉네임 확인하는 방법",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889769"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 3,
+        "title": "닉네임 의외로 안먹힌거 많네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890156"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 1,
+        "title": "병탁아 다음부터는 닉네임 초기화 이렇게 해라",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889779"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "닉네임 빅매물 떴네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889588"
+       },
+       {
+        "body": "있음",
+        "comments": 6,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "요즈 닉네임 풀린게 대단하네",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889781"
+       },
+       {
+        "body": "있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "닉네임 선정하려는 새끼들 ㄹㅇ 에겐남을 넘어 테토녀같음",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889732"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "휴면 캐릭터 닉네임 초기화·개방 조치가 시행된 것으로 추정되나 제공된 목록에서 해당 공지는 확인되지 않는다"
+        }
+       ],
+       "confidence": "high",
+       "endorsed_vs_common": "추천 상위 글은 확인 방법과 초기화 기준 비판을 다루고, 무작위 글은 희귀 닉네임 매물과 선점 잡담을 다룬다",
+       "subissues": [
+        {
+         "count": 3,
+         "name": "회수된 닉네임 확인 및 희귀 닉네임 선점 관심이 증가했다",
+         "posts": [
+          1,
+          4,
+          5
+         ],
+         "quote": "워로드로 요즈 닉네임 끼고 다니기",
+         "quote_post": 5
+        },
+        {
+         "count": 1,
+         "name": "점검 전 접속만으로 닉네임이 유지되는 초기화 기준을 비판했다",
+         "posts": [
+          3
+         ],
+         "quote": "1레벨 깡통 캐릭터도 캐릭터명 살리기 가능",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "필터에 걸리지 않은 부적절한 닉네임 생성 사례를 공유했다",
+         "posts": [
+          2
+         ],
+         "quote": "이정도는 없을만한가",
+         "quote_post": 2
+        },
+        {
+         "count": 1,
+         "name": "닉네임 선점 경쟁을 조롱하는 글이 게시되었다",
+         "posts": [
+          6
+         ],
+         "quote": "샷건 두번쳐서 닉네임 만들고",
+         "quote_post": 6
+        }
+       ],
+       "summary": "미접속 캐릭터 닉네임이 회수·초기화된 것으로 보인다\n유명·희귀 닉네임 매물과 선점 글이 다수 게시되었다\n초기화 기준이 느슨하다는 비판 글도 게시되었다\n닉네임 개방 시점에 관련 글이 집중되어 언급량이 증가했다"
+      },
+      "status": "ok"
+     },
+     {
+      "cost_usd": 0.0329,
+      "count": 21,
+      "label": "'큐브'이(가) 든 글",
+      "read": [
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "추천 상위",
+        "n": 1,
+        "recommends": 1,
+        "title": "큐브 나만 3개 되면 터는거 아니었냐고.",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889830"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "추천 상위",
+        "n": 2,
+        "recommends": 1,
+        "title": "큐브 몇백릴에 중생기 몇백개 털 생각하니 심신미약",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889917"
+       },
+       {
+        "body": "있음",
+        "comments": 8,
+        "group": "추천 상위",
+        "n": 3,
+        "recommends": 0,
+        "title": "큐브 아래꺼도 해야해?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890199"
+       },
+       {
+        "body": "있음",
+        "comments": 0,
+        "group": "무작위",
+        "n": 4,
+        "recommends": 0,
+        "title": "드디어 큐브가 사라지는구나",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2889996"
+       },
+       {
+        "body": "비어 있음",
+        "comments": 2,
+        "group": "무작위",
+        "n": 5,
+        "recommends": 0,
+        "title": "큐브 다 돌아야된다고?",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890187"
+       },
+       {
+        "body": "있음",
+        "comments": 1,
+        "group": "무작위",
+        "n": 6,
+        "recommends": 0,
+        "title": "큐브 12해금 속도 존나 잘잡히네 ㅋ",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=loaon&no=2890108"
+       }
+      ],
+      "result": {
+       "causes": [
+        {
+         "event": "없음",
+         "hypothesis": "큐브 콘텐츠 종료 또는 개편 예고로 보유 큐브 소진 글이 증가했다는 가설이다(목록에 해당 공지는 없다)."
+        }
+       ],
+       "confidence": "medium",
+       "endorsed_vs_common": "추천 상위 글은 소진 부담과 질문을, 무작위 글은 큐브 종료 반응과 진행 상황을 다루며 주장은 같다.",
+       "subissues": [
+        {
+         "count": 1,
+         "name": "큐브 폐지·종료 인식",
+         "posts": [
+          4
+         ],
+         "quote": "드디어 큐브가 사라지는구나",
+         "quote_post": 4
+        },
+        {
+         "count": 2,
+         "name": "누적 큐브 일괄 소진 부담",
+         "posts": [
+          1,
+          2
+         ],
+         "quote": "큐브 몇백릴에 중생기 몇백개 털 생각하니 심신미약",
+         "quote_post": 2
+        },
+        {
+         "count": 2,
+         "name": "하위 큐브까지 소진해야 하는지 질문",
+         "posts": [
+          3,
+          5
+         ],
+         "quote": "큐브 아래꺼도 해야해?",
+         "quote_post": 3
+        },
+        {
+         "count": 1,
+         "name": "큐브 보석 획득 진행 상황",
+         "posts": [
+          6
+         ],
+         "quote": "애들 보석 캐느라 바쁘노",
+         "quote_post": 6
+        }
+       ],
+       "summary": "큐브가 사라진다는 인식 아래 보유 큐브 소진 관련 글이 증가했다.\n수백 장의 큐브와 중생기 소진 부담을 호소하는 글이 게시됐다.\n하위 큐브까지 돌아야 하는지 묻는 질문 글이 게시됐다.\n관련 공지는 목록에 없어 증가 배경은 글로만 확인된다."
+      },
+      "status": "ok"
+     }
+    ],
+    "reasons": [
+     "복귀 · 신규 표현 18건(평소 5.5건의 3.27배)"
+    ],
+    "sentiment": {
+     "base_classified": 5996,
+     "classified": 1267,
+     "neg": 0.3264,
+     "neg_base": 0.3961,
+     "of": 1267,
+     "topics": [
+      {
+       "base": 0.183,
+       "name": "컨텐츠 · 업데이트",
+       "share": 0.2297,
+       "topic": "content"
+      },
+      {
+       "base": 0.1236,
+       "name": "성장 · 강화",
+       "share": 0.1973,
+       "topic": "growth"
+      },
+      {
+       "base": 0.1795,
+       "name": "기타",
+       "share": 0.1705,
+       "topic": "other"
+      },
+      {
+       "base": 0.1124,
+       "name": "운영 · 이벤트",
+       "share": 0.1515,
+       "topic": "operation"
+      },
+      {
+       "base": 0.0233,
+       "name": "거래 · 경제",
+       "share": 0.0908,
+       "topic": "economy"
+      }
+     ]
+    }
+   }
+  ],
+  "cost_usd": 0.1429,
+  "date": "2026-11-25",
+  "events": [],
+  "game": "lostark",
+  "generated_at": "2026-11-26T04:52:10+09:00",
+  "model": "claude-opus-5-5",
+  "note": "AI 요약(본문 정독)은 무엇이 이야기되는지까지만 쓴다. 대응이 필요한지는 사람이 판단한다."
+ },
  "surges": [
   {
    "community": "디시인사이드",
